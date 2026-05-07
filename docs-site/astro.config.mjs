@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://ThanhNguyxnOrg.github.io',
+  site: 'https://thanhnguyxn.github.io',
   base: '/awesome-free-apis',
   integrations: [
     starlight({
@@ -22,7 +22,7 @@ export default defineConfig({
       head: [
         {
           tag: 'meta',
-          attrs: { property: 'og:image', content: 'https://ThanhNguyxnOrg.github.io/awesome-free-apis/og-image.png' },
+          attrs: { property: 'og:image', content: 'https://thanhnguyxn.github.io/awesome-free-apis/og-image.png' },
         },
         {
           tag: 'meta',

@@ -1,8 +1,8 @@
-# GitHub Badges for awesome-free-apis
+﻿# GitHub Badges for awesome-free-apis
 
 Copy and paste these badges to your README.md:
 
-## ?? Complete Badge Set (Copy All)
+## 📋 Complete Badge Set (Copy All)
 
 ```markdown
 <div align="center">
@@ -21,7 +21,7 @@ Copy and paste these badges to your README.md:
 
 ---
 
-## ?? Individual Badges (Pick and Choose)
+## 🎨 Individual Badges (Pick and Choose)
 
 ### Stars & Forks (Social Style)
 ```markdown
@@ -55,7 +55,7 @@ Alternative visitor counters:
 
 ---
 
-## ?? Stats Badges (Optional)
+## 📊 Stats Badges (Optional)
 
 ### Repository Size & Language
 ```markdown
@@ -70,7 +70,7 @@ Alternative visitor counters:
 
 ---
 
-## ?? Alternative Styles
+## 🎨 Alternative Styles
 
 Shields.io supports different styles. Replace `?style=` parameter:
 
@@ -87,7 +87,7 @@ Example:
 
 ---
 
-## ?? Usage Tips
+## 📝 Usage Tips
 
 1. **Place badges at the top** of README.md (after title)
 2. **Align center** using `<div align="center">`
@@ -98,6 +98,6 @@ Example:
 
 <div align="center">
 
-Made with ?? for awesome-free-apis
+Made with ❤️ for awesome-free-apis
 
 </div>
