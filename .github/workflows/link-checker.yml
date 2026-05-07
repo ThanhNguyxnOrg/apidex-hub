@@ -185,39 +185,43 @@ jobs:
             }
 
             // Build the issue body
-            const body = `## ${statusIcon} Link Health Status: ${statusText}
-
-**Last checked**: ${today}
-**Workflow run**: [#${context.runNumber}](${runUrl})
-**Trigger**: \`${context.eventName}\`
-
----
-
-### 📈 Summary
-
-| Category | Count | Description |
-|---|---|---|
-| ✅ Working | ${okCount} | HTTP 200 — responding correctly |
-| 🛡️ Protected | ${protectedCount} | HTTP 403/429 — bot protection (API still works) |
-| ⚠️ Warning | ${warnCount} | Timeout/DNS/SSL issues (may be temporary) |
-| ❌ Error | ${errCount} | Server errors (5xx) |
-| 💀 Broken | ${brokenCount} | HTTP 404/410 — confirmed dead |
-
-**Healthy rate**: ${totalHealthy} APIs healthy (${okCount} + ${protectedCount})
-
----
-
-${brokenSection}
----
-
-### 📋 How This Works
-
-- 🔄 This report is **automatically updated daily** at 00:00 UTC
-- 🛡️ APIs with bot protection (403/429) are counted as **healthy**
-- 💀 Only confirmed 404/410 responses are marked as **broken**
-- 📦 Full report available as [workflow artifact](${runUrl})
-
-> *Last updated by [Link Checker workflow](${runUrl}) on ${today}*`;
+            const lines = [
+              `## ${statusIcon} Link Health Status: ${statusText}`,
+              '',
+              `**Last checked**: ${today}`,
+              `**Workflow run**: [#${context.runNumber}](${runUrl})`,
+              `**Trigger**: \`${context.eventName}\``,
+              '',
+              '---',
+              '',
+              '### 📈 Summary',
+              '',
+              '| Category | Count | Description |',
+              '|---|---|---|',
+              `| ✅ Working | ${okCount} | HTTP 200 — responding correctly |`,
+              `| 🛡️ Protected | ${protectedCount} | HTTP 403/429 — bot protection (API still works) |`,
+              `| ⚠️ Warning | ${warnCount} | Timeout/DNS/SSL issues (may be temporary) |`,
+              `| ❌ Error | ${errCount} | Server errors (5xx) |`,
+              `| 💀 Broken | ${brokenCount} | HTTP 404/410 — confirmed dead |`,
+              '',
+              `**Healthy rate**: ${totalHealthy} APIs healthy (${okCount} + ${protectedCount})`,
+              '',
+              '---',
+              '',
+              brokenSection,
+              '',
+              '---',
+              '',
+              '### 📋 How This Works',
+              '',
+              '- 🔄 This report is **automatically updated daily** at 00:00 UTC',
+              '- 🛡️ APIs with bot protection (403/429) are counted as **healthy**',
+              '- 💀 Only confirmed 404/410 responses are marked as **broken**',
+              `- 📦 Full report available as [workflow artifact](${runUrl})`,
+              '',
+              `> *Last updated by [Link Checker workflow](${runUrl}) on ${today}*`
+            ];
+            const body = lines.join('\n');
 
             // Find existing report issue
             const { data: existingIssues } = await github.rest.issues.listForRepo({
