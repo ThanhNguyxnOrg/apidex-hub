@@ -269,7 +269,6 @@ print(response.json()['fact'])
 | **WoRMS** | Marine species taxonomy and classification data. | No | ✅ | [Link](https://www.marinespecies.org/rest/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
 | **TheCatAPI** | Random cat images, breeds, and facts. | 🔑 ApiKey | ✅ | [Link](https://api.thecatapi.com/) |
-
 | **TheDogAPI** | Random dog images, breeds, and facts. | 🔑 ApiKey | ✅ | [Link](https://api.thedogapi.com/) |
 
 
@@ -874,14 +873,12 @@ print(response.json()['fact'])
 | **Quiz API** | Random trivia questions (**No Auth**). | No | ✅ | [Link](https://quizapi.io/) |
 | **Simkl** | Movies, TV, Anime metadata. | 🔑 ApiKey | ✅ | [Link](https://simkl.com/apidoc/) |
 | **StreamElements** | Twitch/YouTube live streaming data & overlays. | 🔑 ApiKey | ✅ | [Link](https://dev.streamelements.com/) |
-
 | **TheTVDB** | TV database with episodes and artwork. | 🔑 ApiKey | ✅ | [Link](https://thetvdb.github.io/v4-api/) |
 | **TMDb** | The Movie Database. | 🔑 ApiKey | ✅ | [Link](https://developers.themoviedb.org/3) |
 | **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://trakt.docs.apiary.io/) |
 | **Trivia API** | Trivia questions in various categories (**No Auth**). | No | ✅ | [Link](https://the-trivia-api.com/) |
 | **TVmaze** | TV shows and episode data (**No Auth**). | No | ✅ | [Link](https://www.tvmaze.com/api) |
 | **Watchmode** | Streaming availability. | 🔑 ApiKey | ✅ | [Link](https://api.watchmode.com/) |
-
 | **Bored API** | Get random activity suggestions when you are bored (**No Auth**). | No | ✅ | [Link](https://bored-api.appbrewery.com/) |
 
 
@@ -1014,7 +1011,6 @@ print(response.json()['fact'])
 | **National Bank of Poland** | Official exchange rates from NBP. | No | ✅ | [Link](https://api.nbp.pl/en.html) |
 | **Open Exchange Rates** | Currency conversion and exchange rates. | 🔑 ApiKey | ✅ | [Link](https://docs.openexchangerates.org/) |
 | **VATComply** | VAT rates and FX conversion data. | No | ✅ | [Link](https://www.vatcomply.com) |
-
 | **ExchangeRate.host** | Free foreign exchange and crypto rates (**No Auth**). | No | ✅ | [Link](https://exchangerate.host/) |
 
 
@@ -1114,7 +1110,6 @@ print(response.json()['fact'])
 | **RAWG** | Video games database (500k+ games). | 🔑 ApiKey | ✅ | [Link](https://rawg.io/apidocs) |
 | **Rick and Morty** | Show data. | No | ✅ | [Link](https://rickandmortyapi.com) |
 | **Riot Games** | League of Legends data. | 🔑 ApiKey | ✅ | [Link](https://developer.riotgames.com/) |
-
 | **RuneScape** | RuneScape and OSRS RPGs information. | No | ✅ | [Link](https://runescape.wiki/w/Application_programming_interface) |
 | **Scryfall** | Magic: The Gathering card search. | No | ✅ | [Link](https://scryfall.com/docs/api) |
 | **SpaceTradersAPI** | A playable inter-galactic space trading MMOAPI. | 🔐 OAuth | ✅ | [Link](https://spacetraders.io?rel=pub-apis) |
@@ -1130,7 +1125,6 @@ print(response.json()['fact'])
 | **xkcd** | Retrieve xkcd comics as JSON. | No | ✅ | [Link](https://xkcd.com/json.html) |
 | **Yu-Gi-Oh!** | Yu-Gi-Oh! card data. | No | ✅ | [Link](https://ygoprodeck.com/api-guide/) |
 | **Harry Potter API** | Harry Potter characters, spells, and houses (**No Auth**). | No | ✅ | [Link](https://hp-api.onrender.com/) |
-
 | **SWAPI (py4e)** | Star Wars API — people, planets, starships (**No Auth**, community mirror). | No | ✅ | [Link](https://swapi.py4e.com/) |
 
 
@@ -1319,7 +1313,6 @@ print(response.json()['fact'])
 | **ReqRes** | A hosted REST-API ready to respond to your AJAX requests. | No | ✅ | [Link](https://reqres.in/) |
 | **SampleAPIs** | Playground for RESTful and GraphQL endpoints (**No Auth**). | No | ✅ | [Link](https://api.sampleapis.com/) |
 | **This Person Does not Exist** | Generates real-life faces of people who do not exist. | No | ✅ | [Link](https://thispersondoesnotexist.com) |
-
 | **What The Commit** | Random commit message generator. | No | No | [Link](http://whatthecommit.com/index.txt) |
 | **Yes No** | Generate yes or no randomly. | No | ✅ | [Link](https://yesno.wtf/api) |
 | **JokeAPI v2** | Programming, dark, pun, and miscellaneous jokes with filters (**No Auth**). | No | ✅ | [Link](https://v2.jokeapi.dev/) |
@@ -1460,11 +1453,8 @@ print(response.json()['fact'])
 | **Where the ISS at** | Real-time ISS position, velocity and visibility (**No Auth**). | No | ✅ | [Link](https://wheretheiss.at/w/developer) |
 | **Wolfram Short Answers** | Computational knowledge answers. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/short-answers-api/documentation) |
 | **SpaceX API** | SpaceX launches, rockets, capsules, and Starlink data (**No Auth**). | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |
-
 | **Launch Library 2** | Upcoming and historical rocket launches worldwide (**No Auth**). | No | ✅ | [Link](https://thespacedevs.com/llapi) |
-
 | **Where the ISS at?** | Real-time International Space Station position tracking (**No Auth**). | No | ✅ | [Link](https://wheretheiss.at/w/developer) |
-
 | **Sunrise Sunset** | Sunrise and sunset times for any location (**No Auth**). | No | ✅ | [Link](https://sunrise-sunset.org/api) |
 
 
@@ -1601,7 +1591,6 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Ayrshare** | Social media APIs to post, get analytics, and manage multiple users social me... | 🔑 ApiKey | ✅ | [Link](https://www.ayrshare.com) |
-
 | **Blogger** | The Blogger APIs allows client applications to view and update Blogger content. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/blogger/) |
 | **Bluesky** | Decentralized social network API (AT Protocol). | 🔑 ApiKey | ✅ | [Link](https://docs.bsky.app/) |
 | **Discord** | Chat platform. | 🔐 OAuth | ✅ | [Link](https://discord.com/developers/docs/intro) |
@@ -1642,6 +1631,10 @@ print(response.json()['fact'])
 | **WhatsApp** | Messaging app. | 🔐 OAuth | ✅ | [Link](https://developers.facebook.com/docs/whatsapp) |
 | **YouTube** | Video sharing platform. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/youtube/v3) |
 | **Zalo** | Messaging and social platform. | 🔐 OAuth | ✅ | [Link](https://developers.zalo.me/) |
+| **Hacker News** | Y Combinator's Hacker News stories, comments, and user data (**No Auth**). | No | ✅ | [Link](https://github.com/HackerNews/API) |
+| **Lemmy** | Decentralized link aggregation and discussion platform API. | No | ✅ | [Link](https://lemmy.ml/) |
+| **Matrix** | Open standard for decentralized, real-time communication. | 🔑 ApiKey | ✅ | [Link](https://spec.matrix.org/latest/) |
+| **Nostr** | Decentralized social protocol — censorship-resistant notes and messaging. | No | ✅ | [Link](https://github.com/nostr-protocol/nostr) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1651,16 +1644,13 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **API-Football** | Football (soccer) live scores, fixtures, stats. | 🔑 ApiKey | ✅ | [Link](https://www.api-football.com/documentation-v3) |
 | **API-Sports** | Multi-sport live data (free tier). | 🔑 ApiKey | ✅ | [Link](https://api-sports.io/) |
-| **ApiMedic** | ApiMedic offers a medical symptom checker API primarily for patients. | 🔑 ApiKey | ✅ | [Link](https://apimedic.com/) |
 | **Cloudbet** | Official Cloudbet API provides real-time sports odds and betting API to place... | 🔑 ApiKey | ✅ | [Link](https://www.cloudbet.com/api/) |
 | **CollegeFootballData.com** | Unofficial detailed American college football statistics, records, and result... | 🔑 ApiKey | ✅ | [Link](https://collegefootballdata.com) |
 | **CricketData** | Live cricket scores and statistics. | 🔑 ApiKey | ✅ | [Link](https://cricketdata.org/) |
-
 | **Fitbit** | Fitbit Information. | 🔐 OAuth | ✅ | [Link](https://dev.fitbit.com/) |
 | **Football** | A simple Open Source Football API to get squads’ stats, best scorers and more. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/GiulianoCrescimbeni/api/football98/) |
 | **Football (Soccer) Videos** | Embed codes for goals and highlights from Premier League, Bundesliga, Serie A... | No | ✅ | [Link](https://www.scorebat.com/video-api/) |
 | **Football Prediction** | Football match predictions. | 🔑 ApiKey | ✅ | [Link](https://boggio-analytics.com/fp-api/) |
-| **Football-Data** | Football data with matches info, players, teams, and competitions. | 🔑 ApiKey | ✅ | [Link](https://www.football-data.org) |
 | **Football-Data.org** | Football data and statistics (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.football-data.org/documentation/quickstart) |
 | **JCDecaux Bike** | JCDecaux's self-service bicycles. | 🔑 ApiKey | ✅ | [Link](https://developer.jcdecaux.com/) |
 | **NBA Data** | All NBA Stats DATA, Games, Livescore, Standings, Statistics. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/api-sports/api/api-nba/) |
@@ -1678,7 +1668,9 @@ print(response.json()['fact'])
 | **Strava** | Connect with athletes, activities and more. | 🔐 OAuth | ✅ | [Link](https://strava.github.io/api/) |
 | **TheSportsDB** | Open crowd-sourced sports data and artwork. | 🔑 ApiKey | ✅ | [Link](https://www.thesportsdb.com/api.php) |
 | **Tredict** | Get and set activities, health data and more. | 🔐 OAuth | ✅ | [Link](https://www.tredict.com/blog/oauth_docs/) |
-
+| **ESPN** | Unofficial ESPN API for NFL, NBA, MLB, NHL scores and schedules (**No Auth**). | No | ✅ | [Link](https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b) |
+| **Jolpica F1** | Formula 1 race results, standings, and historical data (**No Auth**). | No | ✅ | [Link](https://api.jolpi.ca/ergast/f1/) |
+| **MLB Stats API** | Official Major League Baseball statistics and game data (**No Auth**). | No | ✅ | [Link](https://statsapi.mlb.com/docs/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1708,7 +1700,6 @@ print(response.json()['fact'])
 | **The Color API** | Color conversion, schemes, and naming (**No Auth**). | No | ✅ | [Link](https://www.thecolorapi.com/) |
 | **Word Cloud** | Easily create word clouds. | 🔑 ApiKey | ✅ | [Link](https://wordcloudapi.com/) |
 | **Random Color API** | Generate random colors with hex, RGB, and HSL values (**No Auth**). | No | ✅ | [Link](https://x-colors.yurace.pro/) |
-
 | **EmojiHub** | Random emoji data organized by category and group (**No Auth**). | No | ✅ | [Link](https://github.com/cheatsnake/emojihub) |
 
 
@@ -2127,13 +2118,9 @@ print(response.json()['fact'])
 
 
 | Name | Description | Auth | HTTPS | Link |
-
 |------|-------------|------|-------|------|
-
 | **Genderize** | Predict the gender of a name (**No Auth**). | No | ✅ | [Link](https://genderize.io/) |
-
 | **Nationalize** | Predict the nationality of a name (**No Auth**). | No | ✅ | [Link](https://nationalize.io/) |
-
 | **Agify** | Predict the age of a name (**No Auth**). | No | ✅ | [Link](https://agify.io/) |
 
 
@@ -2145,9 +2132,7 @@ print(response.json()['fact'])
 
 
 | Name | Description | Auth | HTTPS | Link |
-
 |------|-------------|------|-------|------|
-
 | **Metropolitan Museum** | Access 5,000 years of art from The Met collection (**No Auth**). | No | ✅ | [Link](https://metmuseum.github.io/) |
 
 
