@@ -56,10 +56,10 @@ jobs:
           if [ -f link_check_report.txt ]; then
             BROKEN_COUNT=$(grep -oP "Broken: \K[0-9]+" link_check_report.txt || echo "0")
             OK_COUNT=$(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo "0")
-            PROTECTED_COUNT=$(grep -oP "Bot protection.*: \K[0-9]+" link_check_report.txt || echo "0")
+            PROTECTED_COUNT=$(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo "0")
             WARN_COUNT=$(grep -oP "Warnings: \K[0-9]+" link_check_report.txt || echo "0")
             ERR_COUNT=$(grep -oP "Errors: \K[0-9]+" link_check_report.txt || echo "0")
-            TOTAL=$(grep -oP "Healthy: \K[0-9]+" link_check_report.txt || echo "0")
+            TOTAL=$(($(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo 0) + $(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo 0)))
           else
             BROKEN_COUNT=0
             OK_COUNT=0
@@ -204,7 +204,7 @@ jobs:
               `| ❌ Error | ${errCount} | Server errors (5xx) |`,
               `| 💀 Broken | ${brokenCount} | HTTP 404/410 — confirmed dead |`,
               '',
-              `**Healthy rate**: ${totalHealthy} APIs healthy (${okCount} + ${protectedCount})`,
+              `**Healthy rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + brokenCount} APIs healthy`,
               '',
               '---',
               '',
