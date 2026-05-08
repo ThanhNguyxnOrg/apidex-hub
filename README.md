@@ -256,7 +256,6 @@ print(response.json()['fact'])
 | **IUCN** | IUCN Red List of Threatened Species. | 🔑 ApiKey | No | [Link](http://apiv3.iucnredlist.org/api/v3/docs) |
 | **PlaceBear** | Placeholder bear pictures. | No | ✅ | [Link](https://placebear.com/) |
 | **PlaceDog** | Placeholder Dog pictures. | No | ✅ | [Link](https://place.dog) |
-| **PlaceKitten** | Placeholder Kitten pictures. | No | ✅ | [Link](https://placekitten.com/) |
 | **RandomDog** | Random pictures of dogs. | No | ✅ | [Link](https://random.dog/woof.json) |
 | **RandomDuck** | Random pictures of ducks. | No | ✅ | [Link](https://random-d.uk/api) |
 | **RandomFox** | Random pictures of foxes. | No | ✅ | [Link](https://randomfox.ca/floof/) |
@@ -335,7 +334,6 @@ print(response.json()['fact'])
 | **SAWO Labs** | Simplify login and improve user experience by integrating passwordless authen... | 🔑 ApiKey | ✅ | [Link](https://sawolabs.com) |
 | **Stytch** | Authentication APIs for passwords, OTP, magic links, and OAuth. | 🔑 ApiKey | ✅ | [Link](https://stytch.com/docs/api) |
 | **SuperTokens** | Open-source auth solution for session and user management. | No | ✅ | [Link](https://supertokens.com/docs) |
-| **Warrant** | Fine-grained authorization and RBAC APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.warrant.dev/) |
 | **WorkOS** | Enterprise SSO, SCIM, and user management APIs. | 🔑 ApiKey | ✅ | [Link](https://workos.com/docs/reference) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
@@ -1323,7 +1321,6 @@ print(response.json()['fact'])
 | **ItsThisForThat** | Generate Random startup ideas. | No | ✅ | [Link](https://itsthisforthat.com/api.php) |
 | **JSONPlaceholder** | Free fake API for testing and prototyping (posts, comments, users). | No | ✅ | [Link](https://jsonplaceholder.typicode.com/) |
 | **Mailsac** | Disposable Email. | 🔑 ApiKey | ✅ | [Link](https://mailsac.com/docs/api) |
-| **Metaphorsum** | Generate demo paragraphs giving number of words and sentences. | No | No | [Link](http://metaphorpsum.com/) |
 | **MockAPI.io** | Create custom mock REST APIs with fake data. | 🔑 ApiKey | ✅ | [Link](https://mockapi.io/docs) |
 | **Mockaroo** | Generate custom realistic test data in JSON, CSV, SQL. | 🔑 ApiKey | ✅ | [Link](https://www.mockaroo.com/) |
 | **Postman Echo** | Test REST clients with echo endpoint (**No Auth**). | No | ✅ | [Link](https://www.postman-echo.com/) |
@@ -1502,7 +1499,6 @@ print(response.json()['fact'])
 | **SecurityTrails** | Domain and DNS intelligence. | 🔑 ApiKey | ✅ | [Link](https://securitytrails.com/corp/api) |
 | **Shodan** | Internet-connected devices search engine. | 🔑 ApiKey | ✅ | [Link](https://developer.shodan.io/) |
 | **Spyse** | Access data on all Internet assets and build powerful attack surface manageme... | 🔑 ApiKey | ✅ | [Link](https://spyse-dev.readme.io/reference/quick-start) |
-| **Threat Jammer** | Risk scoring service from curated threat intelligence data. | 🔑 ApiKey | ✅ | [Link](https://threatjammer.com/docs/index) |
 | **UK Police** | UK Police data. | No | ✅ | [Link](https://data.police.uk/docs/) |
 | **VulDB** | VulDB API allows to initiate queries for one or more items along with transac... | 🔑 ApiKey | ✅ | [Link](https://vuldb.com/?doc.api) |
 
@@ -2017,7 +2013,6 @@ print(response.json()['fact'])
 | **JokeAPI** | Jokes in various categories (**No Auth**). | No | ✅ | [Link](https://jokeapi.dev/) |
 | **Kanye.rest** | Random Kanye West quotes (**No Auth**). | No | ✅ | [Link](https://api.kanye.rest/) |
 | **Numbers API** | Fun facts about numbers (**No Auth**). | No | ✅ | [Link](http://numbersapi.com/) |
-| **Quote Garden** | Collection of 5000+ quotes (**No Auth**). | No | ✅ | [Link](https://pprathameshmore.github.io/QuoteGarden/) |
 | **Random Dog Facts** | Random dog facts API (**No Auth**). | No | ✅ | [Link](https://kinduff.github.io/dog-api/) |
 | **Tronald Dump** | Random Donald Trump quotes (**No Auth**). | No | ✅ | [Link](https://tronalddump.io/) |
 | **Useless Facts** | Random useless facts (**No Auth**). | No | ✅ | [Link](https://uselessfacts.jsph.pl/) |
