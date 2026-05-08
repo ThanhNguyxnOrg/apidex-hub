@@ -234,6 +234,8 @@ print(response.json()['fact'])
 - [🌤️ Weather](#weather)
 - [💼 Business](#business)
 - [📄 Documents & Productivity](#documents-productivity)
+- [👤 Demographic Analysis](#demographic-analysis)
+- [🏛️ Museums & Art](#museums-art)
 
 ---
 
@@ -266,6 +268,10 @@ print(response.json()['fact'])
 | **TheCatDB** | Cat breeds and facts database. | 🔑 ApiKey | ✅ | [Link](https://www.thecatapi.com/) |
 | **WoRMS** | Marine species taxonomy and classification data. | No | ✅ | [Link](https://www.marinespecies.org/rest/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
+| **TheCatAPI** | Random cat images, breeds, and facts. | 🔑 ApiKey | ✅ | [Link](https://api.thecatapi.com/) |
+
+| **TheDogAPI** | Random dog images, breeds, and facts. | 🔑 ApiKey | ✅ | [Link](https://api.thedogapi.com/) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -283,13 +289,14 @@ print(response.json()['fact'])
 | **Kitsu** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://kitsu.docs.apiary.io/) |
 | **Kitsu Anime** | Discover anime and manga (**No Auth**). | No | ✅ | [Link](https://kitsu.docs.apiary.io/#) |
 | **Mangapi** | Translate manga pages. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/pierre.carcellermeunier/api/mangapi3/) |
-| **MyAnimeList** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://myanimelist.net/clubs.php?cid=13727) |
 | **NekosBest** | Neko Images & Anime GIFs. | No | ✅ | [Link](https://docs.nekos.best) |
 | **Shikimori** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://shikimori.one/api/doc) |
 | **Studio Ghibli** | Resources from Studio Ghibli films. | No | ✅ | [Link](https://ghibliapi.vercel.app) |
 | **Trace Moe** | Anime Scene Search Engine. | No | ✅ | [Link](https://soruly.github.io/trace.moe-api/#/) |
 | **Waifu.im** | API for serving anime images (versatile query options). | No | ✅ | [Link](https://waifu.im/) |
 | **Waifu.pics** | Image sharing platform for anime images. | No | ✅ | [Link](https://waifu.pics/docs) |
+
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -347,7 +354,6 @@ print(response.json()['fact'])
 | **Ganjoor** | Classic Persian poetry works including access to related manuscripts, recitat... | 🔐 OAuth | ✅ | [Link](https://api.ganjoor.net) |
 | **Goodreads** | Book reviews and ratings metadata. | 🔑 ApiKey | ✅ | [Link](https://www.goodreads.com/api) |
 | **Google Books** | Search and preview books. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/books/) |
-| **Gutendex** | JSON API for Project Gutenberg (public domain books). | No | ✅ | [Link](https://gutendex.com/) |
 | **ISBNdb** | ISBN book database. | 🔑 ApiKey | ✅ | [Link](https://isbndb.com/apidocs/v2) |
 | **Open Library** | Fetch data about millions of books and covers. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
 | **Penguin Publishing** | Book data. | No | ✅ | [Link](http://www.penguinrandomhouse.biz/webservices/rest/) |
@@ -442,6 +448,7 @@ print(response.json()['fact'])
 | **VALR** | Cryptocurrency Exchange based in South Africa. | 🔑 ApiKey | ✅ | [Link](https://docs.valr.com/) |
 | **WorldCoinIndex** | Cryptocurrencies Prices. | 🔑 ApiKey | ✅ | [Link](https://www.worldcoinindex.com/apiservice) |
 | **ZMOK** | Ethereum JSON RPC API and Web3 provider. | No | ✅ | [Link](https://zmok.io) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -614,6 +621,11 @@ print(response.json()['fact'])
 | **Web Scraper** | Web scraping service (ScrapingBee). | 🔑 ApiKey | ✅ | [Link](https://www.scrapingbee.com/documentation/) |
 | **WebScraping.AI** | Web Scraping API with built-in proxies and JS rendering. | 🔑 ApiKey | ✅ | [Link](https://webscraping.ai/) |
 | **ZenRows** | Web Scraping API that bypasses anti-bot solutions while offering JS rendering... | 🔑 ApiKey | ✅ | [Link](https://www.zenrows.com/) |
+| **GitHub REST API** | Access GitHub data — repos, users, gists, and more (**No Auth for public data**). | No | ✅ | [Link](https://docs.github.com/en/rest) |
+
+
+| **Microlink** | Extract metadata, take screenshots, and generate PDFs from any URL. | No | ✅ | [Link](https://microlink.io/docs/api/getting-started/overview) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -711,13 +723,13 @@ print(response.json()['fact'])
 | **Merriam-Webster** | Dictionary and thesaurus. | 🔑 ApiKey | ✅ | [Link](https://dictionaryapi.com/) |
 | **Oxford Dictionaries** | English dictionary and language data. | 🔑 ApiKey | ✅ | [Link](https://developer.oxforddictionaries.com/) |
 | **Purgomalum** | Profanity filter API. | No | ✅ | [Link](https://www.purgomalum.com/) |
-| **Synonyms** | Synonyms, thesaurus and antonyms information for any given word. | 🔑 ApiKey | ✅ | [Link](https://www.synonyms.com/synonyms_api.php) |
 | **Synonyms API** | Find synonyms for any word. | No | ✅ | [Link](https://api-ninjas.com/api/thesaurus) |
 | **Urban Dictionary** | Slang dictionary. | No | ✅ | [Link](https://api.urbandictionary.com/v0/define?term=api) |
 | **Wiktionary API** | Open dictionary and thesaurus data. | No | ✅ | [Link](https://en.wiktionary.org/w/api.php) |
 | **Wordnik** | Dictionary Data. | 🔑 ApiKey | ✅ | [Link](https://developer.wordnik.com) |
 | **Words** | Definitions and synonyms for more than 150,000 words. | 🔑 ApiKey | ✅ | [Link](https://www.wordsapi.com/docs/) |
 | **WordsAPI** | Word definitions, synonyms, antonyms. | 🔑 ApiKey | ✅ | [Link](https://www.wordsapi.com/) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -870,6 +882,9 @@ print(response.json()['fact'])
 | **TVmaze** | TV shows and episode data (**No Auth**). | No | ✅ | [Link](https://www.tvmaze.com/api) |
 | **Watchmode** | Streaming availability. | 🔑 ApiKey | ✅ | [Link](https://api.watchmode.com/) |
 
+| **Bored API** | Get random activity suggestions when you are bored (**No Auth**). | No | ✅ | [Link](https://bored-api.appbrewery.com/) |
+
+
 [⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="events"></a>🎪 Events
@@ -919,6 +934,8 @@ print(response.json()['fact'])
 | **They Said So Quotes** | Quotes Trusted by many fortune brands around the world. | No | ✅ | [Link](https://theysaidso.com/api/) |
 | **Traitify** | Assess, collect and analyze Personality. | No | ✅ | [Link](https://app.traitify.com/developer) |
 | **Udemy(instructor)** | API for instructors on Udemy. | 🔑 ApiKey | ✅ | [Link](https://www.udemy.com/developers/instructor/) |
+| **Type.fit Quotes** | Collection of inspirational quotes (**No Auth**). | No | ✅ | [Link](https://type.fit/api/quotes) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -998,6 +1015,9 @@ print(response.json()['fact'])
 | **Open Exchange Rates** | Currency conversion and exchange rates. | 🔑 ApiKey | ✅ | [Link](https://docs.openexchangerates.org/) |
 | **VATComply** | VAT rates and FX conversion data. | No | ✅ | [Link](https://www.vatcomply.com) |
 
+| **ExchangeRate.host** | Free foreign exchange and crypto rates (**No Auth**). | No | ✅ | [Link](https://exchangerate.host/) |
+
+
 [⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="food-drink"></a>🍔 Food & Drink
@@ -1025,6 +1045,7 @@ print(response.json()['fact'])
 | **Yelp Fusion** | Business and restaurant reviews. | 🔑 ApiKey | ✅ | [Link](https://docs.developer.yelp.com/) |
 | **Zestful** | Parse recipe ingredients. | 🔑 ApiKey | ✅ | [Link](https://zestfuldata.com/) |
 | **Zomato** | Restaurant search and reviews. | 🔑 ApiKey | ✅ | [Link](https://developers.zomato.com/api) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1108,6 +1129,10 @@ print(response.json()['fact'])
 | **Wargaming.net** | Wargaming.net info and stats. | 🔑 ApiKey | ✅ | [Link](https://developers.wargaming.net/) |
 | **xkcd** | Retrieve xkcd comics as JSON. | No | ✅ | [Link](https://xkcd.com/json.html) |
 | **Yu-Gi-Oh!** | Yu-Gi-Oh! card data. | No | ✅ | [Link](https://ygoprodeck.com/api-guide/) |
+| **Harry Potter API** | Harry Potter characters, spells, and houses (**No Auth**). | No | ✅ | [Link](https://hp-api.onrender.com/) |
+
+| **SWAPI (py4e)** | Star Wars API — people, planets, starships (**No Auth**, community mirror). | No | ✅ | [Link](https://swapi.py4e.com/) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1179,6 +1204,8 @@ print(response.json()['fact'])
 | **ZipCodeAPI** | US zip code distance, radius and location API. | 🔑 ApiKey | ✅ | [Link](https://www.zipcodeapi.com) |
 | **Zippopotam.us** | Postal/zip code lookup for 60+ countries (**No Auth**). | No | ✅ | [Link](https://api.zippopotam.us/) |
 | **Ziptastic** | Get the country, state, and city of any US zip-code. | No | ✅ | [Link](https://ziptasticapi.com/) |
+| **Geocode.maps.co** | Free geocoding and reverse geocoding (**No Auth**). | No | ✅ | [Link](https://geocode.maps.co/) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1295,6 +1322,8 @@ print(response.json()['fact'])
 
 | **What The Commit** | Random commit message generator. | No | No | [Link](http://whatthecommit.com/index.txt) |
 | **Yes No** | Generate yes or no randomly. | No | ✅ | [Link](https://yesno.wtf/api) |
+| **JokeAPI v2** | Programming, dark, pun, and miscellaneous jokes with filters (**No Auth**). | No | ✅ | [Link](https://v2.jokeapi.dev/) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1333,6 +1362,7 @@ print(response.json()['fact'])
 | **Spotify** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://beta.developer.spotify.com/documentation/web-api/) |
 | **TasteDive** | Similar artist API (also works for movies and TV shows) | 🔑 ApiKey | ✅ | [Link](https://tastedive.com/read/api) |
 | **TheAudioDB** | Music metadata, charts, and more. | 🔑 ApiKey | ✅ | [Link](https://www.theaudiodb.com/api) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1392,6 +1422,8 @@ print(response.json()['fact'])
 | **Unsplash** | High-quality photos. | 🔐 OAuth | ✅ | [Link](https://unsplash.com/developers) |
 | **Wallhaven** | Wallpapers. | 🔑 ApiKey | ✅ | [Link](https://wallhaven.cc/help/api) |
 | **Webdam** | Images. | 🔐 OAuth | ✅ | [Link](https://www.damsuccess.com/hc/en-us/articles/202134055-REST-API) |
+| **DiceBear** | Generate unique avatar images from any seed string (**No Auth**). | No | ✅ | [Link](https://www.dicebear.com/introduction/) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1427,6 +1459,14 @@ print(response.json()['fact'])
 | **USGS Water Services** | Water quality and level info for rivers and lakes. | No | ✅ | [Link](https://waterservices.usgs.gov/) |
 | **Where the ISS at** | Real-time ISS position, velocity and visibility (**No Auth**). | No | ✅ | [Link](https://wheretheiss.at/w/developer) |
 | **Wolfram Short Answers** | Computational knowledge answers. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/short-answers-api/documentation) |
+| **SpaceX API** | SpaceX launches, rockets, capsules, and Starlink data (**No Auth**). | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |
+
+| **Launch Library 2** | Upcoming and historical rocket launches worldwide (**No Auth**). | No | ✅ | [Link](https://thespacedevs.com/llapi) |
+
+| **Where the ISS at?** | Real-time International Space Station position tracking (**No Auth**). | No | ✅ | [Link](https://wheretheiss.at/w/developer) |
+
+| **Sunrise Sunset** | Sunrise and sunset times for any location (**No Auth**). | No | ✅ | [Link](https://sunrise-sunset.org/api) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1501,6 +1541,8 @@ print(response.json()['fact'])
 | **Shopee** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://open.shopee.com/documents?version=1) |
 | **Tokopedia** | Tokopedia's Official API for integration of various services from Tokopedia. | 🔐 OAuth | ✅ | [Link](https://developer.tokopedia.com/openapi/guide/#/) |
 | **WooCommerce** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://woocommerce.github.io/woocommerce-rest-api-docs/) |
+| **Makeup API** | Search makeup products by brand, type, price (**No Auth**). | No | ✅ | [Link](http://makeup-api.herokuapp.com/) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1637,6 +1679,7 @@ print(response.json()['fact'])
 | **TheSportsDB** | Open crowd-sourced sports data and artwork. | 🔑 ApiKey | ✅ | [Link](https://www.thesportsdb.com/api.php) |
 | **Tredict** | Get and set activities, health data and more. | 🔐 OAuth | ✅ | [Link](https://www.tredict.com/blog/oauth_docs/) |
 
+
 [⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="design-colors"></a>🎨 Design & Colors
@@ -1664,6 +1707,10 @@ print(response.json()['fact'])
 | **SVG Repo** | Free SVG icons and vectors. | No | ✅ | [Link](https://www.svgrepo.com/) |
 | **The Color API** | Color conversion, schemes, and naming (**No Auth**). | No | ✅ | [Link](https://www.thecolorapi.com/) |
 | **Word Cloud** | Easily create word clouds. | 🔑 ApiKey | ✅ | [Link](https://wordcloudapi.com/) |
+| **Random Color API** | Generate random colors with hex, RGB, and HSL values (**No Auth**). | No | ✅ | [Link](https://x-colors.yurace.pro/) |
+
+| **EmojiHub** | Random emoji data organized by category and group (**No Auth**). | No | ✅ | [Link](https://github.com/cheatsnake/emojihub) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1972,7 +2019,6 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Adzuna** | Job board aggregator with salary data. | 🔑 ApiKey | ✅ | [Link](https://developer.adzuna.com/overview) |
-
 | **Arbeitnow** | Free remote job board API. | No | ✅ | [Link](https://documenter.getpostman.com/view/18545278/UVJbJdKh) |
 | **Arbeitsamt** | API for the "Arbeitsamt", which is a german Job board aggregator. | 🔐 OAuth | ✅ | [Link](https://jobsuche.api.bund.dev/) |
 | **Careerjet** | Job search engine. | 🔑 ApiKey | No | [Link](https://www.careerjet.com/partners/api/) |
@@ -2031,6 +2077,7 @@ print(response.json()['fact'])
 | **Weatherstack** | Real-time & historical world weather data. | 🔑 ApiKey | ✅ | [Link](https://weatherstack.com/) |
 | **Yandex.Weather** | Assesses weather condition in specific locations. | 🔑 ApiKey | ✅ | [Link](https://yandex.com/dev/weather/) |
 
+
 [⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="business"></a>💼 Business
@@ -2075,6 +2122,38 @@ print(response.json()['fact'])
 | **Zube** | Full stack project management. | 🔐 OAuth | ✅ | [Link](https://zube.io/docs/api) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="demographic-analysis"></a>👤 Demographic Analysis
+
+
+| Name | Description | Auth | HTTPS | Link |
+
+|------|-------------|------|-------|------|
+
+| **Genderize** | Predict the gender of a name (**No Auth**). | No | ✅ | [Link](https://genderize.io/) |
+
+| **Nationalize** | Predict the nationality of a name (**No Auth**). | No | ✅ | [Link](https://nationalize.io/) |
+
+| **Agify** | Predict the age of a name (**No Auth**). | No | ✅ | [Link](https://agify.io/) |
+
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+
+
+## <a id="museums-art"></a>🏛️ Museums & Art
+
+
+| Name | Description | Auth | HTTPS | Link |
+
+|------|-------------|------|-------|------|
+
+| **Metropolitan Museum** | Access 5,000 years of art from The Met collection (**No Auth**). | No | ✅ | [Link](https://metmuseum.github.io/) |
+
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+
 ## 🤝 Contributing
 
 Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
