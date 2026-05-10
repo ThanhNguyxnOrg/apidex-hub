@@ -280,6 +280,8 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **AniAPI** | Anime discovery, streaming & syncing with trackers. | 🔐 OAuth | ✅ | [Link](https://aniapi.com/docs/) |
 | **AniDB** | Anime Database. | 🔑 ApiKey | No | [Link](https://wiki.anidb.net/HTTP_API_Definition) |
+| **AniList** | GraphQL anime and manga database (**No Auth**). | No | ✅ | [Link](https://anilist.gitbook.io/anilist-apiv2-docs/) |
+| **AnimeChan** | Random anime quotes (**No Auth**). | No | ✅ | [Link](https://animechan.xyz/docs) |
 | **AnimeFacts** | Anime facts (over 100+). | No | ✅ | [Link](https://chandan-02.github.io/anime-facts-rest-api/) |
 | **AnimeNewsNetwork** | Anime industry news. | No | ✅ | [Link](https://www.animenewsnetwork.com/encyclopedia/api.php) |
 | **Catboy** | Neko images, funny GIFs & more. | No | ✅ | [Link](https://catboys.com/api) |
@@ -287,6 +289,7 @@ print(response.json()['fact'])
 | **Jikan** | Unofficial MyAnimeList API. | No | ✅ | [Link](https://jikan.moe) |
 | **Kitsu** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://kitsu.docs.apiary.io/) |
 | **Kitsu Anime** | Discover anime and manga (**No Auth**). | No | ✅ | [Link](https://kitsu.docs.apiary.io/#) |
+| **MangaDex** | Manga catalog, chapters, and covers (**No Auth**). | No | ✅ | [Link](https://api.mangadex.org/docs/) |
 | **Mangapi** | Translate manga pages. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/pierre.carcellermeunier/api/mangapi3/) |
 | **NekosBest** | Neko Images & Anime GIFs. | No | ✅ | [Link](https://docs.nekos.best) |
 | **Shikimori** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://shikimori.one/api/doc) |
@@ -307,10 +310,12 @@ print(response.json()['fact'])
 | **AlienVault OTX** | IP/Domain/URL reputation. | 🔑 ApiKey | ✅ | [Link](https://otx.alienvault.com/api) |
 | **CAPEsandbox** | Malware analysis. | 🔑 ApiKey | ✅ | [Link](https://capev2.readthedocs.io/en/latest/usage/api.html) |
 | **Google Safe Browsing** | Google Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/safe-browsing/) |
+| **Hybrid Analysis** | Malware sample lookup and sandbox reports. | 🔑 ApiKey | ✅ | [Link](https://www.hybrid-analysis.com/docs/api/v2) |
 | **MalShare** | Malware analysis. | 🔑 ApiKey | ✅ | [Link](https://malshare.com/doc.php) |
 | **MalwareBazaar** | Malware analysis. | 🔑 ApiKey | ✅ | [Link](https://bazaar.abuse.ch/api/) |
-| **Metacert** | Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://metacert.com/) |
+| **ThreatFox** | IOC database (malware C2, URLs, hashes) from abuse.ch. | No | ✅ | [Link](https://threatfox.abuse.ch/api/) |
 | **NoPhishy** | Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/Amiichu/api/exerra-phishing-check/) |
+| **PhishTank** | Community phishing URL database and reputation (Cisco Talos). | 🔑 ApiKey | ✅ | [Link](https://phishtank.org/api_info.php) |
 | **Scanii** | File/Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://docs.scanii.com/) |
 | **URLhaus** | Link/Domain reputation. | No | ✅ | [Link](https://urlhaus-api.abuse.ch/) |
 | **URLScan.io** | Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://urlscan.io/about-api/) |
@@ -504,12 +509,13 @@ print(response.json()['fact'])
 | **Azure DevOps** | DevOps tools. | 🔑 ApiKey | ✅ | [Link](https://docs.microsoft.com/en-us/rest/api/azure/devops) |
 | **Base** | Building quick backends. | 🔑 ApiKey | ✅ | [Link](https://www.base-api.io/) |
 | **Bitbucket** | Git solution. | 🔐 OAuth | ✅ | [Link](https://developer.atlassian.com/bitbucket/api/2/reference/) |
-| **Blague.xyz** | La plus grande API de Blagues FR/The biggest FR jokes API. | 🔑 ApiKey | ✅ | [Link](https://blague.xyz/) |
+| **Blagues API** | French jokes API with categories (dev, dark, global, etc.). | 🔑 ApiKey | ✅ | [Link](https://www.blagues-api.fr/) |
 | **Blitapp** | Schedule screenshots of web pages and sync them to your cloud. | 🔑 ApiKey | ✅ | [Link](https://blitapp.com/api/) |
 | **Browshot** | Easily make screenshots of web pages in any screen size, as any device. | 🔑 ApiKey | ✅ | [Link](https://browshot.com/api/documentation) |
 | **CDNJS** | Library info. | No | ✅ | [Link](https://api.cdnjs.com/libraries/jquery) |
 | **Changelogs.md** | Structured changelog metadata from open source projects. | No | ✅ | [Link](https://changelogs.md) |
 | **Clerk** | User management and authentication (free tier). | 🔑 ApiKey | ✅ | [Link](https://clerk.com/docs/reference/backend-api) |
+| **Cloudflare Radar** | Internet traffic, routing, and outage insights (free tier). | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/radar/) |
 | **Cloudinary** | Image and video management API. | 🔑 ApiKey | ✅ | [Link](https://cloudinary.com/documentation/image_upload_api_reference) |
 | **Codacy** | Code quality and security analysis. | 🔑 ApiKey | ✅ | [Link](https://api.codacy.com/api/api-docs) |
 | **Codeforces** | Get access to Codeforces data. | 🔑 ApiKey | ✅ | [Link](https://codeforces.com/apiHelp) |
@@ -927,6 +933,7 @@ print(response.json()['fact'])
 | **DummyJSON Quotes** | Fake quotes dataset API. | No | ✅ | [Link](https://dummyjson.com/docs/quotes) |
 | **FavQs.com** | FavQs allows you to collect, discover and share your favorite quotes. | 🔑 ApiKey | ✅ | [Link](https://favqs.com/api) |
 | **Forismatic** | Inspirational Quotes. | No | No | [Link](http://forismatic.com/en/api/) |
+| **Quotable** | Random quotes with authors, tags, and pagination (**No Auth**). | No | ✅ | [Link](https://github.com/lukePeavey/quotable) |
 | **Quotes on Design** | Inspirational Quotes. | No | ✅ | [Link](https://quotesondesign.com/api/) |
 | **They Said So Quotes** | Quotes Trusted by many fortune brands around the world. | No | ✅ | [Link](https://theysaidso.com/api/) |
 | **Traitify** | Assess, collect and analyze Personality. | No | ✅ | [Link](https://app.traitify.com/developer) |
@@ -1182,6 +1189,7 @@ print(response.json()['fact'])
 | **Open Topo Data** | Elevation and ocean depth for a latitude and longitude. | No | ✅ | [Link](https://www.opentopodata.org) |
 | **OpenCage** | Forward and reverse geocoding using open data. | 🔑 ApiKey | ✅ | [Link](https://opencagedata.com) |
 | **OpenStreetMap** | Map data. | 🔐 OAuth | ✅ | [Link](http://wiki.openstreetmap.org/wiki/API) |
+| **OpenTripMap** | Tourist attractions and points of interest worldwide. | 🔑 ApiKey | ✅ | [Link](https://dev.opentripmap.org/docs) |
 | **Pinball Map** | A crowdsourced map of public pinball machines. | No | ✅ | [Link](https://pinballmap.com/api/v1/docs) |
 | **Postali** | Mexico Zip Codes API. | No | ✅ | [Link](https://postali.app/api) |
 | **PostcodeData.nl** | Provide geolocation data based on postcode for Dutch addresses. | No | No | [Link](http://api.postcodedata.nl/v1/postcode/?postcode=1211EP&streetnumber=60&ref=domeinnaam.nl&type=json) |
@@ -1484,6 +1492,7 @@ print(response.json()['fact'])
 | **Mozilla Observatory** | Website security analysis (**No Auth**). | No | ✅ | [Link](https://observatory.mozilla.org/) |
 | **MSRC** | Microsoft vulnerability and CVRF data feeds. | No | ✅ | [Link](https://msrc.microsoft.com/report/developer) |
 | **National Vulnerability Database** | U.S. National Vulnerability Database. | No | ✅ | [Link](https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog) |
+| **OSV** | Open source vulnerability database and API (**No Auth**). | No | ✅ | [Link](https://google.github.io/osv.dev/) |
 | **PhishStats** | Phishing database. | No | ✅ | [Link](https://phishstats.info/) |
 | **Privacy.com** | Generate merchant-specific and one-time use credit card numbers that link bac... | 🔑 ApiKey | ✅ | [Link](https://privacy.com/developer/docs) |
 | **Pulsedive** | Scan, search and collect threat intelligence data in real-time. | 🔑 ApiKey | ✅ | [Link](https://pulsedive.com/api/) |
@@ -1945,6 +1954,7 @@ print(response.json()['fact'])
 | **Mux** | Video infrastructure and analytics. | 🔑 ApiKey | ✅ | [Link](https://docs.mux.com/) |
 | **Openverse** | Search openly-licensed media. | No | ✅ | [Link](https://api.openverse.org/v1/) |
 | **PeerTube** | Federated video platform API. | No | ✅ | [Link](https://docs.joinpeertube.org/api-rest-reference.html) |
+| **SponsorBlock** | Crowdsourced YouTube sponsor segments and skip timestamps (**No Auth**). | No | ✅ | [Link](https://wiki.sponsor.ajay.app/w/API_Docs) |
 | **STAPI** | Information on all things Star Trek. | No | No | [Link](http://stapi.co) |
 | **Stream** | Czech internet television, films, series and online videos for free. | No | ✅ | [Link](https://api.stream.cz/graphiql) |
 | **Stromberg Quotes** | Returns Stromberg quotes and more. | No | ✅ | [Link](https://www.stromberg-api.de/) |
@@ -1992,7 +2002,7 @@ print(response.json()['fact'])
 | **Chuck Norris Jokes** | Random Chuck Norris jokes (**No Auth**). | No | ✅ | [Link](https://api.chucknorris.io/) |
 | **Corporate BS Generator** | Generate corporate jargon (**No Auth**). | No | ✅ | [Link](https://corporatebs-generator.sameerkumar.website/) |
 | **Dad Jokes** | Random dad jokes (**No Auth**). | No | ✅ | [Link](https://icanhazdadjoke.com/api) |
-| **Evil Insult** | Generate evil insults (**No Auth**). | No | ✅ | [Link](https://evilinsult.com/api/) |
+| **Evil Insult** | Random multilingual insults (**No Auth**). | No | ✅ | [Link](https://evilinsult.com/api) |
 | **Fun Translations** | Translate text to Yoda, Pirate, etc. | 🔑 ApiKey | ✅ | [Link](https://funtranslations.com/api) |
 | **Imgflip** | Get popular meme templates to create your own memes (**No Auth**). | No | ✅ | [Link](https://api.imgflip.com/) |
 | **JokeAPI** | Jokes in various categories (**No Auth**). | No | ✅ | [Link](https://jokeapi.dev/) |

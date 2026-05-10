@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-05-08T02:03:09.592581+00:00",
+    "generated_at": "2026-05-10T03:37:14.085588+00:00",
     "source": "README.md",
-    "total_apis": 1507,
-    "total_categories": 60,
-    "no_auth_count": 615,
-    "https_count": 1440,
+    "total_apis": 1478,
+    "total_categories": 62,
+    "no_auth_count": 612,
+    "https_count": 1417,
     "https_percentage": 96
   },
   "categories": [
@@ -13,7 +13,7 @@
       "id": "animals",
       "emoji": "🐶",
       "name": "Animals",
-      "api_count": 26,
+      "api_count": 27,
       "apis": [
         {
           "name": "AdoptAPet",
@@ -121,13 +121,6 @@
           "link": "https://place.dog"
         },
         {
-          "name": "PlaceKitten",
-          "description": "Placeholder Kitten pictures.",
-          "auth": "No",
-          "https": true,
-          "link": "https://placekitten.com/"
-        },
-        {
           "name": "RandomDog",
           "description": "Random pictures of dogs.",
           "auth": "No",
@@ -196,6 +189,20 @@
           "auth": "No",
           "https": true,
           "link": "https://xeno-canto.org/explore/api"
+        },
+        {
+          "name": "TheCatAPI",
+          "description": "Random cat images, breeds, and facts.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://api.thecatapi.com/"
+        },
+        {
+          "name": "TheDogAPI",
+          "description": "Random dog images, breeds, and facts.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://api.thedogapi.com/"
         }
       ]
     },
@@ -203,7 +210,7 @@
       "id": "anime",
       "emoji": "🌸",
       "name": "Anime",
-      "api_count": 17,
+      "api_count": 19,
       "apis": [
         {
           "name": "AniAPI",
@@ -218,6 +225,20 @@
           "auth": "apiKey",
           "https": false,
           "link": "https://wiki.anidb.net/HTTP_API_Definition"
+        },
+        {
+          "name": "AniList",
+          "description": "GraphQL anime and manga database (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://anilist.gitbook.io/anilist-apiv2-docs/"
+        },
+        {
+          "name": "AnimeChan",
+          "description": "Random anime quotes (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://animechan.xyz/docs"
         },
         {
           "name": "AnimeFacts",
@@ -269,18 +290,18 @@
           "link": "https://kitsu.docs.apiary.io/#"
         },
         {
+          "name": "MangaDex",
+          "description": "Manga catalog, chapters, and covers (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://api.mangadex.org/docs/"
+        },
+        {
           "name": "Mangapi",
           "description": "Translate manga pages.",
           "auth": "apiKey",
           "https": true,
           "link": "https://rapidapi.com/pierre.carcellermeunier/api/mangapi3/"
-        },
-        {
-          "name": "MyAnimeList",
-          "description": "Anime and Manga Database.",
-          "auth": "OAuth",
-          "https": true,
-          "link": "https://myanimelist.net/clubs.php?cid=13727"
         },
         {
           "name": "NekosBest",
@@ -361,11 +382,11 @@
           "link": "https://developers.google.com/safe-browsing/"
         },
         {
-          "name": "MalDatabase",
-          "description": "Malware analysis.",
+          "name": "Hybrid Analysis",
+          "description": "Malware sample lookup and sandbox reports.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://maldatabase.com/api-doc.html"
+          "link": "https://www.hybrid-analysis.com/docs/api/v2"
         },
         {
           "name": "MalShare",
@@ -382,11 +403,11 @@
           "link": "https://bazaar.abuse.ch/api/"
         },
         {
-          "name": "Metacert",
-          "description": "Link/Domain reputation.",
-          "auth": "apiKey",
+          "name": "ThreatFox",
+          "description": "IOC database (malware C2, URLs, hashes) from abuse.ch.",
+          "auth": "No",
           "https": true,
-          "link": "https://metacert.com/"
+          "link": "https://threatfox.abuse.ch/api/"
         },
         {
           "name": "NoPhishy",
@@ -396,11 +417,11 @@
           "link": "https://rapidapi.com/Amiichu/api/exerra-phishing-check/"
         },
         {
-          "name": "Phisherman",
-          "description": "IP/domain/URL reputation.",
+          "name": "PhishTank",
+          "description": "Community phishing URL database and reputation (Cisco Talos).",
           "auth": "apiKey",
           "https": true,
-          "link": "https://phisherman.gg/"
+          "link": "https://phishtank.org/api_info.php"
         },
         {
           "name": "Scanii",
@@ -443,7 +464,7 @@
       "id": "authentication-identity",
       "emoji": "🔐",
       "name": "Authentication & Identity",
-      "api_count": 17,
+      "api_count": 15,
       "apis": [
         {
           "name": "Descope",
@@ -530,13 +551,6 @@
           "link": "https://docs.permit.io/"
         },
         {
-          "name": "SAWO Labs",
-          "description": "Simplify login and improve user experience by integrating passwordless authen...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://sawolabs.com"
-        },
-        {
           "name": "Stytch",
           "description": "Authentication APIs for passwords, OTP, magic links, and OAuth.",
           "auth": "apiKey",
@@ -551,13 +565,6 @@
           "link": "https://supertokens.com/docs"
         },
         {
-          "name": "Warrant",
-          "description": "Fine-grained authorization and RBAC APIs.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://docs.warrant.dev/"
-        },
-        {
           "name": "WorkOS",
           "description": "Enterprise SSO, SCIM, and user management APIs.",
           "auth": "apiKey",
@@ -570,7 +577,7 @@
       "id": "books",
       "emoji": "📚",
       "name": "Books & Literature",
-      "api_count": 19,
+      "api_count": 16,
       "apis": [
         {
           "name": "A Bíblia Digital",
@@ -608,13 +615,6 @@
           "link": "http://openlibrary.org/dev/docs/api/covers"
         },
         {
-          "name": "British National Bibliography",
-          "description": "Books.",
-          "auth": "No",
-          "https": false,
-          "link": "http://bnb.data.bl.uk/"
-        },
-        {
           "name": "Ganjoor",
           "description": "Classic Persian poetry works including access to related manuscripts, recitat...",
           "auth": "OAuth",
@@ -636,13 +636,6 @@
           "link": "https://developers.google.com/books/"
         },
         {
-          "name": "Gutendex",
-          "description": "JSON API for Project Gutenberg (public domain books).",
-          "auth": "No",
-          "https": true,
-          "link": "https://gutendex.com/"
-        },
-        {
           "name": "ISBNdb",
           "description": "ISBN book database.",
           "auth": "apiKey",
@@ -662,13 +655,6 @@
           "auth": "No",
           "https": true,
           "link": "http://www.penguinrandomhouse.biz/webservices/rest/"
-        },
-        {
-          "name": "Poetry DB",
-          "description": "Database with over 40,000 poems (**No Auth**).",
-          "auth": "No",
-          "https": true,
-          "link": "https://poetrydb.org/"
         },
         {
           "name": "Quran",
@@ -711,7 +697,7 @@
       "id": "blockchain-web3",
       "emoji": "⛓️",
       "name": "Blockchain & Web3",
-      "api_count": 24,
+      "api_count": 23,
       "apis": [
         {
           "name": "Ankr RPC",
@@ -868,13 +854,6 @@
           "link": "https://portal.thirdweb.com/typescript/v5"
         },
         {
-          "name": "Walltime",
-          "description": "To retrieve Walltime's market info.",
-          "auth": "No",
-          "https": true,
-          "link": "https://walltime.info/api.html"
-        },
-        {
           "name": "Watchdata",
           "description": "Multi-chain wallet, NFT, and node APIs.",
           "auth": "apiKey",
@@ -887,7 +866,7 @@
       "id": "cryptocurrency",
       "emoji": "🪙",
       "name": "Cryptocurrency",
-      "api_count": 55,
+      "api_count": 49,
       "apis": [
         {
           "name": "1inch",
@@ -909,20 +888,6 @@
           "auth": "No",
           "https": true,
           "link": "https://nova.bitcambio.com.br/api/v3/docs#a-public"
-        },
-        {
-          "name": "BitcoinAverage",
-          "description": "Digital Asset Price Data for the blockchain industry.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apiv2.bitcoinaverage.com/"
-        },
-        {
-          "name": "BitcoinCharts",
-          "description": "Financial and Technical Data related to the Bitcoin Network.",
-          "auth": "No",
-          "https": true,
-          "link": "https://bitcoincharts.com/about/exchanges/"
         },
         {
           "name": "Bitfinex",
@@ -1079,32 +1044,11 @@
           "link": "https://docs.cryptapi.io/"
         },
         {
-          "name": "CryptingUp",
-          "description": "Cryptocurrency data.",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.cryptingup.com/apidoc/#introduction"
-        },
-        {
           "name": "CryptoCompare",
           "description": "Cryptocurrencies Comparison.",
           "auth": "No",
           "https": true,
           "link": "https://www.cryptocompare.com/api"
-        },
-        {
-          "name": "CryptoMarket",
-          "description": "Cryptocurrencies Trading platform.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://api.exchange.cryptomkt.com/"
-        },
-        {
-          "name": "Cryptonator",
-          "description": "Cryptocurrencies Exchange Rates.",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.cryptonator.com/api/"
         },
         {
           "name": "dYdX",
@@ -1226,13 +1170,6 @@
           "link": "https://doc.novadax.com/en-US/#introduction"
         },
         {
-          "name": "OKEx",
-          "description": "Cryptocurrency exchange based in Seychelles.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.okex.com/docs/"
-        },
-        {
           "name": "Poloniex",
           "description": "Exchange for Trading Cryptocurrencies.",
           "auth": "apiKey",
@@ -1280,28 +1217,14 @@
       "id": "cloud-storage-files",
       "emoji": "☁️",
       "name": "Cloud Storage & Files",
-      "api_count": 27,
+      "api_count": 25,
       "apis": [
-        {
-          "name": "AnonFiles",
-          "description": "Upload and share your files anonymously.",
-          "auth": "No",
-          "https": true,
-          "link": "https://anonfiles.com/docs/api"
-        },
         {
           "name": "Backblaze B2",
           "description": "Cloud object storage API with S3-compatible endpoints.",
           "auth": "apiKey",
           "https": true,
           "link": "https://www.backblaze.com/apidocs/introduction-to-the-s3-compatible-api"
-        },
-        {
-          "name": "BayFiles",
-          "description": "Upload and share your files.",
-          "auth": "No",
-          "https": true,
-          "link": "https://bayfiles.com/docs/api"
         },
         {
           "name": "Box",
@@ -1477,7 +1400,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 137,
+      "api_count": 136,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -1599,11 +1522,11 @@
           "link": "https://developer.atlassian.com/bitbucket/api/2/reference/"
         },
         {
-          "name": "Blague.xyz",
-          "description": "La plus grande API de Blagues FR/The biggest FR jokes API.",
+          "name": "Blagues API",
+          "description": "French jokes API with categories (dev, dark, global, etc.).",
           "auth": "apiKey",
           "https": true,
-          "link": "https://blague.xyz/"
+          "link": "https://www.blagues-api.fr/"
         },
         {
           "name": "Blitapp",
@@ -1639,6 +1562,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://clerk.com/docs/reference/backend-api"
+        },
+        {
+          "name": "Cloudflare Radar",
+          "description": "Internet traffic, routing, and outage insights (free tier).",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developers.cloudflare.com/radar/"
         },
         {
           "name": "Cloudinary",
@@ -1730,13 +1660,6 @@
           "auth": "No",
           "https": true,
           "link": "https://genderize.io"
-        },
-        {
-          "name": "GETPing",
-          "description": "Trigger an email notification with a simple GET request.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.getping.info"
         },
         {
           "name": "Ghost",
@@ -1984,13 +1907,6 @@
           "link": "https://ce.judge0.com/"
         },
         {
-          "name": "KONTESTS",
-          "description": "For upcoming and ongoing competitive coding contests.",
-          "auth": "No",
-          "https": true,
-          "link": "https://kontests.net/api"
-        },
-        {
           "name": "Kroki",
           "description": "Creates diagrams from textual descriptions.",
           "auth": "No",
@@ -2026,25 +1942,11 @@
           "link": "https://m3o.com/db"
         },
         {
-          "name": "MicroENV",
-          "description": "Fake Rest API for developers.",
-          "auth": "No",
-          "https": true,
-          "link": "https://microenv.com/"
-        },
-        {
           "name": "Mintlify",
           "description": "For programmatically generating documentation for code.",
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.mintlify.com"
-        },
-        {
-          "name": "Mocky",
-          "description": "Mock user defined test JSON for REST API endpoints.",
-          "auth": "No",
-          "https": true,
-          "link": "https://designer.mocky.io/"
         },
         {
           "name": "MY IP",
@@ -2437,6 +2339,20 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.zenrows.com/"
+        },
+        {
+          "name": "GitHub REST API",
+          "description": "Access GitHub data — repos, users, gists, and more (**No Auth for public data**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://docs.github.com/en/rest"
+        },
+        {
+          "name": "Microlink",
+          "description": "Extract metadata, take screenshots, and generate PDFs from any URL.",
+          "auth": "No",
+          "https": true,
+          "link": "https://microlink.io/docs/api/getting-started/overview"
         }
       ]
     },
@@ -2847,7 +2763,7 @@
       "id": "dictionaries",
       "emoji": "📖",
       "name": "Dictionaries",
-      "api_count": 16,
+      "api_count": 15,
       "apis": [
         {
           "name": "Chinese Character Web",
@@ -2911,13 +2827,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.purgomalum.com/"
-        },
-        {
-          "name": "Synonyms",
-          "description": "Synonyms, thesaurus and antonyms information for any given word.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.synonyms.com/synonyms_api.php"
         },
         {
           "name": "Synonyms API",
@@ -3130,15 +3039,8 @@
       "id": "public-data",
       "emoji": "📊",
       "name": "Public Data & Datasets",
-      "api_count": 39,
+      "api_count": 38,
       "apis": [
-        {
-          "name": "API Setu",
-          "description": "An Indian Government platform that provides a lot of APIS for KYC, business, ...",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.apisetu.gov.in/"
-        },
         {
           "name": "Archive.org",
           "description": "The Internet Archive.",
@@ -3682,13 +3584,6 @@
           "link": "https://biriyani.anoram.com/"
         },
         {
-          "name": "Board Game Atlas",
-          "description": "Board game database and reviews.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.boardgameatlas.com/api/docs"
-        },
-        {
           "name": "FOAAS",
           "description": "Fuck Off As A Service.",
           "auth": "No",
@@ -3778,6 +3673,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://api.watchmode.com/"
+        },
+        {
+          "name": "Bored API",
+          "description": "Get random activity suggestions when you are bored (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://bored-api.appbrewery.com/"
         }
       ]
     },
@@ -3941,7 +3843,7 @@
       "id": "personality-quotes",
       "emoji": "💭",
       "name": "Personality & Quotes",
-      "api_count": 9,
+      "api_count": 11,
       "apis": [
         {
           "name": "Affirmations.dev",
@@ -3979,6 +3881,13 @@
           "link": "http://forismatic.com/en/api/"
         },
         {
+          "name": "Quotable",
+          "description": "Random quotes with authors, tags, and pagination (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://github.com/lukePeavey/quotable"
+        },
+        {
           "name": "Quotes on Design",
           "description": "Inspirational Quotes.",
           "auth": "No",
@@ -4005,6 +3914,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.udemy.com/developers/instructor/"
+        },
+        {
+          "name": "Type.fit Quotes",
+          "description": "Collection of inspirational quotes (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://type.fit/api/quotes"
         }
       ]
     },
@@ -4012,7 +3928,7 @@
       "id": "finance",
       "emoji": "💰",
       "name": "Finance",
-      "api_count": 46,
+      "api_count": 42,
       "apis": [
         {
           "name": "Aletheia",
@@ -4120,13 +4036,6 @@
           "link": "https://finnhub.io/docs/api"
         },
         {
-          "name": "FRED",
-          "description": "Economic data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://fred.stlouisfed.org/docs/api/fred/"
-        },
-        {
           "name": "Front Accounting APIs",
           "description": "Front accounting is multilingual and multicurrency software for small businesses.",
           "auth": "OAuth",
@@ -4139,13 +4048,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://hotstoks.com?utm_source=public-apis"
-        },
-        {
-          "name": "IEX Cloud",
-          "description": "Realtime & Historical Stock and Market Data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://iexcloud.io/docs/api/"
         },
         {
           "name": "IG",
@@ -4274,13 +4176,6 @@
           "link": "https://stripe.com/docs/api"
         },
         {
-          "name": "Styvio",
-          "description": "Realtime and historical stock data and current stock sentiment.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.Styvio.com"
-        },
-        {
           "name": "Tax Data API",
           "description": "Tax rates and validation.",
           "auth": "apiKey",
@@ -4314,13 +4209,6 @@
           "auth": "No",
           "https": true,
           "link": "https://dashboard.nbshare.io/apps/reddit/api/"
-        },
-        {
-          "name": "Yahoo Finance",
-          "description": "Real time low latency Yahoo Finance API for stock market, crypto currencies, ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.yahoofinanceapi.com/"
         },
         {
           "name": "YNAB",
@@ -4478,13 +4366,6 @@
           "link": "https://freecurrencyapi.com/docs"
         },
         {
-          "name": "FreeForexAPI",
-          "description": "Real-time foreign exchange rates for major currency pairs.",
-          "auth": "No",
-          "https": true,
-          "link": "https://freeforexapi.com/Home/Api"
-        },
-        {
           "name": "National Bank of Poland",
           "description": "Official exchange rates from NBP.",
           "auth": "No",
@@ -4504,6 +4385,13 @@
           "auth": "No",
           "https": true,
           "link": "https://www.vatcomply.com"
+        },
+        {
+          "name": "ExchangeRate.host",
+          "description": "Free foreign exchange and crypto rates (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://exchangerate.host/"
         }
       ]
     },
@@ -4666,15 +4554,8 @@
       "id": "games-comics",
       "emoji": "🎮",
       "name": "Games & Comics",
-      "api_count": 80,
+      "api_count": 77,
       "apis": [
-        {
-          "name": "AmiiboAPI",
-          "description": "Nintendo Amiibo data.",
-          "auth": "No",
-          "https": true,
-          "link": "https://amiiboapi.com/"
-        },
         {
           "name": "Animal Crossing: New Horizons",
           "description": "API for critters, fossils, art, music, furniture and villagers.",
@@ -4837,13 +4718,6 @@
           "link": "https://ffxivcollect.com/"
         },
         {
-          "name": "FIFA Ultimate Team",
-          "description": "FIFA Ultimate Team items API.",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.easports.com/fifa/ultimate-team/api/fut/item"
-        },
-        {
           "name": "Final Fantasy XIV",
           "description": "Game data.",
           "auth": "No",
@@ -4942,13 +4816,6 @@
           "link": "https://api.hypixel.net/"
         },
         {
-          "name": "Hytale",
-          "description": "Hytale blog posts and jobs.",
-          "auth": "No",
-          "https": true,
-          "link": "https://hytale-api.com/"
-        },
-        {
           "name": "IGDB.com",
           "description": "Game database.",
           "auth": "apiKey",
@@ -4961,13 +4828,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://jokes.one/api/joke/"
-        },
-        {
-          "name": "Jservice",
-          "description": "Jeopardy Question Database.",
-          "auth": "No",
-          "https": false,
-          "link": "http://jservice.io"
         },
         {
           "name": "Lichess",
@@ -5031,13 +4891,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.mod.io"
-        },
-        {
-          "name": "Mojang",
-          "description": "Mojang / Minecraft API.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://wiki.vg/Mojang_API"
         },
         {
           "name": "Monster Hunter World",
@@ -5227,6 +5080,20 @@
           "auth": "No",
           "https": true,
           "link": "https://ygoprodeck.com/api-guide/"
+        },
+        {
+          "name": "Harry Potter API",
+          "description": "Harry Potter characters, spells, and houses (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://hp-api.onrender.com/"
+        },
+        {
+          "name": "SWAPI (py4e)",
+          "description": "Star Wars API — people, planets, starships (**No Auth**, community mirror).",
+          "auth": "No",
+          "https": true,
+          "link": "https://swapi.py4e.com/"
         }
       ]
     },
@@ -5234,7 +5101,7 @@
       "id": "geocoding",
       "emoji": "🌍",
       "name": "Geocoding",
-      "api_count": 68,
+      "api_count": 66,
       "apis": [
         {
           "name": "Actinia Grass GIS",
@@ -5314,13 +5181,6 @@
           "link": "https://gis.ducks.org/datasets/du-university-chapters/api"
         },
         {
-          "name": "GeoApi",
-          "description": "French geographical data.",
-          "auth": "No",
-          "https": true,
-          "link": "https://api.gouv.fr/api/geoapi.html"
-        },
-        {
           "name": "Geoapify",
           "description": "Forward and reverse geocoding, address autocomplete.",
           "auth": "apiKey",
@@ -5354,13 +5214,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.geocod.io/docs/"
-        },
-        {
-          "name": "Geodata.gov.gr",
-          "description": "Open geospatial data and API service for Greece.",
-          "auth": "No",
-          "https": true,
-          "link": "https://geodata.gov.gr/en/"
         },
         {
           "name": "GeoDataSource",
@@ -5587,6 +5440,13 @@
           "link": "http://wiki.openstreetmap.org/wiki/API"
         },
         {
+          "name": "OpenTripMap",
+          "description": "Tourist attractions and points of interest worldwide.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://dev.opentripmap.org/docs"
+        },
+        {
           "name": "Pinball Map",
           "description": "A crowdsourced map of public pinball machines.",
           "auth": "No",
@@ -5613,20 +5473,6 @@
           "auth": "No",
           "https": true,
           "link": "https://postcodes.io"
-        },
-        {
-          "name": "Queimadas INPE",
-          "description": "Access to heat focus data (probable wildfire)",
-          "auth": "No",
-          "https": true,
-          "link": "https://queimadas.dgi.inpe.br/queimadas/dados-abertos/"
-        },
-        {
-          "name": "RoadGoat Cities",
-          "description": "Cities content & photos API.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.roadgoat.com/business/cities-api"
         },
         {
           "name": "Rwanda Locations",
@@ -5711,6 +5557,13 @@
           "auth": "No",
           "https": true,
           "link": "https://ziptasticapi.com/"
+        },
+        {
+          "name": "Geocode.maps.co",
+          "description": "Free geocoding and reverse geocoding (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://geocode.maps.co/"
         }
       ]
     },
@@ -5718,7 +5571,7 @@
       "id": "health",
       "emoji": "❤️",
       "name": "Health",
-      "api_count": 34,
+      "api_count": 32,
       "apis": [
         {
           "name": "BMI Calculator",
@@ -5763,13 +5616,6 @@
           "link": "https://covidtracking.com/data/api/version-2"
         },
         {
-          "name": "Covid-19",
-          "description": "Covid 19 spread, infection and recovery.",
-          "auth": "No",
-          "https": true,
-          "link": "https://covid19api.com/"
-        },
-        {
           "name": "Covid-19 Datenhub",
           "description": "Maps, datasets, applications and more in the context of COVID-19.",
           "auth": "No",
@@ -5803,13 +5649,6 @@
           "auth": "No",
           "https": true,
           "link": "https://api.covid19tracker.ca/docs/1.0/overview"
-        },
-        {
-          "name": "COVID-ID",
-          "description": "Indonesian government Covid data per province.",
-          "auth": "No",
-          "https": true,
-          "link": "https://data.covid19.go.id/public/api/prov.json"
         },
         {
           "name": "Dataflow Kit COVID-19",
@@ -5964,7 +5803,7 @@
       "id": "machine-learning",
       "emoji": "🧠",
       "name": "Machine Learning",
-      "api_count": 43,
+      "api_count": 42,
       "apis": [
         {
           "name": "AI For Thai",
@@ -6163,13 +6002,6 @@
           "link": "https://platform.openai.com/docs"
         },
         {
-          "name": "OpenVisionAPI",
-          "description": "Open source computer vision API based on open source models.",
-          "auth": "No",
-          "https": true,
-          "link": "https://openvisionapi.com"
-        },
-        {
           "name": "Perplexity AI",
           "description": "AI-powered search and answers (limited free tier).",
           "auth": "apiKey",
@@ -6346,13 +6178,6 @@
           "link": "https://mailsac.com/docs/api"
         },
         {
-          "name": "Metaphorsum",
-          "description": "Generate demo paragraphs giving number of words and sentences.",
-          "auth": "No",
-          "https": false,
-          "link": "http://metaphorpsum.com/"
-        },
-        {
           "name": "MockAPI.io",
           "description": "Create custom mock REST APIs with fake data.",
           "auth": "apiKey",
@@ -6421,6 +6246,13 @@
           "auth": "No",
           "https": true,
           "link": "https://yesno.wtf/api"
+        },
+        {
+          "name": "JokeAPI v2",
+          "description": "Programming, dark, pun, and miscellaneous jokes with filters (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://v2.jokeapi.dev/"
         }
       ]
     },
@@ -6428,7 +6260,7 @@
       "id": "music",
       "emoji": "🎵",
       "name": "Music",
-      "api_count": 33,
+      "api_count": 31,
       "apis": [
         {
           "name": "7digital",
@@ -6564,13 +6396,6 @@
           "link": "https://developer.musixmatch.com/"
         },
         {
-          "name": "Napster",
-          "description": "Music.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://developer.napster.com/api/v2.2"
-        },
-        {
           "name": "Openwhyd",
           "description": "Download curated playlists of streaming tracks (YouTube, SoundCloud, etc...)",
           "auth": "No",
@@ -6653,13 +6478,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.theaudiodb.com/api"
-        },
-        {
-          "name": "Vagalume",
-          "description": "Crowdsourced lyrics and music knowledge.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://api.vagalume.com.br/docs/"
         }
       ]
     },
@@ -6731,7 +6549,7 @@
       "id": "photography",
       "emoji": "📷",
       "name": "Photography",
-      "api_count": 37,
+      "api_count": 38,
       "apis": [
         {
           "name": "apilayer mediastack",
@@ -6991,6 +6809,13 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://www.damsuccess.com/hc/en-us/articles/202134055-REST-API"
+        },
+        {
+          "name": "DiceBear",
+          "description": "Generate unique avatar images from any seed string (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://www.dicebear.com/introduction/"
         }
       ]
     },
@@ -6998,7 +6823,7 @@
       "id": "science",
       "emoji": "🔬",
       "name": "Science & Space",
-      "api_count": 28,
+      "api_count": 32,
       "apis": [
         {
           "name": "arcsecond.io",
@@ -7195,6 +7020,34 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://products.wolframalpha.com/short-answers-api/documentation"
+        },
+        {
+          "name": "SpaceX API",
+          "description": "SpaceX launches, rockets, capsules, and Starlink data (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://github.com/r-spacex/SpaceX-API"
+        },
+        {
+          "name": "Launch Library 2",
+          "description": "Upcoming and historical rocket launches worldwide (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://thespacedevs.com/llapi"
+        },
+        {
+          "name": "Where the ISS at?",
+          "description": "Real-time International Space Station position tracking (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://wheretheiss.at/w/developer"
+        },
+        {
+          "name": "Sunrise Sunset",
+          "description": "Sunrise and sunset times for any location (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://sunrise-sunset.org/api"
         }
       ]
     },
@@ -7345,6 +7198,13 @@
           "link": "https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog"
         },
         {
+          "name": "OSV",
+          "description": "Open source vulnerability database and API (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://google.github.io/osv.dev/"
+        },
+        {
           "name": "PhishStats",
           "description": "Phishing database.",
           "auth": "No",
@@ -7385,13 +7245,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://spyse-dev.readme.io/reference/quick-start"
-        },
-        {
-          "name": "Threat Jammer",
-          "description": "Risk scoring service from curated threat intelligence data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://threatjammer.com/docs/index"
         },
         {
           "name": "UK Police",
@@ -7498,7 +7351,7 @@
       "id": "shopping",
       "emoji": "🛍️",
       "name": "Shopping",
-      "api_count": 14,
+      "api_count": 15,
       "apis": [
         {
           "name": "Barcode Lookup",
@@ -7597,6 +7450,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+        },
+        {
+          "name": "Makeup API",
+          "description": "Search makeup products by brand, type, price (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "http://makeup-api.herokuapp.com/"
         }
       ]
     },
@@ -7717,7 +7577,7 @@
       "id": "url-shorteners",
       "emoji": "🔗",
       "name": "URL Shorteners",
-      "api_count": 22,
+      "api_count": 21,
       "apis": [
         {
           "name": "Bitly",
@@ -7739,13 +7599,6 @@
           "auth": "No",
           "https": true,
           "link": "https://cleanuri.com/docs"
-        },
-        {
-          "name": "ClickMeter",
-          "description": "Monitor, compare and optimize your marketing links.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://support.clickmeter.com/hc/en-us/categories/201474986"
         },
         {
           "name": "Clico",
@@ -7879,7 +7732,7 @@
       "id": "social",
       "emoji": "💬",
       "name": "Social",
-      "api_count": 42,
+      "api_count": 45,
       "apis": [
         {
           "name": "Ayrshare",
@@ -7901,13 +7754,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.bsky.app/"
-        },
-        {
-          "name": "Cisco Spark",
-          "description": "Team Collaboration Software.",
-          "auth": "OAuth",
-          "https": true,
-          "link": "https://developer.ciscospark.com"
         },
         {
           "name": "Discord",
@@ -8174,6 +8020,34 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://developers.zalo.me/"
+        },
+        {
+          "name": "Hacker News",
+          "description": "Y Combinator's Hacker News stories, comments, and user data (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://github.com/HackerNews/API"
+        },
+        {
+          "name": "Lemmy",
+          "description": "Decentralized link aggregation and discussion platform API.",
+          "auth": "No",
+          "https": true,
+          "link": "https://lemmy.ml/"
+        },
+        {
+          "name": "Matrix",
+          "description": "Open standard for decentralized, real-time communication.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://spec.matrix.org/latest/"
+        },
+        {
+          "name": "Nostr",
+          "description": "Decentralized social protocol — censorship-resistant notes and messaging.",
+          "auth": "No",
+          "https": true,
+          "link": "https://github.com/nostr-protocol/nostr"
         }
       ]
     },
@@ -8196,13 +8070,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://api-sports.io/"
-        },
-        {
-          "name": "ApiMedic",
-          "description": "ApiMedic offers a medical symptom checker API primarily for patients.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apimedic.com/"
         },
         {
           "name": "Cloudbet",
@@ -8252,13 +8119,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://boggio-analytics.com/fp-api/"
-        },
-        {
-          "name": "Football-Data",
-          "description": "Football data with matches info, players, teams, and competitions.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.football-data.org"
         },
         {
           "name": "Football-Data.org",
@@ -8366,13 +8226,6 @@
           "link": "https://strava.github.io/api/"
         },
         {
-          "name": "SuredBits",
-          "description": "Query sports data, including teams, players, games, scores and statistics.",
-          "auth": "No",
-          "https": false,
-          "link": "https://suredbits.com/api/"
-        },
-        {
           "name": "TheSportsDB",
           "description": "Open crowd-sourced sports data and artwork.",
           "auth": "apiKey",
@@ -8385,6 +8238,27 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://www.tredict.com/blog/oauth_docs/"
+        },
+        {
+          "name": "ESPN",
+          "description": "Unofficial ESPN API for NFL, NBA, MLB, NHL scores and schedules (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b"
+        },
+        {
+          "name": "Jolpica F1",
+          "description": "Formula 1 race results, standings, and historical data (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://api.jolpi.ca/ergast/f1/"
+        },
+        {
+          "name": "MLB Stats API",
+          "description": "Official Major League Baseball statistics and game data (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://statsapi.mlb.com/docs/"
         }
       ]
     },
@@ -8392,15 +8266,8 @@
       "id": "design-colors",
       "emoji": "🎨",
       "name": "Design & Colors",
-      "api_count": 22,
+      "api_count": 23,
       "apis": [
-        {
-          "name": "Améthyste",
-          "description": "Generate images for Discord users.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://api.amethyste.moe/"
-        },
         {
           "name": "Behance",
           "description": "Creative work showcase.",
@@ -8547,6 +8414,20 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://wordcloudapi.com/"
+        },
+        {
+          "name": "Random Color API",
+          "description": "Generate random colors with hex, RGB, and HSL values (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://x-colors.yurace.pro/"
+        },
+        {
+          "name": "EmojiHub",
+          "description": "Random emoji data organized by category and group (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://github.com/cheatsnake/emojihub"
         }
       ]
     },
@@ -8554,7 +8435,7 @@
       "id": "geography-countries",
       "emoji": "🌎",
       "name": "Geography & Countries",
-      "api_count": 9,
+      "api_count": 8,
       "apis": [
         {
           "name": "Country State City",
@@ -8611,13 +8492,6 @@
           "auth": "No",
           "https": true,
           "link": "https://restcountries.com/"
-        },
-        {
-          "name": "World Time API",
-          "description": "Current time by timezone (**No Auth**).",
-          "auth": "No",
-          "https": true,
-          "link": "https://worldtimeapi.org/"
         }
       ]
     },
@@ -9130,7 +9004,7 @@
       "id": "tracking-logistics",
       "emoji": "📦",
       "name": "Tracking & Logistics",
-      "api_count": 14,
+      "api_count": 13,
       "apis": [
         {
           "name": "17TRACK",
@@ -9203,13 +9077,6 @@
           "link": "https://docs.goshippo.com/"
         },
         {
-          "name": "UPS",
-          "description": "Shipment and Address information.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.ups.com/upsdeveloperkit"
-        },
-        {
           "name": "USPS Track & Confirm",
           "description": "USPS tracking API.",
           "auth": "apiKey",
@@ -9236,7 +9103,7 @@
       "id": "environment-climate",
       "emoji": "🌿",
       "name": "Environment & Climate",
-      "api_count": 20,
+      "api_count": 19,
       "apis": [
         {
           "name": "AQICN",
@@ -9330,13 +9197,6 @@
           "link": "https://pm25.lass-net.org/#apis"
         },
         {
-          "name": "PM25.in",
-          "description": "Air quality of China.",
-          "auth": "apiKey",
-          "https": false,
-          "link": "http://www.pm25.in/api_doc"
-        },
-        {
           "name": "PurpleAir",
           "description": "Real-time air quality sensor data.",
           "auth": "apiKey",
@@ -9384,7 +9244,7 @@
       "id": "government-civic",
       "emoji": "🏛️",
       "name": "Government & Civic",
-      "api_count": 83,
+      "api_count": 78,
       "apis": [
         {
           "name": "Bank Negara Malaysia Open Data",
@@ -9583,13 +9443,6 @@
           "link": "https://www.gunpolicy.org/api"
         },
         {
-          "name": "INEI",
-          "description": "Peruvian Statistical Government Open Data.",
-          "auth": "No",
-          "https": false,
-          "link": "http://iinei.inei.gob.pe/microdatos/"
-        },
-        {
           "name": "Interpol Red Notices",
           "description": "Access and search Interpol Red Notices.",
           "auth": "No",
@@ -9681,13 +9534,6 @@
           "link": "https://www.opendata.dk/"
         },
         {
-          "name": "Open Government, Estonia",
-          "description": "Estonia Government Open Data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://avaandmed.eesti.ee/instructions/opendata-dataset-api"
-        },
-        {
           "name": "Open Government, Finland",
           "description": "Finland Government Open Data.",
           "auth": "No",
@@ -9700,13 +9546,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.data.gouv.fr/"
-        },
-        {
-          "name": "Open Government, Germany",
-          "description": "Germany Government Open Data.",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.govdata.de/daten/-/details/govdata-metadatenkatalog"
         },
         {
           "name": "Open Government, Greece",
@@ -9819,20 +9658,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.data.qld.gov.au/"
-        },
-        {
-          "name": "Open Government, Romania",
-          "description": "Romania Government Open Data.",
-          "auth": "No",
-          "https": false,
-          "link": "http://data.gov.ro/"
-        },
-        {
-          "name": "Open Government, Saudi Arabia",
-          "description": "Saudi Arabia Government Open Data.",
-          "auth": "No",
-          "https": true,
-          "link": "https://data.gov.sa"
         },
         {
           "name": "Open Government, Slovakia",
@@ -9973,7 +9798,7 @@
       "id": "video",
       "emoji": "📹",
       "name": "Video",
-      "api_count": 24,
+      "api_count": 23,
       "apis": [
         {
           "name": "An API of Ice And Fire",
@@ -10060,6 +9885,13 @@
           "link": "https://docs.joinpeertube.org/api-rest-reference.html"
         },
         {
+          "name": "SponsorBlock",
+          "description": "Crowdsourced YouTube sponsor segments and skip timestamps (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://wiki.sponsor.ajay.app/w/API_Docs"
+        },
+        {
           "name": "STAPI",
           "description": "Information on all things Star Trek.",
           "auth": "No",
@@ -10079,13 +9911,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.stromberg-api.de/"
-        },
-        {
-          "name": "SWAPI",
-          "description": "All the Star Wars data you've ever wanted.",
-          "auth": "No",
-          "https": true,
-          "link": "https://swapi.dev/"
         },
         {
           "name": "SWAPI GraphQL",
@@ -10114,13 +9939,6 @@
           "auth": "No",
           "https": true,
           "link": "https://thronesapi.com/"
-        },
-        {
-          "name": "TrailerAddict",
-          "description": "Easily embed trailers from TrailerAddict.",
-          "auth": "apiKey",
-          "https": false,
-          "link": "https://www.traileraddict.com/trailerapi"
         },
         {
           "name": "TVDB",
@@ -10235,7 +10053,7 @@
       "id": "memes-fun",
       "emoji": "😂",
       "name": "Memes & Fun",
-      "api_count": 17,
+      "api_count": 16,
       "apis": [
         {
           "name": "Advice Slip",
@@ -10281,10 +10099,10 @@
         },
         {
           "name": "Evil Insult",
-          "description": "Generate evil insults (**No Auth**).",
+          "description": "Random multilingual insults (**No Auth**).",
           "auth": "No",
           "https": true,
-          "link": "https://evilinsult.com/api/"
+          "link": "https://evilinsult.com/api"
         },
         {
           "name": "Fun Translations",
@@ -10320,13 +10138,6 @@
           "auth": "No",
           "https": true,
           "link": "http://numbersapi.com/"
-        },
-        {
-          "name": "Quote Garden",
-          "description": "Collection of 5000+ quotes (**No Auth**).",
-          "auth": "No",
-          "https": true,
-          "link": "https://pprathameshmore.github.io/QuoteGarden/"
         },
         {
           "name": "Random Dog Facts",
@@ -10735,7 +10546,7 @@
       "id": "business",
       "emoji": "💼",
       "name": "Business",
-      "api_count": 14,
+      "api_count": 8,
       "apis": [
         {
           "name": "Charity Search",
@@ -10787,53 +10598,11 @@
           "link": "https://markerapi.com"
         },
         {
-          "name": "ORB Intelligence",
-          "description": "Company lookup.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://api.orb-intelligence.com/docs/"
-        },
-        {
           "name": "SwiftKanban",
           "description": "Kanban software, Visualize Work, Increase Organizations Lead Time, Throughput...",
           "auth": "apiKey",
           "https": true,
           "link": "https://www.digite.com/knowledge-base/swiftkanban/article/api-for-swift-kanban-web-services/#restapi"
-        },
-        {
-          "name": "Tenders in Hungary",
-          "description": "Get data for procurements in Hungary in JSON format.",
-          "auth": "No",
-          "https": true,
-          "link": "https://tenders.guru/hu/api"
-        },
-        {
-          "name": "Tenders in Poland",
-          "description": "Get data for procurements in Poland in JSON format.",
-          "auth": "No",
-          "https": true,
-          "link": "https://tenders.guru/pl/api"
-        },
-        {
-          "name": "Tenders in Romania",
-          "description": "Get data for procurements in Romania in JSON format.",
-          "auth": "No",
-          "https": true,
-          "link": "https://tenders.guru/ro/api"
-        },
-        {
-          "name": "Tenders in Spain",
-          "description": "Get data for procurements in Spain in JSON format.",
-          "auth": "No",
-          "https": true,
-          "link": "https://tenders.guru/es/api"
-        },
-        {
-          "name": "Tenders in Ukraine",
-          "description": "Get data for procurements in Ukraine in JSON format.",
-          "auth": "No",
-          "https": true,
-          "link": "https://tenders.guru/ua/api"
         }
       ]
     },
@@ -10841,7 +10610,7 @@
       "id": "documents-productivity",
       "emoji": "📄",
       "name": "Documents & Productivity",
-      "api_count": 23,
+      "api_count": 21,
       "apis": [
         {
           "name": "Api2Convert",
@@ -10942,25 +10711,11 @@
           "link": "https://developers.pandadoc.com"
         },
         {
-          "name": "Pocket",
-          "description": "Bookmarking service.",
-          "auth": "OAuth",
-          "https": true,
-          "link": "https://getpocket.com/developer/"
-        },
-        {
           "name": "Podio",
           "description": "File sharing and productivity.",
           "auth": "OAuth",
           "https": true,
           "link": "https://developers.podio.com"
-        },
-        {
-          "name": "PrexView",
-          "description": "Data from XML or JSON to PDF, HTML or Image.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://prexview.com"
         },
         {
           "name": "Restpack",
@@ -11003,6 +10758,64 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://zube.io/docs/api"
+        }
+      ]
+    },
+    {
+      "id": "demographic-analysis",
+      "emoji": "👤",
+      "name": "Demographic Analysis",
+      "api_count": 4,
+      "apis": [
+        {
+          "name": "Name",
+          "description": "Description",
+          "auth": "No",
+          "https": false,
+          "link": ""
+        },
+        {
+          "name": "Genderize",
+          "description": "Predict the gender of a name (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://genderize.io/"
+        },
+        {
+          "name": "Nationalize",
+          "description": "Predict the nationality of a name (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://nationalize.io/"
+        },
+        {
+          "name": "Agify",
+          "description": "Predict the age of a name (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://agify.io/"
+        }
+      ]
+    },
+    {
+      "id": "museums-art",
+      "emoji": "🏛️",
+      "name": "Museums & Art",
+      "api_count": 2,
+      "apis": [
+        {
+          "name": "Name",
+          "description": "Description",
+          "auth": "No",
+          "https": false,
+          "link": ""
+        },
+        {
+          "name": "Metropolitan Museum",
+          "description": "Access 5,000 years of art from The Met collection (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://metmuseum.github.io/"
         }
       ]
     },
