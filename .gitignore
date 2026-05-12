@@ -7,7 +7,10 @@ node_modules/
 # Script output (generated at runtime)
 scripts/link_check_report.txt
 scripts/broken_urls.txt
+scripts/error_urls.txt
+scripts/warning_urls.txt
 scripts/output.txt
+scripts/__pycache__/
 
 # Site build artifacts
 site/node_modules/

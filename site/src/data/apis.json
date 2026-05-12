@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-05-10T03:37:14.085588+00:00",
+    "generated_at": "2026-05-12T13:51:00.604652+00:00",
     "source": "README.md",
-    "total_apis": 1478,
-    "total_categories": 62,
-    "no_auth_count": 612,
-    "https_count": 1417,
+    "total_apis": 1525,
+    "total_categories": 63,
+    "no_auth_count": 618,
+    "https_count": 1464,
     "https_percentage": 96
   },
   "categories": [
@@ -1400,7 +1400,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 136,
+      "api_count": 141,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -2353,6 +2353,41 @@
           "auth": "No",
           "https": true,
           "link": "https://microlink.io/docs/api/getting-started/overview"
+        },
+        {
+          "name": "Doppler",
+          "description": "Secrets management platform for developers.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.doppler.com/reference/api"
+        },
+        {
+          "name": "Fly.io",
+          "description": "Global app deployment platform.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://fly.io/docs/machines/api/"
+        },
+        {
+          "name": "Gitea",
+          "description": "Self-hosted Git service with REST API.",
+          "auth": "OAuth",
+          "https": true,
+          "link": "https://docs.gitea.com/api/1.20/"
+        },
+        {
+          "name": "Linear",
+          "description": "Modern issue tracking for software teams.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developers.linear.app/docs"
+        },
+        {
+          "name": "Turso",
+          "description": "SQLite-based edge database platform.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.turso.tech/"
         }
       ]
     },
@@ -2452,7 +2487,7 @@
       "id": "text-analysis-nlp",
       "emoji": "📝",
       "name": "Text Analysis & NLP",
-      "api_count": 20,
+      "api_count": 21,
       "apis": [
         {
           "name": "Cloudmersive Natural Language Processing",
@@ -2460,6 +2495,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.cloudmersive.com/nlp-api"
+        },
+        {
+          "name": "AssemblyAI",
+          "description": "Speech-to-text and audio intelligence API.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.assemblyai.com/docs"
         },
         {
           "name": "Code Detection API",
@@ -2876,7 +2918,7 @@
       "id": "education",
       "emoji": "🎓",
       "name": "Education",
-      "api_count": 10,
+      "api_count": 11,
       "apis": [
         {
           "name": "Calendarific",
@@ -2905,6 +2947,13 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://courses.edx.org/api-docs/"
+        },
+        {
+          "name": "Khan Academy",
+          "description": "Khan Academy educational content.",
+          "auth": "OAuth",
+          "https": true,
+          "link": "https://khanacademy.org/api-docs"
         },
         {
           "name": "OpenAlex",
@@ -2954,7 +3003,7 @@
       "id": "calendar-holidays",
       "emoji": "📅",
       "name": "Calendar & Holidays",
-      "api_count": 11,
+      "api_count": 12,
       "apis": [
         {
           "name": "Checkiday - National Holiday API",
@@ -3025,6 +3074,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.abstractapi.com/holidays-api"
+        },
+        {
+          "name": "TimeAPI.io",
+          "description": "Current time, timezone, and holiday info for any region.",
+          "auth": "No",
+          "https": true,
+          "link": "https://timeapi.io/swagger/index.html"
         },
         {
           "name": "UK Bank Holidays",
@@ -3313,7 +3369,7 @@
       "id": "email-sms",
       "emoji": "📧",
       "name": "Email & SMS",
-      "api_count": 23,
+      "api_count": 26,
       "apis": [
         {
           "name": "Cloudmersive Validate",
@@ -3421,11 +3477,32 @@
           "link": "https://api-docs.mailtrap.io/"
         },
         {
+          "name": "Brevo (Sendinblue)",
+          "description": "Transactional email, SMS, and marketing automation.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developers.brevo.com/"
+        },
+        {
+          "name": "Loops",
+          "description": "Transactional and marketing email for SaaS apps.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://loops.so/docs/api-reference"
+        },
+        {
           "name": "OneSignal",
           "description": "Push notifications platform (free tier).",
           "auth": "apiKey",
           "https": true,
           "link": "https://documentation.onesignal.com/reference"
+        },
+        {
+          "name": "Postmark",
+          "description": "Transactional email delivery for web apps.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://postmarkapp.com/developer"
         },
         {
           "name": "Pushover",
@@ -3928,7 +4005,7 @@
       "id": "finance",
       "emoji": "💰",
       "name": "Finance",
-      "api_count": 42,
+      "api_count": 44,
       "apis": [
         {
           "name": "Aletheia",
@@ -3942,7 +4019,7 @@
           "description": "Commission-free stock trading.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://alpaca.markets/docs/api-documentation/api-v2/market-data/alpaca-data-api-v2/"
+          "link": "https://alpaca.markets/docs/api-references/"
         },
         {
           "name": "Alpha Vantage",
@@ -4190,11 +4267,25 @@
           "link": "https://developer.tradier.com"
         },
         {
+          "name": "Tiingo",
+          "description": "Financial data, news, and fundamentals API.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.tiingo.com/documentation/general/overview"
+        },
+        {
           "name": "Twelve Data",
           "description": "Stock market data (real-time & historical)",
           "auth": "apiKey",
           "https": true,
           "link": "https://twelvedata.com/"
+        },
+        {
+          "name": "Wise",
+          "description": "International money transfers and currency exchange.",
+          "auth": "OAuth",
+          "https": true,
+          "link": "https://docs.wise.com/api-docs"
         },
         {
           "name": "VAT Validation",
@@ -4399,7 +4490,7 @@
       "id": "food-drink",
       "emoji": "🍔",
       "name": "Food & Drink",
-      "api_count": 21,
+      "api_count": 20,
       "apis": [
         {
           "name": "BaconMockup",
@@ -4442,13 +4533,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.fruityvice.com"
-        },
-        {
-          "name": "Kroger",
-          "description": "Supermarket Data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://developer.kroger.com/reference"
         },
         {
           "name": "Ninjas Recipe",
@@ -5101,7 +5185,7 @@
       "id": "geocoding",
       "emoji": "🌍",
       "name": "Geocoding",
-      "api_count": 66,
+      "api_count": 67,
       "apis": [
         {
           "name": "Actinia Grass GIS",
@@ -5454,6 +5538,13 @@
           "link": "https://pinballmap.com/api/v1/docs"
         },
         {
+          "name": "Radar",
+          "description": "Geocoding, geofencing, routing, and maps.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://radar.com/documentation/api"
+        },
+        {
           "name": "Postali",
           "description": "Mexico Zip Codes API.",
           "auth": "No",
@@ -5571,7 +5662,7 @@
       "id": "health",
       "emoji": "❤️",
       "name": "Health",
-      "api_count": 32,
+      "api_count": 33,
       "apis": [
         {
           "name": "BMI Calculator",
@@ -5693,6 +5784,13 @@
           "link": "https://www.healthcare.gov/developers/"
         },
         {
+          "name": "HealthData.gov",
+          "description": "Public US health datasets and data portal.",
+          "auth": "No",
+          "https": true,
+          "link": "https://healthdata.gov/"
+        },
+        {
           "name": "Humanitarian Data Exchange",
           "description": "Humanitarian Data Exchange (HDX) is open platform for sharing data across cri...",
           "auth": "No",
@@ -5803,7 +5901,7 @@
       "id": "machine-learning",
       "emoji": "🧠",
       "name": "Machine Learning",
-      "api_count": 42,
+      "api_count": 49,
       "apis": [
         {
           "name": "AI For Thai",
@@ -5911,6 +6009,13 @@
           "link": "https://docs.fireworks.ai/"
         },
         {
+          "name": "Cerebras Inference",
+          "description": "Extremely fast LLM inference platform.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://inference-docs.cerebras.ai/"
+        },
+        {
           "name": "Google Gemini",
           "description": "Google's latest multimodal AI models.",
           "auth": "apiKey",
@@ -5937,6 +6042,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://huggingface.co/docs/api-inference/index"
+        },
+        {
+          "name": "Ideogram",
+          "description": "Text-to-image generation with strong typography.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developer.ideogram.ai/"
         },
         {
           "name": "Imagga",
@@ -5972,6 +6084,20 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://languagelayer.com/"
+        },
+        {
+          "name": "LiveKit",
+          "description": "Realtime audio, video, and data infrastructure.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.livekit.io/"
+        },
+        {
+          "name": "Luma Dream Machine",
+          "description": "Text-to-video generation API.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.lumalabs.ai/"
         },
         {
           "name": "MessengerX.io",
@@ -6016,6 +6142,13 @@
           "link": "https://perspectiveapi.com"
         },
         {
+          "name": "Recraft",
+          "description": "AI image generation API with style controls.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.recraft.ai/docs"
+        },
+        {
           "name": "Replicate",
           "description": "Run AI models via API (pay-as-you-go, free credits).",
           "auth": "apiKey",
@@ -6028,6 +6161,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://universe.roboflow.com"
+        },
+        {
+          "name": "Runway ML",
+          "description": "Generative AI for video and image.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.dev.runwayml.com/"
         },
         {
           "name": "SkyBiometry",
@@ -6070,6 +6210,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.together.ai/"
+        },
+        {
+          "name": "Vapi",
+          "description": "Voice AI agent platform for developers.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.vapi.ai/"
         },
         {
           "name": "Twinword Sentiment Analysis",
@@ -6354,18 +6501,18 @@
           "link": "https://developer.kkbox.com"
         },
         {
-          "name": "KSoft.Si Lyrics",
-          "description": "API to get lyrics for songs.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://docs.ksoft.si/api/lyrics-api"
-        },
-        {
           "name": "LastFm",
           "description": "Music database.",
           "auth": "apiKey",
           "https": true,
           "link": "https://www.last.fm/api"
+        },
+        {
+          "name": "ListenBrainz",
+          "description": "Open-source music stats and listening history.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://listenbrainz.readthedocs.io/en/latest/users/api/"
         },
         {
           "name": "Lyrics.ovh",
@@ -6549,7 +6696,7 @@
       "id": "photography",
       "emoji": "📷",
       "name": "Photography",
-      "api_count": 38,
+      "api_count": 39,
       "apis": [
         {
           "name": "apilayer mediastack",
@@ -6578,6 +6725,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://developer.ap.org/"
+        },
+        {
+          "name": "Bannerbear",
+          "description": "Auto-generate images and videos programmatically.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developers.bannerbear.com/"
         },
         {
           "name": "CheetahO",
@@ -6823,7 +6977,7 @@
       "id": "science",
       "emoji": "🔬",
       "name": "Science & Space",
-      "api_count": 32,
+      "api_count": 34,
       "apis": [
         {
           "name": "arcsecond.io",
@@ -6845,6 +6999,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://astronomyapi.com/"
+        },
+        {
+          "name": "CelesTrak",
+          "description": "Satellite orbital data (TLE) and space situational awareness.",
+          "auth": "No",
+          "https": true,
+          "link": "https://celestrak.org/"
         },
         {
           "name": "CORE",
@@ -6922,6 +7083,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://api.nasa.gov/"
+        },
+        {
+          "name": "NOAA Tides & Currents",
+          "description": "US tides, currents, and water level data.",
+          "auth": "No",
+          "https": true,
+          "link": "https://api.tidesandcurrents.noaa.gov/api/prod/"
         },
         {
           "name": "Newton",
@@ -7055,7 +7223,7 @@
       "id": "security-validation",
       "emoji": "🔐",
       "name": "Security & Validation",
-      "api_count": 29,
+      "api_count": 31,
       "apis": [
         {
           "name": "BinaryEdge",
@@ -7170,6 +7338,13 @@
           "link": "https://haveibeenpwned.com/API/v3"
         },
         {
+          "name": "IP Quality Score",
+          "description": "IP reputation, fraud prevention, and email validation.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.ipqualityscore.com/documentation/overview"
+        },
+        {
           "name": "LoginRadius",
           "description": "Managed User Authentication Service.",
           "auth": "apiKey",
@@ -7189,6 +7364,13 @@
           "auth": "No",
           "https": true,
           "link": "https://msrc.microsoft.com/report/developer"
+        },
+        {
+          "name": "MXToolbox",
+          "description": "Domain, DNS, and blacklist lookups.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://mxtoolbox.com/restapi.aspx"
         },
         {
           "name": "National Vulnerability Database",
@@ -7351,7 +7533,7 @@
       "id": "shopping",
       "emoji": "🛍️",
       "name": "Shopping",
-      "api_count": 15,
+      "api_count": 16,
       "apis": [
         {
           "name": "Barcode Lookup",
@@ -7438,6 +7620,13 @@
           "link": "https://open.shopee.com/documents?version=1"
         },
         {
+          "name": "Shopify Storefront",
+          "description": "Headless commerce GraphQL API for custom storefronts.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://shopify.dev/docs/api/storefront"
+        },
+        {
           "name": "Tokopedia",
           "description": "Tokopedia's Official API for integration of various services from Tokopedia.",
           "auth": "OAuth",
@@ -7464,7 +7653,7 @@
       "id": "utilities-tools",
       "emoji": "🔧",
       "name": "Utilities & Tools",
-      "api_count": 15,
+      "api_count": 16,
       "apis": [
         {
           "name": "Cal.com",
@@ -7542,6 +7731,13 @@
           "auth": "No",
           "https": true,
           "link": "https://goqr.me/api/"
+        },
+        {
+          "name": "Random.org",
+          "description": "True random numbers, strings, sequences from atmospheric noise.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://api.random.org/json-rpc/4"
         },
         {
           "name": "RoboHash",
@@ -8499,7 +8695,7 @@
       "id": "transportation",
       "emoji": "🚆",
       "name": "Transportation",
-      "api_count": 71,
+      "api_count": 72,
       "apis": [
         {
           "name": "ADS-B Exchange",
@@ -8535,6 +8731,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.az511.com/developers/doc"
+        },
+        {
+          "name": "FlightAware",
+          "description": "Real-time and historical flight tracking data.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.flightaware.com/commercial/aeroapi/"
         },
         {
           "name": "BART",
@@ -10314,7 +10517,7 @@
       "id": "weather",
       "emoji": "🌤️",
       "name": "Weather",
-      "api_count": 32,
+      "api_count": 33,
       "apis": [
         {
           "name": "7Timer!",
@@ -10406,6 +10609,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://content.meteoblue.com/en/business-solutions/weather-apis"
+        },
+        {
+          "name": "Meteomatics",
+          "description": "High-resolution weather API with global coverage.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.meteomatics.com/en/api/getting-started/"
         },
         {
           "name": "Meteorologisk Institutt",
@@ -10610,7 +10820,7 @@
       "id": "documents-productivity",
       "emoji": "📄",
       "name": "Documents & Productivity",
-      "api_count": 21,
+      "api_count": 23,
       "apis": [
         {
           "name": "Api2Convert",
@@ -10667,6 +10877,20 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://craftmypdf.com"
+        },
+        {
+          "name": "Docusign",
+          "description": "Electronic signature and agreement API.",
+          "auth": "OAuth",
+          "https": true,
+          "link": "https://developers.docusign.com/"
+        },
+        {
+          "name": "Dropbox Sign (HelloSign)",
+          "description": "E-signature API for documents and agreements.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developers.hellosign.com/api"
         },
         {
           "name": "Flowdash",
@@ -10816,6 +11040,119 @@
           "auth": "No",
           "https": true,
           "link": "https://metmuseum.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "monitoring-observability",
+      "emoji": "📈",
+      "name": "Monitoring & Observability",
+      "api_count": 15,
+      "apis": [
+        {
+          "name": "Axiom",
+          "description": "Event data platform for logs, traces, and metrics.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://axiom.co/docs/restapi/introduction"
+        },
+        {
+          "name": "Better Stack (Logtail)",
+          "description": "Uptime monitoring, logs, and incident management.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://betterstack.com/docs/uptime/api/"
+        },
+        {
+          "name": "Checkly",
+          "description": "API and browser synthetic monitoring for developers.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.checklyhq.com/docs/cli/"
+        },
+        {
+          "name": "Datadog",
+          "description": "Cloud monitoring, logs, metrics, and APM.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.datadoghq.com/api/latest/"
+        },
+        {
+          "name": "Grafana Cloud",
+          "description": "Managed metrics, logs, and traces platform.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://grafana.com/docs/grafana-cloud/developer-resources/api-reference/"
+        },
+        {
+          "name": "Honeycomb",
+          "description": "Observability for distributed systems and microservices.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.honeycomb.io/api/"
+        },
+        {
+          "name": "New Relic",
+          "description": "Full-stack application performance monitoring.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.newrelic.com/docs/apis/intro-apis/introduction-new-relic-apis/"
+        },
+        {
+          "name": "OpenTelemetry",
+          "description": "Open-source observability framework for telemetry data.",
+          "auth": "No",
+          "https": true,
+          "link": "https://opentelemetry.io/docs/"
+        },
+        {
+          "name": "PagerDuty",
+          "description": "Incident response and on-call scheduling platform.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developer.pagerduty.com/api-reference/"
+        },
+        {
+          "name": "Pingdom",
+          "description": "Website and infrastructure uptime monitoring.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.pingdom.com/api/"
+        },
+        {
+          "name": "Prometheus",
+          "description": "Open-source metrics-based monitoring query API.",
+          "auth": "No",
+          "https": true,
+          "link": "https://prometheus.io/docs/prometheus/latest/querying/api/"
+        },
+        {
+          "name": "Raygun",
+          "description": "Crash reporting and real user monitoring.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://raygun.com/documentation/api/"
+        },
+        {
+          "name": "Sentry",
+          "description": "Application error tracking and performance monitoring.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.sentry.io/api/"
+        },
+        {
+          "name": "UptimeRobot",
+          "description": "Website, port, and keyword uptime monitoring.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://uptimerobot.com/api/"
+        },
+        {
+          "name": "Zabbix",
+          "description": "Open-source enterprise monitoring and alerting.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.zabbix.com/documentation/current/manual/api"
         }
       ]
     },

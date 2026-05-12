@@ -236,6 +236,7 @@ print(response.json()['fact'])
 - [📄 Documents & Productivity](#documents-productivity)
 - [👤 Demographic Analysis](#demographic-analysis)
 - [🏛️ Museums & Art](#museums-art)
+- [📈 Monitoring & Observability](#monitoring-observability)
 
 ---
 
@@ -630,6 +631,11 @@ print(response.json()['fact'])
 
 
 | **Microlink** | Extract metadata, take screenshots, and generate PDFs from any URL. | No | ✅ | [Link](https://microlink.io/docs/api/getting-started/overview) |
+| **Doppler** | Secrets management platform for developers. | 🔑 ApiKey | ✅ | [Link](https://docs.doppler.com/reference/api) |
+| **Fly.io** | Global app deployment platform. | 🔑 ApiKey | ✅ | [Link](https://fly.io/docs/machines/api/) |
+| **Gitea** | Self-hosted Git service with REST API. | 🔐 OAuth | ✅ | [Link](https://docs.gitea.com/api/1.20/) |
+| **Linear** | Modern issue tracking for software teams. | 🔑 ApiKey | ✅ | [Link](https://developers.linear.app/docs) |
+| **Turso** | SQLite-based edge database platform. | 🔑 ApiKey | ✅ | [Link](https://docs.turso.tech/) |
 
 
 [⬆ Back to Table of Contents](#-table-of-contents)
@@ -658,6 +664,7 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Cloudmersive Natural Language Processing** | Natural language processing and text analysis. | 🔑 ApiKey | ✅ | [Link](https://www.cloudmersive.com/nlp-api) |
+| **AssemblyAI** | Speech-to-text and audio intelligence API. | 🔑 ApiKey | ✅ | [Link](https://www.assemblyai.com/docs) |
 | **Code Detection API** | Detect, label, format and enrich the code in your app or in your data pipeline. | 🔐 OAuth | ✅ | [Link](https://codedetectionapi.runtime.dev) |
 | **Dandelion** | Entity extraction and text analytics API. | 🔑 ApiKey | ✅ | [Link](https://dandelion.eu/docs/api/) |
 | **DeepL** | Translation and multilingual text API. | 🔑 ApiKey | ✅ | [Link](https://developers.deepl.com/docs) |
@@ -746,6 +753,7 @@ print(response.json()['fact'])
 | **CORE API** | Open access research paper metadata. | 🔑 ApiKey | ✅ | [Link](https://api.core.ac.uk/docs/v3) |
 | **Crossref** | Scholarly article metadata (**No Auth**). | No | ✅ | [Link](https://www.crossref.org/documentation/retrieve-metadata/rest-api/) |
 | **edX API** | Online course catalog. | 🔐 OAuth | ✅ | [Link](https://courses.edx.org/api-docs/) |
+| **Khan Academy** | Khan Academy educational content. | 🔐 OAuth | ✅ | [Link](https://khanacademy.org/api-docs) |
 | **OpenAlex** | Open catalog of scholarly papers (**No Auth**). | No | ✅ | [Link](https://docs.openalex.org/) |
 | **Periodic Table** | Chemical element data. | No | ✅ | [Link](https://api-ninjas.com/api/periodictable) |
 | **Semantic Scholar** | Scholarly papers and citation graph data. | No | ✅ | [Link](https://api.semanticscholar.org/api-docs/) |
@@ -769,6 +777,7 @@ print(response.json()['fact'])
 | **Namedays Calendar** | Nameday lookups by date and locale. | No | ✅ | [Link](https://nameday.abalin.net/) |
 | **Non-Working Days** | Non-working day and holiday checks. | No | ✅ | [Link](https://isdayoff.ru/) |
 | **Public Holidays** | Data on national, regional, and religious holidays via API. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/holidays-api) |
+| **TimeAPI.io** | Current time, timezone, and holiday info for any region. | No | ✅ | [Link](https://timeapi.io/swagger/index.html) |
 | **UK Bank Holidays** | Official UK bank holiday dataset API. | No | ✅ | [Link](https://www.gov.uk/bank-holidays.json) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
@@ -837,7 +846,10 @@ print(response.json()['fact'])
 | **Mailgun** | Email service for developers (free tier). | 🔑 ApiKey | ✅ | [Link](https://documentation.mailgun.com/) |
 | **Mailjet** | Transactional email and marketing API. | 🔑 ApiKey | ✅ | [Link](https://www.mailjet.com/) |
 | **Mailtrap** | Email testing and sending API. | 🔑 ApiKey | ✅ | [Link](https://api-docs.mailtrap.io/) |
+| **Brevo (Sendinblue)** | Transactional email, SMS, and marketing automation. | 🔑 ApiKey | ✅ | [Link](https://developers.brevo.com/) |
+| **Loops** | Transactional and marketing email for SaaS apps. | 🔑 ApiKey | ✅ | [Link](https://loops.so/docs/api-reference) |
 | **OneSignal** | Push notifications platform (free tier). | 🔑 ApiKey | ✅ | [Link](https://documentation.onesignal.com/reference) |
+| **Postmark** | Transactional email delivery for web apps. | 🔑 ApiKey | ✅ | [Link](https://postmarkapp.com/developer) |
 | **Pushover** | Simple push notifications API. | 🔑 ApiKey | ✅ | [Link](https://pushover.net/api) |
 | **Resend** | Modern email API for developers (free tier). | 🔑 ApiKey | ✅ | [Link](https://resend.com/docs/api-reference/introduction) |
 | **SendGrid** | Email delivery service (free tier: 100/day). | 🔑 ApiKey | ✅ | [Link](https://docs.sendgrid.com/api-reference) |
@@ -948,7 +960,7 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Aletheia** | Insider trading data, earnings call analysis, financial statements, and more. | 🔑 ApiKey | ✅ | [Link](https://aletheiaapi.com/) |
-| **Alpaca** | Commission-free stock trading. | 🔑 ApiKey | ✅ | [Link](https://alpaca.markets/docs/api-documentation/api-v2/market-data/alpaca-data-api-v2/) |
+| **Alpaca** | Commission-free stock trading. | 🔑 ApiKey | ✅ | [Link](https://alpaca.markets/docs/api-references/) |
 | **Alpha Vantage** | Realtime and historical stock data. | 🔑 ApiKey | ✅ | [Link](https://www.alphavantage.co/) |
 | **Banco do Brasil** | All Banco do Brasil financial transaction APIs. | 🔐 OAuth | ✅ | [Link](https://developers.bb.com.br/home) |
 | **Bank Data API** | Instant IBAN and SWIFT number validation across the globe. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/bank_data-api) |
@@ -984,7 +996,9 @@ print(response.json()['fact'])
 | **Stripe** | Payments. | 🔑 ApiKey | ✅ | [Link](https://stripe.com/docs/api) |
 | **Tax Data API** | Tax rates and validation. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/tax_data-api) |
 | **Tradier** | US equity/option market data (delayed, intraday, historical) | 🔐 OAuth | ✅ | [Link](https://developer.tradier.com) |
+| **Tiingo** | Financial data, news, and fundamentals API. | 🔑 ApiKey | ✅ | [Link](https://www.tiingo.com/documentation/general/overview) |
 | **Twelve Data** | Stock market data (real-time & historical) | 🔑 ApiKey | ✅ | [Link](https://twelvedata.com/) |
+| **Wise** | International money transfers and currency exchange. | 🔐 OAuth | ✅ | [Link](https://docs.wise.com/api-docs) |
 | **VAT Validation** | Validate VAT numbers and calculate VAT rates. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/vat-validation-rates-api) |
 | **WallstreetBets** | WallstreetBets Stock Comments Sentiment Analysis. | No | ✅ | [Link](https://dashboard.nbshare.io/apps/reddit/api/) |
 | **YNAB** | Budgeting & Planning. | 🔐 OAuth | ✅ | [Link](https://api.youneedabudget.com/) |
@@ -1033,7 +1047,6 @@ print(response.json()['fact'])
 | **Edamam Recipe** | Recipe search and nutrition analysis. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-recipe-api) |
 | **Edamam recipes** | Recipe Search. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-docs-recipe-api) |
 | **Fruityvice** | Data about all kinds of fruit. | No | ✅ | [Link](https://www.fruityvice.com) |
-| **Kroger** | Supermarket Data. | 🔑 ApiKey | ✅ | [Link](https://developer.kroger.com/reference) |
 | **Ninjas Recipe** | Recipe search with nutrition data. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/recipe) |
 | **Open Brewery DB** | Brewery database worldwide. | No | ✅ | [Link](https://www.openbrewerydb.org/) |
 | **Open Food Facts** | Food product data. | No | ✅ | [Link](https://world.openfoodfacts.org/data) |
@@ -1191,6 +1204,7 @@ print(response.json()['fact'])
 | **OpenStreetMap** | Map data. | 🔐 OAuth | ✅ | [Link](http://wiki.openstreetmap.org/wiki/API) |
 | **OpenTripMap** | Tourist attractions and points of interest worldwide. | 🔑 ApiKey | ✅ | [Link](https://dev.opentripmap.org/docs) |
 | **Pinball Map** | A crowdsourced map of public pinball machines. | No | ✅ | [Link](https://pinballmap.com/api/v1/docs) |
+| **Radar** | Geocoding, geofencing, routing, and maps. | 🔑 ApiKey | ✅ | [Link](https://radar.com/documentation/api) |
 | **Postali** | Mexico Zip Codes API. | No | ✅ | [Link](https://postali.app/api) |
 | **PostcodeData.nl** | Provide geolocation data based on postcode for Dutch addresses. | No | No | [Link](http://api.postcodedata.nl/v1/postcode/?postcode=1211EP&streetnumber=60&ref=domeinnaam.nl&type=json) |
 | **Postcodes.io** | Postcode lookup & Geolocation for the UK. | No | ✅ | [Link](https://postcodes.io) |
@@ -1232,6 +1246,7 @@ print(response.json()['fact'])
 | **ExerciseDB** | Exercise data with images and animations. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb) |
 | **FoodData Central** | National Nutrient Database for Standard Reference. | 🔑 ApiKey | ✅ | [Link](https://fdc.nal.usda.gov/) |
 | **Healthcare.gov** | Educational content about the US Health Insurance Marketplace. | No | ✅ | [Link](https://www.healthcare.gov/developers/) |
+| **HealthData.gov** | Public US health datasets and data portal. | No | ✅ | [Link](https://healthdata.gov/) |
 | **Humanitarian Data Exchange** | Humanitarian Data Exchange (HDX) is open platform for sharing data across cri... | No | ✅ | [Link](https://data.humdata.org/) |
 | **Infermedica** | NLP based symptom checker and patient triage API for health diagnosis from text. | 🔑 ApiKey | ✅ | [Link](https://developer.infermedica.com/docs/) |
 | **LAPIS** | SARS-CoV-2 genomic sequences from public sources. | No | ✅ | [Link](https://cov-spectrum.ethz.ch/public) |
@@ -1269,29 +1284,36 @@ print(response.json()['fact'])
 | **EXUDE-API** | Used for the primary ways for filtering the stopping, stemming words from the... | No | ✅ | [Link](http://uttesh.com/exude-api/) |
 | **Fal.ai** | Run AI models in serverless GPU (image/video generation). | 🔑 ApiKey | ✅ | [Link](https://fal.ai/docs) |
 | **Fireworks AI** | Fast inference for open-source LLMs. | 🔑 ApiKey | ✅ | [Link](https://docs.fireworks.ai/) |
+| **Cerebras Inference** | Extremely fast LLM inference platform. | 🔑 ApiKey | ✅ | [Link](https://inference-docs.cerebras.ai/) |
 | **Google Gemini** | Google's latest multimodal AI models. | 🔑 ApiKey | ✅ | [Link](https://ai.google.dev/) |
 | **Groq** | Ultra-fast LLM inference API. | 🔑 ApiKey | ✅ | [Link](https://groq.com/) |
 | **Hirak FaceAPI** | Face detection, face recognition with age estimation/gender estimation, accur... | 🔑 ApiKey | ✅ | [Link](https://faceapi.hirak.site/) |
 | **Hugging Face** | Access thousands of models for NLP, vision, and audio. | 🔑 ApiKey | ✅ | [Link](https://huggingface.co/docs/api-inference/index) |
+| **Ideogram** | Text-to-image generation with strong typography. | 🔑 ApiKey | ✅ | [Link](https://developer.ideogram.ai/) |
 | **Imagga** | Image Recognition. | 🔑 ApiKey | ✅ | [Link](https://imagga.com/) |
 | **Inferdo** | Computer Vision services like Facial detection, Image labeling, NSFW classifi... | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/user/inferdo) |
 | **Irisnet** | Realtime content moderation API that blocks or blurs unwanted images in real-... | 🔑 ApiKey | ✅ | [Link](https://irisnet.de/api/) |
 | **Keen IO** | Data Analytics. | 🔑 ApiKey | ✅ | [Link](https://keen.io/) |
 | **Languagelayer** | Language detection. | 🔑 ApiKey | ✅ | [Link](https://languagelayer.com/) |
+| **LiveKit** | Realtime audio, video, and data infrastructure. | 🔑 ApiKey | ✅ | [Link](https://docs.livekit.io/) |
+| **Luma Dream Machine** | Text-to-video generation API. | 🔑 ApiKey | ✅ | [Link](https://docs.lumalabs.ai/) |
 | **MessengerX.io** | A FREE API for developers to build and monetize personalized ML based chat apps. | 🔑 ApiKey | ✅ | [Link](https://messengerx.rtfd.io) |
 | **Mistral AI** | High-performance open-source LLMs (free tier available). | 🔑 ApiKey | ✅ | [Link](https://docs.mistral.ai/) |
 | **NLP Cloud** | NLP. | 🔑 ApiKey | ✅ | [Link](https://nlpcloud.io) |
 | **OpenAI** | Access GPT models (offers free trial credits). | 🔑 ApiKey | ✅ | [Link](https://platform.openai.com/docs) |
 | **Perplexity AI** | AI-powered search and answers (limited free tier). | 🔑 ApiKey | ✅ | [Link](https://docs.perplexity.ai/) |
 | **Perspective** | NLP API to return probability that if text is toxic, obscene, insulting or th... | 🔑 ApiKey | ✅ | [Link](https://perspectiveapi.com) |
+| **Recraft** | AI image generation API with style controls. | 🔑 ApiKey | ✅ | [Link](https://www.recraft.ai/docs) |
 | **Replicate** | Run AI models via API (pay-as-you-go, free credits). | 🔑 ApiKey | ✅ | [Link](https://replicate.com/docs) |
 | **Roboflow** | Computer Vision. | 🔑 ApiKey | ✅ | [Link](https://universe.roboflow.com) |
+| **Runway ML** | Generative AI for video and image. | 🔑 ApiKey | ✅ | [Link](https://docs.dev.runwayml.com/) |
 | **SkyBiometry** | Face Detection, Face Recognition and Face Grouping. | 🔑 ApiKey | ✅ | [Link](https://skybiometry.com/documentation/) |
 | **Stability AI** | Image generation (Stable Diffusion). | 🔑 ApiKey | ✅ | [Link](https://platform.stability.ai/docs/api-reference) |
 | **Suno AI** | AI music generation API. | 🔑 ApiKey | ✅ | [Link](https://suno.com/) |
 | **Tavily** | AI-powered search API for agents. | 🔑 ApiKey | ✅ | [Link](https://tavily.com/) |
 | **Time Door** | A time series analysis API. | 🔑 ApiKey | ✅ | [Link](https://timedoor.io) |
 | **Together AI** | Fast inference for open-source LLMs (free credits). | 🔑 ApiKey | ✅ | [Link](https://docs.together.ai/) |
+| **Vapi** | Voice AI agent platform for developers. | 🔑 ApiKey | ✅ | [Link](https://docs.vapi.ai/) |
 | **Twinword Sentiment Analysis** | Sentiment analysis, emotion analysis, and more. | 🔑 ApiKey | ✅ | [Link](https://www.twinword.com/api/sentiment-analysis.php) |
 | **Unplugg** | Forecasting API for timeseries data. | 🔑 ApiKey | ✅ | [Link](https://unplu.gg/test_api.html) |
 | **WolframAlpha** | Computational Knowledge. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/api/) |
@@ -1345,8 +1367,8 @@ print(response.json()['fact'])
 | **iTunes Search** | Search iTunes store for music, movies, apps (**No Auth**). | No | ✅ | [Link](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/) |
 | **Jamendo** | Free music licensing and streaming. | 🔐 OAuth | ✅ | [Link](https://developer.jamendo.com/v3.0) |
 | **KKBOX** | Get music libraries, playlists, charts, and perform out of KKBOX's platform. | 🔐 OAuth | ✅ | [Link](https://developer.kkbox.com) |
-| **KSoft.Si Lyrics** | API to get lyrics for songs. | 🔑 ApiKey | ✅ | [Link](https://docs.ksoft.si/api/lyrics-api) |
 | **LastFm** | Music database. | 🔑 ApiKey | ✅ | [Link](https://www.last.fm/api) |
+| **ListenBrainz** | Open-source music stats and listening history. | 🔑 ApiKey | ✅ | [Link](https://listenbrainz.readthedocs.io/en/latest/users/api/) |
 | **Lyrics.ovh** | Simple lyrics search API (**No Auth**). | No | ✅ | [Link](https://lyricsovh.docs.apiary.io/) |
 | **Mixcloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://www.mixcloud.com/developers/) |
 | **MusicBrainz** | Music database. | No | ✅ | [Link](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2) |
@@ -1390,6 +1412,7 @@ print(response.json()['fact'])
 | **APITemplate.io** | Dynamically generate images and PDFs from templates with a simple API. | 🔑 ApiKey | ✅ | [Link](https://apitemplate.io) |
 | **Art Institute of Chicago** | Museum artwork data (**No Auth**). | No | ✅ | [Link](https://api.artic.edu/docs/) |
 | **Associated Press** | Search for news and metadata from Associated Press. | 🔑 ApiKey | ✅ | [Link](https://developer.ap.org/) |
+| **Bannerbear** | Auto-generate images and videos programmatically. | 🔑 ApiKey | ✅ | [Link](https://developers.bannerbear.com/) |
 | **CheetahO** | Photo optimization and resize. | 🔑 ApiKey | ✅ | [Link](https://cheetaho.com/docs/getting-started/) |
 | **Chronicling America** | Provides access to millions of pages of historic US newspapers from the Libra... | No | No | [Link](http://chroniclingamerica.loc.gov/about/api/) |
 | **Dagpi** | Image manipulation and processing. | 🔑 ApiKey | ✅ | [Link](https://dagpi.xyz) |
@@ -1435,6 +1458,7 @@ print(response.json()['fact'])
 | **arcsecond.io** | Multiple astronomy data sources. | No | ✅ | [Link](https://api.arcsecond.io/) |
 | **arXiv** | Scientific paper search and metadata (**No Auth**). | No | ✅ | [Link](https://arxiv.org/help/api) |
 | **Astronomy API** | Astronomy calculations and celestial data. | 🔑 ApiKey | ✅ | [Link](https://astronomyapi.com/) |
+| **CelesTrak** | Satellite orbital data (TLE) and space situational awareness. | No | ✅ | [Link](https://celestrak.org/) |
 | **CORE** | Access the world's Open Access research papers. | 🔑 ApiKey | ✅ | [Link](https://core.ac.uk/services#api) |
 | **GBIF** | Global biodiversity occurrence data (**No Auth**). | No | ✅ | [Link](https://www.gbif.org/developer/summary) |
 | **isEven (humor)** | Check if a number is even. | No | ✅ | [Link](https://isevenapi.xyz/) |
@@ -1446,6 +1470,7 @@ print(response.json()['fact'])
 | **Minor Planet Center** | Asterank.com Information. | No | No | [Link](http://www.asterank.com/mpc) |
 | **NASA ADS** | NASA Astrophysics Data System. | 🔐 OAuth | ✅ | [Link](https://ui.adsabs.harvard.edu/help/api/api-docs.html) |
 | **NASA API** | Access NASA data, including Astronomy Picture of the Day (APOD). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
+| **NOAA Tides & Currents** | US tides, currents, and water level data. | No | ✅ | [Link](https://api.tidesandcurrents.noaa.gov/api/prod/) |
 | **Newton** | Symbolic and arithmetic math calculator API (**No Auth**). | No | ✅ | [Link](https://newton.vercel.app/) |
 | **Noctua** | REST API used to access NoctuaSky features. | No | ✅ | [Link](https://api.noctuasky.com/api/v1/swaggerdoc/) |
 | **Numbers** | Number of the day, random number, number facts and anything else you want to ... | 🔑 ApiKey | ✅ | [Link](https://math.tools/api/numbers/) |
@@ -1488,9 +1513,11 @@ print(response.json()['fact'])
 | **GreyNoise** | Query IPs in the GreyNoise dataset and retrieve a subset of the full IP conte... | 🔑 ApiKey | ✅ | [Link](https://docs.greynoise.io/reference) |
 | **HackerOne** | The industry’s first hacker API that helps increase productivity towards crea... | 🔑 ApiKey | ✅ | [Link](https://api.hackerone.com/) |
 | **HaveIBeenPwned** | Check if email or password has been compromised in a data breach. | 🔑 ApiKey | ✅ | [Link](https://haveibeenpwned.com/API/v3) |
+| **IP Quality Score** | IP reputation, fraud prevention, and email validation. | 🔑 ApiKey | ✅ | [Link](https://www.ipqualityscore.com/documentation/overview) |
 | **LoginRadius** | Managed User Authentication Service. | 🔑 ApiKey | ✅ | [Link](https://www.loginradius.com/docs/) |
 | **Mozilla Observatory** | Website security analysis (**No Auth**). | No | ✅ | [Link](https://observatory.mozilla.org/) |
 | **MSRC** | Microsoft vulnerability and CVRF data feeds. | No | ✅ | [Link](https://msrc.microsoft.com/report/developer) |
+| **MXToolbox** | Domain, DNS, and blacklist lookups. | 🔑 ApiKey | ✅ | [Link](https://mxtoolbox.com/restapi.aspx) |
 | **National Vulnerability Database** | U.S. National Vulnerability Database. | No | ✅ | [Link](https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog) |
 | **OSV** | Open source vulnerability database and API (**No Auth**). | No | ✅ | [Link](https://google.github.io/osv.dev/) |
 | **PhishStats** | Phishing database. | No | ✅ | [Link](https://phishstats.info/) |
@@ -1538,6 +1565,7 @@ print(response.json()['fact'])
 | **OLX Poland** | Integrate with local sites by posting, managing adverts and communicating wit... | 🔑 ApiKey | ✅ | [Link](https://developer.olx.pl/api/doc#section/) |
 | **Rappi** | Manage orders from Rappi's app. | 🔐 OAuth | ✅ | [Link](https://dev-portal.rappi.com/) |
 | **Shopee** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://open.shopee.com/documents?version=1) |
+| **Shopify Storefront** | Headless commerce GraphQL API for custom storefronts. | 🔑 ApiKey | ✅ | [Link](https://shopify.dev/docs/api/storefront) |
 | **Tokopedia** | Tokopedia's Official API for integration of various services from Tokopedia. | 🔐 OAuth | ✅ | [Link](https://developer.tokopedia.com/openapi/guide/#/) |
 | **WooCommerce** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://woocommerce.github.io/woocommerce-rest-api-docs/) |
 | **Makeup API** | Search makeup products by brand, type, price (**No Auth**). | No | ✅ | [Link](http://makeup-api.herokuapp.com/) |
@@ -1560,6 +1588,7 @@ print(response.json()['fact'])
 | **PDF.co** | PDF generation, conversion and manipulation. | 🔑 ApiKey | ✅ | [Link](https://apidocs.pdf.co/) |
 | **Pravatar** | Placeholder avatar images (**No Auth**). | No | ✅ | [Link](https://pravatar.cc/) |
 | **QR Code Generator** | Dynamic QR code generation API. | No | ✅ | [Link](https://goqr.me/api/) |
+| **Random.org** | True random numbers, strings, sequences from atmospheric noise. | 🔑 ApiKey | ✅ | [Link](https://api.random.org/json-rpc/4) |
 | **RoboHash** | Generate unique robot/monster avatars (**No Auth**). | No | ✅ | [Link](https://robohash.org/) |
 | **Text Art API** | Generate text-based art (**No Auth**). | No | ✅ | [Link](http://patorjk.com/software/taag/) |
 | **UI Avatars** | Generate avatar placeholders from initials (**No Auth, 28M+ daily requests**). | No | ✅ | [Link](https://ui-avatars.com/) |
@@ -1738,6 +1767,7 @@ print(response.json()['fact'])
 | **AIS Hub** | Real-time data of any marine and inland vessel equipped with AIS tracking system. | 🔑 ApiKey | No | [Link](http://www.aishub.net/api) |
 | **Amadeus for Developers** | Travel Search - Limited usage. | 🔐 OAuth | ✅ | [Link](https://developers.amadeus.com/self-service) |
 | **AZ511** | Access traffic data from the ADOT API. | 🔑 ApiKey | ✅ | [Link](https://www.az511.com/developers/doc) |
+| **FlightAware** | Real-time and historical flight tracking data. | 🔑 ApiKey | ✅ | [Link](https://www.flightaware.com/commercial/aeroapi/) |
 | **BART** | Bay Area Rapid Transit. | 🔑 ApiKey | ✅ | [Link](http://api.bart.gov) |
 | **BC Ferries** | Sailing times and capacities for BC Ferries. | No | ✅ | [Link](https://www.bcferriesapi.ca) |
 | **BIC-Boxtech** | Container technical detail for the global container fleet. | 🔐 OAuth | ✅ | [Link](https://docs.bic-boxtech.org/) |
@@ -2058,6 +2088,7 @@ print(response.json()['fact'])
 | **HG Weather** | Provides weather forecast data for cities in Brazil. | 🔑 ApiKey | ✅ | [Link](https://hgbrasil.com/status/weather) |
 | **Hong Kong Obervatory** | Provide weather information, earthquake information, and climate data. | No | ✅ | [Link](https://www.hko.gov.hk/en/abouthko/opendata_intro.htm) |
 | **Meteoblue** | Weather forecasts and history. | 🔑 ApiKey | ✅ | [Link](https://content.meteoblue.com/en/business-solutions/weather-apis) |
+| **Meteomatics** | High-resolution weather API with global coverage. | 🔑 ApiKey | ✅ | [Link](https://www.meteomatics.com/en/api/getting-started/) |
 | **Meteorologisk Institutt** | Weather and climate data. | 🔑 ApiKey | ✅ | [Link](https://api.met.no/weatherapi/documentation) |
 | **Micro Weather** | Real time weather forecasts and historic data. | 🔑 ApiKey | ✅ | [Link](https://m3o.com/weather/api) |
 | **ODWeather** | Weather and weather webcams. | No | No | [Link](http://api.oceandrivers.com/static/docs.html) |
@@ -2108,6 +2139,8 @@ print(response.json()['fact'])
 | **Cloudmersive Document and Data Conversion** | HTML/URL to PDF/PNG, Office documents to PDF, image conversion. | 🔑 ApiKey | ✅ | [Link](https://cloudmersive.com/convert-api) |
 | **Code::Stats** | Automatic time tracking for programmers. | 🔑 ApiKey | ✅ | [Link](https://codestats.net/api-docs) |
 | **CraftMyPDF** | Generate PDF documents from templates with a drop-and-drop editor and a simpl... | 🔑 ApiKey | ✅ | [Link](https://craftmypdf.com) |
+| **Docusign** | Electronic signature and agreement API. | 🔐 OAuth | ✅ | [Link](https://developers.docusign.com/) |
+| **Dropbox Sign (HelloSign)** | E-signature API for documents and agreements. | 🔑 ApiKey | ✅ | [Link](https://developers.hellosign.com/api) |
 | **Flowdash** | Automate business workflows. | 🔑 ApiKey | ✅ | [Link](https://docs.flowdash.com/docs/api-introduction) |
 | **Html2PDF** | HTML/URL to PDF. | 🔑 ApiKey | ✅ | [Link](https://html2pdf.app/) |
 | **iLovePDF** | Convert, merge, split, extract text and add page numbers for PDFs. Free for 2... | 🔑 ApiKey | ✅ | [Link](https://developer.ilovepdf.com/) |
@@ -2145,6 +2178,28 @@ print(response.json()['fact'])
 |------|-------------|------|-------|------|
 | **Metropolitan Museum** | Access 5,000 years of art from The Met collection (**No Auth**). | No | ✅ | [Link](https://metmuseum.github.io/) |
 
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="monitoring-observability"></a>📈 Monitoring & Observability
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Axiom** | Event data platform for logs, traces, and metrics. | 🔑 ApiKey | ✅ | [Link](https://axiom.co/docs/restapi/introduction) |
+| **Better Stack (Logtail)** | Uptime monitoring, logs, and incident management. | 🔑 ApiKey | ✅ | [Link](https://betterstack.com/docs/uptime/api/) |
+| **Checkly** | API and browser synthetic monitoring for developers. | 🔑 ApiKey | ✅ | [Link](https://www.checklyhq.com/docs/cli/) |
+| **Datadog** | Cloud monitoring, logs, metrics, and APM. | 🔑 ApiKey | ✅ | [Link](https://docs.datadoghq.com/api/latest/) |
+| **Grafana Cloud** | Managed metrics, logs, and traces platform. | 🔑 ApiKey | ✅ | [Link](https://grafana.com/docs/grafana-cloud/developer-resources/api-reference/) |
+| **Honeycomb** | Observability for distributed systems and microservices. | 🔑 ApiKey | ✅ | [Link](https://docs.honeycomb.io/api/) |
+| **New Relic** | Full-stack application performance monitoring. | 🔑 ApiKey | ✅ | [Link](https://docs.newrelic.com/docs/apis/intro-apis/introduction-new-relic-apis/) |
+| **OpenTelemetry** | Open-source observability framework for telemetry data. | No | ✅ | [Link](https://opentelemetry.io/docs/) |
+| **PagerDuty** | Incident response and on-call scheduling platform. | 🔑 ApiKey | ✅ | [Link](https://developer.pagerduty.com/api-reference/) |
+| **Pingdom** | Website and infrastructure uptime monitoring. | 🔑 ApiKey | ✅ | [Link](https://docs.pingdom.com/api/) |
+| **Prometheus** | Open-source metrics-based monitoring query API. | No | ✅ | [Link](https://prometheus.io/docs/prometheus/latest/querying/api/) |
+| **Raygun** | Crash reporting and real user monitoring. | 🔑 ApiKey | ✅ | [Link](https://raygun.com/documentation/api/) |
+| **Sentry** | Application error tracking and performance monitoring. | 🔑 ApiKey | ✅ | [Link](https://docs.sentry.io/api/) |
+| **UptimeRobot** | Website, port, and keyword uptime monitoring. | 🔑 ApiKey | ✅ | [Link](https://uptimerobot.com/api/) |
+| **Zabbix** | Open-source enterprise monitoring and alerting. | 🔑 ApiKey | ✅ | [Link](https://www.zabbix.com/documentation/current/manual/api) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
