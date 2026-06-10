@@ -14,15 +14,21 @@ const GUIDE_OUTPUT = join(ROOT, 'docs-site', 'src', 'content', 'docs', 'guide', 
 const EXAMPLES_OUTPUT = join(ROOT, 'docs-site', 'src', 'content', 'docs', 'examples', 'index.mdx');
 
 const CATEGORY_ORDER = [
-  'animals', 'anime', 'anti-malware', 'authentication-identity', 'books',
-  'blockchain-web3', 'cryptocurrency', 'cloud-storage-files', 'development',
-  'dictionaries', 'education', 'calendar-holidays', 'public-data', 'email-sms', 'finance',
-  'food-drink', 'entertainment', 'geocoding', 'games-comics', 'health',
-  'machine-learning', 'music', 'mock-data-testing', 'news', 'photography',
-  'science', 'security-validation', 'shopping', 'social', 'sports',
-  'utilities-tools', 'design-colors', 'geography-countries', 'transportation',
-  'environment-climate', 'government-civic', 'video', 'math-computation',
-  'unofficial-community', 'memes-fun', 'jobs-career', 'weather'
+  'animals', 'anime', 'anti-malware', 'authentication-identity',
+  'blockchain-web3', 'books', 'business', 'calendar-holidays',
+  'cloud-storage-files', 'continuous-integration', 'cryptocurrency', 'currency-exchange',
+  'data-validation', 'demographic-analysis', 'design-colors', 'development',
+  'dictionaries', 'documents-productivity', 'education', 'email-sms',
+  'entertainment', 'environment-climate', 'events', 'finance',
+  'food-drink', 'games-comics', 'geocoding', 'geography-countries',
+  'government-civic', 'health', 'iot-smart-devices', 'jobs-career',
+  'machine-learning', 'math-computation', 'memes-fun', 'mock-data-testing',
+  'monitoring-observability', 'museums-art', 'music', 'news',
+  'open-source-projects', 'personality-quotes', 'phone-telephony', 'photography',
+  'podcasts', 'public-data', 'science', 'security-validation',
+  'shopping', 'social', 'sports', 'text-analysis-nlp',
+  'tracking-logistics', 'transportation', 'travel-tourism', 'unofficial-community',
+  'url-shorteners', 'utilities-tools', 'video', 'weather'
 ];
 
 function parseReadme() {

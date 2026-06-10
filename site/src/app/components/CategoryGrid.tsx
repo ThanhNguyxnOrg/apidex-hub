@@ -64,7 +64,7 @@ export function CategoryGrid({
             fontSize: 12,
           }}
         >
-          {categories.length} / 56
+          {categories.length} Total
         </div>
       </div>
 
