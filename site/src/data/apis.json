@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-06-10T13:00:38.646148+00:00",
+    "generated_at": "2026-06-10T13:15:06.564567+00:00",
     "source": "README.md",
-    "total_apis": 1537,
+    "total_apis": 1548,
     "total_categories": 64,
-    "no_auth_count": 630,
-    "https_count": 1478,
+    "no_auth_count": 641,
+    "https_count": 1489,
     "https_percentage": 96
   },
   "categories": [
@@ -13,7 +13,7 @@
       "id": "animals",
       "emoji": "🐶",
       "name": "Animals",
-      "api_count": 27,
+      "api_count": 29,
       "apis": [
         {
           "name": "AdoptAPet",
@@ -44,11 +44,25 @@
           "link": "https://cataas.com/"
         },
         {
+          "name": "CATAAS",
+          "description": "Cat As A Service - random cat images, gifs, and cats with text.",
+          "auth": "No",
+          "https": true,
+          "link": "https://cataas.com/"
+        },
+        {
           "name": "Cats",
           "description": "Pictures of cats from Tumblr.",
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.thecatapi.com/"
+        },
+        {
+          "name": "Dog API",
+          "description": "Access to thousands of dog images, breed information, and facts.",
+          "auth": "No",
+          "https": true,
+          "link": "https://dog.ceo/dog-api/"
         },
         {
           "name": "Dog API v2",
@@ -210,7 +224,7 @@
       "id": "anime",
       "emoji": "🌸",
       "name": "Anime",
-      "api_count": 19,
+      "api_count": 20,
       "apis": [
         {
           "name": "AniAPI",
@@ -323,6 +337,13 @@
           "auth": "No",
           "https": true,
           "link": "https://ghibliapi.vercel.app"
+        },
+        {
+          "name": "Studio Ghibli API",
+          "description": "Resources from Studio Ghibli films, characters, species, and locations.",
+          "auth": "No",
+          "https": true,
+          "link": "https://ghibliapi.vercel.app/"
         },
         {
           "name": "Trace Moe",
@@ -746,7 +767,7 @@
       "id": "books",
       "emoji": "📚",
       "name": "Books & Literature",
-      "api_count": 16,
+      "api_count": 17,
       "apis": [
         {
           "name": "A Bíblia Digital",
@@ -814,6 +835,13 @@
         {
           "name": "Open Library",
           "description": "Fetch data about millions of books and covers.",
+          "auth": "No",
+          "https": true,
+          "link": "https://openlibrary.org/developers/api"
+        },
+        {
+          "name": "Open Library",
+          "description": "Retrieve data about books, authors, subjects, and search library catalog.",
           "auth": "No",
           "https": true,
           "link": "https://openlibrary.org/developers/api"
@@ -1648,7 +1676,7 @@
       "id": "currency-exchange",
       "emoji": "💱",
       "name": "Currency Exchange",
-      "api_count": 23,
+      "api_count": 24,
       "apis": [
         {
           "name": "1Forge",
@@ -1779,6 +1807,13 @@
         {
           "name": "Frankfurter",
           "description": "Open source exchange rates API.",
+          "auth": "No",
+          "https": true,
+          "link": "https://www.frankfurter.app/"
+        },
+        {
+          "name": "Frankfurter",
+          "description": "Currency exchange rates tracker published by the European Central Bank.",
           "auth": "No",
           "https": true,
           "link": "https://www.frankfurter.app/"
@@ -2107,7 +2142,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 141,
+      "api_count": 142,
       "apis": [
         {
           "name": "Agify.io",
@@ -2556,6 +2591,13 @@
           "auth": "No",
           "https": true,
           "link": "https://http2.pro/doc/api"
+        },
+        {
+          "name": "HTTPBin.dev",
+          "description": "HTTP request and response service for testing endpoints and headers.",
+          "auth": "No",
+          "https": true,
+          "link": "https://httpbin.dev/"
         },
         {
           "name": "Hunter",
@@ -3384,7 +3426,7 @@
       "id": "education",
       "emoji": "🎓",
       "name": "Education",
-      "api_count": 11,
+      "api_count": 12,
       "apis": [
         {
           "name": "Calendarific",
@@ -3445,6 +3487,13 @@
         {
           "name": "Universities List",
           "description": "List of universities worldwide.",
+          "auth": "No",
+          "https": true,
+          "link": "http://universities.hipolabs.com/"
+        },
+        {
+          "name": "Universities List",
+          "description": "Get domains, names, and countries of universities around the world.",
           "auth": "No",
           "https": true,
           "link": "http://universities.hipolabs.com/"
@@ -4321,7 +4370,7 @@
       "id": "food-drink",
       "emoji": "🍔",
       "name": "Food & Drink",
-      "api_count": 20,
+      "api_count": 21,
       "apis": [
         {
           "name": "BaconMockup",
@@ -4382,6 +4431,13 @@
         {
           "name": "Open Food Facts",
           "description": "Food product data.",
+          "auth": "No",
+          "https": true,
+          "link": "https://world.openfoodfacts.org/data"
+        },
+        {
+          "name": "Open Food Facts",
+          "description": "Database of food products from around the world with ingredients, allergens...",
           "auth": "No",
           "https": true,
           "link": "https://world.openfoodfacts.org/data"
@@ -4469,7 +4525,7 @@
       "id": "games-comics",
       "emoji": "🎮",
       "name": "Games & Comics",
-      "api_count": 79,
+      "api_count": 81,
       "apis": [
         {
           "name": "Animal Crossing: New Horizons",
@@ -4561,6 +4617,13 @@
           "auth": "No",
           "https": false,
           "link": "http://deckofcardsapi.com/"
+        },
+        {
+          "name": "Deck of Cards",
+          "description": "Shuffle and draw cards from virtual decks.",
+          "auth": "No",
+          "https": true,
+          "link": "https://deckofcardsapi.com/"
         },
         {
           "name": "Destiny The Game",
@@ -4911,6 +4974,13 @@
           "auth": "No",
           "https": true,
           "link": "https://rickandmortyapi.com"
+        },
+        {
+          "name": "Rick and Morty API",
+          "description": "Database of characters, locations, and episodes from the show Rick and Morty.",
+          "auth": "No",
+          "https": true,
+          "link": "https://rickandmortyapi.com/"
         },
         {
           "name": "Riot Games",
@@ -5507,7 +5577,7 @@
       "id": "geography-countries",
       "emoji": "🌎",
       "name": "Geography & Countries",
-      "api_count": 9,
+      "api_count": 10,
       "apis": [
         {
           "name": "GeoNames",
@@ -5529,6 +5599,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://countrylayer.com/"
+        },
+        {
+          "name": "Flagcdn",
+          "description": "Fast and reliable country flag images in SVG and PNG formats.",
+          "auth": "No",
+          "https": true,
+          "link": "https://flagcdn.com/"
         },
         {
           "name": "Flagpedia",
@@ -7757,6 +7834,13 @@
       "api_count": 11,
       "apis": [
         {
+          "name": "ZenQuotes",
+          "description": "Inspirational quotes with author name and formatting options.",
+          "auth": "No",
+          "https": true,
+          "link": "https://zenquotes.io/api/random"
+        },
+        {
           "name": "Affirmations.dev",
           "description": "Daily affirmations API.",
           "auth": "No",
@@ -7825,13 +7909,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.udemy.com/developers/instructor/"
-        },
-        {
-          "name": "ZenQuotes",
-          "description": "Inspirational quotes with author name and formatting options.",
-          "auth": "No",
-          "https": true,
-          "link": "https://zenquotes.io/api/random"
         }
       ]
     },

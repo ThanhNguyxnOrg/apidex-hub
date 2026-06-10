@@ -247,7 +247,9 @@ print(response.json()['fact'])
 | **Axolotl** | Collection of axolotl pictures and facts. | No | ✅ | [Link](https://theaxolotlapi.netlify.app/) |
 | **Cat Facts** | Daily cat facts. | No | ✅ | [Link](https://alexwohlbruck.github.io/cat-facts/) |
 | **Cataas** | Cat as a service (cats pictures and gifs). | No | ✅ | [Link](https://cataas.com/) |
+| **CATAAS** | Cat As A Service - random cat images, gifs, and cats with text. | No | ✅ | [Link](https://cataas.com/) |
 | **Cats** | Pictures of cats from Tumblr. | 🔑 ApiKey | ✅ | [Link](https://docs.thecatapi.com/) |
+| **Dog API** | Access to thousands of dog images, breed information, and facts. | No | ✅ | [Link](https://dog.ceo/dog-api/) |
 | **Dog API v2** | Dog breeds and image endpoints for apps and bots. | No | ✅ | [Link](https://dogapi.dog/docs/api-v2) |
 | **Dog CEO** | Dog breeds and random dog images. | No | ✅ | [Link](https://dog.ceo/dog-api/) |
 | **Dog Facts** | Random dog facts. | No | ✅ | [Link](https://dukengn.github.io/Dog-facts-API/) |
@@ -293,6 +295,7 @@ print(response.json()['fact'])
 | **NekosBest** | Neko Images & Anime GIFs. | No | ✅ | [Link](https://docs.nekos.best) |
 | **Shikimori** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://shikimori.one/api/doc) |
 | **Studio Ghibli** | Resources from Studio Ghibli films. | No | ✅ | [Link](https://ghibliapi.vercel.app) |
+| **Studio Ghibli API** | Resources from Studio Ghibli films, characters, species, and locations. | No | ✅ | [Link](https://ghibliapi.vercel.app/) |
 | **Trace Moe** | Anime Scene Search Engine. | No | ✅ | [Link](https://soruly.github.io/trace.moe-api/#/) |
 | **Waifu.im** | API for serving anime images (versatile query options). | No | ✅ | [Link](https://waifu.im/) |
 | **Waifu.pics** | Image sharing platform for anime images. | No | ✅ | [Link](https://waifu.pics/docs) |
@@ -387,6 +390,7 @@ print(response.json()['fact'])
 | **Google Books** | Search and preview books. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/books/) |
 | **ISBNdb** | ISBN book database. | 🔑 ApiKey | ✅ | [Link](https://isbndb.com/apidocs/v2) |
 | **Open Library** | Fetch data about millions of books and covers. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
+| **Open Library** | Retrieve data about books, authors, subjects, and search library catalog. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
 | **Penguin Publishing** | Book data. | No | ✅ | [Link](http://www.penguinrandomhouse.biz/webservices/rest/) |
 | **Quran** | RESTful Quran API with multiple languages. | No | ✅ | [Link](https://quran.api-docs.io/) |
 | **Quran Cloud** | Quran text, translations, and recitations. | No | ✅ | [Link](https://alquran.cloud/api) |
@@ -560,6 +564,7 @@ print(response.json()['fact'])
 | **Exchangeratesapi** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://exchangeratesapi.io/) |
 | **Fixer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://fixer.io/) |
 | **Frankfurter** | Open source exchange rates API. | No | ✅ | [Link](https://www.frankfurter.app/) |
+| **Frankfurter** | Currency exchange rates tracker published by the European Central Bank. | No | ✅ | [Link](https://www.frankfurter.app/) |
 | **FreeCurrencyAPI** | Free currency conversion API. | 🔑 ApiKey | ✅ | [Link](https://freecurrencyapi.com/docs) |
 | **National Bank of Poland** | Official exchange rates from NBP. | No | ✅ | [Link](https://api.nbp.pl/en.html) |
 | **Open Exchange Rates** | Currency conversion and exchange rates. | 🔑 ApiKey | ✅ | [Link](https://docs.openexchangerates.org/) |
@@ -693,6 +698,7 @@ print(response.json()['fact'])
 | **host-t.com** | Basic DNS query via HTTP GET request. | No | ✅ | [Link](https://host-t.com) |
 | **Host.io** | Domains Data. | 🔑 ApiKey | ✅ | [Link](https://host.io) |
 | **HTTP2.Pro** | Test endpoints for client and server HTTP/2 protocol support. | No | ✅ | [Link](https://http2.pro/doc/api) |
+| **HTTPBin.dev** | HTTP request and response service for testing endpoints and headers. | No | ✅ | [Link](https://httpbin.dev/) |
 | **Hunter** | Email Verifier. | 🔑 ApiKey | ✅ | [Link](https://hunter.io/api) |
 | **IBM Text to Speech** | Convert text to speech. | 🔑 ApiKey | ✅ | [Link](https://cloud.ibm.com/docs/text-to-speech/getting-started.html) |
 | **Icanhazepoch** | Get Epoch time. | No | ✅ | [Link](https://icanhazepoch.com) |
@@ -838,6 +844,7 @@ print(response.json()['fact'])
 | **Periodic Table** | Chemical element data. | No | ✅ | [Link](https://api-ninjas.com/api/periodictable) |
 | **Semantic Scholar** | Scholarly papers and citation graph data. | No | ✅ | [Link](https://api.semanticscholar.org/api-docs/) |
 | **Universities List** | List of universities worldwide. | No | ✅ | [Link](http://universities.hipolabs.com/) |
+| **Universities List** | Get domains, names, and countries of universities around the world. | No | ✅ | [Link](http://universities.hipolabs.com/) |
 | **Wikidata** | Structured knowledge base (**No Auth**). | No | ✅ | [Link](https://www.wikidata.org/wiki/Wikidata:Data_access) |
 | **Wikipedia API** | Free encyclopedia data and content (**No Auth**). | No | ✅ | [Link](https://www.mediawiki.org/wiki/API:Main_page) |
 
@@ -1007,6 +1014,7 @@ print(response.json()['fact'])
 | **Ninjas Recipe** | Recipe search with nutrition data. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/recipe) |
 | **Open Brewery DB** | Brewery database worldwide. | No | ✅ | [Link](https://www.openbrewerydb.org/) |
 | **Open Food Facts** | Food product data. | No | ✅ | [Link](https://world.openfoodfacts.org/data) |
+| **Open Food Facts** | Database of food products from around the world with ingredients, allergens... | No | ✅ | [Link](https://world.openfoodfacts.org/data) |
 | **Punk API** | BrewDog beer recipes and data (community fork). | No | ✅ | [Link](https://punkapi-alxiw.amvera.io/v3/) |
 | **Spoonacular** | Food, recipes, and nutrition data. | 🔑 ApiKey | ✅ | [Link](https://spoonacular.com/food-api) |
 | **Tasty** | Recipes from Tasty (via RapidAPI). | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/apidojo/api/tasty/) |
@@ -1038,6 +1046,7 @@ print(response.json()['fact'])
 | **Comic Vine** | Comics. | No | ✅ | [Link](https://comicvine.gamespot.com/api/documentation) |
 | **Cross Universe** | Cross Universe Card Data. | No | ✅ | [Link](https://crossuniverse.psychpsyo.com/apiDocs.html) |
 | **Deck of Cards** | Deck of cards. | No | No | [Link](http://deckofcardsapi.com/) |
+| **Deck of Cards** | Shuffle and draw cards from virtual decks. | No | ✅ | [Link](https://deckofcardsapi.com/) |
 | **Destiny The Game** | Bungie Platform API. | 🔑 ApiKey | ✅ | [Link](https://bungie-net.github.io/multi/index.html) |
 | **Digimon** | Digimon information. | No | ✅ | [Link](https://digimon-api.vercel.app/) |
 | **Digimon TCG** | Search for Digimon cards in digimoncard.io. | No | ✅ | [Link](https://documenter.getpostman.com/view/14059948/TzecB4fH) |
@@ -1088,6 +1097,7 @@ print(response.json()['fact'])
 | **PUBG** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.pubg.com/) |
 | **RAWG** | Video games database (500k+ games). | 🔑 ApiKey | ✅ | [Link](https://rawg.io/apidocs) |
 | **Rick and Morty** | Show data. | No | ✅ | [Link](https://rickandmortyapi.com) |
+| **Rick and Morty API** | Database of characters, locations, and episodes from the show Rick and Morty. | No | ✅ | [Link](https://rickandmortyapi.com/) |
 | **Riot Games** | League of Legends data. | 🔑 ApiKey | ✅ | [Link](https://developer.riotgames.com/) |
 | **RuneScape** | RuneScape and OSRS RPGs information. | No | ✅ | [Link](https://runescape.wiki/w/Application_programming_interface) |
 | **Scryfall** | Magic: The Gathering card search. | No | ✅ | [Link](https://scryfall.com/docs/api) |
@@ -1188,6 +1198,7 @@ print(response.json()['fact'])
 | **GeoNames** | Worldwide geographical database (free registration). | No | ✅ | [Link](https://www.geonames.org/export/web-services.html) |
 | **Country State City** | Countries, states, and cities database. | 🔑 ApiKey | ✅ | [Link](https://countrystatecity.in/) |
 | **CountryLayer** | Country data including flags and borders. | 🔑 ApiKey | ✅ | [Link](https://countrylayer.com/) |
+| **Flagcdn** | Fast and reliable country flag images in SVG and PNG formats. | No | ✅ | [Link](https://flagcdn.com/) |
 | **Flagpedia** | Country flags in SVG and PNG (**No Auth**). | No | ✅ | [Link](https://flagpedia.net/download/api) |
 | **FlagsAPI** | Easy-to-use API to retrieve country flag images using ISO codes. | No | ✅ | [Link](https://flagsapi.com/) |
 | **GeoJS** | IP geolocation and geo data (**No Auth**). | No | ✅ | [Link](https://www.geojs.io/) |
@@ -1587,6 +1598,7 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **ZenQuotes** | Inspirational quotes with author name and formatting options. | No | ✅ | [Link](https://zenquotes.io/api/random) |
 | **Affirmations.dev** | Daily affirmations API. | No | ✅ | [Link](https://www.affirmations.dev/) |
 | **API-Ninjas Quotes** | Curated quotes API. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/quotes) |
 | **DummyJSON Quotes** | Fake quotes dataset API. | No | ✅ | [Link](https://dummyjson.com/docs/quotes) |
@@ -1597,7 +1609,6 @@ print(response.json()['fact'])
 | **Traitify** | Assess, collect and analyze Personality. | No | ✅ | [Link](https://app.traitify.com/developer) |
 | **Type.fit Quotes** | Collection of inspirational quotes (**No Auth**). | No | ✅ | [Link](https://type.fit/api/quotes) |
 | **Udemy(instructor)** | API for instructors on Udemy. | 🔑 ApiKey | ✅ | [Link](https://www.udemy.com/developers/instructor/) |
-| **ZenQuotes** | Inspirational quotes with author name and formatting options. | No | ✅ | [Link](https://zenquotes.io/api/random) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
