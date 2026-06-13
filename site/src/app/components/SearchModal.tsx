@@ -52,49 +52,31 @@ export function SearchModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-start justify-center px-4 pt-24"
+      className="fixed inset-0 z-50 flex items-start justify-center px-4 pt-24 bg-black/60 backdrop-blur-sm"
       style={{
-        background: "rgba(6, 8, 15, 0.7)",
-        backdropFilter: "blur(8px)",
         animation: "fadeIn 0.15s ease-out",
       }}
       onClick={onClose}
     >
       <div
-        className="w-full max-w-2xl overflow-hidden rounded-2xl"
+        className="w-full max-w-2xl overflow-hidden rounded-2xl border border-border bg-card text-left shadow-2xl"
         style={{
-          background: "#0d1117",
-          border: "1px solid rgba(255,255,255,0.1)",
-          boxShadow: "0 24px 80px rgba(0,0,0,0.6)",
           animation: "fadeInUp 0.2s ease-out",
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div
-          className="flex items-center gap-3 px-5"
-          style={{
-            borderBottom: "1px solid rgba(255,255,255,0.06)",
-            height: 60,
-          }}
-        >
-          <Search size={18} style={{ color: "#8b949e" }} />
+        <div className="flex items-center gap-3 px-5 border-b border-border h-15">
+          <Search size={18} className="text-muted-foreground" />
           <input
             autoFocus
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search APIs by name, description, or category..."
-            className="flex-1 bg-transparent outline-none"
-            style={{ color: "#e6edf3", fontSize: 15 }}
+            className="flex-1 bg-transparent outline-none text-foreground text-sm font-sans placeholder-muted-foreground/60"
           />
           <button
             onClick={onClose}
-            className="flex h-7 items-center gap-1 rounded-md px-2"
-            style={{
-              background: "rgba(255,255,255,0.06)",
-              color: "#8b949e",
-              fontFamily: "JetBrains Mono, monospace",
-              fontSize: 11,
-            }}
+            className="flex h-7 items-center gap-1 rounded-lg px-2 bg-muted border border-border text-muted-foreground hover:text-foreground font-mono text-[10px] transition-colors"
           >
             ESC <X size={12} />
           </button>
@@ -102,30 +84,18 @@ export function SearchModal({
 
         <div className="max-h-[60vh] overflow-y-auto p-3">
           {grouped.length === 0 ? (
-            <div
-              className="px-4 py-12 text-center"
-              style={{ color: "#8b949e", fontSize: 14 }}
-            >
+            <div className="px-4 py-12 text-center text-muted-foreground text-sm">
               No APIs match "{query}"
             </div>
           ) : (
             <>
               {!query && (
-                <div
-                  className="px-3 py-2"
-                  style={{
-                    color: "#484f58",
-                    fontSize: 11,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    fontFamily: "JetBrains Mono, monospace",
-                  }}
-                >
+                <div className="px-3 py-2 text-muted-foreground/50 font-mono text-[10px] uppercase tracking-wider font-semibold">
                   Featured
                 </div>
               )}
               {grouped.map(({ category, list }) => (
-                <div key={category?.slug} className="mb-3">
+                <div key={category?.slug} className="mb-4">
                   <button
                     onClick={() => {
                       if (category) {
@@ -133,44 +103,34 @@ export function SearchModal({
                         onClose();
                       }
                     }}
-                    className="flex w-full items-center gap-2 px-3 py-1.5 transition-colors hover:text-white"
-                    style={{
-                      color: "#8b949e",
-                      fontSize: 12.5,
-                      fontWeight: 500,
-                    }}
+                    className="flex w-full items-center gap-2 px-3 py-1.5 text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all"
                   >
                     <span>{category?.emoji}</span>
                     <span>{category?.name}</span>
                   </button>
-                  {list.map((api) => (
-                    <a
-                      key={api.name}
-                      href={api.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-white/[0.04]"
-                    >
-                      <div className="min-w-0 flex-1">
-                        <div
-                          style={{
-                            color: "#e6edf3",
-                            fontSize: 13.5,
-                            fontWeight: 500,
-                          }}
-                        >
-                          {api.name}
+                  <div className="mt-1 space-y-0.5">
+                    {list.map((api) => (
+                      <a
+                        key={api.name}
+                        href={api.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-xl px-3 py-2.5 hover:bg-secondary/60 transition-colors"
+                      >
+                        <div className="min-w-0 flex-1">
+                          <div className="font-bold text-foreground text-sm leading-snug">
+                            {api.name}
+                          </div>
+                          <div className="text-muted-foreground text-xs mt-1 truncate">
+                            {api.description}
+                          </div>
                         </div>
-                        <div
-                          className="truncate"
-                          style={{ color: "#8b949e", fontSize: 12.5, marginTop: 1 }}
-                        >
-                          {api.description}
+                        <div className="shrink-0">
+                          <AuthBadge type={api.auth} />
                         </div>
-                      </div>
-                      <AuthBadge type={api.auth} />
-                    </a>
-                  ))}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               ))}
             </>

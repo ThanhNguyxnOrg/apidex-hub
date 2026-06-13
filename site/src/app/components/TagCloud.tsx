@@ -4,51 +4,22 @@ export function TagCloud({ onSelect }: { onSelect: (c: Category) => void }) {
   return (
     <section className="mx-auto max-w-7xl px-6 pb-2 pt-12">
       <div className="mb-5 flex items-center gap-3">
-        <div
-          style={{
-            color: "#8b949e",
-            fontFamily: "JetBrains Mono, monospace",
-            fontSize: 11.5,
-            textTransform: "uppercase",
-            letterSpacing: "0.12em",
-          }}
-        >
+        <div className="text-muted-foreground font-mono text-xs uppercase tracking-widest font-semibold">
           Quick jump
         </div>
-        <div className="h-px flex-1" style={{ background: "rgba(255,255,255,0.06)" }} />
+        <div className="h-[1px] flex-1 bg-border" />
       </div>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 justify-start">
         {categories.map((c) => (
           <button
             key={c.slug}
             onClick={() => onSelect(c)}
-            className="group inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-all"
-            style={{
-              background: "rgba(255,255,255,0.03)",
-              border: "1px solid rgba(255,255,255,0.06)",
-              color: "#cbd5e1",
-              fontSize: 13,
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = "rgba(6,182,212,0.1)";
-              e.currentTarget.style.borderColor = "rgba(6,182,212,0.4)";
-              e.currentTarget.style.color = "#7dd3fc";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = "rgba(255,255,255,0.03)";
-              e.currentTarget.style.borderColor = "rgba(255,255,255,0.06)";
-              e.currentTarget.style.color = "#cbd5e1";
-            }}
+            className="group inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 border border-border bg-card hover:border-primary/30 text-foreground hover:bg-secondary hover:text-foreground active:scale-95 transition-all duration-200"
+            style={{ fontSize: 13 }}
           >
             <span>{c.emoji}</span>
-            <span>{c.name}</span>
-            <span
-              style={{
-                fontFamily: "JetBrains Mono, monospace",
-                fontSize: 11,
-                color: "#06b6d4",
-              }}
-            >
+            <span className="font-medium">{c.name}</span>
+            <span className="font-mono text-[10.5px] font-semibold text-primary px-1.5 py-0.5 rounded-full bg-primary/10 border border-primary/20">
               {c.count}
             </span>
           </button>

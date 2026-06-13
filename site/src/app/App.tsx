@@ -16,6 +16,38 @@ export default function App() {
   const [view, setView] = useState<View>("home");
   const [active, setActive] = useState<Category | null>(null);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved === "light" || saved === "dark") return saved;
+    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  });
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === "dark") {
+      root.classList.add("dark");
+      root.classList.remove("light");
+      root.style.colorScheme = "dark";
+    } else {
+      root.classList.add("light");
+      root.classList.remove("dark");
+      root.style.colorScheme = "light";
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  // Listen for system theme changes dynamically
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handler = (e: MediaQueryListEvent) => {
+      // Only change if user hasn't explicitly set a preference
+      if (!localStorage.getItem("theme")) {
+        setTheme(e.matches ? "dark" : "light");
+      }
+    };
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -27,6 +59,10 @@ export default function App() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
+
+  const toggleTheme = () => {
+    setTheme((t) => (t === "dark" ? "light" : "dark"));
+  };
 
   const goCategory = (c: Category) => {
     setActive(c);
@@ -57,11 +93,9 @@ export default function App() {
 
   return (
     <div
-      className="min-h-screen"
+      className="min-h-screen bg-background text-foreground transition-colors duration-300 font-sans"
       style={{
-        background: "#06080f",
-        color: "#e6edf3",
-        fontFamily: "Inter, system-ui, sans-serif",
+        fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
       }}
     >
       <style>{`
@@ -70,20 +104,18 @@ export default function App() {
           from { opacity: 0; transform: translateY(12px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        .api-card { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .api-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .api-card:hover {
-          transform: translateY(-2px);
-          border-color: rgba(6, 182, 212, 0.3) !important;
-          box-shadow: 0 8px 32px rgba(6, 182, 212, 0.08) !important;
+          transform: translateY(-4px) scale(1.01);
         }
         ::selection { background: rgba(6, 182, 212, 0.25); color: #fff; }
-        ::-webkit-scrollbar { width: 10px; height: 10px; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb {
-          background: rgba(255,255,255,0.06);
-          border-radius: 8px;
+          background: rgba(120, 120, 120, 0.15);
+          border-radius: 999px;
         }
-        ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.12); }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(120, 120, 120, 0.3); }
         @keyframes pulse {
           0%, 100% { opacity: 1; transform: scale(1); }
           50% { opacity: 0.6; transform: scale(0.85); }
@@ -91,6 +123,8 @@ export default function App() {
       `}</style>
 
       <Navbar
+        theme={theme}
+        toggleTheme={toggleTheme}
         onSearchClick={() => setSearchOpen(true)}
         onFavoritesClick={goFavorites}
         onRandomClick={openRandom}
@@ -109,7 +143,7 @@ export default function App() {
 
       {view === "home" && (
         <>
-          <Hero onSearchClick={() => setSearchOpen(true)} />
+          <Hero theme={theme} onSearchClick={() => setSearchOpen(true)} />
           <TagCloud onSelect={goCategory} />
           <CategoryGrid onSelect={goCategory} />
           <FeaturedAPIs />
@@ -126,3 +160,4 @@ export default function App() {
     </div>
   );
 }
+
