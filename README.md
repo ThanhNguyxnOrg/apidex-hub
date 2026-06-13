@@ -183,7 +183,7 @@ print(response.json()['fact'])
 
 ---
 
-## <a id="table-of-contents"></a>📊 API Catalog
+## <a name="table-of-contents"></a>📊 API Catalog
 
 We maintain a curated database of **1,546+** free public APIs across **60** categories. You can browse the categories directly:
 

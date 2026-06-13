@@ -55,17 +55,18 @@ def parse_api_row(line: str):
     if not name or name.startswith('---') or name.startswith(':---') or name == 'API Name':
         return None
 
-    # Extract auth type
-    auth = "No"
-    if "OAuth" in auth_raw or "🔐" in auth_raw:
+    # Extract auth type (case-insensitive check)
+    auth_raw_lower = auth_raw.lower()
+    if "oauth" in auth_raw_lower or "🔐" in auth_raw:
         auth = "OAuth"
-    elif "ApiKey" in auth_raw or "🔑" in auth_raw:
+    elif "apikey" in auth_raw_lower or "🔑" in auth_raw or "api key" in auth_raw_lower:
         auth = "apiKey"
-    elif "No" in auth_raw:
+    else:
         auth = "No"
 
-    # Extract HTTPS
-    https = "✅" in https_raw or "Yes" in https_raw
+    # Extract HTTPS (case-insensitive check)
+    https_raw_lower = https_raw.lower()
+    https = "✅" in https_raw or "yes" in https_raw_lower or "true" in https_raw_lower
 
     # Extract link URL
     link_match = re.search(r'\[.*?\]\((.*?)\)', link_raw)
@@ -216,6 +217,30 @@ def main():
             print(f"  WARNING: Failed to update index.html: {e}")
     else:
         print(f"  WARNING: index.html not found at {index_path}")
+
+    # Update README.md dynamically with the parsed count and category count
+    readme_file_path = repo_root / 'README.md'
+    if readme_file_path.exists():
+        print(f"Updating count in {readme_file_path}...")
+        try:
+            content = readme_file_path.read_text(encoding='utf-8')
+            total_categories = data['meta']['total_categories']
+            updated_content = re.sub(
+                r'(\bdatabase of \*\*)[\d,]+\+(?=\*\* free public APIs across \*\*)',
+                f"\\g<1>{total_apis:,}+",
+                content
+            )
+            updated_content = re.sub(
+                r'(free public APIs across \*\*)[\d,]+(?=\*\* categories)',
+                f"\\g<1>{total_categories}",
+                updated_content
+            )
+            readme_file_path.write_text(updated_content, encoding='utf-8')
+            print(f"  Successfully updated README.md with {total_apis}+ APIs and {total_categories} categories")
+        except Exception as e:
+            print(f"  WARNING: Failed to update README.md: {e}")
+    else:
+        print(f"  WARNING: README.md not found at {readme_file_path}")
 
     meta = data['meta']
     print(f"Done! Generated {output_path}")
