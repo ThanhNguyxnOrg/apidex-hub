@@ -527,7 +527,7 @@ print(response.json()['fact'])
 | **GeckoTerminal** | Real-time on-chain market data for DEXs. | No | ✅ | [Link](https://www.geckoterminal.com/dex-api) |
 | **dYdX** | Decentralized cryptocurrency exchange. | 🔑 ApiKey | ✅ | [Link](https://docs.dydx.exchange/) |
 | **EXMO** | Cryptocurrencies exchange based in UK. | 🔑 ApiKey | ✅ | [Link](https://documenter.getpostman.com/view/10287440/SzYXWKPi) |
-| **Gateio** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://www.gate.io/api2) |
+| **Gateio** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://gate.io/docs/developers/apiv4/en/) |
 | **Gemini** | Exchange for Trading Cryptocurrencies. | No | ✅ | [Link](https://docs.gemini.com/rest-api/) |
 | **Hirak Exchange Rates** | Exchange rates between 162 currency & 300 crypto currency update each 5 min, ... | 🔑 ApiKey | ✅ | [Link](https://rates.hirak.site/) |
 | **Huobi** | Seychelles based cryptocurrency exchange. | 🔑 ApiKey | ✅ | [Link](https://huobiapi.github.io/docs/spot/v1/en/) |
@@ -537,7 +537,7 @@ print(response.json()['fact'])
 | **KuCoin** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kucoin.com/) |
 | **Mempool** | Bitcoin API. | No | ✅ | [Link](https://mempool.space/api) |
 | **MercadoBitcoin** | Brazilian Cryptocurrency Information. | No | ✅ | [Link](https://api.mercadobitcoin.net/api/v4/docs) |
-| **Messari** | Crypto research and data. | 🔑 ApiKey | ✅ | [Link](https://messari.io/api) |
+| **Glassnode** | On-chain cryptocurrency market indicators and metrics. | 🔑 ApiKey | ✅ | [Link](https://glassnode.com/) |
 | **Mobula** | On-chain crypto data and wallet analytics. | 🔑 ApiKey | ✅ | [Link](https://docs.mobula.io/) |
 | **Moralis** | Web3 wallet, NFT, and DeFi data. | 🔑 ApiKey | ✅ | [Link](https://docs.moralis.io/) |
 | **NovaDax** | NovaDAX API to access all market data, trading management endpoints. | 🔑 ApiKey | ✅ | [Link](https://doc.novadax.com/en-US/#introduction) |
@@ -632,7 +632,7 @@ print(response.json()['fact'])
 | **Pixel Encounter** | SVG Icon Generator. | No | ✅ | [Link](https://pixelencounter.com/api) |
 | **Placeholder.com** | Simple placeholder image service (**No Auth**). | No | ✅ | [Link](https://placehold.co/) |
 | **Random Color API** | Generate random colors with hex, RGB, and HSL values (**No Auth**). | No | ✅ | [Link](https://x-colors.yurace.pro/) |
-| **SVG Repo** | Free SVG icons and vectors. | No | ✅ | [Link](https://www.svgrepo.com/) |
+| **Simple Icons** | SVG icons for popular brands. | No | ✅ | [Link](https://simpleicons.org/) |
 | **The Color API** | Color conversion, schemes, and naming (**No Auth**). | No | ✅ | [Link](https://www.thecolorapi.com/) |
 | **Word Cloud** | Easily create word clouds. | 🔑 ApiKey | ✅ | [Link](https://wordcloudapi.com/) |
 
@@ -700,7 +700,7 @@ print(response.json()['fact'])
 | **Google Sheets** | Read and write to Google Sheets. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/sheets/api/reference/rest) |
 | **Google Slides** | API to read, write, and format Google Slides presentations. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/slides/api/reference/rest) |
 | **Gorest** | Online REST API for Testing and Prototyping. | 🔐 OAuth | ✅ | [Link](https://gorest.co.in/) |
-| **Hackerearth** | For compiling and running code in several languages. | 🔑 ApiKey | ✅ | [Link](https://www.hackerearth.com/docs/wiki/developers/v4/) |
+| **Hackerearth** | For compiling and running code in several languages. | 🔑 ApiKey | ✅ | [Link](https://developer.hackerearth.com/) |
 | **Hasura** | GraphQL and REST API Engine with built in Authorization. | 🔑 ApiKey | ✅ | [Link](https://hasura.io/opensource/) |
 | **Heroku** | PaaS. | 🔐 OAuth | ✅ | [Link](https://devcenter.heroku.com/articles/platform-api-reference/) |
 | **host-t.com** | Basic DNS query via HTTP GET request. | No | ✅ | [Link](https://host-t.com) |
@@ -896,7 +896,7 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Activities when get bored** | Random suggestions for activities. | No | ✅ | [Link](https://rapidapi.com/bored/api/bored-api/) |
-| **Biriyani As A Service** | Biriyani images placeholder. | No | ✅ | [Link](https://biriyani.anoram.com/) |
+| **Foodish** | Random food images API. | No | ✅ | [Link](https://foodish-api.com/) |
 | **Bored API** | Get random activity suggestions when you are bored (**No Auth**). | No | ✅ | [Link](https://bored-api.appbrewery.com/) |
 | **FOAAS** | Fuck Off As A Service. | No | No | [Link](http://www.foaas.com/) |
 | **Fun Fact** | A simple HTTPS api that can randomly select and return a fact from the FFA da... | No | ✅ | [Link](https://api.aakhilv.me) |
@@ -926,7 +926,7 @@ print(response.json()['fact'])
 | **Danish data service Energi** | Open energy data from Energinet to society. | No | ✅ | [Link](https://www.energidataservice.dk/) |
 | **Global Forest Watch** | Deforestation and forest monitoring data. | 🔑 ApiKey | ✅ | [Link](https://www.globalforestwatch.org/help/developers/) |
 | **GrünstromIndex** | Green Power Index for Germany (Grünstromindex/GSI) | No | No | [Link](https://gruenstromindex.de/) |
-| **IQAir** | Air quality and weather data. | 🔑 ApiKey | ✅ | [Link](https://www.iqair.com/air-pollution-data-api) |
+| **WAQI** | Real-time Air Quality Index (AQI) data for cities worldwide. | 🔑 ApiKey | ✅ | [Link](https://aqicn.org/api/) |
 | **Luchtmeetnet** | Predicted and actual air quality components for The Netherlands (RIVM) | No | ✅ | [Link](https://api-docs.luchtmeetnet.nl/) |
 | **NOAA Climate Data Online** | Historical climate and weather data. | 🔑 ApiKey | ✅ | [Link](https://www.ncdc.noaa.gov/cdo-web/webservices/v2) |
 | **Open-Meteo Solar Forecast** | Solar radiation and energy forecast for photovoltaic systems. | No | ✅ | [Link](https://open-meteo.com/) |
@@ -1266,7 +1266,7 @@ print(response.json()['fact'])
 | **Open Government, Greece** | Greece Government Open Data. | 🔐 OAuth | ✅ | [Link](https://data.gov.gr/) |
 | **Open Government, Brazil** | Brazilian Government Open Data. | No | ✅ | [Link](https://dados.gov.br/) |
 | **Open Government, Ireland** | Ireland Government Open Data. | No | ✅ | [Link](https://data.gov.ie/pages/developers) |
-| **Open Government, Italy** | Italy Government Open Data. | No | ✅ | [Link](https://www.dati.gov.it/) |
+| **Open Government, Italy** | Italy Government Open Data and developers portal. | No | ✅ | [Link](https://developers.italia.it/en/) |
 | **Open Government, Korea** | Korea Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://www.data.go.kr/) |
 | **Open Government, Lithuania** | Lithuania Government Open Data. | No | ✅ | [Link](https://data.gov.lt/public/api/1) |
 | **Open Government, Luxembourg** | Luxembourgish Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://data.public.lu) |
@@ -1709,7 +1709,7 @@ print(response.json()['fact'])
 | **BotsArchive** | JSON formatted details about Telegram Bots available in database. | No | ✅ | [Link](https://botsarchive.com/docs.html) |
 | **Callook.info** | United States ham radio callsigns. | No | ✅ | [Link](https://callook.info) |
 | **CARTO** | Location Information Prediction. | 🔑 ApiKey | ✅ | [Link](https://carto.com/) |
-| **CollegeScoreCard.ed.gov** | Data on higher education institutions in the United States. | No | ✅ | [Link](https://collegescorecard.ed.gov/data/) |
+| **CollegeScoreCard.ed.gov** | Data on higher education institutions in the United States. | No | ✅ | [Link](https://collegescorecard.ed.gov/data/api-documentation/) |
 | **Data.gov** | US Government open data. | No | ✅ | [Link](https://api.data.gov/) |
 | **Enigma Public** | Broadest collection of public data. | 🔑 ApiKey | ✅ | [Link](https://developers.enigma.com/docs) |
 | **EPO** | European patent search system api. | 🔐 OAuth | ✅ | [Link](https://developers.epo.org/) |
@@ -1798,7 +1798,7 @@ print(response.json()['fact'])
 | **CertSpotter** | Certificate transparency monitoring. | No | ✅ | [Link](https://sslmate.com/certspotter/api/) |
 | **Cloudflare Turnstile** | Privacy-first CAPTCHA alternative. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/turnstile/) |
 | **Complete Criminal Checks** | Provides data of offenders from all U.S. States and Pureto Rico. | 🔑 ApiKey | ✅ | [Link](https://completecriminalchecks.com/Developers) |
-| **EmailRep** | Email address threat and risk prediction. | No | ✅ | [Link](https://docs.emailrep.io/) |
+| **EmailRep** | Email address threat and risk prediction. | No | ✅ | [Link](https://emailrep.io) |
 | **FilterLists** | Lists of filters for adblockers and firewalls. | No | ✅ | [Link](https://filterlists.com) |
 | **FingerprintJS Pro** | Fraud detection API offering highly accurate browser fingerprinting. | 🔑 ApiKey | ✅ | [Link](https://dev.fingerprintjs.com/docs) |
 | **FraudLabs Pro** | Screen order information using AI to detect frauds. | 🔑 ApiKey | ✅ | [Link](https://www.fraudlabspro.com/developer/api/screen-order) |
@@ -2045,7 +2045,6 @@ print(response.json()['fact'])
 | **Transport for Norway** | Transport APIs and dataset for Norway. | No | ✅ | [Link](https://developer.entur.org/) |
 | **Transport for Ottawa, Canada** | OC Transpo API. | 🔑 ApiKey | ✅ | [Link](https://www.octranspo.com/en/plan-your-trip/travel-tools/developers) |
 | **Transport for Paris, France** | RATP Open Data API. | No | No | [Link](http://data.ratp.fr/api/v1/console/datasets/1.0/search/) |
-| **MTA** | Metropolitan Transportation Authority (New York transit data). | No | ✅ | [Link](https://new.mta.info/developers) |
 | **Transport for Sao Paulo, Brazil** | SPTrans. | 🔐 OAuth | No | [Link](http://www.sptrans.com.br/desenvolvedores/api-do-olho-vivo-guia-de-referencia/documentacao-api/) |
 | **Transport for Spain** | Public trains of Spain. | No | ✅ | [Link](https://data.renfe.com/api/1/util/snippet/api_info.html?resource_id=a2368cff-1562-4dde-8466-9635ea3a572a) |
 | **Transport for Sweden** | Public Transport consumer. | 🔐 OAuth | ✅ | [Link](https://www.trafiklab.se/api) |

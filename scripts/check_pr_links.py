@@ -190,8 +190,11 @@ def verify_with_playwright(browser, url):
         return False, None, f"Playwright Exception: {clean_err}"
 
 def check_url(browser, url):
+    ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    if "sec.gov" in url:
+        ua = "AwesomeFreeApis/1.0 (contact@thanhnguyxn.org)"
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'User-Agent': ua,
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.5',
     }

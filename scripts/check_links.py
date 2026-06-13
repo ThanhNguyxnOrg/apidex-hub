@@ -94,8 +94,11 @@ def check_link(url, timeout=15, max_retries=3):
     """
     for attempt in range(max_retries):
         try:
+            ua = fake_user_agent()
+            if "sec.gov" in url:
+                ua = "AwesomeFreeApis/1.0 (contact@thanhnguyxn.org)"
             headers = {
-                'User-Agent': fake_user_agent(),
+                'User-Agent': ua,
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                 'Accept-Language': 'en-US,en;q=0.5',
                 'Accept-Encoding': 'gzip, deflate, br',
