@@ -957,7 +957,7 @@ print(response.json()['fact'])
 | **Aletheia** | Insider trading data, earnings call analysis, financial statements, and more. | 🔑 ApiKey | ✅ | [Link](https://aletheiaapi.com/) |
 | **Alpaca** | Commission-free stock trading. | 🔑 ApiKey | ✅ | [Link](https://alpaca.markets/docs/api-references/) |
 | **Alpha Vantage** | Realtime and historical stock data. | 🔑 ApiKey | ✅ | [Link](https://www.alphavantage.co/) |
-| **Banco do Brasil** | All Banco do Brasil financial transaction APIs. | 🔐 OAuth | ✅ | [Link](https://developers.bb.com.br/home) |
+| **Banco do Brasil** | All Banco do Brasil financial transaction APIs. | 🔐 OAuth | ✅ | [Link](https://developers.bb.com.br/) |
 | **Bank Data API** | Instant IBAN and SWIFT number validation across the globe. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/bank_data-api) |
 | **Billplz** | Payment platform. | 🔑 ApiKey | ✅ | [Link](https://www.billplz.com/api) |
 | **Binlist** | BIN/IIN Lookup. | No | ✅ | [Link](https://binlist.net/) |
