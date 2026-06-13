@@ -1,3 +1,11 @@
+<!--
+🚨 CRITICAL RULE FOR AI AGENTS:
+Before making ANY changes to this repository, you MUST read and follow the instructions in [ai-instructions.md](./ai-instructions.md).
+- ONLY modify README.md to add, remove, or edit API listings.
+- DO NOT edit, update, or regenerate site/src/data/apis.json or site/index.html locally.
+- DO NOT run build commands (npm run build, pnpm build, etc.) locally.
+- Website generation is fully automated via GitHub Actions in CI/CD.
+-->
 # 🚀 Awesome Dev APIs
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
@@ -243,7 +251,7 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **AdoptAPet** | Resource to help get pets adopted. | 🔑 ApiKey | ✅ | [Link](https://www.adoptapet.com/public/apis/pet_list.html) |
+| **Petfinder** | Database of adoptable pets and animal shelters. | 🔑 ApiKey | ✅ | [Link](https://www.petfinder.com/developers/) |
 | **Axolotl** | Collection of axolotl pictures and facts. | No | ✅ | [Link](https://theaxolotlapi.netlify.app/) |
 | **Cat Facts** | Daily cat facts. | No | ✅ | [Link](https://alexwohlbruck.github.io/cat-facts/) |
 | **Cataas** | Cat as a service (cats pictures and gifs). | No | ✅ | [Link](https://cataas.com/) |
@@ -419,7 +427,7 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Czech Namedays Calendar** | Lookup for a name and returns nameday date. | No | No | [Link](https://svatky.adresa.info) |
+| **AlAdhan** | Islamic prayer times and Hijri calendar conversions. | No | ✅ | [Link](https://aladhan.com/prayer-times-api) |
 | **Namedays Calendar** | Nameday lookups by date and locale. | No | ✅ | [Link](https://nameday.abalin.net/) |
 | **Checkiday - National Holiday API** | Industry-leading Holiday API. Over 5,000 holidays and thousands of descriptio... | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/checkiday-api) |
 | **Church Calendar** | Catholic liturgical calendar. | No | No | [Link](http://calapi.inadiutorium.cz/) |
@@ -516,7 +524,7 @@ print(response.json()['fact'])
 | **Coinremitter** | Cryptocurrencies Payment & Prices. | 🔑 ApiKey | ✅ | [Link](https://coinremitter.com/docs) |
 | **CoinStats** | Crypto Tracker. | No | ✅ | [Link](https://documenter.getpostman.com/view/5734027/RzZ6Hzr3?version=latest) |
 | **CryptAPI** | Cryptocurrency Payment Processor. | No | ✅ | [Link](https://docs.cryptapi.io/) |
-| **CryptoCompare** | Cryptocurrencies Comparison. | No | ✅ | [Link](https://www.cryptocompare.com/api) |
+| **GeckoTerminal** | Real-time on-chain market data for DEXs. | No | ✅ | [Link](https://www.geckoterminal.com/dex-api) |
 | **dYdX** | Decentralized cryptocurrency exchange. | 🔑 ApiKey | ✅ | [Link](https://docs.dydx.exchange/) |
 | **EXMO** | Cryptocurrencies exchange based in UK. | 🔑 ApiKey | ✅ | [Link](https://documenter.getpostman.com/view/10287440/SzYXWKPi) |
 | **Gateio** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://www.gate.io/api2) |
@@ -604,7 +612,7 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Behance** | Creative work showcase. | 🔑 ApiKey | ✅ | [Link](https://www.behance.net/dev) |
+| **Harvard Art Museums** | Museum artwork data. | 🔑 ApiKey | ✅ | [Link](https://harvardartmuseums.org/collections/api) |
 | **Brandfetch** | Company logos and brand assets. | 🔑 ApiKey | ✅ | [Link](https://docs.brandfetch.com/) |
 | **Colormind** | AI-powered color palette generator (**No Auth**). | No | ✅ | [Link](http://colormind.io/api-access/) |
 | **ColourLovers** | Get various patterns, palettes and images. | No | No | [Link](http://www.colourlovers.com/api) |
@@ -984,7 +992,7 @@ print(response.json()['fact'])
 | **Polygon** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://polygon.io/) |
 | **Portfolio Optimizer** | Portfolio analysis and optimization. | No | ✅ | [Link](https://portfoliooptimizer.io/) |
 | **Razorpay IFSC** | Indian Financial Systems Code (Bank Branch Codes) | No | ✅ | [Link](https://razorpay.com/docs/) |
-| **SEC EDGAR Data** | API to access annual reports of public US companies. | No | ✅ | [Link](https://www.sec.gov/edgar/sec-api-documentation) |
+| **SEC EDGAR Data** | API to access annual reports of public US companies. | No | ✅ | [Link](https://www.sec.gov/search-filings/edgar-application-programming-interfaces) |
 | **SmartAPI** | Gain access to set of <SmartAPI> and create end-to-end broking services. | 🔑 ApiKey | ✅ | [Link](https://smartapi.angelbroking.com/) |
 | **Square** | Payments, checkout, and commerce APIs. | 🔐 OAuth | ✅ | [Link](https://developer.squareup.com/reference/square) |
 | **StockData** | Real-Time, Intraday & Historical Market Data, News and Sentiment API. | 🔑 ApiKey | ✅ | [Link](https://www.StockData.org) |
@@ -1239,7 +1247,7 @@ print(response.json()['fact'])
 | **Federal Register** | US federal rules and notices data. | No | ✅ | [Link](https://www.federalregister.gov/developers/documentation/api/v1) |
 | **Gazette Data, UK** | UK official public record API. | 🔐 OAuth | ✅ | [Link](https://www.thegazette.co.uk/data) |
 | **Google Civic Information** | US voting and representative information. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/civic-information) |
-| **Gun Policy** | International firearm injury prevention and policy. | 🔑 ApiKey | ✅ | [Link](https://www.gunpolicy.org/api) |
+| **Open Government, Mexico** | Mexican Government Open Data. | No | ✅ | [Link](https://datos.gob.mx/) |
 | **Interpol Red Notices** | Access and search Interpol Red Notices. | No | ✅ | [Link](https://interpol.api.bund.dev/) |
 | **Istanbul (İBB) Open Data** | Data sets from the İstanbul Metropolitan Municipality (İBB) | No | ✅ | [Link](https://data.ibb.gov.tr) |
 | **National Park Service, US** | Data from the US National Park Service. | 🔑 ApiKey | ✅ | [Link](https://www.nps.gov/subjects/developer/) |
@@ -1256,7 +1264,7 @@ print(response.json()['fact'])
 | **Open Government, Finland** | Finland Government Open Data. | No | ✅ | [Link](https://www.avoindata.fi/en) |
 | **Open Government, France** | French Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://www.data.gouv.fr/) |
 | **Open Government, Greece** | Greece Government Open Data. | 🔐 OAuth | ✅ | [Link](https://data.gov.gr/) |
-| **Open Government, India** | Indian Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://data.gov.in/) |
+| **Open Government, Brazil** | Brazilian Government Open Data. | No | ✅ | [Link](https://dados.gov.br/) |
 | **Open Government, Ireland** | Ireland Government Open Data. | No | ✅ | [Link](https://data.gov.ie/pages/developers) |
 | **Open Government, Italy** | Italy Government Open Data. | No | ✅ | [Link](https://www.dati.gov.it/) |
 | **Open Government, Korea** | Korea Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://www.data.go.kr/) |
@@ -1267,7 +1275,7 @@ print(response.json()['fact'])
 | **Open Government, New South Wales** | New South Wales Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://api.nsw.gov.au/) |
 | **Open Government, New Zealand** | New Zealand Government Open Data. | No | ✅ | [Link](https://www.data.govt.nz/) |
 | **Open Government, Norway** | Norwegian Government Open Data. | No | ✅ | [Link](https://data.norge.no/dataservices) |
-| **Open Government, Peru** | Peru Government Open Data. | No | ✅ | [Link](https://www.datosabiertos.gob.pe/) |
+| **Open Government, Chile** | Chilean Government Open Data. | No | ✅ | [Link](https://datos.gob.cl/) |
 | **Open Government, Poland** | Poland Government Open Data. | No | ✅ | [Link](https://dane.gov.pl/en) |
 | **Open Government, Portugal** | Portugal Government Open Data. | No | ✅ | [Link](https://github.com/amagovpt/docs.dados.gov.pt) |
 | **Open Government, Queensland Government** | Queensland Government Open Data. | No | ✅ | [Link](https://www.data.qld.gov.au/) |
@@ -1278,7 +1286,7 @@ print(response.json()['fact'])
 | **Open Government, Sweden** | Sweden Government Open Data. | No | ✅ | [Link](https://www.dataportal.se/en/dataservice/91_29789/api-for-the-statistical-database) |
 | **Open Government, Switzerland** | Switzerland Government Open Data. | No | ✅ | [Link](https://handbook.opendata.swiss/de/content/nutzen/api-nutzen.html) |
 | **Open Government, Taiwan** | Taiwan Government Open Data. | No | ✅ | [Link](https://data.gov.tw/) |
-| **Open Government, Thailand** | Thailand Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://data.go.th/) |
+| **Open Government, Japan** | Japanese Government Open Data. | No | ✅ | [Link](https://www.data.go.jp/) |
 | **Open Government, UK** | UK Government Open Data. | No | ✅ | [Link](https://data.gov.uk/) |
 | **Open Government, USA** | United States Government Open Data. | No | ✅ | [Link](https://www.data.gov/) |
 | **Open Government, Victoria State Government** | Victoria State Government Open Data. | No | ✅ | [Link](https://www.data.vic.gov.au/) |
@@ -1551,7 +1559,7 @@ print(response.json()['fact'])
 | **Shazam (RapidAPI)** | Music recognition and track details. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/apidojo/api/shazam) |
 | **Songkick** | Music Events. | 🔑 ApiKey | ✅ | [Link](https://www.songkick.com/developer/) |
 | **Songlink / Odesli** | Get all the services on which a song is available. | 🔑 ApiKey | ✅ | [Link](https://www.notion.so/API-d0ebe08a5e304a55928405eb682f6741) |
-| **Songsterr** | Provides guitar, bass and drums tabs and chords. | No | ✅ | [Link](https://www.songsterr.com/a/wa/api/) |
+| **Listen Notes** | Premier search API for podcasts. | 🔑 ApiKey | ✅ | [Link](https://www.listennotes.com/api/) |
 | **SoundCloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://developers.soundcloud.com/docs/api/guide) |
 | **Spotify** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://beta.developer.spotify.com/documentation/web-api/) |
 | **TasteDive** | Similar artist API (also works for movies and TV shows) | 🔑 ApiKey | ✅ | [Link](https://tastedive.com/read/api) |
@@ -1665,7 +1673,7 @@ print(response.json()['fact'])
 | **Placeholder** | Custom placeholder images (**No Auth**). | No | ✅ | [Link](https://placeholder.com/) |
 | **PlaceKeanu** | Resizable Keanu Reeves placeholder images with grayscale and young Keanu options. | No | ✅ | [Link](https://placekeanu.com/) |
 | **Remove.bg** | AI background removal from images. | 🔑 ApiKey | ✅ | [Link](https://www.remove.bg/api) |
-| **ReSmush.it** | Photo optimization. | No | No | [Link](https://resmush.it/api) |
+| **ReSmush.it** | Photo optimization. | No | No | [Link](https://resmush.it/) |
 | **shutterstock** | Stock Photos and Videos. | 🔐 OAuth | ✅ | [Link](https://api-reference.shutterstock.com/) |
 | **Sirv** | Image management solutions like optimization, manipulation, hosting. | 🔑 ApiKey | ✅ | [Link](https://apidocs.sirv.com/) |
 | **Spaceflight News** | Spaceflight related news 🚀. | No | ✅ | [Link](https://spaceflightnewsapi.net) |
@@ -1821,10 +1829,10 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Barcode Lookup** | Product data from UPC/EAN barcodes. | 🔑 ApiKey | ✅ | [Link](https://www.barcodelookup.com/api) |
+| **Open Beauty Facts** | Open cosmetics products database with ingredients and barcodes. | No | ✅ | [Link](https://world.openbeautyfacts.org/data) |
 | **Best Buy** | Retail data. | 🔑 ApiKey | ✅ | [Link](https://bestbuyapis.github.io/api-documentation/#overview) |
 | **Digi-Key** | Retrieve price and inventory of electronic components as well as place orders. | 🔐 OAuth | ✅ | [Link](https://www.digikey.com/en/resources/api-solutions) |
-| **eBay** | Auction and retail. | 🔐 OAuth | ✅ | [Link](https://developer.ebay.com/) |
+| **Mercado Libre** | E-commerce and marketplace API for Latin America. | 🔑 ApiKey | ✅ | [Link](https://developers.mercadolibre.com/) |
 | **Etsy** | E-commerce. | 🔐 OAuth | ✅ | [Link](https://www.etsy.com/developers/documentation/getting_started/api_basics) |
 | **Flipkart Marketplace** | Product listing management, Order Fulfilment in the Flipkart Marketplace. | 🔐 OAuth | ✅ | [Link](https://seller.flipkart.com/api-docs/FMSAPI.html) |
 | **Lazada** | Retrieve product ratings and seller performance metrics. | 🔑 ApiKey | ✅ | [Link](https://open.lazada.com/doc/doc.htm) |
@@ -1919,7 +1927,7 @@ print(response.json()['fact'])
 | **OpenLigaDB** | Crowd sourced sports league results. | No | ✅ | [Link](https://www.openligadb.de) |
 | **PandaScore** | Esports data and statistics. | 🔑 ApiKey | ✅ | [Link](https://developers.pandascore.co/) |
 | **Premier League Standings** | All Current Premier League Standings and Statistics. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/heisenbug/api/premier-league-live-scores/) |
-| **SofaScore** | Live sports scores and stats. | No | ✅ | [Link](https://api.sofascore.com/) |
+| **CricketData** | Live scores and match statistics for cricket. | 🔑 ApiKey | ✅ | [Link](https://www.cricketdata.org/) |
 | **Sportmonks Football** | Football score/schedule, news api, tv channels, stats, history, display stand... | 🔑 ApiKey | ✅ | [Link](https://docs.sportmonks.com/football/) |
 | **Squiggle** | Fixtures, results and predictions for Australian Football League matches. | No | ✅ | [Link](https://api.squiggle.com.au) |
 | **Strava** | Connect with athletes, activities and more. | 🔐 OAuth | ✅ | [Link](https://strava.github.io/api/) |
@@ -2037,7 +2045,7 @@ print(response.json()['fact'])
 | **Transport for Norway** | Transport APIs and dataset for Norway. | No | ✅ | [Link](https://developer.entur.org/) |
 | **Transport for Ottawa, Canada** | OC Transpo API. | 🔑 ApiKey | ✅ | [Link](https://www.octranspo.com/en/plan-your-trip/travel-tools/developers) |
 | **Transport for Paris, France** | RATP Open Data API. | No | No | [Link](http://data.ratp.fr/api/v1/console/datasets/1.0/search/) |
-| **Transport for Philadelphia, US** | SEPTA APIs. | No | No | [Link](http://www3.septa.org/hackathon/) |
+| **MTA** | Metropolitan Transportation Authority (New York transit data). | No | ✅ | [Link](https://new.mta.info/developers) |
 | **Transport for Sao Paulo, Brazil** | SPTrans. | 🔐 OAuth | No | [Link](http://www.sptrans.com.br/desenvolvedores/api-do-olho-vivo-guia-de-referencia/documentacao-api/) |
 | **Transport for Spain** | Public trains of Spain. | No | ✅ | [Link](https://data.renfe.com/api/1/util/snippet/api_info.html?resource_id=a2368cff-1562-4dde-8466-9635ea3a572a) |
 | **Transport for Sweden** | Public Transport consumer. | 🔐 OAuth | ✅ | [Link](https://www.trafiklab.se/api) |
@@ -2169,7 +2177,7 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **7Timer!** | Weather forecast. | No | No | [Link](http://www.7timer.info/doc.php?lang=en) |
 | **7Timer! Weather** | Astronomical and meteorological forecasts (**No Auth**). | No | ✅ | [Link](http://www.7timer.info/doc.php) |
-| **AccuWeather** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://developer.accuweather.com/apis) |
+| **AccuWeather** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://developer.accuweather.com/) |
 | **Aemet** | Weather and forecast data from Spain. | 🔑 ApiKey | ✅ | [Link](https://opendata.aemet.es/centrodedescargas/inicio) |
 | **Air Quality (OpenAQ)** | Global air quality data (**No Auth**). | No | ✅ | [Link](https://docs.openaq.org/) |
 | **APIXU** | Weather. | 🔑 ApiKey | ✅ | [Link](https://www.apixu.com/doc/request.aspx) |

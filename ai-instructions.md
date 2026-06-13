@@ -1,15 +1,20 @@
 # 🤖 Instructions for AI Agents / Contributors
 
-Welcome! To maintain code quality and prevent redundant work, please strictly adhere to the following rules when modifying this repository.
+> [!IMPORTANT]
+> **CRITICAL RULE FOR AI AGENTS:** 
+> - **ONLY modify `README.md`** to add, remove, or edit API listings.
+> - **DO NOT** edit, update, or regenerate `site/src/data/apis.json` or `site/index.html` locally.
+> - **DO NOT** run build commands (`npm run build`, `pnpm build`, etc.) locally.
+> - **Website generation is the job of the GitHub Actions YML workflow (`deploy-website.yml`) in CI.** As an AI agent, you must read this rule and **skip** any local JSON updates or build tasks completely.
 
 ---
 
 ## 📌 Core Rules
 
 ### 1. The Source of Truth is `README.md`
-*   All API listings are stored inside [README.md](./README.md).
+*   All API listings are Curated and stored inside [README.md](./README.md).
 *   If you need to add, delete, or update an API entry, **ONLY modify `README.md`**.
-*   **Do NOT** manually update the JSON database [site/src/data/apis.json](./site/src/data/apis.json). It is parsed automatically during the build process.
+*   **Do NOT** manually or programmatically update the JSON database [site/src/data/apis.json](./site/src/data/apis.json) or run parsing scripts during your turn. It is parsed automatically in CI.
 
 ### 2. Website Generation is Automated
 *   **Do NOT** run `npm run build` / `pnpm build` locally and commit the resulting `docs/` folder. 
