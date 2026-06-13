@@ -260,6 +260,8 @@ def main():
                     target_state = 'error'
                 elif 'timeout' in note.lower():
                     target_state = 'warning'
+                elif new_status in [401, 403, 429]:
+                    target_state = 'protected'
                 elif 'cloudflare' in note.lower() or 'blocked by' in note.lower() or 'waf' in note.lower() or 'turnstile' in note.lower() or 'bot protection' in note.lower():
                     target_state = 'protected'
                     

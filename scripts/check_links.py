@@ -127,9 +127,9 @@ def check_link(url, timeout=15, max_retries=3):
             elif code == 429:
                 return {'url': url, 'status': code, 'state': 'warning', 'note': 'Rate limited (HTTP 429)'}
             elif code == 401:
-                return {'url': url, 'status': code, 'state': 'broken', 'note': 'Unauthorized (HTTP 401) - access restricted'}
+                return {'url': url, 'status': code, 'state': 'protected', 'note': 'Unauthorized (HTTP 401) - access restricted'}
             elif code == 403:
-                return {'url': url, 'status': code, 'state': 'broken', 'note': 'Forbidden (HTTP 403) - restricted access'}
+                return {'url': url, 'status': code, 'state': 'protected', 'note': 'Forbidden (HTTP 403) - restricted access'}
 
             elif code in [400, 405, 406]:
                 return {'url': url, 'status': code, 'state': 'working', 'note': 'API up (Invalid request/Method)'}
