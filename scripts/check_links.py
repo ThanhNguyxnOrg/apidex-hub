@@ -310,6 +310,22 @@ def main():
             status_str = f"HTTP {r['status']}" if r['status'] else "N/A"
             f.write(f"{r['url']} | {status_str} | {r['note']}\n")
 
+    # Save unknown URLs list
+    unknown_list_path = os.path.join(script_dir, 'unknown_urls.txt')
+    unknown_urls = sorted(results['unknown'], key=lambda x: x['url'])
+    with open(unknown_list_path, 'w', encoding='utf-8') as f:
+        for r in unknown_urls:
+            status_str = f"HTTP {r['status']}" if r['status'] else "N/A"
+            f.write(f"{r['url']} | {status_str} | {r['note']}\n")
+
+    # Save protected URLs list
+    protected_list_path = os.path.join(script_dir, 'protected_urls.txt')
+    protected_urls = sorted(results['protected'], key=lambda x: x['url'])
+    with open(protected_list_path, 'w', encoding='utf-8') as f:
+        for r in protected_urls:
+            status_str = f"HTTP {r['status']}" if r['status'] else "N/A"
+            f.write(f"{r['url']} | {status_str} | {r['note']}\n")
+
     # Save queue for Playwright verification
     verify_queue_path = os.path.join(script_dir, 'verify_queue.json')
     verify_queue = []

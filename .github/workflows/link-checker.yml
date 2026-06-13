@@ -65,6 +65,7 @@ jobs:
             PROTECTED_COUNT=$(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo "0")
             WARN_COUNT=$(grep -oP "Warnings: \K[0-9]+" link_check_report.txt || echo "0")
             ERR_COUNT=$(grep -oP "Errors: \K[0-9]+" link_check_report.txt || echo "0")
+            UNKNOWN_COUNT=$(grep -oP "Unknown: \K[0-9]+" link_check_report.txt || echo "0")
             TOTAL=$(($(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo 0) + $(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo 0)))
           else
             BROKEN_COUNT=0
@@ -72,6 +73,7 @@ jobs:
             PROTECTED_COUNT=0
             WARN_COUNT=0
             ERR_COUNT=0
+            UNKNOWN_COUNT=0
             TOTAL=0
           fi
 
@@ -80,6 +82,7 @@ jobs:
           echo "protected_count=$PROTECTED_COUNT" >> $GITHUB_OUTPUT
           echo "warn_count=$WARN_COUNT" >> $GITHUB_OUTPUT
           echo "err_count=$ERR_COUNT" >> $GITHUB_OUTPUT
+          echo "unknown_count=$UNKNOWN_COUNT" >> $GITHUB_OUTPUT
           echo "total_healthy=$TOTAL" >> $GITHUB_OUTPUT
 
           if [ "$BROKEN_COUNT" -gt 0 ]; then
@@ -109,6 +112,20 @@ jobs:
             WARNING_LIST=""
           fi
 
+          # Read unknown URLs list
+          if [ -f unknown_urls.txt ]; then
+            UNKNOWN_LIST=$(cat unknown_urls.txt)
+          else
+            UNKNOWN_LIST=""
+          fi
+
+          # Read protected URLs list
+          if [ -f protected_urls.txt ]; then
+            PROTECTED_LIST=$(cat protected_urls.txt)
+          else
+            PROTECTED_LIST=""
+          fi
+
           # Store lists as multiline outputs
           {
             echo "broken_list<<BROKEN_EOF"
@@ -127,6 +144,18 @@ jobs:
             echo "$WARNING_LIST"
             echo "WARNING_EOF"
           } >> $GITHUB_OUTPUT
+
+          {
+            echo "unknown_list<<UNKNOWN_EOF"
+            echo "$UNKNOWN_LIST"
+            echo "UNKNOWN_EOF"
+          } >> $GITHUB_OUTPUT
+
+          {
+            echo "protected_list<<PROTECTED_EOF"
+            echo "$PROTECTED_LIST"
+            echo "PROTECTED_EOF"
+          } >> $GITHUB_OUTPUT
         continue-on-error: true
 
       - name: Upload check report
@@ -139,6 +168,8 @@ jobs:
             scripts/broken_urls.txt
             scripts/error_urls.txt
             scripts/warning_urls.txt
+            scripts/unknown_urls.txt
+            scripts/protected_urls.txt
 
       - name: Comment on PR
         if: github.event_name == 'pull_request' && always()
@@ -171,10 +202,13 @@ jobs:
             const protectedCount = parseInt('${{ steps.check.outputs.protected_count }}') || 0;
             const warnCount = parseInt('${{ steps.check.outputs.warn_count }}') || 0;
             const errCount = parseInt('${{ steps.check.outputs.err_count }}') || 0;
+            const unknownCount = parseInt('${{ steps.check.outputs.unknown_count }}') || 0;
             const totalHealthy = parseInt('${{ steps.check.outputs.total_healthy }}') || 0;
             const currentBrokenList = `${{ steps.check.outputs.broken_list }}`.trim();
             const currentErrorList = `${{ steps.check.outputs.error_list }}`.trim();
             const currentWarningList = `${{ steps.check.outputs.warning_list }}`.trim();
+            const currentUnknownList = `${{ steps.check.outputs.unknown_list }}`.trim();
+            const currentProtectedList = `${{ steps.check.outputs.protected_list }}`.trim();
 
             const REPORT_LABEL = 'daily-report';
             const AUTO_LABEL = 'automated';
@@ -247,6 +281,30 @@ jobs:
               warningSection = `\n<details>\n<summary>⚠️ Warnings (${warnCount}) — click to expand</summary>\n\n${warningTable}\n</details>\n`;
             }
 
+            // Build unknown section (collapsible since it can be long)
+            let unknownSection = '';
+            if (unknownCount > 0 && currentUnknownList) {
+              const unknownLines = currentUnknownList.split('\n').filter(l => l.trim());
+              let unknownTable = '| # | URL | Status | Note |\n|---|---|---|---|\n';
+              unknownLines.forEach((line, i) => {
+                const parts = line.split(' | ');
+                unknownTable += `| ${i + 1} | ${parts[0] || ''} | ${parts[1] || ''} | ${parts[2] || ''} |\n`;
+              });
+              unknownSection = `\n<details>\n<summary>❓ Unknown (${unknownCount}) — click to expand</summary>\n\n${unknownTable}\n</details>\n`;
+            }
+
+            // Build protected section (collapsible since it can be long)
+            let protectedSection = '';
+            if (protectedCount > 0 && currentProtectedList) {
+              const protectedLines = currentProtectedList.split('\n').filter(l => l.trim());
+              let protectedTable = '| # | URL | Status | Note |\n|---|---|---|---|\n';
+              protectedLines.forEach((line, i) => {
+                const parts = line.split(' | ');
+                protectedTable += `| ${i + 1} | ${parts[0] || ''} | ${parts[1] || ''} | ${parts[2] || ''} |\n`;
+              });
+              protectedSection = `\n<details>\n<summary>🛡️ Protected (${protectedCount}) — click to expand</summary>\n\n${protectedTable}\n</details>\n`;
+            }
+
             // Build the issue body
             const lines = [
               `## ${statusIcon} Link Health Status: ${statusText}`,
@@ -265,15 +323,18 @@ jobs:
               `| 🛡️ Protected | ${protectedCount} | HTTP 403/429 — bot protection (API still works) |`,
               `| ⚠️ Warning | ${warnCount} | Timeout/DNS/SSL issues (may be temporary) |`,
               `| ❌ Error | ${errCount} | Server errors (5xx) |`,
+              `| ❓ Unknown | ${unknownCount} | Unrecognized status codes (needs review) |`,
               `| 💀 Broken | ${brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
               '',
-              `**Healthy rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + brokenCount} APIs healthy`,
+              `**Healthy rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + brokenCount + unknownCount} APIs healthy`,
               '',
               '---',
               '',
               brokenSection,
               errorSection,
               warningSection,
+              unknownSection,
+              protectedSection,
               '',
               '---',
               '',
