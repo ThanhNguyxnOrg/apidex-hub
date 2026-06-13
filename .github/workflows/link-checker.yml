@@ -46,7 +46,14 @@ jobs:
           pip install -r scripts/requirements.txt
           playwright install chromium --with-deps
 
-      - name: Check links with improved script
+      - name: Check only new links (Pull Request)
+        if: github.event_name == 'pull_request'
+        run: |
+          cd scripts
+          python check_pr_links.py
+
+      - name: Check all links (Daily Schedule / Push)
+        if: github.event_name != 'pull_request'
         id: check
         run: |
           cd scripts
@@ -178,7 +185,15 @@ jobs:
           script: |
             const fs = require('fs');
             try {
-              const summary = fs.readFileSync('scripts/link_check_report.txt', 'utf8');
+              let summary = '';
+              if (fs.existsSync('scripts/pr_link_check_report.txt')) {
+                summary = fs.readFileSync('scripts/pr_link_check_report.txt', 'utf8');
+              } else if (fs.existsSync('scripts/link_check_report.txt')) {
+                summary = fs.readFileSync('scripts/link_check_report.txt', 'utf8');
+              } else {
+                console.log('No report files found.');
+                return;
+              }
               await github.rest.issues.createComment({
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
