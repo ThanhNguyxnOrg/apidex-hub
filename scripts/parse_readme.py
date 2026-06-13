@@ -52,7 +52,7 @@ def parse_api_row(line: str):
 
     # Extract name (remove bold **)
     name = re.sub(r'\*\*(.+?)\*\*', r'\1', name_raw).strip()
-    if not name or name.startswith('---') or name.startswith(':---') or name == 'API Name':
+    if not name or name.startswith('---') or name.startswith(':---') or name == 'API Name' or name == 'Name':
         return None
 
     # Extract auth type (case-insensitive check)

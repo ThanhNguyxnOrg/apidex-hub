@@ -213,7 +213,7 @@ def parse_apis_from_dir(dir_path='../apis'):
                     if len(parts) >= 5:
                         name_raw = parts[0]
                         name = re.sub(r'\*\*(.+?)\*\*', r'\1', name_raw).strip()
-                        if not name or name.startswith('---') or name.startswith(':---') or name == 'API Name':
+                        if not name or name.startswith('---') or name.startswith(':---') or name == 'API Name' or name == 'Name':
                             continue
                         
                         link_raw = parts[4]
