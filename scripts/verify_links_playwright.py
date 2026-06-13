@@ -258,6 +258,8 @@ def main():
                     target_state = 'error'
                 elif 'timeout' in note.lower():
                     target_state = 'warning'
+                elif 'cloudflare' in note.lower() or 'blocked by' in note.lower() or 'waf' in note.lower() or 'turnstile' in note.lower() or 'bot protection' in note.lower():
+                    target_state = 'protected'
                     
                 results[target_state].append({
                     'name': name,
