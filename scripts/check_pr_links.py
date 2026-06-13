@@ -111,9 +111,47 @@ def verify_with_playwright(browser, url):
         # Fast check: wait for response headers first (wait_until='commit')
         response = page.goto(url, wait_until='commit', timeout=8000)
         
-        # Wait a bit for potential JS redirects or challenge solving
-        page.wait_for_timeout(5000)
+        # Wait a bit for initial load
+        page.wait_for_timeout(3000)
         
+        # Check if there is a Cloudflare Turnstile challenge iframe
+        has_cf_iframe = False
+        try:
+            for frame in page.frames:
+                if "challenges.cloudflare.com" in frame.url:
+                    has_cf_iframe = True
+                    break
+        except Exception:
+            pass
+
+        if has_cf_iframe:
+            print(f"  [Playwright] Detected Cloudflare Challenge iframe for {url}. Attempting to solve...")
+            try:
+                clicked = False
+                for frame in page.frames:
+                    if "challenges.cloudflare.com" in frame.url:
+                        checkbox = frame.locator('input[type="checkbox"], span.mark, .cb-i, #challenge-stage, .ctp-checkbox-label')
+                        if checkbox.count() > 0:
+                            checkbox.first.click(timeout=3000)
+                            print("  [Playwright] Clicked Turnstile checkbox element.")
+                            clicked = True
+                            break
+                
+                # Fallback: click the iframe container directly
+                if not clicked:
+                    iframe_element = page.locator('iframe[src*="challenges.cloudflare.com"]')
+                    if iframe_element.count() > 0:
+                        iframe_element.first.click(timeout=3000)
+                        print("  [Playwright] Clicked Turnstile iframe directly.")
+            except Exception as e:
+                print(f"  [Playwright] Click bypass failed: {e}")
+                
+            # Wait longer for redirect / page verification
+            page.wait_for_timeout(5000)
+        else:
+            # Standard wait for redirect or load
+            page.wait_for_timeout(2000)
+            
         final_resp = last_response[0] if last_response[0] else response
         status = final_resp.status if final_resp else None
         
