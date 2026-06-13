@@ -1584,7 +1584,7 @@
           "description": "Exchange for Trading Cryptocurrencies.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://docs.kraken.com/rest/"
+          "link": "https://docs.kraken.com/"
         },
         {
           "name": "KuCoin",
@@ -3990,7 +3990,7 @@
           "description": "Event creation and attendee APIs.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://docs.luma.com/reference/getting-started"
+          "link": "https://docs.luma.com/"
         },
         {
           "name": "OpenAgenda",
@@ -9614,11 +9614,11 @@
           "link": "https://www.scorebat.com/video-api/"
         },
         {
-          "name": "Football Prediction",
-          "description": "Football match predictions.",
+          "name": "Daily Football Predictions",
+          "description": "Football match predictions and safe betting picks.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://boggio-analytics.com/fp-api/"
+          "link": "https://rapidapi.com/fominykh.mikhail/api/daily-football-predictions/"
         },
         {
           "name": "Football-Data.org",

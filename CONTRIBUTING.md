@@ -1,4 +1,4 @@
-﻿# Contributing to Awesome Free APIs
+# Contributing to Awesome Free APIs
 
 Thanks for helping improve this project.
 
@@ -47,15 +47,15 @@ python scripts/check_links.py
 If your changes affect docs structure/content generation, also run:
 
 ```bash
-node scripts/generate-docs.mjs
+python scripts/parse_readme.py --output site/src/data/apis.json
 ```
 
 Optional docs build check:
 
 ```bash
-cd docs-site
-npm ci
-npm run build
+cd site
+pnpm install
+pnpm build
 ```
 
 ## Suggested Contribution Workflow

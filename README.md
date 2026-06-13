@@ -525,7 +525,7 @@ print(response.json()['fact'])
 | **Huobi** | Seychelles based cryptocurrency exchange. | 🔑 ApiKey | ✅ | [Link](https://huobiapi.github.io/docs/spot/v1/en/) |
 | **icy.tools** | GraphQL based NFT API. | 🔑 ApiKey | ✅ | [Link](https://developers.icy.tools/) |
 | **INFURA Ethereum** | Interaction with the Ethereum mainnet and several testnets. | 🔑 ApiKey | ✅ | [Link](https://infura.io/product/ethereum) |
-| **Kraken** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kraken.com/rest/) |
+| **Kraken** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kraken.com/) |
 | **KuCoin** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kucoin.com/) |
 | **Mempool** | Bitcoin API. | No | ✅ | [Link](https://mempool.space/api) |
 | **MercadoBitcoin** | Brazilian Cryptocurrency Information. | No | ✅ | [Link](https://api.mercadobitcoin.net/api/v4/docs) |
@@ -938,7 +938,7 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **Eventbrite** | Find events. | 🔐 OAuth | ✅ | [Link](https://www.eventbrite.com/platform/api/) |
 | **Eventyay** | Open-source event management API. | No | ✅ | [Link](https://api.eventyay.com/) |
-| **Luma** | Event creation and attendee APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.luma.com/reference/getting-started) |
+| **Luma** | Event creation and attendee APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.luma.com/) |
 | **OpenAgenda** | Event agenda and discovery API. | 🔑 ApiKey | ✅ | [Link](https://developers.openagenda.com/) |
 | **PredictHQ** | Event intelligence and impact API. | 🔑 ApiKey | ✅ | [Link](https://docs.predicthq.com/) |
 | **pretix** | Ticketing and event operations API. | 🔑 ApiKey | ✅ | [Link](https://docs.pretix.eu/dev/api/index.html) |
@@ -1905,7 +1905,7 @@ print(response.json()['fact'])
 | **Fitbit** | Fitbit Information. | 🔐 OAuth | ✅ | [Link](https://dev.fitbit.com/) |
 | **Football** | A simple Open Source Football API to get squads’ stats, best scorers and more. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/GiulianoCrescimbeni/api/football98/) |
 | **Football (Soccer) Videos** | Embed codes for goals and highlights from Premier League, Bundesliga, Serie A... | No | ✅ | [Link](https://www.scorebat.com/video-api/) |
-| **Football Prediction** | Football match predictions. | 🔑 ApiKey | ✅ | [Link](https://boggio-analytics.com/fp-api/) |
+| **Daily Football Predictions** | Football match predictions and safe betting picks. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/fominykh.mikhail/api/daily-football-predictions/) |
 | **Football-Data.org** | Football data and statistics (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.football-data.org/documentation/quickstart) |
 | **JCDecaux Bike** | JCDecaux's self-service bicycles. | 🔑 ApiKey | ✅ | [Link](https://developer.jcdecaux.com/) |
 | **Jolpica F1** | Formula 1 race results, standings, and historical data (**No Auth**). | No | ✅ | [Link](https://api.jolpi.ca/ergast/f1/) |

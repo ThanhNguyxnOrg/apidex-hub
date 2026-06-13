@@ -10,10 +10,14 @@ scripts/broken_urls.txt
 scripts/error_urls.txt
 scripts/warning_urls.txt
 scripts/output.txt
+scripts/verify_output.txt
+scripts/verify_queue.json
+scripts/results.json
 scripts/__pycache__/
 
 # Site build artifacts
 site/node_modules/
+docs/
 
 # OS files
 .DS_Store

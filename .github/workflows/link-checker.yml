@@ -43,15 +43,21 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install -r scripts/requirements.txt
+          playwright install chromium --with-deps
 
       - name: Check links with improved script
         id: check
         run: |
           cd scripts
+          echo "=== STAGE 1: Fast CLI Check ==="
           python check_links.py > output.txt 2>&1 || true
           cat output.txt
-
+          
+          echo "=== STAGE 2: Playwright Verification ==="
+          python verify_links_playwright.py > verify_output.txt 2>&1 || true
+          cat verify_output.txt
+          
           # Parse report stats
           if [ -f link_check_report.txt ]; then
             BROKEN_COUNT=$(grep -oP "Broken: \K[0-9]+" link_check_report.txt || echo "0")

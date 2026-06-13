@@ -15,6 +15,7 @@ import random
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
+import json
 
 
 def extract_links_from_readme(file_path='../README.md'):
@@ -309,16 +310,29 @@ def main():
             status_str = f"HTTP {r['status']}" if r['status'] else "N/A"
             f.write(f"{r['url']} | {status_str} | {r['note']}\n")
 
+    # Save queue for Playwright verification
+    verify_queue_path = os.path.join(script_dir, 'verify_queue.json')
+    verify_queue = []
+    # Add all non-working URLs to the queue to be double-checked by Playwright
+    for state in ['broken', 'error', 'warning', 'protected']:
+        verify_queue.extend(results[state])
+    
+    with open(verify_queue_path, 'w', encoding='utf-8') as f:
+        json.dump(verify_queue, f, indent=2)
+
+    # Dump full results so Stage 2 can update categories and rewrite reports
+    results_json_path = os.path.join(script_dir, 'results.json')
+    with open(results_json_path, 'w', encoding='utf-8') as f:
+        json.dump(results, f, indent=2)
+
     print(f"\nReport saved to: link_check_report.txt")
     print(f"Broken URLs list: broken_urls.txt ({len(broken_urls)} URLs)")
     print(f"Error URLs list: error_urls.txt ({len(error_urls)} URLs)")
     print(f"Warning URLs list: warning_urls.txt ({len(warning_urls)} URLs)")
+    print(f"Verify Queue list: verify_queue.json ({len(verify_queue)} URLs for Stage 2)")
     print("\nNote: 403/429 (Protected) = Bot protection - APIs still work!")
 
-    # Exit with error only if truly broken links found
-    if results['broken']:
-        print(f"\nFound {len(results['broken'])} truly broken links!")
-        return 1
+    # Always exit with 0 so the Playwright step can run
     return 0
 
 
