@@ -303,7 +303,7 @@ jobs:
             if (unknownCount > 0 && currentUnknownList) {
               const unknownLines = currentUnknownList.split('\n').filter(l => l.trim());
               let unknownTable = '| # | URL | Status | Note |\n|---|---|---|---|\n';
-              warningLines.forEach((line, i) => {
+              unknownLines.forEach((line, i) => {
                 const parts = line.split(' | ');
                 const note = parts.slice(2).join(' | ');
                 unknownTable += `| ${i + 1} | ${parts[0] || ''} | ${parts[1] || ''} | ${note || ''} |\n`;
