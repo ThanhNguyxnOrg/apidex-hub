@@ -185,9 +185,30 @@ print(response.json()['fact'])
 
 ## 📊 API Catalog
 
-We maintain a curated database of **1,546+** free public APIs across **60** categories.
+We maintain a curated database of **1,546+** free public APIs across **60** categories. You can browse the categories directly:
 
-👉 **[Browse the Full API Catalog (APIS.md)](./APIS.md)** or explore categories in the [apis/](./apis/) directory directly.
+| Category | Category | Category |
+| --- | --- | --- |
+| [🐶 Animals](./apis/animals.md) | [🎮 Entertainment](./apis/entertainment.md) | [🔓 Open Source Projects](./apis/open-source-projects.md) |
+| [🌸 Anime](./apis/anime.md) | [🌿 Environment & Climate](./apis/environment-climate.md) | [💭 Personality & Quotes](./apis/personality-quotes.md) |
+| [🛡️ Anti-Malware](./apis/anti-malware.md) | [🎪 Events](./apis/events.md) | [📱 Phone & Telephony](./apis/phone-telephony.md) |
+| [🔐 Authentication & Identity](./apis/authentication-identity.md) | [💰 Finance](./apis/finance.md) | [📷 Photography](./apis/photography.md) |
+| [⛓️ Blockchain & Web3](./apis/blockchain-web3.md) | [🍔 Food & Drink](./apis/food-drink.md) | [🎙️ Podcasts](./apis/podcasts.md) |
+| [📚 Books & Literature](./apis/books.md) | [🎮 Games & Comics](./apis/games-comics.md) | [📊 Public Data & Datasets](./apis/public-data.md) |
+| [💼 Business](./apis/business.md) | [🌍 Geocoding](./apis/geocoding.md) | [🔬 Science & Space](./apis/science.md) |
+| [📅 Calendar & Holidays](./apis/calendar-holidays.md) | [🌎 Geography & Countries](./apis/geography-countries.md) | [🔐 Security & Validation](./apis/security-validation.md) |
+| [☁️ Cloud Storage & Files](./apis/cloud-storage-files.md) | [🏛️ Government & Civic](./apis/government-civic.md) | [🛍️ Shopping](./apis/shopping.md) |
+| [⚙️ Continuous Integration](./apis/continuous-integration.md) | [❤️ Health](./apis/health.md) | [💬 Social](./apis/social.md) |
+| [🪙 Cryptocurrency](./apis/cryptocurrency.md) | [🏠 IoT & Smart Devices](./apis/iot-smart-devices.md) | [⚽ Sports](./apis/sports.md) |
+| [💱 Currency Exchange](./apis/currency-exchange.md) | [💼 Jobs & Career](./apis/jobs-career.md) | [📝 Text Analysis & NLP](./apis/text-analysis-nlp.md) |
+| [✅ Data Validation](./apis/data-validation.md) | [🧠 Machine Learning](./apis/machine-learning.md) | [📦 Tracking & Logistics](./apis/tracking-logistics.md) |
+| [👤 Demographic Analysis](./apis/demographic-analysis.md) | [🔢 Math & Computation](./apis/math-computation.md) | [🚆 Transportation](./apis/transportation.md) |
+| [🎨 Design & Colors](./apis/design-colors.md) | [😂 Memes & Fun](./apis/memes-fun.md) | [✈️ Travel & Tourism](./apis/travel-tourism.md) |
+| [💻 Development](./apis/development.md) | [🧪 Mock Data & Testing](./apis/mock-data-testing.md) | [⚠️ Unofficial & Community APIs](./apis/unofficial-community.md) |
+| [📖 Dictionaries](./apis/dictionaries.md) | [📈 Monitoring & Observability](./apis/monitoring-observability.md) | [🔗 URL Shorteners](./apis/url-shorteners.md) |
+| [📄 Documents & Productivity](./apis/documents-productivity.md) | [🏛️ Museums & Art](./apis/museums-art.md) | [🔧 Utilities & Tools](./apis/utilities-tools.md) |
+| [🎓 Education](./apis/education.md) | [🎵 Music](./apis/music.md) | [📹 Video](./apis/video.md) |
+| [📧 Email & SMS](./apis/email-sms.md) | [📰 News](./apis/news.md) | [🌤️ Weather](./apis/weather.md) |
 
 *Note: The API database is automatically synchronized with our [Awesome Free APIs Website](https://thanhnguyxnorg.github.io/awesome-free-apis/).*
 

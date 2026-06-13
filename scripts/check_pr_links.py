@@ -3,7 +3,7 @@
 scripts/check_pr_links.py — Check only NEWLY added or modified links in a Pull Request.
 Bypasses full checking of the entire API catalog to run quickly and efficiently in PR CI pipelines.
 Uses a hybrid checking mechanism: requests (Stage 1) -> Playwright (Stage 2) for WAF bypass.
-Also checks for duplicate API URLs against the existing repository README.md.
+Also checks for duplicate API URLs against the existing repository APIs.
 """
 
 import subprocess
@@ -248,7 +248,7 @@ def save_pr_report(added_urls, failed_links, duplicate_links):
             f.write("❌ DUPLICATE LINKS FOUND (Already exists in repository):\n")
             f.write("-" * 80 + "\n")
             for url in duplicate_links:
-                f.write(f"- {url} | Status: DUPLICATE | Error: API already listed in README.md\n")
+                f.write(f"- {url} | Status: DUPLICATE | Error: API already listed in the repository\n")
             f.write("\n")
             
         if failed_links:
@@ -265,7 +265,7 @@ def main():
     added_urls = get_added_urls()
     
     if not added_urls:
-        print("Done! No new API links were added to README.md in this Pull Request.")
+        print("Done! No new API links were added to the apis/ directory in this Pull Request.")
         # Write empty pass report
         save_pr_report([], [], [])
         return 0
@@ -281,7 +281,7 @@ def main():
     
     for url in added_urls:
         if url.lower() in existing_urls:
-            print(f"  ❌ [DUPLICATE] {url} - already exists in base README.md")
+            print(f"  ❌ [DUPLICATE] {url} - already exists in the repository")
             duplicate_links.append(url)
         else:
             unique_added_urls.append(url)

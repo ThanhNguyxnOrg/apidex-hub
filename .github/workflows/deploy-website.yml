@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - 'README.md'
-      - 'APIS.md'
       - 'apis/**'
       - 'site/**'
       - 'scripts/parse_readme.py'
