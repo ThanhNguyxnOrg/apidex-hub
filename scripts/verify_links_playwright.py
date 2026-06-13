@@ -49,7 +49,9 @@ def verify_with_playwright(url):
             return False, response.status if response else None, f"Playwright: Failed with HTTP {response.status if response else 'Unknown'}"
             
     except Exception as e:
-        return False, None, f"Playwright Exception: {str(e)}"
+        # Replace newlines with semicolon to prevent breaking the one-line-per-URL output format
+        clean_err = str(e).replace('\n', ' ; ')
+        return False, None, f"Playwright Exception: {clean_err}"
 
 def save_reports(results, unique_links_count):
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -169,7 +171,8 @@ def main():
             # Update note
             for i in results[old_state]:
                 if i['url'] == url:
-                    i['note'] += f" | {note}"
+                    clean_note = note.replace('\n', ' ; ')
+                    i['note'] = f"{i['note']} | {clean_note}"
                     break
                     
     print("\nVerification complete. Regenerating reports...")
