@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 scripts/check_pr_links.py — Check only NEWLY added or modified links in a Pull Request.
-Bypasses full checking of 1500+ URLs to run quickly and efficiently in PR CI pipelines.
+Bypasses full checking of the entire API catalog to run quickly and efficiently in PR CI pipelines.
 Uses a hybrid checking mechanism: requests (Stage 1) -> Playwright (Stage 2) for WAF bypass.
 """
 
