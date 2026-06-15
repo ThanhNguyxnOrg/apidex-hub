@@ -14,7 +14,7 @@ def verify_with_playwright(browser, url):
     """
     Returns (is_working, status_code, note) using Playwright Chromium headless browser.
     """
-    from playwright_stealth import stealth
+    from playwright_stealth import stealth_sync
     context = None
     page = None
     try:
@@ -23,7 +23,7 @@ def verify_with_playwright(browser, url):
             user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         )
         page = context.new_page()
-        stealth(page)
+        stealth_sync(page)
         
         last_response = [None]
         
@@ -80,18 +80,40 @@ def verify_with_playwright(browser, url):
         final_resp = last_response[0] if last_response[0] else response
         status = final_resp.status if final_resp else None
         
+        title = page.title().lower()
+        try:
+            content = page.content().lower()
+        except:
+            content = ""
+
+        # Check for parked domain / suspended hosting keywords
+        parked_indicators = [
+            'domain parking', 'parked free', 'buy this domain', 'domain is for sale',
+            'domain for sale', 'this domain is registered', 'hugedomains', 'dan.com',
+            'sedo', 'hosting suspended', 'account suspended', 'website is suspended',
+            'domain market', 'namecheap landing'
+        ]
+        if any(indicator in title or indicator in content for indicator in parked_indicators):
+            page.close()
+            context.close()
+            return False, status or 200, "Playwright: Parked domain or suspended hosting detected"
+
+        # Check if it is a Cloudflare down page (temporary outage)
+        cf_down_indicators = [
+            'web server is down', 'connection timed out', 'origin error', 'host error',
+            'error 521', 'error 522', 'error 523', 'error 524', 'error 525', 'error 526'
+        ]
+        if any(indicator in title or indicator in content for indicator in cf_down_indicators):
+            page.close()
+            context.close()
+            return False, status, "Playwright: Temporary Cloudflare Server Outage (origin down)"
+
         if status and status < 400:
             page.close()
             context.close()
             return True, status, "Playwright: Verified working"
             
         # If status is >= 400, check if it is a WAF challenge
-        title = page.title().lower()
-        try:
-            content = page.content().lower()
-        except:
-            content = ""
-            
         is_waf_code = status in [403, 429, 503]
         if is_waf_code:
             cloudflare_indicators = ['just a moment', 'cloudflare', 'attention required', 'security check', 'ddos protection']
@@ -256,14 +278,32 @@ def main():
                 
                 # Decide target category based on error
                 target_state = 'broken'
-                if new_status and new_status >= 500:
-                    target_state = 'error'
-                elif 'timeout' in note.lower():
-                    target_state = 'warning'
-                elif new_status in [401, 403, 429]:
-                    target_state = 'protected'
-                elif 'cloudflare' in note.lower() or 'blocked by' in note.lower() or 'waf' in note.lower() or 'turnstile' in note.lower() or 'bot protection' in note.lower():
-                    target_state = 'protected'
+                note_lower = note.lower()
+                
+                if 'playwright exception' in note_lower:
+                    if 'err_name_not_resolved' in note_lower or 'dns_probe_finished_nxdomain' in note_lower:
+                        target_state = 'broken'
+                    elif 'err_connection_timed_out' in note_lower or 'timeout' in note_lower:
+                        target_state = 'warning'
+                    elif 'err_connection_refused' in note_lower or 'err_connection_reset' in note_lower:
+                        target_state = 'warning'
+                    elif 'err_ssl' in note_lower or 'err_cert' in note_lower:
+                        target_state = 'warning'
+                    else:
+                        target_state = old_state
+                else:
+                    if 'parked domain' in note_lower or 'suspended' in note_lower:
+                        target_state = 'broken'
+                    elif 'cloudflare server outage' in note_lower or 'origin down' in note_lower:
+                        target_state = 'error'
+                    elif new_status and new_status >= 500:
+                        target_state = 'error'
+                    elif 'timeout' in note_lower:
+                        target_state = 'warning'
+                    elif new_status in [401, 403, 429]:
+                        target_state = 'protected'
+                    elif 'cloudflare' in note_lower or 'blocked by' in note_lower or 'waf' in note_lower or 'turnstile' in note_lower or 'bot protection' in note_lower:
+                        target_state = 'protected'
                     
                 results[target_state].append({
                     'name': name,
