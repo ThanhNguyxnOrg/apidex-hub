@@ -104,7 +104,7 @@ def verify_with_playwright(browser, url):
     """
     Returns (is_working, status_code, note) using Playwright Chromium headless browser.
     """
-    from playwright_stealth import stealth_sync
+    from playwright_stealth import stealth
     context = None
     page = None
     try:
@@ -113,7 +113,7 @@ def verify_with_playwright(browser, url):
             user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         )
         page = context.new_page()
-        stealth_sync(page)
+        stealth(page)
         
         last_response = [None]
         

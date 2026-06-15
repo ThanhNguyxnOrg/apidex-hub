@@ -66,8 +66,8 @@ def has_cloudflare_protection(resp):
         'just a moment'
     ]
 
-    # Only check if status code is typical for WAF (403, 429, 503, or CF 52x errors)
-    is_waf_code = code in [403, 429, 503] or (520 <= code <= 527)
+    # Only check if status code is typical for WAF (403, 429, 503)
+    is_waf_code = code in [403, 429, 503]
     if not is_waf_code:
         return False
 
@@ -137,7 +137,7 @@ def check_link(url, timeout=15, max_retries=3):
                 return {'url': url, 'status': code, 'state': 'broken', 'note': 'Not found - likely dead'}
             elif code == 410:
                 return {'url': url, 'status': code, 'state': 'broken', 'note': 'Gone - confirmed dead'}
-            elif code in [500, 502, 504, 521, 522, 523]:
+            elif code in [500, 502, 504] or (code and 520 <= code <= 527):
                 return {'url': url, 'status': code, 'state': 'error', 'note': 'Server error (may be temporary)'}
             elif code == 503:
                 # 503 could be Cloudflare or temporary, treat as warning
