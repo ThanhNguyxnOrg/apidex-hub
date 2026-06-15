@@ -215,9 +215,10 @@ def main():
         try:
             content = index_path.read_text(encoding='utf-8')
             updated_content = re.sub(
-                r'\b[\d,]+(?:\+)?(?=\s+[fF]ree\s+[pP]ublic)',
+                r'\b[\d,]+(?:\+)?(?=\s+[pP]ublic\s+[aA][pP][iI]s)',
                 f"{total_apis:,}",
-                content
+                content,
+                flags=re.IGNORECASE
             )
             index_path.write_text(updated_content, encoding='utf-8')
             print(f"  Successfully updated index.html with {total_apis:,} APIs")

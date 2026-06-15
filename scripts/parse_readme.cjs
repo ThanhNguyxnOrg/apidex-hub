@@ -158,7 +158,7 @@ if (fs.existsSync(indexHtmlPath)) {
     console.log(`Updating count in ${indexHtmlPath}...`);
     try {
         const content = fs.readFileSync(indexHtmlPath, 'utf8');
-        const updatedContent = content.replace(/\b[\d,]+(?:\+)?(?=\s+[fF]ree\s+[pP]ublic)/g, totalApis.toLocaleString());
+        const updatedContent = content.replace(/\b[\d,]+(?:\+)?(?=\s+[pP]ublic\s+[aA][pP][iI]s)/gi, totalApis.toLocaleString());
         fs.writeFileSync(indexHtmlPath, updatedContent, 'utf8');
         console.log(`  Successfully updated index.html with ${totalApis.toLocaleString()} APIs`);
     } catch (e) {

@@ -50,7 +50,7 @@ export function SearchModal({
             a.name.toLowerCase().includes(q) ||
             a.description.toLowerCase().includes(q) ||
             a.category.toLowerCase().includes(q)
-        )
+        ).slice(0, 100)
       : baseApis.filter((a) => a.featured);
     const map = new Map<string, typeof apis>();
     for (const api of filtered) {
