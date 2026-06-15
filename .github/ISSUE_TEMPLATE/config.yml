@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: "\U0001F4DA Documentation Site"
-    url: https://thanhnguyxnorg.github.io/awesome-free-apis/
+    url: https://thanhnguyxnorg.github.io/apidex-hub/
     about: Browse the full API directory with search and filtering
   - name: "\U0001F4AC Discussions"
-    url: https://github.com/ThanhNguyxnOrg/awesome-free-apis/discussions
+    url: https://github.com/ThanhNguyxnOrg/apidex-hub/discussions
     about: Ask questions, share ideas, or start a conversation

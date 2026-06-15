@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
           <div className="text-left">
             <div className="text-foreground font-bold tracking-tight text-base">
-              Awesome Free APIs
+              APIDex Hub
             </div>
             <p className="text-muted-foreground text-sm mt-2 max-w-[480px]">
               Auto-generated from README.md via GitHub Actions. Edit the README,
@@ -18,7 +18,7 @@ export function Footer() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/ThanhNguyxnOrg/awesome-free-apis"
+              href="https://github.com/ThanhNguyxnOrg/apidex-hub"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg px-4 py-2 border border-border bg-card text-foreground hover:bg-secondary transition-colors duration-200"

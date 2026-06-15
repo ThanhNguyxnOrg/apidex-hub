@@ -42,7 +42,7 @@ export function Navbar({
             <circle cx="32" cy="32" r="5" fill="url(#navLogo)"/>
           </svg>
           <span className="font-semibold text-foreground tracking-tight text-base">
-            Awesome APIs
+            APIDex Hub
           </span>
         </button>
 
@@ -96,7 +96,7 @@ export function Navbar({
           </button>
 
           <a
-            href="https://github.com/ThanhNguyxnOrg/awesome-free-apis/issues/new?template=add_api.yml"
+            href="https://github.com/ThanhNguyxnOrg/apidex-hub/issues/new?template=add_api.yml"
             target="_blank"
             rel="noopener noreferrer"
             title="Submit a New API"
@@ -107,7 +107,7 @@ export function Navbar({
             <span className="hidden sm:inline">Submit API</span>
           </a>
           <a
-            href="https://github.com/ThanhNguyxnOrg/awesome-free-apis"
+            href="https://github.com/ThanhNguyxnOrg/apidex-hub"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card text-foreground hover:bg-secondary transition-colors duration-200"

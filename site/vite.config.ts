@@ -18,7 +18,7 @@ function figmaAssetResolver() {
 
 export default defineConfig({
   // GitHub Pages subpath
-  base: '/awesome-free-apis/',
+  base: '/apidex-hub/',
 
   plugins: [
     figmaAssetResolver(),

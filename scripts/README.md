@@ -1,6 +1,6 @@
 # Scripts & Tools
 
-This directory contains utility scripts for maintaining the awesome-free-apis repository.
+This directory contains utility scripts for maintaining the apidex-hub repository.
 
 ## 📁 Contents
 

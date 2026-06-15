@@ -1,5 +1,5 @@
 """
-Improved Link Checker for awesome-free-apis
+Improved Link Checker for apidex-hub
 
 Key improvements:
 - Cloudflare protection detection

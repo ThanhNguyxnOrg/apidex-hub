@@ -6,23 +6,23 @@ Before making ANY changes to this repository, you MUST read and follow the instr
 - DO NOT run build commands (npm run build, pnpm build, etc.) locally.
 - Website generation is fully automated via GitHub Actions in CI/CD.
 -->
-# 🚀 Awesome Dev APIs
+# 🚀 APIDex Hub
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated collection of awesome free APIs for developers. Open source and community-driven.
-> This repository aims to provide a comprehensive collection of free and freemium APIs to help you build your next project.
+> A curated collection of awesome public APIs and web scrapers for developers. Open source and community-driven.
+> This repository aims to provide a comprehensive collection of public endpoints, APIs, and scraping solutions to help you build your next project.
 
 <div align="center">
 
-[![GitHub Stars](https://img.shields.io/github/stars/ThanhNguyxnOrg/awesome-free-apis?style=social)](https://github.com/ThanhNguyxnOrg/awesome-free-apis/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/ThanhNguyxnOrg/awesome-free-apis?style=social)](https://github.com/ThanhNguyxnOrg/awesome-free-apis/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/ThanhNguyxnOrg/awesome-free-apis)](https://github.com/ThanhNguyxnOrg/awesome-free-apis/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/ThanhNguyxnOrg/awesome-free-apis)](https://github.com/ThanhNguyxnOrg/awesome-free-apis/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/ThanhNguyxnOrg/apidex-hub?style=social)](https://github.com/ThanhNguyxnOrg/apidex-hub/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/ThanhNguyxnOrg/apidex-hub?style=social)](https://github.com/ThanhNguyxnOrg/apidex-hub/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/ThanhNguyxnOrg/apidex-hub)](https://github.com/ThanhNguyxnOrg/apidex-hub/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/ThanhNguyxnOrg/apidex-hub)](https://github.com/ThanhNguyxnOrg/apidex-hub/pulls)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen?style=flat-square)](https://github.com/ThanhNguyxnOrg/awesome-free-apis)
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=ThanhNguyxn%2Fawesome-free-apis&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=ThanhNguyxn%2Fawesome-free-apis)
+[![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen?style=flat-square)](https://github.com/ThanhNguyxnOrg/apidex-hub)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=ThanhNguyxn%2Fapidex-hub&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=ThanhNguyxn%2Fapidex-hub)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/thanhnguyxn)
 
 </div>
@@ -71,6 +71,7 @@ Different APIs have different ways to verify who you are:
 | **No Auth** | 🌐 | Open for everyone - just call it! | Weather APIs, public data |
 | **API Key** | 🔑 | Secret code you get when registering | `?api_key=abc123` or `Authorization: abc123` |
 | **OAuth** | 🔐 | Secure login (like "Login with Google") | Social media integrations |
+| **Apify Key** | 🔑 | Token required to run Apify scrapers/actors | `Authorization: Bearer apify_api_...` |
 
 **💡 Pro Tip:** Always keep your API keys secret! Never commit them to GitHub.
 
@@ -185,32 +186,38 @@ print(response.json()['fact'])
 
 ## <a name="table-of-contents"></a>📊 API Catalog
 
-We maintain a curated database of **1,545** free public APIs across **60** categories. You can browse the categories directly:
+We maintain a curated database of **31,993** public endpoints across **78** categories. You can browse the categories directly:
 
 | Category | Category | Category |
 | --- | --- | --- |
-| [🐶 Animals](./apis/animals.md) | [🎮 Entertainment](./apis/entertainment.md) | [🔓 Open Source Projects](./apis/open-source-projects.md) |
-| [🌸 Anime](./apis/anime.md) | [🌿 Environment & Climate](./apis/environment-climate.md) | [💭 Personality & Quotes](./apis/personality-quotes.md) |
-| [🛡️ Anti-Malware](./apis/anti-malware.md) | [🎪 Events](./apis/events.md) | [📱 Phone & Telephony](./apis/phone-telephony.md) |
-| [🔐 Authentication & Identity](./apis/authentication-identity.md) | [💰 Finance](./apis/finance.md) | [📷 Photography](./apis/photography.md) |
-| [⛓️ Blockchain & Web3](./apis/blockchain-web3.md) | [🍔 Food & Drink](./apis/food-drink.md) | [🎙️ Podcasts](./apis/podcasts.md) |
-| [📚 Books & Literature](./apis/books.md) | [🎮 Games & Comics](./apis/games-comics.md) | [📊 Public Data & Datasets](./apis/public-data.md) |
-| [💼 Business](./apis/business.md) | [🌍 Geocoding](./apis/geocoding.md) | [🔬 Science & Space](./apis/science.md) |
-| [📅 Calendar & Holidays](./apis/calendar-holidays.md) | [🌎 Geography & Countries](./apis/geography-countries.md) | [🔐 Security & Validation](./apis/security-validation.md) |
-| [☁️ Cloud Storage & Files](./apis/cloud-storage-files.md) | [🏛️ Government & Civic](./apis/government-civic.md) | [🛍️ Shopping](./apis/shopping.md) |
-| [⚙️ Continuous Integration](./apis/continuous-integration.md) | [❤️ Health](./apis/health.md) | [💬 Social](./apis/social.md) |
-| [🪙 Cryptocurrency](./apis/cryptocurrency.md) | [🏠 IoT & Smart Devices](./apis/iot-smart-devices.md) | [⚽ Sports](./apis/sports.md) |
-| [💱 Currency Exchange](./apis/currency-exchange.md) | [💼 Jobs & Career](./apis/jobs-career.md) | [📝 Text Analysis & NLP](./apis/text-analysis-nlp.md) |
-| [✅ Data Validation](./apis/data-validation.md) | [🧠 Machine Learning](./apis/machine-learning.md) | [📦 Tracking & Logistics](./apis/tracking-logistics.md) |
-| [👤 Demographic Analysis](./apis/demographic-analysis.md) | [🔢 Math & Computation](./apis/math-computation.md) | [🚆 Transportation](./apis/transportation.md) |
-| [🎨 Design & Colors](./apis/design-colors.md) | [😂 Memes & Fun](./apis/memes-fun.md) | [✈️ Travel & Tourism](./apis/travel-tourism.md) |
-| [💻 Development](./apis/development.md) | [🧪 Mock Data & Testing](./apis/mock-data-testing.md) | [⚠️ Unofficial & Community APIs](./apis/unofficial-community.md) |
-| [📖 Dictionaries](./apis/dictionaries.md) | [📈 Monitoring & Observability](./apis/monitoring-observability.md) | [🔗 URL Shorteners](./apis/url-shorteners.md) |
-| [📄 Documents & Productivity](./apis/documents-productivity.md) | [🏛️ Museums & Art](./apis/museums-art.md) | [🔧 Utilities & Tools](./apis/utilities-tools.md) |
-| [🎓 Education](./apis/education.md) | [🎵 Music](./apis/music.md) | [📹 Video](./apis/video.md) |
-| [📧 Email & SMS](./apis/email-sms.md) | [📰 News](./apis/news.md) | [🌤️ Weather](./apis/weather.md) |
+| [🐶 Animals](./apis/animals.md) | [🌸 Anime](./apis/anime.md) | [🛡️ Anti-Malware](./apis/anti-malware.md) |
+| [🤖 Apify Agents](./apis/apify-agents.md) | [🧠 Apify AI](./apis/apify-ai.md) | [⚙️ Apify Automation](./apis/apify-automation.md) |
+| [💼 Apify Business](./apis/apify-business.md) | [💻 Apify Developer Tools](./apis/apify-developer-tools.md) | [🛍️ Apify Ecommerce](./apis/apify-ecommerce.md) |
+| [🔌 Apify Integrations](./apis/apify-integrations.md) | [💼 Apify Jobs](./apis/apify-jobs.md) | [🎯 Apify Lead Generation](./apis/apify-lead-generation.md) |
+| [🧩 Apify MCP Servers](./apis/apify-mcp-servers.md) | [📰 Apify News](./apis/apify-news.md) | [🔓 Apify Open Source](./apis/apify-open-source.md) |
+| [⚠️ Apify Other](./apis/apify-other.md) | [🏡 Apify Real Estate](./apis/apify-real-estate.md) | [🔍 Apify SEO Tools](./apis/apify-seo-tools.md) |
+| [💬 Apify Social Media](./apis/apify-social-media.md) | [✈️ Apify Travel](./apis/apify-travel.md) | [📹 Apify Videos](./apis/apify-videos.md) |
+| [🔐 Authentication & Identity](./apis/authentication-identity.md) | [⛓️ Blockchain & Web3](./apis/blockchain-web3.md) | [📚 Books & Literature](./apis/books.md) |
+| [💼 Business](./apis/business.md) | [📅 Calendar & Holidays](./apis/calendar-holidays.md) | [☁️ Cloud Storage & Files](./apis/cloud-storage-files.md) |
+| [⚙️ Continuous Integration](./apis/continuous-integration.md) | [🪙 Cryptocurrency](./apis/cryptocurrency.md) | [💱 Currency Exchange](./apis/currency-exchange.md) |
+| [✅ Data Validation](./apis/data-validation.md) | [👤 Demographic Analysis](./apis/demographic-analysis.md) | [🎨 Design & Colors](./apis/design-colors.md) |
+| [💻 Development](./apis/development.md) | [📖 Dictionaries](./apis/dictionaries.md) | [📄 Documents & Productivity](./apis/documents-productivity.md) |
+| [🎓 Education](./apis/education.md) | [📧 Email & SMS](./apis/email-sms.md) | [🎮 Entertainment](./apis/entertainment.md) |
+| [🌿 Environment & Climate](./apis/environment-climate.md) | [🎪 Events](./apis/events.md) | [💰 Finance](./apis/finance.md) |
+| [🍔 Food & Drink](./apis/food-drink.md) | [🎮 Games & Comics](./apis/games-comics.md) | [🌍 Geocoding](./apis/geocoding.md) |
+| [🌎 Geography & Countries](./apis/geography-countries.md) | [🏛️ Government & Civic](./apis/government-civic.md) | [❤️ Health](./apis/health.md) |
+| [🏠 IoT & Smart Devices](./apis/iot-smart-devices.md) | [💼 Jobs & Career](./apis/jobs-career.md) | [🧠 Machine Learning](./apis/machine-learning.md) |
+| [🔢 Math & Computation](./apis/math-computation.md) | [😂 Memes & Fun](./apis/memes-fun.md) | [🧪 Mock Data & Testing](./apis/mock-data-testing.md) |
+| [📈 Monitoring & Observability](./apis/monitoring-observability.md) | [🏛️ Museums & Art](./apis/museums-art.md) | [🎵 Music](./apis/music.md) |
+| [📰 News](./apis/news.md) | [🔓 Open Source Projects](./apis/open-source-projects.md) | [💭 Personality & Quotes](./apis/personality-quotes.md) |
+| [📱 Phone & Telephony](./apis/phone-telephony.md) | [📷 Photography](./apis/photography.md) | [🎙️ Podcasts](./apis/podcasts.md) |
+| [📊 Public Data & Datasets](./apis/public-data.md) | [🔬 Science & Space](./apis/science.md) | [🔐 Security & Validation](./apis/security-validation.md) |
+| [🛍️ Shopping](./apis/shopping.md) | [💬 Social](./apis/social.md) | [⚽ Sports](./apis/sports.md) |
+| [📝 Text Analysis & NLP](./apis/text-analysis-nlp.md) | [📦 Tracking & Logistics](./apis/tracking-logistics.md) | [🚆 Transportation](./apis/transportation.md) |
+| [✈️ Travel & Tourism](./apis/travel-tourism.md) | [⚠️ Unofficial & Community APIs](./apis/unofficial-community.md) | [🔗 URL Shorteners](./apis/url-shorteners.md) |
+| [🔧 Utilities & Tools](./apis/utilities-tools.md) | [📹 Video](./apis/video.md) | [🌤️ Weather](./apis/weather.md) |
 
-*Note: The API database is automatically synchronized with our [Awesome Free APIs Website](https://thanhnguyxnorg.github.io/awesome-free-apis/).*
+*Note: The API database is automatically synchronized with our [APIDex Hub Website](https://thanhnguyxnorg.github.io/apidex-hub/).*
 
 
 ## 🤝 Contributing
@@ -231,7 +238,7 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## 📈 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ThanhNguyxnOrg/awesome-free-apis&type=Date)](https://star-history.com/#ThanhNguyxnOrg/awesome-free-apis&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ThanhNguyxnOrg/apidex-hub&type=Date)](https://star-history.com/#ThanhNguyxnOrg/apidex-hub&Date)
 
 ---
 

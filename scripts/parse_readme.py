@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-parse_readme.py — Parse README.md → apis.json for the Awesome Free APIs website.
+parse_readme.py — Parse README.md → apis.json for the APIDex Hub website.
 
 Auto-extracts:
   - All categories (name, emoji, id, anchor)
@@ -234,12 +234,12 @@ def main():
             content = readme_file_path.read_text(encoding='utf-8')
             total_categories = data['meta']['total_categories']
             updated_content = re.sub(
-                r'(\bdatabase of \*\*)[\d,]+(?:\+)?(?=\*\* free public APIs across \*\*)',
+                r'(\bdatabase of \*\*)[\d,]+(?:\+)?(?=\*\* public endpoints across \*\*)',
                 f"\\g<1>{total_apis:,}",
                 content
             )
             updated_content = re.sub(
-                r'(free public APIs across \*\*)[\d,]+(?=\*\* categories)',
+                r'(public endpoints across \*\*)[\d,]+(?=\*\* categories)',
                 f"\\g<1>{total_categories}",
                 updated_content
             )

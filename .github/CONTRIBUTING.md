@@ -1,4 +1,4 @@
-# Contributing to Awesome Free APIs
+# Contributing to APIDex Hub
 
 Thanks for helping improve this project.
 
@@ -61,9 +61,9 @@ pnpm build
 ## Suggested Contribution Workflow
 
 ```bash
-git fork https://github.com/ThanhNguyxnOrg/awesome-free-apis
-git clone https://github.com/YOUR-USERNAME/awesome-free-apis.git
-cd awesome-free-apis
+git fork https://github.com/ThanhNguyxnOrg/apidex-hub
+git clone https://github.com/YOUR-USERNAME/apidex-hub.git
+cd apidex-hub
 git checkout -b feat/add-api-name
 ```
 

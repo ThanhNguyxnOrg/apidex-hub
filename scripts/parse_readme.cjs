@@ -173,11 +173,11 @@ if (fs.existsSync(readmePath)) {
     try {
         let content = fs.readFileSync(readmePath, 'utf8');
         content = content.replace(
-            /(\bdatabase of \*\*)[\d,]+(?:\+)?(?=\*\* free public APIs across \*\*)/,
+            /(\bdatabase of \*\*)[\d,]+(?:\+)?(?=\*\* public endpoints across \*\*)/,
             `$1${totalApis.toLocaleString()}`
         );
         content = content.replace(
-            /(free public APIs across \*\*)[\d,]+(?=\*\* categories)/,
+            /(public endpoints across \*\*)[\d,]+(?=\*\* categories)/,
             `$1${totalCategories}`
         );
         fs.writeFileSync(readmePath, content, 'utf8');

@@ -7,7 +7,7 @@ If you discover a security vulnerability in this project, please report it respo
 ### How to Report
 
 1. **Do NOT** open a public issue
-2. Email us at: [Use GitHub Security Advisories](https://github.com/ThanhNguyxnOrg/awesome-free-apis/security/advisories/new)
+2. Email us at: [Use GitHub Security Advisories](https://github.com/ThanhNguyxnOrg/apidex-hub/security/advisories/new)
 3. Provide as much detail as possible about the vulnerability
 
 ### What to Expect
