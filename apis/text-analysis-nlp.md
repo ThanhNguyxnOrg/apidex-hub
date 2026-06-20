@@ -17,7 +17,6 @@
 | **LanguageTool** | Grammar and style checking API. | No | ✅ | [Link](https://languagetool.org/http-api/swagger-ui/#/) |
 | **Lecto Translation** | Translation API with free tier and reasonable prices. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/lecto-lecto-default/api/lecto-translation/) |
 | **LibreTranslate** | Free and open-source translation API (**Self-hosted, No Auth**). | No | ✅ | [Link](https://libretranslate.com/) |
-| **ParallelDots** | Sentiment and NLP analysis APIs. | 🔑 ApiKey | ✅ | [Link](https://komprehend.io/) |
 | **Sapling** | Grammar correction and writing APIs. | 🔑 ApiKey | ✅ | [Link](https://sapling.ai/docs/) |
 | **TextRazor** | NLP extraction and classification API. | 🔑 ApiKey | ✅ | [Link](https://www.textrazor.com/docs/rest) |
 | **Tisane** | Text Analytics with focus on detection of abusive content and law enforcement... | 🔐 OAuth | ✅ | [Link](https://tisane.ai/) |

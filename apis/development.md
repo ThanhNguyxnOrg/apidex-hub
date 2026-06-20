@@ -51,7 +51,6 @@
 | **GitHub REST API** | Access GitHub data — repos, users, gists, and more (**No Auth for public data**). | No | ✅ | [Link](https://docs.github.com/en/rest) |
 | **GitHub REST API** | Interact with GitHub repositories, users, issues, and pull requests. | 🔑 ApiKey | ✅ | [Link](https://docs.github.com/en/rest) |
 | **Gitlab** | Automate GitLab. | 🔐 OAuth | ✅ | [Link](https://docs.gitlab.com/ee/api/) |
-| **Glitterly** | Image generation API. | 🔑 ApiKey | ✅ | [Link](https://developers.glitterly.app) |
 | **Google Calendar** | Create, view, or update calendar events. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/calendar/api) |
 | **Google Docs** | Create and edit documents. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/docs/api/reference/rest) |
 | **Google Firebase** | Google's mobile application development platform that helps build, improve, a... | 🔑 ApiKey | ✅ | [Link](https://firebase.google.com/docs) |

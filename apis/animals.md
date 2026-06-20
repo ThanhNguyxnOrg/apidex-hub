@@ -16,7 +16,7 @@
 | **FishWatch** | Information and pictures about individual fish species. | No | ✅ | [Link](https://www.fishwatch.gov/developers) |
 | **HTTP Cat** | Cat for every HTTP Status. | No | ✅ | [Link](https://http.cat/) |
 | **HTTP Dog** | Dogs for every HTTP response status code. | No | ✅ | [Link](https://http.dog/) |
-| **IUCN** | IUCN Red List of Threatened Species. | 🔑 ApiKey | No | [Link](http://apiv3.iucnredlist.org/api/v3/docs) |
+| **IUCN** | IUCN Red List of Threatened Species. | 🔑 ApiKey | ✅ | [Link](https://api.iucnredlist.org/api-docs) |
 | **PlaceBear** | Placeholder bear pictures. | No | ✅ | [Link](https://placebear.com/) |
 | **PlaceDog** | Placeholder Dog pictures. | No | ✅ | [Link](https://place.dog) |
 | **RandomDog** | Random pictures of dogs. | No | ✅ | [Link](https://random.dog/woof.json) |
