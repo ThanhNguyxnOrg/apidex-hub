@@ -90,7 +90,7 @@ def verify_with_playwright(browser, url):
         parked_indicators = [
             'domain parking', 'parked free', 'buy this domain', 'domain is for sale',
             'domain for sale', 'this domain is registered', 'hugedomains', 'dan.com',
-            'sedo', 'hosting suspended', 'account suspended', 'website is suspended',
+            'sedo.com', 'hosting suspended', 'account suspended', 'website is suspended',
             'domain market', 'namecheap landing'
         ]
         if any(indicator in title or indicator in content for indicator in parked_indicators):
