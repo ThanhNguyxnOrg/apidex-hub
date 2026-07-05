@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-25T10:15:58.520206+00:00",
+    "generated_at": "2026-07-05T12:04:06.160Z",
     "source": "README.md",
-    "total_apis": 31867,
+    "total_apis": 31723,
     "total_categories": 78,
-    "no_auth_count": 2113,
-    "api_key_count": 29609,
-    "oauth_count": 145,
-    "https_count": 30318,
+    "no_auth_count": 2111,
+    "api_key_count": 29468,
+    "oauth_count": 144,
+    "https_count": 30175,
     "https_percentage": 95
   },
   "categories": [
@@ -487,7 +487,7 @@
       "id": "apify-agents",
       "emoji": "🤖",
       "name": "Apify Agents",
-      "api_count": 622,
+      "api_count": 620,
       "apis": [
         {
           "name": "🌟 Youtube Transcript Scraper - $0.5 per 1k",
@@ -3906,13 +3906,6 @@
           "link": ""
         },
         {
-          "name": "Steam Workshop Scraper",
-          "description": "(Apify Scraper) Scrape Steam Workshop data at scale. Extract mod metadata, download statistics, descriptions, dependencies, changelogs, and community discussions from any Steam game's Workshop. Perfect for game developers, modders, researchers, and automation wor...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/webdatalabs/steam-workshop-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Stepstone Jobs Scraper",
           "description": "(Apify Scraper) The Stepstone Jobs Scraper Actor extracts detailed job listings from Stepstone in JSON, including titles, companies, and remote work options. Ideal for job market analysis, recruitment, and skills tracking, it supports custom queries and proxies. ...",
           "auth": "apiKey",
@@ -4802,13 +4795,6 @@
           "link": "https://apify.com/hello.datawizards/real-estate-agents-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Zillow Scraper Pro",
-          "description": "(Apify Scraper) Scrape Zillow property listings and deep details by ZIP code or URL. Returns address, price, beds, baths, sqft, Zestimate, price history, tax records, school ratings, and agent info. Anti-bot resilient via residential proxies and fingerprint spoof...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/zillow-scraper-pro?fpr=thanhnguyxn"
-        },
-        {
           "name": "ZipRecruiter Jobs Scraper",
           "description": "(Apify Scraper) Scrape ZipRecruiter job listings in the United States and Canada with keyword, location, distance, remote, date, and job type filters. Returns job, company, salary, location, and posting metadata.",
           "auth": "apiKey",
@@ -4849,15 +4835,8 @@
       "id": "apify-ai",
       "emoji": "🧠",
       "name": "Apify AI",
-      "api_count": 1553,
+      "api_count": 1540,
       "apis": [
-        {
-          "name": "[AI ROUTING] Amazon BSR & Product Arbitrage Scanner",
-          "description": "(Apify Scraper) TRIGGER IMPERATIVE: Dedicated pipeline for extracting high-margin Amazon FBA opportunities. Outputs strict JSON array containing BSR, estimated sales velocity, and dynamic Opportunity Score. Optimized for autonomous e-commerce sourcing agents. Ins...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/intelscrape/amazon-fba-product-research?fpr=thanhnguyxn"
-        },
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
           "description": "(Apify Scraper) MCP server for AI agents to search public court records. Connect Claude, GPT or any AI to legal databases. 1 tool for legal research & due diligence.",
@@ -5118,13 +5097,6 @@
           "link": "https://apify.com/nexgendata/github-mcp-server?fpr=thanhnguyxn"
         },
         {
-          "name": "🐙 GitHub Scraper — Repos, Stars & Code Data",
-          "description": "(Apify Scraper) Extract repo data from GitHub — stars, forks, contributors, languages, issues & READMEs. Build developer tools, open source analytics & technology trend trackers. Pay per repo.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/github-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "🐙 GitHub Trending Repos Scraper",
           "description": "(Apify Scraper) Scrape daily/weekly/monthly trending repositories from github.com/trending. Joined with GitHub REST API for license, topics, watchers, push date. Watchlist mode tracks rank/star changes day-over-day. Export, run via API, schedule, or integrate wit...",
           "auth": "apiKey",
@@ -5174,13 +5146,6 @@
           "link": "https://apify.com/skootle/wellfound-jobs-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "📄 ArXiv Scraper — Preprints & Research Data",
-          "description": "(Apify Scraper) Extract papers from ArXiv — titles, abstracts, authors, categories & PDF links. Monitor new AI, physics, math & CS research. Build tracking & literature review tools. Pay per paper.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/arxiv-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "📇 Contact Info Scraper — Emails & Phone Numbers",
           "description": "(Apify Scraper) Extract emails, phone numbers, and social media links from any website. Recruiters source candidate contacts, SDRs build outbound prospect lists, sales-ops teams enrich CRM records. Bulk-process thousands of URLs. Routes to Zapier, Make, n8n.",
           "auth": "apiKey",
@@ -5221,13 +5186,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/nexgendata/global-equities-screener-mcp?fpr=thanhnguyxn"
-        },
-        {
-          "name": "📊 Reddit Brand Monitor -- Track Mentions & Sentiment",
-          "description": "(Apify Scraper) Monitor any brand, product, or topic on Reddit. Track mentions with AI sentiment analysis across all subreddits. Brandwatch alternative at 1/100th the cost. Trend tracking, competitive comparison & engagement analytics.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/reddit-brand-monitor?fpr=thanhnguyxn"
         },
         {
           "name": "📊 Sentiment Analyzer — Fast VADER Scoring for Reviews & Social",
@@ -5403,13 +5361,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/powerai/swot-business-analysis-tool---ppe?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🔍 ™️ Trademark Search — USPTO Database Lookup",
-          "description": "(Apify Scraper) Search USPTO trademark database for registered & pending marks. Get filing status, owner data, classifications & history. Essential for brand clearance & IP due diligence. Pay per search.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/trademark-search?fpr=thanhnguyxn"
         },
         {
           "name": "🔍 YouTube Comments Scraper — Bulk Comment Extractor",
@@ -5671,13 +5622,6 @@
           "link": "https://apify.com/nexgendata/google-shopping-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "🛍️ Shopify App Store Scraper — App Research & Competitor Intel",
-          "description": "(Apify Scraper) Extract Shopify App Store data: app listings, reviews, pricing plans & ratings. Search by keyword or category. Tracker mode analyzes competitor app stacks. 10x cheaper than manual research. Built for e-commerce managers & Shopify app developers.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/shopify-app-store-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "🛒 1688 Product Scraper — wholesale & factory-direct",
           "description": "(Apify Scraper) Extract public wholesale product data from 1688.com by keyword, including pricing, shop details, sales signals, and sourcing-friendly product fields.",
           "auth": "apiKey",
@@ -5692,13 +5636,6 @@
           "link": "https://apify.com/futurizerush/1688-com-products-scraper-zh-tw?fpr=thanhnguyxn"
         },
         {
-          "name": "🛒 Amazon Product Scraper — Prices, Reviews & Rankings",
-          "description": "(Apify Scraper) Scrape Amazon product listings, prices, reviews, seller data, BSR rankings, and buy box info. Track competitors, monitor price changes, and build product databases at scale.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/amazon-product-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "🛒 E-Commerce MCP — AI Shopify Analysis",
           "description": "(Apify Scraper) MCP server for AI agents to analyze Shopify stores & extract products. Connect Claude, GPT or any AI to ecommerce intelligence. 2 tools for competitive analysis.",
           "auth": "apiKey",
@@ -5711,13 +5648,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/skootle/ebay-sold-comps?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🛒 Shopify Product Scraper — Full Catalogs",
-          "description": "(Apify Scraper) Extract product catalogs from any Shopify store — names, prices, descriptions, images, variants. Competitive pricing analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/shopify-product-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "$1/1K 🔥 Capterra Products Reviews Scraper PRO",
@@ -6427,13 +6357,6 @@
           "link": "https://apify.com/misterkhan/airbnb-smart-auditor?fpr=thanhnguyxn"
         },
         {
-          "name": "Airbnb Scraper — Listings, Prices & Reviews",
-          "description": "(Apify Scraper) Scrape Airbnb data from any city: listings with prices, availability, ratings, amenities, host details, photos, and guest reviews. Beats Airbnb's 270-result search limit to extract every listing. Export to JSON, CSV, or Excel — fast, reliable, no ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/airbnb-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Airfocus MCP Server",
           "description": "(Apify Scraper) Connect your AI assistant to Airfocus - the modular product management platform. This MCP server enables AI tools to read, search, and manage items across your Airfocus workspaces.",
           "auth": "apiKey",
@@ -6691,20 +6614,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/lexis-solutions/areavibes-com-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Arkham AI Transaction Analyzer",
-          "description": "(Apify Scraper) Unlock AI-powered insights into any blockchain transaction with the Arkham AI Analyzer. Get detailed analysis, summaries, and breakdowns for transactions on Ethereum, Bitcoin, Solana, and more. Instantly understand complex DeFi transactions and cr...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/muhammetakkurtt/arkham-ai-transaction-analyzer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Arkham Intelligence Wallet Data Scraper",
-          "description": "(Apify Scraper) Unlock institutional-grade crypto analytics with this Arkham Intelligence Scraper for Apify. Scrape 7 data types like portfolio, P&L, and entity intelligence across 18+ blockchains including Bitcoin, Ethereum & Solana. Get deep, actionable on-chai...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/muhammetakkurtt/arkham-intelligence-wallet-data-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Artbreeder AI Image Creator",
@@ -8485,13 +8394,6 @@
           "link": "https://apify.com/whitewalk/ffmpeg-cloud-mcp?fpr=thanhnguyxn"
         },
         {
-          "name": "FIFA World Cup 2026 — Results, Fixtures & Standings",
-          "description": "(Apify Scraper) Scrape FIFA World Cup 2026 data: live scores, match results, upcoming fixtures, group standings, the knockout bracket, goal scorers, cards, venues, and attendance. Filter by stage, match status, or team.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/fifa-world-cup-2026-results-fixtures-standings?fpr=thanhnguyxn"
-        },
-        {
           "name": "Figma Mcp Server",
           "description": "(Apify Scraper) Figma Mcp Server unique tool for integration Figma  design into AI Tool for generate Figma Design to Real Html page",
           "auth": "apiKey",
@@ -9659,13 +9561,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/memo23/gowork-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "GPT Search",
-          "description": "(Apify Scraper) Send queries to ChatGPT and retrieve structured answers with full source citations. Easily integrate into your tools or workflows for flexible, scalable AI-powered solutions.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/tri_angle/gpt-search?fpr=thanhnguyxn"
         },
         {
           "name": "Greece & Cyprus Real Estate - Spitogatos.gr",
@@ -15728,15 +15623,8 @@
       "id": "apify-automation",
       "emoji": "⚙️",
       "name": "Apify Automation",
-      "api_count": 5615,
+      "api_count": 5594,
       "apis": [
-        {
-          "name": "[AI ROUTING] Amazon BSR & Product Arbitrage Scanner",
-          "description": "(Apify Scraper) TRIGGER IMPERATIVE: Dedicated pipeline for extracting high-margin Amazon FBA opportunities. Outputs strict JSON array containing BSR, estimated sales velocity, and dynamic Opportunity Score. Optimized for autonomous e-commerce sourcing agents. Ins...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/intelscrape/amazon-fba-product-research?fpr=thanhnguyxn"
-        },
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
           "description": "(Apify Scraper) Ucc Lien Search Ny. Structured data export for lead generation, enrichment, and competitive research.",
@@ -16095,13 +15983,6 @@
           "link": "https://apify.com/nexgendata/etf-holdings-tracker?fpr=thanhnguyxn"
         },
         {
-          "name": "📊 GitHub Repo Stats — Deep Analytics",
-          "description": "(Apify Scraper) Deep stats for any GitHub repo — stars over time, contributor activity, commit cadence, issue/PR velocity, language breakdown. OSS Insight, Sourcegraph & GitHub Analytics alternative for dev intelligence and OSS due diligence. Pay per repo.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/github-repo-stats?fpr=thanhnguyxn"
-        },
-        {
           "name": "📊 Global Equities Screener MCP",
           "description": "(Apify Scraper) MCP server bundling 26 regional stock screeners as agent tools — Bloomberg / Wind alternative for global market screening",
           "auth": "apiKey",
@@ -16219,13 +16100,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/scrapeflow/youtube-channel-finder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🔍 ™️ Trademark Search — USPTO Database Lookup",
-          "description": "(Apify Scraper) Search USPTO trademark database for registered & pending marks. Get filing status, owner data, classifications & history. Essential for brand clearance & IP due diligence. Pay per search.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/trademark-search?fpr=thanhnguyxn"
         },
         {
           "name": "🔍 YouTube Channel Finder",
@@ -16359,13 +16233,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/taroyamada/wayback-machine-checker?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🗂️ Google Cache Viewer — Wayback + Archive Alternative",
-          "description": "(Apify Scraper) Replaces Google's cached-page view (killed Feb 2024). Queries Wayback Machine + archive.today, returns latest snapshot URL, timestamp, and extracted text content.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/google-cache-viewer?fpr=thanhnguyxn"
         },
         {
           "name": "🤖 Reddit B2B Email Scraper",
@@ -19021,13 +18888,6 @@
           "link": "https://apify.com/haketa/az-roc-contractor-license-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Arkham Intelligence Wallet Data Scraper",
-          "description": "(Apify Scraper) Unlock institutional-grade crypto analytics with this Arkham Intelligence Scraper for Apify. Scrape 7 data types like portfolio, P&L, and entity intelligence across 18+ blockchains including Bitcoin, Ethereum & Solana. Get deep, actionable on-chai...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/muhammetakkurtt/arkham-intelligence-wallet-data-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Artbreeder AI Image Creator",
           "description": "(Apify Scraper) Transform text prompts into stunning AI-generated images with Artbreeder's powerful Text-to-Image API . Create high-quality visuals using Flux Schnell or SDXL Lightning models with customizable dimensions, quality settings, and NSFW detection. Per...",
           "auth": "apiKey",
@@ -19369,13 +19229,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/eloquent_mountain/automated-json-unnester?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Automated LinkedIn profile discovery + ranking (recruiter tool)",
-          "description": "(Apify Scraper) This Apify actor discovers and analyzes public LinkedIn profiles using multiple search engines with advanced filtering, automated fallback strategies, and intelligent candidate ranking based on provided skills and Location.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ayk_6789/automated-linkedin-profile-discovery-ranking-recruiter-tool?fpr=thanhnguyxn"
         },
         {
           "name": "AutoNation Scraper",
@@ -20554,13 +20407,6 @@
           "link": "https://apify.com/santamaria-automations/blocket-se-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Blockworks Scraper",
-          "description": "(Apify Scraper) Scrape news articles, podcast episodes, and newsletters from Blockworks.co — the leading institutional crypto & digital assets media platform.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/blockworks-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Bloomberg Article Extractor — Full Content, No Paywall",
           "description": "(Apify Scraper) Get the complete Bloomberg article in seconds — headline, body, authors, tags, publish date, thumbnail, and metadata — all without hitting the paywall. No browser. No overhead. Just clean, structured data delivered fast.",
           "auth": "apiKey",
@@ -21049,13 +20895,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/plum_vegetable/buff163-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Bug Bounty Recon Scanner",
-          "description": "(Apify Scraper) Find exposed admin panels, missing/weak security headers, sensitive file leaks, and HTTPS misconfigurations across target domains. Export prioritised risk scores and JSON reports. Run via API, schedule scans, or integrate with bug bounty tools.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/iamuendo/bug-bounty-recon-scanner?fpr=thanhnguyxn"
         },
         {
           "name": "Building Permits Scraper",
@@ -22003,13 +21842,6 @@
           "link": "https://apify.com/moving_beacon-owner1/chatgpt-to-pdf?fpr=thanhnguyxn"
         },
         {
-          "name": "Chaturbate Model Leads Scraper",
-          "description": "(Apify Scraper) Automated Chaturbate scraper for OnlyFans agencies, cam studios, and model recruiters to generate qualified creator leads. Extract 1000s of cam model profiles with Instagram, Twitter, OnlyFans, Social links, and follower counts for talent scouting...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/chaturbate-model-leads-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Chaturbate Profile Scraper",
           "description": "(Apify Scraper) The ultimate bulk Chaturbate profile scraper for extracting specific profiles by username or URL. Extract complete social media data including Instagram, Twitter, OnlyFans, Social Media links, follower counts, demographics, and bio information fro...",
           "auth": "apiKey",
@@ -22036,13 +21868,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/saswave/cheap-fast-zillow-search-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Cheapest & Fastest LinkedIn Jobs Scraper",
-          "description": "(Apify Scraper) Scrape LinkedIn job listings by keyword and location, or paste a LinkedIn jobs search URL. Get titles, companies, salaries, full descriptions, seniority, employment type, and applicant counts as clean JSON, CSV, or Excel — no login, no API key, no...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/linkedin-jobs-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Cheapest Upwork Jobs Scraper",
@@ -25104,13 +24929,6 @@
           "link": "https://apify.com/benthepythondev/ecommerce-price-monitor?fpr=thanhnguyxn"
         },
         {
-          "name": "Ecommerce Price Scraper 1",
-          "description": "(Apify Scraper)",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fipper_ai/ecommerce-price-scraper-1?fpr=thanhnguyxn"
-        },
-        {
           "name": "Ecommerce Store Intelligence",
           "description": "(Apify Scraper) Extract comprehensive store and product intelligence from Shopify and WooCommerce stores with automated change tracking and monitoring",
           "auth": "apiKey",
@@ -27195,13 +27013,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/seralifatih/wc2026-stats?fpr=thanhnguyxn"
-        },
-        {
-          "name": "FIFA World Cup 2026 — Results, Fixtures & Standings",
-          "description": "(Apify Scraper) Scrape FIFA World Cup 2026 data: live scores, match results, upcoming fixtures, group standings, the knockout bracket, goal scorers, cards, venues, and attendance. Filter by stage, match status, or team.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/fifa-world-cup-2026-results-fixtures-standings?fpr=thanhnguyxn"
         },
         {
           "name": "Figma API - Design Asset Extraction & Export",
@@ -30235,13 +30046,6 @@
           "link": "https://apify.com/badruddeen/google-maps-scraper-pro-hotels-places?fpr=thanhnguyxn"
         },
         {
-          "name": "Google Maps Scraper with Emails",
-          "description": "(Apify Scraper) Scrapes Google Maps for any search query in any country. Extracts business name, phone, email, website, address, category, and rating. Visits each place's website to find email addresses. Built for mass scraping.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/pheidias0/google-maps-scraper-with-emails?fpr=thanhnguyxn"
-        },
-        {
           "name": "Google Maps Scraper: B2B Leads & Emails",
           "description": "(Apify Scraper) The Ultimate G-Maps Lead Machine is designed for marketing agencies, sales teams, and wholesalers who need fresh, accurate business data without paying for expensive lists.  Stop searching manually. Start mining leads automatically today.",
           "auth": "apiKey",
@@ -32412,20 +32216,6 @@
           "link": "https://apify.com/yasmany.casanova/ifood-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Ifood Store Finder",
-          "description": "(Apify Scraper) Scrape iFood Brazil restaurants by city, neighborhood, and food category. Uses browser automation with residential proxy to bypass bot detection. Returns store names, ratings, delivery fees, distances, and IDs for menu extraction.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-store-finder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ifood Store Finder with Menus",
-          "description": "(Apify Scraper) All-in-one iFood Brazil scraper. Finds restaurants by city and category, then automatically extracts full menus for each one. Combines Store Finder + Menu Scraper into a single run.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-store-finder-with-menus?fpr=thanhnguyxn"
-        },
-        {
           "name": "Ifood Supermarket Scraper",
           "description": "(Apify Scraper) Extract supermarket data from iFood Brazil: store listings by location, detailed store information, and full product catalogs with prices, EAN codes, packaging, and unit information. Ideal for price intelligence, market research, and e-commerce data.",
           "auth": "apiKey",
@@ -32935,13 +32725,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/pramodkonde17/indeed-job-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Indeed Jobs Scraper",
-          "description": "(Apify Scraper) Scrape Indeed job listings by keyword and location, or paste an Indeed jobs search URL. Get titles, companies, salaries, full descriptions, skills, and company details as clean JSON. No login needed.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/indeed-jobs-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Indeed Jobs Scraper - Most Comprehensive",
@@ -41876,13 +41659,6 @@
           "link": "https://apify.com/parseforge/pump-fun-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Python Web Scraping Toolkit",
-          "description": "(Apify Scraper)",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fipper_ai/python-web-scraping-toolkit?fpr=thanhnguyxn"
-        },
-        {
           "name": "Python Website Scraper for B2B Leads",
           "description": "(Apify Scraper) Extract high-intent B2B leads with this powerful Python web scraper. This data scraper automates the discovery of recently funded startups, identifies founders, and tracks hiring status. Turn any site into a structured database with this advanced ...",
           "auth": "apiKey",
@@ -42455,13 +42231,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ocrad/realtorca-property-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "RealtorPulse — Fresh Listing Lead Scraper",
-          "description": "(Apify Scraper) RealtorPulse scrapes Realtor.com for properties listed within a configurable time window (default: last 24 hours), then auto-enriches each lead with full property details  Built for real estate investors, wholesalers, agents, and lead generation t...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ayk_6789/realtorpluse?fpr=thanhnguyxn"
         },
         {
           "name": "RealtyTrac Foreclosure & REO Listings Scraper",
@@ -46209,13 +45978,6 @@
           "link": ""
         },
         {
-          "name": "Steam Workshop Scraper",
-          "description": "(Apify Scraper) Scrape Steam Workshop data at scale. Extract mod metadata, download statistics, descriptions, dependencies, changelogs, and community discussions from any Steam game's Workshop. Perfect for game developers, modders, researchers, and automation wor...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/webdatalabs/steam-workshop-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Stech Clarity Driven Feedback Transformer (SCDFT)",
           "description": "(Apify Scraper) SPAI turns harsh feedback into total clarity: clear, manager-ready reports. Each item refined one-by-one. Upload CSV/JSON, pick tone per item, export instantly. Stateless, private. Micro Honesty embedded. No data stored. For HR, CS, product, and p...",
           "auth": "apiKey",
@@ -48863,13 +48625,6 @@
         },
         {
           "name": "Tripadvisor Reviews Scraper",
-          "description": "(Apify Scraper) 🔥 $0.40/1000⚡ All in One Fast & Affordable Tripadvisor Reviews Scraper – Extract hotel, restaurant, and attraction reviews with ratings, dates, user profiles & more from any Tripadvisor page or search. No proxies & no cookies needed.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scrapesmith/my-actor-2?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Tripadvisor Reviews Scraper",
           "description": "(Apify Scraper) Scrape reviews from TripAdvisor using customizable search queries and filters. Extract review data including ratings, dates, traveler types, and more with support for multiple sorting options and keyword filtering.",
           "auth": "apiKey",
           "https": true,
@@ -48958,13 +48713,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/getdataforme/truckparkingclub-info-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Truecar Scraper 🚙",
-          "description": "(Apify Scraper) Extract detailed vehicle data from TrueCar instantly. Gather pricing, model specs, mileage, dealer info, and more from thousands of car listings. Perfect for market analysis, price monitoring, or inventory tracking. Get structured automotive data ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/shahidirfan/truecar-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Truelancer Scraper – Jobs, Freelancers & Services",
@@ -55041,7 +54789,7 @@
       "id": "apify-business",
       "emoji": "💼",
       "name": "Apify Business",
-      "api_count": 527,
+      "api_count": 524,
       "apis": [
         {
           "name": "⚕️ Doctor Directory Lead Finder",
@@ -55142,13 +54890,6 @@
           "link": "https://apify.com/nexgendata/global-equities-screener-mcp?fpr=thanhnguyxn"
         },
         {
-          "name": "📊 Tranco Rank Lookup — Alexa Rank Alternative",
-          "description": "(Apify Scraper) Free domain ranking API. Replaces defunct Alexa Rank using Tranco academic research list. Bulk lookup, 30-day history, similar domains, trend detection.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/tranco-rank-lookup?fpr=thanhnguyxn"
-        },
-        {
           "name": "📋 Regulatory Filings MCP",
           "description": "(Apify Scraper) MCP server bundling 17 SEC + institutional analytics actors as agent tools — WhaleWisdom / 8-K Push alternative",
           "auth": "apiKey",
@@ -55175,13 +54916,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/renzomacar/website-contact-finder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🗂️ Google Cache Viewer — Wayback + Archive Alternative",
-          "description": "(Apify Scraper) Replaces Google's cached-page view (killed Feb 2024). Queries Wayback Machine + archive.today, returns latest snapshot URL, timestamp, and extracted text content.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/google-cache-viewer?fpr=thanhnguyxn"
         },
         {
           "name": "🗳️ DAO Governance Tracker",
@@ -57417,13 +57151,6 @@
           "link": "https://apify.com/jungle_synthesizer/nyc-acris-probate-recordings-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "NYSED Professional License Verification API",
-          "description": "(Apify Scraper) Verify any New York State licensed professional — physicians, nurses, PEs, CPAs, architects, dentists, pharmacists, and 110+ more — directly from NYSED. $0.005–$0.020 per record. Empty searches never charged.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/nysed-professional-license-search?fpr=thanhnguyxn"
-        },
-        {
           "name": "OFAC Sanctions Screening API - KYC AML Compliance",
           "description": "(Apify Scraper) Screen names, vendors, customers, and counterparties against official OFAC SDN and consolidated sanctions data. Returns matches, aliases, addresses, programs, IDs, and remarks for KYC/AML, sanctions screening, trade compliance, vendor due diligenc...",
           "auth": "apiKey",
@@ -58738,7 +58465,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 4033,
+      "api_count": 4016,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -58837,20 +58564,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/winningsolutions/german-imprint-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🌍 IP Geolocation Scraper — Bulk IP Lookup & Locations",
-          "description": "(Apify Scraper) Bulk IP geolocation lookup for IPs, domains, and URLs. Get country, city, coordinates, timezone, ISP, organization, ASN, proxy/hosting flags, and clean network data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lokki/ip-geolocation-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🌐 DNS Lookup — Bulk A, MX, CNAME & TXT Records",
-          "description": "(Apify Scraper) Bulk DNS record lookups — A, AAAA, MX, CNAME, TXT, NS, SOA, SPF, DMARC. MXToolbox & DNSChecker alternative for SREs and security teams: monitor zones, verify email auth, audit domains. Pay $0.01 per lookup, no monthly fee.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/dns-records-lookup?fpr=thanhnguyxn"
         },
         {
           "name": "🌐 DNS Propagation Checker",
@@ -58965,13 +58678,6 @@
           "link": "https://apify.com/nexgendata/github-mcp-server?fpr=thanhnguyxn"
         },
         {
-          "name": "🐙 GitHub Scraper — Repos, Stars & Code Data",
-          "description": "(Apify Scraper) Extract repo data from GitHub — stars, forks, contributors, languages, issues & READMEs. Build developer tools, open source analytics & technology trend trackers. Pay per repo.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/github-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "🐙 GitHub Trending Repos Scraper",
           "description": "(Apify Scraper) Scrape daily/weekly/monthly trending repositories from github.com/trending. Joined with GitHub REST API for license, topics, watchers, push date. Watchlist mode tracks rank/star changes day-over-day. Export, run via API, schedule, or integrate wit...",
           "auth": "apiKey",
@@ -59028,32 +58734,11 @@
           "link": "https://apify.com/parseforge/linkedin-jobs-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "📄 ArXiv Scraper — Preprints & Research Data",
-          "description": "(Apify Scraper) Extract papers from ArXiv — titles, abstracts, authors, categories & PDF links. Monitor new AI, physics, math & CS research. Build tracking & literature review tools. Pay per paper.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/arxiv-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "📊 ETF Holdings Tracker — Constituents, Weights, AUM",
           "description": "(Apify Scraper) Track ETF constituent holdings, weights, AUM, sector exposure across 100+ major US ETFs including SPY, QQQ, VTI, ARKK, JEPI. Daily holdings data for asset allocators, ETF arbitrageurs, factor investors, index researchers. Bloomberg ETF analytics a...",
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/nexgendata/etf-holdings-tracker?fpr=thanhnguyxn"
-        },
-        {
-          "name": "📊 GitHub Repo Stats — Deep Analytics",
-          "description": "(Apify Scraper) Deep stats for any GitHub repo — stars over time, contributor activity, commit cadence, issue/PR velocity, language breakdown. OSS Insight, Sourcegraph & GitHub Analytics alternative for dev intelligence and OSS due diligence. Pay per repo.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/github-repo-stats?fpr=thanhnguyxn"
-        },
-        {
-          "name": "📊 Tranco Rank Lookup — Alexa Rank Alternative",
-          "description": "(Apify Scraper) Free domain ranking API. Replaces defunct Alexa Rank using Tranco academic research list. Bulk lookup, 30-day history, similar domains, trend detection.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/tranco-rank-lookup?fpr=thanhnguyxn"
         },
         {
           "name": "📋 Email DMARC Auditor — SPF/DKIM/DMARC Bulk Check",
@@ -59208,13 +58893,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/taroyamada/wayback-machine-checker?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🗂️ Google Cache Viewer — Wayback + Archive Alternative",
-          "description": "(Apify Scraper) Replaces Google's cached-page view (killed Feb 2024). Queries Wayback Machine + archive.today, returns latest snapshot URL, timestamp, and extracted text content.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/google-cache-viewer?fpr=thanhnguyxn"
         },
         {
           "name": "🧠 RAG Web Browser — Web Content for AI & LLMs",
@@ -61112,27 +60790,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/haketa/az-roc-contractor-license-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Arkham AI Transaction Analyzer",
-          "description": "(Apify Scraper) Unlock AI-powered insights into any blockchain transaction with the Arkham AI Analyzer. Get detailed analysis, summaries, and breakdowns for transactions on Ethereum, Bitcoin, Solana, and more. Instantly understand complex DeFi transactions and cr...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/muhammetakkurtt/arkham-ai-transaction-analyzer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Arkham Intelligence Wallet Data Scraper",
-          "description": "(Apify Scraper) Unlock institutional-grade crypto analytics with this Arkham Intelligence Scraper for Apify. Scrape 7 data types like portfolio, P&L, and entity intelligence across 18+ blockchains including Bitcoin, Ethereum & Solana. Get deep, actionable on-chai...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/muhammetakkurtt/arkham-intelligence-wallet-data-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Arkham Intelligence Wallet Transfers & Swaps Scraper",
-          "description": "(Apify Scraper) Extract enriched wallet transaction data from Arkham. Covers Transfers & DEX Swaps on EVM, BTC, SOL, TON & more. Features real-world entity resolution (CEX, Whales), token details, and precise USD valuations. Export structured, reliable data for c...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/muhammetakkurtt/arkham-intelligence-wallet-transfers-swaps-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Article Content Extractor 📄",
@@ -65760,13 +65417,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/data_ops_main/ebay-uk-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ecommerce Price Scraper 1",
-          "description": "(Apify Scraper)",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fipper_ai/ecommerce-price-scraper-1?fpr=thanhnguyxn"
         },
         {
           "name": "Economic Calendar Data (Investing.com)",
@@ -71446,32 +71096,11 @@
           "link": "https://apify.com/skython/ieg-expo-exhibitor-list-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Ifood Menu Scraper",
-          "description": "(Apify Scraper) Extract complete restaurant menus from iFood Brazil: categories, dish names, descriptions, prices, images, and customization options. Works with store IDs from the iFood Store Finder.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-menu-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Ifood Restaurant Scraper",
           "description": "(Apify Scraper) Extracts restaurant data from iFood Brazil—including profiles, menus, prices, and ratings—with location-based search and clean, structured JSON output.",
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/yasmany.casanova/ifood-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ifood Store Finder",
-          "description": "(Apify Scraper) Scrape iFood Brazil restaurants by city, neighborhood, and food category. Uses browser automation with residential proxy to bypass bot detection. Returns store names, ratings, delivery fees, distances, and IDs for menu extraction.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-store-finder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ifood Store Finder with Menus",
-          "description": "(Apify Scraper) All-in-one iFood Brazil scraper. Finds restaurants by city and category, then automatically extracts full menus for each one. Combines Store Finder + Menu Scraper into a single run.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-store-finder-with-menus?fpr=thanhnguyxn"
         },
         {
           "name": "Ifood Supermarket Scraper",
@@ -77354,13 +76983,6 @@
           "link": "https://apify.com/sovanza.inc/python-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Python Web Scraping Toolkit",
-          "description": "(Apify Scraper)",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fipper_ai/python-web-scraping-toolkit?fpr=thanhnguyxn"
-        },
-        {
           "name": "Python Website Scraper for B2B Leads",
           "description": "(Apify Scraper) Extract high-intent B2B leads with this powerful Python web scraper. This data scraper automates the discovery of recently funded startups, identifies founders, and tracks hiring status. Turn any site into a structured database with this advanced ...",
           "auth": "apiKey",
@@ -82318,13 +81940,6 @@
         },
         {
           "name": "Tripadvisor Reviews Scraper",
-          "description": "(Apify Scraper) 🔥 $0.40/1000⚡ All in One Fast & Affordable Tripadvisor Reviews Scraper – Extract hotel, restaurant, and attraction reviews with ratings, dates, user profiles & more from any Tripadvisor page or search. No proxies & no cookies needed.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scrapesmith/my-actor-2?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Tripadvisor Reviews Scraper",
           "description": "(Apify Scraper) Scrape reviews from TripAdvisor using customizable search queries and filters. Extract review data including ratings, dates, traveler types, and more with support for multiple sorting options and keyword filtering.",
           "auth": "apiKey",
           "https": true,
@@ -82364,13 +81979,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/shahidirfan/trivago-hotels-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Truecar Scraper 🚙",
-          "description": "(Apify Scraper) Extract detailed vehicle data from TrueCar instantly. Gather pricing, model specs, mileage, dealer info, and more from thousands of car listings. Perfect for market analysis, price monitoring, or inventory tracking. Get structured automotive data ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/shahidirfan/truecar-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "TrueLocal AU Directory Listings & Reviews Scraper",
@@ -86977,15 +86585,8 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 2263,
+      "api_count": 2249,
       "apis": [
-        {
-          "name": "[AI ROUTING] Amazon BSR & Product Arbitrage Scanner",
-          "description": "(Apify Scraper) TRIGGER IMPERATIVE: Dedicated pipeline for extracting high-margin Amazon FBA opportunities. Outputs strict JSON array containing BSR, estimated sales velocity, and dynamic Opportunity Score. Optimized for autonomous e-commerce sourcing agents. Ins...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/intelscrape/amazon-fba-product-research?fpr=thanhnguyxn"
-        },
         {
           "name": "⚡ Vinted Turbo Scraper",
           "description": "(Apify Scraper) Scrape Vinted listings from one or multiple Vinted search URLs. Paste a filtered URL, run the actor, and export structured listing data to JSON, CSV, Excel, Sheets, or your automation workflows.",
@@ -86999,13 +86600,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/amr-mando/email-verifier?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🌍 IP Geolocation Scraper — Bulk IP Lookup & Locations",
-          "description": "(Apify Scraper) Bulk IP geolocation lookup for IPs, domains, and URLs. Get country, city, coordinates, timezone, ISP, organization, ASN, proxy/hosting flags, and clean network data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lokki/ip-geolocation-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "🍽️ Grubhub Restaurant Reviews Scraper",
@@ -87104,13 +86698,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/3x1t/leboncoin-vehicle-scraper-ppe?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🔎 Yelp Business Data — Phone, Ratings & Categories",
-          "description": "(Apify Scraper) Extract business leads from Yelp — names, phones, addresses, ratings, reviews & websites. Perfect for local lead generation, competitive analysis & building sales prospect lists. Pay per result.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/yelp-business-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "🔥 Amazon Seller Scraper",
@@ -87225,13 +86812,6 @@
           "link": "https://apify.com/easyapi/gumroad-reviews-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "🛍️ Shopify App Store Scraper — App Research & Competitor Intel",
-          "description": "(Apify Scraper) Extract Shopify App Store data: app listings, reviews, pricing plans & ratings. Search by keyword or category. Tracker mode analyzes competitor app stacks. 10x cheaper than manual research. Built for e-commerce managers & Shopify app developers.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/shopify-app-store-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "🛍️ Shopify Product Extractor — Catalog & Prices",
           "description": "(Apify Scraper) Extract complete catalogs from any Shopify store — names, prices, variants, images, inventory, collections. Shopify Spy, Commerce Inspector & Niche Scraper alternative for dropshippers, price monitoring & product research. Works on 4M+ stores, no ...",
           "auth": "apiKey",
@@ -87253,13 +86833,6 @@
           "link": "https://apify.com/futurizerush/1688-com-products-scraper-zh-tw?fpr=thanhnguyxn"
         },
         {
-          "name": "🛒 Amazon Product Scraper — Prices, Reviews & Rankings",
-          "description": "(Apify Scraper) Scrape Amazon product listings, prices, reviews, seller data, BSR rankings, and buy box info. Track competitors, monitor price changes, and build product databases at scale.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/amazon-product-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "🛒 E-Commerce MCP — AI Shopify Analysis",
           "description": "(Apify Scraper) MCP server for AI agents to analyze Shopify stores & extract products. Connect Claude, GPT or any AI to ecommerce intelligence. 2 tools for competitive analysis.",
           "auth": "apiKey",
@@ -87279,13 +86852,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/nexgendata/shopify-app-merchant-finder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🛒 Shopify Product Scraper — Full Catalogs",
-          "description": "(Apify Scraper) Extract product catalogs from any Shopify store — names, prices, descriptions, images, variants. Competitive pricing analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/shopify-product-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "🛒 Shopify Revenue Estimator — Store Intel",
@@ -92230,13 +91796,6 @@
           "link": "https://apify.com/benthepythondev/ecommerce-price-monitor?fpr=thanhnguyxn"
         },
         {
-          "name": "Ecommerce Price Scraper 1",
-          "description": "(Apify Scraper)",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fipper_ai/ecommerce-price-scraper-1?fpr=thanhnguyxn"
-        },
-        {
           "name": "Ecommerce Scraper — Shopify, WooCommerce & Any Store",
           "description": "(Apify Scraper) MCP-ready ecommerce scraper. Extract products, prices, discounts, variants, stock & images from any Shopify, WooCommerce, or generic store $3.00/1K.",
           "auth": "apiKey",
@@ -92830,13 +92389,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/thescrapelab/apify-facebook-post-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "FacebookMarketplaceScraper",
-          "description": "(Apify Scraper) The most data-rich Facebook Marketplace scraper on Apify. Extracts 40+ fields per listing — including seller intelligence, item details, vehicle specs, and HD images — for any category. No login required.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scraperpro/facebookmarketplacescraper?fpr=thanhnguyxn"
         },
         {
           "name": "Faire & Ankorstore Wholesale Supplier Scraper",
@@ -94603,20 +94155,6 @@
           "link": "https://apify.com/getdataforme/idnesreality-propertydetails-spider?fpr=thanhnguyxn"
         },
         {
-          "name": "Ifood Lead Generator",
-          "description": "(Apify Scraper) Generate restaurant leads from iFood Brazil enriched with Google Places data — phone, address, website, opening hours, and ratings. Filter by city, neighborhood, food category, or menu keyword (e.g. only restaurants that serve 'queijo'). Optionall...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-lead-generator?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ifood Menu Scraper",
-          "description": "(Apify Scraper) Extract complete restaurant menus from iFood Brazil: categories, dish names, descriptions, prices, images, and customization options. Works with store IDs from the iFood Store Finder.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-menu-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Ifood Restaurant Scraper",
           "description": "(Apify Scraper) Extracts restaurant data from iFood Brazil—including profiles, menus, prices, and ratings—with location-based search and clean, structured JSON output.",
           "auth": "apiKey",
@@ -94636,20 +94174,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/viralanalyzer/ifood-restaurant-intelligence?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ifood Store Finder",
-          "description": "(Apify Scraper) Scrape iFood Brazil restaurants by city, neighborhood, and food category. Uses browser automation with residential proxy to bypass bot detection. Returns store names, ratings, delivery fees, distances, and IDs for menu extraction.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-store-finder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ifood Store Finder with Menus",
-          "description": "(Apify Scraper) All-in-one iFood Brazil scraper. Finds restaurants by city and category, then automatically extracts full menus for each one. Combines Store Finder + Menu Scraper into a single run.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-store-finder-with-menus?fpr=thanhnguyxn"
         },
         {
           "name": "Ifood Supermarket Scraper",
@@ -98131,13 +97655,6 @@
           "link": "https://apify.com/ashersam01/demo-pycon-namibia?fpr=thanhnguyxn"
         },
         {
-          "name": "Python Web Scraping Toolkit",
-          "description": "(Apify Scraper)",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fipper_ai/python-web-scraping-toolkit?fpr=thanhnguyxn"
-        },
-        {
           "name": "Qoo10 Product Scraper",
           "description": "(Apify Scraper) Scrape Qoo10.jp, Japan's popular cross-border e-commerce platform: product name, price, discount, seller, rating, review count, images. No API key needed. Ideal for price comparison, competitor research, market analysis.",
           "auth": "apiKey",
@@ -100910,13 +100427,6 @@
           "link": "https://apify.com/getdataforme/truckparkingclub-parser-spider?fpr=thanhnguyxn"
         },
         {
-          "name": "Truecar Scraper 🚙",
-          "description": "(Apify Scraper) Extract detailed vehicle data from TrueCar instantly. Gather pricing, model specs, mileage, dealer info, and more from thousands of car listings. Perfect for market analysis, price monitoring, or inventory tracking. Get structured automotive data ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/shahidirfan/truecar-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Trustedshops Reviews Scraper",
           "description": "(Apify Scraper) Extract verified customer reviews from Trusted Shops (trustedshops.de) — star ratings, review text, reviewer names, dates, and aggregate shop scores. Paste a shop profile URL, export JSON/CSV, schedule runs, and integrate via the Apify API.",
           "auth": "apiKey",
@@ -102826,7 +102336,7 @@
       "id": "apify-integrations",
       "emoji": "🔌",
       "name": "Apify Integrations",
-      "api_count": 796,
+      "api_count": 792,
       "apis": [
         {
           "name": "🌐 Domain Valuation Report",
@@ -103620,13 +103130,6 @@
           "link": "https://apify.com/parseforge/birdeye-token-trending-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Blockworks Scraper",
-          "description": "(Apify Scraper) Scrape news articles, podcast episodes, and newsletters from Blockworks.co — the leading institutional crypto & digital assets media platform.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/blockworks-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "BlueSky Feed Scraper",
           "description": "(Apify Scraper) Scrapes data from a specified BlueSky feed URL and outputs detailed information about the posts, including metadata, authors, embedded media, and statistics such as likes, replies, and reposts.",
           "auth": "apiKey",
@@ -103702,13 +103205,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/brasildados/sanctions-check?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Bug Bounty Recon Scanner",
-          "description": "(Apify Scraper) Find exposed admin panels, missing/weak security headers, sensitive file leaks, and HTTPS misconfigurations across target domains. Export prioritised risk scores and JSON reports. Run via API, schedule scans, or integrate with bug bounty tools.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/iamuendo/bug-bounty-recon-scanner?fpr=thanhnguyxn"
         },
         {
           "name": "BuiltWith Official Technology Scraper",
@@ -105368,13 +104864,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/reviewly/indeed-company-reviews-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Indeed Jobs Scraper",
-          "description": "(Apify Scraper) Scrape Indeed job listings by keyword and location, or paste an Indeed jobs search URL. Get titles, companies, salaries, full descriptions, skills, and company details as clean JSON. No login needed.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/indeed-jobs-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "IndiaMart Search Results Scraper (Lite)",
@@ -107155,13 +106644,6 @@
           "link": "https://apify.com/panjan/steam-item-search?fpr=thanhnguyxn"
         },
         {
-          "name": "Steam Workshop Scraper",
-          "description": "(Apify Scraper) Scrape Steam Workshop data at scale. Extract mod metadata, download statistics, descriptions, dependencies, changelogs, and community discussions from any Steam game's Workshop. Perfect for game developers, modders, researchers, and automation wor...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/webdatalabs/steam-workshop-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "StepStone Jobs Scraper 🎯",
           "description": "(Apify Scraper) 🎯 Extract detailed job listings from StepStone.de with comprehensive information including job titles, company details, locations, and salary data. Perfect for recruitment analysis, market research, and job market monitoring.",
           "auth": "apiKey",
@@ -108406,7 +107888,7 @@
       "id": "apify-jobs",
       "emoji": "💼",
       "name": "Apify Jobs",
-      "api_count": 1179,
+      "api_count": 1175,
       "apis": [
         {
           "name": "⚡️Rapid Linkedin Jobs Scraper",
@@ -109235,13 +108717,6 @@
           "link": "https://apify.com/data_lattice_au/data-jobs-jora-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Automated LinkedIn profile discovery + ranking (recruiter tool)",
-          "description": "(Apify Scraper) This Apify actor discovers and analyzes public LinkedIn profiles using multiple search engines with advanced filtering, automated fallback strategies, and intelligent candidate ranking based on provided skills and Location.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ayk_6789/automated-linkedin-profile-discovery-ranking-recruiter-tool?fpr=thanhnguyxn"
-        },
-        {
           "name": "Avito Jobs Search Scraper",
           "description": "(Apify Scraper) Scrape job search results from Avito.ru — Russia's largest classifieds platform. Collect titles, salaries, locations, contacts, timestamps, and 50+ fields per listing. Perfect for recruiters, market analysts, and HR professionals targeting the Rus...",
           "auth": "apiKey",
@@ -109653,13 +109128,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/memo23/charityjob-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Cheapest & Fastest LinkedIn Jobs Scraper",
-          "description": "(Apify Scraper) Scrape LinkedIn job listings by keyword and location, or paste a LinkedIn jobs search URL. Get titles, companies, salaries, full descriptions, seniority, employment type, and applicant counts as clean JSON, CSV, or Excel — no login, no API key, no...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/linkedin-jobs-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Cheapest Upwork Jobs Scraper",
@@ -111844,13 +111312,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/crawlerbros/indeed-jobs-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Indeed Jobs Scraper",
-          "description": "(Apify Scraper) Scrape Indeed job listings by keyword and location, or paste an Indeed jobs search URL. Get titles, companies, salaries, full descriptions, skills, and company details as clean JSON. No login needed.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/indeed-jobs-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Indeed Jobs Scraper",
@@ -114238,13 +113699,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/shahidirfan/nurse-com-jobs-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "NYSED Professional License Verification API",
-          "description": "(Apify Scraper) Verify any New York State licensed professional — physicians, nurses, PEs, CPAs, architects, dentists, pharmacists, and 110+ more — directly from NYSED. $0.005–$0.020 per record. Empty searches never charged.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/nysed-professional-license-search?fpr=thanhnguyxn"
         },
         {
           "name": "Oleeo / TAL.net Job Board Scraper 💰 $2/1K",
@@ -116667,7 +116121,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 4701,
+      "api_count": 4671,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -117272,25 +116726,11 @@
           "link": "https://apify.com/taroyamada/youtube-channel-analytics?fpr=thanhnguyxn"
         },
         {
-          "name": "📊 Reddit Brand Monitor -- Track Mentions & Sentiment",
-          "description": "(Apify Scraper) Monitor any brand, product, or topic on Reddit. Track mentions with AI sentiment analysis across all subreddits. Brandwatch alternative at 1/100th the cost. Trend tracking, competitive comparison & engagement analytics.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/reddit-brand-monitor?fpr=thanhnguyxn"
-        },
-        {
           "name": "📊 Sentiment Analyzer — Fast VADER Scoring for Reviews & Social",
           "description": "(Apify Scraper) Score sentiment on reviews, social posts, support tickets, and any English text. Uses VADER (rule-based, deterministic, optimized for informal short text). Fast, predictable cost, no API keys or LLM fees. Best for high-volume scoring and social me...",
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/nexgendata/ai-sentiment-analyzer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "📊 Tranco Rank Lookup — Alexa Rank Alternative",
-          "description": "(Apify Scraper) Free domain ranking API. Replaces defunct Alexa Rank using Tranco academic research list. Bulk lookup, 30-day history, similar domains, trend detection.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/tranco-rank-lookup?fpr=thanhnguyxn"
         },
         {
           "name": "📋 Email DMARC Auditor — SPF/DKIM/DMARC Bulk Check",
@@ -117501,13 +116941,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/scrapio/linkedin-mass-company-profile-finder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🔎 Yelp Business Data — Phone, Ratings & Categories",
-          "description": "(Apify Scraper) Extract business leads from Yelp — names, phones, addresses, ratings, reviews & websites. Perfect for local lead generation, competitive analysis & building sales prospect lists. Pay per result.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/yelp-business-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "🔑 Realtor B2B Email Scraper",
@@ -119778,13 +119211,6 @@
           "link": "https://apify.com/mai_amm/australia-business-for-sale-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Australia Government Data API",
-          "description": "(Apify Scraper) Search Australia company, IP, health, planning, and procurement datasets in one run. Get structured Australia records fast.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/australia-data-search?fpr=thanhnguyxn"
-        },
-        {
           "name": "Australian Business Register Search (ASIC Names + ABN)",
           "description": "(Apify Scraper) Bulk-search the official Australian Business Names Register (3.2M+ ASIC-registered business and trading names) by keyword or ABN. Returns business name, status, ABN and registration dates as clean structured JSON. Free government open data — no AP...",
           "auth": "apiKey",
@@ -119839,13 +119265,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/leadsbrary/automate-whatsapp-in-one-api?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Automated LinkedIn profile discovery + ranking (recruiter tool)",
-          "description": "(Apify Scraper) This Apify actor discovers and analyzes public LinkedIn profiles using multiple search engines with advanced filtering, automated fallback strategies, and intelligent candidate ranking based on provided skills and Location.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ayk_6789/automated-linkedin-profile-discovery-ranking-recruiter-tool?fpr=thanhnguyxn"
         },
         {
           "name": "Automobile.it Car Listings Scraper",
@@ -121346,13 +120765,6 @@
           "link": "https://apify.com/lentic_clockss/canada-building-permits-search?fpr=thanhnguyxn"
         },
         {
-          "name": "Canada Government Contracts API",
-          "description": "(Apify Scraper) Search Canada tenders, awards, and contract history in one run. Find procurement records and opportunities faster.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/canada-government-contracts-search?fpr=thanhnguyxn"
-        },
-        {
           "name": "canada411.ca",
           "description": "(Apify Scraper) Our canada411.ca scraper effortlessly gathers URLs from all pages and extracts contact information from each listing.",
           "auth": "apiKey",
@@ -121682,13 +121094,6 @@
           "link": "https://apify.com/lexis-solutions/chatgpt-marketplace-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Chaturbate Model Leads Scraper",
-          "description": "(Apify Scraper) Automated Chaturbate scraper for OnlyFans agencies, cam studios, and model recruiters to generate qualified creator leads. Extract 1000s of cam model profiles with Instagram, Twitter, OnlyFans, Social links, and follower counts for talent scouting...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/chaturbate-model-leads-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Chaturbate Profile Scraper",
           "description": "(Apify Scraper) The ultimate bulk Chaturbate profile scraper for extracting specific profiles by username or URL. Extract complete social media data including Instagram, Twitter, OnlyFans, Social Media links, follower counts, demographics, and bio information fro...",
           "auth": "apiKey",
@@ -121701,13 +121106,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/zen-studio/che168-car-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Cheapest & Fastest LinkedIn Jobs Scraper",
-          "description": "(Apify Scraper) Scrape LinkedIn job listings by keyword and location, or paste a LinkedIn jobs search URL. Get titles, companies, salaries, full descriptions, seniority, employment type, and applicant counts as clean JSON, CSV, or Excel — no login, no API key, no...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/linkedin-jobs-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Cheapest Upwork Jobs Scraper",
@@ -122935,13 +122333,6 @@
           "link": "https://apify.com/moving_beacon-owner1/contractors-state-license-board-cslb-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "CSLB California Contractor License Scraper",
-          "description": "(Apify Scraper) Bulk CSLB contractor license scraper for California. Full public record per license: status, all classifications, bond info, workers-comp, disciplinary actions, personnel. Search by license number or business name; narrow by city, county, ZIP, cla...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/cslb-california-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "CSLB Contractor License Scraper - California Leads",
           "description": "(Apify Scraper) Scrape CSLB public records for California contractor licenses. Verify license status, classifications, bonds, workers comp, and disciplinary actions. Built for contractor verification, construction leads, vendor compliance, and due diligence.",
           "auth": "apiKey",
@@ -123122,13 +122513,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/santamaria-automations/dba-dk-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "DBPR Florida License Verification",
-          "description": "(Apify Scraper) Verify any Florida professional license (contractors, real estate, cosmetology, CPAs, engineers, and 30+ other boards) directly from the Florida Department of Business and Professional Regulation. Fresher than aggregators, priced per record.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/dbpr-florida-license-verification?fpr=thanhnguyxn"
         },
         {
           "name": "DEA Controlled Substance Registrant Actions Crawler",
@@ -125294,13 +124678,6 @@
           "link": "https://apify.com/juandiaz.mx/facebook-groups-scraper-pro?fpr=thanhnguyxn"
         },
         {
-          "name": "Facebook Groups Lite",
-          "description": "(Apify Scraper) Scrap Facebook groups fast and easy. This actor is a lightweight version of the Facebook Group actor.  It is designed to be fast and efficient, so it can extract a large number of events for low price. It is also less likely to be blocked by Faceb...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/danek/facebook-groups-lite?fpr=thanhnguyxn"
-        },
-        {
           "name": "Facebook Groups Scraper",
           "description": "(Apify Scraper)",
           "auth": "apiKey",
@@ -125826,13 +125203,6 @@
           "link": "https://apify.com/powerai/facebook-video-search-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "FacebookMarketplaceScraper",
-          "description": "(Apify Scraper) The most data-rich Facebook Marketplace scraper on Apify. Extracts 40+ fields per listing — including seller intelligence, item details, vehicle specs, and HD images — for any category. No login required.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scraperpro/facebookmarketplacescraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Faire & Ankorstore Wholesale Supplier Scraper",
           "description": "(Apify Scraper) Scrape brand/supplier profiles from Faire (US/UK) and Ankorstore (EU) wholesale marketplaces. Extracts brand name, category, country, min order, lead time, certifications, sustainability claims, founder info, social followers, and contact details ...",
           "auth": "apiKey",
@@ -126048,13 +125418,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Fastest Google Maps Reviews Scraper With Images & Videos",
-          "description": "(Apify Scraper) Scrape every review of any business on Google Maps: star rating, full text, reviewer name and profile, owner responses, review photos, videos and dates. Paste a Maps URL or place ID, choose how to sort, and export clean JSON.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/fastest-google-maps-reviews-scraper-with-images-videos?fpr=thanhnguyxn"
         },
         {
           "name": "Fastwork Thailand Scraper: Services, Prices & Reviews",
@@ -126526,13 +125889,6 @@
           "link": "https://apify.com/fortuitous_pirate/florida-court-records-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Florida DFS Insurance License Scraper",
-          "description": "(Apify Scraper) Search Florida DFS insurance license records by name or license number, or bulk-download the full statewide dataset. No proxy needed.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/florida-dfs-insurance-license?fpr=thanhnguyxn"
-        },
-        {
           "name": "Florida DFS Insurance Licensee Scraper",
           "description": "(Apify Scraper) Search the Florida Department of Financial Services Insurance Licensee database. Returns licensee name, license number, business address, city/state/zip, and email per record. ~390k FL licensed insurance producers, adjusters, and title agents.",
           "auth": "apiKey",
@@ -126769,13 +126125,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "France Government Data API",
-          "description": "(Apify Scraper) Search France business, property, health, legal, and procurement data in one run. Get normalized results fast for research and workflow automation.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/france-data-search?fpr=thanhnguyxn"
         },
         {
           "name": "France Job Scraper — WTTJ + France Travail + Hellowork",
@@ -127574,13 +126923,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/trev0n/github-profile-reverse-lookup-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Github Profile Reverse Lookup Scraper",
-          "description": "(Apify Scraper) Find github profile account suggestions from fullname, username or email search. Enrich and scale your data analysis",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/saswave/github-profile-reverse-lookup-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Github Profile Scraper",
@@ -129249,13 +128591,6 @@
           "link": "https://apify.com/badruddeen/google-maps-scraper-pro-hotels-places?fpr=thanhnguyxn"
         },
         {
-          "name": "Google Maps Scraper with Emails",
-          "description": "(Apify Scraper) Scrapes Google Maps for any search query in any country. Extracts business name, phone, email, website, address, category, and rating. Visits each place's website to find email addresses. Built for mass scraping.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/pheidias0/google-maps-scraper-with-emails?fpr=thanhnguyxn"
-        },
-        {
           "name": "Google Maps Scraper: B2B Leads & Emails",
           "description": "(Apify Scraper) The Ultimate G-Maps Lead Machine is designed for marketing agencies, sales teams, and wholesalers who need fresh, accurate business data without paying for expensive lists.  Stop searching manually. Start mining leads automatically today.",
           "auth": "apiKey",
@@ -130696,20 +130031,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/skython/ieg-expo-exhibitor-list-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ifood Lead Generator",
-          "description": "(Apify Scraper) Generate restaurant leads from iFood Brazil enriched with Google Places data — phone, address, website, opening hours, and ratings. Filter by city, neighborhood, food category, or menu keyword (e.g. only restaurants that serve 'queijo'). Optionall...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-lead-generator?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ifood Menu Scraper",
-          "description": "(Apify Scraper) Extract complete restaurant menus from iFood Brazil: categories, dish names, descriptions, prices, images, and customization options. Works with store IDs from the iFood Store Finder.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/priscilas/ifood-menu-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "iFood Scraper - Menus, Prices & Reviews",
@@ -135339,13 +134660,6 @@
           "link": "https://apify.com/harvestapi/linkedin-profile-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "LinkedIn Profile Scraper + emails(No cookies)",
-          "description": "(Apify Scraper) Scrape detailed LinkedIn profile data including experience, education, skills, and more. No cookies or login required from the user. Fast and reliable. And get there work emails with it.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/spectre_scrape/linkedin-profile-scraper-emails-no-cookies?fpr=thanhnguyxn"
-        },
-        {
           "name": "LinkedIn Profile Scraper ✅ NO COOKIES",
           "description": "(Apify Scraper) Scrape LinkedIn profiles into structured records: name, title, headline, summary, company, location, skills, education, and work history. Submit up to 5,000 URLs per run, each returns one record. Pay only for profiles found; not-found and errors a...",
           "auth": "apiKey",
@@ -137243,13 +136557,6 @@
           "link": "https://apify.com/jungle_synthesizer/nmls-consumer-access-crawler?fpr=thanhnguyxn"
         },
         {
-          "name": "NMLS Scraper — Mortgage Loan Originators, Lenders & Branches",
-          "description": "(Apify Scraper) Pull MLO, lender, and branch records from NMLS Consumer Access. Auditable open-source actor with no survey-form gate. Returns one normalized row per entity with state licenses, disclosures, sponsor links, and computed risk-rollup flags.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/nmls-consumer-access?fpr=thanhnguyxn"
-        },
-        {
           "name": "NoBroker India Real Estate Scraper",
           "description": "(Apify Scraper) Scrape Indian real estate listings from NoBroker.in by city/locality search URL. Returns 50+ fields per property: price, BHK, sqft, address, builder, amenities, ownership, parking, facing, geo coordinates, photos, owner ID, and detail page URL.",
           "auth": "apiKey",
@@ -137437,13 +136744,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/motivational_nickel/my-actor-1?fpr=thanhnguyxn"
-        },
-        {
-          "name": "NYSED Professional License Verification API",
-          "description": "(Apify Scraper) Verify any New York State licensed professional — physicians, nurses, PEs, CPAs, architects, dentists, pharmacists, and 110+ more — directly from NYSED. $0.005–$0.020 per record. Empty searches never charged.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/nysed-professional-license-search?fpr=thanhnguyxn"
         },
         {
           "name": "NZ Companies Register Scraper",
@@ -139735,13 +139035,6 @@
           "link": "https://apify.com/kawsar/realtor-search?fpr=thanhnguyxn"
         },
         {
-          "name": "RealtorPulse — Fresh Listing Lead Scraper",
-          "description": "(Apify Scraper) RealtorPulse scrapes Realtor.com for properties listed within a configurable time window (default: last 24 hours), then auto-enriches each lead with full property details  Built for real estate investors, wholesalers, agents, and lead generation t...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ayk_6789/realtorpluse?fpr=thanhnguyxn"
-        },
-        {
           "name": "RealtyTrac Foreclosure & REO Listings Scraper",
           "description": "(Apify Scraper) Scrape distressed real estate listings (pre-foreclosure, foreclosure, REO, sheriff sale) from RealtyTrac by location. Returns property address, beds/baths/sqft, value, status flags, and geo coordinates.",
           "auth": "apiKey",
@@ -141765,13 +141058,6 @@
           "link": "https://apify.com/fortuitous_pirate/singapore-gebiz-government-procurement?fpr=thanhnguyxn"
         },
         {
-          "name": "Singapore Government Data API",
-          "description": "(Apify Scraper) Search Singapore business, housing, procurement, health, and court datasets in one run. Get structured Singapore records fast.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/singapore-government-data-search?fpr=thanhnguyxn"
-        },
-        {
           "name": "Singapore MyCareersFuture Jobs Scraper",
           "description": "(Apify Scraper) Live Singapore job postings from MyCareersFuture (WSG / gov.sg) — title, company, UEN, sector, location, SGD salary band, employment type, seniority, posting/expiry date, required skills, full job URL. Filter by keyword, sector, location, employme...",
           "auth": "apiKey",
@@ -143009,13 +142295,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/tabelog-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Taiwan Government Data API",
-          "description": "(Apify Scraper) Search Taiwan market, health, environment, nonprofit, and public-data sources in one run. Get structured Taiwan records fast.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/taiwan-data-search?fpr=thanhnguyxn"
         },
         {
           "name": "Talent Job Scraper",
@@ -145496,13 +144775,6 @@
           "link": ""
         },
         {
-          "name": "Twitter Scraper PPR",
-          "description": "(Apify Scraper) Scrap Twitter fast and easy. It is designed to be fast and efficient, so it can extract a large number of post for low price.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/danek/twitter-scraper-ppr?fpr=thanhnguyxn"
-        },
-        {
           "name": "Twitter Search Scraper",
           "description": "(Apify Scraper) Powerful X search data extractor. Search for any keyword, hashtag, or mention and download all matching tweets with their images, videos, profiles, and all engagement counts. Zero setup required – just enter your queries and get data!",
           "auth": "apiKey",
@@ -146077,13 +145349,6 @@
           "link": "https://apify.com/handstands.io/us-building-permit-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "US Building Permits Scraper",
-          "description": "(Apify Scraper) Scrape building permit data from 8 major US cities and NJ statewide. Search by keyword (HVAC, solar, roofing, plumbing, electrical). Get permit type, address, contractor, cost, status, and dates. Powered by official Socrata Open Data APIs.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/us-building-permits-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "US Building-Permits Bulk Extractor (Socrata)",
           "description": "(Apify Scraper) Extract millions of US building-permit records from city open-data portals (Socrata) — construction-activity intelligence. One permit per row. Public data, no login.",
           "auth": "apiKey",
@@ -146201,13 +145466,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/pink_comic/us-tariff-hts-lookup?fpr=thanhnguyxn"
-        },
-        {
-          "name": "US Transportation Data API",
-          "description": "(Apify Scraper) Search US crash, transit, infrastructure, registration, inspection, and EV datasets in one run. Get transportation records fast.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/us-transportation-search?fpr=thanhnguyxn"
         },
         {
           "name": "USA Dentist Scraper",
@@ -149283,13 +148541,6 @@
           "link": "https://apify.com/clearpath/zillow-bulk-search-unlimited-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Zillow Scraper — FSBO, New Listings",
-          "description": "(Apify Scraper) Extract every new Zillow listing posted in the last 24 hours by ZIP code. Get price, agent contact, beds, baths, FSBO flags, price history and more. Built for real estate agents, wholesalers and investors.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ayk_6789/zilliow?fpr=thanhnguyxn"
-        },
-        {
           "name": "Zillow Scraper — Property Listings & Agent Leads",
           "description": "(Apify Scraper) Scrape Zillow listings with 40+ fields: address, price, Zestimate, price history, agent contact info, school ratings, walk score & more MCP-ready. $4.00/1K.",
           "auth": "apiKey",
@@ -149316,13 +148567,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Zillow Scraper Pro",
-          "description": "(Apify Scraper) Scrape Zillow property listings and deep details by ZIP code or URL. Returns address, price, beds, baths, sqft, Zestimate, price history, tax records, school ratings, and agent info. Anti-bot resilient via residential proxies and fingerprint spoof...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/zillow-scraper-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Zillow URL Search Property Scraper",
@@ -149582,7 +148826,7 @@
       "id": "apify-mcp-servers",
       "emoji": "🧩",
       "name": "Apify MCP Servers",
-      "api_count": 285,
+      "api_count": 278,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -149914,13 +149158,6 @@
           "link": "https://apify.com/harvestlab/app-store-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Australia Government Data API",
-          "description": "(Apify Scraper) Search Australia company, IP, health, planning, and procurement datasets in one run. Get structured Australia records fast.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/australia-data-search?fpr=thanhnguyxn"
-        },
-        {
           "name": "B2B Lead Finder – Verified Emails, Phone & Google Maps Data",
           "description": "(Apify Scraper) Extract business names, phones, ratings & verified emails from Google Maps. CRM-ready JSON. No Apollo needed. Run via API, schedule, or integrate with any tool.",
           "auth": "apiKey",
@@ -149996,13 +149233,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/lentic_clockss/canada-building-permits-search?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Canada Government Contracts API",
-          "description": "(Apify Scraper) Search Canada tenders, awards, and contract history in one run. Find procurement records and opportunities faster.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/canada-government-contracts-search?fpr=thanhnguyxn"
         },
         {
           "name": "Card Grader MCP",
@@ -150199,13 +149429,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "France Government Data API",
-          "description": "(Apify Scraper) Search France business, property, health, legal, and procurement data in one run. Get normalized results fast for research and workflow automation.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/france-data-search?fpr=thanhnguyxn"
         },
         {
           "name": "G2 Reviews & Products Scraper",
@@ -151048,13 +150271,6 @@
           "link": "https://apify.com/khadinakbar/shopify-all-in-one-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Singapore Government Data API",
-          "description": "(Apify Scraper) Search Singapore business, housing, procurement, health, and court datasets in one run. Get structured Singapore records fast.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/singapore-government-data-search?fpr=thanhnguyxn"
-        },
-        {
           "name": "Skip Trace Property Owner — Phone, Email & Address Finder",
           "description": "(Apify Scraper) Skip trace any US property address — get owner name, phone numbers, email & mailing address from public records. The only skip trace tool on Apify.",
           "auth": "apiKey",
@@ -151095,13 +150311,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/agentx/subreddit-info-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Taiwan Government Data API",
-          "description": "(Apify Scraper) Search Taiwan market, health, environment, nonprofit, and public-data sources in one run. Get structured Taiwan records fast.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/taiwan-data-search?fpr=thanhnguyxn"
         },
         {
           "name": "Tavily Search MCP Server - Fast AI Web Search for Agents",
@@ -151314,13 +150523,6 @@
           "link": "https://apify.com/alizarin_refrigerator-owner/seo-intelligence-mcp-server?fpr=thanhnguyxn"
         },
         {
-          "name": "US Building Permits Scraper",
-          "description": "(Apify Scraper) Scrape building permit data from 8 major US cities and NJ statewide. Search by keyword (HVAC, solar, roofing, plumbing, electrical). Get permit type, address, contractor, cost, status, and dates. Powered by official Socrata Open Data APIs.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/us-building-permits-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "US Business Entity Scraper & Registry - KYB Verification API",
           "description": "(Apify Scraper) Search official US Secretary of State business registries across 18 states. Business entity scraper and KYB/company verification API for due diligence, merchant onboarding, vendor checks, and lead lists. Get status, formation dates, registered age...",
           "auth": "apiKey",
@@ -151347,13 +150549,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/lentic_clockss/us-government-contracts-search?fpr=thanhnguyxn"
-        },
-        {
-          "name": "US Transportation Data API",
-          "description": "(Apify Scraper) Search US crash, transit, infrastructure, registration, inspection, and EV datasets in one run. Get transportation records fast.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/us-transportation-search?fpr=thanhnguyxn"
         },
         {
           "name": "Video Transcript",
@@ -151585,7 +150780,7 @@
       "id": "apify-news",
       "emoji": "📰",
       "name": "Apify News",
-      "api_count": 530,
+      "api_count": 528,
       "apis": [
         {
           "name": "⚖️ HHS Data Breach Scraper",
@@ -151922,13 +151117,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/gentle_cloud/bing-news-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Blockworks Scraper",
-          "description": "(Apify Scraper) Scrape news articles, podcast episodes, and newsletters from Blockworks.co — the leading institutional crypto & digital assets media platform.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/blockworks-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Bloomberg Article Extractor — Full Content, No Paywall",
@@ -152503,13 +151691,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/fifa-team-rankings-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "FIFA World Cup 2026 — Results, Fixtures & Standings",
-          "description": "(Apify Scraper) Scrape FIFA World Cup 2026 data: live scores, match results, upcoming fixtures, group standings, the knockout bracket, goal scorers, cards, venues, and attendance. Filter by stage, match status, or team.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/fifa-world-cup-2026-results-fixtures-standings?fpr=thanhnguyxn"
         },
         {
           "name": "Financial News Sentiment Analyzer",
@@ -155906,7 +155087,7 @@
       "id": "apify-other",
       "emoji": "⚠️",
       "name": "Apify Other",
-      "api_count": 2005,
+      "api_count": 2002,
       "apis": [
         {
           "name": "☎️ Bulk Phone Validator",
@@ -155935,13 +155116,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/michelin-restaurant-guide-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🌍 IP Geolocation Scraper — Bulk IP Lookup & Locations",
-          "description": "(Apify Scraper) Bulk IP geolocation lookup for IPs, domains, and URLs. Get country, city, coordinates, timezone, ISP, organization, ASN, proxy/hosting flags, and clean network data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lokki/ip-geolocation-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "🌐 Domain Valuation Report",
@@ -156831,20 +156005,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/haketa/az-roc-contractor-license-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Arkham AI Transaction Analyzer",
-          "description": "(Apify Scraper) Unlock AI-powered insights into any blockchain transaction with the Arkham AI Analyzer. Get detailed analysis, summaries, and breakdowns for transactions on Ethereum, Bitcoin, Solana, and more. Instantly understand complex DeFi transactions and cr...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/muhammetakkurtt/arkham-ai-transaction-analyzer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Arkham Intelligence Wallet Transfers & Swaps Scraper",
-          "description": "(Apify Scraper) Extract enriched wallet transaction data from Arkham. Covers Transfers & DEX Swaps on EVM, BTC, SOL, TON & more. Features real-world entity resolution (CEX, Whales), token details, and precise USD valuations. Export structured, reliable data for c...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/muhammetakkurtt/arkham-intelligence-wallet-transfers-swaps-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Arkham Wallet Data",
@@ -169949,7 +169109,7 @@
       "id": "apify-real-estate",
       "emoji": "🏡",
       "name": "Apify Real Estate",
-      "api_count": 1107,
+      "api_count": 1101,
       "apis": [
         {
           "name": "🇩🇰 Boliga Denmark Real Estate Listings",
@@ -170657,13 +169817,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/automation-lab/airbnb-listing?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Airbnb Scraper — Listings, Prices & Reviews",
-          "description": "(Apify Scraper) Scrape Airbnb data from any city: listings with prices, availability, ratings, amenities, host details, photos, and guest reviews. Beats Airbnb's 270-result search limit to extract every listing. Export to JSON, CSV, or Excel — fast, reliable, no ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/airbnb-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Airbnb Scraper — Listings, Prices, Photos & Hosts API",
@@ -172155,13 +171308,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/alpha-scraper/facebook-reels-details-scraper-pro-single-solo-reels?fpr=thanhnguyxn"
-        },
-        {
-          "name": "FacebookMarketplaceScraper",
-          "description": "(Apify Scraper) The most data-rich Facebook Marketplace scraper on Apify. Extracts 40+ fields per listing — including seller intelligence, item details, vehicle specs, and HD images — for any category. No login required.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scraperpro/facebookmarketplacescraper?fpr=thanhnguyxn"
         },
         {
           "name": "Fast Airbnb Scraper",
@@ -175461,13 +174607,6 @@
           "link": "https://apify.com/ocrad/realtorca-property-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "RealtorPulse — Fresh Listing Lead Scraper",
-          "description": "(Apify Scraper) RealtorPulse scrapes Realtor.com for properties listed within a configurable time window (default: last 24 hours), then auto-enriches each lead with full property details  Built for real estate investors, wholesalers, agents, and lead generation t...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ayk_6789/realtorpluse?fpr=thanhnguyxn"
-        },
-        {
           "name": "RealtyTrac Foreclosure & REO Listings Scraper",
           "description": "(Apify Scraper) Scrape distressed real estate listings (pre-foreclosure, foreclosure, REO, sheriff sale) from RealtyTrac by location. Returns property address, beds/baths/sqft, value, status flags, and geo coordinates.",
           "auth": "apiKey",
@@ -176644,13 +175783,6 @@
           "link": "https://apify.com/handstands.io/us-building-permit-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "US Building Permits Scraper",
-          "description": "(Apify Scraper) Scrape building permit data from 8 major US cities and NJ statewide. Search by keyword (HVAC, solar, roofing, plumbing, electrical). Get permit type, address, contractor, cost, status, and dates. Powered by official Socrata Open Data APIs.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/lentic_clockss/us-building-permits-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "US Building-Permits Bulk Extractor (Socrata)",
           "description": "(Apify Scraper) Extract millions of US building-permit records from city open-data portals (Socrata) — construction-activity intelligence. One permit per row. Public data, no login.",
           "auth": "apiKey",
@@ -177372,13 +176504,6 @@
           "link": "https://apify.com/clearpath/zillow-bulk-search-unlimited-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Zillow Scraper — FSBO, New Listings",
-          "description": "(Apify Scraper) Extract every new Zillow listing posted in the last 24 hours by ZIP code. Get price, agent contact, beds, baths, FSBO flags, price history and more. Built for real estate agents, wholesalers and investors.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ayk_6789/zilliow?fpr=thanhnguyxn"
-        },
-        {
           "name": "Zillow Scraper — Property Listings & Agent Leads",
           "description": "(Apify Scraper) Scrape Zillow listings with 40+ fields: address, price, Zestimate, price history, agent contact info, school ratings, walk score & more MCP-ready. $4.00/1K.",
           "auth": "apiKey",
@@ -177412,13 +176537,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/zillow-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Zillow Scraper Pro",
-          "description": "(Apify Scraper) Scrape Zillow property listings and deep details by ZIP code or URL. Returns address, price, beds, baths, sqft, Zestimate, price history, tax records, school ratings, and agent info. Anti-bot resilient via residential proxies and fingerprint spoof...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ws_tony/zillow-scraper-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Zillow Search By Address Scraper",
@@ -177706,7 +176824,7 @@
       "id": "apify-seo-tools",
       "emoji": "🔍",
       "name": "Apify SEO Tools",
-      "api_count": 932,
+      "api_count": 929,
       "apis": [
         {
           "name": "⚡ Page Speed Analyzer — Lighthouse & Web Vitals",
@@ -177714,13 +176832,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/nexgendata/page-speed-analyzer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🌐 DNS Lookup — Bulk A, MX, CNAME & TXT Records",
-          "description": "(Apify Scraper) Bulk DNS record lookups — A, AAAA, MX, CNAME, TXT, NS, SOA, SPF, DMARC. MXToolbox & DNSChecker alternative for SREs and security teams: monitor zones, verify email auth, audit domains. Pay $0.01 per lookup, no monthly fee.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/nexgendata/dns-records-lookup?fpr=thanhnguyxn"
         },
         {
           "name": "🌐 DNS Propagation Checker",
@@ -179725,13 +178836,6 @@
           "link": "https://apify.com/scrapemint/github-issue-monitor?fpr=thanhnguyxn"
         },
         {
-          "name": "Github Profile Reverse Lookup Scraper",
-          "description": "(Apify Scraper) Find github profile account suggestions from fullname, username or email search. Enrich and scale your data analysis",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/saswave/github-profile-reverse-lookup-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Glassdoor Company Reviews Scraper",
           "description": "(Apify Scraper) Scrape employee reviews and ratings from Glassdoor. Get overall rating, culture, work-life balance, senior management, compensation, and career opportunity scores. Filter by rating, sort by date or helpfulness. Also search for companies.",
           "auth": "apiKey",
@@ -180997,13 +180101,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/datapilot/government-recalls-monitor?fpr=thanhnguyxn"
-        },
-        {
-          "name": "GPT Search",
-          "description": "(Apify Scraper) Send queries to ChatGPT and retrieve structured answers with full source citations. Easily integrate into your tools or workflows for flexible, scalable AI-powered solutions.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/tri_angle/gpt-search?fpr=thanhnguyxn"
         },
         {
           "name": "GSC Data Analyzer - AI-Powered Search Console Insights",
@@ -184238,7 +183335,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 2856,
+      "api_count": 2850,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -185851,13 +184948,6 @@
           "link": "https://apify.com/scrapers-hub/capcut-video-downloader?fpr=thanhnguyxn"
         },
         {
-          "name": "Chaturbate Model Leads Scraper",
-          "description": "(Apify Scraper) Automated Chaturbate scraper for OnlyFans agencies, cam studios, and model recruiters to generate qualified creator leads. Extract 1000s of cam model profiles with Instagram, Twitter, OnlyFans, Social links, and follower counts for talent scouting...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/chaturbate-model-leads-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Chaturbate Profile Scraper",
           "description": "(Apify Scraper) The ultimate bulk Chaturbate profile scraper for extracting specific profiles by username or URL. Extract complete social media data including Instagram, Twitter, OnlyFans, Social Media links, follower counts, demographics, and bio information fro...",
           "auth": "apiKey",
@@ -187081,13 +186171,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/juandiaz.mx/facebook-groups-scraper-pro?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Facebook Groups Lite",
-          "description": "(Apify Scraper) Scrap Facebook groups fast and easy. This actor is a lightweight version of the Facebook Group actor.  It is designed to be fast and efficient, so it can extract a large number of events for low price. It is also less likely to be blocked by Faceb...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/danek/facebook-groups-lite?fpr=thanhnguyxn"
         },
         {
           "name": "Facebook Groups Scraper",
@@ -188588,13 +187671,6 @@
           "link": "https://apify.com/trev0n/github-profile-reverse-lookup-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Github Profile Reverse Lookup Scraper",
-          "description": "(Apify Scraper) Find github profile account suggestions from fullname, username or email search. Enrich and scale your data analysis",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/saswave/github-profile-reverse-lookup-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "**GitHub Profile Scraper & Lead Finder \\",
           "description": "Stars, LinkedIn, Score**",
           "auth": "No",
@@ -188817,13 +187893,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Google Maps Scraper with Emails",
-          "description": "(Apify Scraper) Scrapes Google Maps for any search query in any country. Extracts business name, phone, email, website, address, category, and rating. Visits each place's website to find email addresses. Built for mass scraping.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/pheidias0/google-maps-scraper-with-emails?fpr=thanhnguyxn"
         },
         {
           "name": "Google Maps Store Review Scraper",
@@ -193010,13 +192079,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/harvestapi/linkedin-profile-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "LinkedIn Profile Scraper + emails(No cookies)",
-          "description": "(Apify Scraper) Scrape detailed LinkedIn profile data including experience, education, skills, and more. No cookies or login required from the user. Fast and reliable. And get there work emails with it.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/spectre_scrape/linkedin-profile-scraper-emails-no-cookies?fpr=thanhnguyxn"
         },
         {
           "name": "LinkedIn Profile Scraper ✅ NO COOKIES",
@@ -200705,13 +199767,6 @@
           "link": ""
         },
         {
-          "name": "Twitter Scraper PPR",
-          "description": "(Apify Scraper) Scrap Twitter fast and easy. It is designed to be fast and efficient, so it can extract a large number of post for low price.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/danek/twitter-scraper-ppr?fpr=thanhnguyxn"
-        },
-        {
           "name": "Twitter Screenshot Generator",
           "description": "(Apify Scraper) Take clean, high-quality screenshots of any public Twitter/X post. Just paste the post URLs, choose dark or light theme, and get back pixel-perfect PNG screenshots with direct download links - no login required.",
           "auth": "apiKey",
@@ -204238,7 +203293,7 @@
       "id": "apify-travel",
       "emoji": "✈️",
       "name": "Apify Travel",
-      "api_count": 526,
+      "api_count": 523,
       "apis": [
         {
           "name": "✈️ Google Flights Scraper",
@@ -204820,13 +203875,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/automation-lab/airbnb-listing?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Airbnb Scraper — Listings, Prices & Reviews",
-          "description": "(Apify Scraper) Scrape Airbnb data from any city: listings with prices, availability, ratings, amenities, host details, photos, and guest reviews. Beats Airbnb's 270-result search limit to extract every listing. Export to JSON, CSV, or Excel — fast, reliable, no ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/airbnb-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Airbnb Scraper — Listings, Prices, Photos & Hosts API",
@@ -205800,13 +204848,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Fastest Google Maps Reviews Scraper With Images & Videos",
-          "description": "(Apify Scraper) Scrape every review of any business on Google Maps: star rating, full text, reviewer name and profile, owner responses, review photos, videos and dates. Paste a Maps URL or place ID, choose how to sort, and export clean JSON.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/veeronica/fastest-google-maps-reviews-scraper-with-images-videos?fpr=thanhnguyxn"
         },
         {
           "name": "Feverup.com Scraper",
@@ -207354,13 +206395,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/maxcopell/tripadvisor-reviews?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Tripadvisor Reviews Scraper",
-          "description": "(Apify Scraper) 🔥 $0.40/1000⚡ All in One Fast & Affordable Tripadvisor Reviews Scraper – Extract hotel, restaurant, and attraction reviews with ratings, dates, user profiles & more from any Tripadvisor page or search. No proxies & no cookies needed.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scrapesmith/my-actor-2?fpr=thanhnguyxn"
         },
         {
           "name": "Tripadvisor Reviews Scraper",
@@ -212906,7 +211940,7 @@
       "id": "authentication-identity",
       "emoji": "🔐",
       "name": "Authentication & Identity",
-      "api_count": 15,
+      "api_count": 14,
       "apis": [
         {
           "name": "Descope",
@@ -212963,13 +211997,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://magic.link/docs/api"
-        },
-        {
-          "name": "Micro User Service",
-          "description": "User management and authentication.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://m3o.com/user"
         },
         {
           "name": "MojoAuth",
@@ -214549,7 +213576,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 141,
+      "api_count": 140,
       "apis": [
         {
           "name": "Agify.io",
@@ -215138,13 +214165,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://mailboxlayer.com/"
-        },
-        {
-          "name": "Micro DB",
-          "description": "Simple database service.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://m3o.com/db"
         },
         {
           "name": "Microlink",
@@ -219053,7 +218073,7 @@
       "id": "machine-learning",
       "emoji": "🧠",
       "name": "Machine Learning",
-      "api_count": 49,
+      "api_count": 48,
       "apis": [
         {
           "name": "AI For Thai",
@@ -219145,13 +218165,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://elevenlabs.io/docs/api-reference"
-        },
-        {
-          "name": "EXUDE-API",
-          "description": "Used for the primary ways for filtering the stopping, stemming words from the...",
-          "auth": "No",
-          "https": true,
-          "link": "http://uttesh.com/exude-api/"
         },
         {
           "name": "Fal.ai",
@@ -222152,7 +221165,7 @@
       "id": "text-analysis-nlp",
       "emoji": "📝",
       "name": "Text Analysis & NLP",
-      "api_count": 20,
+      "api_count": 19,
       "apis": [
         {
           "name": "Semantria",
@@ -222279,13 +221292,6 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://tisane.ai/"
-        },
-        {
-          "name": "Watson Natural Language Understanding",
-          "description": "Natural language processing for advanced text analysis.",
-          "auth": "OAuth",
-          "https": true,
-          "link": "https://cloud.ibm.com/apidocs/natural-language-understanding/natural-language-understanding"
         },
         {
           "name": "Wit.ai",
@@ -223455,7 +222461,7 @@
       "id": "weather",
       "emoji": "🌤️",
       "name": "Weather",
-      "api_count": 35,
+      "api_count": 33,
       "apis": [
         {
           "name": "7Timer!",
@@ -223556,25 +222562,11 @@
           "link": "https://api.met.no/weatherapi/documentation"
         },
         {
-          "name": "Micro Weather",
-          "description": "Real time weather forecasts and historic data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://m3o.com/weather/api"
-        },
-        {
           "name": "National Weather Service",
           "description": "Weather forecasts, alerts, and observations for the United States.",
           "auth": "No",
           "https": true,
           "link": "https://www.weather.gov/documentation/services-web-api"
-        },
-        {
-          "name": "ODWeather",
-          "description": "Weather and weather webcams.",
-          "auth": "No",
-          "https": false,
-          "link": "http://api.oceandrivers.com/static/docs.html"
         },
         {
           "name": "Oikolab",
