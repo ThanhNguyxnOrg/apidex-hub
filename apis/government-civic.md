@@ -50,7 +50,6 @@
 | **Open Government, Ireland** | Ireland Government Open Data. | No | ✅ | [Link](https://data.gov.ie/pages/developers) |
 | **Open Government, Estonia** | Estonian Government Open Data. | No | ✅ | [Link](https://avaandmed.eesti.ee/) |
 | **Open Government, Korea** | Korea Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://www.data.go.kr/) |
-| **Open Government, Lithuania** | Lithuania Government Open Data. | No | ✅ | [Link](https://data.gov.lt/public/api/1) |
 | **Open Government, Luxembourg** | Luxembourgish Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://data.public.lu) |
 | **Open Government, Mexico** | Mexican Statistical Government Open Data. | No | ✅ | [Link](https://www.inegi.org.mx/datos/) |
 | **Open Government, Netherlands** | Netherlands Government Open Data. | No | ✅ | [Link](https://data.overheid.nl/en/ondersteuning/data-publiceren/api) |

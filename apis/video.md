@@ -9,7 +9,6 @@
 | **Dailymotion** | Video platform and publishing API. | 🔐 OAuth | ✅ | [Link](https://developers.dailymotion.com/api/) |
 | **Final Space** | Final Space API. | No | ✅ | [Link](https://finalspaceapi.com/docs/) |
 | **Game of Thrones Quotes** | Some Game of Thrones quotes. | No | ✅ | [Link](https://gameofthronesquotes.xyz/) |
-| **IMDb API** | Movie, serial and cast information. | 🔑 ApiKey | ✅ | [Link](https://imdbapi.dev/) |
 | **JSON2Video** | Create and edit videos programmatically: watermarks,resizing,slideshows,voice... | 🔑 ApiKey | ✅ | [Link](https://json2video.com) |
 | **Mux** | Video infrastructure and analytics. | 🔑 ApiKey | ✅ | [Link](https://docs.mux.com/) |
 | **Openverse** | Search openly-licensed media. | No | ✅ | [Link](https://api.openverse.org/v1/) |

@@ -2,7 +2,6 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **A Bíblia Digital** | Do not worry about managing the multiple versions of the Bible. | 🔑 ApiKey | ✅ | [Link](https://www.abibliadigital.com.br/en) |
 | **Bhagavad Gita** | Open Source Shrimad Bhagavad Gita API including 21+ authors translation in Sa... | 🔑 ApiKey | ✅ | [Link](https://docs.bhagavadgitaapi.in) |
 | **Bhagavad Gita telugu** | Bhagavad Gita API in telugu and odia languages. | No | ✅ | [Link](https://gita-api.vercel.app) |
 | **Bible API** | Free Bible text in multiple versions (**No Auth**). | No | ✅ | [Link](https://bible-api.com/) |

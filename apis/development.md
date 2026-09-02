@@ -42,11 +42,10 @@
 | **Doppler** | Secrets management platform for developers. | 🔑 ApiKey | ✅ | [Link](https://docs.doppler.com/reference/api) |
 | **EmailJS** | Send emails directly from JavaScript (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.emailjs.com/docs/) |
 | **ExtendsClass JSON Storage** | A simple JSON store API. | No | ✅ | [Link](https://extendsclass.com/json-storage.html) |
-| **Faker API** | Generate fake data for testing (addresses, books, companies, users, etc.). | No | ✅ | [Link](https://fakerapi.it/en) |
 | **Firebase** | Google's mobile/web app development platform. | 🔑 ApiKey | ✅ | [Link](https://firebase.google.com/docs/reference/rest) |
 | **Fly.io** | Global app deployment platform. | 🔑 ApiKey | ✅ | [Link](https://fly.io/docs/machines/api/) |
 | **Ghost** | Get Published content into your Website, App or other embedded media. | 🔑 ApiKey | ✅ | [Link](https://ghost.org/) |
-| **Gitea** | Self-hosted Git service with REST API. | 🔐 OAuth | ✅ | [Link](https://docs.gitea.com/api/1.20/) |
+| **Gitea** | Self-hosted Git service with REST API. | 🔐 OAuth | ✅ | [Link](https://gitea.com/api/swagger) |
 | **GitHub** | Make use of GitHub data. | 🔐 OAuth | ✅ | [Link](https://docs.github.com/en/free-pro-team@latest/rest) |
 | **GitHub REST API** | Access GitHub data — repos, users, gists, and more (**No Auth for public data**). | No | ✅ | [Link](https://docs.github.com/en/rest) |
 | **GitHub REST API** | Interact with GitHub repositories, users, issues, and pull requests. | 🔑 ApiKey | ✅ | [Link](https://docs.github.com/en/rest) |
@@ -84,7 +83,7 @@
 | **Kroki** | Creates diagrams from textual descriptions. | No | ✅ | [Link](https://kroki.io) |
 | **Linear** | Modern issue tracking for software teams. | 🔑 ApiKey | ✅ | [Link](https://developers.linear.app/docs) |
 | **Logs.to** | Generate logs. | 🔑 ApiKey | ✅ | [Link](https://logs.to/) |
-| **MAC address vendor lookup** | Retrieve vendor details and other information regarding a given MAC address o... | 🔑 ApiKey | ✅ | [Link](https://macaddress.io/api) |
+| **MAC address vendor lookup** | Retrieve vendor details and other information regarding a given MAC address. | No | ✅ | [Link](https://macvendors.com/) |
 | **Mailboxlayer** | Email verification and validation. | 🔑 ApiKey | ✅ | [Link](https://mailboxlayer.com/) |
 | **Microlink** | Extract metadata, take screenshots, and generate PDFs from any URL. | No | ✅ | [Link](https://microlink.io/docs/api/getting-started/overview) |
 | **Mintlify** | For programmatically generating documentation for code. | 🔑 ApiKey | ✅ | [Link](https://docs.mintlify.com) |
@@ -114,7 +113,7 @@
 | **Redash** | Query, dashboards, and data source automation API. | 🔑 ApiKey | ✅ | [Link](https://redash.io/help/user-guide/integrations-and-api/api) |
 | **Render** | Cloud platform API for apps and databases. | 🔑 ApiKey | ✅ | [Link](https://api-docs.render.com/reference/introduction) |
 | **ReqRes** | A hosted REST-API ready to respond to user registration, login, and data requests. | No | ✅ | [Link](https://reqres.in/) |
-| **RSS feed to JSON** | Returns RSS feed in JSON format using feed URL. | No | ✅ | [Link](https://rss-to-json-serverless-api.vercel.app) |
+| **RSS feed to JSON** | Returns RSS feed in JSON format using feed URL. | No | ✅ | [Link](https://rss2json.com/docs) |
 | **SavePage.io** | A free, RESTful API used to screenshot any desktop, or mobile website. | 🔑 ApiKey | ✅ | [Link](https://www.savepage.io) |
 | **ScrapeNinja** | Scraping API with Chrome fingerprint and residential proxies. | 🔑 ApiKey | ✅ | [Link](https://scrapeninja.net) |
 | **ScraperApi** | Easily build scalable web scrapers. | 🔑 ApiKey | ✅ | [Link](https://www.scraperapi.com) |

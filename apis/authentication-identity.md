@@ -10,7 +10,7 @@
 | **Kinde** | Authentication platform for modern apps. | 🔐 OAuth | ✅ | [Link](https://kinde.com/docs/developer-tools/) |
 | **Logto** | Open-source auth infrastructure and identity APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.logto.io/) |
 | **Magic** | Passwordless authentication and wallet login. | 🔑 ApiKey | ✅ | [Link](https://magic.link/docs/api) |
-| **MojoAuth** | Passwordless authentication API and OTP flows. | 🔑 ApiKey | ✅ | [Link](https://mojoauth.com/docs/api) |
+| **MojoAuth** | Passwordless authentication API and OTP flows. | 🔑 ApiKey | ✅ | [Link](https://mojoauth.com/docs/) |
 | **Ory** | Identity, session, and authorization APIs. | No | ✅ | [Link](https://www.ory.sh/docs/reference/api) |
 | **Permit.io** | Authorization and policy management APIs for RBAC/ABAC. | 🔑 ApiKey | ✅ | [Link](https://docs.permit.io/) |
 | **Stytch** | Authentication APIs for passwords, OTP, magic links, and OAuth. | 🔑 ApiKey | ✅ | [Link](https://stytch.com/docs/api) |

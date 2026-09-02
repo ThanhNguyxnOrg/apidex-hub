@@ -8,7 +8,6 @@
 | **edX API** | Online course catalog. | 🔐 OAuth | ✅ | [Link](https://courses.edx.org/api-docs/) |
 | **Khan Academy** | Khan Academy educational content. | 🔐 OAuth | ✅ | [Link](https://khanacademy.org/api-docs) |
 | **OpenAlex** | Open catalog of scholarly papers (**No Auth**). | No | ✅ | [Link](https://docs.openalex.org/) |
-| **Periodic Table** | Chemical element data. | No | ✅ | [Link](https://api-ninjas.com/api/periodictable) |
 | **Semantic Scholar** | Scholarly papers and citation graph data. | No | ✅ | [Link](https://api.semanticscholar.org/api-docs/) |
 | **Universities List** | List of universities worldwide. | No | ✅ | [Link](http://universities.hipolabs.com/) |
 | **Universities List** | Get domains, names, and countries of universities around the world. | No | ✅ | [Link](http://universities.hipolabs.com/) |

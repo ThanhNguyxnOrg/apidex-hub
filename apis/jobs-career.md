@@ -10,7 +10,6 @@
 | **Findwork** | Job board. | 🔑 ApiKey | ✅ | [Link](https://findwork.dev/developers/) |
 | **Himalayas** | Remote jobs API and company data. | No | ✅ | [Link](https://himalayas.app/api) |
 | **Jobicy** | Remote job listings feed API. | No | ✅ | [Link](https://jobicy.com/jobs-rss-feed) |
-| **Jobs2Careers** | Job aggregator. | 🔑 ApiKey | ✅ | [Link](http://api.jobs2careers.com/api/spec.pdf) |
 | **Jooble** | Job search engine. | 🔑 ApiKey | ✅ | [Link](https://jooble.org/api/about) |
 | **JSearch** | Job search API (via RapidAPI). | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch) |
 | **Juju** | Job search engine. | 🔑 ApiKey | No | [Link](http://www.juju.com/publisher/spec/) |

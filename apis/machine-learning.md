@@ -6,7 +6,6 @@
 | **AI21 Labs** | Powerful language models (free tier). | 🔑 ApiKey | ✅ | [Link](https://docs.ai21.com/) |
 | **Anthropic Claude** | Access Claude AI models (offers free trial credits). | 🔑 ApiKey | ✅ | [Link](https://www.anthropic.com/api) |
 | **Cerebras Inference** | Extremely fast LLM inference platform. | 🔑 ApiKey | ✅ | [Link](https://inference-docs.cerebras.ai/) |
-| **Clarifai** | Computer Vision. | 🔐 OAuth | ✅ | [Link](https://docs.clarifai.com/api-guide/api-overview) |
 | **Cloudmersive** | Image Recognition. | 🔑 ApiKey | ✅ | [Link](https://www.cloudmersive.com/image-recognition-and-processing-api) |
 | **Cohere** | NLP and text generation models (free trial tier). | 🔑 ApiKey | ✅ | [Link](https://docs.cohere.com/) |
 | **DeepAI** | Simple APIs for image generation and text processing. | 🔑 ApiKey | ✅ | [Link](https://deepai.org/api-docs) |

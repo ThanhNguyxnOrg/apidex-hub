@@ -32,7 +32,7 @@
 | **Reddit** | Social news. | 🔐 OAuth | ✅ | [Link](https://www.reddit.com/dev/api) |
 | **Slack** | Team communication. | 🔐 OAuth | ✅ | [Link](https://api.slack.com/) |
 | **Snapchat** | Photo and video sharing. | 🔐 OAuth | ✅ | [Link](https://developers.snap.com/) |
-| **TamTam** | Bot API to interact with TamTam. | 🔑 ApiKey | ✅ | [Link](https://dev.tamtam.chat/) |
+| **TamTam** | Bot API to interact with TamTam. | 🔑 ApiKey | ✅ | [Link](https://tamtam.chat/) |
 | **Telegram** | Messaging app. | 🔑 ApiKey | ✅ | [Link](https://core.telegram.org/bots/api) |
 | **Telegram MTProto** | Read and write Telegram data. | 🔐 OAuth | ✅ | [Link](https://core.telegram.org/api#getting-started) |
 | **Telegraph** | Create attractive blogs easily, to share. | 🔑 ApiKey | ✅ | [Link](https://telegra.ph/api) |

@@ -22,7 +22,7 @@
 | **HealthData.gov** | Public US health datasets and data portal. | No | ✅ | [Link](https://healthdata.gov/) |
 | **Humanitarian Data Exchange** | Humanitarian Data Exchange (HDX) is open platform for sharing data across cri... | No | ✅ | [Link](https://data.humdata.org/) |
 | **Infermedica** | NLP based symptom checker and patient triage API for health diagnosis from text. | 🔑 ApiKey | ✅ | [Link](https://developer.infermedica.com/docs/) |
-| **LAPIS** | SARS-CoV-2 genomic sequences from public sources. | No | ✅ | [Link](https://cov-spectrum.ethz.ch/public) |
+| **LAPIS** | SARS-CoV-2 genomic sequences from public sources. | No | ✅ | [Link](https://cov-spectrum.org/public) |
 | **Lexigram** | NLP that extracts mentions of clinical concepts from text, gives access to cl... | 🔑 ApiKey | ✅ | [Link](https://docs.lexigram.io/) |
 | **MyVaccination** | Vaccination data for Malaysia. | No | ✅ | [Link](https://documenter.getpostman.com/view/16605343/Tzm8GG7u) |
 | **NPI Registry** | US healthcare provider registry search. | No | ✅ | [Link](https://clinicaltables.nlm.nih.gov/apidoc/npi_org/v3/doc.html) |

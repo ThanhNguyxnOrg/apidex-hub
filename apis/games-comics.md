@@ -62,7 +62,6 @@
 | **PokéAPI v2** | Comprehensive Pokémon data (**No Auth, 300M+ requests/month**). | No | ✅ | [Link](https://pokeapi.co/docs/v2) |
 | **Pokémon TCG** | Pokémon TCG Information. | No | ✅ | [Link](https://pokemontcg.io) |
 | **Potter DB** | Harry Potter database API for characters, spells, potions, books, and movies. | No | ✅ | [Link](https://potterdb.com/) |
-| **Psychonauts** | Psychonauts World Characters Information and PSI Powers. | No | ✅ | [Link](https://psychonauts-api.netlify.app/) |
 | **PUBG** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.pubg.com/) |
 | **RAWG** | Video games database (500k+ games). | 🔑 ApiKey | ✅ | [Link](https://rawg.io/apidocs) |
 | **Rick and Morty** | Show data. | No | ✅ | [Link](https://rickandmortyapi.com) |
@@ -79,7 +78,6 @@
 | **TETR.IO** | TETR.IO Tetra Channel API. | No | ✅ | [Link](https://tetr.io/about/api/) |
 | **Universalis** | Final Fantasy XIV market board data. | No | ✅ | [Link](https://universalis.app/docs/index.html) |
 | **Valorant** | Valorant game data (unofficial). | No | ✅ | [Link](https://valorant-api.com/) |
-| **Warface (non-official)** | Official API proxy with better data structure and more features. | No | ✅ | [Link](https://api.wfstats.cf) |
 | **Wargaming.net** | Wargaming.net info and stats. | 🔑 ApiKey | ✅ | [Link](https://developers.wargaming.net/) |
 | **xkcd** | Retrieve xkcd comics as JSON. | No | ✅ | [Link](https://xkcd.com/json.html) |
 | **Yu-Gi-Oh!** | Yu-Gi-Oh! card data. | No | ✅ | [Link](https://ygoprodeck.com/api-guide/) |

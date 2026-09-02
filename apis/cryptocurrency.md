@@ -2,7 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **1inch** | API for querying the 1inch protocol. | No | ✅ | [Link](https://1inch.io/api/) |
+| **1inch** | API for querying the 1inch protocol. | No | ✅ | [Link](https://docs.1inch.io/) |
 | **Alchemy** | Ethereum API. | 🔑 ApiKey | ✅ | [Link](https://docs.alchemy.com/) |
 | **Binance** | Spot and margin cryptocurrency market data and trading APIs. | No | ✅ | [Link](https://binance-docs.github.io/apidocs/spot/en/) |
 | **Bitcambio** | Get the list of all traded assets in the exchange. | No | ✅ | [Link](https://nova.bitcambio.com.br/api/v3/docs#a-public) |
