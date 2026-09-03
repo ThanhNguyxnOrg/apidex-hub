@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-02T16:36:52.006471+00:00",
+    "generated_at": "2026-09-03T09:13:44.946607+00:00",
     "source": "README.md",
-    "total_apis": 30657,
+    "total_apis": 30599,
     "total_categories": 78,
     "no_auth_count": 2105,
-    "api_key_count": 28409,
+    "api_key_count": 28351,
     "oauth_count": 143,
-    "https_count": 29109,
+    "https_count": 29052,
     "https_percentage": 95
   },
   "categories": [
@@ -162,7 +162,7 @@
           "description": "Adoption.",
           "auth": "No",
           "https": true,
-          "link": "https://userguide.rescuegroups.org/display/APIDG/API+Developers+Guide+Home"
+          "link": "https://rescuegroups.org/services/adoptable-pet-data-api/"
         },
         {
           "name": "Shibe.Online",
@@ -15196,7 +15196,7 @@
       "id": "apify-automation",
       "emoji": "⚙️",
       "name": "Apify Automation",
-      "api_count": 5391,
+      "api_count": 5376,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -17248,13 +17248,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ittechinnovators/amazon-deals-to-telegram-auto-poster?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Amazon Haul Search",
-          "description": "(Apify Scraper) Scrape Amazon Haul search results by keyword and extract product titles, ASINs, prices, ratings, review counts, images, and product URLs for Amazon product research.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/amazon-haul-search?fpr=thanhnguyxn"
         },
         {
           "name": "Amazon India Product Scraper",
@@ -21028,13 +21021,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/moving_beacon-owner1/chatgpt-to-pdf?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Chaturbate Profile Scraper",
-          "description": "(Apify Scraper) The ultimate bulk Chaturbate profile scraper for extracting specific profiles by username or URL. Extract complete social media data including Instagram, Twitter, OnlyFans, Social Media links, follower counts, demographics, and bio information fro...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/chaturbate-profile-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "**Chaves Na Mao Scraper \\",
@@ -26315,13 +26301,6 @@
           "link": "https://apify.com/igview-owner/fiverr-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Fiverr Search Pro ⭐️",
-          "description": "(Apify Scraper) The fastest, cheapest way to scrape Fiverr search results by keyword. Collect gigs, seller details, prices, ratings, reviews, delivery times, packages, and ranking data for competitor research, lead generation, pricing analysis, and market validat...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/fiverr-search-pro?fpr=thanhnguyxn"
-        },
-        {
           "name": "Flashscore Elite Statistics Extractor (Deep Metrics & xG)",
           "description": "(Apify Scraper) 💎 𝗘𝗹𝗶𝘁𝗲-𝗴𝗿𝗮𝗱𝗲 𝗳𝗼𝗼𝘁𝗯𝗮𝗹𝗹 𝗱𝗮𝘁𝗮 𝗳𝗮𝗰𝘁𝗼𝗿𝘆. 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝘀 𝗽𝗿𝗲𝗺𝗶𝘂𝗺 𝗘𝘅𝗽𝗲𝗰𝘁𝗲𝗱 𝗚𝗼𝗮𝗹𝘀 (𝘅𝗚), 𝗱𝗲𝗲𝗽 𝟭𝗛/𝟮𝗛 𝘀𝗽𝗹𝗶𝘁𝘀, 𝗮𝗻𝗱 𝗵𝗶𝗴𝐡-𝗽𝗿𝗲𝗰𝗶𝘀𝗶𝗼𝗻 𝗺𝗲𝘁𝗿𝗶𝗰𝘀. 🚀 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗱 𝗳𝗼𝗿...",
           "auth": "apiKey",
@@ -29974,13 +29953,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/blackfalcondata/gulftalent-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Gumroad Leads & Market Insights Scraper (Cheapest)",
-          "description": "(Apify Scraper) High-performance scraper for Gumroad that extracts deep metadata (licensing options, attributes, full covers, and sales counts) by unpacking Inertia.js data states. Supports search discovery and direct URLs",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ahmed_jasarevic/gumroad-deep-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Gumroad Market Intelligence — Find Winning Digital Products",
@@ -38082,27 +38054,6 @@
           "link": "https://apify.com/mr.data_scientist/omniextract-ai?fpr=thanhnguyxn"
         },
         {
-          "name": "OnlyFans Discovery Scraper",
-          "description": "(Apify Scraper) Discover and collect OnlyFans model profiles with comprehensive data including social media links, engagement metrics, pricing, and statistics.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-discovery-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Model Leads Scraper",
-          "description": "(Apify Scraper) Automated OnlyFans lead scraper for agencies. Find and scrape new model profiles with Instagram links, follower counts, pricing & stats - perfect for OFM agencies to reach out to new models and automate recruitment.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-model-leads-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Profile API",
-          "description": "(Apify Scraper) Extract Comprehensive OnlyFans data at high speed. Ultra-efficient, low usage costs. Get stats, pricing, promotions & 100+ fields.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-profile-scraper-pro?fpr=thanhnguyxn"
-        },
-        {
           "name": "Onlyfans Scraper",
           "description": "(Apify Scraper) Efficient OnlyFans scraper for extracting public data, media, and insights with no proxy requirements and low costs.",
           "auth": "apiKey",
@@ -38115,13 +38066,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/futurizerush/onlyfans-user-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Watchlist Monitor",
-          "description": "(Apify Scraper) OnlyFans Watchlist Monitor tracks creator profile changes across your target list: bio, display name, subscription price, likes, photos, videos, socials, and availability. Get structured change events, historical snapshots, and automation-ready JS...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-watchlist-monitor?fpr=thanhnguyxn"
         },
         {
           "name": "Onthemarket Property Scraper",
@@ -44935,13 +44879,6 @@
           "link": "https://apify.com/superlativetech/dns-lookup?fpr=thanhnguyxn"
         },
         {
-          "name": "Supernet WHOIS Lookup",
-          "description": "(Apify Scraper) WHOIS domain registration data for any domain. Registrar, expiry dates, domain age, registrant, nameservers, DNSSEC. Domain ownership enrichment for lead scoring, expiry monitoring, fraud detection, and due diligence. Batch thousands or query one ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/superlativetech/supernet-whois-lookup?fpr=thanhnguyxn"
-        },
-        {
           "name": "Superstore & No Frills Grocery Price Scraper API - Canada",
           "description": "(Apify Scraper) Scrape Loblaws, Real Canadian Superstore & No Frills product data, prices, PC Optimum offers & deals. Fast, no-code Loblaws scraper. Export JSON/CSV.",
           "auth": "apiKey",
@@ -46181,13 +46118,6 @@
           "link": "https://apify.com/agenscrape/tiktok-scraper-pro?fpr=thanhnguyxn"
         },
         {
-          "name": "TikTok Search API 🔥",
-          "description": "(Apify Scraper) The fastest and cheapest way to search TikTok by keyword. Extract video data, engagement stats, and creator info.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-search-api?fpr=thanhnguyxn"
-        },
-        {
           "name": "TikTok Search Profile",
           "description": "(Apify Scraper) Search and discover TikTok users by any keyword – name, niche or topic – and export clean creator data in seconds.",
           "auth": "apiKey",
@@ -46221,13 +46151,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/cunning_soil/tiktok-shop-product-scraper-mobile-api?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Shop Reviews Pro ⭐️",
-          "description": "(Apify Scraper) Extract TikTok Shop product reviews from product URLs, product IDs, or search-discovered products. Collect rating, review text, reviewer metadata, media flags, and product context for ecommerce intelligence.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-reviews-pro?fpr=thanhnguyxn"
         },
         {
           "name": "TikTok Shop Reviews Scraper",
@@ -46270,27 +46193,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/unseenuser/tiktok-shop-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Shop Search Pro 🔥",
-          "description": "(Apify Scraper) TikTok Shop scraper for keyword and region search. Extract product IDs, titles, brands, sellers, prices, ratings, reviews, SKU pricing, and ranking data in clean structured output for ecommerce research, competitor tracking, trend discovery, and p...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-search-pro?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Shop Seller Catalog",
-          "description": "(Apify Scraper) TikTok Shop seller catalog scraper for extracting store products, prices, ratings, and structured catalog intelligence. Analyze seller assortments, export product-level data, and optionally emit snapshot change rows for added, removed, and price-c...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-seller-catalog?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Shop Store Monitor Pro  💾",
-          "description": "(Apify Scraper) Monitor TikTok Shop seller stores and detect catalog changes across runs. Track matched products, price changes, additions, removals, and store-level snapshots for competitive ecommerce intelligence.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-store-monitor-pro?fpr=thanhnguyxn"
         },
         {
           "name": "TikTok Slideshow Downloader",
@@ -50183,13 +50085,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/rexreus/whoisthisperson?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Whop Scraper Pro",
-          "description": "(Apify Scraper) Scrape Whop Discover search results and product pages by keyword. Extract titles, prices, ratings, product URLs, and category rank for competitor analysis, offer research, lead generation, and marketplace intelligence.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/whop-scraper-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Whop.com [only $1.5💰] Search & Details & Leaderboards Scraper",
@@ -56498,7 +56393,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 3914,
+      "api_count": 3905,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -57920,13 +57815,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/codenest/amazon-deals-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Amazon Haul Search",
-          "description": "(Apify Scraper) Scrape Amazon Haul search results by keyword and extract product titles, ASINs, prices, ratings, review counts, images, and product URLs for Amazon product research.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/amazon-haul-search?fpr=thanhnguyxn"
         },
         {
           "name": "Amazon India Product Scraper",
@@ -65069,13 +64957,6 @@
           "link": "https://apify.com/igview-owner/fiverr-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Fiverr Search Pro ⭐️",
-          "description": "(Apify Scraper) The fastest, cheapest way to scrape Fiverr search results by keyword. Collect gigs, seller details, prices, ratings, reviews, delivery times, packages, and ranking data for competitor research, lead generation, pricing analysis, and market validat...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/fiverr-search-pro?fpr=thanhnguyxn"
-        },
-        {
           "name": "FlashScore Live Sports Scraper",
           "description": "(Apify Scraper) Scrape live matches from FlashScore for football, basketball, tennis, hockey, baseball and 11 other sports. Returns match ID, teams, live score, status, league, start time and optional event timeline.",
           "auth": "apiKey",
@@ -67958,13 +67839,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/stealth_mode/gulftalent-jobs-search-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Gumroad Leads & Market Insights Scraper (Cheapest)",
-          "description": "(Apify Scraper) High-performance scraper for Gumroad that extracts deep metadata (licensing options, attributes, full covers, and sales counts) by unpacking Inertia.js data states. Supports search discovery and direct URLs",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ahmed_jasarevic/gumroad-deep-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Gumroad Scraper",
@@ -72963,13 +72837,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "OnlyFans Profile API",
-          "description": "(Apify Scraper) Extract Comprehensive OnlyFans data at high speed. Ultra-efficient, low usage costs. Get stats, pricing, promotions & 100+ fields.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-profile-scraper-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Onthemarket Property Scraper",
@@ -77998,13 +77865,6 @@
           "link": "https://apify.com/superlativetech/dns-lookup?fpr=thanhnguyxn"
         },
         {
-          "name": "Supernet WHOIS Lookup",
-          "description": "(Apify Scraper) WHOIS domain registration data for any domain. Registrar, expiry dates, domain age, registrant, nameservers, DNSSEC. Domain ownership enrichment for lead scoring, expiry monitoring, fraud detection, and due diligence. Batch thousands or query one ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/superlativetech/supernet-whois-lookup?fpr=thanhnguyxn"
-        },
-        {
           "name": "SuperScraper API",
           "description": "(Apify Scraper) Generic REST API for scraping websites: send a URL and get back HTML. This Actor is a drop-in replacement for ScrapingBee, ScrapingAnt, and ScraperAPI services. And it is open-source!",
           "auth": "apiKey",
@@ -78908,27 +78768,6 @@
           "link": "https://apify.com/lemur/tiktok-shop-products?fpr=thanhnguyxn"
         },
         {
-          "name": "TikTok Shop Search Pro 🔥",
-          "description": "(Apify Scraper) TikTok Shop scraper for keyword and region search. Extract product IDs, titles, brands, sellers, prices, ratings, reviews, SKU pricing, and ranking data in clean structured output for ecommerce research, competitor tracking, trend discovery, and p...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-search-pro?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Shop Seller Catalog",
-          "description": "(Apify Scraper) TikTok Shop seller catalog scraper for extracting store products, prices, ratings, and structured catalog intelligence. Analyze seller assortments, export product-level data, and optionally emit snapshot change rows for added, removed, and price-c...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-seller-catalog?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Shop Store Monitor Pro  💾",
-          "description": "(Apify Scraper) Monitor TikTok Shop seller stores and detect catalog changes across runs. Track matched products, price changes, additions, removals, and store-level snapshots for competitive ecommerce intelligence.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-store-monitor-pro?fpr=thanhnguyxn"
-        },
-        {
           "name": "TikTok Slideshow Downloader",
           "description": "(Apify Scraper) Download photos from public TikTok slideshow URLs. Save each image to Apify storage with source links, author data, captions, post stats, file metadata, and dataset exports.",
           "auth": "apiKey",
@@ -79683,13 +79522,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/seemuapps/twitch-channel-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Twitch Search Pro",
-          "description": "(Apify Scraper) The fastest and cheapest Twitch search scraper for finding channels by keyword, niche, game, brand term, or username fragment. Export clean Twitch channel results with followers, live status, viewers, stream titles, descriptions, avatars, and chan...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/twitch-search-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Twitter (X) Profile & Follower Scraper",
@@ -83904,7 +83736,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 2180,
+      "api_count": 2172,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -85256,13 +85088,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ittechinnovators/amazon-deals-to-telegram-auto-poster?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Amazon Haul Search",
-          "description": "(Apify Scraper) Scrape Amazon Haul search results by keyword and extract product titles, ASINs, prices, ratings, review counts, images, and product URLs for Amazon product research.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/amazon-haul-search?fpr=thanhnguyxn"
         },
         {
           "name": "Amazon India Product Scraper",
@@ -90772,13 +90597,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/constructive_calm/gulf-used-car-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Gumroad Leads & Market Insights Scraper (Cheapest)",
-          "description": "(Apify Scraper) High-performance scraper for Gumroad that extracts deep metadata (licensing options, attributes, full covers, and sales counts) by unpacking Inertia.js data states. Supports search discovery and direct URLs",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ahmed_jasarevic/gumroad-deep-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Gumroad Market Intelligence — Find Winning Digital Products",
@@ -96766,13 +96584,6 @@
           "link": "https://apify.com/george.the.developer/tiktok-shop-affiliate-sales-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "TikTok Shop Affiliate Products",
-          "description": "(Apify Scraper) Find TikTok Shop products worth promoting with affiliate opportunity scoring, product demand signals, price bands, ratings, reviews, seller context, and creator-commerce indicators when available.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-affiliate-products?fpr=thanhnguyxn"
-        },
-        {
           "name": "Tiktok Shop Analytics",
           "description": "(Apify Scraper) Discover TikTok videos promoting Shop products. Returns product mentions (with prices, discount codes, brands, shop URLs from descriptions), video engagement, and creator profiles with affiliate-tier classification. For influencer outreach, trendi...",
           "auth": "apiKey",
@@ -96850,13 +96661,6 @@
           "link": "https://apify.com/automation-lab/tiktok-shop-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "TikTok Shop Reviews Pro ⭐️",
-          "description": "(Apify Scraper) Extract TikTok Shop product reviews from product URLs, product IDs, or search-discovered products. Collect rating, review text, reviewer metadata, media flags, and product context for ecommerce intelligence.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-reviews-pro?fpr=thanhnguyxn"
-        },
-        {
           "name": "TikTok Shop Reviews Scraper",
           "description": "(Apify Scraper) Scrape TikTok Shop product reviews by product URL, product ID, or shop URL. Returns review text, rating, date, author, photos, and product context per row.",
           "auth": "apiKey",
@@ -96927,32 +96731,11 @@
           "link": ""
         },
         {
-          "name": "TikTok Shop Search Pro 🔥",
-          "description": "(Apify Scraper) TikTok Shop scraper for keyword and region search. Extract product IDs, titles, brands, sellers, prices, ratings, reviews, SKU pricing, and ranking data in clean structured output for ecommerce research, competitor tracking, trend discovery, and p...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-search-pro?fpr=thanhnguyxn"
-        },
-        {
           "name": "Tiktok Shop Search Scraper ✅",
           "description": "(Apify Scraper) This actor scrapes TikTok Shop search results for detailed product data, including titles, prices, sellers, ratings, descriptions, and media URLs. It's designed for market research, competitor analysis, trend spotting, and e-commerce strategy opti...",
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/pratikdani/tiktok-shop-search-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Shop Seller Catalog",
-          "description": "(Apify Scraper) TikTok Shop seller catalog scraper for extracting store products, prices, ratings, and structured catalog intelligence. Analyze seller assortments, export product-level data, and optionally emit snapshot change rows for added, removed, and price-c...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-seller-catalog?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Shop Store Monitor Pro  💾",
-          "description": "(Apify Scraper) Monitor TikTok Shop seller stores and detect catalog changes across runs. Track matched products, price changes, additions, removals, and store-level snapshots for competitive ecommerce intelligence.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-store-monitor-pro?fpr=thanhnguyxn"
         },
         {
           "name": "**TikTok Shop Trending Products — Sold Count, SKU \\",
@@ -98493,13 +98276,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Whop Scraper Pro",
-          "description": "(Apify Scraper) Scrape Whop Discover search results and product pages by keyword. Extract titles, prices, ratings, product URLs, and category rank for competitor analysis, offer research, lead generation, and marketplace intelligence.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/whop-scraper-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Whop.com Scraper",
@@ -112607,7 +112383,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 4433,
+      "api_count": 4422,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -117223,13 +116999,6 @@
           "link": "https://apify.com/lexis-solutions/chatgpt-marketplace-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Chaturbate Profile Scraper",
-          "description": "(Apify Scraper) The ultimate bulk Chaturbate profile scraper for extracting specific profiles by username or URL. Extract complete social media data including Instagram, Twitter, OnlyFans, Social Media links, follower counts, demographics, and bio information fro...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/chaturbate-profile-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "che168 Autohome 二手车 Scraper - 200+ Fields + Dealer Phone",
           "description": "(Apify Scraper) Extract 200+ fields per che168 (Autohome 二手车) used-car listing across China. Prices in 万/RMB, full car spec, dealer profile, business license, business hours, photos, and the dealer's virtual phone for every listing. Paste any che168.com search UR...",
           "auth": "apiKey",
@@ -121708,13 +121477,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/igview-owner/fiverr-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Fiverr Search Pro ⭐️",
-          "description": "(Apify Scraper) The fastest, cheapest way to scrape Fiverr search results by keyword. Collect gigs, seller details, prices, ratings, reviews, delivery times, packages, and ranking data for competitor research, lead generation, pricing analysis, and market validat...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/fiverr-search-pro?fpr=thanhnguyxn"
         },
         {
           "name": "**Fiverr Seller Scraper \\",
@@ -132343,27 +132105,6 @@
           "link": "https://apify.com/powerai/oneroof-search-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "OnlyFans Discovery Scraper",
-          "description": "(Apify Scraper) Discover and collect OnlyFans model profiles with comprehensive data including social media links, engagement metrics, pricing, and statistics.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-discovery-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Finder Pro",
-          "description": "(Apify Scraper) Find OnlyFans creators by appearance, niche, and location. Search by physical features, interests, style, or where they're from. Extract complete profiles with Instagram, Twitter, TikTok links, pricing, engagement stats, and more. Perfect for pers...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-finder-pro?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Model Leads Scraper",
-          "description": "(Apify Scraper) Automated OnlyFans lead scraper for agencies. Find and scrape new model profiles with Instagram links, follower counts, pricing & stats - perfect for OFM agencies to reach out to new models and automate recruitment.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-model-leads-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Onlyfans Scraper",
           "description": "(Apify Scraper) Efficient OnlyFans scraper for extracting public data, media, and insights with no proxy requirements and low costs.",
           "auth": "apiKey",
@@ -132385,25 +132126,11 @@
           "link": ""
         },
         {
-          "name": "OnlyFans Similar Creators",
-          "description": "(Apify Scraper) Find similar OnlyFans creators from usernames, profile URLs, or niche keywords. Discover lookalike profiles, same-niche creators, prices, likes, bios, profile links, and social links for OFM research, creator discovery, and talent sourcing.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-similar-creators?fpr=thanhnguyxn"
-        },
-        {
           "name": "Onlyfans User Scraper",
           "description": "(Apify Scraper) Extract public profile data from OnlyFans creators - get statistics, engagement metrics, and profile information",
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/futurizerush/onlyfans-user-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Watchlist Monitor",
-          "description": "(Apify Scraper) OnlyFans Watchlist Monitor tracks creator profile changes across your target list: bio, display name, subscription price, likes, photos, videos, socials, and availability. Get structured change events, historical snapshots, and automation-ready JS...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-watchlist-monitor?fpr=thanhnguyxn"
         },
         {
           "name": "**OnTheMarket Scraper \\",
@@ -137355,13 +137082,6 @@
           "link": "https://apify.com/superlativetech/dns-lookup?fpr=thanhnguyxn"
         },
         {
-          "name": "Supernet WHOIS Lookup",
-          "description": "(Apify Scraper) WHOIS domain registration data for any domain. Registrar, expiry dates, domain age, registrant, nameservers, DNSSEC. Domain ownership enrichment for lead scoring, expiry monitoring, fraud detection, and due diligence. Batch thousands or query one ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/superlativetech/supernet-whois-lookup?fpr=thanhnguyxn"
-        },
-        {
           "name": "Surfline Forecast",
           "description": "(Apify Scraper) Surfline Surf Forecast Scraper: extract mode, timestamp, totalSpots, savedToDatabase, sampleSpots, id, name, region. For lead generation, data enrichment, and research.",
           "auth": "apiKey",
@@ -138776,13 +138496,6 @@
           "link": "https://apify.com/george.the.developer/tiktok-shop-affiliate-sales-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "TikTok Shop Affiliate Products",
-          "description": "(Apify Scraper) Find TikTok Shop products worth promoting with affiliate opportunity scoring, product demand signals, price bands, ratings, reviews, seller context, and creator-commerce indicators when available.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-affiliate-products?fpr=thanhnguyxn"
-        },
-        {
           "name": "**TikTok Shop Scraper \\",
           "description": "$3/1K \\",
           "auth": "No",
@@ -139544,13 +139257,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/kawsar/twitch-followers-count-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Twitch Search Pro",
-          "description": "(Apify Scraper) The fastest and cheapest Twitch search scraper for finding channels by keyword, niche, game, brand term, or username fragment. Export clean Twitch channel results with followers, live status, viewers, stream titles, descriptions, avatars, and chan...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/twitch-search-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Twitch Streamer & Channel Analytics",
@@ -141581,13 +141287,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Whop Scraper Pro",
-          "description": "(Apify Scraper) Scrape Whop Discover search results and product pages by keyword. Extract titles, prices, ratings, product URLs, and category rank for competitor analysis, offer research, lead generation, and marketplace intelligence.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/whop-scraper-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Whop.com [only $1.5💰] Search & Details & Leaderboards Scraper",
@@ -149655,7 +149354,7 @@
       "id": "apify-other",
       "emoji": "⚠️",
       "name": "Apify Other",
-      "api_count": 1958,
+      "api_count": 1956,
       "apis": [
         {
           "name": "☎️ Bulk Phone Validator",
@@ -157869,13 +157568,6 @@
           "link": "https://apify.com/powerai/oneroof-search-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "OnlyFans Finder Pro",
-          "description": "(Apify Scraper) Find OnlyFans creators by appearance, niche, and location. Search by physical features, interests, style, or where they're from. Extract complete profiles with Instagram, Twitter, TikTok links, pricing, engagement stats, and more. Perfect for pers...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-finder-pro?fpr=thanhnguyxn"
-        },
-        {
           "name": "Onlyfans Scraper Ppe",
           "description": "(Apify Scraper) Best OnlyFans profile scraper with pay-per-result pricing. Extract bio, subscription price, posts count, photos, videos, total media, favorites, subscribers, active promotions, subscription bundles, avatar, header image, join date, social links, l...",
           "auth": "apiKey",
@@ -157888,13 +157580,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "OnlyFans Similar Creators",
-          "description": "(Apify Scraper) Find similar OnlyFans creators from usernames, profile URLs, or niche keywords. Discover lookalike profiles, same-niche creators, prices, likes, bios, profile links, and social links for OFM research, creator discovery, and talent sourcing.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-similar-creators?fpr=thanhnguyxn"
         },
         {
           "name": "Open Brewery DB Business Intelligence",
@@ -177161,7 +176846,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 2705,
+      "api_count": 2694,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -178611,13 +178296,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/scrapers-hub/capcut-video-downloader?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Chaturbate Profile Scraper",
-          "description": "(Apify Scraper) The ultimate bulk Chaturbate profile scraper for extracting specific profiles by username or URL. Extract complete social media data including Instagram, Twitter, OnlyFans, Social Media links, follower counts, demographics, and bio information fro...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/chaturbate-profile-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Cheap & Fast Zillow Search Scraper",
@@ -186271,39 +185949,11 @@
           "link": "https://apify.com/visita/on-this-day-in-history?fpr=thanhnguyxn"
         },
         {
-          "name": "OnlyFans Discovery Scraper",
-          "description": "(Apify Scraper) Discover and collect OnlyFans model profiles with comprehensive data including social media links, engagement metrics, pricing, and statistics.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-discovery-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Finder Pro",
-          "description": "(Apify Scraper) Find OnlyFans creators by appearance, niche, and location. Search by physical features, interests, style, or where they're from. Extract complete profiles with Instagram, Twitter, TikTok links, pricing, engagement stats, and more. Perfect for pers...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-finder-pro?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Model Leads Scraper",
-          "description": "(Apify Scraper) Automated OnlyFans lead scraper for agencies. Find and scrape new model profiles with Instagram links, follower counts, pricing & stats - perfect for OFM agencies to reach out to new models and automate recruitment.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-model-leads-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "OnlyFans Posts Scraper 📱",
           "description": "(Apify Scraper) Scrape OnlyFans creator posts with media content, engagement metrics, and post details. Perfect for content analysis, engagement tracking, and social media research.",
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/easyapi/onlyfans-posts-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Profile API",
-          "description": "(Apify Scraper) Extract Comprehensive OnlyFans data at high speed. Ultra-efficient, low usage costs. Get stats, pricing, promotions & 100+ fields.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-profile-scraper-pro?fpr=thanhnguyxn"
         },
         {
           "name": "OnlyFans Profile Scraper 👩‍💻",
@@ -186327,25 +185977,11 @@
           "link": ""
         },
         {
-          "name": "OnlyFans Similar Creators",
-          "description": "(Apify Scraper) Find similar OnlyFans creators from usernames, profile URLs, or niche keywords. Discover lookalike profiles, same-niche creators, prices, likes, bios, profile links, and social links for OFM research, creator discovery, and talent sourcing.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-similar-creators?fpr=thanhnguyxn"
-        },
-        {
           "name": "Onlyfans User Scraper",
           "description": "(Apify Scraper) Extract public profile data from OnlyFans creators - get statistics, engagement metrics, and profile information",
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/futurizerush/onlyfans-user-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OnlyFans Watchlist Monitor",
-          "description": "(Apify Scraper) OnlyFans Watchlist Monitor tracks creator profile changes across your target list: bio, display name, subscription price, likes, photos, videos, socials, and availability. Get structured change events, historical snapshots, and automation-ready JS...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/onlyfans-watchlist-monitor?fpr=thanhnguyxn"
         },
         {
           "name": "Open Profile Status",
@@ -191234,13 +190870,6 @@
           "link": "https://apify.com/cryptosignals/tiktok-scraper-v2?fpr=thanhnguyxn"
         },
         {
-          "name": "TikTok Search API 🔥",
-          "description": "(Apify Scraper) The fastest and cheapest way to search TikTok by keyword. Extract video data, engagement stats, and creator info.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-search-api?fpr=thanhnguyxn"
-        },
-        {
           "name": "TikTok Search Profile",
           "description": "(Apify Scraper) Search and discover TikTok users by any keyword – name, niche or topic – and export clean creator data in seconds.",
           "auth": "apiKey",
@@ -191297,13 +190926,6 @@
           "link": "https://apify.com/george.the.developer/tiktok-shop-affiliate-sales-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "TikTok Shop Affiliate Products",
-          "description": "(Apify Scraper) Find TikTok Shop products worth promoting with affiliate opportunity scoring, product demand signals, price bands, ratings, reviews, seller context, and creator-commerce indicators when available.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-affiliate-products?fpr=thanhnguyxn"
-        },
-        {
           "name": "Tiktok Shop Creators",
           "description": "(Apify Scraper) TikTok Shop Creators - Gain powerful insights into TikTok Shop creators — their performance (GMV, units sold, engagement), audience, and content trends — all in one request.",
           "auth": "apiKey",
@@ -191337,13 +190959,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/piotrv1001/tiktok-shop-product-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Shop Reviews Pro ⭐️",
-          "description": "(Apify Scraper) Extract TikTok Shop product reviews from product URLs, product IDs, or search-discovered products. Collect rating, review text, reviewer metadata, media flags, and product context for ecommerce intelligence.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-shop-reviews-pro?fpr=thanhnguyxn"
         },
         {
           "name": "TikTok Shop Reviews Scraper",
@@ -192303,13 +191918,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/cryptosignals/twitch-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Twitch Search Pro",
-          "description": "(Apify Scraper) The fastest and cheapest Twitch search scraper for finding channels by keyword, niche, game, brand term, or username fragment. Export clean Twitch channel results with followers, live status, viewers, stream titles, descriptions, avatars, and chan...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/twitch-search-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Twitch Streamer & Channel Analytics",
@@ -199689,7 +199297,7 @@
       "id": "apify-videos",
       "emoji": "📹",
       "name": "Apify Videos",
-      "api_count": 694,
+      "api_count": 693,
       "apis": [
         {
           "name": "🇨🇳 Bilibili Video Comments · B站视频评论采集",
@@ -202035,13 +201643,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/buseta/tiktok-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok Search API 🔥",
-          "description": "(Apify Scraper) The fastest and cheapest way to search TikTok by keyword. Extract video data, engagement stats, and creator info.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sentry/tiktok-search-api?fpr=thanhnguyxn"
         },
         {
           "name": "Tiktok Search Scraper",
@@ -210505,7 +210106,7 @@
       "id": "jobs-career",
       "emoji": "💼",
       "name": "Jobs & Career",
-      "api_count": 18,
+      "api_count": 17,
       "apis": [
         {
           "name": "Adzuna",
@@ -210576,13 +210177,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
-        },
-        {
-          "name": "Juju",
-          "description": "Job search engine.",
-          "auth": "apiKey",
-          "https": false,
-          "link": "http://www.juju.com/publisher/spec/"
         },
         {
           "name": "Reed",
