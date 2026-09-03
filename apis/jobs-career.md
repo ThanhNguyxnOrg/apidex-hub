@@ -12,7 +12,6 @@
 | **Jobicy** | Remote job listings feed API. | No | ✅ | [Link](https://jobicy.com/jobs-rss-feed) |
 | **Jooble** | Job search engine. | 🔑 ApiKey | ✅ | [Link](https://jooble.org/api/about) |
 | **JSearch** | Job search API (via RapidAPI). | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch) |
-| **Juju** | Job search engine. | 🔑 ApiKey | No | [Link](http://www.juju.com/publisher/spec/) |
 | **Reed** | UK job board API. | 🔑 ApiKey | ✅ | [Link](https://www.reed.co.uk/developers) |
 | **Remoteok** | API for remote jobs (often used for job board projects). | No | ✅ | [Link](https://remoteok.com/api) |
 | **The Muse** | Job search and company data. | 🔑 ApiKey | ✅ | [Link](https://www.themuse.com/developers/api/v2) |
