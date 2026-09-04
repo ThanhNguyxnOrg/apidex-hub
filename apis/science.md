@@ -30,7 +30,7 @@
 | **SHARE** | A free, open, dataset about research and scholarly activities. | No | ✅ | [Link](https://share.osf.io/api/v2/) |
 | **Solar System OpenData** | Solar system planets and moons data (**No Auth**). | No | ✅ | [Link](https://api.le-systeme-solaire.net/en/) |
 | **SpaceX API** | SpaceX launches, rockets, capsules, and Starlink data (**No Auth**). | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |
-| **Sunrise Sunset** | Sunrise and sunset times for any location (**No Auth**). | No | ✅ | [Link](https://sunrise-sunset.org/api) |
+| **Sunrise Sunset** | Sunrise and sunset times for any location (**No Auth**). | No | ✅ | [Link](https://sunrisesunset.io/api/) |
 | **TLE** | Satellite information. | No | ✅ | [Link](https://tle.ivanstanojevic.me/#/docs) |
 | **USGS Earthquake** | Real-time earthquake data (**No Auth**). | No | ✅ | [Link](https://earthquake.usgs.gov/fdsnws/event/1/) |
 | **USGS Water Services** | Water quality and level info for rivers and lakes. | No | ✅ | [Link](https://waterservices.usgs.gov/) |

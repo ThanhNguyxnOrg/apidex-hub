@@ -26,7 +26,7 @@
 | **QWeather** | Location-based weather data. | 🔑 ApiKey | ✅ | [Link](https://dev.qweather.com/en/) |
 | **RainViewer** | Weather radar. | No | ✅ | [Link](https://www.rainviewer.com/api.html) |
 | **Storm Glass** | Global marine weather from multiple sources. | 🔑 ApiKey | ✅ | [Link](https://stormglass.io/) |
-| **Sunrise-Sunset** | Sunrise and sunset times for any location (**No Auth**). | No | ✅ | [Link](https://sunrise-sunset.org/api) |
+| **Sunrise-Sunset** | Sunrise and sunset times for any location (**No Auth**). | No | ✅ | [Link](https://sunrisesunset.io/api/) |
 | **Tomorrow** | Weather API Powered by Proprietary Technology. | 🔑 ApiKey | ✅ | [Link](https://docs.tomorrow.io) |
 | **US Weather** | US National Weather Service. | No | ✅ | [Link](https://www.weather.gov/documentation/services-web-api) |
 | **Visual Crossing** | Global weather data and forecasts. | 🔑 ApiKey | ✅ | [Link](https://www.visualcrossing.com/weather-api) |
