@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-03T09:13:44.946607+00:00",
+    "generated_at": "2026-09-04T03:39:07.017334+00:00",
     "source": "README.md",
-    "total_apis": 30599,
+    "total_apis": 30558,
     "total_categories": 78,
     "no_auth_count": 2105,
-    "api_key_count": 28351,
+    "api_key_count": 28310,
     "oauth_count": 143,
-    "https_count": 29052,
+    "https_count": 29011,
     "https_percentage": 95
   },
   "categories": [
@@ -4709,7 +4709,7 @@
       "id": "apify-ai",
       "emoji": "🧠",
       "name": "Apify AI",
-      "api_count": 1497,
+      "api_count": 1479,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -6203,13 +6203,6 @@
           "link": "https://apify.com/hello.datawizards/airbnb-reviews-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Airbnb Reviews Scraper — Sort by Rating, Date & More",
-          "description": "(Apify Scraper) Scrape reviews from any Airbnb listing with full control over sort order — Most Recent, Lowest Rated, Highest Rated, or Most Relevant. Get guest profiles, star ratings, review text, translations, and host responses in clean, structured data ready ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/misterkhan/airbnb-smart-auditor?fpr=thanhnguyxn"
-        },
-        {
           "name": "Airfocus MCP Server",
           "description": "(Apify Scraper) Connect your AI assistant to Airfocus - the modular product management platform. This MCP server enables AI tools to read, search, and manage items across your Airfocus workspaces.",
           "auth": "apiKey",
@@ -7302,20 +7295,6 @@
           "link": "https://apify.com/ryanclinton/core-academic-search?fpr=thanhnguyxn"
         },
         {
-          "name": "Corporate Deep Research MCP",
-          "description": "(Apify Scraper) Deep corporate intelligence combining financial health, reputation risk, and governance analysis for AI agents via the Model Context Protocol.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/corporate-deep-research-mcp?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Corporate Political Exposure MCP Server",
-          "description": "(Apify Scraper) Political risk and influence mapping intelligence for AI agents via the Model Context Protocol.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/corporate-political-exposure-mcp?fpr=thanhnguyxn"
-        },
-        {
           "name": "Cosmeprofile Parser Spider",
           "description": "(Apify Scraper) Extract detailed product reviews from Cosme, a Japanese beauty site, with the Cosmeprofile Parser Spider. Gather insights on consumer opinions and market trends. Features include customizable inputs, efficient performance, and versatile output for...",
           "auth": "apiKey",
@@ -7433,13 +7412,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/cv-optimizer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Cybersecurity Intelligence MCP Server",
-          "description": "(Apify Scraper) MCP intelligence server for cybersecurity intelligence detection and analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/cybersecurity-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Cybersecurity Vuln Mcp",
@@ -7764,13 +7736,6 @@
           "link": "https://apify.com/codingfrontend/ecourts-case-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "EIA US Energy Data Search",
-          "description": "(Apify Scraper) US energy data from the Energy Information Administration: electricity prices, natural gas, petroleum, and state energy profiles.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/eia-energy-data?fpr=thanhnguyxn"
-        },
-        {
           "name": "EMA European Medicines Search",
           "description": "(Apify Scraper) Search the European Medicines Agency (EMA) database for medicines authorized across the European Union. This actor queries the official EMA medicines dataset -- updated twice daily -- and returns structured, clean data on human and veterinary medi...",
           "auth": "apiKey",
@@ -7804,13 +7769,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ryanclinton/epo-patent-search?fpr=thanhnguyxn"
-        },
-        {
-          "name": "ESG Supply Chain Risk MCP Server",
-          "description": "(Apify Scraper) ESG due diligence intelligence via the Model Context Protocol.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/esg-supply-chain-risk-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "ESPN MCP Server - Live Sports Scores & Stats for AI",
@@ -9619,13 +9577,6 @@
           "link": "https://apify.com/getdataforme/ihg-reviews-spider?fpr=thanhnguyxn"
         },
         {
-          "name": "ILAB Supply Chain - Forced & Child Labor Risk",
-          "description": "(Apify Scraper) Supply chain compliance intelligence from **7 DOL ILAB datasets**: ImportWatch, LaborShield, and Child Labor Reports.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/ilab-supply-chain-intel?fpr=thanhnguyxn"
-        },
-        {
           "name": "Image Metadata Extractor - EXIF, GPS, Camera Data",
           "description": "(Apify Scraper) Extract EXIF, XMP, IPTC metadata from any image URL including camera make/model, GPS coordinates, date taken, ISO, aperture, shutter speed, copyright, and keywords. Export data, run via API, schedule and monitor runs, or integrate with other tools.",
           "auth": "apiKey",
@@ -9757,13 +9708,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/alizarin_refrigerator-owner/industry-research-suite?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Influencer Brand Safety Intelligence MCP Server",
-          "description": "(Apify Scraper) Creator vetting and brand risk intelligence via the Model Context Protocol.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/influencer-brand-safety-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Influencer Discovery Agent",
@@ -10030,13 +9974,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ryanclinton/ip-geolocation-lookup?fpr=thanhnguyxn"
-        },
-        {
-          "name": "IP Patent & Trademark MCP Server",
-          "description": "(Apify Scraper) MCP intelligence server for ip patent trademark detection and analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/ip-patent-trademark-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Italian  Companies Data Scraper",
@@ -10508,13 +10445,6 @@
           "link": "https://apify.com/getdataforme/lodge-parser-spider?fpr=thanhnguyxn"
         },
         {
-          "name": "Logistics Freight Intelligence MCP Server",
-          "description": "(Apify Scraper) Supply chain and freight compliance intelligence for global trade operations. This MCP server orchestrates 9 data sources covering weather disruption, disaster alerts, sanctions screening, trade flows, currency volatility, and economic indicators.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/logistics-freight-intelligence-mcp?fpr=thanhnguyxn"
-        },
-        {
           "name": "Loom Transcript Scraper: API-fast Metadata & Text",
           "description": "(Apify Scraper) Extract Loom video metadata and full transcripts (plain text, VTT, SRT) at scale. HTTP-only, API-fast, no browser overhead. Drop-in for Zendesk, HubSpot, Slack. Get clean text in seconds. Skip alternatives with high compute cost. $0.01 per video.",
           "auth": "apiKey",
@@ -10527,13 +10457,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/makework36/lovable-sites-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "M&A Target Intelligence MCP Server",
-          "description": "(Apify Scraper) Pre-acquisition screening intelligence for mergers and acquisitions due diligence. This MCP server orchestrates 16 Apify actors across financial filings, intellectual property databases, workforce indicators, technology assessment, competitive pos...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/m-and-a-target-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Macys Scraper",
@@ -10590,13 +10513,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/lexis-solutions/manualslib-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Maritime Shipping Intelligence MCP Server",
-          "description": "(Apify Scraper) Port and vessel compliance intelligence for the maritime industry. This MCP server orchestrates 8 data sources covering sanctions screening, weather disruption, trade flow analysis, corporate transparency, and legal entity verification.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/maritime-shipping-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Markdown Maker: HTML to Markdown 📝",
@@ -10851,13 +10767,6 @@
           "link": "https://apify.com/thescrapelab/screenplay-script-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "MSHA Mining Safety & Health Data",
-          "description": "(Apify Scraper) Comprehensive mining safety intelligence from the **Mine Safety and Health Administration (MSHA)**. Searches 86,000+ mines across the US and joins data from **5 DOL API datasets** — mines, violations, inspections, accidents, and assessments — with...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/msha-mining-safety?fpr=thanhnguyxn"
-        },
-        {
           "name": "Multilingual Data Transformer",
           "description": "(Apify Scraper) Transform any JSON data into any language with AI-powered translation. Supports 16+ languages. Perfect for e-commerce, content localization, and data processing. Pay-per-word pricing. Features: ✨ Universal JSON support  🌍 16+ languages, French, G...",
           "auth": "apiKey",
@@ -11094,13 +11003,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ryanclinton/nonprofit-explorer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Nonprofit Grant Intelligence MCP Server",
-          "description": "(Apify Scraper) Philanthropic due diligence intelligence for foundations, corporate giving programs, and grant writers. This MCP server orchestrates 7 data sources across IRS 990 financial data, federal grant opportunities, federal award history, UK charity regis...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/nonprofit-grant-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Noon Product Info Scraper",
@@ -11479,13 +11381,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/red.cars/pharma-pipeline-intelligence-mcp?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Pharma Pipeline Intelligence MCP Server",
-          "description": "(Apify Scraper) Drug pipeline competitive intelligence and threat scoring for pharmaceutical companies, biotech investors, and medical affairs teams.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/pharma-pipeline-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Pinecone GPT Chatbot",
@@ -12363,13 +12258,6 @@
           "link": "https://apify.com/redoubtable_bubble/sale-discount-monitor?fpr=thanhnguyxn"
         },
         {
-          "name": "SAM.gov Government Contract Monitor",
-          "description": "(Apify Scraper) SAM.gov Government Contract Monitor is an Apify actor that searches and retrieves federal government contract opportunities directly from the official SAM.gov (System for Award Management) API. The U.S.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/sam-gov-contract-monitor?fpr=thanhnguyxn"
-        },
-        {
           "name": "Schema Markup & JSON-LD Scraper - Structured Data API",
           "description": "(Apify Scraper) Extract schema markup, JSON-LD, Open Graph, Twitter Cards, and meta tags from any URL. Structured data scraper/API for SEO audits, rich result checks, schema validation, and competitor research.",
           "auth": "apiKey",
@@ -13047,13 +12935,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parsebird/superinvestor-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Supply Chain Digital Twin MCP",
-          "description": "(Apify Scraper) MCP intelligence server for supply chain digital twin detection and analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/supply-chain-digital-twin-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Supply Chain Intel",
@@ -14477,13 +14358,6 @@
           "link": "https://apify.com/scrapeio/whatsapp-scraper-premium?fpr=thanhnguyxn"
         },
         {
-          "name": "WHO Global Health Observatory Data Search",
-          "description": "(Apify Scraper) Search the World Health Organization's Global Health Observatory for health statistics across 194 member countries.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/who-gho-search?fpr=thanhnguyxn"
-        },
-        {
           "name": "Whois Domain Lookup",
           "description": "(Apify Scraper) Fast WHOIS domain lookup. Get domain registration data including status, nameservers, registrar info, expiration dates, DNSSEC, and contacts. Supports all major TLDs (.com, .org, .io, .uk, etc). $0.001 per result.",
           "auth": "apiKey",
@@ -15196,7 +15070,7 @@
       "id": "apify-automation",
       "emoji": "⚙️",
       "name": "Apify Automation",
-      "api_count": 5376,
+      "api_count": 5373,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -16709,13 +16583,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/reviewly/airbnb-reviews-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Airbnb Reviews Scraper — Sort by Rating, Date & More",
-          "description": "(Apify Scraper) Scrape reviews from any Airbnb listing with full control over sort order — Most Recent, Lowest Rated, Highest Rated, or Most Relevant. Get guest profiles, star ratings, review text, translations, and host responses in clean, structured data ready ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/misterkhan/airbnb-smart-auditor?fpr=thanhnguyxn"
         },
         {
           "name": "Airbnb Reviews Scraper · Bulk Export for Any Listing",
@@ -24857,13 +24724,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/constant_quadruped/excel-mcp-server?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Exchange Rate Intelligence — FX Trends, Strength & Risk Signals",
-          "description": "(Apify Scraper) Turn ECB exchange rates into decisions. Get per-currency trend, volatility, risk and shock signals, a currency-strength ranking, historical context versus 25 years, an event feed and recommended actions across 30+ currencies. Includes monitoring, ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/exchange-rate-history?fpr=thanhnguyxn"
         },
         {
           "name": "Execute Javascript Code",
@@ -38801,13 +38661,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/jungle_synthesizer/philgeps-procurement-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Phone Number Finder — Direct Dials from Websites",
-          "description": "(Apify Scraper) Find mobile, direct-dial, and company phone numbers for any prospect list. Two-step waterfall: 3B-record database first, then company website scraping as fallback. Pay $0.10 only when a number is found — no subscription, no per-seat fee.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/phone-number-finder?fpr=thanhnguyxn"
         },
         {
           "name": "Phone Number Validator - Bulk International Phone Validation",
@@ -56393,7 +56246,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 3905,
+      "api_count": 3890,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -61562,20 +61415,6 @@
           "link": "https://apify.com/ryanclinton/opencorporates-search?fpr=thanhnguyxn"
         },
         {
-          "name": "Corporate Deep Research MCP",
-          "description": "(Apify Scraper) Deep corporate intelligence combining financial health, reputation risk, and governance analysis for AI agents via the Model Context Protocol.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/corporate-deep-research-mcp?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Corporate Political Exposure MCP Server",
-          "description": "(Apify Scraper) Political risk and influence mapping intelligence for AI agents via the Model Context Protocol.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/corporate-political-exposure-mcp?fpr=thanhnguyxn"
-        },
-        {
           "name": "Cosing Ingredient Checker",
           "description": "(Apify Scraper) EU CosIng Cosmetic Ingredient Safety Checker. Structured data export for lead generation, enrichment, and competitive research.",
           "auth": "apiKey",
@@ -61945,13 +61784,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Cybersecurity Intelligence MCP Server",
-          "description": "(Apify Scraper) MCP intelligence server for cybersecurity intelligence detection and analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/cybersecurity-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "D&B DUNS Lookup & Company Intelligence",
@@ -63466,13 +63298,6 @@
           "link": "https://apify.com/vnx0/erome-downloader?fpr=thanhnguyxn"
         },
         {
-          "name": "ESG Supply Chain Risk MCP Server",
-          "description": "(Apify Scraper) ESG due diligence intelligence via the Model Context Protocol.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/esg-supply-chain-risk-mcp?fpr=thanhnguyxn"
-        },
-        {
           "name": "eSIMDB Country Scraper",
           "description": "(Apify Scraper) This Apify actor collects eSIM data plans for specific countries. It collects comprehensive data such as provider information, plan details and pricing from esimdb.com and saves it in the Apify dataset. Users can easily retrieve relevant eSIM data...",
           "auth": "apiKey",
@@ -63821,13 +63646,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/constant_quadruped/excel-mcp-server?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Exchange Rate Intelligence — FX Trends, Strength & Risk Signals",
-          "description": "(Apify Scraper) Turn ECB exchange rates into decisions. Get per-currency trend, volatility, risk and shock signals, a currency-strength ranking, historical context versus 25 years, an event feed and recommended actions across 30+ currencies. Includes monitoring, ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/exchange-rate-history?fpr=thanhnguyxn"
         },
         {
           "name": "Execute Javascript Code",
@@ -69136,13 +68954,6 @@
           "link": "https://apify.com/shahidirfan/inflation-tracker-api?fpr=thanhnguyxn"
         },
         {
-          "name": "Influencer Brand Safety Intelligence MCP Server",
-          "description": "(Apify Scraper) Creator vetting and brand risk intelligence via the Model Context Protocol.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/influencer-brand-safety-intelligence-mcp?fpr=thanhnguyxn"
-        },
-        {
           "name": "Influencer Discovery - Find Influencers Across Social Platforms",
           "description": "(Apify Scraper) Discover influencers across Instagram, TikTok, LinkedIn, YouTube, and Twitter by niche, hashtags, engagement rate, and follower count. Perfect for influencer marketing campaigns and brand partnerships. Multi-Platform Discovery  Niche Targeting Eng...",
           "auth": "apiKey",
@@ -69820,13 +69631,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/gentle_cloud/ip-lookup-api?fpr=thanhnguyxn"
-        },
-        {
-          "name": "IP Patent & Trademark MCP Server",
-          "description": "(Apify Scraper) MCP intelligence server for ip patent trademark detection and analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/ip-patent-trademark-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "IP WHOIS & Inspector",
@@ -71047,13 +70851,6 @@
           "link": "https://apify.com/alizarin_refrigerator-owner/localfalcon-grid?fpr=thanhnguyxn"
         },
         {
-          "name": "Logistics Freight Intelligence MCP Server",
-          "description": "(Apify Scraper) Supply chain and freight compliance intelligence for global trade operations. This MCP server orchestrates 9 data sources covering weather disruption, disaster alerts, sanctions screening, trade flows, currency volatility, and economic indicators.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/logistics-freight-intelligence-mcp?fpr=thanhnguyxn"
-        },
-        {
           "name": "Loom Transcript Scraper: API-fast Metadata & Text",
           "description": "(Apify Scraper) Extract Loom video metadata and full transcripts (plain text, VTT, SRT) at scale. HTTP-only, API-fast, no browser overhead. Drop-in for Zendesk, HubSpot, Slack. Get clean text in seconds. Skip alternatives with high compute cost. $0.01 per video.",
           "auth": "apiKey",
@@ -71115,13 +70912,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/delightful_unicorn/lyrics-scraper-api?fpr=thanhnguyxn"
-        },
-        {
-          "name": "M&A Target Intelligence MCP Server",
-          "description": "(Apify Scraper) Pre-acquisition screening intelligence for mergers and acquisitions due diligence. This MCP server orchestrates 16 Apify actors across financial filings, intellectual property databases, workforce indicators, technology assessment, competitive pos...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/m-and-a-target-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Made In China Scraper",
@@ -71241,13 +71031,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/shahidirfan/marham-pk-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Maritime Shipping Intelligence MCP Server",
-          "description": "(Apify Scraper) Port and vessel compliance intelligence for the maritime industry. This MCP server orchestrates 8 data sources covering sanctions screening, weather disruption, trade flow analysis, corporate transparency, and legal entity verification.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/maritime-shipping-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Markdown Maker: HTML to Markdown 📝",
@@ -72587,13 +72370,6 @@
           "link": "https://apify.com/ryanclinton/nonprofit-explorer?fpr=thanhnguyxn"
         },
         {
-          "name": "Nonprofit Grant Intelligence MCP Server",
-          "description": "(Apify Scraper) Philanthropic due diligence intelligence for foundations, corporate giving programs, and grant writers. This MCP server orchestrates 7 data sources across IRS 990 financial data, federal grant opportunities, federal award history, UK charity regis...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/nonprofit-grant-intelligence-mcp?fpr=thanhnguyxn"
-        },
-        {
           "name": "Noon.com Product Scraper",
           "description": "(Apify Scraper) Efficiently extract product data from Noon.com, the Middle East's leading e-commerce marketplace. This lightweight actor quickly gathers prices, specifications, and images. For the most stable results and to avoid blocking, the use of residential ...",
           "auth": "apiKey",
@@ -73432,13 +73208,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/renaissant_overload/phantom-leads-google-maps-business-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Pharma Pipeline Intelligence MCP Server",
-          "description": "(Apify Scraper) Drug pipeline competitive intelligence and threat scoring for pharmaceutical companies, biotech investors, and medical affairs teams.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/pharma-pipeline-intelligence-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Pharmacy Online AU Product Scraper",
@@ -75737,13 +75506,6 @@
           "link": "https://apify.com/fortuitous_pirate/sam-gov-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "SAM.gov Government Contract Monitor",
-          "description": "(Apify Scraper) SAM.gov Government Contract Monitor is an Apify actor that searches and retrieves federal government contract opportunities directly from the official SAM.gov (System for Award Management) API. The U.S.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/sam-gov-contract-monitor?fpr=thanhnguyxn"
-        },
-        {
           "name": "Sanctions & Watchlist Screening — Risk-Scored Decisions",
           "description": "(Apify Scraper) Screen names against OFAC, EU, UN, UK sanctions, PEP and watchlist data via OpenSanctions and get a risk-scored decision per match: block, escalate, review, or clear, with the evidence, review priority, and change monitoring. Batch screening and o...",
           "auth": "apiKey",
@@ -77870,13 +77632,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/apify/super-scraper-api?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Supply Chain Digital Twin MCP",
-          "description": "(Apify Scraper) MCP intelligence server for supply chain digital twin detection and analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/supply-chain-digital-twin-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Surfline Forecast",
@@ -81706,13 +81461,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/devscrapper/whatsapp-number-validator?fpr=thanhnguyxn"
-        },
-        {
-          "name": "WHO Global Health Observatory Data Search",
-          "description": "(Apify Scraper) Search the World Health Organization's Global Health Observatory for health statistics across 194 member countries.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/who-gho-search?fpr=thanhnguyxn"
         },
         {
           "name": "Whois Domain Lookup",
@@ -112383,7 +112131,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 4422,
+      "api_count": 4421,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -132672,13 +132420,6 @@
           "link": "https://apify.com/jungle_synthesizer/philgeps-procurement-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Phone Number Finder — Direct Dials from Websites",
-          "description": "(Apify Scraper) Find mobile, direct-dial, and company phone numbers for any prospect list. Two-step waterfall: 3B-record database first, then company website scraping as fallback. Pay $0.10 only when a number is found — no subscription, no per-seat fee.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/phone-number-finder?fpr=thanhnguyxn"
-        },
-        {
           "name": "Phone Number Lookup API",
           "description": "(Apify Scraper) All-in-one phone intelligence API. Validates any number, returns carrier, line type (mobile/landline/VoIP), country, region, owner name (US/CA), fraud score, breach data, WhatsApp/Telegram presence, and reverse-lookup URLs in a single call. 240+ c...",
           "auth": "apiKey",
@@ -149354,7 +149095,7 @@
       "id": "apify-other",
       "emoji": "⚠️",
       "name": "Apify Other",
-      "api_count": 1956,
+      "api_count": 1953,
       "apis": [
         {
           "name": "☎️ Bulk Phone Validator",
@@ -152822,13 +152563,6 @@
           "link": "https://apify.com/easyapi/efinancialcareers-jobs-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "EIA US Energy Data Search",
-          "description": "(Apify Scraper) US energy data from the Energy Information Administration: electricity prices, natural gas, petroleum, and state energy profiles.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/eia-energy-data?fpr=thanhnguyxn"
-        },
-        {
           "name": "Electrolux Product Scraper",
           "description": "(Apify Scraper) Extract Electrolux product data across 31 European markets. Scrape prices, EAN codes, stock availability, and product images for ovens, refrigerators, washing machines, dishwashers, hobs, vacuum cleaners, and more home appliances.",
           "auth": "apiKey",
@@ -155629,13 +155363,6 @@
           "link": "https://apify.com/happyendpoint/ikea-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "ILAB Supply Chain - Forced & Child Labor Risk",
-          "description": "(Apify Scraper) Supply chain compliance intelligence from **7 DOL ILAB datasets**: ImportWatch, LaborShield, and Child Labor Reports.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/ilab-supply-chain-intel?fpr=thanhnguyxn"
-        },
-        {
           "name": "**Illinois License Scraper \\",
           "description": "IDFPR 1.2M+ Records**",
           "auth": "No",
@@ -157062,13 +156789,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/sercul/msc-cruises-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "MSHA Mining Safety & Health Data",
-          "description": "(Apify Scraper) Comprehensive mining safety intelligence from the **Mine Safety and Health Administration (MSHA)**. Searches 86,000+ mines across the US and joins data from **5 DOL API datasets** — mines, violations, inspections, accidents, and assessments — with...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ryanclinton/msha-mining-safety?fpr=thanhnguyxn"
         },
         {
           "name": "MTGTop8 Scraper - Magic Tournament & Decklist Archive",
@@ -195712,7 +195432,7 @@
       "id": "apify-travel",
       "emoji": "✈️",
       "name": "Apify Travel",
-      "api_count": 511,
+      "api_count": 510,
       "apis": [
         {
           "name": "✈️ Google Flights Scraper",
@@ -196189,13 +195909,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/automation-lab/airbnb-reviews?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Airbnb Reviews Scraper — Sort by Rating, Date & More",
-          "description": "(Apify Scraper) Scrape reviews from any Airbnb listing with full control over sort order — Most Recent, Lowest Rated, Highest Rated, or Most Relevant. Get guest profiles, star ratings, review text, translations, and host responses in clean, structured data ready ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/misterkhan/airbnb-smart-auditor?fpr=thanhnguyxn"
         },
         {
           "name": "Airbnb Reviews Scraper · Bulk Export for Any Listing",
@@ -212375,7 +212088,7 @@
           "description": "Sunrise and sunset times for any location (**No Auth**).",
           "auth": "No",
           "https": true,
-          "link": "https://sunrise-sunset.org/api"
+          "link": "https://sunrisesunset.io/api/"
         },
         {
           "name": "TLE",
@@ -214768,7 +214481,7 @@
           "description": "Sunrise and sunset times for any location (**No Auth**).",
           "auth": "No",
           "https": true,
-          "link": "https://sunrise-sunset.org/api"
+          "link": "https://sunrisesunset.io/api/"
         },
         {
           "name": "Tomorrow",
