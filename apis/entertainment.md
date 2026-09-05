@@ -3,7 +3,6 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Activities when get bored** | Random suggestions for activities. | No | ✅ | [Link](https://rapidapi.com/bored/api/bored-api/) |
-| **Foodish** | Random food images API. | No | ✅ | [Link](https://foodish-api.com/) |
 | **Bored API** | Get random activity suggestions when you are bored (**No Auth**). | No | ✅ | [Link](https://bored-api.appbrewery.com/) |
 | **FOAAS** | Fuck Off As A Service. | No | No | [Link](http://www.foaas.com/) |
 | **Fun Fact** | A simple HTTPS api that can randomly select and return a fact from the FFA da... | No | ✅ | [Link](https://api.aakhilv.me) |
