@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-04T03:39:07.017334+00:00",
+    "generated_at": "2026-09-05T04:07:59.477449+00:00",
     "source": "README.md",
-    "total_apis": 30558,
+    "total_apis": 30554,
     "total_categories": 78,
-    "no_auth_count": 2105,
-    "api_key_count": 28310,
+    "no_auth_count": 2104,
+    "api_key_count": 28307,
     "oauth_count": 143,
-    "https_count": 29011,
+    "https_count": 29007,
     "https_percentage": 95
   },
   "categories": [
@@ -56246,7 +56246,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 3890,
+      "api_count": 3889,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -56604,13 +56604,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/instagram-scraper/instagram-profile-posts-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🔥Instagram Scraper: Profiles, Reels, Tagged,Location, Hashtags",
-          "description": "(Apify Scraper) This Actor scrapes public Instagram posts and reels (no login required) using query-driven inputs (usernames and direct post/reel URLs). It is optimized for fast post-detail output; list pages are used only to discover shortcodes.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/aimscrape/instagram-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "🔥LinkedIn Job Scraper",
@@ -112131,7 +112124,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 4421,
+      "api_count": 4420,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -112951,13 +112944,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/instagram-scraper/instagram-profile-posts-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🔥Instagram Scraper: Profiles, Reels, Tagged,Location, Hashtags",
-          "description": "(Apify Scraper) This Actor scrapes public Instagram posts and reels (no login required) using query-driven inputs (usernames and direct post/reel URLs). It is optimized for fast post-detail output; list pages are used only to discover shortcodes.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/aimscrape/instagram-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "🗺️ Google Maps Scraper — Emails, Reviews & Photos",
@@ -176566,7 +176552,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 2694,
+      "api_count": 2693,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -177029,13 +177015,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/instagram-scraper/instagram-profile-posts-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🔥Instagram Scraper: Profiles, Reels, Tagged,Location, Hashtags",
-          "description": "(Apify Scraper) This Actor scrapes public Instagram posts and reels (no login required) using query-driven inputs (usernames and direct post/reel URLs). It is optimized for fast post-detail output; list pages are used only to discover shortcodes.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/aimscrape/instagram-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "🔥Youtube Advanced Search Scraper",
@@ -207036,7 +207015,7 @@
       "id": "entertainment",
       "emoji": "🎮",
       "name": "Entertainment",
-      "api_count": 16,
+      "api_count": 15,
       "apis": [
         {
           "name": "Activities when get bored",
@@ -207044,13 +207023,6 @@
           "auth": "No",
           "https": true,
           "link": "https://rapidapi.com/bored/api/bored-api/"
-        },
-        {
-          "name": "Foodish",
-          "description": "Random food images API.",
-          "auth": "No",
-          "https": true,
-          "link": "https://foodish-api.com/"
         },
         {
           "name": "Bored API",
