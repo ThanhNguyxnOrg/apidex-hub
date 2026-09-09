@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-05T04:07:59.477449+00:00",
+    "generated_at": "2026-09-09T05:32:57.932655+00:00",
     "source": "README.md",
-    "total_apis": 30554,
+    "total_apis": 30549,
     "total_categories": 78,
     "no_auth_count": 2104,
-    "api_key_count": 28307,
+    "api_key_count": 28302,
     "oauth_count": 143,
-    "https_count": 29007,
+    "https_count": 29002,
     "https_percentage": 95
   },
   "categories": [
@@ -487,7 +487,7 @@
       "id": "apify-agents",
       "emoji": "🤖",
       "name": "Apify Agents",
-      "api_count": 602,
+      "api_count": 601,
       "apis": [
         {
           "name": "🌟 Youtube Transcript Scraper - $0.5 per 1k",
@@ -3969,13 +3969,6 @@
           "link": "https://apify.com/futurizerush/threads-liker-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Threads Posts Scraper",
-          "description": "(Apify Scraper) Collect public Threads posts from user profiles without login. Save post text, media URLs, engagement metrics, public view counts when available, hashtags, mentions, timestamps, and profile details for social listening, research, and monitoring.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/futurizerush/threads-posts-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Threads Replies Scraper",
           "description": "(Apify Scraper) Extract Threads post replies and comments with author profile data, engagement metrics (likes, replies, reposts, quotes, shares, views), media (URLs, dimensions, alt text), quote and repost relationships, and verified badges.",
           "auth": "apiKey",
@@ -4709,7 +4702,7 @@
       "id": "apify-ai",
       "emoji": "🧠",
       "name": "Apify AI",
-      "api_count": 1479,
+      "api_count": 1478,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -13110,13 +13103,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/futurizerush/threads-liker-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Threads Posts Scraper",
-          "description": "(Apify Scraper) Collect public Threads posts from user profiles without login. Save post text, media URLs, engagement metrics, public view counts when available, hashtags, mentions, timestamps, and profile details for social listening, research, and monitoring.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/futurizerush/threads-posts-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Threads Replies Scraper",
@@ -176552,7 +176538,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 2693,
+      "api_count": 2691,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -189212,13 +189198,6 @@
         },
         {
           "name": "Threads Posts Scraper",
-          "description": "(Apify Scraper) Collect public Threads posts from user profiles without login. Save post text, media URLs, engagement metrics, public view counts when available, hashtags, mentions, timestamps, and profile details for social listening, research, and monitoring.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/futurizerush/threads-posts-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Threads Posts Scraper",
           "description": "(Apify Scraper) This scraper collects data from Threads (by Instagram), including posts, replies, and user profiles. It helps track trends, monitor user activity, and gather content for analysis.",
           "auth": "apiKey",
           "https": true,
@@ -191260,13 +191239,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/gentle_cloud/tiktok-videos-watermark-free-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok VideoScraper",
-          "description": "(Apify Scraper) TikTok VideoScraper — full public stats and metadata for a list of TikTok video/photo URLs: views, likes, comments, shares, saves, author info, music. Bulk-friendly.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sashaebashu/tiktok-video-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Tiktok Viral Challenge Finder",
@@ -198989,7 +198961,7 @@
       "id": "apify-videos",
       "emoji": "📹",
       "name": "Apify Videos",
-      "api_count": 693,
+      "api_count": 692,
       "apis": [
         {
           "name": "🇨🇳 Bilibili Video Comments · B站视频评论采集",
@@ -201685,13 +201657,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/gentle_cloud/tiktok-videos-watermark-free-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TikTok VideoScraper",
-          "description": "(Apify Scraper) TikTok VideoScraper — full public stats and metadata for a list of TikTok video/photo URLs: views, likes, comments, shares, saves, author info, music. Bulk-friendly.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/sashaebashu/tiktok-video-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "TikTok Viral Idea Script Generator API",
