@@ -5,7 +5,6 @@
 | **Harvard Art Museums** | Museum artwork data. | 🔑 ApiKey | ✅ | [Link](https://harvardartmuseums.org/collections/api) |
 | **Brandfetch** | Company logos and brand assets. | 🔑 ApiKey | ✅ | [Link](https://docs.brandfetch.com/) |
 | **Colormind** | AI-powered color palette generator (**No Auth**). | No | ✅ | [Link](http://colormind.io/api-access/) |
-| **ColourLovers** | Get various patterns, palettes and images. | No | No | [Link](http://www.colourlovers.com/api) |
 | **Cooper Hewitt** | Smithsonian Design Museum. | 🔑 ApiKey | ✅ | [Link](https://collection.cooperhewitt.org/api) |
 | **Dribbble** | Design community and portfolio. | 🔐 OAuth | ✅ | [Link](https://developer.dribbble.com/) |
 | **EmojiHub** | Random emoji data organized by category and group (**No Auth**). | No | ✅ | [Link](https://github.com/cheatsnake/emojihub) |

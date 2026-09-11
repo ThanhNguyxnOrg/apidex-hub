@@ -19,7 +19,7 @@
 | **LinkPreview** | Get JSON formatted summary with title, description and preview image for any ... | 🔑 ApiKey | ✅ | [Link](https://www.linkpreview.net) |
 | **Microlink.io** | Extract structured data from any website. | No | ✅ | [Link](https://microlink.io) |
 | **Nager.Date** | Public holidays for 100+ countries (**No Auth, no rate limit**). | No | ✅ | [Link](https://date.nager.at/Api) |
-| **Nasdaq Data Link** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://docs.data.nasdaq.com/) |
+| **Nasdaq Data Link** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://data.nasdaq.com/tools/api) |
 | **Nobel Prize** | Open data about nobel prizes and events. | No | ✅ | [Link](https://www.nobelprize.org/about/developer-zone-2/) |
 | **Open Data Minneapolis** | Spatial (GIS) and non-spatial city data for Minneapolis. | No | ✅ | [Link](https://opendata.minneapolismn.gov/) |
 | **openAFRICA** | Large datasets repository of African open data. | No | ✅ | [Link](https://africaopendata.org/) |

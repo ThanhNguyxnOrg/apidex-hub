@@ -7,7 +7,6 @@
 | **Collins** | Bilingual Dictionary and Thesaurus Data. | 🔑 ApiKey | ✅ | [Link](https://api.collinsdictionary.com/api/v1/documentation/html/) |
 | **Datamuse** | Word-finding query engine (**No Auth**). | No | ✅ | [Link](https://www.datamuse.com/api/) |
 | **Free Dictionary API** | Free English dictionary API. | No | ✅ | [Link](https://dictionaryapi.dev/) |
-| **Lingua Robot** | Word definitions and language detection (**No Auth**). | No | ✅ | [Link](https://www.linguarobot.io/) |
 | **Merriam-Webster** | Dictionary and thesaurus. | 🔑 ApiKey | ✅ | [Link](https://dictionaryapi.com/) |
 | **Oxford Dictionaries** | English dictionary and language data. | 🔑 ApiKey | ✅ | [Link](https://developer.oxforddictionaries.com/) |
 | **Purgomalum** | Profanity filter API. | No | ✅ | [Link](https://www.purgomalum.com/) |
