@@ -23,7 +23,6 @@
 | **Geocodio** | Geocoding and reverse geocoding for US/Canada. | 🔑 ApiKey | ✅ | [Link](https://www.geocod.io/docs/) |
 | **GeoDB Cities** | Get global city, region, and country data. | 🔑 ApiKey | ✅ | [Link](http://geodb-cities-api.wirefreethought.com/) |
 | **GeographQL** | A Country, State, and City GraphQL API. | No | ✅ | [Link](https://geographql.netlify.app) |
-| **Geokeo** | Geokeo geocoding service- with 2500 free api requests daily. | No | ✅ | [Link](https://geokeo.com) |
 | **geoPlugin** | IP geolocation and currency conversion. | No | ✅ | [Link](https://www.geoplugin.com) |
 | **Google Earth Engine** | A cloud-based platform for planetary-scale environmental data analysis. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/earth-engine/) |
 | **Google Maps** | Create/customize digital maps based on Google Maps data. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/maps/) |
