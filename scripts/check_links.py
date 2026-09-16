@@ -87,7 +87,7 @@ def has_cloudflare_protection(resp):
     return False
 
 
-def check_link(url, timeout=15, max_retries=3):
+def check_link(url, timeout=8, max_retries=2):
     """
     Check if a link is accessible with retry logic
     Returns: dict with status info
@@ -151,19 +151,19 @@ def check_link(url, timeout=15, max_retries=3):
             # SSL errors could be temporary (cert renewal in progress) or permanent
             # Mark as warning to avoid false positives
             if attempt < max_retries - 1:
-                time.sleep(2)
+                time.sleep(1)
                 continue
             return {'url': url, 'status': None, 'state': 'warning', 'note': 'SSL error (may be temporary cert issue)'}
         except requests.exceptions.Timeout:
             # Retry on timeout
             if attempt < max_retries - 1:
-                time.sleep(2)
+                time.sleep(1)
                 continue
             return {'url': url, 'status': None, 'state': 'warning', 'note': 'Timeout after retries (slow server)'}
         except requests.exceptions.ConnectionError as e:
             # Retry on connection errors (might be temporary)
             if attempt < max_retries - 1:
-                time.sleep(2)
+                time.sleep(1)
                 continue
             # After all retries, classify based on error type
             error_str = str(e).lower()
@@ -243,7 +243,7 @@ def main():
 
     # Check unique links with threading
     url_results = {}
-    with ThreadPoolExecutor(max_workers=15) as executor:
+    with ThreadPoolExecutor(max_workers=60) as executor:
         future_to_url = {executor.submit(check_link, url): url for url in unique_urls}
 
         completed = 0
