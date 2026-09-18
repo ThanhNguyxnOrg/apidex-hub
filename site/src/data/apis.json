@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-11T07:59:30.361105+00:00",
+    "generated_at": "2026-09-18T03:01:21.680813+00:00",
     "source": "README.md",
-    "total_apis": 30215,
+    "total_apis": 30161,
     "total_categories": 78,
-    "no_auth_count": 2097,
-    "api_key_count": 27975,
+    "no_auth_count": 2096,
+    "api_key_count": 27922,
     "oauth_count": 143,
-    "https_count": 28674,
+    "https_count": 28620,
     "https_percentage": 95
   },
   "categories": [
@@ -4688,7 +4688,7 @@
       "id": "apify-ai",
       "emoji": "🧠",
       "name": "Apify AI",
-      "api_count": 1474,
+      "api_count": 1468,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -5727,13 +5727,6 @@
           "link": "https://apify.com/fiery_dream/ai-code-review-agent?fpr=thanhnguyxn"
         },
         {
-          "name": "AI Company Lead Enrichment & Sales Intelligence",
-          "description": "(Apify Scraper) Find company websites, social profiles, contact pages, emails, recent news, lead scores, sales angles, and outreach templates from company names or domains.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/leads-data-scraper-ai?fpr=thanhnguyxn"
-        },
-        {
           "name": "AI Content Detector",
           "description": "(Apify Scraper) The AI Content Detector instantly analyzes how much of your text or file was written by AI. Verify content authenticity, boost your SEO, and maintain academic integrity. Secure your texts with fast, reliable results.",
           "auth": "apiKey",
@@ -6665,13 +6658,6 @@
           "link": "https://apify.com/lexis-solutions/betonline-ag-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Bilibili Pro Scraper",
-          "description": "(Apify Scraper) Four-mode Bilibili scraper: keyword search, video detail by BV/AID, user profile + uploads, popular feed. Returns title, description, author, plays, danmaku, likes, favorites, duration, publish time, cover. No login. For China video trends, KOL re...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/bilibili-pro-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Bilibili Scraper - Chinese Video Intelligence",
           "description": "(Apify Scraper) Extract Chinese Gen-Z video sentiment, danmaku reactions, and creator analytics from Bilibili (哔哩哔哩) — China's largest video platform with 300M+ users. Built for AI training, Chinese consumer equity research, and brand monitoring. Danmaku/coins/fa...",
           "auth": "apiKey",
@@ -7587,13 +7573,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/zhorex/douban-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Douyin Pro Scraper",
-          "description": "(Apify Scraper) Five-mode Douyin (China TikTok) scraper: keyword search, video detail, user profile + uploads, hashtag feed, hot search board. Returns caption, author, plays, likes, comments, shares, collects, cover, video URL, publish time, music. No login. For ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/douyin-pro-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Douyin Transcripts Scraper",
@@ -11838,13 +11817,6 @@
           "link": "https://apify.com/ac_devth/redbubble-intelligent-crawler?fpr=thanhnguyxn"
         },
         {
-          "name": "Reddit All-in-One Scraper",
-          "description": "(Apify Scraper) Scrape massive historical datasets across Reddit by extracting subreddits, complex search results, post content, and deep comment trees.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/taroyamada/reddit-all-in-one-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Reddit Answers API \"Ask Reddit\" - AI Insights for n8n Pipelines",
           "description": "(Apify Scraper) Extract AI-powered answers in 6 languages from Reddit discussions at scale. Structured JSON + markdown for n8n, Make, and LLM pipelines. Includes full post/comment context, quotes with citations, and subreddit metadata. 6 languages supported. No l...",
           "auth": "apiKey",
@@ -13532,13 +13504,6 @@
           "link": "https://apify.com/fastcrawler/twitter-x-ad-partnership-api?fpr=thanhnguyxn"
         },
         {
-          "name": "Twitter / X Pro Scraper",
-          "description": "(Apify Scraper) Four-mode Twitter / X scraper: keyword search, tweet detail by ID/URL, user profile + posts, trending topics. Returns text, author, likes, retweets, replies, views, media, language, publish time. No login. For sentiment, trends, KOL discovery, AI ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/twitter-pro-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "**Twitter Reply Scraper \\",
           "description": "$0.2/1K Tweets \\",
           "auth": "No",
@@ -14491,13 +14456,6 @@
           "link": "https://apify.com/shahidirfan/xbox-reviews-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Xiaohongshu (RedNote) Pro Scraper",
-          "description": "(Apify Scraper) Five-mode Xiaohongshu / RedNote scraper: keyword search, note details, user profile, topic feed, trending. Returns title, body, likes, collects, comments, hashtags, images, video, location, time. No cookies. For trend tracking, AI training data, m...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/xiaohongshu-pro-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "XML Sitemap Scraper & URL Extractor API - SEO Crawler",
           "description": "(Apify Scraper) Extract URLs from XML sitemaps and robots.txt for SEO crawls, audits, content migrations, and RAG indexing. Auto-discovers sitemap files, parses nested sitemap indexes, and exports URL, lastmod, priority, changefreq, and image metadata in bulk.",
           "auth": "apiKey",
@@ -15014,7 +14972,7 @@
       "id": "apify-automation",
       "emoji": "⚙️",
       "name": "Apify Automation",
-      "api_count": 5286,
+      "api_count": 5279,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -17227,13 +17185,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/rastriq/amazon-reviews-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Amazon Reviews Scraper",
-          "description": "(Apify Scraper) $0.5 / 1000 results. Extract Verified & Public Customer Reviews from Amazon Products. Collect customer reviews from Amazon product ASIN. Extract content, ratings, reviewer profiles. Product research, sentiment analysis, brand monitoring, and compe...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/saswave/amazon-reviews-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Amazon Reviews Scraper — Ratings & Sentiment",
@@ -26700,13 +26651,6 @@
           "link": ""
         },
         {
-          "name": "Funda.nl & FundainBusiness.nl Scraper (Search + Detail)",
-          "description": "(Apify Scraper) High-performance hybrid scraper for Funda.nl (residential properties: apartments, houses) and FundainBusiness.nl (commercial real estate).",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ahmed_jasarevic/funda-hybrid-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Funda.nl Real Estate Scraper",
           "description": "(Apify Scraper) Extract detailed real estate listings from Funda.nl, the leading Dutch property platform. Instantly gather comprehensive data on houses, apartments, prices, and addresses. Perfect for real estate market analysis, property monitoring, and investmen...",
           "auth": "apiKey",
@@ -28457,13 +28401,6 @@
           "link": "https://apify.com/oneary/google-maps-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Google Maps Scraper - Cheap",
-          "description": "(Apify Scraper) Extract Google Maps business leads globally with phones, websites, ratings, categories, opening hours, images, popular times, company contacts, and optional reviews. Launch pricing available for early users.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/google-maps-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Google Maps Scraper - Find Businesses Without Websites",
           "description": "(Apify Scraper) Find local businesses without websites on Google Maps. Perfect for lead generation, web agencies, and digital marketing. Extract contact info for businesses that need websites. Smart filtering by rating and reviews.",
           "auth": "apiKey",
@@ -28742,13 +28679,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/practicaltools/apify-google-news-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Google News Scraper(Full text) - Cheap",
-          "description": "(Apify Scraper) Scrape Google News with 100% success. Automatically resolves encrypted JS redirects & extracts clean article text without ads. Perfect for AI/RAG, market monitoring, and sentiment analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/apify-google-news-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Google News Sports Pulse: Sentiment & Sub-Category Tracker",
@@ -34862,13 +34792,6 @@
           "link": "https://apify.com/datadoping/linkedin-profile-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "LinkedIn Profile Search – Leads & Recruiting (No Login)",
-          "description": "(Apify Scraper) Find public LinkedIn profile leads from keywords, titles, companies, schools, and locations. Returns normalized lead data without LinkedIn cookies or login.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/linkedin-public-search-lead-extractor?fpr=thanhnguyxn"
-        },
-        {
           "name": "Linkedin Profile Search By Name scraper ✅ No Cookies",
           "description": "(Apify Scraper) Search for LinkedIn profiles by name with filters and extract detailed profile information, including work experience, education history, location and more. No cookies or account required.",
           "auth": "apiKey",
@@ -34932,13 +34855,6 @@
           "link": "https://apify.com/apt_marble/linkedin-recruiter-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Linkedin Sales Navigator Scraper",
-          "description": "(Apify Scraper) Scrape leads from LinkedIn Sales Navigator searches. Extract full profiles with emails, phone numbers, work experience, education, skills, and more. Fast parallel scraping with structured JSON output ready for your CRM. Requires a Sales Navigator ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/henalon/linkedin-sales-navigator-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Linkedin Search Comments Spider",
           "description": "(Apify Scraper) Extract LinkedIn comments using keyword search with this powerful Apify Actor. Collect comment text, author details, profile URLs, timestamps, and activity data using valid LinkedIn session cookies (JsessionId and LiAt). Perfect for lead generatio...",
           "auth": "apiKey",
@@ -34979,13 +34895,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/unseenuser/linkedin-user-reactions?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Linkedln Employee Scraper - Cheap and Fast",
-          "description": "(Apify Scraper) Find public LinkedIn employee candidates for a company using company name, aliases, country, and target result count. The Actor returns clean, deduplicated profile leads with name, title, matched company, LinkedIn URL, confidence score, and run st...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/linkedln-employee-scraper-cheap-and-fast?fpr=thanhnguyxn"
         },
         {
           "name": "Linktree Profile & Contact Scraper",
@@ -55581,7 +55490,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 3837,
+      "api_count": 3833,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -55890,13 +55799,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/easyapi/keyword-density-checker?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🔍 Subdomain Finder & CT Log Scraper",
-          "description": "(Apify Scraper) Map website architectures by extracting subdomains from public Certificate Transparency logs to find unlinked staging sites.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/taroyamada/subdomain-finder?fpr=thanhnguyxn"
         },
         {
           "name": "**🔍 TikTok Shadow Ban Checker \\",
@@ -63494,13 +63396,6 @@
           "link": "https://apify.com/parseforge/faire-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Fake Random User Generator",
-          "description": "(Apify Scraper) Generates realistic fake user profiles using the RandomUser.me API. Perfect for populating test databases, prototyping UIs, load testing, and demo data. No API key required.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/moving_beacon-owner1/fake-random-user-generator?fpr=thanhnguyxn"
-        },
-        {
           "name": "Fantasy Premier League (FPL) Official API Scraper",
           "description": "(Apify Scraper) Scrapes the official Fantasy Premier League API — all ~700 players with xG, xA, ICT index, ownership, gameweek-by-gameweek point history, current season fixtures, and optional manager / mini-league data — delivered as a clean normalized dataset.",
           "auth": "apiKey",
@@ -64577,13 +64472,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Funda.nl & FundainBusiness.nl Scraper (Search + Detail)",
-          "description": "(Apify Scraper) High-performance hybrid scraper for Funda.nl (residential properties: apartments, houses) and FundainBusiness.nl (commercial real estate).",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ahmed_jasarevic/funda-hybrid-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Funda.nl Real Estate Scraper",
@@ -73665,13 +73553,6 @@
           "link": "https://apify.com/abotapi/reddit-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Reddit All-in-One Scraper",
-          "description": "(Apify Scraper) Scrape massive historical datasets across Reddit by extracting subreddits, complex search results, post content, and deep comment trees.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/taroyamada/reddit-all-in-one-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Reddit Answers API \"Ask Reddit\" - AI Insights for n8n Pipelines",
           "description": "(Apify Scraper) Extract AI-powered answers in 6 languages from Reddit discussions at scale. Structured JSON + markdown for n8n, Make, and LLM pipelines. Includes full post/comment context, quotes with citations, and subreddit metadata. 6 languages supported. No l...",
           "auth": "apiKey",
@@ -82448,7 +82329,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 2160,
+      "api_count": 2158,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -84297,13 +84178,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/gio21/amazon-reviews-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Amazon Reviews Scraper",
-          "description": "(Apify Scraper) $0.5 / 1000 results. Extract Verified & Public Customer Reviews from Amazon Products. Collect customer reviews from Amazon product ASIN. Extract content, ratings, reviewer profiles. Product research, sentiment analysis, brand monitoring, and compe...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/saswave/amazon-reviews-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Amazon Reviews Scraper — Ratings & Sentiment",
@@ -90359,13 +90233,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/kelley-blue-book-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Keyword Suggest Multi",
-          "description": "(Apify Scraper) Fetches keyword suggestions from Google, Bing, DuckDuckGo, YouTube, Amazon, eBay, Yandex, Baidu, and Naver for a batch of seed keywords in one country.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/keyword-suggest-multi?fpr=thanhnguyxn"
         },
         {
           "name": "Kickstarter Advanced Scraper",
@@ -97576,7 +97443,7 @@
       "id": "apify-integrations",
       "emoji": "🔌",
       "name": "Apify Integrations",
-      "api_count": 778,
+      "api_count": 777,
       "apis": [
         {
           "name": "🌐 Domain Valuation Report",
@@ -98459,13 +98326,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/alizarin_refrigerator-owner/calendly-api---scheduling-booking-automation?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Canada",
-          "description": "(Apify Scraper) scraper",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fayoussef/canada-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Canadian Grocery Price Comparison Scraper API",
@@ -103030,7 +102890,7 @@
       "id": "apify-jobs",
       "emoji": "💼",
       "name": "Apify Jobs",
-      "api_count": 1130,
+      "api_count": 1124,
       "apis": [
         {
           "name": "⚡️Rapid Linkedin Jobs Scraper",
@@ -103395,13 +103255,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/jungle_synthesizer/africa-jobs-aggregator-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "AI Company Lead Enrichment & Sales Intelligence",
-          "description": "(Apify Scraper) Find company websites, social profiles, contact pages, emails, recent news, lead scores, sales angles, and outreach templates from company names or domains.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/leads-data-scraper-ai?fpr=thanhnguyxn"
         },
         {
           "name": "AI Deep Job Search",
@@ -103962,13 +103815,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/acid-base/borg-linkedin-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Brand Social Media Search",
-          "description": "(Apify Scraper) Find public social media profiles for brands, companies, websites, creators, and local businesses across major platforms using Google search results.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/brand-social-media-search?fpr=thanhnguyxn"
         },
         {
           "name": "Brazil CNPJ Scraper. Receita Federal Company Records",
@@ -105616,13 +105462,6 @@
           "link": "https://apify.com/nuclear_quietude/google-jobs-scraper-api?fpr=thanhnguyxn"
         },
         {
-          "name": "Google Maps Scraper - Cheap",
-          "description": "(Apify Scraper) Extract Google Maps business leads globally with phones, websites, ratings, categories, opening hours, images, popular times, company contacts, and optional reviews. Launch pricing available for early users.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/google-maps-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Google News Scraper — Headlines, Sources, URLs",
           "description": "(Apify Scraper) Turn any Google News query into a deduplicated dataset of up to 2,000 articles: titles, sources, dates, RSS links, resolved publisher URLs, clean snippets. Multiple RSS time-window passes for depth beyond single-feed limits. Excel-ready CSV. No AP...",
           "auth": "apiKey",
@@ -107233,13 +107072,6 @@
           "link": "https://apify.com/blackfalcondata/karriere-at-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Keyword Suggest Multi",
-          "description": "(Apify Scraper) Fetches keyword suggestions from Google, Bing, DuckDuckGo, YouTube, Amazon, eBay, Yandex, Baidu, and Naver for a batch of seed keywords in one country.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/keyword-suggest-multi?fpr=thanhnguyxn"
-        },
-        {
           "name": "Kleinanzeigen Scraper",
           "description": "(Apify Scraper) Scrape Kleinanzeigen.de listings -- electronics, furniture, cars, apartments, jobs. Get titles, prices, descriptions, locations, seller info, images, and listing details. Pure HTTP, no browser needed.",
           "auth": "apiKey",
@@ -108045,13 +107877,6 @@
           "link": "https://apify.com/afanasenko/linkedin-profile-api-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "LinkedIn Profile Search – Leads & Recruiting (No Login)",
-          "description": "(Apify Scraper) Find public LinkedIn profile leads from keywords, titles, companies, schools, and locations. Returns normalized lead data without LinkedIn cookies or login.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/linkedin-public-search-lead-extractor?fpr=thanhnguyxn"
-        },
-        {
           "name": "Linkedin Profiles Companies Scraper Ppr",
           "description": "(Apify Scraper) Bulk scrape LinkedIn profiles & companies with pay-per-result pricing. Extract contact info, company details, industry data & more without login (No Cookies 🍪). Search by keywords, names or URLs. Get emails, locations, headcount & specialties. Fa...",
           "auth": "apiKey",
@@ -108106,13 +107931,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/unlimitedleadtestinbox/linkedin-search-jobs-scraper-no-cookie?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Linkedln Employee Scraper - Cheap and Fast",
-          "description": "(Apify Scraper) Find public LinkedIn employee candidates for a company using company name, aliases, country, and target result count. The Actor returns clean, deduplicated profile leads with name, title, matched company, LinkedIn URL, confidence score, and run st...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/linkedln-employee-scraper-cheap-and-fast?fpr=thanhnguyxn"
         },
         {
           "name": "LITE Linkedin Profile Scraper",
@@ -110948,7 +110766,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 4356,
+      "api_count": 4351,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -112363,13 +112181,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/doesaiknow/ai-brand-visibility-tracker-chatgpt-perplexity-gemini?fpr=thanhnguyxn"
-        },
-        {
-          "name": "AI Company Lead Enrichment & Sales Intelligence",
-          "description": "(Apify Scraper) Find company websites, social profiles, contact pages, emails, recent news, lead scores, sales angles, and outreach templates from company names or domains.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/leads-data-scraper-ai?fpr=thanhnguyxn"
         },
         {
           "name": "AI Company Research Agent",
@@ -114687,13 +114498,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/khadinakbar/brand-sentiment-analyzer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Brand Social Media Search",
-          "description": "(Apify Scraper) Find public social media profiles for brands, companies, websites, creators, and local businesses across major platforms using Google search results.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/brand-social-media-search?fpr=thanhnguyxn"
         },
         {
           "name": "Brand Store Locator Scraper",
@@ -128409,13 +128213,6 @@
           "link": "https://apify.com/bestscrapers/linkedin-sales-navigator-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Linkedin Sales Navigator Scraper",
-          "description": "(Apify Scraper) Scrape leads from LinkedIn Sales Navigator searches. Extract full profiles with emails, phone numbers, work experience, education, skills, and more. Fast parallel scraping with structured JSON output ready for your CRM. Requires a Sales Navigator ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/henalon/linkedin-sales-navigator-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "LinkedIn Sales Navigator Scraper - Pay Per Result",
           "description": "(Apify Scraper) Pay only for the data you get! Scrape LinkedIn Sales Navigator leads and accounts with 30+ filters: job titles, seniority, location, industry, company size, and spotlight signals. Enrich profiles with skills, education, work history, and email. Pr...",
           "auth": "apiKey",
@@ -128512,13 +128309,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/unseenuser/linkedin-user-reactions?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Linkedln Employee Scraper - Cheap and Fast",
-          "description": "(Apify Scraper) Find public LinkedIn employee candidates for a company using company name, aliases, country, and target result count. The Actor returns clean, deduplicated profile leads with name, title, matched company, LinkedIn URL, confidence score, and run st...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/linkedln-employee-scraper-cheap-and-fast?fpr=thanhnguyxn"
         },
         {
           "name": "Linktree / Beacons Link Extractor",
@@ -132439,13 +132229,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/red_crawler/reddit-flairs-v2?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Reddit Keyword Watch & Alerts Scraper",
-          "description": "(Apify Scraper) Track specific keywords and subreddits for net-new posts and comments, pushing instant social listening alerts directly to Slack or Discord webhooks.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/taroyamada/reddit-keyword-monitor-alerts?fpr=thanhnguyxn"
         },
         {
           "name": "Reddit Keywords Pro",
@@ -143304,7 +143087,7 @@
       "id": "apify-news",
       "emoji": "📰",
       "name": "Apify News",
-      "api_count": 504,
+      "api_count": 503,
       "apis": [
         {
           "name": "⚖️ HHS Data Breach Scraper",
@@ -144677,13 +144460,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/practicaltools/apify-google-news-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Google News Scraper(Full text) - Cheap",
-          "description": "(Apify Scraper) Scrape Google News with 100% success. Automatically resolves encrypted JS redirects & extracts clean article text without ads. Perfect for AI/RAG, market monitoring, and sentiment analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/apify-google-news-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Google News Sports Pulse: Sentiment & Sub-Category Tracker",
@@ -147436,7 +147212,7 @@
       "id": "apify-other",
       "emoji": "⚠️",
       "name": "Apify Other",
-      "api_count": 1936,
+      "api_count": 1935,
       "apis": [
         {
           "name": "☎️ Bulk Phone Validator",
@@ -151511,13 +151287,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/powerai/facebook-user-posts-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Fake Random User Generator",
-          "description": "(Apify Scraper) Generates realistic fake user profiles using the RandomUser.me API. Perfect for populating test databases, prototyping UIs, load testing, and demo data. No API key required.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/moving_beacon-owner1/fake-random-user-generator?fpr=thanhnguyxn"
         },
         {
           "name": "Fanatics Collect Scraper - Weekly & Premier Auctions",
@@ -160996,7 +160765,7 @@
       "id": "apify-real-estate",
       "emoji": "🏡",
       "name": "Apify Real Estate",
-      "api_count": 1075,
+      "api_count": 1074,
       "apis": [
         {
           "name": "🇩🇰 Boliga Denmark Real Estate Listings",
@@ -163391,13 +163160,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Funda.nl & FundainBusiness.nl Scraper (Search + Detail)",
-          "description": "(Apify Scraper) High-performance hybrid scraper for Funda.nl (residential properties: apartments, houses) and FundainBusiness.nl (commercial real estate).",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ahmed_jasarevic/funda-hybrid-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Funda.nl Real Estate",
@@ -168529,7 +168291,7 @@
       "id": "apify-seo-tools",
       "emoji": "🔍",
       "name": "Apify SEO Tools",
-      "api_count": 882,
+      "api_count": 880,
       "apis": [
         {
           "name": "⚡ Page Speed Analyzer — Lighthouse & Web Vitals",
@@ -168670,13 +168432,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/nexgendata/seo-web-analysis-mcp-server?fpr=thanhnguyxn"
-        },
-        {
-          "name": "🔍 Subdomain Finder & CT Log Scraper",
-          "description": "(Apify Scraper) Map website architectures by extracting subdomains from public Certificate Transparency logs to find unlinked staging sites.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/taroyamada/subdomain-finder?fpr=thanhnguyxn"
         },
         {
           "name": "🔍 Tech Stack Detector — BuiltWith Alternative",
@@ -171906,13 +171661,6 @@
           "link": "https://apify.com/lofomachines/keyword-shitter-autocomplete-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Keyword Suggest Multi",
-          "description": "(Apify Scraper) Fetches keyword suggestions from Google, Bing, DuckDuckGo, YouTube, Amazon, eBay, Yandex, Baidu, and Naver for a batch of seed keywords in one country.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/keyword-suggest-multi?fpr=thanhnguyxn"
-        },
-        {
           "name": "Keyword Suggestion Generator",
           "description": "(Apify Scraper) Generate relevant keyword suggestions from a base keyword using multiple data sources including Google, YouTube, and Amazon.",
           "auth": "apiKey",
@@ -174711,7 +174459,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 2628,
+      "api_count": 2616,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -175547,13 +175295,6 @@
           "link": "https://apify.com/pintostudio/amazon-product-description?fpr=thanhnguyxn"
         },
         {
-          "name": "Amazon Reviews Scraper",
-          "description": "(Apify Scraper) $0.5 / 1000 results. Extract Verified & Public Customer Reviews from Amazon Products. Collect customer reviews from Amazon product ASIN. Extract content, ratings, reviewer profiles. Product research, sentiment analysis, brand monitoring, and compe...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/saswave/amazon-reviews-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Ankorstore Scraper",
           "description": "(Apify Scraper) Ankorstore scraper. Collect companies details from website ankorstore.com . Advanced Web crawler for ecommerce website. Extract promo code, adresses, company name, year founded, instagram username, intagram followers, description, available countr...",
           "auth": "apiKey",
@@ -175862,13 +175603,6 @@
           "link": "https://apify.com/jungle_synthesizer/bilibili-creator-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Bilibili Pro Scraper",
-          "description": "(Apify Scraper) Four-mode Bilibili scraper: keyword search, video detail by BV/AID, user profile + uploads, popular feed. Returns title, description, author, plays, danmaku, likes, favorites, duration, publish time, cover. No login. For China video trends, KOL re...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/bilibili-pro-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Bilibili Scraper - Chinese Video Intelligence",
           "description": "(Apify Scraper) Extract Chinese Gen-Z video sentiment, danmaku reactions, and creator analytics from Bilibili (哔哩哔哩) — China's largest video platform with 300M+ users. Built for AI training, Chinese consumer equity research, and brand monitoring. Danmaku/coins/fa...",
           "auth": "apiKey",
@@ -176070,13 +175804,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/khadinakbar/brand-sentiment-analyzer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Brand Social Media Search",
-          "description": "(Apify Scraper) Find public social media profiles for brands, companies, websites, creators, and local businesses across major platforms using Google search results.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fabri-lab/brand-social-media-search?fpr=thanhnguyxn"
         },
         {
           "name": "Brand Username and Impersonation Monitor",
@@ -176455,13 +176182,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/zen-studio/douyin-live-recorder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Douyin Pro Scraper",
-          "description": "(Apify Scraper) Five-mode Douyin (China TikTok) scraper: keyword search, video detail, user profile + uploads, hashtag feed, hot search board. Returns caption, author, plays, likes, comments, shares, collects, cover, video URL, publish time, music. No login. For ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/douyin-pro-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Douyin Scraper",
@@ -181147,13 +180867,6 @@
           "link": "https://apify.com/parseforge/instagram-search-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Instagram Search Scraper",
-          "description": "(Apify Scraper)",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/thenetaji/instagram-search-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Instagram Search Users",
           "description": "(Apify Scraper) Search Instagram users.",
           "auth": "apiKey",
@@ -181194,13 +180907,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/nifty.codes/instagram-stories-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Instagram Stories Scraper — Stories & Highlights Metadata",
-          "description": "(Apify Scraper) Scrape current Instagram stories and highlight reels from public profiles. Extract media URLs, timestamps, captions, stickers, music, links, highlight titles, and optional profile metadata; supports batch usernames.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/automation-lab/instagram-stories-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Instagram Stories Scraper · No Login",
@@ -182806,13 +182512,6 @@
           "link": "https://apify.com/bestscrapers/linkedin-sales-navigator-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Linkedin Sales Navigator Scraper",
-          "description": "(Apify Scraper) Scrape leads from LinkedIn Sales Navigator searches. Extract full profiles with emails, phone numbers, work experience, education, skills, and more. Fast parallel scraping with structured JSON output ready for your CRM. Requires a Sales Navigator ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/henalon/linkedin-sales-navigator-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "LinkedIn Sales Navigator Scraper - Pay Per Result",
           "description": "(Apify Scraper) Pay only for the data you get! Scrape LinkedIn Sales Navigator leads and accounts with 30+ filters: job titles, seniority, location, industry, company size, and spotlight signals. Enrich profiles with skills, education, work history, and email. Pr...",
           "auth": "apiKey",
@@ -184171,13 +183870,6 @@
           "link": "https://apify.com/vulnv/producthunt-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Product Hunt Scraper — Launches, Votes & Makers",
-          "description": "(Apify Scraper) Scrape Product Hunt launches, votes, and maker profiles. Get product name, tagline, upvotes, comments, makers, hunters, and launch date. Ideal for startup discovery and competitive intelligence. PPE pricing — pay only for results.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/cryptosignals/producthunt-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "ProductHunt Leaderboard Scraper",
           "description": "(Apify Scraper) Product Hunt Leaderboard Scraper automates extraction of trending products, rankings, votes, and launch metrics from daily, weekly, and monthly leaderboards. Efficiently collect product intelligence for competitive analysis, trend research, and ma...",
           "auth": "apiKey",
@@ -184302,13 +183994,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Reddit All-in-One Scraper",
-          "description": "(Apify Scraper) Scrape massive historical datasets across Reddit by extracting subreddits, complex search results, post content, and deep comment trees.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/taroyamada/reddit-all-in-one-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Reddit Brand Monitor & Lead Finder",
@@ -184442,13 +184127,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/morph_coder/reddit-keyword-search?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Reddit Keyword Watch & Alerts Scraper",
-          "description": "(Apify Scraper) Track specific keywords and subreddits for net-new posts and comments, pushing instant social listening alerts directly to Slack or Discord webhooks.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/taroyamada/reddit-keyword-monitor-alerts?fpr=thanhnguyxn"
         },
         {
           "name": "Reddit Keywords",
@@ -189533,13 +189211,6 @@
           "link": "https://apify.com/fastcrawler/twitter-x-ad-partnership-api?fpr=thanhnguyxn"
         },
         {
-          "name": "Twitter / X Pro Scraper",
-          "description": "(Apify Scraper) Four-mode Twitter / X scraper: keyword search, tweet detail by ID/URL, user profile + posts, trending topics. Returns text, author, likes, retweets, replies, views, media, language, publish time. No login. For sentiment, trends, KOL discovery, AI ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/twitter-pro-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Twitter / X Profile & Followers Scraper",
           "description": "(Apify Scraper) Scrape rich profile data for any Twitter/X account — no login needed. Get followers and following lists with your own cookies. 30+ fields per profile including bio, emails, follower counts, verification status, and more.",
           "auth": "apiKey",
@@ -191190,13 +190861,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/shahidirfan/x-twitter-video-downloader?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Xiaohongshu (RedNote) Pro Scraper",
-          "description": "(Apify Scraper) Five-mode Xiaohongshu / RedNote scraper: keyword search, note details, user profile, topic feed, trending. Returns title, body, likes, collects, comments, hashtags, images, video, location, time. No cookies. For trend tracking, AI training data, m...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/xiaohongshu-pro-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Xiaohongshu (RedNote) Scraper — Notes, Users & Search",
@@ -193115,7 +192779,7 @@
       "id": "apify-travel",
       "emoji": "✈️",
       "name": "Apify Travel",
-      "api_count": 508,
+      "api_count": 506,
       "apis": [
         {
           "name": "✈️ Google Flights Scraper",
@@ -194245,13 +193909,6 @@
           "link": "https://apify.com/thirdwatch/bookmyshow-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Canada",
-          "description": "(Apify Scraper) scraper",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fayoussef/canada-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Carnival Cruises Scraper - Complete Cruise Data Extractor",
           "description": "(Apify Scraper) Why Choose This Scraper? ✅ Extract from 2 Carnival Cruise Line markets (US, AU)  ✅ Complete cruise data with cabin-level pricing ✅ Filter by 17 destination regions ✅ No proxy needed — public API, no anti-bot protection ✅ ~3,000+ US sailings and ~7...",
           "auth": "apiKey",
@@ -195328,13 +194985,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/piquno/hotpepper-gourmet-japan-restaurant-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Humanitix Scraper",
-          "description": "(Apify Scraper) Fetch events from Humanitix — the nonprofit-focused ticketing platform for charity galas, community fundraisers, and social impact events.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/hoholabs/humanitix-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Idealo Product Scraper",
@@ -196679,7 +196329,7 @@
       "id": "apify-videos",
       "emoji": "📹",
       "name": "Apify Videos",
-      "api_count": 686,
+      "api_count": 683,
       "apis": [
         {
           "name": "🇨🇳 Bilibili Video Comments · B站视频评论采集",
@@ -197004,13 +196654,6 @@
           "link": "https://apify.com/streamers/youtube-video-downloader?fpr=thanhnguyxn"
         },
         {
-          "name": "Bilibili Pro Scraper",
-          "description": "(Apify Scraper) Four-mode Bilibili scraper: keyword search, video detail by BV/AID, user profile + uploads, popular feed. Returns title, description, author, plays, danmaku, likes, favorites, duration, publish time, cover. No login. For China video trends, KOL re...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/bilibili-pro-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Bilibili Scraper - Chinese Video Intelligence",
           "description": "(Apify Scraper) Extract Chinese Gen-Z video sentiment, danmaku reactions, and creator analytics from Bilibili (哔哩哔哩) — China's largest video platform with 300M+ users. Built for AI training, Chinese consumer equity research, and brand monitoring. Danmaku/coins/fa...",
           "auth": "apiKey",
@@ -197135,13 +196778,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/zen-studio/douyin-live-recorder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Douyin Pro Scraper",
-          "description": "(Apify Scraper) Five-mode Douyin (China TikTok) scraper: keyword search, video detail, user profile + uploads, hashtag feed, hot search board. Returns caption, author, plays, likes, comments, shares, collects, cover, video URL, publish time, music. No login. For ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/douyin-pro-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Douyin Scraper",
@@ -199816,13 +199452,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/shahidirfan/x-twitter-video-downloader?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Xiaohongshu (RedNote) Pro Scraper",
-          "description": "(Apify Scraper) Five-mode Xiaohongshu / RedNote scraper: keyword search, note details, user profile, topic feed, trending. Returns title, body, likes, collects, comments, hashtags, images, video, location, time. No cookies. For trend tracking, AI training data, m...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/habit.zhou/xiaohongshu-pro-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Xiaohongshu (RedNote) User Profile & Notes Scraper",
@@ -206006,7 +205635,7 @@
       "id": "geocoding",
       "emoji": "🌍",
       "name": "Geocoding",
-      "api_count": 67,
+      "api_count": 66,
       "apis": [
         {
           "name": "GeoDataSource",
@@ -206154,13 +205783,6 @@
           "auth": "No",
           "https": true,
           "link": "https://geographql.netlify.app"
-        },
-        {
-          "name": "Geokeo",
-          "description": "Geokeo geocoding service- with 2500 free api requests daily.",
-          "auth": "No",
-          "https": true,
-          "link": "https://geokeo.com"
         },
         {
           "name": "geoPlugin",
