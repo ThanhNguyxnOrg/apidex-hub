@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-18T03:01:21.680813+00:00",
+    "generated_at": "2026-09-18T05:59:09.475848+00:00",
     "source": "README.md",
-    "total_apis": 30161,
+    "total_apis": 30146,
     "total_categories": 78,
     "no_auth_count": 2096,
-    "api_key_count": 27922,
+    "api_key_count": 27907,
     "oauth_count": 143,
-    "https_count": 28620,
+    "https_count": 28605,
     "https_percentage": 95
   },
   "categories": [
@@ -487,7 +487,7 @@
       "id": "apify-agents",
       "emoji": "🤖",
       "name": "Apify Agents",
-      "api_count": 599,
+      "api_count": 598,
       "apis": [
         {
           "name": "🌟 Youtube Transcript Scraper - $0.5 per 1k",
@@ -2042,13 +2042,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/visita/global-markets-intelligence?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Globo.com Scraper",
-          "description": "(Apify Scraper) this is live data scraper from globo.com   for more advanced api usage you can visit here http://rapidapi.com/matepapava123/api/globo-com-news-live-api",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/globo-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Goldenpages Be Scraper",
@@ -4688,7 +4681,7 @@
       "id": "apify-ai",
       "emoji": "🧠",
       "name": "Apify AI",
-      "api_count": 1468,
+      "api_count": 1465,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -8646,13 +8639,6 @@
           "link": "https://apify.com/visita/global-markets-intelligence?fpr=thanhnguyxn"
         },
         {
-          "name": "Globo.com Scraper",
-          "description": "(Apify Scraper) this is live data scraper from globo.com   for more advanced api usage you can visit here http://rapidapi.com/matepapava123/api/globo-com-news-live-api",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/globo-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "GMail Sentiment Scanner",
           "description": "(Apify Scraper) Analyze email trends for team & client communications. Get sentiment scores, response time patterns & communication health insights. This actor connects to Gmail API to analyze your email communications and provides:  Sentiment Analysis Client Seg...",
           "auth": "apiKey",
@@ -9603,13 +9589,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/rp_openpro.ai/indeed-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "India Stock Market MoneyControl API",
-          "description": "(Apify Scraper) for better api structure visit here : { https://rapidapi.com/matepapava123/api/india-stock-market-moneycontrol-live-api } (data source is moneycontrol)  ireda share price api , irfc share price api, tata power share price api nifty 50 api (Live Ni...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/india-stock-market-api?fpr=thanhnguyxn"
         },
         {
           "name": "Indiamart Product Info Scraper",
@@ -11192,13 +11171,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/seibs.co/mcp-court-records-intel?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Padel Live Api",
-          "description": "(Apify Scraper) An Apify Actor that scrapes padel data from PadelFIP.com, including world rankings, player profiles, tournament information, live scores, news articles, and circuit statistics.   for api visit here https://rapidapi.com/matepapava123/api/padel-live...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/padel-live-api?fpr=thanhnguyxn"
         },
         {
           "name": "Padmapper Scraper",
@@ -14972,7 +14944,7 @@
       "id": "apify-automation",
       "emoji": "⚙️",
       "name": "Apify Automation",
-      "api_count": 5279,
+      "api_count": 5278,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -31143,13 +31115,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/alizarin_refrigerator-owner/indexnow-url-submitter?fpr=thanhnguyxn"
-        },
-        {
-          "name": "India Stock Market MoneyControl API",
-          "description": "(Apify Scraper) for better api structure visit here : { https://rapidapi.com/matepapava123/api/india-stock-market-moneycontrol-live-api } (data source is moneycontrol)  ireda share price api , irfc share price api, tata power share price api nifty 50 api (Live Ni...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/india-stock-market-api?fpr=thanhnguyxn"
         },
         {
           "name": "IndiaMart Extractor",
@@ -55490,7 +55455,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 3833,
+      "api_count": 3831,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -62484,13 +62449,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/codingfrontend/espn-video-downloader?fpr=thanhnguyxn"
-        },
-        {
-          "name": "ESPNCricinfo API & Statsguru Scraper",
-          "description": "(Apify Scraper) ESPN Cricinfo API: Live cricket scores, Statsguru, match schedules, scorecards, ball-by-ball updates, player stats & rankings. Features direct JSON endpoints and Cricket MCP support for AI agents. Direct RapidAPI link For RESTapi: https://rapidapi...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/espncricinfo-api-statsguru-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "ESWD Severe Weather Events Scraper",
@@ -71962,13 +71920,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/seibs.co/mcp-court-records-intel?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Padel Live Api",
-          "description": "(Apify Scraper) An Apify Actor that scrapes padel data from PadelFIP.com, including world rankings, player profiles, tournament information, live scores, news articles, and circuit statistics.   for api visit here https://rapidapi.com/matepapava123/api/padel-live...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/padel-live-api?fpr=thanhnguyxn"
         },
         {
           "name": "Page Scraping Analyzer",
@@ -143087,7 +143038,7 @@
       "id": "apify-news",
       "emoji": "📰",
       "name": "Apify News",
-      "api_count": 503,
+      "api_count": 498,
       "apis": [
         {
           "name": "⚖️ HHS Data Breach Scraper",
@@ -143825,13 +143776,6 @@
           "link": "https://apify.com/hgservices/apify-actor-espn?fpr=thanhnguyxn"
         },
         {
-          "name": "ESPNCricinfo API & Statsguru Scraper",
-          "description": "(Apify Scraper) ESPN Cricinfo API: Live cricket scores, Statsguru, match schedules, scorecards, ball-by-ball updates, player stats & rankings. Features direct JSON endpoints and Cricket MCP support for AI agents. Direct RapidAPI link For RESTapi: https://rapidapi...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/espncricinfo-api-statsguru-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "ETF Trends Analyzer",
           "description": "(Apify Scraper) AI-powered ETF market trend analyzer. Get real-time reasons for top gainers, losers, most active, and trending ETFs. Understand ETF price movements, volume spikes and market sentiment with clear, data-driven insights.",
           "auth": "apiKey",
@@ -144187,13 +144131,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/visita/global-markets-intelligence?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Globo.com Scraper",
-          "description": "(Apify Scraper) this is live data scraper from globo.com   for more advanced api usage you can visit here http://rapidapi.com/matepapava123/api/globo-com-news-live-api",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/globo-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "GMGN Scraper — Trending Memecoins, Smart Money & Wallets",
@@ -144742,13 +144679,6 @@
           "link": "https://apify.com/orgupdate/indeed-jobs-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "India Stock Market MoneyControl API",
-          "description": "(Apify Scraper) for better api structure visit here : { https://rapidapi.com/matepapava123/api/india-stock-market-moneycontrol-live-api } (data source is moneycontrol)  ireda share price api , irfc share price api, tata power share price api nifty 50 api (Live Ni...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/india-stock-market-api?fpr=thanhnguyxn"
-        },
-        {
           "name": "Indie Hackers Posts Scraper",
           "description": "(Apify Scraper) Pull every Indie Hackers post URL with slug, section, post ID, and decoded title. Discovered via the official sitemap with 47,000+ posts indexed. Filter by URL keyword to narrow the results. Export to JSON, CSV, or Excel for founder content resear...",
           "auth": "apiKey",
@@ -145176,13 +145106,6 @@
           "link": "https://apify.com/alaricus/opta-ranking-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Padel Live Api",
-          "description": "(Apify Scraper) An Apify Actor that scrapes padel data from PadelFIP.com, including world rankings, player profiles, tournament information, live scores, news articles, and circuit statistics.   for api visit here https://rapidapi.com/matepapava123/api/padel-live...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/padel-live-api?fpr=thanhnguyxn"
-        },
-        {
           "name": "Pick 10 Lottery Past Winning Numbers",
           "description": "(Apify Scraper) This actor retrieves historical winning numbers for the Pick 10 lottery within a specified date range.",
           "auth": "apiKey",
@@ -145524,13 +145447,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/saswave/rightmove-uk-house-sold-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Rotten Tomatoes Scraper",
-          "description": "(Apify Scraper) this is rotten tomato scraper for more detailed api you can visit this  https://rapidapi.com/matepapava123/api/rottentomato",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/rotten-tomatoes-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "RSS / XML Scraper",
@@ -147212,7 +147128,7 @@
       "id": "apify-other",
       "emoji": "⚠️",
       "name": "Apify Other",
-      "api_count": 1935,
+      "api_count": 1934,
       "apis": [
         {
           "name": "☎️ Bulk Phone Validator",
@@ -150825,13 +150741,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/espn-sports-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "ESPNCricinfo API & Statsguru Scraper",
-          "description": "(Apify Scraper) ESPN Cricinfo API: Live cricket scores, Statsguru, match schedules, scorecards, ball-by-ball updates, player stats & rankings. Features direct JSON endpoints and Cricket MCP support for AI agents. Direct RapidAPI link For RESTapi: https://rapidapi...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/espncricinfo-api-statsguru-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Esports Tournament Roster Scraper",
@@ -174459,7 +174368,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 2616,
+      "api_count": 2615,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -185107,13 +185016,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/saswave/rightmove-uk-house-sold-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Rotten Tomatoes Scraper",
-          "description": "(Apify Scraper) this is rotten tomato scraper for more detailed api you can visit this  https://rapidapi.com/matepapava123/api/rottentomato",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/rotten-tomatoes-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "RSS News Aggregator",
@@ -196329,7 +196231,7 @@
       "id": "apify-videos",
       "emoji": "📹",
       "name": "Apify Videos",
-      "api_count": 683,
+      "api_count": 682,
       "apis": [
         {
           "name": "🇨🇳 Bilibili Video Comments · B站视频评论采集",
@@ -197856,13 +197758,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/room_js/reel-video-generator-apify-actor?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Rotten Tomatoes Scraper",
-          "description": "(Apify Scraper) this is rotten tomato scraper for more detailed api you can visit this  https://rapidapi.com/matepapava123/api/rottentomato",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fingolfin/rotten-tomatoes-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Rumble 🔥 All-inclusive scraper",
