@@ -10,7 +10,7 @@
 | **HolidayAPI** | Holidays and observances by country and date. | 🔑 ApiKey | ✅ | [Link](https://holidayapi.com/) |
 | **LectServe** | Protestant liturgical calendar. | No | No | [Link](http://www.lectserve.com) |
 | **Nager.Date** | Public holiday database for over 100 countries. | No | ✅ | [Link](https://date.nager.at/) |
-| **Non-Working Days** | Non-working day and holiday checks. | No | ✅ | [Link](https://isdayoff.ru/) |
+| **Non-Working Days** | Non-working day and holiday checks. | No | ✅ | [Link](https://www.isdayoff.ru/) |
 | **Public Holidays** | Data on national, regional, and religious holidays via API. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/holidays-api) |
 | **TimeAPI.io** | Current time, timezone, and holiday info for any region. | No | ✅ | [Link](https://timeapi.io/swagger/index.html) |
 | **UK Bank Holidays** | Official UK bank holiday dataset API. | No | ✅ | [Link](https://www.gov.uk/bank-holidays.json) |

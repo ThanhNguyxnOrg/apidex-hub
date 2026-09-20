@@ -10,7 +10,7 @@
 | **Apiip** | Get location information by IP address. | 🔑 ApiKey | ✅ | [Link](https://apiip.net/) |
 | **Battuta** | A (country/region/city) in-cascade location API. | 🔑 ApiKey | No | [Link](http://battuta.medunes.net) |
 | **BigDataCloud** | Provides fast and accurate IP geolocation APIs along with security checks and... | 🔑 ApiKey | ✅ | [Link](https://www.bigdatacloud.com/docs) |
-| **Bing Maps** | Maps, geocoding, and routing APIs. | 🔑 ApiKey | ✅ | [Link](https://www.microsoft.com/maps/) |
+| **Azure Maps** | Maps, geocoding, and routing APIs from Microsoft (formerly Bing Maps). | 🔑 ApiKey | ✅ | [Link](https://azure.microsoft.com/en-us/products/azure-maps/) |
 | **bng2latlong** | Convert British OSGB36 easting and northing (British National Grid) to WGS84 ... | No | ✅ | [Link](https://www.getthedata.com/bng2latlong) |
 | **Cep.la** | Brazil RESTful API to find information about streets, zip codes, neighborhood... | No | No | [Link](http://cep.la/) |
 | **CitySDK** | Open APIs for select European cities. | No | ✅ | [Link](http://www.citysdk.eu/citysdk-toolkit/) |

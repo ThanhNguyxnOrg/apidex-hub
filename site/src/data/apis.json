@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-18T05:59:09.475848+00:00",
+    "generated_at": "2026-09-20T02:11:14.733Z",
     "source": "README.md",
-    "total_apis": 30146,
+    "total_apis": 30142,
     "total_categories": 78,
-    "no_auth_count": 2096,
-    "api_key_count": 27907,
+    "no_auth_count": 2093,
+    "api_key_count": 27906,
     "oauth_count": 143,
-    "https_count": 28605,
+    "https_count": 28602,
     "https_percentage": 95
   },
   "categories": [
@@ -201408,7 +201408,7 @@
       "id": "business",
       "emoji": "💼",
       "name": "Business",
-      "api_count": 8,
+      "api_count": 7,
       "apis": [
         {
           "name": "Domainsdb.info",
@@ -201451,13 +201451,6 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://developers.google.com/analytics/"
-        },
-        {
-          "name": "markerapi",
-          "description": "Trademark Search.",
-          "auth": "No",
-          "https": false,
-          "link": "https://markerapi.com"
         },
         {
           "name": "SwiftKanban",
@@ -201535,7 +201528,7 @@
           "description": "Non-working day and holiday checks.",
           "auth": "No",
           "https": true,
-          "link": "https://isdayoff.ru/"
+          "link": "https://www.isdayoff.ru/"
         },
         {
           "name": "Public Holidays",
@@ -201641,7 +201634,7 @@
           "description": "Image upload and screenshot APIs.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://gyazo.com/api/docs"
+          "link": "https://gyazo.com/"
         },
         {
           "name": "ImageKit",
@@ -202473,7 +202466,7 @@
       "id": "design-colors",
       "emoji": "🎨",
       "name": "Design & Colors",
-      "api_count": 22,
+      "api_count": 21,
       "apis": [
         {
           "name": "Harvard Art Museums",
@@ -202588,13 +202581,6 @@
           "link": "https://php-noise.com/"
         },
         {
-          "name": "Pixel Encounter",
-          "description": "SVG Icon Generator.",
-          "auth": "No",
-          "https": true,
-          "link": "https://pixelencounter.com/api"
-        },
-        {
           "name": "Placeholder.com",
           "description": "Simple placeholder image service (**No Auth**).",
           "auth": "No",
@@ -202635,7 +202621,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 139,
+      "api_count": 138,
       "apis": [
         {
           "name": "Agify.io",
@@ -202776,13 +202762,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.microsoft.com/en-us/rest/api/azure/devops"
-        },
-        {
-          "name": "Base",
-          "description": "Building quick backends.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.base-api.io/"
         },
         {
           "name": "Bitbucket",
@@ -205589,11 +205568,11 @@
           "link": "https://www.bigdatacloud.com/docs"
         },
         {
-          "name": "Bing Maps",
-          "description": "Maps, geocoding, and routing APIs.",
+          "name": "Azure Maps",
+          "description": "Maps, geocoding, and routing APIs from Microsoft (formerly Bing Maps).",
           "auth": "apiKey",
           "https": true,
-          "link": "https://www.microsoft.com/maps/"
+          "link": "https://azure.microsoft.com/en-us/products/azure-maps/"
         },
         {
           "name": "bng2latlong",
@@ -210928,15 +210907,8 @@
       "id": "unofficial-community",
       "emoji": "⚠️",
       "name": "Unofficial & Community APIs",
-      "api_count": 8,
+      "api_count": 7,
       "apis": [
-        {
-          "name": "Bibliogram",
-          "description": "Instagram front-end (read-only, no login required) ⚠️ **Many instances down**.",
-          "auth": "No",
-          "https": true,
-          "link": "https://bibliogram.art/"
-        },
         {
           "name": "Instaloader",
           "description": "Instagram scraper (posts, stories, profiles).",

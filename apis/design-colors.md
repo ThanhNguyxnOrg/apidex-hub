@@ -18,7 +18,6 @@
 | **Lordicon** | Icons with predone Animations. | No | ✅ | [Link](https://lordicon.com/) |
 | **Noun Project** | Icons. | 🔐 OAuth | No | [Link](http://api.thenounproject.com/index.html) |
 | **PHP-Noise** | Noise Background Image Generator. | No | ✅ | [Link](https://php-noise.com/) |
-| **Pixel Encounter** | SVG Icon Generator. | No | ✅ | [Link](https://pixelencounter.com/api) |
 | **Placeholder.com** | Simple placeholder image service (**No Auth**). | No | ✅ | [Link](https://placehold.co/) |
 | **Random Color API** | Generate random colors with hex, RGB, and HSL values (**No Auth**). | No | ✅ | [Link](https://x-colors.yurace.pro/) |
 | **Simple Icons** | SVG icons for popular brands. | No | ✅ | [Link](https://simpleicons.org/) |
