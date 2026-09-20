@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-20T02:11:46.790234+00:00",
+    "generated_at": "2026-09-20T03:05:56.886Z",
     "source": "README.md",
-    "total_apis": 30142,
+    "total_apis": 30137,
     "total_categories": 78,
     "no_auth_count": 2093,
-    "api_key_count": 27906,
+    "api_key_count": 27901,
     "oauth_count": 143,
-    "https_count": 28602,
+    "https_count": 28597,
     "https_percentage": 95
   },
   "categories": [
@@ -4681,7 +4681,7 @@
       "id": "apify-ai",
       "emoji": "🧠",
       "name": "Apify AI",
-      "api_count": 1465,
+      "api_count": 1464,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -12307,13 +12307,6 @@
           "link": "https://apify.com/parsebird/sec-insider-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "SEC Insider Trading Tracker - Form 4 + Congress Trades",
-          "description": "(Apify Scraper) Track corporate insider trades, large position disclosures, and Congress member trades with cluster buy detection.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/intelscrape/sec-insider-trading-tracker?fpr=thanhnguyxn"
-        },
-        {
           "name": "SEC Insider Trading Tracker — Form 4 API",
           "description": "(Apify Scraper) Real-time SEC Form 4 API for behavioural insider-trading signal classification. Detects officer cluster buys, executive disposals, regime shifts. Suppresses compensation noise. Deterministic JSON output for hedge funds, compliance, and AI-agent wo...",
           "auth": "apiKey",
@@ -14944,7 +14937,7 @@
       "id": "apify-automation",
       "emoji": "⚙️",
       "name": "Apify Automation",
-      "api_count": 5278,
+      "api_count": 5277,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -41804,13 +41797,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/lokki/sec-insider-intelligence?fpr=thanhnguyxn"
-        },
-        {
-          "name": "SEC Insider Trading Tracker - Form 4 + Congress Trades",
-          "description": "(Apify Scraper) Track corporate insider trades, large position disclosures, and Congress member trades with cluster buy detection.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/intelscrape/sec-insider-trading-tracker?fpr=thanhnguyxn"
         },
         {
           "name": "SEC Investment Adviser Scraper",
@@ -82280,7 +82266,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 2158,
+      "api_count": 2157,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -95371,13 +95357,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/easyapi/treatwell-reviews-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Treatwell Search Scraper 💇‍♀️",
-          "description": "(Apify Scraper) Scrape detailed salon and treatment data from Treatwell.co.uk. Extract business information, services, prices, ratings, and more. Perfect for market research and competitor analysis in the beauty industry.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/easyapi/treatwell-search-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "**Trendyol $0.8💰 URL \\",
@@ -110717,7 +110696,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 4351,
+      "api_count": 4350,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -136592,13 +136571,6 @@
           "link": "https://apify.com/easyapi/treatwell-reviews-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Treatwell Search Scraper 💇‍♀️",
-          "description": "(Apify Scraper) Scrape detailed salon and treatment data from Treatwell.co.uk. Extract business information, services, prices, ratings, and more. Perfect for market research and competitor analysis in the beauty industry.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/easyapi/treatwell-search-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Trendyol Reviews Scraper ⭐",
           "description": "(Apify Scraper) Unlock detailed product reviews and ratings from Turkey's leading e-commerce platform. Perfect for sentiment analysis, market research, and monitoring competitor feedback. Turn customer voice into actionable data to boost your sales and product st...",
           "auth": "apiKey",
@@ -143038,7 +143010,7 @@
       "id": "apify-news",
       "emoji": "📰",
       "name": "Apify News",
-      "api_count": 498,
+      "api_count": 497,
       "apis": [
         {
           "name": "⚖️ HHS Data Breach Scraper",
@@ -145524,13 +145496,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/lokki/sec-insider-intelligence?fpr=thanhnguyxn"
-        },
-        {
-          "name": "SEC Insider Trading Tracker - Form 4 + Congress Trades",
-          "description": "(Apify Scraper) Track corporate insider trades, large position disclosures, and Congress member trades with cluster buy detection.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/intelscrape/sec-insider-trading-tracker?fpr=thanhnguyxn"
         },
         {
           "name": "Seeking Alpha API News & Dividend Data",
