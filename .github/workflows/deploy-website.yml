@@ -42,7 +42,7 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           git config --global user.name "ThanhNguyxnAgent[bot]"
-          git config --global user.email "4125740+thanhnguyxnagent[bot]@users.noreply.github.com"
+          git config --global user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
           git add README.md site/index.html site/src/data/apis.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(stats): auto-update API counts [skip ci]" && git push origin main)
 
@@ -70,6 +70,6 @@ jobs:
         with:
           github_token: ${{ steps.app-token.outputs.token }}
           user_name: "ThanhNguyxnAgent[bot]"
-          user_email: "4125740+thanhnguyxnagent[bot]@users.noreply.github.com"
+          user_email: "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
           publish_dir: ./docs
           publish_branch: gh-pages
