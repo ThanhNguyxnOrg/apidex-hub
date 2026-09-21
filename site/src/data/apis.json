@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-20T03:06:26.372141+00:00",
+    "generated_at": "2026-09-21T15:09:33.055616+00:00",
     "source": "README.md",
-    "total_apis": 30137,
+    "total_apis": 30131,
     "total_categories": 78,
     "no_auth_count": 2093,
-    "api_key_count": 27901,
+    "api_key_count": 27895,
     "oauth_count": 143,
-    "https_count": 28597,
+    "https_count": 28591,
     "https_percentage": 95
   },
   "categories": [
@@ -14937,7 +14937,7 @@
       "id": "apify-automation",
       "emoji": "⚙️",
       "name": "Apify Automation",
-      "api_count": 5277,
+      "api_count": 5275,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -29323,13 +29323,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/shahidirfan/gsmarena-phone-specs-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "GSMArena Scraper",
-          "description": "(Apify Scraper) Scrape GSMArena, the world's largest mobile device database with 13K+ phones. Search devices, get full specifications, browse by brand, or list top devices. Extracts display, chipset, camera, battery, RAM, storage, OS, and 40+ spec fields.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlergang/gsmarena-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "GSTIN Scraper",
@@ -51361,13 +51354,6 @@
           "link": "https://apify.com/memo23/zillow-agents-leads-scraper-ppe?fpr=thanhnguyxn"
         },
         {
-          "name": "Zillow Agents Sales Actor",
-          "description": "(Apify Scraper) This actor is a powerful scraping tool designed to extract property sales data directly from Zillow agent profiles. It collects key details like sold price, date, property specs, location, and listing links—making it ideal for real estate analysis...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/getdataforme/zillow-agents-sales-actor?fpr=thanhnguyxn"
-        },
-        {
           "name": "Zillow Apartments Scraper",
           "description": "(Apify Scraper) Fast & reliable Zillow scraper! 🏢 Extract complete apartment info: Rent, Amenities, Pet Policies, Fees, High-Res Photos & Agent Contact. Essential for Rental Market Analysis! 🚀",
           "auth": "apiKey",
@@ -55441,7 +55427,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 3831,
+      "api_count": 3830,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -66649,13 +66635,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/shahidirfan/gsmarena-phone-specs-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "GSMArena Scraper",
-          "description": "(Apify Scraper) Scrape GSMArena, the world's largest mobile device database with 13K+ phones. Search devices, get full specifications, browse by brand, or list top devices. Extracts display, chipset, camera, battery, RAM, storage, OS, and 40+ spec fields.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlergang/gsmarena-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "GSTIN Scraper",
@@ -110696,7 +110675,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 4350,
+      "api_count": 4349,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -140743,13 +140722,6 @@
           "link": "https://apify.com/rigelbytes/zillow-agents-phone?fpr=thanhnguyxn"
         },
         {
-          "name": "Zillow Agents Sales Actor",
-          "description": "(Apify Scraper) This actor is a powerful scraping tool designed to extract property sales data directly from Zillow agent profiles. It collects key details like sold price, date, property specs, location, and listing links—making it ideal for real estate analysis...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/getdataforme/zillow-agents-sales-actor?fpr=thanhnguyxn"
-        },
-        {
           "name": "Zillow All-in-One Scraper",
           "description": "(Apify Scraper) Scrape Zillow listings, property details, photos, agents, price history, and tax history - all in one actor. Search by URL, map area, or filter state.",
           "auth": "apiKey",
@@ -147093,7 +147065,7 @@
       "id": "apify-other",
       "emoji": "⚠️",
       "name": "Apify Other",
-      "api_count": 1934,
+      "api_count": 1933,
       "apis": [
         {
           "name": "☎️ Bulk Phone Validator",
@@ -152813,13 +152785,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/shahidirfan/gsmarena-phone-specs-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "GSMArena Scraper",
-          "description": "(Apify Scraper) Scrape GSMArena, the world's largest mobile device database with 13K+ phones. Search devices, get full specifications, browse by brand, or list top devices. Extracts display, chipset, camera, battery, RAM, storage, OS, and 40+ spec fields.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlergang/gsmarena-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "GST Verification India - GSTIN Lookup & Business Details",
@@ -160639,7 +160604,7 @@
       "id": "apify-real-estate",
       "emoji": "🏡",
       "name": "Apify Real Estate",
-      "api_count": 1074,
+      "api_count": 1073,
       "apis": [
         {
           "name": "🇩🇰 Boliga Denmark Real Estate Listings",
@@ -167528,13 +167493,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/rigelbytes/zillow-agents-phone?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Zillow Agents Sales Actor",
-          "description": "(Apify Scraper) This actor is a powerful scraping tool designed to extract property sales data directly from Zillow agent profiles. It collects key details like sold price, date, property specs, location, and listing links—making it ideal for real estate analysis...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/getdataforme/zillow-agents-sales-actor?fpr=thanhnguyxn"
         },
         {
           "name": "Zillow All-in-One Scraper",
@@ -204194,7 +204152,7 @@
           "description": "TV and Movie tracking.",
           "auth": "OAuth",
           "https": true,
-          "link": "https://trakt.docs.apiary.io/"
+          "link": "https://docs.trakt.tv/"
         },
         {
           "name": "Trivia API",
