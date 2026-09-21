@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-21T15:09:33.055616+00:00",
+    "generated_at": "2026-09-21T15:20:07.693360+00:00",
     "source": "README.md",
-    "total_apis": 30131,
+    "total_apis": 30130,
     "total_categories": 78,
-    "no_auth_count": 2093,
+    "no_auth_count": 2092,
     "api_key_count": 27895,
     "oauth_count": 143,
-    "https_count": 28591,
+    "https_count": 28590,
     "https_percentage": 95
   },
   "categories": [
@@ -226,7 +226,7 @@
       "id": "anime",
       "emoji": "🌸",
       "name": "Anime",
-      "api_count": 20,
+      "api_count": 19,
       "apis": [
         {
           "name": "AniAPI",
@@ -296,14 +296,7 @@
           "description": "Anime and Manga Database.",
           "auth": "OAuth",
           "https": true,
-          "link": "https://kitsu.docs.apiary.io/"
-        },
-        {
-          "name": "Kitsu Anime",
-          "description": "Discover anime and manga (**No Auth**).",
-          "auth": "No",
-          "https": true,
-          "link": "https://kitsu.docs.apiary.io/#"
+          "link": "https://kitsu.io/"
         },
         {
           "name": "MangaDex",
@@ -206337,7 +206330,7 @@
           "description": "Netherlands Government Open Data.",
           "auth": "No",
           "https": true,
-          "link": "https://data.overheid.nl/en/ondersteuning/data-publiceren/api"
+          "link": "https://data.overheid.nl/"
         },
         {
           "name": "Open Government, New South Wales",
