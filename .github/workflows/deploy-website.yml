@@ -17,8 +17,17 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate GitHub App Token
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -29,9 +38,11 @@ jobs:
         run: python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
 
       - name: Commit and Push Count Updates
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "ThanhNguyxnAgent[bot]"
+          git config --global user.email "4125740+thanhnguyxnagent[bot]@users.noreply.github.com"
           git add README.md site/index.html site/src/data/apis.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(stats): auto-update API counts [skip ci]" && git push origin main)
 
@@ -57,6 +68,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ steps.app-token.outputs.token }}
+          user_name: "ThanhNguyxnAgent[bot]"
+          user_email: "4125740+thanhnguyxnagent[bot]@users.noreply.github.com"
           publish_dir: ./docs
           publish_branch: gh-pages
