@@ -52,7 +52,7 @@
 | **Open Government, Korea** | Korea Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://www.data.go.kr/) |
 | **Open Government, Luxembourg** | Luxembourgish Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://data.public.lu) |
 | **Open Government, Mexico** | Mexican Statistical Government Open Data. | No | ✅ | [Link](https://www.inegi.org.mx/datos/) |
-| **Open Government, Netherlands** | Netherlands Government Open Data. | No | ✅ | [Link](https://data.overheid.nl/en/ondersteuning/data-publiceren/api) |
+| **Open Government, Netherlands** | Netherlands Government Open Data. | No | ✅ | [Link](https://data.overheid.nl/) |
 | **Open Government, New South Wales** | New South Wales Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://api.nsw.gov.au/) |
 | **Open Government, New Zealand** | New Zealand Government Open Data. | No | ✅ | [Link](https://www.data.govt.nz/) |
 | **Open Government, Norway** | Norwegian Government Open Data. | No | ✅ | [Link](https://data.norge.no/dataservices) |
