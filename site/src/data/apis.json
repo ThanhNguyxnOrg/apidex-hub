@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-21T15:20:07.693360+00:00",
+    "generated_at": "2026-09-24T14:06:18.495567+00:00",
     "source": "README.md",
-    "total_apis": 30130,
+    "total_apis": 30113,
     "total_categories": 78,
-    "no_auth_count": 2092,
-    "api_key_count": 27895,
+    "no_auth_count": 2091,
+    "api_key_count": 27879,
     "oauth_count": 143,
-    "https_count": 28590,
+    "https_count": 28573,
     "https_percentage": 95
   },
   "categories": [
@@ -226,7 +226,7 @@
       "id": "anime",
       "emoji": "🌸",
       "name": "Anime",
-      "api_count": 19,
+      "api_count": 18,
       "apis": [
         {
           "name": "AniAPI",
@@ -328,13 +328,6 @@
         },
         {
           "name": "Studio Ghibli",
-          "description": "Resources from Studio Ghibli films.",
-          "auth": "No",
-          "https": true,
-          "link": "https://ghibliapi.vercel.app"
-        },
-        {
-          "name": "Studio Ghibli API",
           "description": "Resources from Studio Ghibli films, characters, species, and locations.",
           "auth": "No",
           "https": true,
@@ -4674,7 +4667,7 @@
       "id": "apify-ai",
       "emoji": "🧠",
       "name": "Apify AI",
-      "api_count": 1464,
+      "api_count": 1460,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -5816,13 +5809,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/alizarin_refrigerator-owner/ai-image-studio?fpr=thanhnguyxn"
-        },
-        {
-          "name": "AI Image Upscaler - 2x & 4x Resolution Enhancement",
-          "description": "(Apify Scraper) Make blurry photos crystal clear. Upscale images to 2x or 4x resolution without losing quality.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ntriqpro/image-upscale-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "AI Image Watermark Remover",
@@ -7869,13 +7855,6 @@
           "link": "https://apify.com/makework36/facebook-adlib-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Facebook Ad Scraper with AI Analysis",
-          "description": "(Apify Scraper) The only Facebook Ad Library scraper with built-in GPT-4 AI analysis. Scrape competitor ads and instantly get effectiveness scores, emotional triggers, copywriting techniques, winning ad predictions, and spend estimates — all in one run.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/webdatalabs/facebook-ad-intelligence-pro?fpr=thanhnguyxn"
-        },
-        {
           "name": "Facebook Ads Collector",
           "description": "(Apify Scraper) See what ads your competitors run on Facebook & Instagram. Get images, videos, landing pages, and ad copy. 15 data fields per ad. Works in any country. No Facebook account needed. $0.50 per 1,000 ads.",
           "auth": "apiKey",
@@ -9757,13 +9736,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/apple_yang/instagram-post-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Instagram Profile & Posts Scraper 2026 (No API Key)",
-          "description": "(Apify Scraper) Scrape Instagram profiles — extract bio, follower count, post count, following, profile URL, and public post data. No login required. CSV/JSON output.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/cryptosignals/instagram-profile-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "**Instagram Profile Posts & Comments Scraper \\",
@@ -11892,13 +11864,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ahmed_jasarevic/reddit-scraper-pro?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Reddit Scraper Fast — Latest Posts & Search (No API Key)",
-          "description": "(Apify Scraper) Scrape Reddit posts from subreddits or search by keyword. Uses RSS feeds — no API key required. Get titles, authors, timestamps, and permalinks. Ideal for social listening, trend monitoring, and research. PPE pricing — pay only for results.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/cryptosignals/reddit-scraper-fast?fpr=thanhnguyxn"
         },
         {
           "name": "Reddit Scraper Lite",
@@ -14930,7 +14895,7 @@
       "id": "apify-automation",
       "emoji": "⚙️",
       "name": "Apify Automation",
-      "api_count": 5275,
+      "api_count": 5274,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -44620,13 +44585,6 @@
           "link": "https://apify.com/alizarin_refrigerator-owner/the-yellow-pages-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "thebluebook.com Scraper",
-          "description": "(Apify Scraper) Scrape verified contractor and subcontractor profiles from thebluebook.com — the largest US construction directory — into clean JSON, CSV or Excel. Get company names, phones, emails, addresses, trade categories, certifications (MBE/WBE/DBE), proje...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fayoussef/thebluebook-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "THEFA Leagues and Teams Data Scraper",
           "description": "(Apify Scraper) A high-performance Apify Actor designed to scrape football league structures, seasons, divisions, and team data from [The FA Full-Time](https://fulltime.thefa.com). This Actor utilizes an asynchronous architecture to handle high-volume data extrac...",
           "auth": "apiKey",
@@ -55420,7 +55378,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 3830,
+      "api_count": 3827,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -56282,13 +56240,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/alizarin_refrigerator-owner/ai-image-studio?fpr=thanhnguyxn"
-        },
-        {
-          "name": "AI Image Upscaler - 2x & 4x Resolution Enhancement",
-          "description": "(Apify Scraper) Make blurry photos crystal clear. Upscale images to 2x or 4x resolution without losing quality.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ntriqpro/image-upscale-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "AI Image Watermark Remover",
@@ -62883,13 +62834,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/kalirobot/fb-ad-library-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Facebook Ad Scraper with AI Analysis",
-          "description": "(Apify Scraper) The only Facebook Ad Library scraper with built-in GPT-4 AI analysis. Scrape competitor ads and instantly get effectiveness scores, emotional triggers, copywriting techniques, winning ad predictions, and spend estimates — all in one run.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/webdatalabs/facebook-ad-intelligence-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Facebook Ads Library",
@@ -76899,13 +76843,6 @@
           "link": "https://apify.com/alizarin_refrigerator-owner/the-yellow-pages-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "thebluebook.com Scraper",
-          "description": "(Apify Scraper) Scrape verified contractor and subcontractor profiles from thebluebook.com — the largest US construction directory — into clean JSON, CSV or Excel. Get company names, phones, emails, addresses, trade categories, certifications (MBE/WBE/DBE), proje...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fayoussef/thebluebook-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "THEFA Leagues and Teams Data Scraper",
           "description": "(Apify Scraper) A high-performance Apify Actor designed to scrape football league structures, seasons, divisions, and team data from [The FA Full-Time](https://fulltime.thefa.com). This Actor utilizes an asynchronous architecture to handle high-volume data extrac...",
           "auth": "apiKey",
@@ -82238,7 +82175,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 2157,
+      "api_count": 2156,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -89463,13 +89400,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/yasmany.casanova/ifood-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ifood Scraper",
-          "description": "(Apify Scraper)",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/gio21/ifood-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "iFood Scraper - Menus, Prices & Reviews",
@@ -110668,7 +110598,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 4349,
+      "api_count": 4347,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -124881,13 +124811,6 @@
           "link": "https://apify.com/danek/instagram-posts-scraper-ppr?fpr=thanhnguyxn"
         },
         {
-          "name": "Instagram Profile & Posts Scraper 2026 (No API Key)",
-          "description": "(Apify Scraper) Scrape Instagram profiles — extract bio, follower count, post count, following, profile URL, and public post data. No login required. CSV/JSON output.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/cryptosignals/instagram-profile-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Instagram profile engagement analytics",
           "description": "(Apify Scraper) Analyze Instagram posts. Measure real engagement. Discover what works.",
           "auth": "apiKey",
@@ -135514,13 +135437,6 @@
           "link": "https://apify.com/alizarin_refrigerator-owner/the-yellow-pages-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "thebluebook.com Scraper",
-          "description": "(Apify Scraper) Scrape verified contractor and subcontractor profiles from thebluebook.com — the largest US construction directory — into clean JSON, CSV or Excel. Get company names, phones, emails, addresses, trade categories, certifications (MBE/WBE/DBE), proje...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fayoussef/thebluebook-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "TheFork Restaurant Intelligence Scrapper",
           "description": "(Apify Scraper) Comprehensive restaurant intelligence from TheFork platform. Get detailed venue data, pricing, reviews, ratings, and availability across 11 European countries. Enterprise-grade reliability with 99.9 % success rate.",
           "auth": "apiKey",
@@ -141119,7 +141035,7 @@
       "id": "apify-mcp-servers",
       "emoji": "🧩",
       "name": "Apify MCP Servers",
-      "api_count": 264,
+      "api_count": 263,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -141365,13 +141281,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/doesaiknow/ai-brand-visibility-tracker-chatgpt-perplexity-gemini?fpr=thanhnguyxn"
-        },
-        {
-          "name": "AI Image Upscaler - 2x & 4x Resolution Enhancement",
-          "description": "(Apify Scraper) Make blurry photos crystal clear. Upscale images to 2x or 4x resolution without losing quality.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/ntriqpro/image-upscale-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "AI News Content Scraper",
@@ -142975,7 +142884,7 @@
       "id": "apify-news",
       "emoji": "📰",
       "name": "Apify News",
-      "api_count": 497,
+      "api_count": 496,
       "apis": [
         {
           "name": "⚖️ HHS Data Breach Scraper",
@@ -145265,13 +145174,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ahmed_jasarevic/reddit-scraper-pro?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Reddit Scraper Fast — Latest Posts & Search (No API Key)",
-          "description": "(Apify Scraper) Scrape Reddit posts from subreddits or search by keyword. Uses RSS feeds — no API key required. Get titles, authors, timestamps, and permalinks. Ideal for social listening, trend monitoring, and research. PPE pricing — pay only for results.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/cryptosignals/reddit-scraper-fast?fpr=thanhnguyxn"
         },
         {
           "name": "Reddit Scraper Lite",
@@ -174284,7 +174186,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 2615,
+      "api_count": 2612,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -176336,13 +176238,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/viralanalyzer/facebook-ads-library?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Facebook Ad Scraper with AI Analysis",
-          "description": "(Apify Scraper) The only Facebook Ad Library scraper with built-in GPT-4 AI analysis. Scrape competitor ads and instantly get effectiveness scores, emotional triggers, copywriting techniques, winning ad predictions, and spend estimates — all in one run.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/webdatalabs/facebook-ad-intelligence-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Facebook Ads Collector",
@@ -180074,13 +179969,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/alizarin_refrigerator-owner/instagram-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Instagram Profile & Posts Scraper 2026 (No API Key)",
-          "description": "(Apify Scraper) Scrape Instagram profiles — extract bio, follower count, post count, following, profile URL, and public post data. No login required. CSV/JSON output.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/cryptosignals/instagram-profile-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Instagram Profile Data API",
@@ -184421,13 +184309,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ahmed_jasarevic/reddit-scraper-pro?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Reddit Scraper Fast — Latest Posts & Search (No API Key)",
-          "description": "(Apify Scraper) Scrape Reddit posts from subreddits or search by keyword. Uses RSS feeds — no API key required. Get titles, authors, timestamps, and permalinks. Ideal for social listening, trend monitoring, and research. PPE pricing — pay only for results.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/cryptosignals/reddit-scraper-fast?fpr=thanhnguyxn"
         },
         {
           "name": "Reddit Scraper Lite",
