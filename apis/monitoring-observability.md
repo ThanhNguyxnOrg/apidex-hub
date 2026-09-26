@@ -19,4 +19,4 @@
 | **Zabbix** | Open-source enterprise monitoring and alerting. | 🔑 ApiKey | ✅ | [Link](https://www.zabbix.com/documentation/current/manual/api) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

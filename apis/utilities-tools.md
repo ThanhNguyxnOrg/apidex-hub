@@ -19,4 +19,4 @@
 | **URLBox** | Website screenshot API. | 🔑 ApiKey | ✅ | [Link](https://www.urlbox.io/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

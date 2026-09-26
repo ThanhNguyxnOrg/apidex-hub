@@ -9,4 +9,4 @@
 | **Wikivoyage** | Travel guide metadata and destination content from Wikimedia. | No | ✅ | [Link](https://en.wikivoyage.org/w/api.php) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

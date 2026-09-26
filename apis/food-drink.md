@@ -11,7 +11,6 @@
 | **Ninjas Recipe** | Recipe search with nutrition data. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/recipe) |
 | **Open Brewery DB** | Brewery database worldwide. | No | ✅ | [Link](https://www.openbrewerydb.org/) |
 | **Open Food Facts** | Food product data. | No | ✅ | [Link](https://world.openfoodfacts.org/data) |
-| **Open Food Facts** | Database of food products from around the world with ingredients, allergens... | No | ✅ | [Link](https://world.openfoodfacts.org/data) |
 | **Punk API** | BrewDog beer recipes and data (community fork). | No | ✅ | [Link](https://punkapi-alxiw.amvera.io/v3/) |
 | **Spoonacular** | Food, recipes, and nutrition data. | 🔑 ApiKey | ✅ | [Link](https://spoonacular.com/food-api) |
 | **Tasty** | Recipes from Tasty (via RapidAPI). | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/apidojo/api/tasty/) |
@@ -25,4 +24,4 @@
 | **Zomato** | Restaurant search and reviews. | 🔑 ApiKey | ✅ | [Link](https://developers.zomato.com/api) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

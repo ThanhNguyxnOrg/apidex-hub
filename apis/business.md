@@ -11,4 +11,4 @@
 | **SwiftKanban** | Kanban software, Visualize Work, Increase Organizations Lead Time, Throughput... | 🔑 ApiKey | ✅ | [Link](https://www.digite.com/knowledge-base/swiftkanban/article/api-for-swift-kanban-web-services/#restapi) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

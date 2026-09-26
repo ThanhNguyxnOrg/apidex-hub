@@ -20,7 +20,6 @@
 | **Imgix** | Real-time image processing and optimization. | 🔑 ApiKey | ✅ | [Link](https://docs.imgix.com/) |
 | **Imgur** | Images. | 🔐 OAuth | ✅ | [Link](https://apidocs.imgur.com/) |
 | **MarketAux** | Live stock market news with tagged tickers + sentiment and stats JSON API. | 🔑 ApiKey | ✅ | [Link](https://www.marketaux.com/) |
-| **Met Museum** | Metropolitan Museum of Art collection (**No Auth**). | No | ✅ | [Link](https://metmuseum.github.io/) |
 | **NASA Image Library** | NASA's image and video library (**No Auth**). | No | ✅ | [Link](https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf) |
 | **New York Times** | The New York Times Developer Network. | 🔑 ApiKey | ✅ | [Link](https://developer.nytimes.com/) |
 | **NewsData** | News data API for live-breaking news and headlines from reputed  news sources. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/docs) |
@@ -43,4 +42,4 @@
 | **Webdam** | Images. | 🔐 OAuth | ✅ | [Link](https://www.damsuccess.com/hc/en-us/articles/202134055-REST-API) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

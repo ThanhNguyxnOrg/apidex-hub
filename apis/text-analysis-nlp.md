@@ -23,4 +23,4 @@
 | **Wit.ai** | Intent/entity extraction for text/voice. | 🔑 ApiKey | ✅ | [Link](https://wit.ai/docs/http/20240304/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

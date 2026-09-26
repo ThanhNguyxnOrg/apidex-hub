@@ -58,14 +58,12 @@
 | **Path of Exile** | Path of Exile Game Information. | 🔐 OAuth | ✅ | [Link](https://www.pathofexile.com/developer/docs) |
 | **PlayerDB** | Query Minecraft, Steam and XBox Accounts. | No | ✅ | [Link](https://playerdb.co/) |
 | **PokeAPI** | All the Pokémon data you'll ever need in one place. | No | ✅ | [Link](https://pokeapi.co/) |
-| **Pokéapi** | Pokémon data. | No | ✅ | [Link](https://pokeapi.co) |
 | **PokéAPI v2** | Comprehensive Pokémon data (**No Auth, 300M+ requests/month**). | No | ✅ | [Link](https://pokeapi.co/docs/v2) |
 | **Pokémon TCG** | Pokémon TCG Information. | No | ✅ | [Link](https://pokemontcg.io) |
 | **Potter DB** | Harry Potter database API for characters, spells, potions, books, and movies. | No | ✅ | [Link](https://potterdb.com/) |
 | **PUBG** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.pubg.com/) |
 | **RAWG** | Video games database (500k+ games). | 🔑 ApiKey | ✅ | [Link](https://rawg.io/apidocs) |
 | **Rick and Morty** | Show data. | No | ✅ | [Link](https://rickandmortyapi.com) |
-| **Rick and Morty API** | Database of characters, locations, and episodes from the show Rick and Morty. | No | ✅ | [Link](https://rickandmortyapi.com/) |
 | **Riot Games** | League of Legends data. | 🔑 ApiKey | ✅ | [Link](https://developer.riotgames.com/) |
 | **RuneScape** | RuneScape and OSRS RPGs information. | No | ✅ | [Link](https://runescape.wiki/w/Application_programming_interface) |
 | **Scryfall** | Magic: The Gathering card search. | No | ✅ | [Link](https://scryfall.com/docs/api) |
@@ -83,4 +81,4 @@
 | **Yu-Gi-Oh!** | Yu-Gi-Oh! card data. | No | ✅ | [Link](https://ygoprodeck.com/api-guide/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

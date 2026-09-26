@@ -11,7 +11,6 @@
 | **Google Books** | Search and preview books. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/books/) |
 | **ISBNdb** | ISBN book database. | 🔑 ApiKey | ✅ | [Link](https://isbndb.com/apidocs/v2) |
 | **Open Library** | Fetch data about millions of books and covers. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
-| **Open Library** | Retrieve data about books, authors, subjects, and search library catalog. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
 | **Penguin Publishing** | Book data. | No | ✅ | [Link](http://www.penguinrandomhouse.biz/webservices/rest/) |
 | **Quran** | RESTful Quran API with multiple languages. | No | ✅ | [Link](https://quran.api-docs.io/) |
 | **Quran Cloud** | Quran text, translations, and recitations. | No | ✅ | [Link](https://alquran.cloud/api) |
@@ -20,4 +19,4 @@
 | **Wolne Lektury** | API for obtaining information about e-books available on the WolneLektury.pl ... | No | ✅ | [Link](https://wolnelektury.pl/api/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

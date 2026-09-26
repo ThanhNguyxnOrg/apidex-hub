@@ -17,15 +17,13 @@
 | **Economia.Awesome** | Portuguese free currency prices and conversion with no rate limits. | No | ✅ | [Link](https://docs.awesomeapi.com.br/api-de-moedas) |
 | **ExchangeRate-API** | Currency exchange rate conversion data. | No | ✅ | [Link](https://www.exchangerate-api.com/docs/free) |
 | **Exchangerate.host** | Foreign exchange & crypto rates. | 🔑 ApiKey | ✅ | [Link](https://exchangerate.host/) |
-| **ExchangeRate.host** | Free foreign exchange and crypto rates (**No Auth**). | No | ✅ | [Link](https://exchangerate.host/) |
 | **Exchangeratesapi** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://exchangeratesapi.io/) |
 | **Fixer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://fixer.io/) |
 | **Frankfurter** | Open source exchange rates API. | No | ✅ | [Link](https://www.frankfurter.app/) |
-| **Frankfurter** | Currency exchange rates tracker published by the European Central Bank. | No | ✅ | [Link](https://www.frankfurter.app/) |
 | **FreeCurrencyAPI** | Free currency conversion API. | 🔑 ApiKey | ✅ | [Link](https://freecurrencyapi.com/docs) |
 | **National Bank of Poland** | Official exchange rates from NBP. | No | ✅ | [Link](https://api.nbp.pl/en.html) |
 | **Open Exchange Rates** | Currency conversion and exchange rates. | 🔑 ApiKey | ✅ | [Link](https://docs.openexchangerates.org/) |
 | **VATComply** | VAT rates and FX conversion data. | No | ✅ | [Link](https://www.vatcomply.com) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

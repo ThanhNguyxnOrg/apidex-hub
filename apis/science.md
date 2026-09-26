@@ -13,12 +13,10 @@
 | **ISS Location** | Real-time International Space Station location (**No Auth**). | No | ✅ | [Link](http://open-notify.org/Open-Notify-API/ISS-Location-Now/) |
 | **ITIS** | Integrated Taxonomic Information System. | No | ✅ | [Link](https://www.itis.gov/ws_description.html) |
 | **Launch Library** | Rocket launch schedules and information. | No | ✅ | [Link](https://thespacedevs.com/llapi) |
-| **Launch Library 2** | Upcoming and historical rocket launches worldwide (**No Auth**). | No | ✅ | [Link](https://thespacedevs.com/llapi) |
 | **Materials Platform for Data Science** | Curated experimental data for materials science. | 🔑 ApiKey | ✅ | [Link](https://mpds.io) |
 | **Minor Planet Center** | Asterank.com Information. | No | No | [Link](http://www.asterank.com/mpc) |
 | **NASA ADS** | NASA Astrophysics Data System. | 🔐 OAuth | ✅ | [Link](https://ui.adsabs.harvard.edu/help/api/api-docs.html) |
 | **NASA API** | Access NASA data, including Astronomy Picture of the Day (APOD). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
-| **NASA APIs** | Access NASA's data including astronomy pictures of the day, Mars rover photos, and more. | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
 | **Newton** | Symbolic and arithmetic math calculator API (**No Auth**). | No | ✅ | [Link](https://newton.vercel.app/) |
 | **NOAA Tides & Currents** | US tides, currents, and water level data. | No | ✅ | [Link](https://api.tidesandcurrents.noaa.gov/api/prod/) |
 | **Noctua** | REST API used to access NoctuaSky features. | No | ✅ | [Link](https://api.noctuasky.com/api/v1/swaggerdoc/) |
@@ -35,8 +33,7 @@
 | **USGS Earthquake** | Real-time earthquake data (**No Auth**). | No | ✅ | [Link](https://earthquake.usgs.gov/fdsnws/event/1/) |
 | **USGS Water Services** | Water quality and level info for rivers and lakes. | No | ✅ | [Link](https://waterservices.usgs.gov/) |
 | **Where the ISS at** | Real-time ISS position, velocity and visibility (**No Auth**). | No | ✅ | [Link](https://wheretheiss.at/w/developer) |
-| **Where the ISS at?** | Real-time International Space Station position tracking (**No Auth**). | No | ✅ | [Link](https://wheretheiss.at/w/developer) |
 | **Wolfram Short Answers** | Computational knowledge answers. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/short-answers-api/documentation) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

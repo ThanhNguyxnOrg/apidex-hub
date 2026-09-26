@@ -25,4 +25,4 @@
 | **YOURLS** | Self-hosted shortener with extensible API. | 🔑 ApiKey | ✅ | [Link](https://yourls.org/#API) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

@@ -33,4 +33,4 @@
 | **Tredict** | Get and set activities, health data and more. | 🔐 OAuth | ✅ | [Link](https://www.tredict.com/blog/oauth_docs/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

@@ -10,7 +10,6 @@
 | **Danish data service Energi** | Open energy data from Energinet to society. | No | ✅ | [Link](https://www.energidataservice.dk/) |
 | **Global Forest Watch** | Deforestation and forest monitoring data. | 🔑 ApiKey | ✅ | [Link](https://www.globalforestwatch.org/help/developers/) |
 | **GrünstromIndex** | Green Power Index for Germany (Grünstromindex/GSI) | No | No | [Link](https://gruenstromindex.de/) |
-| **WAQI** | Real-time Air Quality Index (AQI) data for cities worldwide. | 🔑 ApiKey | ✅ | [Link](https://aqicn.org/api/) |
 | **Luchtmeetnet** | Predicted and actual air quality components for The Netherlands (RIVM) | No | ✅ | [Link](https://api-docs.luchtmeetnet.nl/) |
 | **NOAA Climate Data Online** | Historical climate and weather data. | 🔑 ApiKey | ✅ | [Link](https://www.ncdc.noaa.gov/cdo-web/webservices/v2) |
 | **Open-Meteo Solar Forecast** | Solar radiation and energy forecast for photovoltaic systems. | No | ✅ | [Link](https://open-meteo.com/) |
@@ -23,4 +22,4 @@
 | **Website Carbon** | API to estimate the carbon footprint of loading web pages. | No | ✅ | [Link](https://api.websitecarbon.com/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

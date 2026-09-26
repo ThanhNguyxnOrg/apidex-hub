@@ -21,4 +21,4 @@
 | **ZipRecruiter** | Job search app and website. | 🔑 ApiKey | ✅ | [Link](https://www.ziprecruiter.com/publishers) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

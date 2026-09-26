@@ -70,4 +70,4 @@
 | **Ziptastic** | Get the country, state, and city of any US zip-code. | No | ✅ | [Link](https://ziptasticapi.com/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

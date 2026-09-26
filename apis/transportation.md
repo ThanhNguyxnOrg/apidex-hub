@@ -12,7 +12,6 @@
 | **BIC-Boxtech** | Container technical detail for the global container fleet. | 🔐 OAuth | ✅ | [Link](https://docs.bic-boxtech.org/) |
 | **Boston MBTA Transit** | Stations and predicted arrivals for MBTA. | 🔑 ApiKey | ✅ | [Link](https://www.mbta.com/developers/v3-api) |
 | **Brazilian Vehicles and Prices** | Vehicles information from Fundação Instituto de Pesquisas Econômicas - Fipe. | No | ✅ | [Link](https://deividfortuna.github.io/fipe/) |
-| **Citybikes** | Bike sharing station data worldwide. | No | ✅ | [Link](https://api.citybik.es/v2/) |
 | **Compare Flight Prices** | API for comparing flight prices across platforms. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/obryan-software-obryan-software-default/api/compare-flight-prices/) |
 | **CTS** | CTS Realtime API. | 🔑 ApiKey | ✅ | [Link](https://api.cts-strasbourg.eu/) |
 | **FlightAware** | Real-time and historical flight tracking data. | 🔑 ApiKey | ✅ | [Link](https://www.flightaware.com/commercial/aeroapi/) |
@@ -75,4 +74,4 @@
 | **Velib metropolis, Paris, France** | Velib Open Data API. | No | ✅ | [Link](https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

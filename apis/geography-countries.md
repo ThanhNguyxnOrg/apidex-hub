@@ -14,4 +14,4 @@
 | **REST Countries** | Comprehensive country data (flags, capitals, currencies) (**No Auth**). | No | ✅ | [Link](https://restcountries.com/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

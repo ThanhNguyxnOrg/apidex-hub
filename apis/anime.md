@@ -22,4 +22,4 @@
 | **Waifu.pics** | Image sharing platform for anime images. | No | ✅ | [Link](https://waifu.pics/docs) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

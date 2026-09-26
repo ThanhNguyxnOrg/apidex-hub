@@ -18,11 +18,10 @@
 | **Postman Echo** | Test REST clients with echo endpoint (**No Auth**). | No | ✅ | [Link](https://www.postman-echo.com/) |
 | **Randommer** | Random data generator. | 🔑 ApiKey | ✅ | [Link](https://randommer.io/randommer-api) |
 | **RandomUser.me** | Generate random user data (like Lorem Ipsum, but for people). | No | ✅ | [Link](https://randomuser.me/) |
-| **ReqRes** | A hosted REST-API ready to respond to your AJAX requests. | No | ✅ | [Link](https://reqres.in/) |
 | **SampleAPIs** | Playground for RESTful and GraphQL endpoints (**No Auth**). | No | ✅ | [Link](https://api.sampleapis.com/) |
 | **This Person Does not Exist** | Generates real-life faces of people who do not exist. | No | ✅ | [Link](https://thispersondoesnotexist.com) |
 | **What The Commit** | Random commit message generator. | No | No | [Link](http://whatthecommit.com/index.txt) |
 | **Yes No** | Generate yes or no randomly. | No | ✅ | [Link](https://yesno.wtf/api) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

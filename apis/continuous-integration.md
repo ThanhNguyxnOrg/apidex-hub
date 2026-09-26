@@ -16,4 +16,4 @@
 | **Travis CI** | Sync your GitHub projects with Travis CI to test your code in minutes. | 🔑 ApiKey | ✅ | [Link](https://docs.travis-ci.com/api/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

@@ -13,4 +13,4 @@
 | **Taddy** | GraphQL podcast search and metadata API. | 🔑 ApiKey | ✅ | [Link](https://taddy.org/developers) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

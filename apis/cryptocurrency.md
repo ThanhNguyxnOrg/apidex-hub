@@ -22,7 +22,6 @@
 | **Coinigy** | Interacting with Coinigy Accounts and Exchange Directly. | 🔑 ApiKey | ✅ | [Link](https://coinigy.docs.apiary.io) |
 | **Coinlayer** | Real-time Crypto Exchange Rates. | 🔑 ApiKey | ✅ | [Link](https://coinlayer.com) |
 | **Coinlore** | Cryptocurrency prices and market data (**No Auth**). | No | ✅ | [Link](https://www.coinlore.com/cryptocurrency-data-api) |
-| **Coinlore** | Crypto prices, market cap, and volume data for over 12,000 coins. | No | ✅ | [Link](https://www.coinlore.com/cryptocurrency-data-api) |
 | **CoinMarketCap** | Cryptocurrency prices, market cap, exchange rates. | 🔑 ApiKey | ✅ | [Link](https://coinmarketcap.com/api/) |
 | **CoinPaprika** | Cryptocurrency market data (**No Auth, generous limits**). | No | ✅ | [Link](https://api.coinpaprika.com/) |
 | **CoinRanking** | Live Cryptocurrency data. | 🔑 ApiKey | ✅ | [Link](https://developers.coinranking.com/api/documentation) |
@@ -52,4 +51,4 @@
 | **ZMOK** | Ethereum JSON RPC API and Web3 provider. | No | ✅ | [Link](https://zmok.io) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

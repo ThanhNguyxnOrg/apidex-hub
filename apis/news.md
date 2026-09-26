@@ -13,4 +13,4 @@
 | **TheNewsAPI** | Global news API. | 🔑 ApiKey | ✅ | [Link](https://www.thenewsapi.com/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

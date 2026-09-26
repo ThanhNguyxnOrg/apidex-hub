@@ -16,4 +16,4 @@
 | **UK Bank Holidays** | Official UK bank holiday dataset API. | No | ✅ | [Link](https://www.gov.uk/bank-holidays.json) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

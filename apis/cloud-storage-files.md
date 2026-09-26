@@ -29,4 +29,4 @@
 | **Web3.Storage** | Decentralized storage API built on IPFS/Filecoin. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/docs/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

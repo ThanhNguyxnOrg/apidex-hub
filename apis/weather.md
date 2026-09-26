@@ -18,17 +18,13 @@
 | **Meteorologisk Institutt** | Weather and climate data. | 🔑 ApiKey | ✅ | [Link](https://api.met.no/weatherapi/documentation) |
 | **National Weather Service** | Weather forecasts, alerts, and observations for the United States. | No | ✅ | [Link](https://www.weather.gov/documentation/services-web-api) |
 | **Oikolab** | 70+ years of global, hourly historical and forecast weather data from NOAA an... | 🔑 ApiKey | ✅ | [Link](https://docs.oikolab.com) |
-| **Open-Meteo** | Open-source weather API (**No API key required**). | No | ✅ | [Link](https://open-meteo.com/) |
 | **openSenseMap** | Data from Personal Weather Stations called senseBoxes. | No | ✅ | [Link](https://api.opensensemap.org/) |
 | **OpenUV** | Real-time UV Index Forecast. | 🔑 ApiKey | ✅ | [Link](https://www.openuv.io) |
 | **OpenWeatherMap** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://openweathermap.org/api) |
-| **OpenWeatherMap** | Current weather, forecasts, and historical data. | 🔑 ApiKey | ✅ | [Link](https://openweathermap.org/api) |
 | **QWeather** | Location-based weather data. | 🔑 ApiKey | ✅ | [Link](https://dev.qweather.com/en/) |
 | **RainViewer** | Weather radar. | No | ✅ | [Link](https://www.rainviewer.com/api.html) |
 | **Storm Glass** | Global marine weather from multiple sources. | 🔑 ApiKey | ✅ | [Link](https://stormglass.io/) |
-| **Sunrise-Sunset** | Sunrise and sunset times for any location (**No Auth**). | No | ✅ | [Link](https://sunrisesunset.io/api/) |
 | **Tomorrow** | Weather API Powered by Proprietary Technology. | 🔑 ApiKey | ✅ | [Link](https://docs.tomorrow.io) |
-| **US Weather** | US National Weather Service. | No | ✅ | [Link](https://www.weather.gov/documentation/services-web-api) |
 | **Visual Crossing** | Global weather data and forecasts. | 🔑 ApiKey | ✅ | [Link](https://www.visualcrossing.com/weather-api) |
 | **WeatherAPI** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://www.weatherapi.com/) |
 | **Weatherbit** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://www.weatherbit.io/api) |
@@ -36,4 +32,4 @@
 | **wttr.in** | Console-oriented weather forecast service. | No | ✅ | [Link](https://wttr.in/) |
 | **Yandex.Weather** | Assesses weather condition in specific locations. | 🔑 ApiKey | ✅ | [Link](https://yandex.com/dev/weather/) |
 
-[⬆ Back to Table of Contents](../README.md#table-of-contents)
+[⬆ Back to Table of Contents](../README.md#table-of-contents)

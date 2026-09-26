@@ -20,7 +20,6 @@
 | **Mixcloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://www.mixcloud.com/developers/) |
 | **MusicBrainz** | Music database. | No | ✅ | [Link](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2) |
 | **Musixmatch** | Millions of lyrics in 80+ languages, translate lyrics, and search for tracks. | 🔑 ApiKey | ✅ | [Link](https://developer.musixmatch.com/) |
-| **Musixmatch** | Lyrics. | 🔑 ApiKey | ✅ | [Link](https://developer.musixmatch.com/) |
 | **Openwhyd** | Download curated playlists of streaming tracks (YouTube, SoundCloud, etc...) | No | ✅ | [Link](https://openwhyd.github.io/openwhyd/API) |
 | **Phishin** | A web-based archive of legal live audio recordings of the improvisational roc... | 🔑 ApiKey | ✅ | [Link](https://phish.in/api-docs) |
 | **Radio Browser** | Community database of internet radio stations (**No Auth**). | No | ✅ | [Link](https://api.radio-browser.info/) |
@@ -35,4 +34,4 @@
 | **TheAudioDB** | Music metadata, charts, and more. | 🔑 ApiKey | ✅ | [Link](https://www.theaudiodb.com/api) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

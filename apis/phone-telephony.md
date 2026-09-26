@@ -15,4 +15,4 @@
 | **Veriphone** | Phone number validation & carrier lookup. | 🔑 ApiKey | ✅ | [Link](https://veriphone.io) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+

@@ -47,7 +47,6 @@
 | **Gitea** | Self-hosted Git service with REST API. | 🔐 OAuth | ✅ | [Link](https://gitea.com/api/swagger) |
 | **GitHub** | Make use of GitHub data. | 🔐 OAuth | ✅ | [Link](https://docs.github.com/en/free-pro-team@latest/rest) |
 | **GitHub REST API** | Access GitHub data — repos, users, gists, and more (**No Auth for public data**). | No | ✅ | [Link](https://docs.github.com/en/rest) |
-| **GitHub REST API** | Interact with GitHub repositories, users, issues, and pull requests. | 🔑 ApiKey | ✅ | [Link](https://docs.github.com/en/rest) |
 | **Gitlab** | Automate GitLab. | 🔐 OAuth | ✅ | [Link](https://docs.gitlab.com/ee/api/) |
 | **Google Calendar** | Create, view, or update calendar events. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/calendar/api) |
 | **Google Docs** | Create and edit documents. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/docs/api/reference/rest) |
@@ -83,7 +82,6 @@
 | **Linear** | Modern issue tracking for software teams. | 🔑 ApiKey | ✅ | [Link](https://developers.linear.app/docs) |
 | **Logs.to** | Generate logs. | 🔑 ApiKey | ✅ | [Link](https://logs.to/) |
 | **MAC address vendor lookup** | Retrieve vendor details and other information regarding a given MAC address. | No | ✅ | [Link](https://macvendors.com/) |
-| **Mailboxlayer** | Email verification and validation. | 🔑 ApiKey | ✅ | [Link](https://mailboxlayer.com/) |
 | **Microlink** | Extract metadata, take screenshots, and generate PDFs from any URL. | No | ✅ | [Link](https://microlink.io/docs/api/getting-started/overview) |
 | **Mintlify** | For programmatically generating documentation for code. | 🔑 ApiKey | ✅ | [Link](https://docs.mintlify.com) |
 | **MY IP** | Get IP address information. | No | ✅ | [Link](https://www.myip.com/api-docs/) |
@@ -142,4 +140,4 @@
 | **ZenRows** | Web Scraping API that bypasses anti-bot solutions while offering JS rendering... | 🔑 ApiKey | ✅ | [Link](https://www.zenrows.com/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
-
+
