@@ -9,7 +9,7 @@ Auto-extracts:
 
 Usage:
   python scripts/parse_readme.py
-  python scripts/parse_readme.py --readme README.md --output website/data/apis.json
+  python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
 """
 
 import re
@@ -178,7 +178,7 @@ def parse_readme(readme_path: str):
 def main():
     parser = argparse.ArgumentParser(description='Parse README.md or apis directory → apis.json')
     parser.add_argument('--readme', default='apis', help='Path to README.md or apis directory')
-    parser.add_argument('--output', default='website/data/apis.json', help='Output JSON path')
+    parser.add_argument('--output', default='site/src/data/apis.json', help='Output JSON path')
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parent.parent

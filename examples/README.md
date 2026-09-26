@@ -68,7 +68,7 @@ Some APIs require authentication:
 
 ## 💡 Want to Contribute?
 
-We'd love more examples! See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
+We'd love more examples! See [CONTRIBUTING.md](../.github/CONTRIBUTING.md) for guidelines.
 
 **Popular APIs that need examples:**
 - 🎵 Spotify

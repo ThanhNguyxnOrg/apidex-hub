@@ -279,7 +279,7 @@ jobs:
                 const reason = parts.slice(1).join(' | ') || '404';
                 brokenTable += `| ${i + 1} | ${url} | ${reason} |\n`;
               });
-              brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Review and update/remove these dead links from README.md.\n`;
+              brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Review and update/remove these dead links from the apis/ directory.\n`;
             } else {
               brokenSection = `### ✅ No Broken Links\n\nAll API links are responding correctly. Nothing to fix! 🎉\n`;
             }
