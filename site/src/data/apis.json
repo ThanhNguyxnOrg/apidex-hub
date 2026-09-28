@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-26T04:52:02.391174+00:00",
+    "generated_at": "2026-09-28T05:56:37.214176+00:00",
     "source": "README.md",
-    "total_apis": 12564,
+    "total_apis": 12562,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11292,
+    "api_key_count": 11290,
     "oauth_count": 143,
-    "https_count": 11978,
+    "https_count": 11976,
     "https_percentage": 95
   },
   "categories": [
@@ -29649,7 +29649,7 @@
       "id": "apify-jobs",
       "emoji": "💼",
       "name": "Apify Jobs",
-      "api_count": 1019,
+      "api_count": 1018,
       "apis": [
         {
           "name": "⚡️Rapid Linkedin Jobs Scraper",
@@ -34739,13 +34739,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/blackfalcondata/pnet-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Popular Job Boards Scraper",
-          "description": "(Apify Scraper) Extract job listings across the web, enrich with full job details, and analyze salary data by title and company. Supports powerful queries, pagination, recency filters, and location granularity. Outputs clean JSON for CRMs, warehouses, and analytics.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/igview-owner/jobs-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "**Post Comments & Engagements Scraper for LinkedIn \\",
@@ -61920,7 +61913,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 1466,
+      "api_count": 1465,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -71497,13 +71490,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/clappi/x-twitter-comments-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "X / Twitter Mentions & Keyword Monitor",
-          "description": "(Apify Scraper) Monitor X (Twitter) for mentions of handles and keyword watchlists. Returns normalized posts with engagement metadata for brand monitoring, competitive intelligence, and social listening.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/automly/x-twitter-mentions-keyword-monitor?fpr=thanhnguyxn"
         },
         {
           "name": "X / Twitter Post Scraper",
