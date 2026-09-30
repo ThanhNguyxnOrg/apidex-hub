@@ -14,7 +14,7 @@
 | **ITIS** | Integrated Taxonomic Information System. | No | ✅ | [Link](https://www.itis.gov/ws_description.html) |
 | **Launch Library** | Rocket launch schedules and information. | No | ✅ | [Link](https://thespacedevs.com/llapi) |
 | **Materials Platform for Data Science** | Curated experimental data for materials science. | 🔑 ApiKey | ✅ | [Link](https://mpds.io) |
-| **Minor Planet Center** | Asterank.com Information. | No | No | [Link](http://www.asterank.com/mpc) |
+| **Minor Planet Center** | Astronomical data on minor planets and comets. | No | ✅ | [Link](https://minorplanetcenter.net/web_service) |
 | **NASA ADS** | NASA Astrophysics Data System. | 🔐 OAuth | ✅ | [Link](https://ui.adsabs.harvard.edu/help/api/api-docs.html) |
 | **NASA API** | Access NASA data, including Astronomy Picture of the Day (APOD). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
 | **Newton** | Symbolic and arithmetic math calculator API (**No Auth**). | No | ✅ | [Link](https://newton.vercel.app/) |

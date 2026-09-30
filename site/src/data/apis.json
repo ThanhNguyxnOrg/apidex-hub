@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T01:30:12.999920+00:00",
+    "generated_at": "2026-09-30T04:26:09.249695+00:00",
     "source": "README.md",
-    "total_apis": 12561,
+    "total_apis": 12559,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11289,
+    "api_key_count": 11287,
     "oauth_count": 143,
     "https_count": 11975,
     "https_percentage": 95
@@ -13064,7 +13064,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 1589,
+      "api_count": 1588,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -14360,13 +14360,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/rastriq/amazon-reviews-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Amazon Reviews by Keyword Scraper",
-          "description": "(Apify Scraper) This actor retrieves Amazon product reviews filtered by a specified keyword, enabling targeted analysis of customer feedback. It extracts real-time, structured review data including ratings, titles, texts, and user information from major Amazon ma...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/axesso_data/amazon-reviews-by-keyword-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Amazon Reviews Scraper",
@@ -46109,7 +46102,7 @@
       "id": "apify-news",
       "emoji": "📰",
       "name": "Apify News",
-      "api_count": 410,
+      "api_count": 409,
       "apis": [
         {
           "name": "⚖️ HHS Data Breach Scraper",
@@ -47391,13 +47384,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/cryptosignals/hn-top-stories?fpr=thanhnguyxn"
-        },
-        {
-          "name": "HOA Documents Scraper",
-          "description": "(Apify Scraper) Collect comprehensive HOA news, violations, and regulations from About HOA's, including homeowner disputes, foreclosures, board misconduct, and regulatory updates. Access thousands of articles across all US states with full content, source links, ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/parseforge/hoa-documents-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Hot UK Deals Scraper",
@@ -85100,8 +85086,8 @@
           "name": "Countly",
           "description": "Countly web analytics.",
           "auth": "No",
-          "https": false,
-          "link": "https://api.count.ly/reference"
+          "https": true,
+          "link": "https://github.com/Countly/countly-server"
         },
         {
           "name": "Creative Commons Catalog",
@@ -86056,10 +86042,10 @@
         },
         {
           "name": "Minor Planet Center",
-          "description": "Asterank.com Information.",
+          "description": "Astronomical data on minor planets and comets.",
           "auth": "No",
-          "https": false,
-          "link": "http://www.asterank.com/mpc"
+          "https": true,
+          "link": "https://minorplanetcenter.net/web_service"
         },
         {
           "name": "NASA ADS",

@@ -2,7 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Countly** | Countly web analytics. | No | No | [Link](https://api.count.ly/reference) |
+| **Countly** | Countly web analytics. | No | ✅ | [Link](https://github.com/Countly/countly-server) |
 | **Creative Commons Catalog** | Search among openly licensed and public domain works. | 🔐 OAuth | ✅ | [Link](https://api.creativecommons.engineering/) |
 | **deps.dev** | Open package/dependency intelligence by Google. | No | ✅ | [Link](https://docs.deps.dev/api/) |
 | **Drupal.org** | Drupal.org. | No | ✅ | [Link](https://www.drupal.org/drupalorg/docs/api) |
