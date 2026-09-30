@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-28T05:58:03.066826+00:00",
+    "generated_at": "2026-09-30T01:29:38.876465+00:00",
     "source": "README.md",
-    "total_apis": 12562,
+    "total_apis": 12561,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11290,
+    "api_key_count": 11289,
     "oauth_count": 143,
-    "https_count": 11976,
+    "https_count": 11975,
     "https_percentage": 95
   },
   "categories": [
@@ -13064,7 +13064,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 1590,
+      "api_count": 1589,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -21094,13 +21094,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/lulzasaur/rvlife-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Sahibinden Car Monitor - New Leads & Phones",
-          "description": "(Apify Scraper) Monitor new Sahibinden car listings and phone numbers from page 1 URLs. First run saves a baseline, later runs return only new ads.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/clearpath/sahibinden-car-monitor?fpr=thanhnguyxn"
         },
         {
           "name": "Sainsbury's UK Grocery Scraper",
