@@ -230,7 +230,11 @@ function ConstellationCanvas({ theme }: { theme: "light" | "dark" }) {
         ctx.fillText(p.label, p.x + 8, p.y + 4);
       });
 
-      animationFrameId = requestAnimationFrame(draw);
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const isMobile = window.innerWidth < 768;
+      if (!prefersReducedMotion && !isMobile) {
+        animationFrameId = requestAnimationFrame(draw);
+      }
     };
 
     draw();
@@ -334,6 +338,7 @@ function ApiPlayground({ theme }: { theme: "light" | "dark" }) {
           <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
           <span className="w-2.5 h-2.5 rounded-full bg-green-500/70" />
           <span className="text-[11px] text-muted-foreground ml-2 font-sans font-medium">playground.js</span>
+          <span className="text-[9.5px] font-mono text-primary px-1.5 py-0.5 rounded-full bg-primary/10 border border-primary/20">Simulation Preview</span>
         </div>
         
         {/* Sandbox tabs */}
@@ -428,6 +433,7 @@ export function Hero({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: -1000, y: -1000 });
 
   useEffect(() => {
     if (!ref.current) return;
@@ -439,13 +445,28 @@ export function Hero({
     return () => obs.disconnect();
   }, []);
 
+  const handleHeroMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+  };
+
   return (
     <section
       ref={ref}
+      onMouseMove={handleHeroMouseMove}
       className="relative overflow-hidden border-b border-border bg-background transition-colors duration-300"
     >
       {/* 3D Particle Constellation background canvas */}
       <ConstellationCanvas theme={theme} />
+
+      {/* Interactive cursor glow trail */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 transition-opacity duration-300 hidden md:block"
+        style={{
+          background: `radial-gradient(600px circle at ${mousePos.x}px ${mousePos.y}px, rgba(6, 182, 212, 0.08), transparent 60%)`,
+        }}
+      />
 
       {/* Radial lighting spots */}
       <div

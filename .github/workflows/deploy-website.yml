@@ -59,7 +59,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: site
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Build website
         working-directory: site

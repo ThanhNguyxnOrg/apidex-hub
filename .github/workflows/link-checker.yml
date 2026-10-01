@@ -239,9 +239,10 @@ jobs:
 
             const REPORT_LABEL = 'daily-report';
             const AUTO_LABEL = 'automated';
-            const ISSUE_TITLE = '📊 Daily Link Health Report';
-
             const today = new Date().toISOString().split('T')[0];
+            const dynamicTitle = hasBroken
+              ? `🔴 Link Health Status: ${brokenCount} broken link${brokenCount > 1 ? 's' : ''} detected (${today})`
+              : `🟢 Link Health Status: All links healthy! 🎉 (${today})`;
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
 
             // Ensure labels exist
@@ -382,33 +383,35 @@ jobs:
             ];
             const body = lines.join('\n');
 
-            // Find existing report issue
+            // Find existing report issue (search both open and closed)
             const { data: existingIssues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
               labels: `${REPORT_LABEL},${AUTO_LABEL}`,
-              state: 'open',
+              state: 'all',
               sort: 'created',
               direction: 'desc',
               per_page: 1
             });
 
             if (existingIssues.length > 0) {
-              // Update existing issue body
+              // Update existing issue body, title, and ensure it stays open
               const issue = existingIssues[0];
               await github.rest.issues.update({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
+                title: dynamicTitle,
+                state: 'open',
                 body: body
               });
-              console.log(`Updated issue #${issue.number}: ${issue.html_url}`);
+              console.log(`Updated & ensured open issue #${issue.number}: ${issue.html_url}`);
             } else {
               // Create the issue for the first time
               const issue = await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                title: ISSUE_TITLE,
+                title: dynamicTitle,
                 labels: [REPORT_LABEL, AUTO_LABEL],
                 body: body
               });

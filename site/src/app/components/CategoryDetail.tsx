@@ -1,18 +1,21 @@
 import { useMemo, useState } from "react";
 import { ArrowLeft, ArrowUpDown, LayoutGrid, List } from "lucide-react";
-import { apis, categories, type Category } from "./data";
+import { apis, categories, type Api, type Category } from "./data";
 import { ApiCard } from "./ApiCard";
 import { AuthBadge, HttpsBadge } from "./AuthBadge";
 import { categoryDescriptions } from "./categoryDescriptions";
+import { CategoryIcon } from "./categoryIcons";
 
 export function CategoryDetail({
   category,
   onBack,
   onSelectCategory,
+  onOpenDetail,
 }: {
   category: Category;
   onBack: () => void;
   onSelectCategory: (c: Category) => void;
+  onOpenDetail?: (api: Api) => void;
 }) {
   const [view, setView] = useState<"cards" | "list">("cards");
   const [filter, setFilter] = useState<"all" | "none" | "apiKey" | "oauth">("all");
@@ -49,11 +52,11 @@ export function CategoryDetail({
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-6 py-10 text-left">
       {/* Sidebar */}
-      <aside className="hidden w-60 shrink-0 lg:block">
+      <aside className="hidden w-64 shrink-0 lg:block">
         <div className="sticky top-24">
           <button
             onClick={onBack}
-            className="mb-4 flex items-center gap-2 text-muted-foreground hover:text-foreground text-xs font-semibold uppercase tracking-wider transition-colors"
+            className="mb-4 flex items-center gap-2 text-muted-foreground hover:text-foreground text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer"
           >
             <ArrowLeft size={14} /> All categories
           </button>
@@ -64,15 +67,15 @@ export function CategoryDetail({
                 <button
                   key={c.slug}
                   onClick={() => onSelectCategory(c)}
-                  className={`flex w-full items-center justify-between gap-2 rounded-xl px-3 py-2 transition-all ${
+                  className={`flex w-full items-center justify-between gap-2.5 rounded-xl px-3 py-2 transition-all cursor-pointer ${
                     active
                       ? "bg-primary/10 text-primary font-semibold border border-primary/20"
                       : "text-muted-foreground hover:text-foreground hover:bg-secondary border border-transparent"
                   }`}
                   style={{ fontSize: 13 }}
                 >
-                  <span className="flex items-center gap-2 truncate">
-                    <span>{c.emoji}</span>
+                  <span className="flex items-center gap-2.5 truncate">
+                    <CategoryIcon slug={c.slug} className={`w-4 h-4 shrink-0 ${active ? "text-primary" : "text-muted-foreground"}`} />
                     <span className="truncate">{c.name}</span>
                   </span>
                   <span className={`font-mono text-xs ${active ? "text-primary" : "text-muted-foreground/60"}`}>
@@ -89,76 +92,87 @@ export function CategoryDetail({
       <div className="min-w-0 flex-1">
         <button
           onClick={onBack}
-          className="mb-4 flex items-center gap-2 lg:hidden text-muted-foreground hover:text-foreground text-xs font-semibold uppercase tracking-wider transition-colors"
+          className="mb-4 flex items-center gap-2 lg:hidden text-muted-foreground hover:text-foreground text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer"
         >
           <ArrowLeft size={14} /> Back
         </button>
 
         <div className="mb-8 flex items-center gap-4">
-          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary border border-border text-3xl shadow-sm">
-            {category.emoji}
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary border border-border text-primary shadow-sm">
+            <CategoryIcon slug={category.slug} className="w-7 h-7" />
           </div>
           <div>
             <h1 className="text-3xl font-extrabold tracking-tight text-foreground">
               {category.name}
             </h1>
             <p className="text-muted-foreground mt-2 text-sm max-w-[560px]">
-              {categoryDescriptions[category.slug] ?? `${category.count} APIs in this category`}
+              {categoryDescriptions[category.slug] ?? `${category.count} APIs curated in this sector.`}
             </p>
           </div>
         </div>
 
-        {/* Category stats grid */}
-        <div className="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {statCards.map((s) => (
-            <div key={s.l} className="rounded-2xl p-5 border border-border bg-card shadow-sm">
-              <div className={`text-3xl font-extrabold tracking-tight ${s.colorClass}`}>
-                {s.v}
+        {/* Stats Row */}
+        <div className="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {statCards.map((sc) => (
+            <div
+              key={sc.l}
+              className="rounded-2xl border border-border bg-card p-4 transition-all"
+            >
+              <div className={`text-2xl font-black tracking-tight ${sc.colorClass}`}>
+                {sc.v}
               </div>
-              <div className="text-xs text-muted-foreground font-mono tracking-wider uppercase mt-2">
-                {s.l}
+              <div className="text-muted-foreground font-mono text-[11px] uppercase tracking-wider font-semibold mt-1">
+                {sc.l}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Controls bar */}
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex flex-wrap items-center gap-2">
-            {(["all", "none", "apiKey", "oauth"] as const).map((f) => (
+        {/* Filter and View Toolbar */}
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-4 border-b border-border pb-4">
+          <div className="flex flex-wrap items-center gap-1.5">
+            {(
+              [
+                { id: "all", label: "All" },
+                { id: "none", label: "No Auth" },
+                { id: "apiKey", label: "API Key" },
+                { id: "oauth", label: "OAuth" },
+              ] as const
+            ).map((f) => (
               <button
-                key={f}
-                onClick={() => setFilter(f)}
-                className={`rounded-full px-3.5 py-1.5 border font-mono text-[11px] font-semibold transition-all ${
-                  filter === f
-                    ? "bg-primary text-primary-foreground border-primary shadow-sm"
-                    : "bg-card text-muted-foreground border-border hover:bg-secondary hover:text-foreground"
+                key={f.id}
+                onClick={() => setFilter(f.id)}
+                className={`rounded-full px-3 py-1 font-mono text-xs font-semibold transition-all cursor-pointer ${
+                  filter === f.id
+                    ? "bg-primary text-primary-foreground shadow-xs"
+                    : "border border-border bg-card text-muted-foreground hover:bg-secondary hover:text-foreground"
                 }`}
               >
-                {f === "all" ? "All" : f === "none" ? "No Auth" : f === "apiKey" ? "API Key" : "OAuth"}
+                {f.label}
               </button>
             ))}
           </div>
-          
+
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2 rounded-xl px-3 py-1.5 border border-border bg-card text-foreground text-xs shadow-sm">
-              <ArrowUpDown size={12} className="text-muted-foreground" />
+            <div className="flex items-center gap-2">
+              <ArrowUpDown size={14} className="text-muted-foreground" />
               <select
                 value={sort}
-                onChange={(e) => setSort(e.target.value as typeof sort)}
-                className="bg-transparent outline-none font-mono font-medium text-foreground cursor-pointer"
+                onChange={(e) => setSort(e.target.value as any)}
+                className="rounded-lg border border-border bg-card px-2.5 py-1 text-xs text-foreground outline-none cursor-pointer"
               >
-                <option value="default" className="bg-card text-foreground">Default</option>
-                <option value="featured" className="bg-card text-foreground">Featured</option>
-                <option value="az" className="bg-card text-foreground">A → Z</option>
-                <option value="za" className="bg-card text-foreground">Z → A</option>
+                <option value="default">Default order</option>
+                <option value="featured">Featured first</option>
+                <option value="az">A → Z</option>
+                <option value="za">Z → A</option>
               </select>
             </div>
-            
-            <div className="flex rounded-xl p-1 border border-border bg-card shadow-sm">
+
+            <div className="flex rounded-lg border border-border bg-card p-0.5">
               <button
                 onClick={() => setView("cards")}
-                className={`flex h-7.5 w-7.5 items-center justify-center rounded-lg transition-colors ${
+                aria-label="Cards view"
+                className={`rounded-md p-1.5 transition-colors cursor-pointer ${
                   view === "cards" ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                 }`}
               >
@@ -166,7 +180,8 @@ export function CategoryDetail({
               </button>
               <button
                 onClick={() => setView("list")}
-                className={`flex h-7.5 w-7.5 items-center justify-center rounded-lg transition-colors ${
+                aria-label="List view"
+                className={`rounded-md p-1.5 transition-colors cursor-pointer ${
                   view === "list" ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                 }`}
               >
@@ -183,23 +198,24 @@ export function CategoryDetail({
         ) : view === "cards" ? (
           <div className="grid gap-4 sm:grid-cols-2">
             {items.map((api) => (
-              <ApiCard key={api.name} api={api} />
+              <ApiCard key={api.name} api={api} onOpenDetail={onOpenDetail} />
             ))}
           </div>
         ) : (
           <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
             {items.map((api, idx) => (
-              <a
+              <div
                 key={api.name}
-                href={api.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex items-center gap-4 px-6 py-4 transition-colors hover:bg-secondary/40 ${
+                onClick={() => {
+                  if (onOpenDetail) onOpenDetail(api);
+                  else window.open(api.link, "_blank", "noopener,noreferrer");
+                }}
+                className={`flex items-center gap-4 px-6 py-4 transition-colors hover:bg-secondary/40 cursor-pointer ${
                   idx === 0 ? "" : "border-t border-border/60"
                 }`}
               >
                 <div className="min-w-0 flex-1">
-                  <div className="font-bold text-foreground text-sm leading-snug">
+                  <div className="font-bold text-foreground text-sm leading-snug hover:text-primary transition-colors">
                     {api.name}
                   </div>
                   <div className="text-muted-foreground text-xs mt-1 truncate">
@@ -210,7 +226,7 @@ export function CategoryDetail({
                   <AuthBadge type={api.auth} />
                   <HttpsBadge https={api.https} />
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         )}

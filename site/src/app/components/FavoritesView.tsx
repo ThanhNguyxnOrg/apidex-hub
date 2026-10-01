@@ -1,9 +1,15 @@
 import { ArrowLeft, Heart } from "lucide-react";
-import { apis } from "./data";
+import { apis, type Api } from "./data";
 import { ApiCard } from "./ApiCard";
 import { useFavorites } from "./favorites";
 
-export function FavoritesView({ onBack }: { onBack: () => void }) {
+export function FavoritesView({
+  onBack,
+  onOpenDetail,
+}: {
+  onBack: () => void;
+  onOpenDetail?: (api: Api) => void;
+}) {
   const favs = useFavorites();
   const items = apis.filter((a) => favs.has(a.name));
 
@@ -11,9 +17,9 @@ export function FavoritesView({ onBack }: { onBack: () => void }) {
     <div className="mx-auto max-w-7xl px-6 py-12 text-left">
       <button
         onClick={onBack}
-        className="mb-6 flex items-center gap-2 text-muted-foreground hover:text-foreground text-xs font-semibold uppercase tracking-wider transition-colors"
+        className="mb-6 flex items-center gap-2 text-muted-foreground hover:text-foreground text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer"
       >
-        <ArrowLeft size={14} /> Home
+        <ArrowLeft size={14} /> Back to Home
       </button>
 
       <div className="mb-8 flex items-center gap-4">
@@ -26,7 +32,7 @@ export function FavoritesView({ onBack }: { onBack: () => void }) {
           </h1>
           <p className="text-muted-foreground mt-2 text-sm">
             {items.length === 0
-              ? "Heart any API to save it here. Stored in your browser only."
+              ? "Heart any API to save it here. Stored locally in your browser."
               : `${items.length} API${items.length === 1 ? "" : "s"} saved locally.`}
           </p>
         </div>
@@ -35,14 +41,14 @@ export function FavoritesView({ onBack }: { onBack: () => void }) {
       {items.length === 0 ? (
         <div className="rounded-2xl p-16 text-center border-2 border-dashed border-border text-muted-foreground bg-card/50">
           <Heart size={40} className="mx-auto mb-4 text-muted-foreground/40" />
-          <div className="text-sm">
-            No favorites yet. Click the heart on any API to save it.
+          <div className="text-sm font-medium">
+            No favorites yet. Click the heart on any API to bookmark it here.
           </div>
         </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((api) => (
-            <ApiCard key={api.name} api={api} />
+            <ApiCard key={api.name} api={api} onOpenDetail={onOpenDetail} />
           ))}
         </div>
       )}
