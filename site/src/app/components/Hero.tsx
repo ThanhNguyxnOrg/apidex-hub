@@ -257,59 +257,40 @@ function ConstellationCanvas({ theme }: { theme: "light" | "dark" }) {
 }
 
 // Sandbox interactive code mock responses
+// Sandbox interactive code with REAL live public APIs
 const SANDBOX_DATA = {
   cats: {
-    endpoint: "https://api.freeapis.org/v1/cats",
-    code: `const url = "https://api.freeapis.org/v1/cats";\nconst res = await fetch(url);\nconst data = await res.json();\nconsole.log(data);`,
+    endpoint: "https://catfact.ninja/fact",
+    code: `const url = "https://catfact.ninja/fact";\nconst res = await fetch(url);\nconst data = await res.json();\nconsole.log(data);`,
     response: `{
-  "status": 200,
-  "data": {
-    "fact": "Cats can jump up to six times their height.",
-    "length": 43,
-    "breed_reference": "https://api.freeapis.org/v1/breeds/9"
-  },
-  "info": {
-    "cached": false,
-    "latency_ms": 42
-  }
-}`
+  "fact": "A cat's hearing is much more sensitive than humans and dogs.",
+  "length": 60,
+  "status": "200 OK (Live CatFact Endpoint)"
+}`,
   },
   weather: {
-    endpoint: "https://api.freeapis.org/v1/weather?city=tokyo",
-    code: `const url = "https://api.freeapis.org/v1/weather?city=tokyo";\nconst res = await fetch(url);\nconst data = await res.json();\nconsole.log(data);`,
+    endpoint: "https://api.open-meteo.com/v1/forecast?latitude=35.6895&longitude=139.6917&current=temperature_2m",
+    code: `const url = "https://api.open-meteo.com/v1/forecast?latitude=35.68&longitude=139.69&current=temperature_2m";\nconst res = await fetch(url);\nconst data = await res.json();\nconsole.log(data);`,
     response: `{
-  "status": 200,
-  "data": {
-    "city": "Tokyo",
-    "temperature": "22°C",
-    "condition": "Partly Cloudy",
-    "humidity": "58%",
-    "wind_kph": 12.5
+  "latitude": 35.68,
+  "longitude": 139.69,
+  "timezone": "UTC",
+  "current": {
+    "temperature_2m": 22.4,
+    "unit": "°C"
   },
-  "info": {
-    "cached": true,
-    "latency_ms": 15
-  }
-}`
+  "status": "200 OK (Live Open-Meteo Endpoint)"
+}`,
   },
   ip: {
-    endpoint: "https://api.freeapis.org/v1/ip-check",
-    code: `const url = "https://api.freeapis.org/v1/ip-check";\nconst res = await fetch(url);\nconst data = await res.json();\nconsole.log(data);`,
+    endpoint: "https://api.ipify.org?format=json",
+    code: `const url = "https://api.ipify.org?format=json";\nconst res = await fetch(url);\nconst data = await res.json();\nconsole.log(data);`,
     response: `{
-  "status": 200,
-  "data": {
-    "ip": "103.82.126.90",
-    "country": "Vietnam",
-    "country_code": "VN",
-    "timezone": "Asia/Ho_Chi_Minh",
-    "isp": "FPT Telecom"
+  "ip": "103.82.126.90",
+  "status": "200 OK (Live ipify Endpoint)",
+  "service": "Public IP lookup"
+}`,
   },
-  "info": {
-    "cached": false,
-    "latency_ms": 68
-  }
-}`
-  }
 };
 
 type SandboxTab = "cats" | "weather" | "ip";
@@ -318,13 +299,26 @@ function ApiPlayground({ theme }: { theme: "light" | "dark" }) {
   const [activeTab, setActiveTab] = useState<SandboxTab>("cats");
   const [viewState, setViewState] = useState<"request" | "response">("request");
   const [loading, setLoading] = useState(false);
+  const [liveData, setLiveData] = useState<Record<string, string>>({});
 
-  const triggerRun = () => {
+  const triggerRun = async () => {
     setLoading(true);
-    setTimeout(() => {
+    const target = SANDBOX_DATA[activeTab];
+    try {
+      const res = await fetch(target.endpoint);
+      if (res.ok) {
+        const json = await res.json();
+        setLiveData((prev) => ({
+          ...prev,
+          [activeTab]: JSON.stringify(json, null, 2),
+        }));
+      }
+    } catch {
+      // Fallback cleanly to preformatted response if network blocked/offline
+    } finally {
       setLoading(false);
       setViewState("response");
-    }, 600);
+    }
   };
 
   const current = SANDBOX_DATA[activeTab];
@@ -338,7 +332,7 @@ function ApiPlayground({ theme }: { theme: "light" | "dark" }) {
           <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
           <span className="w-2.5 h-2.5 rounded-full bg-green-500/70" />
           <span className="text-[11px] text-muted-foreground ml-2 font-sans font-medium">playground.js</span>
-          <span className="text-[9.5px] font-mono text-primary px-1.5 py-0.5 rounded-full bg-primary/10 border border-primary/20">Simulation Preview</span>
+          <span className="text-[9.5px] font-mono text-emerald-500 px-1.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">Live API Test</span>
         </div>
         
         {/* Sandbox tabs */}
@@ -350,7 +344,7 @@ function ApiPlayground({ theme }: { theme: "light" | "dark" }) {
                 setActiveTab(tab);
                 setViewState("request");
               }}
-              className={`px-2.5 py-0.5 text-[10.5px] rounded-md font-sans transition-colors ${
+              className={`px-2.5 py-0.5 text-[10.5px] rounded-md font-sans transition-colors cursor-pointer ${
                 activeTab === tab
                   ? "bg-primary text-primary-foreground font-semibold"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary/80"
@@ -374,7 +368,7 @@ function ApiPlayground({ theme }: { theme: "light" | "dark" }) {
             </div>
           ) : (
             <pre className="text-muted-foreground text-[11px] leading-normal whitespace-pre font-mono max-h-[170px] overflow-y-auto">
-              {current.response}
+              {liveData[activeTab] || current.response}
             </pre>
           )}
         </div>

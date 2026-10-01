@@ -96,7 +96,7 @@ def check_link(url, timeout=8, max_retries=2):
         try:
             ua = fake_user_agent()
             if "sec.gov" in url:
-                ua = "AwesomeFreeApis/1.0 (contact@thanhnguyxn.org)"
+                ua = "APIDexHub/1.0 (contact@thanhnguyxn.org)"
             headers = {
                 'User-Agent': ua,
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
