@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-01T13:17:25.282505+00:00",
+    "generated_at": "2026-10-02T07:47:27.786908+00:00",
     "source": "README.md",
-    "total_apis": 12559,
+    "total_apis": 12554,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11287,
+    "api_key_count": 11282,
     "oauth_count": 143,
-    "https_count": 11975,
+    "https_count": 11970,
     "https_percentage": 95
   },
   "categories": [
@@ -459,7 +459,7 @@
       "id": "apify-agents",
       "emoji": "🤖",
       "name": "Apify Agents",
-      "api_count": 559,
+      "api_count": 557,
       "apis": [
         {
           "name": "🌟 Youtube Transcript Scraper - $0.5 per 1k",
@@ -2651,20 +2651,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/lexis-solutions/marketwatch-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Meesho Full Catalog / Bulk Exporter",
-          "description": "(Apify Scraper) Large-scale scraping of entire Meesho categories or search terms. Export 1,000–10,000+ products in one run.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/axlymxp/meesho-full-catalog-exporter?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Meesho Product Detail + Reviews Scraper",
-          "description": "(Apify Scraper) Fetch deep product details and customer reviews from Meesho using APIs.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/axlymxp/meesho-product-detail-reviews?fpr=thanhnguyxn"
         },
         {
           "name": "Meesho Search & Category Scraper",
@@ -13064,7 +13050,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 1588,
+      "api_count": 1586,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -16838,13 +16824,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/complex_intricate_networks/ecomdata-brandscout-high-growth-seller-lead-intelligence?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Ecommerce Intelligence Pro: Multi Marketplace Product Monitor",
-          "description": "(Apify Scraper) Pull products from 14+ marketplaces (Amazon, Walmart, Target, eBay, Etsy, AliExpress, Best Buy, IKEA, Zalando, ASOS, Shopify). Pricing, stock, variants, images, ratings, AI summaries. Auto detects retailer. JSON-LD fallback covers any storefront. ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scrapemint/ecommerce-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Ecommerce Price Monitor",
@@ -22193,13 +22172,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/automation-lab/target-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Target Store Scraper",
-          "description": "(Apify Scraper) Scrapes Target store locations and details based on a search keyword (city/zip) and radius. Returns store information including name, address, phone, hours, services, and coordinates. Configurable search radius and results limit.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/axlymxp/target-store-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Tata Cliq Scraper - India Marketplace Products",
@@ -83066,7 +83038,7 @@
       "id": "government-civic",
       "emoji": "🏛️",
       "name": "Government & Civic",
-      "api_count": 77,
+      "api_count": 76,
       "apis": [
         {
           "name": "Bank Negara Malaysia Open Data",
@@ -83165,13 +83137,6 @@
           "auth": "No",
           "https": true,
           "link": "https://open.toronto.ca/"
-        },
-        {
-          "name": "Code.gov",
-          "description": "The primary platform for Open Source and code sharing for the U.S. Federal Go...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://code.gov"
         },
         {
           "name": "Colorado Information Marketplace",

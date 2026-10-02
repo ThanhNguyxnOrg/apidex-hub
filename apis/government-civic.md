@@ -16,7 +16,6 @@
 | **City, Nantes Open Data** | Nantes(FR) City Open Data. | 🔑 ApiKey | ✅ | [Link](https://data.nantesmetropole.fr/pages/home/) |
 | **City, New York Open Data** | New York (US) City Open Data. | No | ✅ | [Link](https://opendata.cityofnewyork.us/) |
 | **City, Toronto Open Data** | Toronto (CA) City Open Data. | No | ✅ | [Link](https://open.toronto.ca/) |
-| **Code.gov** | The primary platform for Open Source and code sharing for the U.S. Federal Go... | 🔑 ApiKey | ✅ | [Link](https://code.gov) |
 | **Colorado Information Marketplace** | Colorado State Government Open Data. | No | ✅ | [Link](https://data.colorado.gov/) |
 | **Congress.gov** | US legislation and congressional records. | No | ✅ | [Link](https://api.congress.gov/) |
 | **Data USA** | US Public Data. | No | ✅ | [Link](https://datausa.io/about/api/) |
