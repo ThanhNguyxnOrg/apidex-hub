@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-02T07:49:22.512413+00:00",
+    "generated_at": "2026-10-03T07:44:07.352052+00:00",
     "source": "README.md",
-    "total_apis": 12554,
+    "total_apis": 12553,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11282,
+    "api_key_count": 11281,
     "oauth_count": 143,
-    "https_count": 11970,
+    "https_count": 11969,
     "https_percentage": 95
   },
   "categories": [
@@ -36741,7 +36741,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 1088,
+      "api_count": 1087,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -44043,13 +44043,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/kawsar/y-combinator-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Y Combinator Scraper (All data, robust, + discounts)",
-          "description": "(Apify Scraper) The most reliable, affordable, par-per-result YC scraper. 🚀 Pull company details, active founders, news, socials, websites, and jobs. ⚡ All from one centralized API.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/codemaggot/ycombinator-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Y Combinator Scraper with Founders & Emails",
