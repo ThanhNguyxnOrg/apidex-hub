@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-03T07:46:10.248929+00:00",
+    "generated_at": "2026-10-05T07:46:01.020662+00:00",
     "source": "README.md",
-    "total_apis": 12553,
+    "total_apis": 12548,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11281,
+    "api_key_count": 11276,
     "oauth_count": 143,
-    "https_count": 11969,
+    "https_count": 11964,
     "https_percentage": 95
   },
   "categories": [
@@ -13050,7 +13050,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 1586,
+      "api_count": 1584,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -21152,13 +21152,6 @@
           "link": "https://apify.com/ahmed_jasarevic/sephora-data-scraper-products-reviews-questions-answers?fpr=thanhnguyxn"
         },
         {
-          "name": "Sephora Eu Scraper",
-          "description": "(Apify Scraper) Sephora EU Scraper is a professional-grade actor designed to extract high-fidelity product data from Sephora's European stores. Built for reliability and scale, it intelligently handles authentication, manages sessions, and delivers detailed struc...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/autofacts/sephora-eu-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Sephora Product Catalog Scraper — Brands, Categories & Filters",
           "description": "(Apify Scraper) Sephora product scraper — pull catalog data by brand (341 brands), category, or keyword. Filter price + rating, sort Best Sellers / New Arrivals / Top Rated. 26 fields per product incl. bestseller, new, exclusive flags + hero image. No Sephora API...",
           "auth": "apiKey",
@@ -21556,13 +21549,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/kalirobot/shopify-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Shopify Scraper (PPE)",
-          "description": "(Apify Scraper) Shopify Scraper (PPE) is a professional-grade crawling tool designed to extract high-fidelity product data from any e-commerce store built on the Shopify platform. This version uses the **Pay-Per-Event** pricing model, meaning you only pay for the...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/autofacts/shopify-scraper-ppe?fpr=thanhnguyxn"
         },
         {
           "name": "Shopify Scraper Pro",
@@ -44358,7 +44344,7 @@
       "id": "apify-mcp-servers",
       "emoji": "🧩",
       "name": "Apify MCP Servers",
-      "api_count": 243,
+      "api_count": 242,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -45675,13 +45661,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/agentx/subreddit-info-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Tavily Search MCP Server - Fast AI Web Search for Agents",
-          "description": "(Apify Scraper) Search the web through AI assistants via MCP. Tavily's AI search engine with ranked results, AI answers, images, and full page content. No API key needed. Works with Claude, ChatGPT, any MCP client.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/clearpath/tavily-search-mcp?fpr=thanhnguyxn"
         },
         {
           "name": "Telegram Channels Scraper: Messages, Contacts & Leads",
@@ -56823,7 +56802,7 @@
       "id": "apify-seo-tools",
       "emoji": "🔍",
       "name": "Apify SEO Tools",
-      "api_count": 718,
+      "api_count": 716,
       "apis": [
         {
           "name": "⚡ Page Speed Analyzer — Lighthouse & Web Vitals",
@@ -57279,13 +57258,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/devil_port369-owner/amazon-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Amazon Search Scraper",
-          "description": "(Apify Scraper) This Amazon Search Scraper allows you to scrape the products on Amazon. It extracts data from Amazon search pages in structured formats such as JSON, XML, CSV, or Excel.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/amazon-scraper/amazon-search-terms-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "American Express Merchant Leads Scraper",
@@ -60877,13 +60849,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/saswave/target-review-rating-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Tavily Search API - AI Web Search, No API Key Needed",
-          "description": "(Apify Scraper) Search the web with Tavily's AI engine, no API key or account needed. Get ranked results, AI-generated answers, images, and full page content. Supports 4 search depths, date filtering, domain restrictions, country boosting, and news search. Export...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/clearpath/tavily-search-api?fpr=thanhnguyxn"
         },
         {
           "name": "Tech Stack Detector",
