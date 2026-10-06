@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-06T12:04:08.080191+00:00",
+    "generated_at": "2026-10-06T12:10:53.388997+00:00",
     "source": "README.md",
-    "total_apis": 12543,
+    "total_apis": 12541,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11271,
+    "api_key_count": 11269,
     "oauth_count": 143,
-    "https_count": 11959,
+    "https_count": 11957,
     "https_percentage": 95
   },
   "categories": [
@@ -459,7 +459,7 @@
       "id": "apify-agents",
       "emoji": "🤖",
       "name": "Apify Agents",
-      "api_count": 557,
+      "api_count": 556,
       "apis": [
         {
           "name": "🌟 Youtube Transcript Scraper - $0.5 per 1k",
@@ -775,13 +775,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parsebird/agent-skills-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Agentic Accessibility Checker",
-          "description": "(Apify Scraper) Lighthouse for AI Agents. Audit your Agent-Ready Score (ARS) using 5-pillar analysis. Features structural classification (Docs, E-com, SaaS), Shadow-Markdown simulation (SNR), Semantic Desync detection, and full browser rendering. Ensure your site...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/myro-e54de05da1/agentic-accessibility-checker?fpr=thanhnguyxn"
         },
         {
           "name": "Agentic Crawler",
@@ -29572,7 +29565,7 @@
       "id": "apify-jobs",
       "emoji": "💼",
       "name": "Apify Jobs",
-      "api_count": 1018,
+      "api_count": 1017,
       "apis": [
         {
           "name": "⚡️Rapid Linkedin Jobs Scraper",
@@ -32807,13 +32800,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/orgupdate/job-posting-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Job Pulse",
-          "description": "(Apify Scraper) Job Pulse finds fresh job postings and returns direct application links from company hiring pages. Skip job boards and get a clean, deduplicated feed ready for alerts, dashboards, or automation.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/myro-e54de05da1/job-pulse?fpr=thanhnguyxn"
         },
         {
           "name": "Job Scraper Linkedin by Albinor",
