@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-05T07:46:49.449233+00:00",
+    "generated_at": "2026-10-06T12:03:02.363006+00:00",
     "source": "README.md",
-    "total_apis": 12548,
+    "total_apis": 12543,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11276,
+    "api_key_count": 11271,
     "oauth_count": 143,
-    "https_count": 11964,
+    "https_count": 11959,
     "https_percentage": 95
   },
   "categories": [
@@ -9647,7 +9647,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 485,
+      "api_count": 483,
       "apis": [
         {
           "name": "🎓 Google Scholar Scraper — Papers & Citations",
@@ -11470,13 +11470,6 @@
           "link": "https://apify.com/crawlerbros/mlb-stats-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Mobile Phone Specs",
-          "description": "(Apify Scraper) Access our comprehensive mobile phone specifications database via our fast API, featuring over 10,000 models with details like dimensions, display, processor, and camera. Each model includes technical information and an image, helping consumers co...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/making-data-meaningful/mobile-phone-specs-database?fpr=thanhnguyxn"
-        },
-        {
           "name": "Monitoring Checker Duplication",
           "description": "(Apify Scraper) The Monitoring checker duplication is a part of the Apify Monitoring Suite (apify/monitoring). See its readme for more information and how to use this.",
           "auth": "apiKey",
@@ -11538,13 +11531,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/apify/monitoring-teardown?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Motorcycle Specs Database",
-          "description": "(Apify Scraper) Access a comprehensive motorcycle specifications database through our API, featuring over 40,000 models and 20+ technical information fields. One image is provided per model to enhance your data insights.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/making-data-meaningful/motorcycle-specs-database?fpr=thanhnguyxn"
         },
         {
           "name": "Multi-Carrier Package Tracking (USPS, UPS, FedEx)",
@@ -13050,7 +13036,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 1584,
+      "api_count": 1583,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -20121,13 +20107,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/thirdwatch/noon-food-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Noon Product Info Scraper",
-          "description": "(Apify Scraper) Project Cheerio Crawler Typescript is a web scraping tool that extracts detailed product data from e-commerce sites using the Cheerio library....",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/getdataforme/noon-productinfo-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Noon Product Seller Monitoring",
@@ -36727,7 +36706,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 1087,
+      "api_count": 1086,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -40823,13 +40802,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/fortuitous_pirate/imdb-movie-show-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "IMDb Movie Scraper",
-          "description": "(Apify Scraper) Extract movie and TV show data from IMDb: title, year, rating, votes, genres, director, stars, plot, runtime, certificate, metascore, box office. Search by genre, year, or custom URL. Ideal for film analytics, content research, recommendation syst...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/cloud9_ai/imdb-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "ImportYeti Scraper - US Customs Importer & Supplier Data",
@@ -61822,7 +61794,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 1465,
+      "api_count": 1464,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -63524,13 +63496,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/api-ninja/facebook-pages-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Facebook Pages Scraper",
-          "description": "(Apify Scraper) 💰$1/1K result💰Stop wasting your budget on slow, resource-heavy browser-based scrapers. This is the fastest, most cost-effective, and data-rich Facebook Pages scraper on Apify, designed for high-scale lead generation, reputation monitoring, and c...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/vortex_data/facebook-pages?fpr=thanhnguyxn"
         },
         {
           "name": "Facebook Pages Scraper",
