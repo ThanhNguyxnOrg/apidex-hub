@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-06T12:12:19.191711+00:00",
+    "generated_at": "2026-10-07T06:06:48.011533+00:00",
     "source": "README.md",
-    "total_apis": 12541,
+    "total_apis": 12540,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11269,
+    "api_key_count": 11268,
     "oauth_count": 143,
-    "https_count": 11957,
+    "https_count": 11956,
     "https_percentage": 95
   },
   "categories": [
@@ -29565,7 +29565,7 @@
       "id": "apify-jobs",
       "emoji": "💼",
       "name": "Apify Jobs",
-      "api_count": 1017,
+      "api_count": 1016,
       "apis": [
         {
           "name": "⚡️Rapid Linkedin Jobs Scraper",
@@ -35460,13 +35460,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/memo23/stepstone-search-cheerio-ppr?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Stepstone.de Jobs Scraper – Germany Stellenangebote",
-          "description": "(Apify Scraper) Scrape Stepstone.de Stellenangebote without an API. Export German job data (company, salary, location) to CSV or JSON. Stepstone API alternative.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/logiover/stepstone-de-jobs-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "StepStone.de Jobs Scraper 💰 $1.50/1K — Salary & Skills",
