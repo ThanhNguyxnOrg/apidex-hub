@@ -23,9 +23,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   issues: write
   pull-requests: write
+  discussions: write
 
 jobs:
   check-links:
@@ -37,13 +38,14 @@ jobs:
         id: app-token
         uses: actions/create-github-app-token@v3
         with:
-          app-id: ${{ secrets.BOT_APP_ID }}
+          client-id: ${{ secrets.BOT_APP_ID }}
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
 
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ steps.app-token.outputs.token }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -215,15 +217,127 @@ jobs:
               console.log('Error commenting on PR:', error);
             }
 
-      # Single persistent issue — always update the SAME issue body
-      - name: Update daily report issue
+      # 1. Create Incident Issue if dead links are detected
+      - name: Create Incident Issue
+        if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true'
+        id: create-incident
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const today = new Date().toISOString().split('T')[0];
+            const brokenCount = parseInt('${{ steps.check.outputs.broken_count }}') || 0;
+            const brokenList = `${{ steps.check.outputs.broken_list }}`.trim();
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+
+            let brokenTable = '| # | URL | Reason |\n|---|---|---|\n';
+            const lines = brokenList.split('\n').filter(l => l.trim());
+            lines.forEach((l, i) => {
+              const parts = l.split(' | ');
+              const url = parts[0] || l;
+              const reason = parts.slice(1).join(' | ') || 'Dead link (HTTP 404/DNS dead)';
+              brokenTable += `| ${i + 1} | ${url} | ${reason} |\n`;
+            });
+
+            const issueBody = [
+              `## 🔴 Incident: ${brokenCount} Broken Link(s) Detected`,
+              '',
+              `**Detection Date**: ${today}`,
+              `**Workflow Run**: [#${context.runNumber}](${runUrl})`,
+              '',
+              '### 💀 Dead Links Detected',
+              '',
+              brokenTable,
+              '',
+              '🤖 *The automated remediation bot will now safely remove these entries from the repository and close this issue.*'
+            ].join('\n');
+
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🔴 Incident: ${brokenCount} broken link${brokenCount > 1 ? 's' : ''} detected (${today})`,
+              labels: ['automated', 'incident'],
+              body: issueBody
+            });
+
+            console.log(`Created Incident Issue #${issue.data.number}: ${issue.data.html_url}`);
+            core.setOutput('issue_number', issue.data.number);
+            core.setOutput('issue_url', issue.data.html_url);
+
+      # 2. Safely remove dead links and sync catalog
+      - name: Auto-Remediate Dead Links
+        if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true'
+        id: auto-remediate
+        run: |
+          echo "=== Running remove_dead_links.py ==="
+          python scripts/remove_dead_links.py --max-delete 15
+
+          echo "=== Verifying Markdown and Catalog Integrity ==="
+          python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
+
+          git config --global user.name "ThanhNguyxnAgent[bot]"
+          git config --global user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
+
+          git add apis/ README.md site/index.html site/src/data/apis.json
+
+          if ! git diff --staged --quiet; then
+            ISSUE_NUM="${{ steps.create-incident.outputs.issue_number }}"
+            git commit -m "fix(apis): auto-remove dead links (fixes #${ISSUE_NUM}) [skip ci]"
+            git push origin main
+            echo "pushed=true" >> $GITHUB_OUTPUT
+          else
+            echo "No changes staged. Nothing pushed."
+            echo "pushed=false" >> $GITHUB_OUTPUT
+          fi
+
+      # 3. Close the Incident Issue automatically (no user mentions)
+      - name: Close Incident Issue
+        if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true' && steps.auto-remediate.outputs.pushed == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const issueNumber = parseInt('${{ steps.create-incident.outputs.issue_number }}');
+            if (!issueNumber) return;
+
+            let summaryText = 'Dead links were successfully removed from the API catalog.';
+            try {
+              const fs = require('fs');
+              if (fs.existsSync('scripts/removed_summary.md')) {
+                summaryText = fs.readFileSync('scripts/removed_summary.md', 'utf8');
+              }
+            } catch (e) {
+              console.log('Could not read removed_summary.md', e);
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: `### ✅ Auto-Remediation Completed\n\nThe automated link cleaner has safely removed the dead links and refreshed all counts and site data.\n\n${summaryText}\n\n*Incident resolved automatically.*`
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              state: 'closed',
+              state_reason: 'completed'
+            });
+
+            console.log(`Successfully closed Incident Issue #${issueNumber}`);
+
+      # 4. Update the Live Health Dashboard in GitHub Discussions (Announcements)
+      - name: Update GitHub Discussion Live Dashboard
         if: github.event_name != 'pull_request' && always()
         uses: actions/github-script@v7
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
-            const fs = require('fs');
+            const today = new Date().toISOString().split('T')[0];
             const hasBroken = '${{ steps.check.outputs.has_broken }}' === 'true';
+            const wasRemediated = '${{ steps.auto-remediate.outputs.pushed }}' === 'true';
+            const incidentIssueNum = '${{ steps.create-incident.outputs.issue_number }}';
             const brokenCount = parseInt('${{ steps.check.outputs.broken_count }}') || 0;
             const okCount = parseInt('${{ steps.check.outputs.ok_count }}') || 0;
             const protectedCount = parseInt('${{ steps.check.outputs.protected_count }}') || 0;
@@ -236,40 +350,13 @@ jobs:
             const currentWarningList = `${{ steps.check.outputs.warning_list }}`.trim();
             const currentUnknownList = `${{ steps.check.outputs.unknown_list }}`.trim();
             const currentProtectedList = `${{ steps.check.outputs.protected_list }}`.trim();
-
-            const REPORT_LABEL = 'daily-report';
-            const AUTO_LABEL = 'automated';
-            const today = new Date().toISOString().split('T')[0];
-            const dynamicTitle = hasBroken
-              ? `🔴 Link Health Status: ${brokenCount} broken link${brokenCount > 1 ? 's' : ''} detected (${today})`
-              : `🟢 Link Health Status: All links healthy! 🎉 (${today})`;
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
 
-            // Ensure labels exist
-            for (const label of [
-              { name: REPORT_LABEL, color: '5319e7', description: 'Automated daily link health report' },
-              { name: AUTO_LABEL, color: '0e8a16', description: 'Created by automated workflow' }
-            ]) {
-              try {
-                await github.rest.issues.getLabel({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  name: label.name
-                });
-              } catch {
-                await github.rest.issues.createLabel({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  ...label
-                });
-              }
+            let dynamicTitle = `🟢 Link Health Status: All links healthy! 🎉 (${today})`;
+            if (hasBroken && !wasRemediated) {
+              dynamicTitle = `🔴 Link Health Status: ${brokenCount} broken link${brokenCount > 1 ? 's' : ''} detected (${today})`;
             }
 
-            // Build the status icon
-            const statusIcon = hasBroken ? '🔴' : '🟢';
-            const statusText = hasBroken ? `${brokenCount} broken link${brokenCount > 1 ? 's' : ''} detected` : 'All links healthy';
-
-            // Build broken links table
             let brokenSection = '';
             if (hasBroken) {
               const brokenLines = currentBrokenList.split('\n').filter(l => l.trim());
@@ -280,12 +367,15 @@ jobs:
                 const reason = parts.slice(1).join(' | ') || '404';
                 brokenTable += `| ${i + 1} | ${url} | ${reason} |\n`;
               });
-              brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Review and update/remove these dead links from the apis/ directory.\n`;
+              if (wasRemediated) {
+                brokenSection = `### 🧹 Auto-Remediated Links (${brokenCount})\n\n> ℹ️ *All ${brokenCount} broken link(s) were automatically removed in Incident #${incidentIssueNum}.*\n\n${brokenTable}\n`;
+              } else {
+                brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Review and update/remove these dead links.\n`;
+              }
             } else {
               brokenSection = `### ✅ No Broken Links\n\nAll API links are responding correctly. Nothing to fix! 🎉\n`;
             }
 
-            // Build error section
             let errorSection = '';
             if (errCount > 0 && currentErrorList) {
               const errorLines = currentErrorList.split('\n').filter(l => l.trim());
@@ -298,7 +388,6 @@ jobs:
               errorSection = `\n### ❌ Server Errors (${errCount})\n\n${errorTable}\n`;
             }
 
-            // Build warning section (collapsible since it can be long)
             let warningSection = '';
             if (warnCount > 0 && currentWarningList) {
               const warningLines = currentWarningList.split('\n').filter(l => l.trim());
@@ -311,7 +400,6 @@ jobs:
               warningSection = `\n<details>\n<summary>⚠️ Warnings (${warnCount}) — click to expand</summary>\n\n${warningTable}\n</details>\n`;
             }
 
-            // Build unknown section (collapsible since it can be long)
             let unknownSection = '';
             if (unknownCount > 0 && currentUnknownList) {
               const unknownLines = currentUnknownList.split('\n').filter(l => l.trim());
@@ -319,12 +407,11 @@ jobs:
               unknownLines.forEach((line, i) => {
                 const parts = line.split(' | ');
                 const note = parts.slice(2).join(' | ');
-                unknownTable += `| ${i + 1} | ${parts[0] || ''} | ${parts[1] || ''} | ${note || ''} |\n`;
+                warningTable += `| ${i + 1} | ${parts[0] || ''} | ${parts[1] || ''} | ${note || ''} |\n`;
               });
               unknownSection = `\n<details>\n<summary>❓ Unknown (${unknownCount}) — click to expand</summary>\n\n${unknownTable}\n</details>\n`;
             }
 
-            // Build protected section (collapsible since it can be long)
             let protectedSection = '';
             if (protectedCount > 0 && currentProtectedList) {
               const protectedLines = currentProtectedList.split('\n').filter(l => l.trim());
@@ -337,7 +424,9 @@ jobs:
               protectedSection = `\n<details>\n<summary>🛡️ Protected (${protectedCount}) — click to expand</summary>\n\n${protectedTable}\n</details>\n`;
             }
 
-            // Build the issue body
+            const statusIcon = (hasBroken && !wasRemediated) ? '🔴' : '🟢';
+            const statusText = (hasBroken && !wasRemediated) ? `${brokenCount} broken link${brokenCount > 1 ? 's' : ''} detected` : 'All links healthy';
+
             const lines = [
               `## ${statusIcon} Link Health Status: ${statusText}`,
               '',
@@ -356,9 +445,9 @@ jobs:
               `| ⚠️ Warning | ${warnCount} | Timeout/DNS/SSL issues (may be temporary) |`,
               `| ❌ Error | ${errCount} | Server errors (5xx) |`,
               `| ❓ Unknown | ${unknownCount} | Unrecognized status codes (needs review) |`,
-              `| 💀 Broken | ${brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
+              `| 💀 Broken | ${wasRemediated ? 0 : brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
               '',
-              `**Healthy rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + brokenCount + unknownCount} APIs healthy`,
+              `**Healthy rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + (wasRemediated ? 0 : brokenCount) + unknownCount} APIs healthy`,
               '',
               '---',
               '',
@@ -372,9 +461,9 @@ jobs:
               '',
               '### 📋 How This Works',
               '',
-              '- 🔄 This report is **automatically updated daily** at 00:00 UTC',
+              '- 🔄 This report is **automatically updated daily** at 00:00 UTC in GitHub Discussions',
               '- 🛡️ APIs with bot protection (403/429) are counted as **healthy**',
-              '- 💀 Confirmed 404/410 and DNS-dead domains are marked as **broken**',
+              '- 💀 Confirmed 404/410 and DNS-dead domains are automatically removed via Incident issues',
               '- ❌ Server errors (5xx) may be temporary outages',
               '- ⚠️ Warnings include SSL/timeout issues that are often transient',
               `- 📦 Full report available as [workflow artifact](${runUrl})`,
@@ -383,56 +472,67 @@ jobs:
             ];
             const body = lines.join('\n');
 
-            // Find existing report issue (search both open and closed)
-            const { data: existingIssues } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: `${REPORT_LABEL},${AUTO_LABEL}`,
-              state: 'all',
-              sort: 'created',
-              direction: 'desc',
-              per_page: 1
-            });
-
-            if (existingIssues.length > 0) {
-              // Update existing issue body, title, and ensure it stays open
-              const issue = existingIssues[0];
-              await github.rest.issues.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                title: dynamicTitle,
-                state: 'open',
-                body: body
-              });
-              console.log(`Updated & ensured open issue #${issue.number}: ${issue.html_url}`);
-            } else {
-              // Create the issue for the first time
-              const issue = await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title: dynamicTitle,
-                labels: [REPORT_LABEL, AUTO_LABEL],
-                body: body
-              });
-              // Pin the issue (optional — requires admin, may fail silently)
-              try {
-                await github.graphql(`
-                  mutation {
-                    pinIssue(input: { issueId: "${issue.data.node_id}" }) {
-                      issue { id }
+            const ANNOUNCEMENTS_CAT_ID = 'DIC_kwDOSWlqhM4C8fwq';
+            const findQuery = `
+              query($owner: String!, $name: String!, $catId: ID!) {
+                repository(owner: $owner, name: $name) {
+                  id
+                  discussions(first: 10, categoryId: $catId) {
+                    nodes {
+                      id
+                      number
+                      title
+                      url
                     }
                   }
-                `);
-                console.log('Issue pinned!');
-              } catch {
-                console.log('Could not pin issue (needs admin permissions)');
+                }
               }
-              console.log(`Created issue #${issue.data.number}: ${issue.data.html_url}`);
-            }
+            `;
+            const result = await github.graphql(findQuery, {
+              owner: context.repo.owner,
+              name: context.repo.repo,
+              catId: ANNOUNCEMENTS_CAT_ID
+            });
 
-      - name: Fail if broken links found
-        if: steps.check.outputs.has_broken == 'true'
-        run: |
-          echo "❌ Broken links detected! Check the artifact for details."
-          exit 1
+            const discussions = result.repository.discussions.nodes || [];
+            const targetDiscussion = discussions.find(d => 
+              d.title.includes('Link Health Status') || d.title.includes('Live Dashboard')
+            ) || discussions[0];
+
+            if (targetDiscussion) {
+              const updateMutation = `
+                mutation($id: ID!, $title: String!, $body: String!) {
+                  updateDiscussion(input: { discussionId: $id, title: $title, body: $body }) {
+                    discussion {
+                      id
+                      url
+                    }
+                  }
+                }
+              `;
+              await github.graphql(updateMutation, {
+                id: targetDiscussion.id,
+                title: dynamicTitle,
+                body: body
+              });
+              console.log(`Updated Discussion #${targetDiscussion.number}: ${targetDiscussion.url}`);
+            } else {
+              const createMutation = `
+                mutation($repoId: ID!, $catId: ID!, $title: String!, $body: String!) {
+                  createDiscussion(input: { repositoryId: $repoId, categoryId: $catId, title: $title, body: $body }) {
+                    discussion {
+                      id
+                      number
+                      url
+                    }
+                  }
+                }
+              `;
+              const createRes = await github.graphql(createMutation, {
+                repoId: result.repository.id,
+                catId: ANNOUNCEMENTS_CAT_ID,
+                title: dynamicTitle,
+                body: body
+              });
+              console.log(`Created Discussion #${createRes.createDiscussion.discussion.number}: ${createRes.createDiscussion.discussion.url}`);
+            }
