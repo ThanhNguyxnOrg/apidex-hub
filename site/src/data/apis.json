@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-08T13:35:46.874478+00:00",
+    "generated_at": "2026-10-08T14:04:41.206407+00:00",
     "source": "README.md",
-    "total_apis": 12539,
+    "total_apis": 12528,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11267,
+    "api_key_count": 11256,
     "oauth_count": 143,
-    "https_count": 11955,
+    "https_count": 11944,
     "https_percentage": 95
   },
   "categories": [
@@ -13029,7 +13029,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 1583,
+      "api_count": 1582,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -16796,13 +16796,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/data_ops_main/ebay-uk-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "EcomData BrandScout: High-Growth Seller & Lead Intelligence",
-          "description": "(Apify Scraper) Identify high-potential private label brands on Amazon before they dominate. Automatically extract sellers in the 'Growth Sweet Spot' (50-150 reviews) to find underserved niches, B2B leads, and competitive gaps. Perfect for agencies and market res...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/ecomdata-brandscout-high-growth-seller-lead-intelligence?fpr=thanhnguyxn"
         },
         {
           "name": "Ecommerce Price Monitor",
@@ -36685,7 +36678,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 1086,
+      "api_count": 1084,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -39558,13 +39551,6 @@
           "link": "https://apify.com/getdataforme/gartner-reviews-scraper-customized-pro?fpr=thanhnguyxn"
         },
         {
-          "name": "GCC Lighting Projects Intelligence",
-          "description": "(Apify Scraper) This Actor extracts structured intelligence on lighting-related projects across UAE and Saudi Arabia. It helps lighting manufacturers, suppliers, EPCs, consultants, and investors identify active, upcoming, and completed projects with key project d...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/gcc-lighting-projects-intelligence?fpr=thanhnguyxn"
-        },
-        {
           "name": "Gelbe Seiten Scraper",
           "description": "(Apify Scraper) [💰 $1.2 / 1K] Extract German business listings from Gelbe Seiten — name, address, phone, email, website, opening hours, categories, ratings, reviews, photos, and social links. Search by what + where, or paste Gelbe Seiten URLs directly.",
           "auth": "apiKey",
@@ -42260,13 +42246,6 @@
           "link": "https://apify.com/labrat011/pubmed-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Python Website Scraper for B2B Leads",
-          "description": "(Apify Scraper) Extract high-intent B2B leads with this powerful Python web scraper. This data scraper automates the discovery of recently funded startups, identifies founders, and tracks hiring status. Turn any site into a structured database with this advanced ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/python-web-scraper-and-data-engine?fpr=thanhnguyxn"
-        },
-        {
           "name": "RateMDs Physician Review Scraper",
           "description": "(Apify Scraper) Extract doctor profiles and ratings from RateMDs.com. Automate data collection for specialties, locations, and search queries. Get doctor names, specialties, contact info, addresses, patient ratings, review counts, clinic details. Ideal for health...",
           "auth": "apiKey",
@@ -44295,7 +44274,7 @@
       "id": "apify-mcp-servers",
       "emoji": "🧩",
       "name": "Apify MCP Servers",
-      "api_count": 242,
+      "api_count": 241,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -45817,13 +45796,6 @@
           "link": "https://apify.com/kazkn/watch-arbitrage-mcp?fpr=thanhnguyxn"
         },
         {
-          "name": "Web Search MCP Server",
-          "description": "(Apify Scraper) An Apify MCP Server that provides real-time web search capabilities for AI agents via the Model Context Protocol (MCP).",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/abotapi/ai-search-mcp-server?fpr=thanhnguyxn"
-        },
-        {
           "name": "Website Contact Extractor - Emails & Phones",
           "description": "(Apify Scraper) Website contact extractor for B2B lead lists and CRM enrichment. Extract emails, phones, social profiles, addresses, contact pages, tech signals, role labels, and optional MCP connector summaries.",
           "auth": "apiKey",
@@ -45997,7 +45969,7 @@
       "id": "apify-news",
       "emoji": "📰",
       "name": "Apify News",
-      "api_count": 409,
+      "api_count": 403,
       "apis": [
         {
           "name": "⚖️ HHS Data Breach Scraper",
@@ -46560,13 +46532,6 @@
           "link": "https://apify.com/mherzog/draftkings-sportsbook-odds?fpr=thanhnguyxn"
         },
         {
-          "name": "Economic Times Intelligence Scraper: Markets & Policy Data",
-          "description": "(Apify Scraper) Real-time B2B lead generation and market intelligence tool. Extract structured data from Economic Times (Markets, Startups, Policy) with smart entity extraction and date filtering.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/economic-times-intelligence-scraper-markets-policy-data?fpr=thanhnguyxn"
-        },
-        {
           "name": "eCourts India Case Status Scraper - CNR Number Lookup",
           "description": "(Apify Scraper) Export Indian district and high court case status by 16-character CNR number. Pull case type, parties, court, judge, filing dates, registration dates, hearings, status and stage from the official services.ecourts.gov.in portal. CSV, Excel, JSON or...",
           "auth": "apiKey",
@@ -46861,20 +46826,6 @@
           "link": ""
         },
         {
-          "name": "Fundraising Ideas & Startup Tracker: TechCrunch & Crunchbase",
-          "description": "(Apify Scraper) Generate unlimited fundraising ideas and lead lists. Scrapes daily startup fundraisers, funding amounts, and investment rounds from TechCrunch, Crunchbase, and FinSMEs for high-intent B2B sales leads.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/fundraiser-ideas-and-strategies?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Fundraising Scraper: TechCrunch, Crunchbase & FinSMEs Tracker",
-          "description": "(Apify Scraper) Track new startup funding rounds daily. Scrapes company names, amounts, and rounds from TechCrunch, Crunchbase News, and FinSMEs for B2B lead generation.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/fundraising-and-startup-funding-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Geopolitical Risk Tracker - Country Tension Score",
           "description": "(Apify Scraper) Monitor political tensions, conflicts, and international disputes between countries. Plan business activities safely.",
           "auth": "apiKey",
@@ -47106,13 +47057,6 @@
           "link": "https://apify.com/practicaltools/apify-google-news-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Google News Sports Pulse: Sentiment & Sub-Category Tracker",
-          "description": "(Apify Scraper) Scrape real-time sports news for Cricket, F1, Football, and more. Track player sentiment, team updates, and trending sports stories with advanced keyword filtering.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/google-news-sports-pulse-sentiment-sub-category-tracker?fpr=thanhnguyxn"
-        },
-        {
           "name": "Google Scholar Article Scraper",
           "description": "(Apify Scraper) Extract academic articles, citations, authors, and publication data from Google Scholar. Perfect for research analysis and literature reviews with fast, reliable scraping.",
           "auth": "apiKey",
@@ -47209,13 +47153,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/xtracto/guardian-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "GulfPulse: GCC Tender Intelligence",
-          "description": "(Apify Scraper) GulfPulse is the premier intelligence engine for GCC infrastructure. We aggregate high-value tenders from KSA, UAE, Qatar, and beyond into one clean dashboard. Stop hunting through 20+ portals. Get real-time alerts, project costs, and lead scoring...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/gulfpulse-gcc-tender-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Hacker News Scraper",
@@ -47580,13 +47517,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/automation-lab/news-article-extractor?fpr=thanhnguyxn"
-        },
-        {
-          "name": "News & Article Scraper: 100+ Global Sources & API",
-          "description": "(Apify Scraper) News API & Scraper: Extract articles from 100+ global sources including BBC, NYT, and Times of India. Filter by category (Tech, Crypto, Business), country, or keywords. High-speed, Python-powered data extraction for sentiment analysis, market rese...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/news-article-scraper-100-global-sources-api?fpr=thanhnguyxn"
         },
         {
           "name": "News Archive Scraper",
@@ -61766,7 +61696,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 1464,
+      "api_count": 1463,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -63951,13 +63881,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/thescrapelab/gab-osint-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Gaming & Esports Viral Trend Intelligence",
-          "description": "(Apify Scraper) Scrape real-time viral trends for Fortnite, GTA VI, COD & more. Get sentiment-analyzed data from YouTube & Reddit to fuel your gaming content strategy.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/complex_intricate_networks/gaming-trend-intelligence-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Gamma AI Image Generator",
