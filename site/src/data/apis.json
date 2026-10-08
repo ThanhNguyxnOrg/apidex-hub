@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-07T06:07:47.899653+00:00",
+    "generated_at": "2026-10-08T13:32:39.668985+00:00",
     "source": "README.md",
-    "total_apis": 12540,
+    "total_apis": 12539,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 11268,
+    "api_key_count": 11267,
     "oauth_count": 143,
-    "https_count": 11956,
+    "https_count": 11955,
     "https_percentage": 95
   },
   "categories": [
@@ -50130,7 +50130,7 @@
       "id": "apify-real-estate",
       "emoji": "🏡",
       "name": "Apify Real Estate",
-      "api_count": 945,
+      "api_count": 944,
       "apis": [
         {
           "name": "🇩🇰 Boliga Denmark Real Estate Listings",
@@ -55773,13 +55773,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/seralifatih/turkish-real-estate-api-2?fpr=thanhnguyxn"
-        },
-        {
-          "name": "UK Council Planning Applications Monitor",
-          "description": "(Apify Scraper) Monitor newly validated, decided, or updated planning applications across selected UK council portals (Idox PublicAccess, Northgate Planning Explorer). HTTP-only; designed for scheduled runs with onlyNew dedupe.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/illehius/uk-planning-monitor?fpr=thanhnguyxn"
         },
         {
           "name": "UK Gazette Probate Notices - London/Edinburgh/Belfast",
