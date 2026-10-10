@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-10T06:00:37.967530+00:00",
+    "generated_at": "2026-10-10T06:09:48.543263+00:00",
     "source": "README.md",
-    "total_apis": 12238,
+    "total_apis": 12222,
     "total_categories": 82,
     "no_auth_count": 601,
-    "api_key_count": 11493,
+    "api_key_count": 11477,
     "oauth_count": 144,
-    "https_count": 12191,
+    "https_count": 12175,
     "https_percentage": 100
   },
   "categories": [
@@ -579,7 +579,7 @@
       "id": "apify-agents",
       "emoji": "🤖",
       "name": "Apify Agents",
-      "api_count": 553,
+      "api_count": 551,
       "apis": [
         {
           "name": "🌟 Youtube Transcript Scraper - $0.5 per 1k",
@@ -2584,13 +2584,6 @@
           "link": "https://apify.com/techforce.global/linkedin-candidate-search?fpr=thanhnguyxn"
         },
         {
-          "name": "Linkedin Company Url Mass Finder — Pay Per Event",
-          "description": "(Apify Scraper) Stop wasting time manually searching for LinkedIn company pages. With LinkedIn Mass Company URL Finder, input your company list and get instant access to their LinkedIn URLs. Automate your search and streamline your workflow today!",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scrapeverse/linkedin-company-url-mass-finder-pay-per-event?fpr=thanhnguyxn"
-        },
-        {
           "name": "Linkedin Job details Scraper",
           "description": "(Apify Scraper) Extract structured job intelligence from any LinkedIn job URL using the Job URL. Fast, unblockable, scalable, and perfect for ATS, analytics, and AI matching.",
           "auth": "apiKey",
@@ -2645,13 +2638,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/nuclear_quietude/linkedin-jobs-scraper-api?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Linkedin Jobs Scrapper — Pay Per Event",
-          "description": "(Apify Scraper) Get detailed and insightful data just by entering few information, No need to worry about Cookies and Authentication.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scrapeverse/linkedin-jobs-scrapper-pay-per-event?fpr=thanhnguyxn"
         },
         {
           "name": "LinkedIn Posts Scraper [$0.99💰 No Cookies] Profile + Companies",
@@ -12890,7 +12876,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 1544,
+      "api_count": 1543,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -16286,13 +16272,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/s-r/ean-product-image-search---extract-images-from-any-ean-gtin?fpr=thanhnguyxn"
-        },
-        {
-          "name": "EBAY — Single Item — Store — Store Categories",
-          "description": "(Apify Scraper) Extract detailed product data from eBay individual item pages, seller store fronts, and store category pages. Get rich data including item specifics, all images, seller details, shipping/return terms, and more.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/ebay-item-store-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Ebay Kleinanzeigen.de Scraper — $1.5 / 1k — Fast & Reliable",
@@ -29104,7 +29083,7 @@
       "id": "apify-jobs",
       "emoji": "💼",
       "name": "Apify Jobs",
-      "api_count": 986,
+      "api_count": 985,
       "apis": [
         {
           "name": "⚡️Rapid Linkedin Jobs Scraper",
@@ -29315,13 +29294,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/abotapi/seek-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "$1 Willhaben.at Scraper 🔥marktplatz—jobs—immobilien—autos",
-          "description": "(Apify Scraper) ⚡ $1/1K — Schneller & robuster Scraper für willhaben-Suchseiten. Extrahiert Daten aus Marktplatz, Jobs, Immobilien & Autos. ⚡ Fast & resilient scraper for willhaben search pages. Extracts data from marketplace, jobs, real estate, & cars. 🚀",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/azzouzana/willhaben-suchseiten-scraper-marktplatz-jobs-immobilien-autos?fpr=thanhnguyxn"
         },
         {
           "name": "$1.5/1K 🧡 Subito.it Scraper PRO (By Search URL)",
@@ -36014,7 +35986,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 1062,
+      "api_count": 1059,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -40497,13 +40469,6 @@
           "link": "https://apify.com/freecamp008/scraper-mass-linkedin-accounts?fpr=thanhnguyxn"
         },
         {
-          "name": "Linkedin User Profile Url Mass Finder — Pay Per Event",
-          "description": "(Apify Scraper) LinkedIn User Profile URL - Mass Finder automates locating LinkedIn profiles by inputting names, location or designations. It provides instant URLs, saving time for market research, lead generation, and recruitment. It enhances efficiency and stre...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scrapeverse/linkedin-user-profile-url-mass-finder-pay-per-event?fpr=thanhnguyxn"
-        },
-        {
           "name": "Linktree / Beacons Link Extractor",
           "description": "(Apify Scraper) Utilize a fast and scalable Apify actor to efficiently extract every outbound link, biography, and profile information from Linktree and Beacons pages. This process allows you to gather valuable insights and data seamlessly from these popular link...",
           "auth": "apiKey",
@@ -41426,13 +41391,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/fortuitous_pirate/psychology-today-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Psychology Today Scraper — Therapist & Psychiatrist Leads",
-          "description": "(Apify Scraper) Scrape Psychology Today's therapist, psychiatrist, group practice, and treatment-rehab directories by US state. Returns name, credentials, specialties, insurance, address, and contact info per professional. No login required.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/psychology-today-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "PubChem Compound - Chemical & Drug Data",
@@ -43407,13 +43365,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/giovannibiancia/znanylekarz-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "ZocDoc + Healthgrades Doctors & Reviews Scraper",
-          "description": "(Apify Scraper) Scrape physicians, specialists, ratings, reviews, accepted insurance, locations, and bio data from ZocDoc.com and Healthgrades.com. Single actor with platform switch (zocdoc — healthgrades). No login required.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/zocdoc-healthgrades-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "ZocDoc Scraper - Pay Per Result",
@@ -49158,7 +49109,7 @@
       "id": "apify-real-estate",
       "emoji": "🏡",
       "name": "Apify Real Estate",
-      "api_count": 898,
+      "api_count": 895,
       "apis": [
         {
           "name": "🇩🇰 Boliga Denmark Real Estate Listings",
@@ -49299,20 +49250,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/azzouzana/immobiliare-it-listing-page-scraper-by-search-url?fpr=thanhnguyxn"
-        },
-        {
-          "name": "$1/1K 📞 Propertyfinder Agents & Brokers scraper ⚡️",
-          "description": "(Apify Scraper) 🔥 Scrape Propertyfinder ( ae — sa — qa — eg — bh ) agents/brokers search result pages for as for just $1 per 1,000 records 💰 Exportable to JSON, CSV, or Excel... or API > Get a plethora of information; simply enter the search page URL and ge...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/azzouzana/propertyfinder-agents-brokers-search-pages-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "$1/1K 🔥 Landwatch.com Scraper PRO (By Search URL)",
-          "description": "(Apify Scraper) 🚀 $1/1K — Blazing fast — Scrape LandWatch lands or agents listings to JSON, CSV, Excel, or API. Paste your search URLs & get comprehensive details! +150 data points per item -> Thousands of results per run ⚡Grab your search URLs and you're good...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/azzouzana/landwatch-com-scraper-pro-by-search-url?fpr=thanhnguyxn"
         },
         {
           "name": "$1/1K 🧡 Inmuebles24 Scraper PRO (By Search URL)",
@@ -51735,13 +51672,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/lukass/immobilien-scout24?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Immobilienscout24 (.de—.ch—.at) 💚 $1/1k — By Search URL",
-          "description": "(Apify Scraper) $1/1K 🔥 Fast #1 ImmoScout24 search pages scraper for Germany 🇩🇪, Switzerland 🇨🇭 & Austria 🇦🇹! Scrape search results for just $1 per 1k listings. Get data in seconds via JSON, CSV, Excel, or API. Simply paste the URL and extract thousands of...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/azzouzana/immobilienscout24-de-search-results-scraper-by-search-url?fpr=thanhnguyxn"
         },
         {
           "name": "Immobilienscout24 (.de—.ch—.at) Only$1.75💰 Search-Detail-Agent",
@@ -55452,7 +55382,7 @@
       "id": "apify-seo-tools",
       "emoji": "🔍",
       "name": "Apify SEO Tools",
-      "api_count": 681,
+      "api_count": 680,
       "apis": [
         {
           "name": "⚡ Page Speed Analyzer — Lighthouse & Web Vitals",
@@ -56699,13 +56629,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/dz_omar/facebook-comment-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Facebook Page SEO Scraper ⚡ — Open Graph & Meta Tags",
-          "description": "(Apify Scraper) Extract full SEO and meta tag data from Facebook Pages and Profiles. Output includes: og:title, og:description, og:image, og:url, twitter:card, app store links, canonical URL, follower count, page category, and bio text. One structured row per pag...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/premiumscraper/facebook-page-seo-scraper-open-graph-meta-tags?fpr=thanhnguyxn"
         },
         {
           "name": "Facebook Post & Comment Scraper for Pages, Groups and Profiles",
@@ -60227,7 +60150,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 1420,
+      "api_count": 1415,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -61936,13 +61859,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/easyapi/facebook-post-comments-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Facebook Post Engagement Scraper ⚡ — Lightweight Metrics",
-          "description": "(Apify Scraper) Extract lightweight engagement metrics from Facebook posts. Output includes: total reactions, comment count, share count, video view count, per-type reaction breakdown (Like/Love/Haha/Wow/Sad/Angry), and calculated engagement rate. One row per pos...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/premiumscraper/facebook-post-engagement-scraper-lightweight-metrics?fpr=thanhnguyxn"
         },
         {
           "name": "Facebook Post Scraper",
@@ -64575,13 +64491,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/harvestapi/linkedin-company-posts?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Linkedin Company Profile Scraper — Pay Per Event",
-          "description": "(Apify Scraper) The LinkedIn Company Profile Scraper is a powerful and efficient tool designed to extract valuable information from LinkedIn company profiles with ease. Whether you're a market researcher, sales professional, or just curious about a company's back...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/scrapeverse/linkedin-company-profile-scraper-pay-per-event?fpr=thanhnguyxn"
         },
         {
           "name": "LinkedIn Company Scraper",
@@ -68497,13 +68406,6 @@
           "link": "https://apify.com/kaitoeasyapi/twitter-x-data-tweet-scraper-pay-per-result-cheapest?fpr=thanhnguyxn"
         },
         {
-          "name": "Tweet(X)/Twitter scraper—$0.2/1K— Pay-Per Result v2",
-          "description": "(Apify Scraper) Need a no-code, online Twitter (X)/Tweet scraper? Get real-time data for just $0.2 per 1K results with our pay-per-result model—no hidden fees! Extract tweets, profiles, and engagement metrics instantly. Fast, reliable, and cost-effective. Start s...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fastcrawler/tweet-x-twitter-scraper-0-2-1k-pay-per-result-v2?fpr=thanhnguyxn"
-        },
-        {
           "name": "Tweets-x-Scraper",
           "description": "(Apify Scraper) Extract anything from X (Twitter) with speed and precision. This smart scraper auto-detects what to collect—tweets, profiles, users, lists, or media—and delivers clean, structured data instantly. Just enter usernames, URLs, or keywords and let aut...",
           "auth": "apiKey",
@@ -68868,13 +68770,6 @@
           "link": "https://apify.com/powerai/twitter-replies-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Twitter Reply Scraper — $0.2/1K Tweets — Pay-Per Result ｜ 2025",
-          "description": "(Apify Scraper) Get 1,000 Twitter replies(comments) for just $0.2! 🚀 Instantly download Twitter replies and comments. Our tool provides precise and rapid data extraction, no coding required. Pay only for the data you need, and gain valuable insights for market a...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fastcrawler/twitter-reply-scraper-0-2-1k-tweets-pay-per-result-2025?fpr=thanhnguyxn"
-        },
-        {
           "name": "Twitter Retweet Checker",
           "description": "(Apify Scraper) Check whether Twitter/X users retweeted public posts. Paste tweet URLs or IDs plus usernames, then export true/false retweet checks for campaigns, giveaways, audits, and API workflows.",
           "auth": "apiKey",
@@ -69055,13 +68950,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/data-slayer/twitter-list-members?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Twitter/X List Tweets Scraper —$0.35/1K— Pay-Per Result",
-          "description": "(Apify Scraper) Scrape tweets from any Twitter/X List easily. Just $0.35 per 1K results — pay only for what you get. Ideal for tracking niche communities, curated lists, or influencer groups. Fast, scalable, and cost-efficient. Pay-per-result, no upfront commitment.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/fastcrawler/twitter-x-list-tweets-scraper-0-35-1k-pay-per-result?fpr=thanhnguyxn"
         },
         {
           "name": "Twitter/X Lists Scraper: Search, Members, Tweets & More!",
