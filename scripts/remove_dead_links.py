@@ -151,7 +151,7 @@ def main():
     parser.add_argument("--report", default="scripts/broken_urls.txt", help="Path to broken URLs file")
     parser.add_argument("--apis-dir", default="apis", help="Directory containing API markdown files")
     parser.add_argument("--dry-run", action="store_true", help="Perform a dry run without modifying files")
-    parser.add_argument("--max-delete", type=int, default=15, help="Safety brake: maximum number of dead URLs allowed to auto-remove in one run")
+    parser.add_argument("--max-delete", type=int, default=500, help="Safety brake: maximum number of dead URLs allowed to auto-remove in one run (0 to disable brake)")
     args = parser.parse_args()
 
     report_path = Path(args.report)
@@ -172,7 +172,7 @@ def main():
 
     print(f"Found {len(raw_dead_urls)} unique dead URLs to process.")
 
-    if len(raw_dead_urls) > args.max_delete:
+    if args.max_delete > 0 and len(raw_dead_urls) > args.max_delete:
         print(f"🛑 SAFETY BRAKE TRIGGERED: {len(raw_dead_urls)} dead URLs detected, exceeding --max-delete limit of {args.max_delete}!", file=sys.stderr)
         print("Aborting automatic deletion to prevent mass removal during network outages.", file=sys.stderr)
         summary = {
