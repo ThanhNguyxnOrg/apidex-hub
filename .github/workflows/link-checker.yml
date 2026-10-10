@@ -368,7 +368,7 @@ jobs:
                 brokenTable += `| ${i + 1} | ${url} | ${reason} |\n`;
               });
               if (wasRemediated) {
-                brokenSection = `### 🧹 Auto-Remediated Links (${brokenCount})\n\n> ℹ️ *All ${brokenCount} broken link(s) were automatically removed in Incident #${incidentIssueNum}.*\n\n${brokenTable}\n`;
+                brokenSection = `### ✅ No Broken Links\n\nAll API links are responding correctly. 🎉\n\n<details>\n<summary>🧹 ${brokenCount} dead link(s) were automatically cleaned up in Incident #${incidentIssueNum} (click to expand)</summary>\n\n${brokenTable}\n</details>\n`;
               } else {
                 brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Review and update/remove these dead links.\n`;
               }
