@@ -283,6 +283,7 @@ jobs:
           if ! git diff --staged --quiet; then
             ISSUE_NUM="${{ steps.create-incident.outputs.issue_number }}"
             git commit -m "fix(apis): auto-remove dead links (fixes #${ISSUE_NUM}) [skip ci]"
+            git pull --rebase origin main || true
             git push origin main
             echo "pushed=true" >> $GITHUB_OUTPUT
           else
