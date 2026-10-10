@@ -270,7 +270,7 @@ jobs:
         id: auto-remediate
         run: |
           echo "=== Running remove_dead_links.py ==="
-          python scripts/remove_dead_links.py --max-delete 15
+          python scripts/remove_dead_links.py --max-delete 500
 
           echo "=== Verifying Markdown and Catalog Integrity ==="
           python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
