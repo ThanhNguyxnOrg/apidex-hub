@@ -93,9 +93,8 @@ def is_table_data_row(line: str) -> bool:
     content_without_pipes = stripped.replace("|", "").replace("-", "").replace(":", "").strip()
     if not content_without_pipes:
         return False
-    # Check for table header
-    lower = stripped.lower()
-    if "api name" in lower or "category" in lower or "description" in lower and "auth" in lower:
+    # Check that it contains a link (headers and separators do not have markdown links)
+    if not re.search(r'\[(?:Link|[^\]]+)\]\((https?://[^)]+)\)', line, re.IGNORECASE):
         return False
     return True
 

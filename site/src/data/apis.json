@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-10T05:33:00.290736+00:00",
+    "generated_at": "2026-10-10T05:36:25.792001+00:00",
     "source": "README.md",
-    "total_apis": 12253,
+    "total_apis": 12225,
     "total_categories": 78,
     "no_auth_count": 1129,
-    "api_key_count": 10981,
+    "api_key_count": 10953,
     "oauth_count": 143,
-    "https_count": 11669,
+    "https_count": 11641,
     "https_percentage": 95
   },
   "categories": [
@@ -7112,7 +7112,7 @@
       "id": "apify-business",
       "emoji": "💼",
       "name": "Apify Business",
-      "api_count": 352,
+      "api_count": 351,
       "apis": [
         {
           "name": "⚕️ Doctor Directory Lead Finder",
@@ -7267,13 +7267,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "Apify Store Analyzer",
-          "description": "(Apify Scraper) Analyze competing actors in the Apify Store for any keyword or category. Returns pricing models, user counts, run stats, ratings, and competitive positioning insights.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/automation-lab/apify-store-analyzer?fpr=thanhnguyxn"
         },
         {
           "name": "App Store & Google Play Review Scraper",
@@ -9584,7 +9577,7 @@
       "id": "apify-developer-tools",
       "emoji": "💻",
       "name": "Apify Developer Tools",
-      "api_count": 457,
+      "api_count": 455,
       "apis": [
         {
           "name": "🎓 Google Scholar Scraper — Papers & Citations",
@@ -9606,13 +9599,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/nexgendata/chrome-extension-security-analyzer?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Acquire.com Startup Marketplace Scraper",
-          "description": "(Apify Scraper) Scrape public startup acquisition listings from Acquire.com with titles, asking price, annual revenue/profit, category, and descriptions. HTTP-only via the public sitemap + SSR listing pages; no login required.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/acquire-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Actor Benchmark",
@@ -10054,13 +10040,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/chess-com-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Chrome Extensions Scraper Pro",
-          "description": "(Apify Scraper) Scrape any Chrome Web Store extension by URL, ID, category, search query, or top-charts. Pulls name, developer, ratings, install count, version, manifest, supported locales, related extensions. Pro filters: minRating, minInstalls, verifiedOnly, de...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/chrome-extensions-scraper-pro?fpr=thanhnguyxn"
         },
         {
           "name": "Chrome Web Store Scraper",
@@ -12791,7 +12770,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 1556,
+      "api_count": 1544,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -13079,13 +13058,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/vsekar91/acquire-startup-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Adobe Commerce Marketplace Scraper",
-          "description": "(Apify Scraper) Scrape Adobe Commerce Marketplace (formerly Magento Marketplace) - search 3700+ extensions by keyword or category, browse by type, or fetch details by slug. Returns name, description, categories, developer, pricing, rating, review count, version, ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/adobe-commerce-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Advancedbionutritionals Products Spider",
@@ -14831,13 +14803,6 @@
           "link": "https://apify.com/santamaria-automations/bazos-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Bazos.cz / Bazos.sk / Bazos.at / Bazos.pl Scraper",
-          "description": "(Apify Scraper) Search the Bazos classifieds marketplace across CZ (bazos.cz), SK (bazos.sk), AT (bazos.at), and PL (bazos.pl) by keyword. Extract title, price + currency (CZK/EUR/PLN), locality, posted date, listing URL, thumbnail, category, description length. ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/bazos-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Bazos.sk Scraper",
           "description": "(Apify Scraper) Scrape all listings from https://www.bazos.sk/ with title, URL, price, location, zip code and views in structured data.",
           "auth": "apiKey",
@@ -16210,13 +16175,6 @@
           "link": ""
         },
         {
-          "name": "eBay Items Scraper",
-          "description": "(Apify Scraper) Scrape eBay search results, category pages, and item listings. Extract product titles, prices, conditions, sellers, shipping costs, images, and more.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/ebay-items-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "**Ebay Kleinanzeigen.de Scraper \\",
           "description": "$1.5 / 1k \\",
           "auth": "No",
@@ -16775,13 +16733,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/ev-database-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Eventbrite Events Scraper",
-          "description": "(Apify Scraper) Extract events from Eventbrite like title, date, venue, organizer, ticket price, image, tags. Filter by location, category, or keyword. No proxy required.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/eventbrite-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Eventbrite Events Spider",
@@ -18478,13 +18429,6 @@
           "link": "https://apify.com/getdataforme/kickstarter-productinfo-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Kickstarter Project Scraper",
-          "description": "(Apify Scraper) Extract crowdfunding project data from Kickstarter like name, blurb, goal, pledged amount, backers, deadline, creator, category, country, and more. Uses the public search API for reliable results.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/kickstarter-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Kickstarter Scraper",
           "description": "(Apify Scraper) Extract Kickstarter project data: funding goals, pledges, backer counts, creator info, and campaign details. Search by keyword, category, or status. Export as JSON, CSV, or Excel. Schedule daily runs to track crowdfunding trends.",
           "auth": "apiKey",
@@ -18511,13 +18455,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/ivanvs/kijiji-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Kleinanzeigen Scraper",
-          "description": "(Apify Scraper) Scrape classified listings from Kleinanzeigen.de (formerly eBay Kleinanzeigen). Extract listing details including title, price, description, location, seller info, images, and category-specific attributes.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/kleinanzeigen-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Kleinanzeigen Scraper (DE)",
@@ -19220,13 +19157,6 @@
           "link": "https://apify.com/aitorsm/mercadona-product-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Mercari + Poshmark + Depop Scraper",
-          "description": "(Apify Scraper) Tri-platform fashion-resale scraper. Pull listings, sellers, brand pages, categories, and individual items from Mercari (US), Poshmark, and Depop with one actor, search by keyword, browse a category, fetch a single item, or list everything in a se...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/mercari-poshmark-depop-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Mercari Japan Scraper",
           "description": "(Apify Scraper) Scrape product listings, prices, and sold items from Mercari Japan marketplace. Search by keyword, filter by status (on sale/sold out), price range, and item condition. Track actual selling prices for resale research and market analysis.",
           "auth": "apiKey",
@@ -19876,13 +19806,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/automation-lab/olx-poland-classifieds-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "OLX Portugal Classifieds Scraper",
-          "description": "(Apify Scraper) Scrape public OLX.pt classifieds from category/search pages. Export prices, locations, images, seller details, and listing URLs.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/automation-lab/olx-portugal-classifieds-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "OLX Portugal Scraper",
@@ -20618,13 +20541,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/parseforge/ritchie-bros-auctioneers-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "RockAuto Parts Scraper",
-          "description": "(Apify Scraper) Search RockAuto.com, the largest free public US auto-parts catalogue by keyword or part number. Returns manufacturer, part number, category, price, core charge, pack size, and Info-page URL per listing. HTTP-only, no proxy, no API key, no login.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/rockauto-parts-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Rockauto Scraper",
@@ -21437,13 +21353,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/xtracto/stockx-sales-history-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "StockX Scraper",
-          "description": "(Apify Scraper) Scrape StockX, sneakers, apparel, accessories, electronics, collectibles, trading cards. Search by query, brand, or category, fetch by product slug, get prices, last-sale data, and sales history. Multi-currency.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/stockx-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "StockX Search Scraper",
@@ -23077,13 +22986,6 @@
           "link": "https://apify.com/kawsar/wayfair-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Wayfair Scraper",
-          "description": "(Apify Scraper) Scrape Wayfair product listings, product details, category browses, and brand pages from Wayfair.com (US), Wayfair.ca (Canada), Wayfair.co.uk (UK), and Wayfair.ie (Ireland). Extract title, SKU, brand, price, currency, rating, review count, image, ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/wayfair-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Wayke Cars Search Scraper",
           "description": "(Apify Scraper) Scrape car listings from Wayke.se — Sweden's leading automotive marketplace. Collect price, mileage, fuel type, gearbox, manufacturer, model year, and 25+ fields per vehicle. Perfect for dealers, analysts, and automotive data projects.",
           "auth": "apiKey",
@@ -23483,13 +23385,6 @@
           "link": ""
         },
         {
-          "name": "Yandex Market Scraper",
-          "description": "(Apify Scraper) Scrape product listings, prices, seller offers, and reviews from Yandex Market, Russia's largest e-commerce platform. Supports search, category browsing, product details with all seller offers, and review scraping.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/yandex-market-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Yandex Market Scraper (Парсер Яндекс Маркет) - Product Data",
           "description": "(Apify Scraper) Парсер Яндекс Маркет — extract product data from Russia's largest marketplace. Prices, ratings, reviews, specs, seller info, images, and stock levels. Filter by price, category, brand, and region. For price monitoring, competitor analysis, and e-c...",
           "auth": "apiKey",
@@ -23691,7 +23586,7 @@
       "id": "apify-integrations",
       "emoji": "🔌",
       "name": "Apify Integrations",
-      "api_count": 771,
+      "api_count": 770,
       "apis": [
         {
           "name": "🌐 Domain Valuation Report",
@@ -27229,13 +27124,6 @@
           "link": "https://apify.com/easyapi/pinterest-video-downloader?fpr=thanhnguyxn"
         },
         {
-          "name": "Pipedrive Marketplace Scraper",
-          "description": "(Apify Scraper) Scrape the Pipedrive Marketplace - 460+ CRM integrations and apps. Browse curated collections, search by keyword or category, or look up specific apps by slug. Returns names, descriptions, categories, ratings, install counts, pricing, and icon URLs.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/pipedrive-marketplace-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "PlanesLive Scraper - FlightRadar24 Alternative",
           "description": "(Apify Scraper) Scrape live and historical flight data from PlanesLive by airport route, flight code, or coordinates. Export JSON/CSV for analytics, dashboards, and monitoring. Reliable, proxy-ready, and a strong FlightRadar24 API alternative for building flight ...",
           "auth": "apiKey",
@@ -29096,7 +28984,7 @@
       "id": "apify-jobs",
       "emoji": "💼",
       "name": "Apify Jobs",
-      "api_count": 989,
+      "api_count": 986,
       "apis": [
         {
           "name": "⚡️Rapid Linkedin Jobs Scraper",
@@ -29811,13 +29699,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/piotrv1001/behance-jobs-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Better Business Bureau Scraper",
-          "description": "(Apify Scraper) Scrape Better Business Bureau (BBB.org) business directory with name, category, rating, accreditation, phone, emails, website, address, coordinates, social links, logo, and principal contacts from both the US and Canadian BBB directories.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/bbb-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Bjs Product Parser Spider",
@@ -30896,13 +30777,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/hello.datawizards/freelancer-jobs-search-actor?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Freelancer Scraper",
-          "description": "(Apify Scraper) Scrape Freelancer project pages from direct URLs, Freelancer search queries, or job category URLs. Extract project title, budget or hourly rate, bid counts, days left, skills, and project descriptions.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/freelancer-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "**Freelancer.com Jobs Scraper \\",
@@ -34013,13 +33887,6 @@
           "link": "https://apify.com/getdataforme/peopleperhour-job-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "PeoplePerHour Jobs & Freelancers Scraper",
-          "description": "(Apify Scraper) Scrape service listings (hourlies), project jobs, and freelancer profiles from PeoplePerHour. Search by keyword, category, or browse top freelancers",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/peopleperhour-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "PeoplePerHour Listings Scraper",
           "description": "(Apify Scraper) The PeoplePerHour Listings Scraper extracts paginated service listings from PeoplePerHour search URLs, capturing ratings, reviews, pricing, images, titles, freelancer details, and direct URLs—ideal for market research and freelancer analysis.",
           "auth": "apiKey",
@@ -36027,7 +35894,7 @@
       "id": "apify-lead-generation",
       "emoji": "🎯",
       "name": "Apify Lead Generation",
-      "api_count": 1066,
+      "api_count": 1062,
       "apis": [
         {
           "name": "[DEPRECATED — target site dead] Ucc Lien Search Ny",
@@ -36352,13 +36219,6 @@
           "link": "https://apify.com/natanielsantos/1881-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "2GIS Places Scraper",
-          "description": "(Apify Scraper) Search 2GIS business directory across 11 country domains (RU, KZ, UAE, UZ, BY, AM, AZ, GE, TJ, KG, .com). Extract place name, address, postcode, structured address, rating, category, reviews, photos, contacts, working hours, and social links via t...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/2gis-places-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "500 Global Scraper",
           "description": "(Apify Scraper) Scrape data on 500 Global companies from the 500 Global portfolio. Export scraped data, schedule via API, and integrate with other tools or AI workflows.",
           "auth": "apiKey",
@@ -36595,13 +36455,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/fortuitous_pirate/arxiv-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "AskLaila India Business Directory Scraper",
-          "description": "(Apify Scraper) Scrape AskLaila Indian business listings across 45+ cities. Extract names, addresses, phone numbers, ratings, reviews, geo coordinates, photos, payment options, and category attributes from restaurants, doctors, hotels, gyms, schools, plumbers and...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/asklaila-india-business-directory-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Atlassian Marketplace Scraper",
@@ -41077,13 +40930,6 @@
           "link": "https://apify.com/shahidirfan/oladoc-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "OLX Global Scraper",
-          "description": "(Apify Scraper) Scrape OLX classified-ad listings across 24 countries (Poland, Ukraine, Brazil, India, Pakistan, Indonesia, Argentina, Türkiye, Portugal, ...). Search by keyword, browse by category / city, fetch listing details, list seller ads, or accept any OLX...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/olx-global-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Onlyfans Scraper",
           "description": "(Apify Scraper) Efficient OnlyFans scraper for extracting public data, media, and insights with no proxy requirements and low costs.",
           "auth": "apiKey",
@@ -42461,13 +42307,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/solidcode/trustradius-review-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "TrustRadius Scraper",
-          "description": "(Apify Scraper) Scrape TrustRadius software review pages from direct URLs, TrustRadius search queries, or category pages. Extract pricing, ratings, review snippets, feature scores, awards, and related products.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/trustradius-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "UAE Business Directory Scraper",
@@ -49199,7 +49038,7 @@
       "id": "apify-real-estate",
       "emoji": "🏡",
       "name": "Apify Real Estate",
-      "api_count": 900,
+      "api_count": 898,
       "apis": [
         {
           "name": "🇩🇰 Boliga Denmark Real Estate Listings",
@@ -50222,13 +50061,6 @@
           "auth": "No",
           "https": false,
           "link": ""
-        },
-        {
-          "name": "BizBuySell Scraper",
-          "description": "(Apify Scraper) Scrape business-for-sale listings from BizBuySell.com. Extract asking price, cash flow, gross revenue, location, and description from search results and category pages.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/bizbuysell-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Bizquest [Only $1💰] Scraper",
@@ -51328,13 +51160,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/vulnv/google-maps-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Google Maps Leads Scraper",
-          "description": "(Apify Scraper) Scrape business leads from Google Maps. Search by query and extract business name, category, address, phone, website, rating, review count, place ID, and coordinates. Optionally enrich with emails, phone numbers, and social links crawled from each...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/google-maps-leads?fpr=thanhnguyxn"
         },
         {
           "name": "Google Maps Reviews Scraper",
@@ -55507,7 +55332,7 @@
       "id": "apify-seo-tools",
       "emoji": "🔍",
       "name": "Apify SEO Tools",
-      "api_count": 682,
+      "api_count": 681,
       "apis": [
         {
           "name": "⚡ Page Speed Analyzer — Lighthouse & Web Vitals",
@@ -59976,13 +59801,6 @@
           "link": "https://apify.com/bareezh_codes/whois-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Whop.com Scraper",
-          "description": "(Apify Scraper) Scrape Whop.com community listings by search query, category, or URL. Extracts id, title, route, verified, member count, reviews, creator pitch, owner, images. HTTP-only, no proxy.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/whop-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "X (Twitter) Tweet Replies Scraper — Comments & Sentiment",
           "description": "(Apify Scraper) Extract every reply under any X (Twitter) post — full text, author, and engagement metrics. Perfect for sentiment analysis, brand monitoring, and community research.",
           "auth": "apiKey",
@@ -60289,7 +60107,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 1421,
+      "api_count": 1420,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -61445,13 +61263,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/apify/facebook-events-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Facebook Events Scraper",
-          "description": "(Apify Scraper) Scrape public Facebook event data without cookies or authentication. Extract event name, description, date, time, location, coordinates, hosts, photos, ticket URLs, and attendee counts.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/facebook-events-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Facebook Events Scraper",
@@ -70244,7 +70055,7 @@
       "id": "apify-travel",
       "emoji": "✈️",
       "name": "Apify Travel",
-      "api_count": 323,
+      "api_count": 322,
       "apis": [
         {
           "name": "✈️ Google Flights Scraper",
@@ -71638,13 +71449,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/knagymate/apify-kayak-reviews-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Klook Experiences & Activities Scraper",
-          "description": "(Apify Scraper) Scrape Klook travel experiences and activities, search activities, browse by city or category, or enrich specific activity URLs. Extracts title, price, rating, reviews, city, category, highlights, cancellation policy, and more.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/crawlerbros/klook-experiences-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Klook Scraper — Activities, Prices & Reviews",
