@@ -40,8 +40,8 @@ def parse_category_header(line: str):
 
 def parse_api_row(line: str):
     """Extract API info from a markdown table row."""
-    # Split by | and clean up
-    parts = [p.strip() for p in line.split('|')]
+    # Split by unescaped | and clean up
+    parts = [p.strip().replace(r'\|', '—') for p in re.split(r'(?<!\\)\|', line)]
     # Remove empty first/last from leading/trailing |
     parts = [p for p in parts if p]
 

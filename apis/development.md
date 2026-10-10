@@ -18,7 +18,6 @@
 | **ApiFlash** | Chrome based screenshot API. | 🔑 ApiKey | ✅ | [Link](https://apiflash.com/) |
 | **APILayer** | Marketplace for various APIs. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/) |
 | **APIs.guru** | Wikipedia for Web APIs. | No | ✅ | [Link](https://apis.guru/api-doc/) |
-| **Appwrite** | Open source backend server (database, auth, storage, functions). | 🔑 ApiKey | ✅ | [Link](https://appwrite.io/docs) |
 | **Auth0** | Authentication and authorization platform (free tier). | 🔐 OAuth | ✅ | [Link](https://auth0.com/docs/api) |
 | **Aviationstack** | Real-time flight status and global aviation data. | 🔑 ApiKey | ✅ | [Link](https://aviationstack.com/) |
 | **Azure DevOps** | DevOps tools. | 🔑 ApiKey | ✅ | [Link](https://docs.microsoft.com/en-us/rest/api/azure/devops) |
@@ -128,16 +127,11 @@
 | **SonarQube** | SonarQube REST APIs to detect bugs, code smells & security vulnerabilities. | 🔐 OAuth | ✅ | [Link](https://sonarcloud.io/web_api) |
 | **StackExchange** | Q&A forum for developers. | 🔐 OAuth | ✅ | [Link](https://api.stackexchange.com/) |
 | **Statically** | A free CDN for developers. | No | ✅ | [Link](https://statically.io/) |
-| **Supabase** | Open source Firebase alternative (database, auth, storage). | 🔑 ApiKey | ✅ | [Link](https://supabase.com/docs/guides/api) |
 | **Trello** | Project boards and workflow automation APIs. | 🔐 OAuth | ✅ | [Link](https://developers.trello.com/) |
-| **Turso** | SQLite-based edge database platform. | 🔑 ApiKey | ✅ | [Link](https://docs.turso.tech/) |
-| **Upstash** | Serverless Redis and Kafka (free tier). | 🔑 ApiKey | ✅ | [Link](https://upstash.com/docs/redis/overall/getstarted) |
 | **Userstack** | User-Agent String Analysis. | 🔑 ApiKey | ✅ | [Link](https://userstack.com/) |
 | **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |
 | **Vercel** | Deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://vercel.com/docs/rest-api/endpoints) |
-| **Web Scraper** | Web scraping service (ScrapingBee). | 🔑 ApiKey | ✅ | [Link](https://www.scrapingbee.com/documentation/) |
 | **WebScraping.AI** | Web Scraping API with built-in proxies and JS rendering. | 🔑 ApiKey | ✅ | [Link](https://webscraping.ai/) |
-| **ZenRows** | Web Scraping API that bypasses anti-bot solutions while offering JS rendering... | 🔑 ApiKey | ✅ | [Link](https://www.zenrows.com/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

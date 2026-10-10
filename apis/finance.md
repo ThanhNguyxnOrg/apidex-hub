@@ -35,7 +35,6 @@
 | **SmartAPI** | Gain access to set of <SmartAPI> and create end-to-end broking services. | 🔑 ApiKey | ✅ | [Link](https://smartapi.angelbroking.com/) |
 | **Square** | Payments, checkout, and commerce APIs. | 🔐 OAuth | ✅ | [Link](https://developer.squareup.com/reference/square) |
 | **StockData** | Real-Time, Intraday & Historical Market Data, News and Sentiment API. | 🔑 ApiKey | ✅ | [Link](https://www.StockData.org) |
-| **Stripe** | Payments. | 🔑 ApiKey | ✅ | [Link](https://stripe.com/docs/api) |
 | **Tax Data API** | Tax rates and validation. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/tax_data-api) |
 | **Tiingo** | Financial data, news, and fundamentals API. | 🔑 ApiKey | ✅ | [Link](https://www.tiingo.com/documentation/general/overview) |
 | **Tradier** | US equity/option market data (delayed, intraday, historical) | 🔐 OAuth | ✅ | [Link](https://developer.tradier.com) |

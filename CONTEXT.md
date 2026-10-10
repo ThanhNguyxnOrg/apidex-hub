@@ -1,53 +1,32 @@
-# 📖 APIDex Hub — Ubiquitous Domain Context & Architecture
+# APIDex Hub — System Context & Domain Model
 
-> **Purpose:** Living glossary, domain concepts, and architectural invariants for APIDex Hub.  
-> **Skill:** `grill-with-docs` · `anti-ui-slop` · `ponytail`
+## 1. Domain Glossary
 
----
+| Term | Definition |
+|---|---|
+| **API Entry** | A single public API or web scraper listed in the catalog, defined by: Name, Description, Auth requirement, HTTPS support, and official documentation URL. |
+| **Category** | A markdown document under `apis/<category-slug>.md` grouping related APIs. Must contain an anchor tag header (`## <a id="slug"></a>EMOJI Title`) and a standard 5-column markdown table. |
+| **Catalog** | The complete collection of all categories, aggregated into `site/src/data/apis.json` and summarized in `README.md`. |
+| **Auth Scheme** | The authentication mechanism for an API: `No` (public/free, no key needed), `🔑 ApiKey` (requires an API key/token), or `🔐 OAuth` (requires OAuth 2.0 flow). |
+| **Link Health** | The operational state of an API endpoint, verified in a two-stage automated pipeline: Stage 1 (Fast HTTP/CLI check) and Stage 2 (Headless Playwright browser verification to bypass Cloudflare/WAF bot challenges). |
+| **Dead API (Broken)** | An endpoint confirmed dead via HTTP 404, HTTP 410, or NXDOMAIN (DNS failure). |
+| **Auto-Remediation** | The automated GitHub Actions process (`scripts/remove_dead_links.py`) that safely excises confirmed dead links from markdown tables, recalculates catalog counts, updates website JSON, commits, pushes, and closes Incident Issues. |
+| **Safety Brake** | A configurable threshold (`--max-delete`) in `remove_dead_links.py` preventing catastrophic deletion of APIs in case of widespread network or proxy outages. |
 
-## 🏛️ Core Domain Concepts
+## 2. Business & Data Integrity Rules
 
-| Term | Ubiquitous Definition | Source of Truth |
-|---|---|---|
-| **API Entry** | A single public API record consisting of `name`, `description`, `auth`, `https`, `link`, and assigned `category`. | Markdown tables inside `apis/*.md` |
-| **Category** | A thematic cluster of APIs (e.g. `weather`, `machine-learning`). Identified by `slug` (derived from markdown file name/header anchor). | Directory `apis/*.md` (78 categories) |
-| **Auth Type** | Authentication requirement: `none` (No key needed), `apiKey` (API Key required), or `oauth` (OAuth 2.0 flow). | Parsed from markdown column 3 |
-| **Health Status** | Link availability verified by link-checker: `verified` (200 OK), `down` (4xx/5xx/timeout), `unchecked`. | Link checker workflow & report |
-| **Live Health Dashboard** | A single persistent GitHub Issue labeled `daily-report,automated` that is never closed, updated dynamically every midnight. | `.github/workflows/link-checker.yml` |
+1. **Strict 5-Column Markdown Format**:
+   ```markdown
+   | API Name | Description | Auth | HTTPS | Link |
+   | :--- | :--- | :---: | :---: | :---: |
+   | **Example API** | Clear summary of API capabilities. | 🔑 ApiKey | ✅ | [Link](https://example.com/docs) |
+   ```
+2. **Escaped Pipe Rule**: Cells must NOT contain unescaped or raw `|` characters. Em-dashes (`—`) or forward slashes (`/`) must be used for titles containing subtitles to prevent breaking markdown column splitting.
+3. **No Duplicate URLs**: An API documentation URL must belong to exactly one primary category (the most specific category). Duplicates across categories are strictly prohibited.
+4. **Link Anchor Standard**: Each category file must start with `## <a id="category-slug"></a>EMOJI Category Name`.
 
----
+## 3. Automation Pipelines
 
-## ⚙️ Invariant Pipelines (DO NOT BREAK)
-
-### 1. Data Ingestion Pipeline (Markdown → JSON)
-```
-apis/*.md  ──(git push)──>  .github/workflows/deploy-website.yml
-                                     │
-                                     ▼
-                      python scripts/parse_readme.py
-                                     │
-                                     ▼
-                         site/src/data/apis.json
-                                     │
-                                     ▼
-                            Vite Build (pnpm)
-```
-- **Rule:** Frontend code MUST consume `site/src/data/apis.json` dynamically via `site/src/app/components/data.ts`.
-- **Category Resilience:** Any new `.md` added to `apis/` will automatically appear in categories without manual code edits. Category icon mapping must have a fallback icon so unknown slugs never crash the UI.
-
-### 2. GitHub Pages Deployment Pipeline
-```
-site/ (Vite)  ──pnpm build──>  docs/ (repo root)  ──peaceiris/actions-gh-pages──>  gh-pages branch
-```
-- **Rule:** Vite `base` is configured to `/apidex-hub/`.
-- **Routing Invariant:** GitHub Pages does not support server-side routing fallback without 404 hacks. Therefore, client-side routing MUST use `HashRouter` (`/#/category/:slug`, `/#/favorites`, `/#/`) to guarantee direct URLs and page refreshes work reliably.
-- **Lockfile Invariant:** CI executes `pnpm install --frozen-lockfile`. Any dependency modification in `site/package.json` must update `site/pnpm-lock.yaml`.
-
----
-
-## 📑 Architecture Decision Log Reference
-
-Architectural decisions are tracked in `adr/`:
-- `adr/0001-hash-routing-for-github-pages.md`
-- `adr/0002-dependency-purge-and-lightweight-stack.md`
-- `adr/0003-fuse-js-for-fuzzy-search.md`
+- **`.github/workflows/link-checker.yml`**: Daily link checker at 00:00 UTC and on PRs. Checks all links, posts results to Discussions (#6 Live Dashboard), creates Incident Issues on dead links, and auto-remediates them.
+- **`.github/workflows/deploy-website.yml`**: Builds and deploys the Vite/React catalog website to GitHub Pages upon changes to `main`.
+- **`scripts/parse_readme.py`**: The authoritative single source of truth parser syncing `apis/*.md` into `site/src/data/apis.json`, `README.md`, and `site/index.html`.
