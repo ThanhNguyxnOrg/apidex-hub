@@ -7,7 +7,7 @@ Before making ANY changes to this repository, you MUST read and follow the instr
 - Website generation is fully automated via GitHub Actions in CI/CD.
 -->
 <p align="center">
-  <img src="docs/logo.svg" alt="APIDex Hub logo" width="120" />
+  <img src="site/public/logo.svg" alt="APIDex Hub logo" width="120" />
 </p>
 # 🚀 APIDex Hub
 
