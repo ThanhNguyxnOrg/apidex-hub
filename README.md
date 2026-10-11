@@ -6,6 +6,9 @@ Before making ANY changes to this repository, you MUST read and follow the instr
 - DO NOT run build commands (npm run build, pnpm build, etc.) locally.
 - Website generation is fully automated via GitHub Actions in CI/CD.
 -->
+<p align="center">
+  <img src="docs/logo.svg" alt="APIDex Hub logo" width="120" />
+</p>
 # 🚀 APIDex Hub
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
