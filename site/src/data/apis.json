@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-11T16:04:20.633187+00:00",
+    "generated_at": "2026-10-12T04:03:10.452100+00:00",
     "source": "README.md",
-    "total_apis": 12222,
+    "total_apis": 12218,
     "total_categories": 82,
     "no_auth_count": 601,
-    "api_key_count": 11477,
+    "api_key_count": 11473,
     "oauth_count": 144,
-    "https_count": 12175,
+    "https_count": 12171,
     "https_percentage": 100
   },
   "categories": [
@@ -579,7 +579,7 @@
       "id": "apify-agents",
       "emoji": "🤖",
       "name": "Apify Agents",
-      "api_count": 551,
+      "api_count": 550,
       "apis": [
         {
           "name": "🌟 Youtube Transcript Scraper - $0.5 per 1k",
@@ -3268,13 +3268,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/cspnair/rag-knowledge-graph-builder?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Rag Vector Store Writer",
-          "description": "(Apify Scraper) Apify Actor that writes embedding vectors to Pinecone or Qdrant vector databases. Chains directly with RAG Embedding Generator output or accepts raw vectors with metadata. Handles batching, retries, collection creation, metadata mapping, and ID ge...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/labrat011/rag-vector-store-writer?fpr=thanhnguyxn"
         },
         {
           "name": "Rappi Restaurants & Stores Scraper",
@@ -23685,7 +23678,7 @@
       "id": "apify-integrations",
       "emoji": "🔌",
       "name": "Apify Integrations",
-      "api_count": 770,
+      "api_count": 769,
       "apis": [
         {
           "name": "🌐 Domain Valuation Report",
@@ -27382,13 +27375,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/alizarin_refrigerator-owner/quickbooks-online-accounting-api?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Rag Content Chunker",
-          "description": "(Apify Scraper) Turn raw text, Markdown, or Apify datasets into token-perfect RAG chunks with deterministic IDs, source metadata, and a billing-ready summary—ready for embeddings or vector DBs without extra glue code.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/labrat011/rag-content-chunker?fpr=thanhnguyxn"
         },
         {
           "name": "Real Estate Scraper - Zillow, Redfin & Realtor.com",
@@ -43407,7 +43393,7 @@
       "id": "apify-mcp-servers",
       "emoji": "🧩",
       "name": "Apify MCP Servers",
-      "api_count": 238,
+      "api_count": 236,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -43746,13 +43732,6 @@
           "link": "https://apify.com/khadinakbar/bing-search-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Bol.com Price Tracker - NL/BE Drops + AI Briefs",
-          "description": "(Apify Scraper) Track Bol.com NL/BE product prices, availability, sellers, ratings, delivery notes, and price-drop history. Built for Benelux market monitoring with clear diagnostics when public pages block access.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/harvestlab/bol-com-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "Booking.com Reviews Scraper",
           "description": "(Apify Scraper) Extract Booking.com guest reviews at scale — 24 structured fields per review (positive/negative text, score, traveler type, room, reviewer profile.",
           "auth": "apiKey",
@@ -44052,13 +44031,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/khadinakbar/google-maps-email-extractor?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Google Maps EU Business Leads Scraper - No API Key",
-          "description": "(Apify Scraper) Find European business leads by keyword and city without a Google API key. Export names, addresses, phones, websites, coordinates, categories, map links, and optional lead scoring.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/harvestlab/google-maps-eu-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Google Maps Extractor - Places, Phones & Websites",
