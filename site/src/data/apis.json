@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-12T04:03:10.452100+00:00",
+    "generated_at": "2026-10-13T05:12:52.063630+00:00",
     "source": "README.md",
-    "total_apis": 12218,
+    "total_apis": 12208,
     "total_categories": 82,
     "no_auth_count": 601,
-    "api_key_count": 11473,
+    "api_key_count": 11463,
     "oauth_count": 144,
-    "https_count": 12171,
+    "https_count": 12161,
     "https_percentage": 100
   },
   "categories": [
@@ -4437,7 +4437,7 @@
       "id": "apify-ai",
       "emoji": "🧠",
       "name": "Apify AI",
-      "api_count": 332,
+      "api_count": 331,
       "apis": [
         {
           "name": "🏛️ Business Registration Lookup — State Filing Records",
@@ -4585,13 +4585,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/alizarin_refrigerator-owner/sentiment-api?fpr=thanhnguyxn"
-        },
-        {
-          "name": "AI Text to Speech",
-          "description": "(Apify Scraper) TTS high-performance utility designed to convert written text into natural, human-like speech. Leveraging neural networks, ultra-low latency audio generation and high-fidelity voice synthesis across multiple global languages.  Content creators loo...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/saswave/ai-text-to-speech?fpr=thanhnguyxn"
         },
         {
           "name": "Ai Tools Harvester",
@@ -12869,7 +12862,7 @@
       "id": "apify-ecommerce",
       "emoji": "🛍️",
       "name": "Apify Ecommerce",
-      "api_count": 1543,
+      "api_count": 1540,
       "apis": [
         {
           "name": "⚡ Vinted Turbo Scraper",
@@ -15196,13 +15189,6 @@
           "link": "https://apify.com/shahidirfan/browns-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Bulk Email Finder Tool – Find Business Emails by Name & Domain",
-          "description": "(Apify Scraper) Instantly find verified professional email addresses by entering a contact’s first name, last name, and company domain—ideal for sales teams, outreach campaigns, and lead generation.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/davidsharadbhatt/bulk-email-finder-tool---find-business-emails-by-name-domain?fpr=thanhnguyxn"
-        },
-        {
           "name": "Bunjang Market Scraper",
           "description": "(Apify Scraper) Scrape product listings from Bunjang (번개장터) — Korea's popular secondhand marketplace. The only bunjang scraper for korean C2C market data: prices, seller badges, popularity metrics, shipping info. Ideal for korean resale market research & price tr...",
           "auth": "apiKey",
@@ -15761,13 +15747,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/paulovitor18/cnpj-bulk-lookup?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Contact Details Scraper – Emails, Phone Numbers & Social Media",
-          "description": "(Apify Scraper) Extract verified emails, phone numbers, and social media profiles from any website using this Contact Details Scraper. Perfect for lead generation, sales outreach, and business data collection. Automatically find contact info, LinkedIn, Twitter, a...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/davidsharadbhatt/socialprofilescrapper?fpr=thanhnguyxn"
         },
         {
           "name": "Copart Data Scraper",
@@ -17448,13 +17427,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/chimerical_quicklime/gianteagle-products-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Global Venture Capital (VC) Investors Database: 50,000+ firms",
-          "description": "(Apify Scraper) key contacts across major markets (USA, Canada, UK, Germany, France, Australia & Europe) Each record includes: Email (Verified), Phone Numbers, industry preferences, Website, First and Last Name, Title, Person LinkedIn, Company LinkedIn, Full Addr...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/davidsharadbhatt/global-venture-capital-vc-investors-database-50-000-firms?fpr=thanhnguyxn"
         },
         {
           "name": "Globalsources Product Search Scraper",
@@ -23678,7 +23650,7 @@
       "id": "apify-integrations",
       "emoji": "🔌",
       "name": "Apify Integrations",
-      "api_count": 769,
+      "api_count": 767,
       "apis": [
         {
           "name": "🌐 Domain Valuation Report",
@@ -24283,13 +24255,6 @@
           "link": "https://apify.com/memo23/autoscout24-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "Autoscout24 Listings URLs Scraper",
-          "description": "(Apify Scraper) Effortlessly collect car listing URLs from AutoScout24 — Europe's largest automotive marketplace. Covers all search pages and country sites automatically. Fast, lightweight & reliable. Use standalone or pair with the AutoScout24 Details Scraper fo...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/alkausari_mujahid/autoscout24-listings-urls-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "AutoScout24 Multi-Country Scraper",
           "description": "(Apify Scraper) Our autoscout24 scraper makes it simple to collect listings at scale and in all countries. It automatically gathers URLs from all available pages and extracts complete details for every listing including price, mileage, year, and more.",
           "auth": "apiKey",
@@ -24841,13 +24806,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/pratikdani/crunchbase-companies-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Crunchbase Company Scraper - No API limits",
-          "description": "(Apify Scraper) Extract company data from Crunchbase including funding, investors, and contacts. 130+ fields. No API limits. $11.99 per 1,000 companies.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/davidsharadbhatt/crunchbase-company-scraper---no-api-limits?fpr=thanhnguyxn"
         },
         {
           "name": "Crypto Whale Wallet Tracker",
@@ -29069,7 +29027,7 @@
       "id": "apify-jobs",
       "emoji": "💼",
       "name": "Apify Jobs",
-      "api_count": 985,
+      "api_count": 984,
       "apis": [
         {
           "name": "⚡️Rapid Linkedin Jobs Scraper",
@@ -31485,13 +31443,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/fatihtahta/gulftalent-jobs-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Gulftalent Jobs Search Scraper",
-          "description": "(Apify Scraper) Scrape job listings from GulfTalent.com, the leading career platform for professionals in the Gulf region. Extract comprehensive data including job titles, companies, locations, salaries, and employment details across UAE, Saudi Arabia, Qatar, and...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/stealth_mode/gulftalent-jobs-search-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "GulfTalent Scraper — Gulf & Middle East Jobs",
@@ -43393,7 +43344,7 @@
       "id": "apify-mcp-servers",
       "emoji": "🧩",
       "name": "Apify MCP Servers",
-      "api_count": 236,
+      "api_count": 235,
       "apis": [
         {
           "name": "⚖️ Legal MCP — AI Court Records Search",
@@ -43807,13 +43758,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/khadinakbar/craigslist-all-in-one-scraper?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Crunchbase Scraper - Unlimited Data No API Pricing 100% Success",
-          "description": "(Apify Scraper) Extract unlimited Crunchbase data without expensive API pricing. Get funding rounds, investors, revenue, employees & contact info. 130+ fields. $11.99/1K companies. No rate limits. 100% success rate. Alternative to Apollo.io, ZoomInfo, Linkedin an...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/davidsharadbhatt/crunchbase-company-scraper?fpr=thanhnguyxn"
         },
         {
           "name": "Currency Exchange Mcp",
@@ -60122,7 +60066,7 @@
       "id": "apify-social-media",
       "emoji": "💬",
       "name": "Apify Social Media",
-      "api_count": 1415,
+      "api_count": 1413,
       "apis": [
         {
           "name": "[Fast & Cheap] Youtube Email, Socials & Urls Scraper",
@@ -64808,13 +64752,6 @@
           "link": "https://apify.com/parseforge/linkedin-posts-scraper?fpr=thanhnguyxn"
         },
         {
-          "name": "LinkedIn Posts Scraper",
-          "description": "(Apify Scraper) Scrape public LinkedIn posts without cookies. Add profile URLs, company URLs, or direct post URLs and get post text, author data, engagement, images, and visible top comments. Export results or use them through the Apify API.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/maximedupre/linkedin-posts-scraper?fpr=thanhnguyxn"
-        },
-        {
           "name": "LinkedIn Posts Scraper ✅ NO COOKIES",
           "description": "(Apify Scraper) Scrape every post from any LinkedIn profile or company page: post text, media, reactions, comments, shares, reposts, author details, and mentions. No LinkedIn account or cookies needed. Auto-pagination handles full feeds, with batch scraping acros...",
           "auth": "apiKey",
@@ -66430,13 +66367,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://apify.com/red_crawler/reddit-users-v2?fpr=thanhnguyxn"
-        },
-        {
-          "name": "Reddit Wiki, Emojis & Widgets V1 (6 endpoints)",
-          "description": "(Apify Scraper) Pull a subreddit's wiki — list pages, fetch any page, browse revision history and discussions — plus grab custom emojis and the sidebar widgets payload. Bring your own Reddit bearer + matching proxy.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apify.com/red_crawler/reddit-wiki-emojis-widgets?fpr=thanhnguyxn"
         },
         {
           "name": "Reddit: Random Subreddit Actor",
