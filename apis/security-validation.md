@@ -2,7 +2,6 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **BinaryEdge** | Provide access to BinaryEdge 40fy scanning platform. | 🔑 ApiKey | ✅ | [Link](https://docs.binaryedge.io/api-v2.html) |
 | **BitWarden** | Best open-source password manager. | 🔐 OAuth | ✅ | [Link](https://bitwarden.com/help/api/) |
 | **Bugcrowd** | Bugcrowd API for interacting and tracking the reported issues programmatically. | 🔑 ApiKey | ✅ | [Link](https://docs.bugcrowd.com/api/getting-started/) |
 | **Censys** | Search engine for Internet connected host and devices. | 🔑 ApiKey | ✅ | [Link](https://search.censys.io/api) |

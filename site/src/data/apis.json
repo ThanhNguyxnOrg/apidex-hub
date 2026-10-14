@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-13T05:12:52.063630+00:00",
+    "generated_at": "2026-10-14T03:19:35.181881+00:00",
     "source": "README.md",
-    "total_apis": 12208,
+    "total_apis": 12206,
     "total_categories": 82,
-    "no_auth_count": 601,
-    "api_key_count": 11463,
+    "no_auth_count": 600,
+    "api_key_count": 11462,
     "oauth_count": 144,
-    "https_count": 12161,
+    "https_count": 12159,
     "https_percentage": 100
   },
   "categories": [
@@ -83479,7 +83479,7 @@
       "id": "science",
       "emoji": "🔬",
       "name": "Science & Space",
-      "api_count": 32,
+      "api_count": 31,
       "apis": [
         {
           "name": "arcsecond.io",
@@ -83601,13 +83601,6 @@
           "link": "https://api.tidesandcurrents.noaa.gov/api/prod/"
         },
         {
-          "name": "Noctua",
-          "description": "REST API used to access NoctuaSky features.",
-          "auth": "No",
-          "https": true,
-          "link": "https://api.noctuasky.com/api/v1/swaggerdoc/"
-        },
-        {
           "name": "Numbers",
           "description": "Number of the day, random number, number facts and anything else you want to ...",
           "auth": "apiKey",
@@ -83711,15 +83704,8 @@
       "id": "security-validation",
       "emoji": "🔐",
       "name": "Security & Validation",
-      "api_count": 31,
+      "api_count": 30,
       "apis": [
-        {
-          "name": "BinaryEdge",
-          "description": "Provide access to BinaryEdge 40fy scanning platform.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://docs.binaryedge.io/api-v2.html"
-        },
         {
           "name": "BitWarden",
           "description": "Best open-source password manager.",

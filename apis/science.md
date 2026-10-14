@@ -19,7 +19,6 @@
 | **NASA API** | Access NASA data, including Astronomy Picture of the Day (APOD). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
 | **Newton** | Symbolic and arithmetic math calculator API (**No Auth**). | No | ✅ | [Link](https://newton.vercel.app/) |
 | **NOAA Tides & Currents** | US tides, currents, and water level data. | No | ✅ | [Link](https://api.tidesandcurrents.noaa.gov/api/prod/) |
-| **Noctua** | REST API used to access NoctuaSky features. | No | ✅ | [Link](https://api.noctuasky.com/api/v1/swaggerdoc/) |
 | **Numbers** | Number of the day, random number, number facts and anything else you want to ... | 🔑 ApiKey | ✅ | [Link](https://math.tools/api/numbers/) |
 | **Open Notify** | ISS astronauts, current location, etc. | No | No | [Link](http://open-notify.org/Open-Notify-API/) |
 | **Open Science Framework** | Open source research management platform. | 🔐 OAuth | ✅ | [Link](https://developer.osf.io/) |
