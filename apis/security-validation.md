@@ -34,6 +34,7 @@
 | **SecurityTrails** | Domain and DNS intelligence. | 🔑 ApiKey | ✅ | [Link](https://securitytrails.com/corp/api) |
 | **Shodan** | Internet-connected devices search engine. | 🔑 ApiKey | ✅ | [Link](https://developer.shodan.io/) |
 | **Spyse** | Access data on all Internet assets and build powerful attack surface manageme... | 🔑 ApiKey | ✅ | [Link](https://spyse-dev.readme.io/reference/quick-start) |
+| **StopForumSpam** | Spam registry of IP/email/username from forum spam. | No | ✅ | [Link](https://www.stopforumspam.com/) |
 | **UK Police** | UK Police data. | No | ✅ | [Link](https://data.police.uk/docs/) |
 | **URLScan** | URL sandboxing with page screenshots, scans and results. | 🔑 ApiKey | ✅ | [Link](https://urlscan.io/) |
 | **VulDB** | VulDB API allows to initiate queries for one or more items along with transac... | 🔑 ApiKey | ✅ | [Link](https://vuldb.com/?doc.api) |

@@ -8,6 +8,7 @@
 | **Brooklyn Museum** | Open-access collection records and images. | 🔑 ApiKey | ✅ | [Link](https://www.brooklynmuseum.org/opencollection/api) |
 | **Cleveland Museum of Art** | Open access API for the museum's collection of art objects (**No Auth**). | No | ✅ | [Link](https://openaccess-api.clevelandart.org/) |
 | **Cooper Hewitt** | Smithsonian Design Museum. | 🔑 ApiKey | ✅ | [Link](https://collection.cooperhewitt.org/api) |
+| **DigitalNZ** | 30M+ digitized items from New Zealand galleries and archives. | 🔑 ApiKey | ✅ | [Link](https://api.digitalnz.org/) |
 | **Europeana** | European Museum and Galleries content. | 🔑 ApiKey | ✅ | [Link](https://pro.europeana.eu/resources/apis/search) |
 | **Harvard Art Museums** | Museum artwork data. | 🔑 ApiKey | ✅ | [Link](https://harvardartmuseums.org/collections/api) |
 | **Metropolitan Museum** | Access 5,000 years of art from The Met collection (**No Auth**). | No | ✅ | [Link](https://metmuseum.github.io/) |
