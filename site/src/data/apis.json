@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T10:20:55.864178+00:00",
+    "generated_at": "2026-10-17T11:29:44.289605+00:00",
     "source": "README.md",
-    "total_apis": 3256,
+    "total_apis": 3246,
     "total_categories": 70,
-    "no_auth_count": 1436,
-    "api_key_count": 1565,
+    "no_auth_count": 1432,
+    "api_key_count": 1559,
     "oauth_count": 255,
-    "https_count": 3161,
+    "https_count": 3155,
     "https_percentage": 97
   },
   "categories": [
@@ -7183,7 +7183,7 @@
       "id": "email-sms",
       "emoji": "📧",
       "name": "Email & SMS",
-      "api_count": 53,
+      "api_count": 52,
       "apis": [
         {
           "name": "API iSendPro",
@@ -7529,13 +7529,6 @@
           "link": "https://api.uchecker.net/docs"
         },
         {
-          "name": "Verifier",
-          "description": "Verifies that a given email is real",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://verifier.meetchopra.com/docs#/"
-        },
-        {
           "name": "Vonage (Nexmo)",
           "description": "SMS and voice APIs (trial credits).",
           "auth": "apiKey",
@@ -7829,7 +7822,7 @@
       "id": "environment-climate",
       "emoji": "🌿",
       "name": "Environment & Climate",
-      "api_count": 44,
+      "api_count": 43,
       "apis": [
         {
           "name": "AirNow",
@@ -7879,13 +7872,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.climatiq.io/docs"
-        },
-        {
-          "name": "Cloverly",
-          "description": "API calculates the impact of common carbon-intensive activities in real time",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.cloverly.com/carbon-offset-documentation"
         },
         {
           "name": "CO2 Offset",
@@ -8706,7 +8692,7 @@
           "description": "Company fundamentals, ratios and historical stock data.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://financialmodelingprep.com/api/"
+          "link": "https://financialmodelingprep.com/developer/docs"
         },
         {
           "name": "FinBridge",
@@ -11421,7 +11407,7 @@
       "id": "government-civic",
       "emoji": "🏛️",
       "name": "Government & Civic",
-      "api_count": 132,
+      "api_count": 131,
       "apis": [
         {
           "name": "AI Law Tracker",
@@ -11569,13 +11555,6 @@
           "auth": "No",
           "https": true,
           "link": "https://open.toronto.ca/"
-        },
-        {
-          "name": "Code.gov",
-          "description": "The primary platform for Open Source and code sharing for the U.S. Federal Government",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://code.gov"
         },
         {
           "name": "Colorado Information Marketplace",
@@ -12950,7 +12929,7 @@
       "id": "jobs-career",
       "emoji": "💼",
       "name": "Jobs & Career",
-      "api_count": 42,
+      "api_count": 41,
       "apis": [
         {
           "name": "Adzuna",
@@ -13135,13 +13114,6 @@
           "link": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
         },
         {
-          "name": "Juju",
-          "description": "Job search engine",
-          "auth": "apiKey",
-          "https": false,
-          "link": "http://www.juju.com/publisher/spec/"
-        },
-        {
           "name": "Level",
           "description": "Job listings rated by AI level, from Little AI to Builds AI; REST, RSS and MCP",
           "auth": "No",
@@ -13252,7 +13224,7 @@
       "id": "machine-learning",
       "emoji": "🧠",
       "name": "Machine Learning",
-      "api_count": 60,
+      "api_count": 59,
       "apis": [
         {
           "name": "AI Engine",
@@ -13386,13 +13358,6 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://labs.everypixel.com/api"
-        },
-        {
-          "name": "EXUDE",
-          "description": "Used for the primary ways for filtering the stopping, stemming words from the text data",
-          "auth": "No",
-          "https": false,
-          "link": "http://uttesh.com/exude-api/"
         },
         {
           "name": "Face++",
@@ -16865,7 +16830,7 @@
           "description": "Search millions of podcasts; transcripts and verbatim search.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://podscan.fm/api"
+          "link": "https://podscan.fm/api-docs"
         },
         {
           "name": "Simplecast",
@@ -16894,7 +16859,7 @@
       "id": "public-data",
       "emoji": "📊",
       "name": "Public Data & Datasets",
-      "api_count": 90,
+      "api_count": 89,
       "apis": [
         {
           "name": "221",
@@ -17504,13 +17469,6 @@
           "auth": "No",
           "https": true,
           "link": "https://vuntum.com/en/api-mcp"
-        },
-        {
-          "name": "Warnely",
-          "description": "Composite travel-safety scores for 180 countries (FCDO + US State + GPI + WGI + live incident wire), OpenAPI 3.1…",
-          "auth": "No",
-          "https": true,
-          "link": "https://warnely.com/developers"
         },
         {
           "name": "Wayback Machine",
@@ -19062,7 +19020,7 @@
           "description": "Historical market prices for video games and trading cards.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://www.pricecharting.com/docs/api"
+          "link": "https://www.pricecharting.com/api-docs"
         },
         {
           "name": "Profitvana",
@@ -19529,10 +19487,10 @@
         },
         {
           "name": "Revolt",
-          "description": "Revolt open source Discord alternative",
+          "description": "Revolt (now Stoat) open source Discord alternative",
           "auth": "apiKey",
           "https": true,
-          "link": "https://developers.revolt.chat/api/"
+          "link": "https://developers.stoat.chat"
         },
         {
           "name": "RiteKit",
@@ -20754,7 +20712,7 @@
       "id": "transportation",
       "emoji": "🚆",
       "name": "Transportation",
-      "api_count": 112,
+      "api_count": 111,
       "apis": [
         {
           "name": "ADS-B Exchange",
@@ -21331,13 +21289,6 @@
           "link": "https://www.chaps.cz/eng/products/idos-internet"
         },
         {
-          "name": "Transport for Denver, US",
-          "description": "RTD",
-          "auth": "No",
-          "https": false,
-          "link": "http://www.rtd-denver.com/gtfs-developer-guide.shtml"
-        },
-        {
           "name": "Transport for Finland",
           "description": "Finnish transport API.",
           "auth": "No",
@@ -21665,7 +21616,7 @@
           "description": "Flight and hotel price data with affiliate commission stats.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://support.travelpayouts.com/hc/en-us/articles/203954203"
+          "link": "https://support.travelpayouts.com/hc/en-us"
         },
         {
           "name": "TripIt",
@@ -22271,7 +22222,7 @@
       "id": "vehicle",
       "emoji": "🚗",
       "name": "Vehicle & Mobility",
-      "api_count": 23,
+      "api_count": 22,
       "apis": [
         {
           "name": "Auto.dev",
@@ -22349,13 +22300,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.fueleconomy.gov/feg/ws/index.shtml"
-        },
-        {
-          "name": "Fuelly",
-          "description": "Fuel economy and maintenance tracking for vehicles.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.fuelly.com/apidoc"
         },
         {
           "name": "fuelo",
@@ -22440,7 +22384,7 @@
       "id": "video",
       "emoji": "📹",
       "name": "Video",
-      "api_count": 53,
+      "api_count": 52,
       "apis": [
         {
           "name": "An API of Ice And Fire",
@@ -22730,13 +22674,6 @@
           "link": "https://thronesapi.com/"
         },
         {
-          "name": "TrailerAddict",
-          "description": "Easily embed trailers from TrailerAddict",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.traileraddict.com/trailerapi"
-        },
-        {
           "name": "TranscriptFetch",
           "description": "Transcripts for YouTube, TikTok, Instagram videos and podcasts as clean text or timestamped JSON",
           "auth": "apiKey",
@@ -22819,7 +22756,7 @@
       "id": "weather",
       "emoji": "🌤️",
       "name": "Weather",
-      "api_count": 45,
+      "api_count": 44,
       "apis": [
         {
           "name": "7Timer! Weather",
@@ -22981,13 +22918,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.weather.gov/documentation/services-web-api"
-        },
-        {
-          "name": "ODWeather",
-          "description": "Weather and weather webcams",
-          "auth": "No",
-          "https": false,
-          "link": "http://api.oceandrivers.com/static/docs.html"
         },
         {
           "name": "Oikolab",
