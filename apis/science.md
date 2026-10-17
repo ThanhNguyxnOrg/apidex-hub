@@ -7,6 +7,7 @@
 | **Astronomy API** | Astronomy calculations and celestial data. | 🔑 ApiKey | ✅ | [Link](https://astronomyapi.com/) |
 | **CelesTrak** | Satellite orbital data (TLE) and space situational awareness. | No | ✅ | [Link](https://celestrak.org/) |
 | **CORE** | Access the world's Open Access research papers. | 🔑 ApiKey | ✅ | [Link](https://core.ac.uk/services#api) |
+| **DataCite** | DOI metadata API for research datasets and outputs. | 🔑 ApiKey | ✅ | [Link](https://support.datacite.org/docs/api) |
 | **DOAJ** | Directory of open access journals and articles. | No | ✅ | [Link](https://doaj.org/api/docs) |
 | **Europe PMC** | Biomedical and life science literature search. | No | ✅ | [Link](https://www.ebi.ac.uk/europepmc/webservices/rest/search) |
 | **Figshare** | Open research outputs, datasets and institutional repository data. | 🔑 ApiKey | ✅ | [Link](https://docs.figshare.com/) |

@@ -8,6 +8,7 @@
 | **Careerjet** | Job search engine. | 🔑 ApiKey | No | [Link](https://www.careerjet.com/partners/api/) |
 | **DevITjobs UK** | Jobs with GraphQL. | No | ✅ | [Link](https://devitjobs.uk/job_feed.xml) |
 | **Findwork** | Job board. | 🔑 ApiKey | ✅ | [Link](https://findwork.dev/developers/) |
+| **Greenhouse** | Official job board API for company openings and postings. | No | ✅ | [Link](https://developers.greenhouse.io/) |
 | **Himalayas** | Remote jobs API and company data. | No | ✅ | [Link](https://himalayas.app/api) |
 | **Jobicy** | Remote job listings feed API. | No | ✅ | [Link](https://jobicy.com/jobs-rss-feed) |
 | **Jooble** | Job search engine. | 🔑 ApiKey | ✅ | [Link](https://jooble.org/api/about) |

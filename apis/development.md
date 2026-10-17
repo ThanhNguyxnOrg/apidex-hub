@@ -77,6 +77,7 @@
 | **Judge0 CE** | Online code execution system. | 🔑 ApiKey | ✅ | [Link](https://ce.judge0.com/) |
 | **Koyeb** | Serverless container and deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://www.koyeb.com/docs/api) |
 | **Kroki** | Creates diagrams from textual descriptions. | No | ✅ | [Link](https://kroki.io) |
+| **LaunchDarkly** | Feature flag management, experimentation and toggles. | 🔑 ApiKey | ✅ | [Link](https://apidocs.launchdarkly.com/) |
 | **Linear** | Modern issue tracking for software teams. | 🔑 ApiKey | ✅ | [Link](https://developers.linear.app/docs) |
 | **Logs.to** | Generate logs. | 🔑 ApiKey | ✅ | [Link](https://logs.to/) |
 | **MAC address vendor lookup** | Retrieve vendor details and other information regarding a given MAC address. | No | ✅ | [Link](https://macvendors.com/) |
@@ -94,6 +95,7 @@
 | **OpenGraphr** | Really simple API to retrieve Open Graph data from an URL. | 🔑 ApiKey | ✅ | [Link](https://opengraphr.com/docs/1.0/overview) |
 | **PageCDN** | Public API for javascript, css and font libraries on PageCDN. | 🔑 ApiKey | ✅ | [Link](https://pagecdn.com/docs/public-api) |
 | **Pdflayer** | HTML to PDF conversion. | 🔑 ApiKey | ✅ | [Link](https://pdflayer.com/) |
+| **Pipedream** | Integration platform with 2,500+ APIs and event-driven workflows. | 🔑 ApiKey | ✅ | [Link](https://pipedream.com/docs/) |
 | **PocketBase** | Open source backend (database, auth, files). | 🔑 ApiKey | ✅ | [Link](https://pocketbase.io/docs/api-records/) |
 | **Positionstack** | Forward & Reverse Geocoding. | 🔑 ApiKey | ✅ | [Link](https://positionstack.com/) |
 | **PostHog** | Open-source product analytics (free tier). | 🔑 ApiKey | ✅ | [Link](https://posthog.com/docs/api) |

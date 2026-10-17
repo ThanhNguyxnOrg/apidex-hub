@@ -7,6 +7,7 @@
 | **Cloudmersive Natural Language Processing** | Natural language processing and text analysis. | 🔑 ApiKey | ✅ | [Link](https://www.cloudmersive.com/nlp-api) |
 | **Code Detection API** | Detect, label, format and enrich the code in your app or in your data pipeline. | 🔐 OAuth | ✅ | [Link](https://codedetectionapi.runtime.dev) |
 | **Dandelion** | Entity extraction and text analytics API. | 🔑 ApiKey | ✅ | [Link](https://dandelion.eu/docs/api/) |
+| **DBpedia** | Structured knowledge base and semantic search over Wikipedia data. | No | ✅ | [Link](https://www.dbpedia.org/) |
 | **DeepL** | Translation and multilingual text API. | 🔑 ApiKey | ✅ | [Link](https://developers.deepl.com/docs) |
 | **Detect Language** | Detects text language. | 🔑 ApiKey | ✅ | [Link](https://detectlanguage.com/) |
 | **Eden AI** | Unified NLP APIs across providers. | 🔑 ApiKey | ✅ | [Link](https://docs.edenai.co) |
