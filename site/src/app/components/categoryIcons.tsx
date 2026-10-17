@@ -5,8 +5,8 @@ import {
   ShieldAlert,
   Bot,
   Brain,
-  Cpu,
   Boxes,
+  CreditCard,
   Briefcase,
   Coins,
   Bitcoin,
@@ -49,7 +49,6 @@ import {
   Search,
   Database,
   BarChart3,
-  Building,
   KeyRound,
   ShieldCheck,
   Activity,
@@ -73,7 +72,9 @@ export const CATEGORY_ICON_MAP: Record<string, LucideIcon> = {
   animals: PawPrint,
   anime: Sparkles,
   "anti-malware": ShieldAlert,
+  "ai-llm-models": Bot,
   "authentication-identity": KeyRound,
+  "backend-database": Server,
   "blockchain-web3": Coins,
   books: BookOpen,
   business: Briefcase,
@@ -118,6 +119,7 @@ export const CATEGORY_ICON_MAP: Record<string, LucideIcon> = {
   "public-data": Database,
   "qr-barcode": QrCode,
   patents: FileSearch,
+  "payments-billing": CreditCard,
   "fitness-wellness": Dumbbell,
   reviews: Star,
   "networking-dns": Globe2,
@@ -136,6 +138,7 @@ export const CATEGORY_ICON_MAP: Record<string, LucideIcon> = {
   "utilities-tools": Wrench,
   video: Video,
   weather: CloudSun,
+  "web-scraping-crawling": Search,
 };
 
 export function getCategoryIcon(slug: string): LucideIcon {
