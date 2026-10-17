@@ -6,14 +6,17 @@
 | **Azure DevOps Health** | Resource health helps you diagnose and get support when an Azure issue impact... | 🔑 ApiKey | No | [Link](https://docs.microsoft.com/en-us/rest/api/resourcehealth) |
 | **Bitrise** | Build tool and processes integrations to create efficient development pipelines. | 🔑 ApiKey | ✅ | [Link](https://api-docs.bitrise.io/) |
 | **Buddy** | The fastest continuous integration and continuous delivery platform. | 🔐 OAuth | ✅ | [Link](https://buddy.works/docs/api/getting-started/overview) |
+| **Buildbot** | REST/JSON API for builds, builders and changes. | No | ✅ | [Link](https://docs.buildbot.net/latest/developer/rest.html) |
 | **Buildkite** | Pipeline and build automation API. | 🔑 ApiKey | ✅ | [Link](https://buildkite.com/docs/apis/rest-api) |
 | **CircleCI** | CI pipelines, workflows, and artifacts API. | 🔑 ApiKey | ✅ | [Link](https://circleci.com/docs/api/v2/) |
 | **Codecov** | Upload and query code coverage reports. | 🔑 ApiKey | ✅ | [Link](https://docs.codecov.com/docs) |
 | **Codeship** | Codeship is a Continuous Integration Platform in the cloud. | 🔑 ApiKey | ✅ | [Link](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/api-overview/) |
+| **Concourse** | Pipeline-based CI REST API reference for builds and jobs. | No | ✅ | [Link](https://concourse-ci.org/internals.html) |
 | **Coolify** | Self-hosted deployment platform: apps, servers, deployments API. | 🔑 ApiKey | ✅ | [Link](https://coolify.io/docs/api/overview) |
 | **Coveralls** | Pull coverage data from CI builds. | 🔑 ApiKey | ✅ | [Link](https://docs.coveralls.io/) |
 | **Drone** | CI pipeline API for Drone server. | 🔑 ApiKey | ✅ | [Link](https://docs.drone.io/api/) |
 | **Jenkins** | Automation server remote API. | 🔑 ApiKey | ✅ | [Link](https://www.jenkins.io/doc/book/using/remote-access-api/) |
+| **Octopus Deploy** | Deployment automation with REST API for projects and releases. | 🔑 ApiKey | ✅ | [Link](https://octopus.com/docs/api-and-integration/api) |
 | **Semaphore** | CI/CD projects, workflows, and jobs API. | 🔑 ApiKey | ✅ | [Link](https://docs.semaphoreci.com/reference/api) |
 | **TeamCity** | Build server REST API. | 🔑 ApiKey | ✅ | [Link](https://www.jetbrains.com/help/teamcity/rest/teamcity-rest-api-documentation.html) |
 | **Travis CI** | Sync your GitHub projects with Travis CI to test your code in minutes. | 🔑 ApiKey | ✅ | [Link](https://docs.travis-ci.com/api/) |
