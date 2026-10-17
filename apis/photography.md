@@ -2,9 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **apilayer mediastack** | Free, Simple REST API for Live News & Blog Articles. | 🔑 ApiKey | ✅ | [Link](https://mediastack.com/) |
 | **APITemplate.io** | Dynamically generate images and PDFs from templates with a simple API. | 🔑 ApiKey | ✅ | [Link](https://apitemplate.io) |
-| **Art Institute of Chicago** | Museum artwork data (**No Auth**). | No | ✅ | [Link](https://api.artic.edu/docs/) |
 | **Associated Press** | Search for news and metadata from Associated Press. | 🔑 ApiKey | ✅ | [Link](https://developer.ap.org/) |
 | **Bannerbear** | Auto-generate images and videos programmatically. | 🔑 ApiKey | ✅ | [Link](https://developers.bannerbear.com/) |
 | **CheetahO** | Photo optimization and resize. | 🔑 ApiKey | ✅ | [Link](https://cheetaho.com/docs/getting-started/) |
@@ -21,7 +19,6 @@
 | **Imgur** | Images. | 🔐 OAuth | ✅ | [Link](https://apidocs.imgur.com/) |
 | **MarketAux** | Live stock market news with tagged tickers + sentiment and stats JSON API. | 🔑 ApiKey | ✅ | [Link](https://www.marketaux.com/) |
 | **NASA Image Library** | NASA's image and video library (**No Auth**). | No | ✅ | [Link](https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf) |
-| **New York Times** | The New York Times Developer Network. | 🔑 ApiKey | ✅ | [Link](https://developer.nytimes.com/) |
 | **NewsData** | News data API for live-breaking news and headlines from reputed  news sources. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/docs) |
 | **NewsX** | Get or Search Latest Breaking News with ML Powered Summaries 🤖. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/machaao-inc-machaao-inc-default/api/newsx/) |
 | **ObjectCut** | Image Background removal. | 🔑 ApiKey | ✅ | [Link](https://objectcut.com/) |
@@ -40,6 +37,5 @@
 | **Unsplash** | High-quality photos. | 🔐 OAuth | ✅ | [Link](https://unsplash.com/developers) |
 | **Wallhaven** | Wallpapers. | 🔑 ApiKey | ✅ | [Link](https://wallhaven.cc/help/api) |
 | **Webdam** | Images. | 🔐 OAuth | ✅ | [Link](https://www.damsuccess.com/hc/en-us/articles/202134055-REST-API) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

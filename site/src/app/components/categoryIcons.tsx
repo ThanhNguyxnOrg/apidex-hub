@@ -61,6 +61,7 @@ import {
   Compass,
   Phone,
   RadioTower,
+  QrCode,
   type LucideIcon,
 } from "lucide-react";
 
@@ -96,6 +97,7 @@ export const CATEGORY_ICON_MAP: Record<string, LucideIcon> = {
   cryptocurrency: Bitcoin,
   "currency-exchange": DollarSign,
   "data-validation": CheckCircle2,
+  "date-time": CalendarDays,
   "demographic-analysis": BarChart3,
   "design-colors": Palette,
   development: Code2,
@@ -129,6 +131,7 @@ export const CATEGORY_ICON_MAP: Record<string, LucideIcon> = {
   photography: Camera,
   podcasts: Radio,
   "public-data": Database,
+  "qr-barcode": QrCode,
   science: FlaskConical,
   "security-validation": ShieldCheck,
   shopping: ShoppingCart,

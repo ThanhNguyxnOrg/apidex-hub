@@ -17,6 +17,7 @@
 | **KKBOX** | Get music libraries, playlists, charts, and perform out of KKBOX's platform. | 🔐 OAuth | ✅ | [Link](https://developer.kkbox.com) |
 | **LastFm** | Music database. | 🔑 ApiKey | ✅ | [Link](https://www.last.fm/api) |
 | **ListenBrainz** | Open-source music stats and listening history. | 🔑 ApiKey | ✅ | [Link](https://listenbrainz.readthedocs.io/en/latest/users/api/) |
+| **Lyrics.ovh** | Simple API to retrieve song lyrics. | No | ✅ | [Link](https://lyrics.ovh/) |
 | **Mixcloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://www.mixcloud.com/developers/) |
 | **MusicBrainz** | Music database. | No | ✅ | [Link](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2) |
 | **Musixmatch** | Millions of lyrics in 80+ languages, translate lyrics, and search for tracks. | 🔑 ApiKey | ✅ | [Link](https://developer.musixmatch.com/) |
@@ -27,11 +28,9 @@
 | **Shazam (RapidAPI)** | Music recognition and track details. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/apidojo/api/shazam) |
 | **Songkick** | Music Events. | 🔑 ApiKey | ✅ | [Link](https://www.songkick.com/developer/) |
 | **Songlink / Odesli** | Get all the services on which a song is available. | 🔑 ApiKey | ✅ | [Link](https://www.notion.so/API-d0ebe08a5e304a55928405eb682f6741) |
-| **Lyrics.ovh** | Simple API to retrieve song lyrics. | No | ✅ | [Link](https://lyrics.ovh/) |
 | **SoundCloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://developers.soundcloud.com/docs/api/guide) |
 | **Spotify** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://beta.developer.spotify.com/documentation/web-api/) |
 | **TasteDive** | Similar artist API (also works for movies and TV shows) | 🔑 ApiKey | ✅ | [Link](https://tastedive.com/read/api) |
 | **TheAudioDB** | Music metadata, charts, and more. | 🔑 ApiKey | ✅ | [Link](https://www.theaudiodb.com/api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

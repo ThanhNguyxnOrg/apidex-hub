@@ -22,6 +22,5 @@
 | **Yelp Fusion** | Business and restaurant reviews. | 🔑 ApiKey | ✅ | [Link](https://docs.developer.yelp.com/) |
 | **Zestful** | Parse recipe ingredients. | 🔑 ApiKey | ✅ | [Link](https://zestfuldata.com/) |
 | **Zomato** | Restaurant search and reviews. | 🔑 ApiKey | ✅ | [Link](https://developers.zomato.com/api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

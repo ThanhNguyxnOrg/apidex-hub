@@ -15,6 +15,5 @@
 | **USPS Track & Confirm** | USPS tracking API. | 🔑 ApiKey | ✅ | [Link](https://www.usps.com/business/web-tools-apis/track-and-confirm-api.htm) |
 | **WeCanTrack** | Automatically place subids in affiliate links to attribute affiliate conversi... | 🔑 ApiKey | ✅ | [Link](https://docs.wecantrack.com) |
 | **WhatPulse** | Small application that measures your keyboard/mouse usage. | No | ✅ | [Link](https://developer.whatpulse.org/#web-api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

@@ -18,5 +18,4 @@
 | **Replicate** | Cloud API to run open-source machine learning models in the cloud with GPUs. | 🔑 ApiKey | ✅ | [Link](https://replicate.com/docs) |
 | **Together AI** | Cloud platform for building and running open-source AI models with fast inference. | 🔑 ApiKey | ✅ | [Link](https://docs.together.ai/) |
 | **xAI Grok** | Frontier generative AI models with strong math, reasoning, and coding capabilities. | 🔑 ApiKey | ✅ | [Link](https://x.ai/api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

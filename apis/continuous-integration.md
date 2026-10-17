@@ -14,6 +14,5 @@
 | **Semaphore** | CI/CD projects, workflows, and jobs API. | 🔑 ApiKey | ✅ | [Link](https://docs.semaphoreci.com/reference/api) |
 | **TeamCity** | Build server REST API. | 🔑 ApiKey | ✅ | [Link](https://www.jetbrains.com/help/teamcity/rest/teamcity-rest-api-documentation.html) |
 | **Travis CI** | Sync your GitHub projects with Travis CI to test your code in minutes. | 🔑 ApiKey | ✅ | [Link](https://docs.travis-ci.com/api/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

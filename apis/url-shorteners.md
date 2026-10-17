@@ -23,6 +23,5 @@
 | **UrlBae** | Simple and efficient short link creation. | 🔑 ApiKey | ✅ | [Link](https://urlbae.com/developers) |
 | **v.gd** | Free URL shortener API service. | No | ✅ | [Link](https://v.gd/apishorteningreference.php) |
 | **YOURLS** | Self-hosted shortener with extensible API. | 🔑 ApiKey | ✅ | [Link](https://yourls.org/#API) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

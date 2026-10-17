@@ -2,8 +2,8 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Cloudmersive Validate** | Validate email addresses, phone numbers, VAT numbers and domain names. | 🔑 ApiKey | ✅ | [Link](https://cloudmersive.com/validate-api) |
 | **Brevo (Sendinblue)** | Transactional email, SMS, and marketing automation. | 🔑 ApiKey | ✅ | [Link](https://developers.brevo.com/) |
+| **Cloudmersive Validate** | Validate email addresses, phone numbers, VAT numbers and domain names. | 🔑 ApiKey | ✅ | [Link](https://cloudmersive.com/validate-api) |
 | **Disify** | Validate and detect disposable and temporary email addresses. | No | ✅ | [Link](https://www.disify.com/) |
 | **DropMail** | GraphQL API for creating and managing ephemeral e-mail inboxes. | No | ✅ | [Link](https://dropmail.me/api/#live-demo) |
 | **Email Validation** | Validate email addresses for deliverability and spam. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/email-verification-validation-api) |
@@ -28,6 +28,5 @@
 | **Tomba** | Email finder and verifier API. | 🔑 ApiKey | ✅ | [Link](https://tomba.io/api) |
 | **Twilio** | SMS, voice, and messaging (trial credits). | 🔑 ApiKey | ✅ | [Link](https://www.twilio.com/docs/usage/api) |
 | **Vonage (Nexmo)** | SMS and voice APIs (trial credits). | 🔑 ApiKey | ✅ | [Link](https://developer.vonage.com/api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

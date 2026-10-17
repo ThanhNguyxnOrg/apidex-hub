@@ -2,15 +2,13 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **GeoDataSource** | Geocoding of city name by using latitude and longitude coordinates. | 🔑 ApiKey | ✅ | [Link](https://www.geodatasource.com/web-service) |
-| **Hirak IP to Country** | Ip to location with country code, currency code & currency name, fast respons... | 🔑 ApiKey | ✅ | [Link](https://iplocation.hirak.site/) |
 | **Actinia Grass GIS** | Actinia is an open source REST API for geographical data that uses GRASS GIS. | 🔑 ApiKey | ✅ | [Link](https://actinia-org.github.io/actinia-core/) |
 | **adresse.data.gouv.fr** | Address database of France, geocoding and reverse. | No | ✅ | [Link](https://adresse.data.gouv.fr) |
 | **Airtel IP** | IP Geolocation API. Collecting data from multiple sources. | No | ✅ | [Link](https://sys.airtel.lv/ip2country/1.1.1.1/?full=true) |
 | **Apiip** | Get location information by IP address. | 🔑 ApiKey | ✅ | [Link](https://apiip.net/) |
+| **Azure Maps** | Maps, geocoding, and routing APIs from Microsoft (formerly Bing Maps). | 🔑 ApiKey | ✅ | [Link](https://azure.microsoft.com/en-us/products/azure-maps/) |
 | **Battuta** | A (country/region/city) in-cascade location API. | 🔑 ApiKey | No | [Link](http://battuta.medunes.net) |
 | **BigDataCloud** | Provides fast and accurate IP geolocation APIs along with security checks and... | 🔑 ApiKey | ✅ | [Link](https://www.bigdatacloud.com/docs) |
-| **Azure Maps** | Maps, geocoding, and routing APIs from Microsoft (formerly Bing Maps). | 🔑 ApiKey | ✅ | [Link](https://azure.microsoft.com/en-us/products/azure-maps/) |
 | **bng2latlong** | Convert British OSGB36 easting and northing (British National Grid) to WGS84 ... | No | ✅ | [Link](https://www.getthedata.com/bng2latlong) |
 | **Cep.la** | Brazil RESTful API to find information about streets, zip codes, neighborhood... | No | No | [Link](http://cep.la/) |
 | **CitySDK** | Open APIs for select European cities. | No | ✅ | [Link](http://www.citysdk.eu/citysdk-toolkit/) |
@@ -21,23 +19,25 @@
 | **Geocode.xyz** | Provides worldwide forward/reverse geocoding, batch geocoding and geoparsing. | No | ✅ | [Link](https://geocode.xyz/api) |
 | **Geocodify.com** | Worldwide geocoding, geoparsing and autocomplete for addresses. | 🔑 ApiKey | ✅ | [Link](https://geocodify.com/) |
 | **Geocodio** | Geocoding and reverse geocoding for US/Canada. | 🔑 ApiKey | ✅ | [Link](https://www.geocod.io/docs/) |
+| **GeoDataSource** | Geocoding of city name by using latitude and longitude coordinates. | 🔑 ApiKey | ✅ | [Link](https://www.geodatasource.com/web-service) |
 | **GeoDB Cities** | Get global city, region, and country data. | 🔑 ApiKey | ✅ | [Link](http://geodb-cities-api.wirefreethought.com/) |
 | **GeographQL** | A Country, State, and City GraphQL API. | No | ✅ | [Link](https://geographql.netlify.app) |
 | **geoPlugin** | IP geolocation and currency conversion. | No | ✅ | [Link](https://www.geoplugin.com) |
 | **Google Earth Engine** | A cloud-based platform for planetary-scale environmental data analysis. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/earth-engine/) |
 | **Google Maps** | Create/customize digital maps based on Google Maps data. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/maps/) |
 | **HelloSalut** | Get hello translation following user language. | No | ✅ | [Link](https://fourtonfish.com/project/hellosalut-api/) |
+| **Hirak IP to Country** | Ip to location with country code, currency code & currency name, fast respons... | 🔑 ApiKey | ✅ | [Link](https://iplocation.hirak.site/) |
 | **IBGE** | Aggregate services of IBGE (Brazilian Institute of Geography and Statistics) | No | ✅ | [Link](https://servicodados.ibge.gov.br/api/docs/) |
 | **IP 2 Country** | Map an IP to a country. | No | ✅ | [Link](https://ip2country.info) |
 | **IP Address Details** | Find geolocation with ip address. | No | ✅ | [Link](https://ipinfo.io/) |
 | **IP Geolocation** | Geolocate website visitors from their IPs. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/ip-geolocation-api) |
 | **IP Vigilante** | Free IP Geolocation API. | No | ✅ | [Link](https://www.ipvigilante.com/) |
 | **IP-API** | IP to location. | No | No | [Link](https://ip-api.com/docs) |
+| **IP2Location.io** | IP geolocation API with country, region, city, ISP, and proxy data. | 🔑 ApiKey | ✅ | [Link](https://www.ip2location.io) |
 | **IP2Proxy** | Detect proxy and VPN using IP address. | 🔑 ApiKey | ✅ | [Link](https://www.ip2location.com/web-service/ip2proxy) |
 | **ipapi.co** | Find IP address location information. | No | ✅ | [Link](https://ipapi.co/api/#introduction) |
 | **ipapi.com** | Real-time Geolocation & Reverse IP Lookup REST API. | 🔑 ApiKey | ✅ | [Link](https://ipapi.com/) |
 | **IPGEO** | Unlimited free IP Address API with useful information. | No | ✅ | [Link](https://api.techniknews.net/ipgeo/) |
-| **IP2Location.io** | IP geolocation API with country, region, city, ISP, and proxy data. | 🔑 ApiKey | ✅ | [Link](https://www.ip2location.io) |
 | **Kakao Maps** | Kakao Maps provide multiple APIs for Korean maps. | 🔑 ApiKey | ✅ | [Link](https://apis.map.kakao.com) |
 | **keycdn IP Location Finder** | Get the IP geolocation data through the simple REST API. All the responses ar... | 🔑 ApiKey | ✅ | [Link](https://tools.keycdn.com/geo) |
 | **LocationIQ** | Geocoding and maps (free tier: 5000 req/day). | 🔑 ApiKey | ✅ | [Link](https://locationiq.com/docs) |
@@ -68,6 +68,5 @@
 | **ZipCodeAPI** | US zip code distance, radius and location API. | 🔑 ApiKey | ✅ | [Link](https://www.zipcodeapi.com) |
 | **Zippopotam.us** | Postal/zip code lookup for 60+ countries (**No Auth**). | No | ✅ | [Link](https://api.zippopotam.us/) |
 | **Ziptastic** | Get the country, state, and city of any US zip-code. | No | ✅ | [Link](https://ziptasticapi.com/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

@@ -17,6 +17,5 @@
 | **The Bible API** | Bible metadata and translations for apps. | 🔑 ApiKey | ✅ | [Link](https://docs.api.bible) |
 | **Thirukkural** | 1330 Thirukkural poems and explanation in Tamil and English. | No | ✅ | [Link](https://api-thirukkural.web.app/) |
 | **Wolne Lektury** | API for obtaining information about e-books available on the WolneLektury.pl ... | No | ✅ | [Link](https://wolnelektury.pl/api/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

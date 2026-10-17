@@ -30,5 +30,4 @@
 | **Weatherstack** | Real-time & historical world weather data. | 🔑 ApiKey | ✅ | [Link](https://weatherstack.com/) |
 | **wttr.in** | Console-oriented weather forecast service. | No | ✅ | [Link](https://wttr.in/) |
 | **Yandex.Weather** | Assesses weather condition in specific locations. | 🔑 ApiKey | ✅ | [Link](https://yandex.com/dev/weather/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

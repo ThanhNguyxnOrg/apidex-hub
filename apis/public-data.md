@@ -7,7 +7,6 @@
 | **BotsArchive** | JSON formatted details about Telegram Bots available in database. | No | ✅ | [Link](https://botsarchive.com/docs.html) |
 | **Callook.info** | United States ham radio callsigns. | No | ✅ | [Link](https://callook.info) |
 | **CARTO** | Location Information Prediction. | 🔑 ApiKey | ✅ | [Link](https://carto.com/) |
-| **US Bureau of Labor Statistics** | US labor economics databases and statistical APIs. | 🔑 ApiKey | ✅ | [Link](https://www.bls.gov/developers/) |
 | **Data.gov** | US Government open data. | No | ✅ | [Link](https://api.data.gov/) |
 | **Enigma Public** | Broadest collection of public data. | 🔑 ApiKey | ✅ | [Link](https://developers.enigma.com/docs) |
 | **EPO** | European patent search system api. | 🔐 OAuth | ✅ | [Link](https://developers.epo.org/) |
@@ -36,10 +35,10 @@
 | **University of Oslo** | Courses, lecture videos, detailed information for courses etc. for the Univer... | No | ✅ | [Link](https://data.uio.no/) |
 | **UPC database** | More than 1.5 million barcode numbers from all around the world. | 🔑 ApiKey | ✅ | [Link](https://upcdatabase.org/api) |
 | **Urban Observatory** | The largest set of publicly available real time urban data in the UK. | No | No | [Link](https://urbanobservatory.ac.uk) |
+| **US Bureau of Labor Statistics** | US labor economics databases and statistical APIs. | 🔑 ApiKey | ✅ | [Link](https://www.bls.gov/developers/) |
 | **US Census** | US demographics, economics, housing data. | 🔑 ApiKey | ✅ | [Link](https://www.census.gov/data/developers/data-sets.html) |
 | **USDA FoodData** | Nutritional data for food products. | 🔑 ApiKey | ✅ | [Link](https://fdc.nal.usda.gov/api-guide.html) |
 | **USPTO** | US patent data and applications (**No Auth**). | No | ✅ | [Link](https://developer.uspto.gov/api-catalog) |
 | **World Bank** | Global development data. | No | ✅ | [Link](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
