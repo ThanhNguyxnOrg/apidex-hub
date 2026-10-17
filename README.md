@@ -192,35 +192,31 @@ print(response.json()['fact'])
 
 ## <a name="table-of-contents"></a>📊 API Catalog
 
-We maintain a curated database of **12,450** public endpoints across **88** categories. You can browse the categories directly:
+We maintain a curated database of **12,469** public endpoints across **76** categories. You can browse the categories directly:
 
 | Category | Category | Category |
 | --- | --- | --- |
-| [🤖 AI Models & LLM Providers](./apis/ai-llm-models.md) | [🐶 Animals](./apis/animals.md) | [🌸 Anime](./apis/anime.md) |
-| [🛡️ Anti-Malware](./apis/anti-malware.md) | [🤖 Apify Agents](./apis/apify-agents.md) | [🧠 Apify AI](./apis/apify-ai.md) |
-| [⚙️ Apify Automation](./apis/apify-automation.md) | [💼 Apify Business](./apis/apify-business.md) | [💻 Apify Developer Tools](./apis/apify-developer-tools.md) |
-| [🛍️ Apify Ecommerce](./apis/apify-ecommerce.md) | [🔌 Apify Integrations](./apis/apify-integrations.md) | [💼 Apify Jobs](./apis/apify-jobs.md) |
-| [🎯 Apify Lead Generation](./apis/apify-lead-generation.md) | [🧩 Apify MCP Servers](./apis/apify-mcp-servers.md) | [📰 Apify News](./apis/apify-news.md) |
-| [🔓 Apify Open Source](./apis/apify-open-source.md) | [⚠️ Apify Other](./apis/apify-other.md) | [🏡 Apify Real Estate](./apis/apify-real-estate.md) |
-| [🔍 Apify SEO Tools](./apis/apify-seo-tools.md) | [💬 Apify Social Media](./apis/apify-social-media.md) | [✈️ Apify Travel](./apis/apify-travel.md) |
-| [📹 Apify Videos](./apis/apify-videos.md) | [🔐 Authentication & Identity](./apis/authentication-identity.md) | [🗄️ Backend & Serverless Databases](./apis/backend-database.md) |
-| [⛓️ Blockchain & Web3](./apis/blockchain-web3.md) | [📚 Books & Literature](./apis/books.md) | [💼 Business](./apis/business.md) |
-| [📅 Calendar, Holidays & Time](./apis/calendar-holidays.md) | [☁️ Cloud Storage & Files](./apis/cloud-storage-files.md) | [⚙️ Continuous Integration](./apis/continuous-integration.md) |
-| [🪙 Cryptocurrency](./apis/cryptocurrency.md) | [💱 Currency Exchange](./apis/currency-exchange.md) | [✅ Data Validation](./apis/data-validation.md) |
-| [👤 Demographic Analysis](./apis/demographic-analysis.md) | [🎨 Design & Colors](./apis/design-colors.md) | [💻 Development](./apis/development.md) |
-| [📖 Dictionaries](./apis/dictionaries.md) | [📄 Documents & Productivity](./apis/documents-productivity.md) | [🎓 Education](./apis/education.md) |
-| [📧 Email & SMS](./apis/email-sms.md) | [🎮 Entertainment](./apis/entertainment.md) | [🌿 Environment & Climate](./apis/environment-climate.md) |
-| [🎪 Events](./apis/events.md) | [💰 Finance](./apis/finance.md) | [💪 Fitness & Wellness](./apis/fitness-wellness.md) |
-| [🍔 Food & Drink](./apis/food-drink.md) | [🎮 Games & Comics](./apis/games-comics.md) | [🌍 Geocoding](./apis/geocoding.md) |
-| [🌎 Geography & Countries](./apis/geography-countries.md) | [🏛️ Government & Civic](./apis/government-civic.md) | [❤️ Health](./apis/health.md) |
-| [🏠 IoT & Smart Devices](./apis/iot-smart-devices.md) | [💼 Jobs & Career](./apis/jobs-career.md) | [🧠 Machine Learning](./apis/machine-learning.md) |
-| [🔢 Math & Computation](./apis/math-computation.md) | [😂 Memes & Fun](./apis/memes-fun.md) | [🧪 Mock Data & Testing](./apis/mock-data-testing.md) |
-| [📈 Monitoring & Observability](./apis/monitoring-observability.md) | [🏛️ Museums & Art](./apis/museums-art.md) | [🎵 Music](./apis/music.md) |
-| [🌐 Networking, DNS & WHOIS](./apis/networking-dns.md) | [📰 News](./apis/news.md) | [🔓 Open Source Projects](./apis/open-source-projects.md) |
-| [📜 Patents & Prior Art](./apis/patents.md) | [💳 Payments & Billing](./apis/payments-billing.md) | [💭 Personality & Quotes](./apis/personality-quotes.md) |
-| [📱 Phone & Telephony](./apis/phone-telephony.md) | [📷 Photography](./apis/photography.md) | [🎙️ Podcasts](./apis/podcasts.md) |
-| [📊 Public Data & Datasets](./apis/public-data.md) | [🔳 QR & Barcode](./apis/qr-barcode.md) | [⭐ Reviews & Ratings](./apis/reviews.md) |
-| [🔬 Science & Space](./apis/science.md) | [🔐 Security & Validation](./apis/security-validation.md) | [🛍️ Shopping](./apis/shopping.md) |
+| [🤖 Agents](./apis/agents.md) | [🤖 AI Models & LLM Providers](./apis/ai-llm-models.md) | [🐶 Animals](./apis/animals.md) |
+| [🌸 Anime](./apis/anime.md) | [🛡️ Anti-Malware](./apis/anti-malware.md) | [🔐 Authentication & Identity](./apis/authentication-identity.md) |
+| [⚙️ Automation & Integrations](./apis/automation.md) | [🗄️ Backend & Serverless Databases](./apis/backend-database.md) | [⛓️ Blockchain & Web3](./apis/blockchain-web3.md) |
+| [📚 Books & Literature](./apis/books.md) | [💼 Business](./apis/business.md) | [📅 Calendar, Holidays & Time](./apis/calendar-holidays.md) |
+| [☁️ Cloud Storage & Files](./apis/cloud-storage-files.md) | [⚙️ Continuous Integration](./apis/continuous-integration.md) | [🪙 Cryptocurrency](./apis/cryptocurrency.md) |
+| [💱 Currency Exchange](./apis/currency-exchange.md) | [✅ Data Validation](./apis/data-validation.md) | [👤 Demographic Analysis](./apis/demographic-analysis.md) |
+| [🎨 Design & Colors](./apis/design-colors.md) | [💻 Development](./apis/development.md) | [📖 Dictionaries](./apis/dictionaries.md) |
+| [📄 Documents & Productivity](./apis/documents-productivity.md) | [🎓 Education](./apis/education.md) | [📧 Email & SMS](./apis/email-sms.md) |
+| [🎮 Entertainment](./apis/entertainment.md) | [🌿 Environment & Climate](./apis/environment-climate.md) | [🎪 Events](./apis/events.md) |
+| [💰 Finance](./apis/finance.md) | [💪 Fitness & Wellness](./apis/fitness-wellness.md) | [🍔 Food & Drink](./apis/food-drink.md) |
+| [🎮 Games & Comics](./apis/games-comics.md) | [🌍 Geocoding](./apis/geocoding.md) | [🌎 Geography & Countries](./apis/geography-countries.md) |
+| [🏛️ Government & Civic](./apis/government-civic.md) | [❤️ Health](./apis/health.md) | [🏠 IoT & Smart Devices](./apis/iot-smart-devices.md) |
+| [💼 Jobs & Career](./apis/jobs-career.md) | [🎯 Lead Generation](./apis/lead-generation.md) | [🧠 Machine Learning](./apis/machine-learning.md) |
+| [🔢 Math & Computation](./apis/math-computation.md) | [🔌 MCP Servers](./apis/mcp-servers.md) | [😂 Memes & Fun](./apis/memes-fun.md) |
+| [🧪 Mock Data & Testing](./apis/mock-data-testing.md) | [📈 Monitoring & Observability](./apis/monitoring-observability.md) | [🏛️ Museums & Art](./apis/museums-art.md) |
+| [🎵 Music](./apis/music.md) | [🌐 Networking, DNS & WHOIS](./apis/networking-dns.md) | [📰 News](./apis/news.md) |
+| [🔓 Open Source Projects](./apis/open-source-projects.md) | [📜 Patents & Prior Art](./apis/patents.md) | [💳 Payments & Billing](./apis/payments-billing.md) |
+| [💭 Personality & Quotes](./apis/personality-quotes.md) | [📱 Phone & Telephony](./apis/phone-telephony.md) | [📷 Photography](./apis/photography.md) |
+| [🎙️ Podcasts](./apis/podcasts.md) | [📊 Public Data & Datasets](./apis/public-data.md) | [🔳 QR & Barcode](./apis/qr-barcode.md) |
+| [🏠 Real Estate](./apis/real-estate.md) | [⭐ Reviews & Ratings](./apis/reviews.md) | [🔬 Science & Space](./apis/science.md) |
+| [🔐 Security & Validation](./apis/security-validation.md) | [📈 SEO Tools](./apis/seo-tools.md) | [🛍️ Shopping](./apis/shopping.md) |
 | [💬 Social](./apis/social.md) | [⚽ Sports](./apis/sports.md) | [📝 Text Analysis & NLP](./apis/text-analysis-nlp.md) |
 | [📦 Tracking & Logistics](./apis/tracking-logistics.md) | [🚆 Transportation](./apis/transportation.md) | [✈️ Travel & Tourism](./apis/travel-tourism.md) |
 | [⚠️ Unofficial & Community APIs](./apis/unofficial-community.md) | [🔗 URL Shorteners](./apis/url-shorteners.md) | [🔧 Utilities & Tools](./apis/utilities-tools.md) |
