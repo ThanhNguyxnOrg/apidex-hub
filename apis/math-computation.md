@@ -2,6 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Desmos API** | Graphing calculator embed and computation API. | No | ✅ | [Link](https://www.desmos.com/api) |
 | **math.js** | Mathematical expression evaluation API. | No | ✅ | [Link](https://api.mathjs.org/) |
 | **Mathpix** | OCR math, formulas and documents to LaTeX/Markdown. | 🔑 ApiKey | ✅ | [Link](https://mathpix.com/docs/) |
 | **Unit Converter** | Convert between various units. | No | ✅ | [Link](https://api-ninjas.com/api/convertcurrency) |

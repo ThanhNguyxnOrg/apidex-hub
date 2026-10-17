@@ -12,5 +12,7 @@
 | **Rijksmuseum** | Collection data and high-resolution images from the Dutch national museum (**No Auth**). | No | ✅ | [Link](https://data.rijksmuseum.nl/) |
 | **Smithsonian Institution** | Access millions of records and images from 21 museums and research centers (**No Auth**). | No | ✅ | [Link](https://api.si.edu/openaccess/api/v1.0/) |
 | **Tate** | Collection API for Tate galleries in the UK. | No | ✅ | [Link](https://github.com/tategallery/collection) |
+| **Victoria and Albert Museum** | V&A collection objects, images and exhibitions. | No | ✅ | [Link](https://api.vam.ac.uk/v2/objects/search) |
+| **Wikimedia Commons** | Freely usable images, media and general media files. | No | ✅ | [Link](https://commons.wikimedia.org/w/api.php) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

@@ -9,7 +9,6 @@
 | **CricketData** | Live scores and match statistics for cricket. | 🔑 ApiKey | ✅ | [Link](https://www.cricketdata.org/) |
 | **Daily Football Predictions** | Football match predictions and safe betting picks. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/fominykh.mikhail/api/daily-football-predictions/) |
 | **ESPN** | Unofficial ESPN API for NFL, NBA, MLB, NHL scores and schedules (**No Auth**). | No | ✅ | [Link](https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b) |
-| **Fitbit** | Fitbit Information. | 🔐 OAuth | ✅ | [Link](https://dev.fitbit.com/) |
 | **Football** | A simple Open Source Football API to get squads’ stats, best scorers and more. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/GiulianoCrescimbeni/api/football98/) |
 | **Football (Soccer) Videos** | Embed codes for goals and highlights from Premier League, Bundesliga, Serie A... | No | ✅ | [Link](https://www.scorebat.com/video-api/) |
 | **Football-Data.org** | Football data and statistics (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.football-data.org/documentation/quickstart) |
@@ -27,8 +26,6 @@
 | **Premier League Standings** | All Current Premier League Standings and Statistics. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/heisenbug/api/premier-league-live-scores/) |
 | **Sportmonks Football** | Football score/schedule, news api, tv channels, stats, history, display stand... | 🔑 ApiKey | ✅ | [Link](https://docs.sportmonks.com/football/) |
 | **Squiggle** | Fixtures, results and predictions for Australian Football League matches. | No | ✅ | [Link](https://api.squiggle.com.au) |
-| **Strava** | Connect with athletes, activities and more. | 🔐 OAuth | ✅ | [Link](https://strava.github.io/api/) |
 | **TheSportsDB** | Open crowd-sourced sports data and artwork. | 🔑 ApiKey | ✅ | [Link](https://www.thesportsdb.com/api.php) |
-| **Tredict** | Get and set activities, health data and more. | 🔐 OAuth | ✅ | [Link](https://www.tredict.com/blog/oauth_docs/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

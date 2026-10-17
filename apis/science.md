@@ -8,6 +8,7 @@
 | **CelesTrak** | Satellite orbital data (TLE) and space situational awareness. | No | ✅ | [Link](https://celestrak.org/) |
 | **CORE** | Access the world's Open Access research papers. | 🔑 ApiKey | ✅ | [Link](https://core.ac.uk/services#api) |
 | **DOAJ** | Directory of open access journals and articles. | No | ✅ | [Link](https://doaj.org/api/docs) |
+| **Europe PMC** | Biomedical and life science literature search. | No | ✅ | [Link](https://www.ebi.ac.uk/europepmc/webservices/rest/search) |
 | **GBIF** | Global biodiversity occurrence data (**No Auth**). | No | ✅ | [Link](https://www.gbif.org/developer/summary) |
 | **isEven (humor)** | Check if a number is even. | No | ✅ | [Link](https://isevenapi.xyz/) |
 | **ISRO** | ISRO Space Crafts Information. | No | ✅ | [Link](https://isro.vercel.app) |
