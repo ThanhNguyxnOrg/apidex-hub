@@ -3,6 +3,7 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **4chan API** | JSON API for 4chan boards, threads and posts. | No | ✅ | [Link](https://github.com/4chan/4chan-API) |
+| **Clubhouse** | Clubhouse API | No | ✅ | [Link](https://clubhouseapi.com) |
 | **Instaloader** | Instagram scraper (posts, stories, profiles). | No | ✅ | [Link](https://instaloader.github.io/) |
 | **Invidious** | Privacy-focused YouTube front-end and API (no tracking, no ads). | No | ✅ | [Link](https://docs.invidious.io/api/) |
 | **NewPipe Extractor** | YouTube, SoundCloud, PeerTube data extraction library. | No | ✅ | [Link](https://teamnewpipe.github.io/NewPipeExtractor/javadoc/) |

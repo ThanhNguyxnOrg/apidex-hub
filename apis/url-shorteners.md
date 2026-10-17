@@ -12,17 +12,23 @@
 | **Dub** | Open-source short links and analytics. | 🔑 ApiKey | ✅ | [Link](https://dub.co/docs/api-reference/introduction) |
 | **Free Url Shortener** | Free URL Shortener offers a powerful API to interact with other sites. | No | ✅ | [Link](https://ulvis.net/developer.html) |
 | **Git.io** | Git.io URL shortener. | No | ✅ | [Link](https://github.blog/2011-11-10-git-io-github-url-shortener/) |
+| **GoTiny** | A lightweight URL shortener, focused on ease-of-use for the developer and end-user | No | ✅ | [Link](https://github.com/robvanbakel/gotiny-api) |
 | **is.gd** | Simple free URL shortening API. | No | ✅ | [Link](https://is.gd/apishorteningreference.php) |
+| **Lix.li** | URL shortener with analytics, QR codes, UTM tags and custom domains | 🔑 ApiKey | ✅ | [Link](https://lix.li/api) |
 | **Mgnet.me** | Torrent URL shorten API. | No | ✅ | [Link](http://mgnet.me/api.html) |
+| **owo** | A simple link obfuscator/shortener | No | ✅ | [Link](https://owo.vc/) |
 | **Polr** | Open-source URL shortener API. | No | ✅ | [Link](https://docs.polrproject.org/en/latest/developer-guide/api/) |
 | **Rebrandly** | URL shortener API. | 🔑 ApiKey | ✅ | [Link](https://developers.rebrandly.com/docs) |
+| **RedirHub** | URL redirect management with custom domains, HTTPS, analytics, and REST API | 🔑 ApiKey | ✅ | [Link](https://redirhub.com) |
 | **Shlink** | Self-hosted URL shortener with REST API. | 🔑 ApiKey | ✅ | [Link](https://shlink.io/documentation/api-docs/) |
 | **Short.io** | URL shortener with analytics. | 🔑 ApiKey | ✅ | [Link](https://developers.short.io/) |
 | **Shrtcode** | URl Shortener with multiple Domains. | No | ✅ | [Link](https://shrtco.de/docs) |
+| **Shrtlnk** | Simple and efficient short link creation | 🔑 ApiKey | ✅ | [Link](https://shrtlnk.dev/) |
 | **T.LY** | Short links with click analytics and QR codes. | 🔑 ApiKey | ✅ | [Link](https://t.ly/api) |
 | **Tiny.cc** | Link shortening and management API. | 🔑 ApiKey | ✅ | [Link](https://tiny.cc/api-docs) |
 | **TinyURL** | URL shortener API (**No Auth**). | No | ✅ | [Link](https://tinyurl.com/app/dev) |
 | **UrlBae** | Simple and efficient short link creation. | 🔑 ApiKey | ✅ | [Link](https://urlbae.com/developers) |
+| **Urlfy** | A simple and fast URL shortening service | No | ✅ | [Link](https://urlfy.org/api-doc) |
 | **v.gd** | Free URL shortener API service. | No | ✅ | [Link](https://v.gd/apishorteningreference.php) |
 | **YOURLS** | Self-hosted shortener with extensible API. | 🔑 ApiKey | ✅ | [Link](https://yourls.org/#API) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

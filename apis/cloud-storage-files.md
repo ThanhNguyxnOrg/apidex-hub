@@ -6,10 +6,13 @@
 | **Box** | Cloud content management and file storage API. | 🔐 OAuth | ✅ | [Link](https://developer.box.com/reference/) |
 | **Cloudflare R2** | S3-compatible object storage API without egress fees. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/r2/api/s3/api/) |
 | **ddownload** | File Sharing and Storage. | 🔑 ApiKey | ✅ | [Link](https://ddownload.com/api) |
+| **DRACOON** | REST Web Services for DRACOON This page provides an overview of all available and documented DRACOON APIs, which are | No | ✅ | [Link](https://dracoon.team) |
 | **Dropbox** | File storage and sharing APIs. | 🔐 OAuth | ✅ | [Link](https://www.dropbox.com/developers/documentation/http/documentation) |
+| **ExaVault** | ExaVaults API allows you to incorporate ExaVaults suite of file transfer and user management tools into your own appl | 🔑 ApiKey | ✅ | [Link](https://exavault.com) |
 | **File.io** | Super simple file sharing, convenient, anonymous and secure. | No | ✅ | [Link](https://www.file.io) |
 | **Filebase** | S3-compatible object storage backed by decentralized networks. | 🔑 ApiKey | ✅ | [Link](https://docs.filebase.com/api-documentation) |
 | **Filestack** | File uploads, processing, and content delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://www.filestack.com/docs/api/) |
+| **FileUp** | Temporary file hosting with upload API, expiration times, and view limits | No | ✅ | [Link](https://github.com/RealSinaSnp/FileUp) |
 | **GoFile** | File hosting and management APIs. | 🔑 ApiKey | ✅ | [Link](https://gofile.io/api) |
 | **Google Drive** | File storage, sharing, and metadata APIs. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/drive/api) |
 | **Gyazo** | Image upload and screenshot APIs. | 🔑 ApiKey | ✅ | [Link](https://gyazo.com/) |
@@ -24,6 +27,7 @@
 | **pCloud** | Cloud storage with file, folder and sharing APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.pcloud.com/) |
 | **Pinata** | IPFS pinning and decentralized file storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.pinata.cloud/) |
 | **Quip** | File Sharing and Storage for groups. | 🔑 ApiKey | ✅ | [Link](https://quip.com/dev/automation/documentation) |
+| **Revdoku** | Cloud file storage, version history, sharing and incoming email attachments | 🔑 ApiKey | ✅ | [Link](https://revdoku.com/api.md) |
 | **Storj** | Decentralized cloud object storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.storj.io/) |
 | **The Null Pointer** | No-bullshit file hosting and URL shortening service. | No | ✅ | [Link](https://0x0.st) |
 | **Uploadcare** | File uploads, media processing, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://uploadcare.com/docs/api_reference/) |

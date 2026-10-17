@@ -14,7 +14,10 @@
 | **Kitsu** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://kitsu.io/) |
 | **MangaDex** | Manga catalog, chapters, and covers (**No Auth**). | No | ✅ | [Link](https://api.mangadex.org/docs/) |
 | **Mangapi** | Translate manga pages. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/pierre.carcellermeunier/api/mangapi3/) |
+| **MangaUpdates** | Manga database: series, releases, groups and reading lists | No | ✅ | [Link](https://api.mangaupdates.com/) |
+| **MyAnimeList** | Anime and Manga Database and Community | 🔒 OAuth | ✅ | [Link](https://myanimelist.net/apiconfig/references/authorization) |
 | **NekosBest** | Neko Images & Anime GIFs. | No | ✅ | [Link](https://docs.nekos.best) |
+| **Nekosia** | Anime API with cute random images | No | ✅ | [Link](https://nekosia.cat) |
 | **Shikimori** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://shikimori.one/api/doc) |
 | **Studio Ghibli** | Resources from Studio Ghibli films, characters, species, and locations. | No | ✅ | [Link](https://ghibliapi.vercel.app/) |
 | **Trace Moe** | Anime Scene Search Engine. | No | ✅ | [Link](https://soruly.github.io/trace.moe-api/#/) |

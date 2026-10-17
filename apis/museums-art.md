@@ -20,7 +20,9 @@
 | **National Palace Museum Open Data** | Taipei NPM open data on artifacts and artwork images. | No | ✅ | [Link](https://theme.npm.edu.tw/opendata/) |
 | **Rijksmuseum** | Collection data and high-resolution images from the Dutch national museum (**No Auth**). | No | ✅ | [Link](https://data.rijksmuseum.nl/) |
 | **Smithsonian Institution** | Access millions of records and images from 21 museums and research centers (**No Auth**). | No | ✅ | [Link](https://api.si.edu/openaccess/api/v1.0/) |
+| **Smithsonian Open Access** | Smithsonian collection metadata and open-access digital media | 🔑 ApiKey | ✅ | [Link](https://github.com/Smithsonian/smithsonian-openaccess) |
 | **Tate** | Collection API for Tate galleries in the UK. | No | ✅ | [Link](https://github.com/tategallery/collection) |
+| **Thisispaper** | Curated architecture, design, photography and art projects with visual-similarity and taste metadata | 🔑 ApiKey | ✅ | [Link](https://www.thisispaper.com/intelligence/api-docs) |
 | **Victoria and Albert Museum** | V&A collection objects, images and exhibitions. | No | ✅ | [Link](https://api.vam.ac.uk/v2/objects/search) |
 | **Walters Art Museum** | Full open-access museum collection with images. | 🔑 ApiKey | ✅ | [Link](https://api.thewalters.org) |
 | **Wellcome Collection** | Search archives, images and manuscripts via REST and GraphQL. | No | ✅ | [Link](https://developers.wellcomecollection.org/) |

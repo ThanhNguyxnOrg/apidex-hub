@@ -4,6 +4,8 @@
 | :--- | :--- | :---: | :---: | :---: |
 | **Eventbrite** | Find events. | 🔐 OAuth | ✅ | [Link](https://www.eventbrite.com/platform/api/) |
 | **Eventyay** | Open-source event management API. | No | ✅ | [Link](https://api.eventyay.com/) |
+| **FindLocal** | Hyper-local US events: concerts, trivia, open mics, readings, storytimes | 🔑 ApiKey | ✅ | [Link](https://findlocal.community/docs) |
+| **FRC Events** | Overview FIRST /FMS FRC Events API is a service to return relevant information about the FIRST Robotics Competition ( | No | ✅ | [Link](https://firstinspires.org) |
 | **Luma** | Event creation and attendee APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.luma.com/) |
 | **OpenAgenda** | Event agenda and discovery API. | 🔑 ApiKey | ✅ | [Link](https://developers.openagenda.com/) |
 | **PredictHQ** | Event intelligence and impact API. | 🔑 ApiKey | ✅ | [Link](https://docs.predicthq.com/) |

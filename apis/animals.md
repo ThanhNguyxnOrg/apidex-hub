@@ -2,7 +2,9 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Amazing Endemic Species** | Amazing endemic species all over the world | No | ✅ | [Link](https://aes.shenlu.me) |
 | **Axolotl** | Collection of axolotl pictures and facts. | No | ✅ | [Link](https://theaxolotlapi.netlify.app/) |
+| **Breed Health Score** | Dog breed health scores, median lifespans and conditions | No | ✅ | [Link](https://breedhealthscore.com/developers/) |
 | **Cat Facts** | Daily cat facts. | No | ✅ | [Link](https://alexwohlbruck.github.io/cat-facts/) |
 | **Cataas** | Cat as a service (cats pictures and gifs). | No | ✅ | [Link](https://cataas.com/) |
 | **Cats** | Pictures of cats from Tumblr. | 🔑 ApiKey | ✅ | [Link](https://docs.thecatapi.com/) |
@@ -14,6 +16,8 @@
 | **HTTP Cat** | Cat for every HTTP Status. | No | ✅ | [Link](https://http.cat/) |
 | **HTTP Dog** | Dogs for every HTTP response status code. | No | ✅ | [Link](https://http.dog/) |
 | **IUCN** | IUCN Red List of Threatened Species. | 🔑 ApiKey | ✅ | [Link](https://api.iucnredlist.org/api-docs) |
+| **MeowFacts** | Get random cat facts | No | ✅ | [Link](https://github.com/wh-iterabb-it/meowfacts) |
+| **Movebank** | Movement and Migration data of animals | No | ✅ | [Link](https://github.com/movebank/movebank-api-doc) |
 | **Petfinder** | Database of adoptable pets and animal shelters. | 🔑 ApiKey | ✅ | [Link](https://www.petfinder.com/developers/) |
 | **PlaceBear** | Placeholder bear pictures. | No | ✅ | [Link](https://placebear.com/) |
 | **PlaceDog** | Placeholder Dog pictures. | No | ✅ | [Link](https://place.dog) |
