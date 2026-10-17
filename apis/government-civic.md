@@ -29,6 +29,7 @@
 | **Federal Register** | US federal rules and notices data. | No | ✅ | [Link](https://www.federalregister.gov/developers/documentation/api/v1) |
 | **Gazette Data, UK** | UK official public record API. | 🔐 OAuth | ✅ | [Link](https://www.thegazette.co.uk/data) |
 | **Google Civic Information** | US voting and representative information. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/civic-information) |
+| **INEGI** | Mexican Statistical Government Open Data. | No | ✅ | [Link](https://www.inegi.org.mx/datos/) |
 | **Interpol Red Notices** | Access and search Interpol Red Notices. | No | ✅ | [Link](https://interpol.api.bund.dev/) |
 | **Istanbul (İBB) Open Data** | Data sets from the İstanbul Metropolitan Municipality (İBB) | No | ✅ | [Link](https://data.ibb.gov.tr) |
 | **National Park Service, US** | Data from the US National Park Service. | 🔑 ApiKey | ✅ | [Link](https://www.nps.gov/subjects/developer/) |
@@ -53,7 +54,6 @@
 | **Open Government, Korea** | Korea Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://www.data.go.kr/) |
 | **Open Government, Luxembourg** | Luxembourgish Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://data.public.lu) |
 | **Open Government, Mexico** | Mexican Government Open Data. | No | ✅ | [Link](https://datos.gob.mx/) |
-| **INEGI** | Mexican Statistical Government Open Data. | No | ✅ | [Link](https://www.inegi.org.mx/datos/) |
 | **Open Government, Netherlands** | Netherlands Government Open Data. | No | ✅ | [Link](https://data.overheid.nl/) |
 | **Open Government, New South Wales** | New South Wales Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://api.nsw.gov.au/) |
 | **Open Government, New Zealand** | New Zealand Government Open Data. | No | ✅ | [Link](https://www.data.govt.nz/) |
@@ -75,6 +75,7 @@
 | **Open States** | US state legislature data. | 🔑 ApiKey | ✅ | [Link](https://docs.openstates.org/) |
 | **OpenFEC** | US Federal Election Commission data. | No | ✅ | [Link](https://api.open.fec.gov/developers/) |
 | **OpenSecrets** | US political finance transparency data. | 🔑 ApiKey | ✅ | [Link](https://www.opensecrets.org/open-data/api) |
+| **OpenStates** | State legislation, legislators and committee data across US states. | 🔑 ApiKey | ✅ | [Link](https://openstates.org/) |
 | **Regulations.gov** | U.S. federal agency rulemaking dockets and comments. | 🔑 ApiKey | ✅ | [Link](https://www.regulations.gov/developers) |
 | **Represent by Open North** | Find Canadian Government Representatives. | No | ✅ | [Link](https://represent.opennorth.ca/) |
 | **UK Companies House** | UK Companies House Data from the UK government. | 🔐 OAuth | ✅ | [Link](https://developer.company-information.service.gov.uk/) |
