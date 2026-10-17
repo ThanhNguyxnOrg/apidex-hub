@@ -48,6 +48,5 @@
 | **Xquik** | X/Twitter data, monitors, webhooks, and MCP. | 🔑 ApiKey | ✅ | [Link](https://docs.xquik.com/api-reference/overview) |
 | **YouTube** | Video sharing platform. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/youtube/v3) |
 | **Zalo** | Messaging and social platform. | 🔐 OAuth | ✅ | [Link](https://developers.zalo.me/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

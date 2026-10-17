@@ -14,6 +14,5 @@
 | **Repology** | Package version tracking across repos. | No | ✅ | [Link](https://repology.org/api) |
 | **RubyGems** | Ruby package repository API. | No | ✅ | [Link](https://guides.rubygems.org/rubygems-org-api) |
 | **Shields.io** | Quality metadata badges for open source projects (**No Auth**). | No | ✅ | [Link](https://shields.io/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

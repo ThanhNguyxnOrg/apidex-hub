@@ -35,6 +35,5 @@
 | **RxNav** | Drug vocabularies and interaction data. | No | ✅ | [Link](https://lhncbc.nlm.nih.gov/RxNav/APIs/index.html) |
 | **WGER** | Open source workout manager API. | No | ✅ | [Link](https://wger.de/en/software/api) |
 | **WHO GHO** | World Health Organization health data (**No Auth**). | No | ✅ | [Link](https://www.who.int/data/gho/info/gho-odata-api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

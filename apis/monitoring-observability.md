@@ -17,6 +17,5 @@
 | **Sentry** | Application error tracking and performance monitoring. | 🔑 ApiKey | ✅ | [Link](https://docs.sentry.io/api/) |
 | **UptimeRobot** | Website, port, and keyword uptime monitoring. | 🔑 ApiKey | ✅ | [Link](https://uptimerobot.com/api/) |
 | **Zabbix** | Open-source enterprise monitoring and alerting. | 🔑 ApiKey | ✅ | [Link](https://www.zabbix.com/documentation/current/manual/api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

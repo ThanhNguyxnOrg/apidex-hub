@@ -13,6 +13,5 @@
 | **Ti.to** | Event ticketing and registrations API. | 🔑 ApiKey | ✅ | [Link](https://ti.to/docs/api) |
 | **Ticket Tailor** | Ticketing and order management API. | 🔑 ApiKey | ✅ | [Link](https://developers.tickettailor.com/) |
 | **Ticketmaster** | Search events, attractions, or venues. | 🔑 ApiKey | ✅ | [Link](http://developer.ticketmaster.com/products-and-docs/apis/getting-started/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

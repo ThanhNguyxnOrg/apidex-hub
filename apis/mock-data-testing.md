@@ -22,6 +22,5 @@
 | **This Person Does not Exist** | Generates real-life faces of people who do not exist. | No | ✅ | [Link](https://thispersondoesnotexist.com) |
 | **What The Commit** | Random commit message generator. | No | No | [Link](http://whatthecommit.com/index.txt) |
 | **Yes No** | Generate yes or no randomly. | No | ✅ | [Link](https://yesno.wtf/api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

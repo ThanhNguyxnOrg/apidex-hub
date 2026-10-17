@@ -16,6 +16,7 @@
 | **Finage** | Finage is a stock, currency, cryptocurrency, indices, and ETFs real-time & hi... | 🔑 ApiKey | ✅ | [Link](https://finage.co.uk) |
 | **Financial Modeling Prep** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://site.financialmodelingprep.com/developer/docs) |
 | **Finnhub** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://finnhub.io/docs/api) |
+| **Finsheet** | Free stock, ETF, and cryptocurrency data for sheets and developers. | 🔑 ApiKey | ✅ | [Link](https://finsheet.io/) |
 | **Front Accounting APIs** | Front accounting is multilingual and multicurrency software for small businesses. | 🔐 OAuth | ✅ | [Link](https://frontaccounting.com/fawiki/index.php?n=Devel.SimpleAPIModule) |
 | **Hotstoks** | Stock market data powered by SQL. | 🔑 ApiKey | ✅ | [Link](https://hotstoks.com?utm_source=public-apis) |
 | **IG** | Spreadbetting and CFD Market Data. | 🔑 ApiKey | ✅ | [Link](https://labs.ig.com/gettingstarted) |
@@ -31,9 +32,7 @@
 | **Polygon** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://polygon.io/) |
 | **Portfolio Optimizer** | Portfolio analysis and optimization. | No | ✅ | [Link](https://portfoliooptimizer.io/) |
 | **Razorpay IFSC** | Indian Financial Systems Code (Bank Branch Codes) | No | ✅ | [Link](https://razorpay.com/docs/) |
-| **Finsheet** | Free stock, ETF, and cryptocurrency data for sheets and developers. | 🔑 ApiKey | ✅ | [Link](https://finsheet.io/) |
 | **SmartAPI** | Gain access to set of <SmartAPI> and create end-to-end broking services. | 🔑 ApiKey | ✅ | [Link](https://smartapi.angelbroking.com/) |
-| **Square** | Payments, checkout, and commerce APIs. | 🔐 OAuth | ✅ | [Link](https://developer.squareup.com/reference/square) |
 | **StockData** | Real-Time, Intraday & Historical Market Data, News and Sentiment API. | 🔑 ApiKey | ✅ | [Link](https://www.StockData.org) |
 | **Tax Data API** | Tax rates and validation. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/tax_data-api) |
 | **Tiingo** | Financial data, news, and fundamentals API. | 🔑 ApiKey | ✅ | [Link](https://www.tiingo.com/documentation/general/overview) |
@@ -44,6 +43,5 @@
 | **Wise** | International money transfers and currency exchange. | 🔐 OAuth | ✅ | [Link](https://docs.wise.com/api-docs) |
 | **YNAB** | Budgeting & Planning. | 🔐 OAuth | ✅ | [Link](https://api.youneedabudget.com/) |
 | **Zoho Books** | Online accounting software, built for your business. | 🔐 OAuth | ✅ | [Link](https://www.zoho.com/books/api/v3/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

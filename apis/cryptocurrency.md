@@ -28,10 +28,11 @@
 | **Coinremitter** | Cryptocurrencies Payment & Prices. | 🔑 ApiKey | ✅ | [Link](https://coinremitter.com/docs) |
 | **CoinStats** | Crypto Tracker. | No | ✅ | [Link](https://documenter.getpostman.com/view/5734027/RzZ6Hzr3?version=latest) |
 | **CryptAPI** | Cryptocurrency Payment Processor. | No | ✅ | [Link](https://docs.cryptapi.io/) |
-| **GeckoTerminal** | Real-time on-chain market data for DEXs. | No | ✅ | [Link](https://www.geckoterminal.com/dex-api) |
 | **dYdX** | Decentralized cryptocurrency exchange. | 🔑 ApiKey | ✅ | [Link](https://docs.dydx.exchange/) |
 | **EXMO** | Cryptocurrencies exchange based in UK. | 🔑 ApiKey | ✅ | [Link](https://documenter.getpostman.com/view/10287440/SzYXWKPi) |
+| **GeckoTerminal** | Real-time on-chain market data for DEXs. | No | ✅ | [Link](https://www.geckoterminal.com/dex-api) |
 | **Gemini** | Exchange for Trading Cryptocurrencies. | No | ✅ | [Link](https://docs.gemini.com/rest-api/) |
+| **Glassnode** | On-chain cryptocurrency market indicators and metrics. | 🔑 ApiKey | ✅ | [Link](https://glassnode.com/) |
 | **Hirak Exchange Rates** | Exchange rates between 162 currency & 300 crypto currency update each 5 min, ... | 🔑 ApiKey | ✅ | [Link](https://rates.hirak.site/) |
 | **Huobi** | Seychelles based cryptocurrency exchange. | 🔑 ApiKey | ✅ | [Link](https://huobiapi.github.io/docs/spot/v1/en/) |
 | **icy.tools** | GraphQL based NFT API. | 🔑 ApiKey | ✅ | [Link](https://developers.icy.tools/) |
@@ -40,7 +41,6 @@
 | **KuCoin** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kucoin.com/) |
 | **Mempool** | Bitcoin API. | No | ✅ | [Link](https://mempool.space/api) |
 | **MercadoBitcoin** | Brazilian Cryptocurrency Information. | No | ✅ | [Link](https://api.mercadobitcoin.net/api/v4/docs) |
-| **Glassnode** | On-chain cryptocurrency market indicators and metrics. | 🔑 ApiKey | ✅ | [Link](https://glassnode.com/) |
 | **Mobula** | On-chain crypto data and wallet analytics. | 🔑 ApiKey | ✅ | [Link](https://docs.mobula.io/) |
 | **Moralis** | Web3 wallet, NFT, and DeFi data. | 🔑 ApiKey | ✅ | [Link](https://docs.moralis.io/) |
 | **NovaDax** | NovaDAX API to access all market data, trading management endpoints. | 🔑 ApiKey | ✅ | [Link](https://doc.novadax.com/en-US/#introduction) |
@@ -49,6 +49,5 @@
 | **VALR** | Cryptocurrency Exchange based in South Africa. | 🔑 ApiKey | ✅ | [Link](https://docs.valr.com/) |
 | **WorldCoinIndex** | Cryptocurrencies Prices. | 🔑 ApiKey | ✅ | [Link](https://www.worldcoinindex.com/apiservice) |
 | **ZMOK** | Ethereum JSON RPC API and Web3 provider. | No | ✅ | [Link](https://zmok.io) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

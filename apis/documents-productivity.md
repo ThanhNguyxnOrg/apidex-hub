@@ -25,6 +25,5 @@
 | **Vector Express v2.0** | Free vector file converting API. | No | ✅ | [Link](https://vector.express) |
 | **WakaTime** | Automated time tracking leaderboards for programmers. | No | ✅ | [Link](https://wakatime.com/developers) |
 | **Zube** | Full stack project management. | 🔐 OAuth | ✅ | [Link](https://zube.io/docs/api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

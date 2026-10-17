@@ -55,4 +55,6 @@ export const categoryDescriptions: Record<string, string> = {
   "weather": "Forecasts, climate, and meteorological data",
   "business": "Business data, registries, and company info",
   "documents-productivity": "Document processing, OCR, and productivity tools",
+  "date-time": "Time zones, calendars, and date utilities",
+  "qr-barcode": "QR code and barcode generation and lookup",
 };

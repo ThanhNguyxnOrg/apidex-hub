@@ -28,7 +28,6 @@
 | **Federal Register** | US federal rules and notices data. | No | ✅ | [Link](https://www.federalregister.gov/developers/documentation/api/v1) |
 | **Gazette Data, UK** | UK official public record API. | 🔐 OAuth | ✅ | [Link](https://www.thegazette.co.uk/data) |
 | **Google Civic Information** | US voting and representative information. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/civic-information) |
-| **Open Government, Mexico** | Mexican Government Open Data. | No | ✅ | [Link](https://datos.gob.mx/) |
 | **Interpol Red Notices** | Access and search Interpol Red Notices. | No | ✅ | [Link](https://interpol.api.bund.dev/) |
 | **Istanbul (İBB) Open Data** | Data sets from the İstanbul Metropolitan Municipality (İBB) | No | ✅ | [Link](https://data.ibb.gov.tr) |
 | **National Park Service, US** | Data from the US National Park Service. | 🔑 ApiKey | ✅ | [Link](https://www.nps.gov/subjects/developer/) |
@@ -37,25 +36,27 @@
 | **Open Government, Australia** | Australian Government Open Data. | No | ✅ | [Link](https://www.data.gov.au/) |
 | **Open Government, Austria** | Austria Government Open Data. | No | ✅ | [Link](https://www.data.gv.at/) |
 | **Open Government, Belgium** | Belgium Government Open Data. | No | ✅ | [Link](https://data.gov.be/) |
+| **Open Government, Brazil** | Brazilian Government Open Data. | No | ✅ | [Link](https://dados.gov.br/) |
 | **Open Government, Canada** | Canadian Government Open Data. | No | No | [Link](http://open.canada.ca/en) |
+| **Open Government, Chile** | Chilean Government Open Data. | No | ✅ | [Link](https://datos.gob.cl/) |
 | **Open Government, Colombia** | Colombia Government Open Data. | No | No | [Link](https://www.dane.gov.co/) |
 | **Open Government, Cyprus** | Cyprus Government Open Data. | No | ✅ | [Link](https://data.gov.cy/?language=en) |
 | **Open Government, Czech Republic** | Czech Republic Government Open Data. | No | ✅ | [Link](https://data.gov.cz/english/) |
 | **Open Government, Denmark** | Denmark Government Open Data. | No | ✅ | [Link](https://www.opendata.dk/) |
+| **Open Government, Estonia** | Estonian Government Open Data. | No | ✅ | [Link](https://avaandmed.eesti.ee/) |
 | **Open Government, Finland** | Finland Government Open Data. | No | ✅ | [Link](https://www.avoindata.fi/en) |
 | **Open Government, France** | French Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://www.data.gouv.fr/) |
 | **Open Government, Greece** | Greece Government Open Data. | 🔐 OAuth | ✅ | [Link](https://data.gov.gr/) |
-| **Open Government, Brazil** | Brazilian Government Open Data. | No | ✅ | [Link](https://dados.gov.br/) |
 | **Open Government, Ireland** | Ireland Government Open Data. | No | ✅ | [Link](https://data.gov.ie/pages/developers) |
-| **Open Government, Estonia** | Estonian Government Open Data. | No | ✅ | [Link](https://avaandmed.eesti.ee/) |
+| **Open Government, Japan** | Japanese Government Open Data. | No | ✅ | [Link](https://www.data.go.jp/) |
 | **Open Government, Korea** | Korea Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://www.data.go.kr/) |
 | **Open Government, Luxembourg** | Luxembourgish Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://data.public.lu) |
+| **Open Government, Mexico** | Mexican Government Open Data. | No | ✅ | [Link](https://datos.gob.mx/) |
 | **Open Government, Mexico** | Mexican Statistical Government Open Data. | No | ✅ | [Link](https://www.inegi.org.mx/datos/) |
 | **Open Government, Netherlands** | Netherlands Government Open Data. | No | ✅ | [Link](https://data.overheid.nl/) |
 | **Open Government, New South Wales** | New South Wales Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://api.nsw.gov.au/) |
 | **Open Government, New Zealand** | New Zealand Government Open Data. | No | ✅ | [Link](https://www.data.govt.nz/) |
 | **Open Government, Norway** | Norwegian Government Open Data. | No | ✅ | [Link](https://data.norge.no/dataservices) |
-| **Open Government, Chile** | Chilean Government Open Data. | No | ✅ | [Link](https://datos.gob.cl/) |
 | **Open Government, Poland** | Poland Government Open Data. | No | ✅ | [Link](https://dane.gov.pl/en) |
 | **Open Government, Portugal** | Portugal Government Open Data. | No | ✅ | [Link](https://github.com/amagovpt/docs.dados.gov.pt) |
 | **Open Government, Queensland Government** | Queensland Government Open Data. | No | ✅ | [Link](https://www.data.qld.gov.au/) |
@@ -66,7 +67,6 @@
 | **Open Government, Sweden** | Sweden Government Open Data. | No | ✅ | [Link](https://www.dataportal.se/en/dataservice/91_29789/api-for-the-statistical-database) |
 | **Open Government, Switzerland** | Switzerland Government Open Data. | No | ✅ | [Link](https://handbook.opendata.swiss/de/content/nutzen/api-nutzen.html) |
 | **Open Government, Taiwan** | Taiwan Government Open Data. | No | ✅ | [Link](https://data.gov.tw/) |
-| **Open Government, Japan** | Japanese Government Open Data. | No | ✅ | [Link](https://www.data.go.jp/) |
 | **Open Government, UK** | UK Government Open Data. | No | ✅ | [Link](https://data.gov.uk/) |
 | **Open Government, USA** | United States Government Open Data. | No | ✅ | [Link](https://www.data.gov/) |
 | **Open Government, Victoria State Government** | Victoria State Government Open Data. | No | ✅ | [Link](https://www.data.vic.gov.au/) |
@@ -78,6 +78,5 @@
 | **UK Companies House** | UK Companies House Data from the UK government. | 🔐 OAuth | ✅ | [Link](https://developer.company-information.service.gov.uk/) |
 | **UK Parliament** | UK parliamentary data and members. | No | ✅ | [Link](https://members-api.parliament.uk/index.html) |
 | **USASpending** | US federal spending data API. | No | ✅ | [Link](https://api.usaspending.gov/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

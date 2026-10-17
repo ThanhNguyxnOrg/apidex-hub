@@ -27,6 +27,5 @@
 | **UploadThing** | File upload infrastructure for modern web apps. | 🔑 ApiKey | ✅ | [Link](https://docs.uploadthing.com/) |
 | **Web3 Storage** | File Sharing and Storage for Free with 1TB Space. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/) |
 | **Web3.Storage** | Decentralized storage API built on IPFS/Filecoin. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/docs/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

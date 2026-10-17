@@ -8,8 +8,9 @@
 | **Home Assistant** | Self-hosted home automation REST API. | 🔑 ApiKey | ✅ | [Link](https://developers.home-assistant.io/docs/api/rest/) |
 | **IFTTT** | IFTTT Connect API. | No | ✅ | [Link](https://platform.ifttt.com/docs/connect_api) |
 | **Particle Cloud** | IoT device management and data API. | 🔑 ApiKey | ✅ | [Link](https://docs.particle.io/reference/cloud-apis/api/) |
+| **Philips Hue** | Control lights, scenes, sensors, and entertainment areas of a Hue bridge. | 🔑 ApiKey | ✅ | [Link](https://developers.meethue.com/) |
+| **Shelly** | Control and monitor Shelly smart relays, plugs, and sensors over the cloud API. | 🔑 ApiKey | ✅ | [Link](https://shelly-api-docs.shelly.cloud/) |
 | **ThingsBoard** | Open-source IoT platform REST API. | 🔑 ApiKey | ✅ | [Link](https://thingsboard.io/docs/reference/rest-api/) |
 | **Tuya Cloud** | Smart device management APIs. | 🔑 ApiKey | ✅ | [Link](https://developer.tuya.com/en/docs/cloud/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
