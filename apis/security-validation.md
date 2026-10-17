@@ -8,6 +8,7 @@
 | **Bugcrowd** | Bugcrowd API for interacting and tracking the reported issues programmatically. | 🔑 ApiKey | ✅ | [Link](https://docs.bugcrowd.com/api/getting-started/) |
 | **Censys** | Search engine for Internet connected host and devices. | 🔑 ApiKey | ✅ | [Link](https://search.censys.io/api) |
 | **CertSpotter** | Certificate transparency monitoring. | No | ✅ | [Link](https://sslmate.com/certspotter/api/) |
+| **CIRCL CVE** | Community CVE/MKE vulnerability search with CVSS and CPE data. | No | ✅ | [Link](https://cve.circl.lu/) |
 | **Cloudflare DoH** | DNS-over-HTTPS JSON resolver on 1.1.1.1. | No | ✅ | [Link](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/dns-json/) |
 | **Cloudflare Turnstile** | Privacy-first CAPTCHA alternative. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/turnstile/) |
 | **Complete Criminal Checks** | Provides data of offenders from all U.S. States and Pureto Rico. | 🔑 ApiKey | ✅ | [Link](https://completecriminalchecks.com/Developers) |
@@ -34,6 +35,7 @@
 | **Shodan** | Internet-connected devices search engine. | 🔑 ApiKey | ✅ | [Link](https://developer.shodan.io/) |
 | **Spyse** | Access data on all Internet assets and build powerful attack surface manageme... | 🔑 ApiKey | ✅ | [Link](https://spyse-dev.readme.io/reference/quick-start) |
 | **UK Police** | UK Police data. | No | ✅ | [Link](https://data.police.uk/docs/) |
+| **URLScan** | URL sandboxing with page screenshots, scans and results. | 🔑 ApiKey | ✅ | [Link](https://urlscan.io/) |
 | **VulDB** | VulDB API allows to initiate queries for one or more items along with transac... | 🔑 ApiKey | ✅ | [Link](https://vuldb.com/?doc.api) |
 | **Vulners** | Vulnerability intelligence with exploit and CVE archive search. | 🔑 ApiKey | ✅ | [Link](https://vulners.com/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

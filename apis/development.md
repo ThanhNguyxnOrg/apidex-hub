@@ -31,6 +31,7 @@
 | **Codacy** | Code quality and security analysis. | 🔑 ApiKey | ✅ | [Link](https://api.codacy.com/api/api-docs) |
 | **Codeforces** | Get access to Codeforces data. | 🔑 ApiKey | ✅ | [Link](https://codeforces.com/apiHelp) |
 | **CodeSandbox** | Online code editor API. | 🔑 ApiKey | ✅ | [Link](https://codesandbox.io/docs) |
+| **Contentful** | Headless content platform APIs. | 🔑 ApiKey | ✅ | [Link](https://www.contentful.com/developers/docs/) |
 | **Contentful Images** | Used to retrieve and apply transformations to images. | 🔑 ApiKey | ✅ | [Link](https://www.contentful.com/developers/docs/references/images-api/) |
 | **Crates.io** | Rust crate metadata, versions and download counts. | No | ✅ | [Link](https://doc.rust-lang.org/cargo/reference/registry-web-api.html) |
 | **Databricks** | Lakehouse workspace, jobs, and cluster APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.databricks.com/api/workspace/introduction) |
@@ -43,6 +44,7 @@
 | **Firebase** | Google's mobile/web app development platform. | 🔑 ApiKey | ✅ | [Link](https://firebase.google.com/docs/reference/rest) |
 | **Fly.io** | Global app deployment platform. | 🔑 ApiKey | ✅ | [Link](https://fly.io/docs/machines/api/) |
 | **Ghost** | Get Published content into your Website, App or other embedded media. | 🔑 ApiKey | ✅ | [Link](https://ghost.org/) |
+| **Ghost Content API** | Public content endpoints for Ghost publications. | 🔑 ApiKey | ✅ | [Link](https://ghost.org/docs/content-api/) |
 | **Gitea** | Self-hosted Git service with REST API. | 🔐 OAuth | ✅ | [Link](https://gitea.com/api/swagger) |
 | **GitHub** | Make use of GitHub data. | 🔐 OAuth | ✅ | [Link](https://docs.github.com/en/free-pro-team@latest/rest) |
 | **Gitlab** | Automate GitLab. | 🔐 OAuth | ✅ | [Link](https://docs.gitlab.com/ee/api/) |
@@ -125,6 +127,7 @@
 | **Smartsheet** | Spreadsheet-style project management API. | 🔐 OAuth | ✅ | [Link](https://smartsheet.redoc.ly/) |
 | **SonarQube** | SonarQube REST APIs to detect bugs, code smells & security vulnerabilities. | 🔐 OAuth | ✅ | [Link](https://sonarcloud.io/web_api) |
 | **Statically** | A free CDN for developers. | No | ✅ | [Link](https://statically.io/) |
+| **Storyblok** | Headless CMS REST and GraphQL APIs. | 🔑 ApiKey | ✅ | [Link](https://www.storyblok.com/docs/api) |
 | **Trello** | Project boards and workflow automation APIs. | 🔐 OAuth | ✅ | [Link](https://developers.trello.com/) |
 | **Userstack** | User-Agent String Analysis. | 🔑 ApiKey | ✅ | [Link](https://userstack.com/) |
 | **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |

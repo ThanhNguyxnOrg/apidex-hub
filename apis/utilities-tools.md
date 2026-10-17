@@ -15,6 +15,7 @@
 | **Random.org** | True random numbers, strings, sequences from atmospheric noise. | 🔑 ApiKey | ✅ | [Link](https://api.random.org/json-rpc/4) |
 | **RoboHash** | Generate unique robot/monster avatars (**No Auth**). | No | ✅ | [Link](https://robohash.org/) |
 | **Text Art API** | Generate text-based art (**No Auth**). | No | ✅ | [Link](http://patorjk.com/software/taag/) |
+| **TimeAPI** | Time zone lookups, conversions and daylight-saving data. | No | ✅ | [Link](https://timeapi.io/) |
 | **UI Avatars** | Generate avatar placeholders from initials (**No Auth, 28M+ daily requests**). | No | ✅ | [Link](https://ui-avatars.com/) |
 | **URLBox** | Website screenshot API. | 🔑 ApiKey | ✅ | [Link](https://www.urlbox.io/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

@@ -10,6 +10,7 @@
 | **Bitmex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://www.bitmex.com/app/apiOverview) |
 | **Block** | Bitcoin Payment, Wallet & Transaction Data. | 🔑 ApiKey | ✅ | [Link](https://block.io/docs/basic) |
 | **Blockchain** | Bitcoin Payment, Wallet & Transaction Data. | 🔑 ApiKey | ✅ | [Link](https://www.blockchain.com/api) |
+| **Blockchain.com Data** | Bitcoin blockchain data: blocks, addresses, transactions. | 🔑 ApiKey | ✅ | [Link](https://www.blockchain.com/explorer/api) |
 | **blockfrost Cardano** | Interaction with the Cardano mainnet and several testnets. | 🔑 ApiKey | ✅ | [Link](https://blockfrost.io/) |
 | **Brave NewCoin** | Real-time and historic crypto data from more than 200+ exchanges. | 🔑 ApiKey | ✅ | [Link](https://bravenewcoin.com/developers) |
 | **BtcTurk** | Real-time cryptocurrency data, graphs and API that allows buy&sell. | 🔑 ApiKey | ✅ | [Link](https://docs.btcturk.com/) |
