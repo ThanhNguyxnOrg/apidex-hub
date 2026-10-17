@@ -20,7 +20,6 @@
 | **Untappd** | Social beer sharing. | 🔐 OAuth | ✅ | [Link](https://untappd.com/api/docs) |
 | **What's on the menu?** | NYPL human-transcribed historical menu collection. | 🔑 ApiKey | No | [Link](http://nypl.github.io/menus-api/) |
 | **WhiskyHunter** | Past online whisky auctions statistical data. | No | ✅ | [Link](https://whiskyhunter.net/api/) |
-| **Yelp Fusion** | Business and restaurant reviews. | 🔑 ApiKey | ✅ | [Link](https://docs.developer.yelp.com/) |
 | **Zestful** | Parse recipe ingredients. | 🔑 ApiKey | ✅ | [Link](https://zestfuldata.com/) |
 | **Zomato** | Restaurant search and reviews. | 🔑 ApiKey | ✅ | [Link](https://developers.zomato.com/api) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

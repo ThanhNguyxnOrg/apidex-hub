@@ -10,7 +10,10 @@
 | **Kiwi Tequila** | Flight search, pricing, and booking APIs powering Kiwi.com's travel platform. | 🔑 ApiKey | ✅ | [Link](https://tequila.kiwi.com/) |
 | **Lufthansa** | Flight status, airport and schedules API. | 🔑 ApiKey | ✅ | [Link](https://developer.lufthansa.com/) |
 | **Rome2rio** | Multi-modal transport routes between any two places. | 🔑 ApiKey | ✅ | [Link](https://www.rome2rio.com/documentation) |
+| **themeParks API** | Live wait times and schedules for Disney, Universal and more. | No | ✅ | [Link](https://www.themeparks.wiki/) |
+| **Travel Risk API** | Country-level travel-safety scores and advisories. | No | ✅ | [Link](https://travelriskapi.com/docs) |
 | **US Border Wait Times** | Real-time border crossing wait times for US, Canada, and Mexico borders. | No | ✅ | [Link](https://bwt.cbp.gov/) |
+| **Viator** | Tours & activities search, availability and booking. | 🔑 ApiKey | ✅ | [Link](https://docs.viator.com) |
 | **Wikivoyage** | Travel guide metadata and destination content from Wikimedia. | No | ✅ | [Link](https://en.wikivoyage.org/w/api.php) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
