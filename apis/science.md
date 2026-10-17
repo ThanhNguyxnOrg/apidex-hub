@@ -6,6 +6,7 @@
 | **arXiv** | Scientific paper search and metadata (**No Auth**). | No | ✅ | [Link](https://arxiv.org/help/api) |
 | **Astronomy API** | Astronomy calculations and celestial data. | 🔑 ApiKey | ✅ | [Link](https://astronomyapi.com/) |
 | **CelesTrak** | Satellite orbital data (TLE) and space situational awareness. | No | ✅ | [Link](https://celestrak.org/) |
+| **ChEMBL** | Drug discovery bioactivity database: compounds, targets, assays. | No | ✅ | [Link](https://www.ebi.ac.uk/chembl/) |
 | **CORE** | Access the world's Open Access research papers. | 🔑 ApiKey | ✅ | [Link](https://core.ac.uk/services#api) |
 | **DataCite** | DOI metadata API for research datasets and outputs. | 🔑 ApiKey | ✅ | [Link](https://support.datacite.org/docs/api) |
 | **DOAJ** | Directory of open access journals and articles. | No | ✅ | [Link](https://doaj.org/api/docs) |

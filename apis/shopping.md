@@ -13,6 +13,7 @@
 | **Octopart** | Electronic part data for manufacturing, design, and sourcing. | 🔑 ApiKey | ✅ | [Link](https://octopart.com/api/v4/reference) |
 | **OLX Poland** | Integrate with local sites by posting, managing adverts and communicating wit... | 🔑 ApiKey | ✅ | [Link](https://developer.olx.pl/api/doc#section/) |
 | **Open Beauty Facts** | Open cosmetics products database with ingredients and barcodes. | No | ✅ | [Link](https://world.openbeautyfacts.org/data) |
+| **PriceCharting** | Historical market prices for video games and trading cards. | 🔑 ApiKey | ✅ | [Link](https://www.pricecharting.com/docs/api) |
 | **Rakuten** | Japanese marketplace items, search and ranking API. | 🔑 ApiKey | ✅ | [Link](https://webservice.rakuten.co.jp/) |
 | **Rappi** | Manage orders from Rappi's app. | 🔐 OAuth | ✅ | [Link](https://dev-portal.rappi.com/) |
 | **Shopee** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://open.shopee.com/documents?version=1) |
