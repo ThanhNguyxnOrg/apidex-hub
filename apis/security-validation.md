@@ -25,7 +25,6 @@
 | **Mozilla Observatory** | Website security analysis (**No Auth**). | No | ✅ | [Link](https://observatory.mozilla.org/) |
 | **MSRC** | Microsoft vulnerability and CVRF data feeds. | No | ✅ | [Link](https://msrc.microsoft.com/report/developer) |
 | **MXToolbox** | Domain, DNS, and blacklist lookups. | 🔑 ApiKey | ✅ | [Link](https://mxtoolbox.com/restapi.aspx) |
-| **National Vulnerability Database** | U.S. National Vulnerability Database. | No | ✅ | [Link](https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog) |
 | **NVD** | U.S. National Vulnerability Database with CVE feeds and search. | No | ✅ | [Link](https://nvd.nist.gov/developers) |
 | **OSV** | Open source vulnerability database and API (**No Auth**). | No | ✅ | [Link](https://google.github.io/osv.dev/) |
 | **PhishStats** | Phishing database. | No | ✅ | [Link](https://phishstats.info/) |

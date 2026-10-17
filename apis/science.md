@@ -29,7 +29,6 @@
 | **Open Science Framework** | Open source research management platform. | 🔐 OAuth | ✅ | [Link](https://developer.osf.io/) |
 | **People in Space** | Current number of people in space (**No Auth**). | No | ✅ | [Link](http://open-notify.org/Open-Notify-API/People-In-Space/) |
 | **PubMed E-utilities** | U.S. National Library of Medicine biomedical literature. | No | ✅ | [Link](https://www.ncbi.nlm.nih.gov/books/NBK25501/) |
-| **Purple Air** | Real Time Air Quality Monitoring. | No | ✅ | [Link](https://www2.purpleair.com/) |
 | **SHARE** | A free, open, dataset about research and scholarly activities. | No | ✅ | [Link](https://share.osf.io/api/v2/) |
 | **Solar System OpenData** | Solar system planets and moons data (**No Auth**). | No | ✅ | [Link](https://api.le-systeme-solaire.net/en/) |
 | **SpaceX API** | SpaceX launches, rockets, capsules, and Starlink data (**No Auth**). | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |

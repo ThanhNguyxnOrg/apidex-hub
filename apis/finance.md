@@ -24,7 +24,6 @@
 | **Intrinio** | A wide selection of financial data feeds. | 🔑 ApiKey | ✅ | [Link](https://intrinio.com/) |
 | **Klarna** | Payments. | 🔑 ApiKey | ✅ | [Link](https://docs.klarna.com/api/) |
 | **Marketstack** | Real-time, intraday and historical market data. | 🔑 ApiKey | ✅ | [Link](https://marketstack.com/) |
-| **MercadoPago** | Payments. | 🔑 ApiKey | ✅ | [Link](https://www.mercadopago.com.br/developers/es/reference) |
 | **Mono** | Connect with users’ bank accounts and access transaction data in Africa. | 🔑 ApiKey | ✅ | [Link](https://mono.co/) |
 | **Moov** | The Moov API makes it simple for platforms to send, receive, and store money. | 🔑 ApiKey | ✅ | [Link](https://docs.moov.io/api/) |
 | **OpenFIGI** | Equity, index, futures, options symbology from Bloomberg LP. | 🔑 ApiKey | ✅ | [Link](https://www.openfigi.com/api) |

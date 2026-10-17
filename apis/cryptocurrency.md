@@ -39,7 +39,6 @@
 | **INFURA Ethereum** | Interaction with the Ethereum mainnet and several testnets. | 🔑 ApiKey | ✅ | [Link](https://infura.io/product/ethereum) |
 | **Kraken** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kraken.com/) |
 | **KuCoin** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kucoin.com/) |
-| **Mempool** | Bitcoin API. | No | ✅ | [Link](https://mempool.space/api) |
 | **Mempool.space** | Bitcoin mempool, fees, blocks and Lightning network data. | No | ✅ | [Link](https://mempool.space/docs/api) |
 | **MercadoBitcoin** | Brazilian Cryptocurrency Information. | No | ✅ | [Link](https://api.mercadobitcoin.net/api/v4/docs) |
 | **Messari** | Crypto asset profiles, metrics and market data. | 🔑 ApiKey | ✅ | [Link](https://messari.io/api/docs) |

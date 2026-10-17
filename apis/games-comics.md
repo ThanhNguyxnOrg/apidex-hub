@@ -28,7 +28,6 @@
 | **Final Fantasy XIV** | Game data. | No | ✅ | [Link](https://xivapi.com/) |
 | **Fortnite** | Game data. | 🔑 ApiKey | ✅ | [Link](https://fortnitetracker.com/site-api) |
 | **Free to Play Games** | Database of free-to-play games (**No Auth**). | No | ✅ | [Link](https://www.freetogame.com/api-doc) |
-| **FunTranslations** | Translate Text into funny languages. | No | ✅ | [Link](https://api.funtranslations.com/) |
 | **GamerPower** | Free games, loot, and giveaways (**No Auth**). | No | ✅ | [Link](https://www.gamerpower.com/api-read) |
 | **GDBrowser** | Easy way to use the Geometry Dash Servers. | No | ✅ | [Link](https://gdbrowser.com/api) |
 | **Genshin Impact** | Game data. | No | ✅ | [Link](https://genshin.dev) |
@@ -43,7 +42,6 @@
 | **IGDB.com** | Game database. | 🔑 ApiKey | ✅ | [Link](https://api-docs.igdb.com) |
 | **Jokes One** | Joke of the day and large category of jokes accessible via REST API. | 🔑 ApiKey | ✅ | [Link](https://jokes.one/api/joke/) |
 | **Lichess** | Chess data. | 🔐 OAuth | ✅ | [Link](https://lichess.org/api) |
-| **Magic The Gathering** | Magic The Gathering Game Information. | No | No | [Link](http://magicthegathering.io/) |
 | **Magic: The Gathering** | MTG card data. | No | ✅ | [Link](https://docs.magicthegathering.io/) |
 | **Marvel** | Comics data. | 🔑 ApiKey | ✅ | [Link](https://developer.marvel.com) |
 | **Minecraft Server Status** | Server status. | No | ✅ | [Link](https://api.mcsrvstat.us) |
@@ -56,7 +54,6 @@
 | **Overwatch API** | Overwatch 2 player stats and heroes (**No Auth**). | No | ✅ | [Link](https://overfast-api.tekrop.fr/) |
 | **Path of Exile** | Path of Exile Game Information. | 🔐 OAuth | ✅ | [Link](https://www.pathofexile.com/developer/docs) |
 | **PlayerDB** | Query Minecraft, Steam and XBox Accounts. | No | ✅ | [Link](https://playerdb.co/) |
-| **PokeAPI** | All the Pokémon data you'll ever need in one place. | No | ✅ | [Link](https://pokeapi.co/) |
 | **PokéAPI v2** | Comprehensive Pokémon data (**No Auth, 300M+ requests/month**). | No | ✅ | [Link](https://pokeapi.co/docs/v2) |
 | **Pokémon TCG** | Pokémon TCG Information. | No | ✅ | [Link](https://pokemontcg.io) |
 | **Potter DB** | Harry Potter database API for characters, spells, potions, books, and movies. | No | ✅ | [Link](https://potterdb.com/) |

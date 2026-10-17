@@ -5,7 +5,6 @@
 | **ADS-B Exchange** | Flight tracking data. | No | ✅ | [Link](https://www.adsbexchange.com/data/) |
 | **airportsapi** | Get name and website-URL for airports by ICAO code. | No | ✅ | [Link](https://airport-web.appspot.com/api/docs/) |
 | **AIS Hub** | Real-time data of any marine and inland vessel equipped with AIS tracking system. | 🔑 ApiKey | No | [Link](http://www.aishub.net/api) |
-| **Amadeus for Developers** | Travel Search - Limited usage. | 🔐 OAuth | ✅ | [Link](https://developers.amadeus.com/self-service) |
 | **AZ511** | Access traffic data from the ADOT API. | 🔑 ApiKey | ✅ | [Link](https://www.az511.com/developers/doc) |
 | **BART** | Bay Area Rapid Transit. | 🔑 ApiKey | ✅ | [Link](http://api.bart.gov) |
 | **BC Ferries** | Sailing times and capacities for BC Ferries. | No | ✅ | [Link](https://www.bcferriesapi.ca) |

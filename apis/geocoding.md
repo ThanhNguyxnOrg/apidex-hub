@@ -14,7 +14,6 @@
 | **CitySDK** | Open APIs for select European cities. | No | ✅ | [Link](http://www.citysdk.eu/citysdk-toolkit/) |
 | **Ducks Unlimited** | API explorer that gives a query URL with a JSON response of locations and cities. | No | ✅ | [Link](https://gis.ducks.org/datasets/du-university-chapters/api) |
 | **Geoapify** | Forward and reverse geocoding, address autocomplete. | 🔑 ApiKey | ✅ | [Link](https://www.geoapify.com/api/geocoding-api/) |
-| **Geocod.io** | Address geocoding / reverse geocoding in bulk. | 🔑 ApiKey | ✅ | [Link](https://www.geocod.io/) |
 | **Geocode.maps.co** | Free geocoding and reverse geocoding (**No Auth**). | No | ✅ | [Link](https://geocode.maps.co/) |
 | **Geocode.xyz** | Provides worldwide forward/reverse geocoding, batch geocoding and geoparsing. | No | ✅ | [Link](https://geocode.xyz/api) |
 | **Geocodify.com** | Worldwide geocoding, geoparsing and autocomplete for addresses. | 🔑 ApiKey | ✅ | [Link](https://geocodify.com/) |
@@ -29,7 +28,6 @@
 | **Hirak IP to Country** | Ip to location with country code, currency code & currency name, fast respons... | 🔑 ApiKey | ✅ | [Link](https://iplocation.hirak.site/) |
 | **IBGE** | Aggregate services of IBGE (Brazilian Institute of Geography and Statistics) | No | ✅ | [Link](https://servicodados.ibge.gov.br/api/docs/) |
 | **IP 2 Country** | Map an IP to a country. | No | ✅ | [Link](https://ip2country.info) |
-| **IP Address Details** | Find geolocation with ip address. | No | ✅ | [Link](https://ipinfo.io/) |
 | **IP Geolocation** | Geolocate website visitors from their IPs. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/ip-geolocation-api) |
 | **IP Vigilante** | Free IP Geolocation API. | No | ✅ | [Link](https://www.ipvigilante.com/) |
 | **IP-API** | IP to location. | No | No | [Link](https://ip-api.com/docs) |
