@@ -45,11 +45,9 @@
 | **Ghost** | Get Published content into your Website, App or other embedded media. | 🔑 ApiKey | ✅ | [Link](https://ghost.org/) |
 | **Gitea** | Self-hosted Git service with REST API. | 🔐 OAuth | ✅ | [Link](https://gitea.com/api/swagger) |
 | **GitHub** | Make use of GitHub data. | 🔐 OAuth | ✅ | [Link](https://docs.github.com/en/free-pro-team@latest/rest) |
-| **GitHub REST API** | Access GitHub data — repos, users, gists, and more (**No Auth for public data**). | No | ✅ | [Link](https://docs.github.com/en/rest) |
 | **Gitlab** | Automate GitLab. | 🔐 OAuth | ✅ | [Link](https://docs.gitlab.com/ee/api/) |
 | **Google Calendar** | Create, view, or update calendar events. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/calendar/api) |
 | **Google Docs** | Create and edit documents. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/docs/api/reference/rest) |
-| **Google Firebase** | Google's mobile application development platform that helps build, improve, a... | 🔑 ApiKey | ✅ | [Link](https://firebase.google.com/docs) |
 | **Google Fonts** | Metadata for all families served by Google Fonts. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/fonts/docs/developer_api) |
 | **Google Keep** | API to read, write, and format Google Keep notes. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/keep/api/reference/rest) |
 | **Google Play Developer** | Android publishing, in-app products and crash reporting. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/android-publisher) |
@@ -126,7 +124,6 @@
 | **SHOUTCLOUD** | ALL-CAPS AS A SERVICE. | No | No | [Link](http://shoutcloud.io/) |
 | **Smartsheet** | Spreadsheet-style project management API. | 🔐 OAuth | ✅ | [Link](https://smartsheet.redoc.ly/) |
 | **SonarQube** | SonarQube REST APIs to detect bugs, code smells & security vulnerabilities. | 🔐 OAuth | ✅ | [Link](https://sonarcloud.io/web_api) |
-| **StackExchange** | Q&A forum for developers. | 🔐 OAuth | ✅ | [Link](https://api.stackexchange.com/) |
 | **Statically** | A free CDN for developers. | No | ✅ | [Link](https://statically.io/) |
 | **Trello** | Project boards and workflow automation APIs. | 🔐 OAuth | ✅ | [Link](https://developers.trello.com/) |
 | **Userstack** | User-Agent String Analysis. | 🔑 ApiKey | ✅ | [Link](https://userstack.com/) |

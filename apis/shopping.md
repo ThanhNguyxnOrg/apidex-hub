@@ -10,7 +10,6 @@
 | **Lazada** | Retrieve product ratings and seller performance metrics. | 🔑 ApiKey | ✅ | [Link](https://open.lazada.com/doc/doc.htm) |
 | **Makeup API** | Search makeup products by brand, type, price (**No Auth**). | No | ✅ | [Link](http://makeup-api.herokuapp.com/) |
 | **Mercado Libre** | E-commerce and marketplace API for Latin America. | 🔑 ApiKey | ✅ | [Link](https://developers.mercadolibre.com/) |
-| **Mercadolibre** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://developers.mercadolibre.cl/es_ar/api-docs-es) |
 | **Octopart** | Electronic part data for manufacturing, design, and sourcing. | 🔑 ApiKey | ✅ | [Link](https://octopart.com/api/v4/reference) |
 | **OLX Poland** | Integrate with local sites by posting, managing adverts and communicating wit... | 🔑 ApiKey | ✅ | [Link](https://developer.olx.pl/api/doc#section/) |
 | **Open Beauty Facts** | Open cosmetics products database with ingredients and barcodes. | No | ✅ | [Link](https://world.openbeautyfacts.org/data) |

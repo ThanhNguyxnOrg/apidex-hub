@@ -8,7 +8,6 @@
 | **CheetahO** | Photo optimization and resize. | 🔑 ApiKey | ✅ | [Link](https://cheetaho.com/docs/getting-started/) |
 | **Chronicling America** | Provides access to millions of pages of historic US newspapers from the Libra... | No | No | [Link](http://chroniclingamerica.loc.gov/about/api/) |
 | **Dagpi** | Image manipulation and processing. | 🔑 ApiKey | ✅ | [Link](https://dagpi.xyz) |
-| **DiceBear** | Generate unique avatar images from any seed string (**No Auth**). | No | ✅ | [Link](https://www.dicebear.com/introduction/) |
 | **DynaPictures** | Generate Hundreds of Personalized Images in Minutes. | 🔑 ApiKey | ✅ | [Link](https://dynapictures.com/docs/) |
 | **Flickr** | Photo sharing and management. | 🔑 ApiKey | ✅ | [Link](https://www.flickr.com/services/api/) |
 | **Getty Images** | Build applications using the world's most powerful imagery. | 🔐 OAuth | ✅ | [Link](http://developers.gettyimages.com/en/) |
@@ -19,7 +18,6 @@
 | **Imgur** | Images. | 🔐 OAuth | ✅ | [Link](https://apidocs.imgur.com/) |
 | **MarketAux** | Live stock market news with tagged tickers + sentiment and stats JSON API. | 🔑 ApiKey | ✅ | [Link](https://www.marketaux.com/) |
 | **NASA Image Library** | NASA's image and video library (**No Auth**). | No | ✅ | [Link](https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf) |
-| **NewsData** | News data API for live-breaking news and headlines from reputed  news sources. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/docs) |
 | **NewsX** | Get or Search Latest Breaking News with ML Powered Summaries 🤖. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/machaao-inc-machaao-inc-default/api/newsx/) |
 | **ObjectCut** | Image Background removal. | 🔑 ApiKey | ✅ | [Link](https://objectcut.com/) |
 | **Pexels** | Free stock photos. | 🔑 ApiKey | ✅ | [Link](https://www.pexels.com/api/) |

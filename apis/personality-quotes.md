@@ -3,7 +3,6 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **API-Ninjas Quotes** | Curated quotes API. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/quotes) |
-| **DummyJSON Quotes** | Fake quotes dataset API. | No | ✅ | [Link](https://dummyjson.com/docs/quotes) |
 | **FavQs.com** | FavQs allows you to collect, discover and share your favorite quotes. | 🔑 ApiKey | ✅ | [Link](https://favqs.com/api) |
 | **Quotable** | Random quotes with authors, tags, and pagination (**No Auth**). | No | ✅ | [Link](https://github.com/lukePeavey/quotable) |
 | **Quotes on Design** | Inspirational Quotes. | No | ✅ | [Link](https://quotesondesign.com/api/) |

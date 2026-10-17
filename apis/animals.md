@@ -23,8 +23,6 @@
 | **RescueGroups** | Adoption. | No | ✅ | [Link](https://rescuegroups.org/services/adoptable-pet-data-api/) |
 | **Shibe.Online** | Random pictures of Shiba Inu, cats or birds. | No | ✅ | [Link](http://shibe.online/) |
 | **The Cat API** | Images of cats (great for testing image grids). | 🔑 ApiKey | ✅ | [Link](https://thecatapi.com/) |
-| **TheCatAPI** | Random cat images, breeds, and facts. | 🔑 ApiKey | ✅ | [Link](https://api.thecatapi.com/) |
-| **TheCatDB** | Cat breeds and facts database. | 🔑 ApiKey | ✅ | [Link](https://www.thecatapi.com/) |
 | **TheDogAPI** | Random dog images, breeds, and facts. | 🔑 ApiKey | ✅ | [Link](https://api.thedogapi.com/) |
 | **WoRMS** | Marine species taxonomy and classification data. | No | ✅ | [Link](https://www.marinespecies.org/rest/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
