@@ -12,6 +12,7 @@
 | **NewsAPI** | Headlines and articles. | 🔑 ApiKey | ✅ | [Link](https://newsapi.org/) |
 | **NewsAPI.ai** | AI-powered news API. | 🔑 ApiKey | ✅ | [Link](https://newsapi.ai/) |
 | **NewsData.io** | News search and tracking. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/) |
+| **Spaceflight News API** | Articles and updates about spaceflight and astronomy. | No | ✅ | [Link](https://api.spaceflightnewsapi.net/v4/docs/) |
 | **The Guardian** | Guardian articles. | 🔑 ApiKey | ✅ | [Link](https://open-platform.theguardian.com/) |
 | **The New York Times** | Articles, reviews, and bestseller lists from the NYT archive and current coverage. | 🔑 ApiKey | ✅ | [Link](https://developer.nytimes.com/) |
 | **TheNewsAPI** | Global news API. | 🔑 ApiKey | ✅ | [Link](https://www.thenewsapi.com/) |

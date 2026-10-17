@@ -2,6 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Amazon Translate** | Neural machine translation service. | 🔞 OAuth | ✅ | [Link](https://docs.aws.amazon.com/translate/) |
 | **AssemblyAI** | Speech-to-text and audio intelligence API. | 🔑 ApiKey | ✅ | [Link](https://www.assemblyai.com/docs) |
 | **Cloudmersive Natural Language Processing** | Natural language processing and text analysis. | 🔑 ApiKey | ✅ | [Link](https://www.cloudmersive.com/nlp-api) |
 | **Code Detection API** | Detect, label, format and enrich the code in your app or in your data pipeline. | 🔐 OAuth | ✅ | [Link](https://codedetectionapi.runtime.dev) |
@@ -16,6 +17,9 @@
 | **LanguageTool** | Grammar and style checking API. | No | ✅ | [Link](https://languagetool.org/http-api/swagger-ui/#/) |
 | **Lecto Translation** | Translation API with free tier and reasonable prices. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/lecto-lecto-default/api/lecto-translation/) |
 | **LibreTranslate** | Free and open-source translation API (**Self-hosted, No Auth**). | No | ✅ | [Link](https://libretranslate.com/) |
+| **Microsoft Translator** | Text translation with transliteration and detection. | 🔑 ApiKey | ✅ | [Link](https://learn.microsoft.com/en-us/azure/ai-services/translator/) |
+| **ModernMT** | Adaptive machine translation that learns from edits. | 🔑 ApiKey | ✅ | [Link](https://www.modernmt.com/api/) |
+| **MyMemory** | Free translation memory API with public corpora. | No | ✅ | [Link](https://api.mymemory.translated.net/) |
 | **Sapling** | Grammar correction and writing APIs. | 🔑 ApiKey | ✅ | [Link](https://sapling.ai/docs/) |
 | **Semantria** | Text Analytics with sentiment analysis, categorization & named entity extraction. | 🔐 OAuth | ✅ | [Link](https://semantria.readme.io/docs) |
 | **TextRazor** | NLP extraction and classification API. | 🔑 ApiKey | ✅ | [Link](https://www.textrazor.com/docs/rest) |

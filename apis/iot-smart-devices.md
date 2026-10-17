@@ -13,6 +13,7 @@
 | **Shelly** | Control and monitor Shelly smart relays, plugs, and sensors over the cloud API. | 🔑 ApiKey | ✅ | [Link](https://shelly-api-docs.shelly.cloud/) |
 | **SmartThings** | Samsung SmartThings connected device control API. | 🔑 ApiKey | ✅ | [Link](https://developer.smartthings.com/docs/api/public) |
 | **ThingsBoard** | Open-source IoT platform REST API. | 🔑 ApiKey | ✅ | [Link](https://thingsboard.io/docs/reference/rest-api/) |
+| **ThingSpeak** | IoT analytics platform for device data channels. | 🔑 ApiKey | ✅ | [Link](https://api.thingspeak.com/) |
 | **Tuya Cloud** | Smart device management APIs. | 🔑 ApiKey | ✅ | [Link](https://developer.tuya.com/en/docs/cloud/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

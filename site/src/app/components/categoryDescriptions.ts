@@ -57,4 +57,9 @@ export const categoryDescriptions: Record<string, string> = {
   "documents-productivity": "Document processing, OCR, and productivity tools",
   "date-time": "Time zones, calendars, and date utilities",
   "qr-barcode": "QR code and barcode generation and lookup",
+  patents: "Patent search, families, and prior-art research",
+  vehicle: "Vehicle specs, telemetry, VIN decoding, and mobility",
+  "fitness-wellness": "Workouts, wearables, and nutrition tracking",
+  reviews: "Consumer reviews, ratings, and reputation data",
+  "networking-dns": "DNS, WHOIS, and IP intelligence lookups",
 };

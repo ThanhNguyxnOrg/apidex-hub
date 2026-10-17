@@ -192,7 +192,7 @@ print(response.json()['fact'])
 
 ## <a name="table-of-contents"></a>📊 API Catalog
 
-We maintain a curated database of **12,321** public endpoints across **84** categories. You can browse the categories directly:
+We maintain a curated database of **12,358** public endpoints across **89** categories. You can browse the categories directly:
 
 | Category | Category | Category |
 | --- | --- | --- |
@@ -211,19 +211,21 @@ We maintain a curated database of **12,321** public endpoints across **84** cate
 | [💻 Development](./apis/development.md) | [📖 Dictionaries](./apis/dictionaries.md) | [📄 Documents & Productivity](./apis/documents-productivity.md) |
 | [🎓 Education](./apis/education.md) | [📧 Email & SMS](./apis/email-sms.md) | [🎮 Entertainment](./apis/entertainment.md) |
 | [🌿 Environment & Climate](./apis/environment-climate.md) | [🎪 Events](./apis/events.md) | [💰 Finance](./apis/finance.md) |
-| [🍔 Food & Drink](./apis/food-drink.md) | [🎮 Games & Comics](./apis/games-comics.md) | [🌍 Geocoding](./apis/geocoding.md) |
-| [🌎 Geography & Countries](./apis/geography-countries.md) | [🏛️ Government & Civic](./apis/government-civic.md) | [❤️ Health](./apis/health.md) |
-| [🏠 IoT & Smart Devices](./apis/iot-smart-devices.md) | [💼 Jobs & Career](./apis/jobs-career.md) | [🧠 Machine Learning](./apis/machine-learning.md) |
-| [🔢 Math & Computation](./apis/math-computation.md) | [😂 Memes & Fun](./apis/memes-fun.md) | [🧪 Mock Data & Testing](./apis/mock-data-testing.md) |
-| [📈 Monitoring & Observability](./apis/monitoring-observability.md) | [🏛️ Museums & Art](./apis/museums-art.md) | [🎵 Music](./apis/music.md) |
-| [📰 News](./apis/news.md) | [🔓 Open Source Projects](./apis/open-source-projects.md) | [💳 Payments & Billing](./apis/payments-billing.md) |
+| [💪 Fitness & Wellness](./apis/fitness-wellness.md) | [🍔 Food & Drink](./apis/food-drink.md) | [🎮 Games & Comics](./apis/games-comics.md) |
+| [🌍 Geocoding](./apis/geocoding.md) | [🌎 Geography & Countries](./apis/geography-countries.md) | [🏛️ Government & Civic](./apis/government-civic.md) |
+| [❤️ Health](./apis/health.md) | [🏠 IoT & Smart Devices](./apis/iot-smart-devices.md) | [💼 Jobs & Career](./apis/jobs-career.md) |
+| [🧠 Machine Learning](./apis/machine-learning.md) | [🔢 Math & Computation](./apis/math-computation.md) | [😂 Memes & Fun](./apis/memes-fun.md) |
+| [🧪 Mock Data & Testing](./apis/mock-data-testing.md) | [📈 Monitoring & Observability](./apis/monitoring-observability.md) | [🏛️ Museums & Art](./apis/museums-art.md) |
+| [🎵 Music](./apis/music.md) | [🌐 Networking, DNS & WHOIS](./apis/networking-dns.md) | [📰 News](./apis/news.md) |
+| [🔓 Open Source Projects](./apis/open-source-projects.md) | [📜 Patents & Prior Art](./apis/patents.md) | [💳 Payments & Billing](./apis/payments-billing.md) |
 | [💭 Personality & Quotes](./apis/personality-quotes.md) | [📱 Phone & Telephony](./apis/phone-telephony.md) | [📷 Photography](./apis/photography.md) |
 | [🎙️ Podcasts](./apis/podcasts.md) | [📊 Public Data & Datasets](./apis/public-data.md) | [🔳 QR & Barcode](./apis/qr-barcode.md) |
-| [🔬 Science & Space](./apis/science.md) | [🔐 Security & Validation](./apis/security-validation.md) | [🛍️ Shopping](./apis/shopping.md) |
-| [💬 Social](./apis/social.md) | [⚽ Sports](./apis/sports.md) | [📝 Text Analysis & NLP](./apis/text-analysis-nlp.md) |
-| [📦 Tracking & Logistics](./apis/tracking-logistics.md) | [🚆 Transportation](./apis/transportation.md) | [✈️ Travel & Tourism](./apis/travel-tourism.md) |
-| [⚠️ Unofficial & Community APIs](./apis/unofficial-community.md) | [🔗 URL Shorteners](./apis/url-shorteners.md) | [🔧 Utilities & Tools](./apis/utilities-tools.md) |
-| [📹 Video](./apis/video.md) | [🌤️ Weather](./apis/weather.md) | [🕷️ Web Scraping & AI Search](./apis/web-scraping-crawling.md) |
+| [⭐ Reviews & Ratings](./apis/reviews.md) | [🔬 Science & Space](./apis/science.md) | [🔐 Security & Validation](./apis/security-validation.md) |
+| [🛍️ Shopping](./apis/shopping.md) | [💬 Social](./apis/social.md) | [⚽ Sports](./apis/sports.md) |
+| [📝 Text Analysis & NLP](./apis/text-analysis-nlp.md) | [📦 Tracking & Logistics](./apis/tracking-logistics.md) | [🚆 Transportation](./apis/transportation.md) |
+| [✈️ Travel & Tourism](./apis/travel-tourism.md) | [⚠️ Unofficial & Community APIs](./apis/unofficial-community.md) | [🔗 URL Shorteners](./apis/url-shorteners.md) |
+| [🔧 Utilities & Tools](./apis/utilities-tools.md) | [🚗 Vehicle & Mobility](./apis/vehicle.md) | [📹 Video](./apis/video.md) |
+| [🌤️ Weather](./apis/weather.md) | [🕷️ Web Scraping & AI Search](./apis/web-scraping-crawling.md) |  |
 
 *Note: The API database is automatically synchronized with our [APIDex Hub Website](https://thanhnguyxnorg.github.io/apidex-hub/).*
 

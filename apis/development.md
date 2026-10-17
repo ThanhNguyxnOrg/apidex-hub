@@ -66,11 +66,8 @@
 | **import.io** | Retrieve structured data from a website or RSS feed. | 🔑 ApiKey | ✅ | [Link](http://api.docs.import.io/) |
 | **Instatus** | Status page and incident management API. | 🔑 ApiKey | ✅ | [Link](https://instatus.com/help/api) |
 | **ip-fast.com** | IP address, country and city. | No | No | [Link](http://ip-fast.com/docs/) |
-| **IP2Location** | IP geolocation database (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.ip2location.com/web-service/ip2location) |
 | **IP2WHOIS Information Lookup** | WHOIS domain name lookup. | 🔑 ApiKey | ✅ | [Link](https://www.ip2whois.com/) |
 | **ipfind.io** | Geographic location of an IP address or any domain name along with some other... | 🔑 ApiKey | ✅ | [Link](https://ipfind.io) |
-| **IPGeolocation** | IP geolocation and timezone API (**Free tier: 30k/month**). | 🔑 ApiKey | ✅ | [Link](https://ipgeolocation.io/) |
-| **IPinfo** | IP Address Information. | No | ✅ | [Link](https://ipinfo.io/developers) |
 | **Ipstack** | Locate and identify website visitors by IP address. | 🔑 ApiKey | ✅ | [Link](https://ipstack.com/) |
 | **JSON 2 JSONP** | Convert JSON to JSONP (on-the-fly) for easy cross-domain data requests using ... | No | ✅ | [Link](https://json2jsonp.com/) |
 | **JSONbin.io** | Free JSON storage. | 🔑 ApiKey | ✅ | [Link](https://jsonbin.io) |

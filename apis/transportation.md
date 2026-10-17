@@ -11,7 +11,6 @@
 | **BC Ferries** | Sailing times and capacities for BC Ferries. | No | ✅ | [Link](https://www.bcferriesapi.ca) |
 | **BIC-Boxtech** | Container technical detail for the global container fleet. | 🔐 OAuth | ✅ | [Link](https://docs.bic-boxtech.org/) |
 | **Boston MBTA Transit** | Stations and predicted arrivals for MBTA. | 🔑 ApiKey | ✅ | [Link](https://www.mbta.com/developers/v3-api) |
-| **Brazilian Vehicles and Prices** | Vehicles information from Fundação Instituto de Pesquisas Econômicas - Fipe. | No | ✅ | [Link](https://deividfortuna.github.io/fipe/) |
 | **Compare Flight Prices** | API for comparing flight prices across platforms. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/obryan-software-obryan-software-default/api/compare-flight-prices/) |
 | **CTS** | CTS Realtime API. | 🔑 ApiKey | ✅ | [Link](https://api.cts-strasbourg.eu/) |
 | **FlightAware** | Real-time and historical flight tracking data. | 🔑 ApiKey | ✅ | [Link](https://www.flightaware.com/commercial/aeroapi/) |
@@ -25,12 +24,9 @@
 | **Kelley Blue Book** | Vehicle info, pricing, configuration, plus much more. | 🔑 ApiKey | ✅ | [Link](http://developer.kbb.com/#!/data/1-Default) |
 | **Land Transport Authority DataMall, Singapore** | Singapore transport information. | 🔑 ApiKey | No | [Link](https://datamall.lta.gov.sg/content/dam/datamall/datasets/LTA_DataMall_API_User_Guide.pdf) |
 | **MBTA v3** | Boston transit routes and predictions. | No | ✅ | [Link](https://api-v3.mbta.com/) |
-| **Mercedes-Benz** | Telematics data, remotely access vehicle functions, car configurator, locate ... | 🔑 ApiKey | ✅ | [Link](https://developer.mercedes-benz.com/apis) |
 | **Metro Lisboa** | Delays in subway lines. | No | No | [Link](http://app.metrolisboa.pt/status/getLinhas.php) |
 | **MTA** | NYC subway real-time feed APIs. | No | ✅ | [Link](https://api.mta.info/#/subwayRealTimeFeeds) |
 | **Navitia** | The open API for building cool stuff with transport data. | 🔑 ApiKey | ✅ | [Link](https://doc.navitia.io/) |
-| **NHTSA** | NHTSA Product Information Catalog and Vehicle Listing. | No | ✅ | [Link](https://vpic.nhtsa.dot.gov/api/) |
-| **NHTSA Recalls** | U.S. vehicle recall database by make, model and year. | No | ✅ | [Link](https://api.nhtsa.gov/recalls) |
 | **Open Charge Map** | Global public registry of electric vehicle charging locations. | 🔑 ApiKey | ✅ | [Link](https://openchargemap.org/site/develop/api) |
 | **OpenRouteService** | Directions, geocoding, isochrones. | 🔑 ApiKey | ✅ | [Link](https://openrouteservice.org/) |
 | **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://openskynetwork.github.io/opensky-api/) |
@@ -38,7 +34,6 @@
 | **REFUGE Restrooms** | Provides safe restroom access for transgender, intersex and gender nonconform... | No | ✅ | [Link](https://www.refugerestrooms.org/api/docs/#!/restrooms) |
 | **Sabre for Developers** | Travel Search - Limited usage. | 🔑 ApiKey | ✅ | [Link](https://developer.sabre.com) |
 | **Schiphol Airport** | Schiphol. | 🔑 ApiKey | ✅ | [Link](https://developer.schiphol.nl/) |
-| **Smartcar** | Lock and unlock vehicles and get data like odometer reading and location. Wor... | 🔐 OAuth | ✅ | [Link](https://smartcar.com/docs/) |
 | **Tankerkoenig** | German realtime gas/diesel prices. | 🔑 ApiKey | ✅ | [Link](https://creativecommons.tankerkoenig.de/swagger/) |
 | **Transitland** | Global transit data aggregator (**No Auth**). | No | ✅ | [Link](https://www.transit.land/documentation) |
 | **Transport for Atlanta, US** | Marta. | No | No | [Link](http://www.itsmarta.com/app-developer-resources.aspx) |

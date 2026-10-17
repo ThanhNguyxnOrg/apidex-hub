@@ -62,6 +62,10 @@ import {
   Phone,
   RadioTower,
   QrCode,
+  FileSearch,
+  Dumbbell,
+  Star,
+  Truck,
   type LucideIcon,
 } from "lucide-react";
 
@@ -132,6 +136,11 @@ export const CATEGORY_ICON_MAP: Record<string, LucideIcon> = {
   podcasts: Radio,
   "public-data": Database,
   "qr-barcode": QrCode,
+  patents: FileSearch,
+  "fitness-wellness": Dumbbell,
+  reviews: Star,
+  "networking-dns": Globe2,
+  vehicle: Truck,
   science: FlaskConical,
   "security-validation": ShieldCheck,
   shopping: ShoppingCart,
