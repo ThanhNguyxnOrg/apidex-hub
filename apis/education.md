@@ -18,6 +18,7 @@
 | **Unpaywall** | Find open-access full text by DOI. | No | ✅ | [Link](https://unpaywall.org/products/api) |
 | **WaniKani** | Japanese kanji, radicals and spaced-repetition learning data. | 🔑 ApiKey | ✅ | [Link](https://docs.api.wanikani.com/) |
 | **Wikidata** | Structured knowledge base (**No Auth**). | No | ✅ | [Link](https://www.wikidata.org/wiki/Wikidata:Data_access) |
+| **Wikimedia** | Wikimedia API portal: REST and Action APIs across wiki projects. | No | ✅ | [Link](https://api.wikimedia.org/) |
 | **Wikipedia API** | Free encyclopedia data and content (**No Auth**). | No | ✅ | [Link](https://www.mediawiki.org/wiki/API:Main_page) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
