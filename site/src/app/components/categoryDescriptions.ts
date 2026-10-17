@@ -61,4 +61,10 @@ export const categoryDescriptions: Record<string, string> = {
   "fitness-wellness": "Workouts, wearables, and nutrition tracking",
   reviews: "Consumer reviews, ratings, and reputation data",
   "networking-dns": "DNS, WHOIS, and IP intelligence lookups",
+  agents: "AI agent platforms, frameworks, and agent-building APIs",
+  automation: "Workflow automation and iPaaS integration platforms",
+  "lead-generation": "Prospecting, contact discovery, and outreach APIs",
+  "mcp-servers": "Model Context Protocol servers and registries",
+  "real-estate": "Property listings, valuations, and real estate data",
+  "seo-tools": "SERP tracking, SEO audits, and search analytics",
 };
