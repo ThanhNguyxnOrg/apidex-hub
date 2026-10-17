@@ -5,7 +5,6 @@
 | **Agent Verifier** | Self-check for AI agents: verifies Web Bot Auth signatures and shows how a request looks | No | ✅ | [Link](https://packet.guru/agents/reference) |
 | **Antideo** | Antideo maintains large database with spam and scam records, IP locations and infected ranges, proxy records and | No | ✅ | [Link](https://www.antideo.com) |
 | **Application Environment Verification** | Android library and API to verify the safety of user devices, detect rooted devices and other risks | 🔑 ApiKey | ✅ | [Link](https://github.com/fingerprintjs/aev) |
-| **BinaryEdge** | Provide access to BinaryEdge 40fy scanning platform. | 🔑 ApiKey | ✅ | [Link](https://docs.binaryedge.io/api-v2.html) |
 | **BitWarden** | Best open-source password manager. | 🔐 OAuth | ✅ | [Link](https://bitwarden.com/help/api/) |
 | **Botd** | Botd is a browser library for JavaScript bot detection | 🔑 ApiKey | ✅ | [Link](https://github.com/fingerprintjs/botd) |
 | **BreachDirectory** | Check if email, username, or phone number has been exposed in data breaches. | 🔑 ApiKey | ✅ | [Link](https://breachdirectory.org/) |
