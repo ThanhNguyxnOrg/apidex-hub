@@ -16,7 +16,6 @@
 | **Kaggle** | Create and interact with Datasets, Notebooks, and connect with Kaggle. | 🔑 ApiKey | ✅ | [Link](https://www.kaggle.com/docs/api) |
 | **LinkPreview** | Get JSON formatted summary with title, description and preview image for any ... | 🔑 ApiKey | ✅ | [Link](https://www.linkpreview.net) |
 | **Microlink.io** | Extract structured data from any website. | No | ✅ | [Link](https://microlink.io) |
-| **Nager.Date** | Public holidays for 100+ countries (**No Auth, no rate limit**). | No | ✅ | [Link](https://date.nager.at/Api) |
 | **Nasdaq Data Link** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://data.nasdaq.com/tools/api) |
 | **Nobel Prize** | Open data about nobel prizes and events. | No | ✅ | [Link](https://www.nobelprize.org/about/developer-zone-2/) |
 | **Open Data Minneapolis** | Spatial (GIS) and non-spatial city data for Minneapolis. | No | ✅ | [Link](https://opendata.minneapolismn.gov/) |
@@ -27,8 +26,6 @@
 | **PeakMetrics** | News articles and public datasets. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/peakmetrics-peakmetrics-default/api/peakmetrics-news) |
 | **Recreation Information Database** | Recreational areas, federal lands, historic sites, museums, and other attract... | 🔑 ApiKey | ✅ | [Link](https://ridb.recreation.gov/) |
 | **Socrata Open Data** | Access government and public sector data. | No | ✅ | [Link](https://dev.socrata.com/) |
-| **TimeZoneDB** | Time zone data and conversion (**No Auth**). | No | ✅ | [Link](https://timezonedb.com/api) |
-| **TIPO** | Taiwan patent search system api. | 🔑 ApiKey | ✅ | [Link](https://tiponet.tipo.gov.tw/Gazette/OpenData/OD/OD05.aspx?QryDS=API00) |
 | **Umeå Open Data** | Open data of the city Umeå in northen Sweden. | No | ✅ | [Link](https://opendata.umea.se/api/) |
 | **University of Oslo** | Courses, lecture videos, detailed information for courses etc. for the Univer... | No | ✅ | [Link](https://data.uio.no/) |
 | **UPC database** | More than 1.5 million barcode numbers from all around the world. | 🔑 ApiKey | ✅ | [Link](https://upcdatabase.org/api) |
@@ -36,6 +33,5 @@
 | **US Bureau of Labor Statistics** | US labor economics databases and statistical APIs. | 🔑 ApiKey | ✅ | [Link](https://www.bls.gov/developers/) |
 | **US Census** | US demographics, economics, housing data. | 🔑 ApiKey | ✅ | [Link](https://www.census.gov/data/developers/data-sets.html) |
 | **USDA FoodData** | Nutritional data for food products. | 🔑 ApiKey | ✅ | [Link](https://fdc.nal.usda.gov/api-guide.html) |
-| **World Bank** | Global development data. | No | ✅ | [Link](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

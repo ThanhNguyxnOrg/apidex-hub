@@ -19,6 +19,7 @@
 | **Shlink** | Self-hosted URL shortener with REST API. | 🔑 ApiKey | ✅ | [Link](https://shlink.io/documentation/api-docs/) |
 | **Short.io** | URL shortener with analytics. | 🔑 ApiKey | ✅ | [Link](https://developers.short.io/) |
 | **Shrtcode** | URl Shortener with multiple Domains. | No | ✅ | [Link](https://shrtco.de/docs) |
+| **T.LY** | Short links with click analytics and QR codes. | 🔑 ApiKey | ✅ | [Link](https://t.ly/api) |
 | **Tiny.cc** | Link shortening and management API. | 🔑 ApiKey | ✅ | [Link](https://tiny.cc/api-docs) |
 | **TinyURL** | URL shortener API (**No Auth**). | No | ✅ | [Link](https://tinyurl.com/app/dev) |
 | **UrlBae** | Simple and efficient short link creation. | 🔑 ApiKey | ✅ | [Link](https://urlbae.com/developers) |

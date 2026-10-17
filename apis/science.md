@@ -35,6 +35,5 @@
 | **USGS Earthquake** | Real-time earthquake data (**No Auth**). | No | ✅ | [Link](https://earthquake.usgs.gov/fdsnws/event/1/) |
 | **USGS Water Services** | Water quality and level info for rivers and lakes. | No | ✅ | [Link](https://waterservices.usgs.gov/) |
 | **Where the ISS at** | Real-time ISS position, velocity and visibility (**No Auth**). | No | ✅ | [Link](https://wheretheiss.at/w/developer) |
-| **Wolfram Short Answers** | Computational knowledge answers. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/short-answers-api/documentation) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
