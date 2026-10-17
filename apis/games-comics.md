@@ -14,7 +14,6 @@
 | **Clash Royale** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.clashroyale.com) |
 | **Comic Vine** | Comics. | No | ✅ | [Link](https://comicvine.gamespot.com/api/documentation) |
 | **Cross Universe** | Cross Universe Card Data. | No | ✅ | [Link](https://crossuniverse.psychpsyo.com/apiDocs.html) |
-| **Deck of Cards** | Deck of cards. | No | No | [Link](http://deckofcardsapi.com/) |
 | **Deck of Cards** | Shuffle and draw cards from virtual decks. | No | ✅ | [Link](https://deckofcardsapi.com/) |
 | **Destiny The Game** | Bungie Platform API. | 🔑 ApiKey | ✅ | [Link](https://bungie-net.github.io/multi/index.html) |
 | **Digimon** | Digimon information. | No | ✅ | [Link](https://digimon-api.vercel.app/) |

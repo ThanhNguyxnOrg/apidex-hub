@@ -15,10 +15,13 @@
 | **Gyazo** | Image upload and screenshot APIs. | 🔑 ApiKey | ✅ | [Link](https://gyazo.com/) |
 | **ImageKit** | Image and media upload, optimization, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://imagekit.io/docs/api-reference/) |
 | **ImgBB** | Simple image upload API with free tier. | 🔑 ApiKey | ✅ | [Link](https://api.imgbb.com/) |
+| **Internxt** | Privacy-focused cloud storage API. | 🔑 ApiKey | ✅ | [Link](https://internxt.com/developers) |
+| **MEGA** | Cloud storage with end-to-end encryption. | 🔑 ApiKey | ✅ | [Link](https://mega.io/developers) |
 | **OneDrive** | File Sharing and Storage. | 🔐 OAuth | ✅ | [Link](https://developer.microsoft.com/onedrive) |
 | **OneDrive (Microsoft Graph)** | OneDrive file and folder APIs via Microsoft Graph. | 🔐 OAuth | ✅ | [Link](https://learn.microsoft.com/en-us/graph/api/resources/onedrive) |
 | **Pantry** | Free JSON storage for small projects. | No | ✅ | [Link](https://getpantry.cloud/) |
 | **Pastebin** | Plain Text Storage. | 🔑 ApiKey | ✅ | [Link](https://pastebin.com/doc_api) |
+| **pCloud** | Cloud storage with file, folder and sharing APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.pcloud.com/) |
 | **Pinata** | IPFS pinning and decentralized file storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.pinata.cloud/) |
 | **Quip** | File Sharing and Storage for groups. | 🔑 ApiKey | ✅ | [Link](https://quip.com/dev/automation/documentation) |
 | **Storj** | Decentralized cloud object storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.storj.io/) |

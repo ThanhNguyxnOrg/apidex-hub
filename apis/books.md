@@ -12,6 +12,7 @@
 | **ISBNdb** | ISBN book database. | 🔑 ApiKey | ✅ | [Link](https://isbndb.com/apidocs/v2) |
 | **Open Library** | Fetch data about millions of books and covers. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
 | **Penguin Publishing** | Book data. | No | ✅ | [Link](http://www.penguinrandomhouse.biz/webservices/rest/) |
+| **Poetry DB** | Database of poetry with poems, poets and lines. | No | ✅ | [Link](https://poetrydb.org/index) |
 | **Quran** | RESTful Quran API with multiple languages. | No | ✅ | [Link](https://quran.api-docs.io/) |
 | **Quran Cloud** | Quran text, translations, and recitations. | No | ✅ | [Link](https://alquran.cloud/api) |
 | **The Bible API** | Bible metadata and translations for apps. | 🔑 ApiKey | ✅ | [Link](https://docs.api.bible) |

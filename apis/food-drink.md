@@ -5,6 +5,7 @@
 | **BaconMockup** | Resizable bacon placeholder images. | No | ✅ | [Link](https://baconmockup.com/) |
 | **Chomp** | Data about various grocery products and foods. | 🔑 ApiKey | ✅ | [Link](https://chompthis.com/api/) |
 | **Coffee** | Random coffee images (**No Auth**). | No | ✅ | [Link](https://coffee.alexflipnote.dev/) |
+| **Edamam** | Nutrition analysis, recipes and diet classification. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/) |
 | **Edamam Recipe** | Recipe search and nutrition analysis. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-recipe-api) |
 | **Edamam recipes** | Recipe Search. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-docs-recipe-api) |
 | **Fruityvice** | Data about all kinds of fruit. | No | ✅ | [Link](https://www.fruityvice.com) |

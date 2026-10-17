@@ -7,7 +7,9 @@
 | **Carbon Interface** | CO2 emissions for flights, shipping, and energy. | 🔑 ApiKey | ✅ | [Link](https://docs.carboninterface.com/) |
 | **Climatiq** | Carbon footprint calculations API. | 🔑 ApiKey | ✅ | [Link](https://www.climatiq.io/docs) |
 | **CO2 Offset** | API calculates and validates the carbon footprint. | No | ✅ | [Link](https://co2offset.io/api.html) |
+| **CO2 Signal** | Real-time carbon intensity of electricity by region. | 🔑 ApiKey | ✅ | [Link](https://co2signal.com/) |
 | **Danish data service Energi** | Open energy data from Energinet to society. | No | ✅ | [Link](https://www.energidataservice.dk/) |
+| **Electricity Maps** | Live carbon intensity and electricity source mix. | 🔑 ApiKey | ✅ | [Link](https://static.electricitymaps.com/api/docs/index.html) |
 | **Global Forest Watch** | Deforestation and forest monitoring data. | 🔑 ApiKey | ✅ | [Link](https://www.globalforestwatch.org/help/developers/) |
 | **GrünstromIndex** | Green Power Index for Germany (Grünstromindex/GSI) | No | No | [Link](https://gruenstromindex.de/) |
 | **Luchtmeetnet** | Predicted and actual air quality components for The Netherlands (RIVM) | No | ✅ | [Link](https://api-docs.luchtmeetnet.nl/) |
@@ -19,6 +21,7 @@
 | **Srp Energy** | Hourly usage energy report for Srp customers. | 🔑 ApiKey | ✅ | [Link](https://srpenergy-api-client-python.readthedocs.io/en/latest/api.html) |
 | **UK Carbon Intensity** | The Official Carbon Intensity API for Great Britain developed by National Grid. | No | ✅ | [Link](https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v1-0-0) |
 | **WaterQuality (EPA)** | US water quality monitoring data. | No | ✅ | [Link](https://www.waterqualitydata.us/) |
+| **WattTime** | Real-time and forecast marginal emissions data. | 🔑 ApiKey | ✅ | [Link](https://www.watttime.org/api-documentation/) |
 | **Website Carbon** | API to estimate the carbon footprint of loading web pages. | No | ✅ | [Link](https://api.websitecarbon.com/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

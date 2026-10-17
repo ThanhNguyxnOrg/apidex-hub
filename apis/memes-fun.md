@@ -12,6 +12,7 @@
 | **Fun Translations** | Translate text to Yoda, Pirate, etc. | 🔑 ApiKey | ✅ | [Link](https://funtranslations.com/api) |
 | **Imgflip** | Get popular meme templates to create your own memes (**No Auth**). | No | ✅ | [Link](https://api.imgflip.com/) |
 | **JokeAPI** | Jokes in various categories (**No Auth**). | No | ✅ | [Link](https://jokeapi.dev/) |
+| **Kanye Rest** | Random Kanye West quotes. | No | ✅ | [Link](https://kanye.rest/) |
 | **Kanye.rest** | Random Kanye West quotes (**No Auth**). | No | ✅ | [Link](https://api.kanye.rest/) |
 | **Random Dog Facts** | Random dog facts API (**No Auth**). | No | ✅ | [Link](https://kinduff.github.io/dog-api/) |
 | **Tronald Dump** | Random Donald Trump quotes (**No Auth**). | No | ✅ | [Link](https://tronalddump.io/) |

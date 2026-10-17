@@ -3,6 +3,7 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Brevo (Sendinblue)** | Transactional email, SMS, and marketing automation. | 🔑 ApiKey | ✅ | [Link](https://developers.brevo.com/) |
+| **ClickSend** | SMS, MMS, email, voice and fax messaging API. | 🔑 ApiKey | ✅ | [Link](https://developers.clicksend.com/) |
 | **Cloudmersive Validate** | Validate email addresses, phone numbers, VAT numbers and domain names. | 🔑 ApiKey | ✅ | [Link](https://cloudmersive.com/validate-api) |
 | **Disify** | Validate and detect disposable and temporary email addresses. | No | ✅ | [Link](https://www.disify.com/) |
 | **DropMail** | GraphQL API for creating and managing ephemeral e-mail inboxes. | No | ✅ | [Link](https://dropmail.me/api/#live-demo) |

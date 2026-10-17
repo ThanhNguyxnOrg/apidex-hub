@@ -14,6 +14,7 @@
 | **JSearch** | Job search API (via RapidAPI). | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch) |
 | **Reed** | UK job board API. | 🔑 ApiKey | ✅ | [Link](https://www.reed.co.uk/developers) |
 | **Remoteok** | API for remote jobs (often used for job board projects). | No | ✅ | [Link](https://remoteok.com/api) |
+| **Remotive** | Remote job listings with full-text search. | No | ✅ | [Link](https://remotive.com/api/remote-jobs) |
 | **The Muse** | Job search and company data. | 🔑 ApiKey | ✅ | [Link](https://www.themuse.com/developers/api/v2) |
 | **Upwork** | Freelance job board and management system. | 🔐 OAuth | ✅ | [Link](https://developers.upwork.com/) |
 | **USAJOBS** | US government job listings. | 🔑 ApiKey | ✅ | [Link](https://developer.usajobs.gov/) |
