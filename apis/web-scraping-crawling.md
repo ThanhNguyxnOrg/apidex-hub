@@ -2,12 +2,15 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Bing Webmaster Tools** | Index management, SEO reports and URL submission APIs. | 🔑 ApiKey | ✅ | [Link](https://www.bing.com/webmasters/) |
 | **Bright Data** | Proxy networks and ready-made datasets for web data. | 🔑 ApiKey | ✅ | [Link](https://docs.brightdata.com/) |
 | **BrowseAI** | No-code robots to extract structured data from any website without proxies. | 🔑 ApiKey | ✅ | [Link](https://docs.browse.ai/api/) |
 | **Browserless** | Headless Chrome as a service for scraping and automation. | 🔑 ApiKey | ✅ | [Link](https://docs.browserless.io/) |
+| **DataForSEO** | SERP, keyword and backlink data APIs for SEO tooling. | 🔑 ApiKey | ✅ | [Link](https://docs.dataforseo.com/) |
 | **Diffbot** | Automatic extraction of entities and articles from any page. | 🔑 ApiKey | ✅ | [Link](https://docs.diffbot.com/) |
 | **Exa AI** | Embeddings-based search engine API engineered specifically for AI agents and LLMs. | 🔑 ApiKey | ✅ | [Link](https://docs.exa.ai/) |
 | **Firecrawl** | Turn entire websites into clean, LLM-ready markdown or structured data with one API. | 🔑 ApiKey | ✅ | [Link](https://docs.firecrawl.dev/) |
+| **Google Search Console** | Search performance, indexing and sitemap management APIs. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/webmaster-tools/about) |
 | **Jina AI Reader** | Zero-config reader API that converts any URL to clean LLM-friendly markdown. | No | ✅ | [Link](https://jina.ai/reader/) |
 | **Kagi** | Kagi Search API for paid web search results. | 🔑 ApiKey | ✅ | [Link](https://help.kagi.com/kagi/api/search.html) |
 | **ScraperAPI** | Proxy and web scraping API that handles browsers, proxies, and CAPTCHAs automatically. | 🔑 ApiKey | ✅ | [Link](https://www.scraperapi.com/documentation/) |
@@ -19,4 +22,5 @@
 | **Tavily** | Search engine API optimized for LLMs, RAG applications, and autonomous agents. | 🔑 ApiKey | ✅ | [Link](https://tavily.com/) |
 | **ZenRows** | Web scraping API with advanced anti-bot bypass for JavaScript-heavy websites. | 🔑 ApiKey | ✅ | [Link](https://www.zenrows.com/documentation/) |
 | **Zyte** | Web scraping API with smart routing and anti-blocking. | 🔑 ApiKey | ✅ | [Link](https://docs.zyte.com/) |
+
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
