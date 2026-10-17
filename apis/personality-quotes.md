@@ -10,7 +10,6 @@
 | **They Said So Quotes** | Quotes Trusted by many fortune brands around the world. | No | ✅ | [Link](https://theysaidso.com/api/) |
 | **Traitify** | Assess, collect and analyze Personality. | No | ✅ | [Link](https://app.traitify.com/developer) |
 | **Type.fit Quotes** | Collection of inspirational quotes (**No Auth**). | No | ✅ | [Link](https://type.fit/api/quotes) |
-| **Udemy(instructor)** | API for instructors on Udemy. | 🔑 ApiKey | ✅ | [Link](https://www.udemy.com/developers/instructor/) |
 | **ZenQuotes** | Inspirational quotes with author name and formatting options. | No | ✅ | [Link](https://zenquotes.io/api/random) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

@@ -10,6 +10,7 @@
 | **CircleCI** | CI pipelines, workflows, and artifacts API. | 🔑 ApiKey | ✅ | [Link](https://circleci.com/docs/api/v2/) |
 | **Codecov** | Upload and query code coverage reports. | 🔑 ApiKey | ✅ | [Link](https://docs.codecov.com/docs) |
 | **Codeship** | Codeship is a Continuous Integration Platform in the cloud. | 🔑 ApiKey | ✅ | [Link](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/api-overview/) |
+| **Coolify** | Self-hosted deployment platform: apps, servers, deployments API. | 🔑 ApiKey | ✅ | [Link](https://coolify.io/docs/api/overview) |
 | **Coveralls** | Pull coverage data from CI builds. | 🔑 ApiKey | ✅ | [Link](https://docs.coveralls.io/) |
 | **Drone** | CI pipeline API for Drone server. | 🔑 ApiKey | ✅ | [Link](https://docs.drone.io/api/) |
 | **Jenkins** | Automation server remote API. | 🔑 ApiKey | ✅ | [Link](https://www.jenkins.io/doc/book/using/remote-access-api/) |
