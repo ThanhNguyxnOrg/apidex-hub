@@ -25,7 +25,6 @@
 | **Météo-France** | French weather forecasts and alerts | 🔑 ApiKey | ✅ | [Link](https://portail-api.meteofrance.fr/) |
 | **NASA POWER** | Global solar and weather data for energy and agriculture | No | ✅ | [Link](https://power.larc.nasa.gov/docs/) |
 | **National Weather Service** | Weather forecasts, alerts, and observations for the United States. | No | ✅ | [Link](https://www.weather.gov/documentation/services-web-api) |
-| **ODWeather** | Weather and weather webcams | No | No | [Link](http://api.oceandrivers.com/static/docs.html) |
 | **Oikolab** | 70+ years of global, hourly historical and forecast weather data from NOAA an... | 🔑 ApiKey | ✅ | [Link](https://docs.oikolab.com) |
 | **Open-Meteo** | Free non-commercial weather forecast API without API keys. | No | ✅ | [Link](https://open-meteo.com/en/docs) |
 | **openSenseMap** | Data from Personal Weather Stations called senseBoxes. | No | ✅ | [Link](https://api.opensensemap.org/) |

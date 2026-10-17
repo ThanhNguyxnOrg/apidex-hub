@@ -84,7 +84,6 @@
 | **Transport for Budapest, Hungary** | Budapest public transport API. | No | ✅ | [Link](https://bkkfutar.docs.apiary.io) |
 | **Transport for Chicago, US** | Chicago Transit Authority (CTA) | 🔑 ApiKey | No | [Link](http://www.transitchicago.com/developers/) |
 | **Transport for Czech Republic** | Czech transport API. | No | ✅ | [Link](https://www.chaps.cz/eng/products/idos-internet) |
-| **Transport for Denver, US** | RTD | No | No | [Link](http://www.rtd-denver.com/gtfs-developer-guide.shtml) |
 | **Transport for Finland** | Finnish transport API. | No | ✅ | [Link](https://digitransit.fi/en/developers/) |
 | **Transport for Grenoble, France** | Grenoble public transport. | No | No | [Link](https://www.mobilites-m.fr/pages/opendata/OpenDataApi.html) |
 | **Transport for Hessen, Germany** | RMV API (Public Transport in Hessen) | No | ✅ | [Link](https://opendata.rmv.de/site/start.html) |

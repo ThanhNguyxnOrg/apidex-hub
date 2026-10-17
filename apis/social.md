@@ -47,7 +47,7 @@
 | **PWrTelegram Bot** | Boosted version of the Telegram bot API | 🔒 OAuth | ✅ | [Link](https://pwrtelegram.xyz) |
 | **Reddit** | Social news. | 🔐 OAuth | ✅ | [Link](https://www.reddit.com/dev/api) |
 | **RedditAPIs** | Reddit data API: subreddit listings, post/comment/community/user search, comment trees, top posts | 🔑 ApiKey | ✅ | [Link](https://www.redditapis.com/) |
-| **Revolt** | Revolt open source Discord alternative | 🔑 ApiKey | ✅ | [Link](https://developers.revolt.chat/api/) |
+| **Revolt** | Revolt (now Stoat) open source Discord alternative | 🔑 ApiKey | ✅ | [Link](https://developers.stoat.chat) |
 | **RiteKit** | RiteKit API is based on REST principles. Authentication uses standard OAuth 2.0 process ##Getting started 1. Sign up | 🔒 OAuth | ✅ | [Link](https://ritekit.com) |
 | **Slack** | Team communication. | 🔐 OAuth | ✅ | [Link](https://api.slack.com/) |
 | **Snapchat** | Photo and video sharing. | 🔐 OAuth | ✅ | [Link](https://developers.snap.com/) |

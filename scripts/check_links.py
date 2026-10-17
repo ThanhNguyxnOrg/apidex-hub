@@ -130,6 +130,8 @@ def check_link(url, timeout=8, max_retries=2):
                 return {'url': url, 'status': code, 'state': 'protected', 'note': 'Unauthorized (HTTP 401) - access restricted'}
             elif code == 403:
                 return {'url': url, 'status': code, 'state': 'protected', 'note': 'Forbidden (HTTP 403) - restricted access'}
+            elif code == 418:
+                return {'url': url, 'status': code, 'state': 'protected', 'note': "Bot protection (418 I'm a teapot) - API likely works"}
 
             elif code in [400, 405, 406]:
                 return {'url': url, 'status': code, 'state': 'working', 'note': 'API up (Invalid request/Method)'}

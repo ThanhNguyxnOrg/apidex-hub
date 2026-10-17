@@ -112,7 +112,7 @@ def verify_with_playwright(browser, url):
             return True, status, "Playwright: Verified working"
             
         # If status is >= 400, check if it is a WAF challenge
-        is_waf_code = status in [403, 429, 503]
+        is_waf_code = status in [401, 403, 418, 429, 503]
         if is_waf_code:
             cloudflare_indicators = ['just a moment', 'cloudflare', 'attention required', 'security check', 'ddos protection']
             if any(indicator in title or indicator in content for indicator in cloudflare_indicators):
@@ -300,7 +300,7 @@ def main():
                         target_state = 'error'
                     elif 'timeout' in note_lower:
                         target_state = 'warning'
-                    elif new_status in [401, 403, 429]:
+                    elif new_status in [401, 403, 418, 429]:
                         target_state = 'protected'
                     elif 'cloudflare' in note_lower or 'blocked by' in note_lower or 'waf' in note_lower or 'turnstile' in note_lower or 'bot protection' in note_lower:
                         target_state = 'protected'

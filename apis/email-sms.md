@@ -51,7 +51,6 @@
 | **Tomba** | Email finder and verifier API. | 🔑 ApiKey | ✅ | [Link](https://tomba.io/api) |
 | **Twilio** | SMS, voice, and messaging (trial credits). | 🔑 ApiKey | ✅ | [Link](https://www.twilio.com/docs/usage/api) |
 | **uchecker** | Bulk email verification with full SMTP server responses | 🔑 ApiKey | ✅ | [Link](https://api.uchecker.net/docs) |
-| **Verifier** | Verifies that a given email is real | 🔑 ApiKey | ✅ | [Link](https://verifier.meetchopra.com/docs#/) |
 | **Vonage (Nexmo)** | SMS and voice APIs (trial credits). | 🔑 ApiKey | ✅ | [Link](https://developer.vonage.com/api) |
 | **WINSMS** | WinSMS RESTful API | 🔑 ApiKey | ✅ | [Link](https://api.winsms.co.za) |
 | **Xeramail Temp Mail** | Temp email address REST API for privacy, testing, automation with OTP extraction | 🔑 ApiKey | ✅ | [Link](https://xeramail.com/docs/api) |

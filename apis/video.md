@@ -43,7 +43,6 @@
 | **The Lord of the Rings** | The Lord of the Rings API. | 🔑 ApiKey | ✅ | [Link](https://the-one-api.dev/) |
 | **The Vampire Diaries** | TV Show Data. | 🔑 ApiKey | ✅ | [Link](https://vampire-diaries-api.netlify.app/) |
 | **ThronesApi** | Game Of Thrones Characters Data with imagery. | No | ✅ | [Link](https://thronesapi.com/) |
-| **TrailerAddict** | Easily embed trailers from TrailerAddict | 🔑 ApiKey | ✅ | [Link](https://www.traileraddict.com/trailerapi) |
 | **TranscriptFetch** | Transcripts for YouTube, TikTok, Instagram videos and podcasts as clean text or timestamped JSON | 🔑 ApiKey | ✅ | [Link](https://transcriptfetch.com/docs) |
 | **TranscriptYT** | YouTube transcripts as JSON, text, SRT or VTT in 150+ languages, with AI fallback | 🔑 ApiKey | ✅ | [Link](https://transcript-yt.com/docs) |
 | **TubeToTranscript** | Extract clean YouTube video transcripts via REST API | 🔑 ApiKey | ✅ | [Link](https://www.tubetotranscript.com/youtube-transcript-api) |

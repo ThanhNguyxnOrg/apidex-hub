@@ -53,7 +53,7 @@
 | **Finage** | Finage is a stock, currency, cryptocurrency, indices, and ETFs real-time & hi... | 🔑 ApiKey | ✅ | [Link](https://finage.co.uk) |
 | **Financial Data** | Stock Market and Financial Data | 🔑 ApiKey | ✅ | [Link](https://financialdata.net/) |
 | **Financial Modeling Prep** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://site.financialmodelingprep.com/developer/docs) |
-| **FinancialModelingPrep** | Company fundamentals, ratios and historical stock data. | 🔑 ApiKey | ✅ | [Link](https://financialmodelingprep.com/api/) |
+| **FinancialModelingPrep** | Company fundamentals, ratios and historical stock data. | 🔑 ApiKey | ✅ | [Link](https://financialmodelingprep.com/developer/docs) |
 | **FinBridge** | Official-source financials, segments, valuation, peers and prices for KR, US, JP, TW companies | 🔑 ApiKey | ✅ | [Link](https://www.gronox.kr/docs) |
 | **Finlight** | Realtime financial news with sentiment and article content | 🔑 ApiKey | ✅ | [Link](https://finlight.me) |
 | **Finnhub** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://finnhub.io/docs/api) |
