@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T11:29:44.289605+00:00",
+    "generated_at": "2026-10-17T11:31:57.975521+00:00",
     "source": "README.md",
-    "total_apis": 3246,
+    "total_apis": 3244,
     "total_categories": 70,
     "no_auth_count": 1432,
-    "api_key_count": 1559,
+    "api_key_count": 1557,
     "oauth_count": 255,
-    "https_count": 3155,
+    "https_count": 3153,
     "https_percentage": 97
   },
   "categories": [
@@ -16725,7 +16725,7 @@
       "id": "podcasts",
       "emoji": "🎙️",
       "name": "Podcasts",
-      "api_count": 18,
+      "api_count": 17,
       "apis": [
         {
           "name": "Acast",
@@ -16824,13 +16824,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://podchaser.com/developers"
-        },
-        {
-          "name": "Podscan",
-          "description": "Search millions of podcasts; transcripts and verbatim search.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://podscan.fm/api-docs"
         },
         {
           "name": "Simplecast",
@@ -18789,7 +18782,7 @@
       "id": "shopping",
       "emoji": "🛍️",
       "name": "Shopping",
-      "api_count": 53,
+      "api_count": 52,
       "apis": [
         {
           "name": "API2Cart",
@@ -19014,13 +19007,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://opentiendas.dev/redocusaurus/plugin-redoc-0.yaml"
-        },
-        {
-          "name": "PriceCharting",
-          "description": "Historical market prices for video games and trading cards.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.pricecharting.com/api-docs"
         },
         {
           "name": "Profitvana",

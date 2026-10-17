@@ -34,7 +34,6 @@
 | **OneFindMe** | Search AliExpress in any language: price, rating and orders for the delivery country | No | ✅ | [Link](https://onefindme.com/mcp) |
 | **Open Beauty Facts** | Open cosmetics products database with ingredients and barcodes. | No | ✅ | [Link](https://world.openbeautyfacts.org/data) |
 | **OpenTiendas** | Official e-commerce API and webhooks | 🔑 ApiKey | ✅ | [Link](https://opentiendas.dev/redocusaurus/plugin-redoc-0.yaml) |
-| **PriceCharting** | Historical market prices for video games and trading cards. | 🔑 ApiKey | ✅ | [Link](https://www.pricecharting.com/api-docs) |
 | **Profitvana** | Seller fees for 31 marketplaces and payment processors, verified monthly | No | ✅ | [Link](https://www.profitvana.com/developers) |
 | **Qualpay Payment Gateway** | This document describes the Qualpay Payment Gateway API | 🔑 ApiKey | ✅ | [Link](https://qualpay.com) |
 | **Rakuten** | Japanese marketplace items, search and ranking API. | 🔑 ApiKey | ✅ | [Link](https://webservice.rakuten.co.jp/) |
