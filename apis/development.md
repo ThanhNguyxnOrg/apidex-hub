@@ -12,6 +12,7 @@
 | **ApiFlash** | Chrome based screenshot API. | 🔑 ApiKey | ✅ | [Link](https://apiflash.com/) |
 | **APILayer** | Marketplace for various APIs. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/) |
 | **APIs.guru** | Wikipedia for Web APIs. | No | ✅ | [Link](https://apis.guru/api-doc/) |
+| **App Store Connect** | Apple developer platform: builds, TestFlight, reviews and sales. | 🔑 ApiKey | ✅ | [Link](https://developer.apple.com/app-store-connect/api/) |
 | **Auth0** | Authentication and authorization platform (free tier). | 🔐 OAuth | ✅ | [Link](https://auth0.com/docs/api) |
 | **Aviationstack** | Real-time flight status and global aviation data. | 🔑 ApiKey | ✅ | [Link](https://aviationstack.com/) |
 | **Azure DevOps** | DevOps tools. | 🔑 ApiKey | ✅ | [Link](https://docs.microsoft.com/en-us/rest/api/azure/devops) |
@@ -51,6 +52,7 @@
 | **Google Firebase** | Google's mobile application development platform that helps build, improve, a... | 🔑 ApiKey | ✅ | [Link](https://firebase.google.com/docs) |
 | **Google Fonts** | Metadata for all families served by Google Fonts. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/fonts/docs/developer_api) |
 | **Google Keep** | API to read, write, and format Google Keep notes. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/keep/api/reference/rest) |
+| **Google Play Developer** | Android publishing, in-app products and crash reporting. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/android-publisher) |
 | **Google Sheets** | Read and write to Google Sheets. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/sheets/api/reference/rest) |
 | **Google Slides** | API to read, write, and format Google Slides presentations. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/slides/api/reference/rest) |
 | **Gorest** | Online REST API for Testing and Prototyping. | 🔐 OAuth | ✅ | [Link](https://gorest.co.in/) |
@@ -73,6 +75,7 @@
 | **JSON 2 JSONP** | Convert JSON to JSONP (on-the-fly) for easy cross-domain data requests using ... | No | ✅ | [Link](https://json2jsonp.com/) |
 | **JSONbin.io** | Free JSON storage. | 🔑 ApiKey | ✅ | [Link](https://jsonbin.io) |
 | **Judge0 CE** | Online code execution system. | 🔑 ApiKey | ✅ | [Link](https://ce.judge0.com/) |
+| **Koyeb** | Serverless container and deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://www.koyeb.com/docs/api) |
 | **Kroki** | Creates diagrams from textual descriptions. | No | ✅ | [Link](https://kroki.io) |
 | **Linear** | Modern issue tracking for software teams. | 🔑 ApiKey | ✅ | [Link](https://developers.linear.app/docs) |
 | **Logs.to** | Generate logs. | 🔑 ApiKey | ✅ | [Link](https://logs.to/) |

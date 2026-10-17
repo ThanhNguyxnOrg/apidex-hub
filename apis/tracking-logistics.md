@@ -6,6 +6,7 @@
 | **Aftership** | API to update, manage and track shipment efficiently. | 🔑 ApiKey | ✅ | [Link](https://developers.aftership.com/reference/quick-start) |
 | **Correios** | Integration to provide information and prepare shipments using Correio's serv... | 🔑 ApiKey | ✅ | [Link](https://cws.correios.com.br/ajuda) |
 | **DHL Shipment Tracking** | DHL package tracking API. | 🔑 ApiKey | ✅ | [Link](https://developer.dhl.com/api-reference/shipment-tracking) |
+| **EasyPost** | Shipping rates, labels and tracking across major carriers. | 🔑 ApiKey | ✅ | [Link](https://docs.easypost.com/) |
 | **FedEx Tracking** | FedEx package tracking API. | 🔑 ApiKey | ✅ | [Link](https://developer.fedex.com/api/en-us/catalog/track.html) |
 | **Pixela** | API for recording and tracking habits or effort, routines. | 🔑 ApiKey | ✅ | [Link](https://pixe.la) |
 | **PostalPinCode** | API for getting Pincode details in India. | No | ✅ | [Link](http://www.postalpincode.in/Api-Details) |

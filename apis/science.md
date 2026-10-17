@@ -9,6 +9,7 @@
 | **CORE** | Access the world's Open Access research papers. | 🔑 ApiKey | ✅ | [Link](https://core.ac.uk/services#api) |
 | **DOAJ** | Directory of open access journals and articles. | No | ✅ | [Link](https://doaj.org/api/docs) |
 | **Europe PMC** | Biomedical and life science literature search. | No | ✅ | [Link](https://www.ebi.ac.uk/europepmc/webservices/rest/search) |
+| **Figshare** | Open research outputs, datasets and institutional repository data. | 🔑 ApiKey | ✅ | [Link](https://docs.figshare.com/) |
 | **GBIF** | Global biodiversity occurrence data (**No Auth**). | No | ✅ | [Link](https://www.gbif.org/developer/summary) |
 | **isEven (humor)** | Check if a number is even. | No | ✅ | [Link](https://isevenapi.xyz/) |
 | **ISRO** | ISRO Space Crafts Information. | No | ✅ | [Link](https://isro.vercel.app) |
@@ -36,5 +37,6 @@
 | **USGS Earthquake** | Real-time earthquake data (**No Auth**). | No | ✅ | [Link](https://earthquake.usgs.gov/fdsnws/event/1/) |
 | **USGS Water Services** | Water quality and level info for rivers and lakes. | No | ✅ | [Link](https://waterservices.usgs.gov/) |
 | **Where the ISS at** | Real-time ISS position, velocity and visibility (**No Auth**). | No | ✅ | [Link](https://wheretheiss.at/w/developer) |
+| **Zenodo** | CERN open repository for research datasets with DOIs. | 🔑 ApiKey | ✅ | [Link](https://developers.zenodo.org/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
