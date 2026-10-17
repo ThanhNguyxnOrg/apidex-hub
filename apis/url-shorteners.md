@@ -2,6 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **1pt** | Minimal URL shortener with analytics. | No | ✅ | [Link](https://github.com/1pt-co/api/blob/main/README.md) |
 | **Bitly** | URL shortener and link management. | 🔐 OAuth | ✅ | [Link](http://dev.bitly.com/get_started.html) |
 | **BL.INK** | URL shortener and branded link management. | 🔑 ApiKey | ✅ | [Link](https://bl.ink/developers) |
 | **CleanURI** | URL shortener service. | No | ✅ | [Link](https://cleanuri.com/docs) |

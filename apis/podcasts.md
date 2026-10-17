@@ -3,7 +3,9 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Acast** | Podcast platform and publisher APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.acast.com/) |
+| **Apple Search** | Search podcasts, episodes, authors and countries. | No | ✅ | [Link](https://performance-partners.apple.com/search-api) |
 | **Audioboom** | Podcast metadata and episode endpoints. | No | ✅ | [Link](https://api.audioboom.com/) |
+| **Audiosearch** | Podcast discovery, transcripts and episode metadata. | 🔑 ApiKey | ✅ | [Link](https://audiosearch.com/) |
 | **Buzzsprout** | Podcast hosting and episodes API. | 🔑 ApiKey | ✅ | [Link](https://www.buzzsprout.com/api) |
 | **Fountain** | Podcast app developer API resources. | No | ✅ | [Link](https://fountain.fm/developer) |
 | **fyyd** | Podcast search and metadata API. | No | ✅ | [Link](https://api.fyyd.de/) |

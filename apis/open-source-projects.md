@@ -2,12 +2,14 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **ClearlyDefined** | Curated metadata and license scores for open-source components. | No | ✅ | [Link](https://docs.clearlydefined.io/) |
 | **Countly** | Countly web analytics. | No | ✅ | [Link](https://github.com/Countly/countly-server) |
 | **Creative Commons Catalog** | Search among openly licensed and public domain works. | 🔐 OAuth | ✅ | [Link](https://api.creativecommons.engineering/) |
 | **deps.dev** | Open package/dependency intelligence by Google. | No | ✅ | [Link](https://docs.deps.dev/api/) |
 | **Drupal.org** | Drupal.org. | No | ✅ | [Link](https://www.drupal.org/drupalorg/docs/api) |
 | **ecosyste.ms** | Open source ecosystem data APIs. | No | ✅ | [Link](https://docs.ecosyste.ms/) |
 | **GitHub Contribution Chart Generator** | Create an image of your GitHub contributions. | No | ✅ | [Link](https://github-contributions.vercel.app) |
+| **Libraries.io** | Dependency and package metadata for 40+ registries. | 🔑 ApiKey | ✅ | [Link](https://libraries.io/api) |
 | **Metabase** | An open source Business Intelligence server to share data and analytics insid... | No | ✅ | [Link](https://www.metabase.com/) |
 | **Packagist** | PHP package repository API. | No | ✅ | [Link](https://packagist.org/apidoc) |
 | **PyPI JSON API** | Python package metadata API. | No | ✅ | [Link](https://docs.pypi.org/api/json/) |

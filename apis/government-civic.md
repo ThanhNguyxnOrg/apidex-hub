@@ -24,6 +24,7 @@
 | **Deutscher Bundestag DIP** | This API provides read access to DIP entities (e.g. activities, persons, prin... | 🔑 ApiKey | ✅ | [Link](https://dip.bundestag.de/documents/informationsblatt_zur_dip_api_v01.pdf) |
 | **District of Columbia Open Data** | Contains D.C. government public datasets, including crime, GIS, financial dat... | No | ✅ | [Link](http://opendata.dc.gov/pages/using-apis) |
 | **EPA** | Web services and data sets from the US Environmental Protection Agency. | No | ✅ | [Link](https://www.epa.gov/developers/data-data-products#apis) |
+| **EU Open Data Portal** | Search and access datasets published by EU institutions. | No | ✅ | [Link](https://data.europa.eu/api/hub/search/) |
 | **FBI Wanted** | Access information on the FBI Wanted program. | No | ✅ | [Link](https://www.fbi.gov/wanted/api) |
 | **Federal Register** | US federal rules and notices data. | No | ✅ | [Link](https://www.federalregister.gov/developers/documentation/api/v1) |
 | **Gazette Data, UK** | UK official public record API. | 🔐 OAuth | ✅ | [Link](https://www.thegazette.co.uk/data) |
@@ -74,6 +75,7 @@
 | **Open States** | US state legislature data. | 🔑 ApiKey | ✅ | [Link](https://docs.openstates.org/) |
 | **OpenFEC** | US Federal Election Commission data. | No | ✅ | [Link](https://api.open.fec.gov/developers/) |
 | **OpenSecrets** | US political finance transparency data. | 🔑 ApiKey | ✅ | [Link](https://www.opensecrets.org/open-data/api) |
+| **Regulations.gov** | U.S. federal agency rulemaking dockets and comments. | 🔑 ApiKey | ✅ | [Link](https://www.regulations.gov/developers) |
 | **Represent by Open North** | Find Canadian Government Representatives. | No | ✅ | [Link](https://represent.opennorth.ca/) |
 | **UK Companies House** | UK Companies House Data from the UK government. | 🔐 OAuth | ✅ | [Link](https://developer.company-information.service.gov.uk/) |
 | **UK Parliament** | UK parliamentary data and members. | No | ✅ | [Link](https://members-api.parliament.uk/index.html) |

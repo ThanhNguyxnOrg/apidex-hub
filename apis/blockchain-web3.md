@@ -4,11 +4,13 @@
 | :--- | :--- | :---: | :---: | :---: |
 | **Ankr RPC** | Multi-chain RPC infrastructure for Web3 apps. | 🔑 ApiKey | ✅ | [Link](https://www.ankr.com/rpc/) |
 | **Bitquery** | Onchain GraphQL APIs & DEX APIs. | 🔑 ApiKey | ✅ | [Link](https://graphql.bitquery.io/ide) |
+| **Blockchair** | Blockchain explorers and analytics for Bitcoin, Ethereum and more. | 🔑 ApiKey | ✅ | [Link](https://blockchair.com/api) |
 | **BlockCypher** | Blockchain data APIs for Bitcoin, Litecoin, Dogecoin, and Dash. | 🔑 ApiKey | ✅ | [Link](https://www.blockcypher.com/dev/bitcoin/) |
 | **BscScan** | BNB Chain explorer and contract data APIs. | 🔑 ApiKey | ✅ | [Link](https://bscscan.com/apis) |
 | **Chainbase** | Unified blockchain data API across multiple chains. | 🔑 ApiKey | ✅ | [Link](https://docs.chainbase.com/) |
 | **Chainlink** | Developer resources for decentralized oracle data. | No | ✅ | [Link](https://chain.link/developer-resources) |
 | **Chainpoint** | Chainpoint is a global network for anchoring data to the Bitcoin blockchain. | No | ✅ | [Link](https://tierion.com/chainpoint/) |
+| **Covalent** | Unified blockchain data across 50+ networks. | 🔑 ApiKey | ✅ | [Link](https://www.covalenthq.com/docs/) |
 | **dRPC** | Distributed RPC provider for EVM and non-EVM chains. | 🔑 ApiKey | ✅ | [Link](https://drpc.org/docs) |
 | **Etherscan** | Ethereum explorer and smart contract data APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.etherscan.io/) |
 | **FreeRPC** | Free public RPC endpoints for many blockchains. | No | ✅ | [Link](https://www.freerpc.com/) |

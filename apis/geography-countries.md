@@ -2,6 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Countries Now** | Countries with population, cities, flags and coordinates. | No | ✅ | [Link](https://countriesnow.space/) |
 | **Country State City** | Countries, states, and cities database. | 🔑 ApiKey | ✅ | [Link](https://countrystatecity.in/) |
 | **CountryLayer** | Country data including flags and borders. | 🔑 ApiKey | ✅ | [Link](https://countrylayer.com/) |
 | **Flagcdn** | Fast and reliable country flag images in SVG and PNG formats. | No | ✅ | [Link](https://flagcdn.com/) |

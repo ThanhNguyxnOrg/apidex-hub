@@ -30,6 +30,7 @@
 | **MTA** | NYC subway real-time feed APIs. | No | ✅ | [Link](https://api.mta.info/#/subwayRealTimeFeeds) |
 | **Navitia** | The open API for building cool stuff with transport data. | 🔑 ApiKey | ✅ | [Link](https://doc.navitia.io/) |
 | **NHTSA** | NHTSA Product Information Catalog and Vehicle Listing. | No | ✅ | [Link](https://vpic.nhtsa.dot.gov/api/) |
+| **NHTSA Recalls** | U.S. vehicle recall database by make, model and year. | No | ✅ | [Link](https://api.nhtsa.gov/recalls) |
 | **Open Charge Map** | Global public registry of electric vehicle charging locations. | 🔑 ApiKey | ✅ | [Link](https://openchargemap.org/site/develop/api) |
 | **OpenRouteService** | Directions, geocoding, isochrones. | 🔑 ApiKey | ✅ | [Link](https://openrouteservice.org/) |
 | **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://openskynetwork.github.io/opensky-api/) |

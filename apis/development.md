@@ -23,12 +23,14 @@
 | **CDNJS** | Library info. | No | ✅ | [Link](https://api.cdnjs.com/libraries/jquery) |
 | **Changelogs.md** | Structured changelog metadata from open source projects. | No | ✅ | [Link](https://changelogs.md) |
 | **Clerk** | User management and authentication (free tier). | 🔑 ApiKey | ✅ | [Link](https://clerk.com/docs/reference/backend-api) |
+| **Cloudflare** | DNS, zones, workers, analytics and security APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/api/) |
 | **Cloudflare Radar** | Internet traffic, routing, and outage insights (free tier). | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/radar/) |
 | **Cloudinary** | Image and video management API. | 🔑 ApiKey | ✅ | [Link](https://cloudinary.com/documentation/image_upload_api_reference) |
 | **Codacy** | Code quality and security analysis. | 🔑 ApiKey | ✅ | [Link](https://api.codacy.com/api/api-docs) |
 | **Codeforces** | Get access to Codeforces data. | 🔑 ApiKey | ✅ | [Link](https://codeforces.com/apiHelp) |
 | **CodeSandbox** | Online code editor API. | 🔑 ApiKey | ✅ | [Link](https://codesandbox.io/docs) |
 | **Contentful Images** | Used to retrieve and apply transformations to images. | 🔑 ApiKey | ✅ | [Link](https://www.contentful.com/developers/docs/references/images-api/) |
+| **Crates.io** | Rust crate metadata, versions and download counts. | No | ✅ | [Link](https://doc.rust-lang.org/cargo/reference/registry-web-api.html) |
 | **Databricks** | Lakehouse workspace, jobs, and cluster APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.databricks.com/api/workspace/introduction) |
 | **DigitalOcean Status** | Status of all DigitalOcean services. | No | ✅ | [Link](https://status.digitalocean.com/api) |
 | **Docker Hub** | Interact with Docker Hub. | 🔑 ApiKey | ✅ | [Link](https://docs.docker.com/docker-hub/api/latest/) |
@@ -85,6 +87,7 @@
 | **NetworkCalc** | Network calculators, including subnets, DNS, binary, and security tools. | No | ✅ | [Link](https://networkcalc.com/api/docs) |
 | **Notion** | Access to Notion workspace data via API. | 🔐 OAuth | ✅ | [Link](https://developers.notion.com/) |
 | **Novu** | Open-source notification infrastructure. | 🔑 ApiKey | ✅ | [Link](https://docs.novu.co/api-reference/overview) |
+| **npm** | Package metadata, downloads and maintainers from the npm registry. | No | ✅ | [Link](https://docs.npmjs.com/) |
 | **Numverify** | Phone number validation. | 🔑 ApiKey | ✅ | [Link](https://numverify.com/) |
 | **Open Page Rank** | API for calculating and comparing metrics of different websites using Page Ra... | 🔑 ApiKey | ✅ | [Link](https://www.domcop.com/openpagerank/) |
 | **OpenAPIHub** | The All-in-one API Platform. | 🔑 ApiKey | ✅ | [Link](https://hub.openapihub.com/) |
@@ -98,6 +101,7 @@
 | **ProxyCrawl** | Scraping and crawling anticaptcha service. | 🔑 ApiKey | ✅ | [Link](https://proxycrawl.com) |
 | **ProxyKingdom** | Rotating Proxy API that produces a working proxy on every request. | 🔑 ApiKey | ✅ | [Link](https://proxykingdom.com) |
 | **Pusher Beams** | Push notifications for Android & iOS. | 🔑 ApiKey | ✅ | [Link](https://pusher.com/beams) |
+| **PyPI** | JSON API for Python package metadata and releases. | No | ✅ | [Link](https://warehouse.pypa.io/api-reference/) |
 | **QR code** | Create an easy to read QR code and URL shortener. | No | ✅ | [Link](https://www.qrtag.net/api/) |
 | **Qrcode Monkey** | Integrate custom and unique looking QR codes into your system or workflow. | No | ✅ | [Link](https://www.qrcode-monkey.com/qr-code-api-with-logo/) |
 | **QuickChart** | Generate charts and QR codes. | No | ✅ | [Link](https://quickchart.io/) |

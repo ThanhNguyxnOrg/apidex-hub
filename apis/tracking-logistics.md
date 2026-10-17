@@ -11,6 +11,7 @@
 | **PostalPinCode** | API for getting Pincode details in India. | No | ✅ | [Link](http://www.postalpincode.in/Api-Details) |
 | **Postmon** | An API to query Brazilian ZIP codes and orders easily, quickly and free. | No | No | [Link](http://postmon.com.br) |
 | **PostNord** | Provides information about parcels in transport for Sweden and Denmark. | 🔑 ApiKey | No | [Link](https://developer.postnord.com/api) |
+| **Ship24** | Universal parcel and shipment tracking across carriers. | 🔑 ApiKey | ✅ | [Link](https://www.ship24.com/tracking-api) |
 | **Shippo** | Shipping API with free test mode. | 🔑 ApiKey | ✅ | [Link](https://docs.goshippo.com/) |
 | **USPS Track & Confirm** | USPS tracking API. | 🔑 ApiKey | ✅ | [Link](https://www.usps.com/business/web-tools-apis/track-and-confirm-api.htm) |
 | **WeCanTrack** | Automatically place subids in affiliate links to attribute affiliate conversi... | 🔑 ApiKey | ✅ | [Link](https://docs.wecantrack.com) |

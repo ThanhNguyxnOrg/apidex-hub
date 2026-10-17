@@ -40,7 +40,9 @@
 | **Kraken** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kraken.com/) |
 | **KuCoin** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kucoin.com/) |
 | **Mempool** | Bitcoin API. | No | ✅ | [Link](https://mempool.space/api) |
+| **Mempool.space** | Bitcoin mempool, fees, blocks and Lightning network data. | No | ✅ | [Link](https://mempool.space/docs/api) |
 | **MercadoBitcoin** | Brazilian Cryptocurrency Information. | No | ✅ | [Link](https://api.mercadobitcoin.net/api/v4/docs) |
+| **Messari** | Crypto asset profiles, metrics and market data. | 🔑 ApiKey | ✅ | [Link](https://messari.io/api/docs) |
 | **Mobula** | On-chain crypto data and wallet analytics. | 🔑 ApiKey | ✅ | [Link](https://docs.mobula.io/) |
 | **Moralis** | Web3 wallet, NFT, and DeFi data. | 🔑 ApiKey | ✅ | [Link](https://docs.moralis.io/) |
 | **NovaDax** | NovaDAX API to access all market data, trading management endpoints. | 🔑 ApiKey | ✅ | [Link](https://doc.novadax.com/en-US/#introduction) |

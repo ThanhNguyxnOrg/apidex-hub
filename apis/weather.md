@@ -17,9 +17,11 @@
 | **Meteorologisk Institutt** | Weather and climate data. | 🔑 ApiKey | ✅ | [Link](https://api.met.no/weatherapi/documentation) |
 | **National Weather Service** | Weather forecasts, alerts, and observations for the United States. | No | ✅ | [Link](https://www.weather.gov/documentation/services-web-api) |
 | **Oikolab** | 70+ years of global, hourly historical and forecast weather data from NOAA an... | 🔑 ApiKey | ✅ | [Link](https://docs.oikolab.com) |
+| **Open-Meteo** | Free non-commercial weather forecast API without API keys. | No | ✅ | [Link](https://open-meteo.com/en/docs) |
 | **openSenseMap** | Data from Personal Weather Stations called senseBoxes. | No | ✅ | [Link](https://api.opensensemap.org/) |
 | **OpenUV** | Real-time UV Index Forecast. | 🔑 ApiKey | ✅ | [Link](https://www.openuv.io) |
 | **OpenWeatherMap** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://openweathermap.org/api) |
+| **Pirate Weather** | Open-source friendly Dark Sky-compatible forecast API. | 🔑 ApiKey | ✅ | [Link](https://pirateweather.net/) |
 | **QWeather** | Location-based weather data. | 🔑 ApiKey | ✅ | [Link](https://dev.qweather.com/en/) |
 | **RainViewer** | Weather radar. | No | ✅ | [Link](https://www.rainviewer.com/api.html) |
 | **Storm Glass** | Global marine weather from multiple sources. | 🔑 ApiKey | ✅ | [Link](https://stormglass.io/) |

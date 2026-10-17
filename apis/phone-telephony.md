@@ -13,5 +13,6 @@
 | **Telnyx** | Telephony, messaging, and SIP APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.telnyx.com/api-reference/overview) |
 | **Textbelt** | Lightweight SMS sending API. | 🔑 ApiKey | ✅ | [Link](https://www.textbelt.com/) |
 | **Veriphone** | Phone number validation & carrier lookup. | 🔑 ApiKey | ✅ | [Link](https://veriphone.io) |
+| **Vonage** | SMS, voice, video and verification APIs. | 🔑 ApiKey | ✅ | [Link](https://developer.vonage.com/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

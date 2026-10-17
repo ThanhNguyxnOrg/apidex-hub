@@ -7,6 +7,7 @@
 | **Astronomy API** | Astronomy calculations and celestial data. | 🔑 ApiKey | ✅ | [Link](https://astronomyapi.com/) |
 | **CelesTrak** | Satellite orbital data (TLE) and space situational awareness. | No | ✅ | [Link](https://celestrak.org/) |
 | **CORE** | Access the world's Open Access research papers. | 🔑 ApiKey | ✅ | [Link](https://core.ac.uk/services#api) |
+| **DOAJ** | Directory of open access journals and articles. | No | ✅ | [Link](https://doaj.org/api/docs) |
 | **GBIF** | Global biodiversity occurrence data (**No Auth**). | No | ✅ | [Link](https://www.gbif.org/developer/summary) |
 | **isEven (humor)** | Check if a number is even. | No | ✅ | [Link](https://isevenapi.xyz/) |
 | **ISRO** | ISRO Space Crafts Information. | No | ✅ | [Link](https://isro.vercel.app) |
@@ -24,6 +25,7 @@
 | **Open Notify** | ISS astronauts, current location, etc. | No | No | [Link](http://open-notify.org/Open-Notify-API/) |
 | **Open Science Framework** | Open source research management platform. | 🔐 OAuth | ✅ | [Link](https://developer.osf.io/) |
 | **People in Space** | Current number of people in space (**No Auth**). | No | ✅ | [Link](http://open-notify.org/Open-Notify-API/People-In-Space/) |
+| **PubMed E-utilities** | U.S. National Library of Medicine biomedical literature. | No | ✅ | [Link](https://www.ncbi.nlm.nih.gov/books/NBK25501/) |
 | **Purple Air** | Real Time Air Quality Monitoring. | No | ✅ | [Link](https://www2.purpleair.com/) |
 | **SHARE** | A free, open, dataset about research and scholarly activities. | No | ✅ | [Link](https://share.osf.io/api/v2/) |
 | **Solar System OpenData** | Solar system planets and moons data (**No Auth**). | No | ✅ | [Link](https://api.le-systeme-solaire.net/en/) |
