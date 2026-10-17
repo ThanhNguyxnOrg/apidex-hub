@@ -2,8 +2,9 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Petfinder** | Database of adoptable pets and animal shelters. | 🔑 ApiKey | ✅ | [Link](https://www.petfinder.com/developers/) |
+| **Amazing Endemic Species** | Amazing endemic species all over the world | No | ✅ | [Link](https://aes.shenlu.me) |
 | **Axolotl** | Collection of axolotl pictures and facts. | No | ✅ | [Link](https://theaxolotlapi.netlify.app/) |
+| **Breed Health Score** | Dog breed health scores, median lifespans and conditions | No | ✅ | [Link](https://breedhealthscore.com/developers/) |
 | **Cat Facts** | Daily cat facts. | No | ✅ | [Link](https://alexwohlbruck.github.io/cat-facts/) |
 | **Cataas** | Cat as a service (cats pictures and gifs). | No | ✅ | [Link](https://cataas.com/) |
 | **Cats** | Pictures of cats from Tumblr. | 🔑 ApiKey | ✅ | [Link](https://docs.thecatapi.com/) |
@@ -15,6 +16,9 @@
 | **HTTP Cat** | Cat for every HTTP Status. | No | ✅ | [Link](https://http.cat/) |
 | **HTTP Dog** | Dogs for every HTTP response status code. | No | ✅ | [Link](https://http.dog/) |
 | **IUCN** | IUCN Red List of Threatened Species. | 🔑 ApiKey | ✅ | [Link](https://api.iucnredlist.org/api-docs) |
+| **MeowFacts** | Get random cat facts | No | ✅ | [Link](https://github.com/wh-iterabb-it/meowfacts) |
+| **Movebank** | Movement and Migration data of animals | No | ✅ | [Link](https://github.com/movebank/movebank-api-doc) |
+| **Petfinder** | Database of adoptable pets and animal shelters. | 🔑 ApiKey | ✅ | [Link](https://www.petfinder.com/developers/) |
 | **PlaceBear** | Placeholder bear pictures. | No | ✅ | [Link](https://placebear.com/) |
 | **PlaceDog** | Placeholder Dog pictures. | No | ✅ | [Link](https://place.dog) |
 | **RandomDog** | Random pictures of dogs. | No | ✅ | [Link](https://random.dog/woof.json) |
@@ -23,12 +27,8 @@
 | **RescueGroups** | Adoption. | No | ✅ | [Link](https://rescuegroups.org/services/adoptable-pet-data-api/) |
 | **Shibe.Online** | Random pictures of Shiba Inu, cats or birds. | No | ✅ | [Link](http://shibe.online/) |
 | **The Cat API** | Images of cats (great for testing image grids). | 🔑 ApiKey | ✅ | [Link](https://thecatapi.com/) |
-| **The Dog API** | Images and data about dogs. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
-| **TheCatAPI** | Random cat images, breeds, and facts. | 🔑 ApiKey | ✅ | [Link](https://api.thecatapi.com/) |
-| **TheCatDB** | Cat breeds and facts database. | 🔑 ApiKey | ✅ | [Link](https://www.thecatapi.com/) |
 | **TheDogAPI** | Random dog images, breeds, and facts. | 🔑 ApiKey | ✅ | [Link](https://api.thedogapi.com/) |
 | **WoRMS** | Marine species taxonomy and classification data. | No | ✅ | [Link](https://www.marinespecies.org/rest/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
