@@ -5,6 +5,7 @@
 | **API-Ninjas Quotes** | Curated quotes API. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/quotes) |
 | **Astro Agents** | Deterministic Western and Vedic astrology: natal charts, transits, kundli, dashas, panchang | No | ✅ | [Link](https://astro-agent.dev/llms.txt) |
 | **AstroWay** | Astrology, natal charts, Human Design, Vedic and horoscopes on the Swiss Ephemeris | 🔑 ApiKey | ✅ | [Link](https://api.astroway.info/docs/) |
+| **Aztro** | Free daily horoscopes for yesterday, today and tomorrow, no auth. | No | ✅ | [Link](https://github.com/sameerkumar18/aztro) |
 | **Deckaura Horoscope** | Daily horoscope readings for all 12 zodiac signs (overview, love, career, lucky number) updated daily at 00:00 UTC | No | ✅ | [Link](https://horoscope.deckaura.com) |
 | **Dictum** | API to get access to the collection of the most inspiring expressions of mankind | No | ✅ | [Link](https://github.com/fisenkodv/dictum) |
 | **Echoes** | Quotes From Around The World | No | ✅ | [Link](https://echoes.soferity.com) |
@@ -21,8 +22,10 @@
 | **Quote Garden** | REST API for more than 5000 famous quotes | No | ✅ | [Link](https://pprathameshmore.github.io/QuoteGarden/) |
 | **Quoterism** | Inspirational Quotes | No | ✅ | [Link](https://www.quoterism.com/developer) |
 | **Quotes on Design** | Inspirational Quotes. | No | ✅ | [Link](https://quotesondesign.com/api/) |
+| **Real Inspire** | Free open-source inspirational quotes API with authors, filters and pagination. | No | ✅ | [Link](https://github.com/mohamadayash22/real-inspire) |
 | **Shrek Quotes** | Shrek quotes and more, but mainly quotes | No | ✅ | [Link](https://shrekofficial.com) |
 | **Stoicism Quote** | Quotes about Stoicism | No | ✅ | [Link](https://github.com/tlcheah2/stoic-quote-lambda-public-api) |
+| **Tarot** | 78-card tarot: card names, meanings, daily card and random draws. | No | ✅ | [Link](https://tarotapi.dev/) |
 | **The Quotes** | Quotes API with lot of features | 🔑 ApiKey | No | [Link](http://quotes.rest) |
 | **They Said So Quotes** | Quotes Trusted by many fortune brands around the world. | No | ✅ | [Link](https://theysaidso.com/api/) |
 | **Traitify** | Assess, collect and analyze Personality. | No | ✅ | [Link](https://app.traitify.com/developer) |

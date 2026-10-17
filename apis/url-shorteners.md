@@ -24,6 +24,7 @@
 | **Short.io** | URL shortener with analytics. | 🔑 ApiKey | ✅ | [Link](https://developers.short.io/) |
 | **Shrtcode** | URl Shortener with multiple Domains. | No | ✅ | [Link](https://shrtco.de/docs) |
 | **Shrtlnk** | Simple and efficient short link creation | 🔑 ApiKey | ✅ | [Link](https://shrtlnk.dev/) |
+| **Spoo.me** | Link shortener and management API with analytics; optional API keys. | No | ✅ | [Link](https://spoo.me/docs) |
 | **T.LY** | Short links with click analytics and QR codes. | 🔑 ApiKey | ✅ | [Link](https://t.ly/api) |
 | **Tiny.cc** | Link shortening and management API. | 🔑 ApiKey | ✅ | [Link](https://tiny.cc/api-docs) |
 | **TinyURL** | URL shortener API (**No Auth**). | No | ✅ | [Link](https://tinyurl.com/app/dev) |
