@@ -32,7 +32,6 @@
 | **ReSmush.it** | Photo optimization. | No | No | [Link](https://resmush.it/) |
 | **shutterstock** | Stock Photos and Videos. | 🔐 OAuth | ✅ | [Link](https://api-reference.shutterstock.com/) |
 | **Sirv** | Image management solutions like optimization, manipulation, hosting. | 🔑 ApiKey | ✅ | [Link](https://apidocs.sirv.com/) |
-| **Spaceflight News** | Spaceflight related news 🚀. | No | ✅ | [Link](https://spaceflightnewsapi.net) |
 | **Trove** | Search through the National Library of Australia collection of 1000s of digit... | 🔑 ApiKey | ✅ | [Link](https://trove.nla.gov.au/about/create-something/using-api) |
 | **Unsplash** | High-quality photos. | 🔐 OAuth | ✅ | [Link](https://unsplash.com/developers) |
 | **Wallhaven** | Wallpapers. | 🔑 ApiKey | ✅ | [Link](https://wallhaven.cc/help/api) |
