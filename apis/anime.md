@@ -8,6 +8,8 @@
 | **AnimeChan** | Random anime quotes (**No Auth**). | No | ✅ | [Link](https://animechan.xyz/docs) |
 | **AnimeFacts** | Anime facts (over 100+). | No | ✅ | [Link](https://chandan-02.github.io/anime-facts-rest-api/) |
 | **AnimeNewsNetwork** | Anime industry news. | No | ✅ | [Link](https://www.animenewsnetwork.com/encyclopedia/api.php) |
+| **AnimeThemes** | Anime openings and endings database API with video, artists and series data. | No | ✅ | [Link](https://api.animethemes.moe/video?page%5Bsize%5D=5) |
+| **Bangumi** | Bangumi (bgm.tv) database API: anime, manga, games, characters and user collections. | 🔒 OAuth | ✅ | [Link](https://bangumi.github.io/api/) |
 | **Catboy** | Neko images, funny GIFs & more. | No | ✅ | [Link](https://catboys.com/api) |
 | **Danbooru Anime** | Thousands of anime artist database. | 🔑 ApiKey | ✅ | [Link](https://danbooru.donmai.us/wiki_pages/help:api) |
 | **Jikan** | Unofficial MyAnimeList API. | No | ✅ | [Link](https://jikan.moe) |
