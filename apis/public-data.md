@@ -32,5 +32,6 @@
 | **US Bureau of Labor Statistics** | US labor economics databases and statistical APIs. | 🔑 ApiKey | ✅ | [Link](https://www.bls.gov/developers/) |
 | **US Census** | US demographics, economics, housing data. | 🔑 ApiKey | ✅ | [Link](https://www.census.gov/data/developers/data-sets.html) |
 | **USDA FoodData** | Nutritional data for food products. | 🔑 ApiKey | ✅ | [Link](https://fdc.nal.usda.gov/api-guide.html) |
+| **Wayback Machine** | Internet Archive snapshots and CDX index API. | No | ✅ | [Link](https://web.archive.org/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

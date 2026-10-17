@@ -46,6 +46,7 @@
 | **One Map, Singapore** | Singapore Land Authority REST API services for Singapore addresses. | 🔑 ApiKey | ✅ | [Link](https://www.onemap.gov.sg/docs/) |
 | **OnWater** | Determine if a lat/lon is on water or land. | No | ✅ | [Link](https://onwater.io/) |
 | **Open Topo Data** | Elevation and ocean depth for a latitude and longitude. | No | ✅ | [Link](https://www.opentopodata.org) |
+| **Open-Elevation** | Free world-wide open elevation (height) lookups. | No | ✅ | [Link](https://www.open-elevation.com/) |
 | **OpenCage** | Forward and reverse geocoding using open data. | 🔑 ApiKey | ✅ | [Link](https://opencagedata.com) |
 | **OpenStreetMap** | Map data. | 🔐 OAuth | ✅ | [Link](http://wiki.openstreetmap.org/wiki/API) |
 | **OpenTripMap** | Tourist attractions and points of interest worldwide. | 🔑 ApiKey | ✅ | [Link](https://dev.opentripmap.org/docs) |

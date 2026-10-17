@@ -12,6 +12,7 @@
 | **Citi** | All Citigroup account and statement data APIs. | 🔑 ApiKey | ✅ | [Link](https://sandbox.developerhub.citi.com/api-catalog-list) |
 | **CoinDesk** | Bitcoin Price Index (BPI) data (**No Auth**). | No | ✅ | [Link](https://www.coindesk.com/coindesk-api) |
 | **Econdb** | Global macroeconomic data. | No | ✅ | [Link](https://www.econdb.com/api/) |
+| **EODHD** | End-of-day and intraday stock market data across 60+ exchanges. | 🔑 ApiKey | ✅ | [Link](https://eodhd.com/) |
 | **Fed Treasury** | U.S. Department of the Treasury Data. | No | ✅ | [Link](https://fiscaldata.treasury.gov/api-documentation/) |
 | **Finage** | Finage is a stock, currency, cryptocurrency, indices, and ETFs real-time & hi... | 🔑 ApiKey | ✅ | [Link](https://finage.co.uk) |
 | **Financial Modeling Prep** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://site.financialmodelingprep.com/developer/docs) |
