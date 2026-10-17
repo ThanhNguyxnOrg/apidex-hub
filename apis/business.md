@@ -18,6 +18,7 @@
 | **Pipedrive** | Sales CRM with deals, contacts and activity management. | 🔑 ApiKey | ✅ | [Link](https://developers.pipedrive.com/) |
 | **QuickBooks** | Intuit QuickBooks online accounting and finance API. | 🔞 OAuth | ✅ | [Link](https://developer.intuit.com/app/developer/qbo/docs/api) |
 | **SwiftKanban** | Kanban software, Visualize Work, Increase Organizations Lead Time, Throughput... | 🔑 ApiKey | ✅ | [Link](https://www.digite.com/knowledge-base/swiftkanban/article/api-for-swift-kanban-web-services/#restapi) |
+| **Toast** | Restaurant POS platform: menus, orders, guests and payments. | 🔑 ApiKey | ✅ | [Link](https://dev.toasttab.com/) |
 | **Xero** | Accounting, invoicing and banking data API. | 🔞 OAuth | ✅ | [Link](https://developer.xero.com/documentation/api/accounting/overview) |
 | **Zendesk** | Support tickets, users and macros for customer service teams. | 🔑 ApiKey | ✅ | [Link](https://developer.zendesk.com/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

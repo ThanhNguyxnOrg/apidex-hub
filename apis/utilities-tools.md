@@ -5,6 +5,7 @@
 | **Cal.com** | Open source scheduling API (Calendly alternative). | 🔑 ApiKey | ✅ | [Link](https://cal.com/docs/api-reference) |
 | **Carbon Screenshot** | Create beautiful images of code snippets. | No | ✅ | [Link](https://carbon.now.sh/) |
 | **Country.is** | Get country from IP address (**No Auth**). | No | ✅ | [Link](https://country.is/) |
+| **cron-job.org** | Free scheduled HTTP jobs with uptime checks and notifications. | 🔑 ApiKey | ✅ | [Link](https://cron-job.org/en/) |
 | **DiceBear Avatars** | Generate random SVG avatars (**No Auth**). | No | ✅ | [Link](https://www.dicebear.com/) |
 | **DuckDuckGo Instant Answer** | Quick, concise answers for definitions, calculations, and conversions. | No | ✅ | [Link](https://duckduckgo.com/api) |
 | **ipify** | A simple public IP address API (**No Auth**). | No | ✅ | [Link](https://www.ipify.org/) |
