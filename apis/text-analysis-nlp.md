@@ -18,6 +18,7 @@
 | **LanguageTool** | Grammar and style checking API. | No | ✅ | [Link](https://languagetool.org/http-api/swagger-ui/#/) |
 | **Lecto Translation** | Translation API with free tier and reasonable prices. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/lecto-lecto-default/api/lecto-translation/) |
 | **LibreTranslate** | Free and open-source translation API (**Self-hosted, No Auth**). | No | ✅ | [Link](https://libretranslate.com/) |
+| **Lingva** | Open, privacy-friendly Google Translate front-end API. | No | ✅ | [Link](https://lingva.ml/) |
 | **Microsoft Translator** | Text translation with transliteration and detection. | 🔑 ApiKey | ✅ | [Link](https://learn.microsoft.com/en-us/azure/ai-services/translator/) |
 | **ModernMT** | Adaptive machine translation that learns from edits. | 🔑 ApiKey | ✅ | [Link](https://www.modernmt.com/api/) |
 | **MyMemory** | Free translation memory API with public corpora. | No | ✅ | [Link](https://api.mymemory.translated.net/) |

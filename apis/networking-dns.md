@@ -9,6 +9,7 @@
 | **IPGeolocation** | IP geolocation and timezone API (**Free tier: 30k/month**). | 🔑 ApiKey | ✅ | [Link](https://ipgeolocation.io/) |
 | **IPinfo** | IP Address Information. | No | ✅ | [Link](https://ipinfo.io/developers) |
 | **Shodan InternetDB** | Free passively-collected port and host data for any IP. | No | ✅ | [Link](https://internetdb.shodan.io/) |
+| **Whoapi** | Domain availability, whois and DNS interrogation API. | 🔑 ApiKey | ✅ | [Link](https://whoapi.com/) |
 | **WhoisXML API** | WHOIS and DNS data for any domain or IP address. | 🔑 ApiKey | ✅ | [Link](https://whoisxmlapi.com/) |
 
 [⬅️ Back to Table of Contents](../README.md#table-of-contents)
