@@ -71,6 +71,7 @@
 | **Count.io** | Persistent counting and A/B testing | No | ✅ | [Link](https://count.io) |
 | **Crates.io** | Rust crate metadata, versions and download counts. | No | ✅ | [Link](https://doc.rust-lang.org/cargo/reference/registry-web-api.html) |
 | **Crawl Readiness** | Check if AI crawlers (ChatGPT, Claude, Perplexity, 30+ others) can access any website | 🔑 ApiKey | ✅ | [Link](https://crawlreadiness.com) |
+| **CurlShot** | Website screenshot API: URL, HTML or Markdown to PNG, JPEG, WebP, PDF or scrolling video (free tier: 100/month). | 🔑 ApiKey | ✅ | [Link](https://curlshot.com/docs) |
 | **DaniWeb Connect** | User Recommendation Engine and Chat Network | 🔒 OAuth | ✅ | [Link](https://www.daniweb.com/members/1/dani) |
 | **Databricks** | Lakehouse workspace, jobs, and cluster APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.databricks.com/api/workspace/introduction) |
 | **Debian Code Search** | OpenAPI for https://codesearch.debian.net/ | 🔑 ApiKey | ✅ | [Link](https://codesearch.debian.net) |
