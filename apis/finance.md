@@ -16,6 +16,7 @@
 | **Fed Treasury** | U.S. Department of the Treasury Data. | No | ✅ | [Link](https://fiscaldata.treasury.gov/api-documentation/) |
 | **Finage** | Finage is a stock, currency, cryptocurrency, indices, and ETFs real-time & hi... | 🔑 ApiKey | ✅ | [Link](https://finage.co.uk) |
 | **Financial Modeling Prep** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://site.financialmodelingprep.com/developer/docs) |
+| **FinancialModelingPrep** | Company fundamentals, ratios and historical stock data. | 🔑 ApiKey | ✅ | [Link](https://financialmodelingprep.com/api/) |
 | **Finnhub** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://finnhub.io/docs/api) |
 | **Finsheet** | Free stock, ETF, and cryptocurrency data for sheets and developers. | 🔑 ApiKey | ✅ | [Link](https://finsheet.io/) |
 | **Front Accounting APIs** | Front accounting is multilingual and multicurrency software for small businesses. | 🔐 OAuth | ✅ | [Link](https://frontaccounting.com/fawiki/index.php?n=Devel.SimpleAPIModule) |
@@ -33,6 +34,7 @@
 | **Portfolio Optimizer** | Portfolio analysis and optimization. | No | ✅ | [Link](https://portfoliooptimizer.io/) |
 | **Razorpay IFSC** | Indian Financial Systems Code (Bank Branch Codes) | No | ✅ | [Link](https://razorpay.com/docs/) |
 | **SEC EDGAR** | U.S. public company filings, facts and financial statements. | No | ✅ | [Link](https://www.sec.gov/edgar/sec-api-documentation) |
+| **SimFin** | Standardized company fundamentals and financial statements. | 🔑 ApiKey | ✅ | [Link](https://www.simfin.com/) |
 | **SmartAPI** | Gain access to set of <SmartAPI> and create end-to-end broking services. | 🔑 ApiKey | ✅ | [Link](https://smartapi.angelbroking.com/) |
 | **StockData** | Real-Time, Intraday & Historical Market Data, News and Sentiment API. | 🔑 ApiKey | ✅ | [Link](https://www.StockData.org) |
 | **Tax Data API** | Tax rates and validation. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/tax_data-api) |

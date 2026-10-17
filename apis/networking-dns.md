@@ -10,6 +10,7 @@
 | **IPGeolocation** | IP geolocation and timezone API (**Free tier: 30k/month**). | 🔑 ApiKey | ✅ | [Link](https://ipgeolocation.io/) |
 | **IPinfo** | IP Address Information. | No | ✅ | [Link](https://ipinfo.io/developers) |
 | **ipwhois.io** | Free IP geolocation with timezone and currency. | No | ✅ | [Link](https://ipwhois.io/documentation) |
+| **PeeringDB** | Global network/IXP peering data Exchange API. | No | ✅ | [Link](https://peeringdb.com/apidocs/) |
 | **RIPEstat Data API** | ASN, prefix, BGP and WHOIS routing data. | No | ✅ | [Link](https://stat.ripe.net/docs/data-api/ripestat-data-api) |
 | **Shodan InternetDB** | Free passively-collected port and host data for any IP. | No | ✅ | [Link](https://internetdb.shodan.io/) |
 | **Whoapi** | Domain availability, whois and DNS interrogation API. | 🔑 ApiKey | ✅ | [Link](https://whoapi.com/) |
