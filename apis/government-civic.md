@@ -23,7 +23,6 @@
 | **City, New York Open Data** | New York (US) City Open Data. | No | ✅ | [Link](https://opendata.cityofnewyork.us/) |
 | **City, Prague Open Data** | Prague(CZ) City Open Data | No | No | [Link](http://opendata.praha.eu/en) |
 | **City, Toronto Open Data** | Toronto (CA) City Open Data. | No | ✅ | [Link](https://open.toronto.ca/) |
-| **Code.gov** | The primary platform for Open Source and code sharing for the U.S. Federal Government | 🔑 ApiKey | ✅ | [Link](https://code.gov) |
 | **Colorado Information Marketplace** | Colorado State Government Open Data. | No | ✅ | [Link](https://data.colorado.gov/) |
 | **Congress.gov** | US legislation and congressional records. | No | ✅ | [Link](https://api.congress.gov/) |
 | **ContaCLT** | Brazilian payroll and labor calculations: net salary, INSS, IRRF, unemployment insurance | No | ✅ | [Link](https://contaclt.com/dados/api/) |

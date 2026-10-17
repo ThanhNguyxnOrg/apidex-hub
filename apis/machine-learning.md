@@ -21,7 +21,6 @@
 | **DigitalOwl Text Classification** | Free for use text classification, sentiment analysis, semantic similarity and word analysis api | No | ✅ | [Link](https://digitalowl.org) |
 | **ElevenLabs** | Industry-leading AI voice generation, voice cloning, and text-to-speech. | 🔑 ApiKey | ✅ | [Link](https://elevenlabs.io/docs/api-reference) |
 | **Everypixel** | This model is designed to evaluate user photos taken both by a professional camera and by a camera of a smartphone. | 🔒 OAuth | ✅ | [Link](https://labs.everypixel.com/api) |
-| **EXUDE** | Used for the primary ways for filtering the stopping, stemming words from the text data | No | No | [Link](http://uttesh.com/exude-api/) |
 | **Face++** | Let's you detect the information of a given photo (e.g. face location, age, race, gender etc.) | No | No | [Link](http://www.faceplusplus.com) |
 | **Fal.ai** | Fast serverless GPU infrastructure for generative media (image/video/audio). | 🔑 ApiKey | ✅ | [Link](https://fal.ai/docs) |
 | **GEN** | Create and edit video projects, with credit-based AI media generation | 🔑 ApiKey | ✅ | [Link](https://gen.pro/docs#ai-agents) |

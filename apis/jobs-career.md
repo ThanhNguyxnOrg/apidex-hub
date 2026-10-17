@@ -28,7 +28,6 @@
 | **Jobven** | Job postings tracked as roles open and close, with webhooks on changes, from employer career pages | 🔑 ApiKey | ✅ | [Link](https://jobven.com/docs/getting-started) |
 | **Jooble** | Job search engine. | 🔑 ApiKey | ✅ | [Link](https://jooble.org/api/about) |
 | **JSearch** | Job search API (via RapidAPI). | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch) |
-| **Juju** | Job search engine | 🔑 ApiKey | No | [Link](http://www.juju.com/publisher/spec/) |
 | **Level** | Job listings rated by AI level, from Little AI to Builds AI; REST, RSS and MCP | No | ✅ | [Link](https://jobsbylevel.com/developers) |
 | **Open Skills** | Job titles, skills and related jobs data | No | ✅ | [Link](https://github.com/workforce-data-initiative/skills-api/wiki/API-Overview) |
 | **Reed** | UK job board API. | 🔑 ApiKey | ✅ | [Link](https://www.reed.co.uk/developers) |

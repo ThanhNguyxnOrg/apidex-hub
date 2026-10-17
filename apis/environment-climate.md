@@ -9,7 +9,6 @@
 | **BreezoMeter Pollen** | Daily Forecast pollen conditions data for a specific location. | 🔑 ApiKey | ✅ | [Link](https://docs.breezometer.com/api-documentation/pollen-api/v2/) |
 | **Carbon Interface** | CO2 emissions for flights, shipping, and energy. | 🔑 ApiKey | ✅ | [Link](https://docs.carboninterface.com/) |
 | **Climatiq** | Carbon footprint calculations API. | 🔑 ApiKey | ✅ | [Link](https://www.climatiq.io/docs) |
-| **Cloverly** | API calculates the impact of common carbon-intensive activities in real time | 🔑 ApiKey | ✅ | [Link](https://www.cloverly.com/carbon-offset-documentation) |
 | **CO2 Offset** | API calculates and validates the carbon footprint. | No | ✅ | [Link](https://co2offset.io/api.html) |
 | **CO2 Signal** | Real-time carbon intensity of electricity by region. | 🔑 ApiKey | ✅ | [Link](https://co2signal.com/) |
 | **Corrently.io** | *Corrently - from italian corrente, which is energy* # Introduction The Corrently ecosystem gets maintained by [STROM | No | ✅ | [Link](https://stromdao.de/kontakt) |

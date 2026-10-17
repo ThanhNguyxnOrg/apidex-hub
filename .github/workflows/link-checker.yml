@@ -272,24 +272,49 @@ jobs:
           echo "=== Running remove_dead_links.py ==="
           python scripts/remove_dead_links.py --max-delete 500
 
-          echo "=== Verifying Markdown and Catalog Integrity ==="
-          python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
-
           git config --global user.name "ThanhNguyxnAgent[bot]"
           git config --global user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
 
+          echo "=== Verifying Markdown and Catalog Integrity ==="
+          python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
+
           git add apis/ README.md site/index.html site/src/data/apis.json
 
-          if ! git diff --staged --quiet; then
-            ISSUE_NUM="${{ steps.create-incident.outputs.issue_number }}"
-            git commit -m "fix(apis): auto-remove dead links (fixes #${ISSUE_NUM}) [skip ci]"
-            git pull --rebase origin main || true
-            git push origin main
-            echo "pushed=true" >> $GITHUB_OUTPUT
-          else
+          if git diff --staged --quiet; then
             echo "No changes staged. Nothing pushed."
             echo "pushed=false" >> $GITHUB_OUTPUT
+            exit 0
           fi
+
+          ISSUE_NUM="${{ steps.create-incident.outputs.issue_number }}"
+          git commit -m "fix(apis): auto-remove dead links (fixes #${ISSUE_NUM}) [skip ci]"
+
+          # Race-proof push: upstream may move mid-run (stats commits regenerated
+          # README.md / site/index.html / site/src/data/apis.json). Rebase, resolve
+          # conflicts on generated files from upstream, regenerate, amend, retry.
+          pushed=false
+          for attempt in 1 2 3; do
+            git fetch origin main || true
+            if ! git rebase origin/main; then
+              echo "=== Rebase conflict: taking upstream for generated files, keeping apis/ fixes ==="
+              for f in README.md site/index.html site/src/data/apis.json; do
+                git checkout --ours "$f" 2>/dev/null || true
+              done
+              git add -A
+              GIT_EDITOR=true git rebase --continue || true
+            fi
+            # Regenerate stats so they match the rebased row content exactly
+            python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
+            git add README.md site/index.html site/src/data/apis.json
+            git diff --staged --quiet || git commit --amend --no-edit
+            if git push origin main; then
+              pushed=true
+              echo "Push succeeded (attempt $attempt)."
+              break
+            fi
+            echo "Push rejected (race with upstream). Retrying..."
+          done
+          echo "pushed=$pushed" >> $GITHUB_OUTPUT
 
       # 3. Close the Incident Issue automatically (no user mentions)
       - name: Close Incident Issue

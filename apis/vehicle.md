@@ -13,7 +13,6 @@
 | **FIPE** | Vehicles information from Fundação Instituto de Pesquisas Econômicas - Fipe. | No | ✅ | [Link](https://deividfortuna.github.io/fipe/) |
 | **Fleetio** | Fleet management API: vehicles, inspections, fuel, maintenance and telematics records. | 🔑 ApiKey | ✅ | [Link](https://developer.fleetio.com/) |
 | **Fuel Economy** | EPA/DOT vehicle fuel economy ratings and spec data. | No | ✅ | [Link](https://www.fueleconomy.gov/feg/ws/index.shtml) |
-| **Fuelly** | Fuel economy and maintenance tracking for vehicles. | 🔑 ApiKey | ✅ | [Link](https://www.fuelly.com/apidoc) |
 | **fuelo** | Current gas and diesel prices in Bulgaria by fuel type and brand. | No | ✅ | [Link](https://fuelo.net/fuel?lang=en) |
 | **Mercedes-Benz** | Telematics data, remotely access vehicle functions, car configurator, locate ... | 🔑 ApiKey | ✅ | [Link](https://developer.mercedes-benz.com/apis) |
 | **Motomarks** | Car manufacturer logos over an image CDN: badge, wordmark, or full mark by slug | 🔑 ApiKey | ✅ | [Link](https://motomarks.io/docs) |

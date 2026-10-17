@@ -89,7 +89,6 @@
 | **Verified Handles** | Official social media handles and identifiers of 155,000+ notable people and organisations | No | ✅ | [Link](https://verifiedhandles.org/developers) |
 | **Voidly** | Internet censorship measurements, incidents, and ISP-level blocking data across 126 countries | No | ✅ | [Link](https://voidly.ai/api-docs) |
 | **Vuntum** | Sourced, dated facts on consumer robots and physical AI, licensed CC BY 4.0 | No | ✅ | [Link](https://vuntum.com/en/api-mcp) |
-| **Warnely** | Composite travel-safety scores for 180 countries (FCDO + US State + GPI + WGI + live incident wire), OpenAPI 3.1… | No | ✅ | [Link](https://warnely.com/developers) |
 | **Wayback Machine** | Internet Archive snapshots and CDX index API. | No | ✅ | [Link](https://web.archive.org/) |
 | **Website & Web-App Cost Data** | Web-project cost benchmarks by platform across 6 markets (build, hosting, 3-year TCO, hourly rates), CC BY 4.0 | No | ✅ | [Link](https://projectcostestimator.com/api-docs) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
