@@ -6,13 +6,17 @@
 | **Braintree** | PayPal-owned payment gateway supporting subscriptions and marketplace payouts. | 🔑 ApiKey | ✅ | [Link](https://developer.paypal.com/braintree/docs) |
 | **dLocal** | Cross-border payment processing for emerging markets. | 🔑 ApiKey | ✅ | [Link](https://docs.dlocal.com/) |
 | **Flutterwave** | Pan-African payments infrastructure for cards, banks and mobile money. | 🔑 ApiKey | ✅ | [Link](https://developer.flutterwave.com/) |
+| **GoCardless** | Direct debit and recurring bank payments. | 🔞 OAuth | ✅ | [Link](https://developer.gocardless.com/) |
 | **Lemon Squeezy** | Merchant of record platform for software companies handling global tax, billing, and keys. | 🔑 ApiKey | ✅ | [Link](https://docs.lemonsqueezy.com/) |
+| **Mastercard** | Payments, accounts and pricing APIs for Mastercard. | 🔞 OAuth | ✅ | [Link](https://developer.mastercard.com/) |
 | **Mercado Pago** | Payment platform for Latin America supporting checkout, subscriptions, and QR payments. | 🔑 ApiKey | ✅ | [Link](https://www.mercadopago.com/developers/en/docs) |
 | **Mollie** | European payment gateway with iDEAL, Bancontact, cards, and subscriptions. | 🔑 ApiKey | ✅ | [Link](https://docs.mollie.com/) |
 | **MoMo** | Vietnam Mobile Money and e-wallet payment API. | 🔑 ApiKey | ✅ | [Link](https://developers.momo.vn/) |
 | **Paddle** | Complete billing and merchant-of-record infrastructure for B2B and SaaS businesses. | 🔑 ApiKey | ✅ | [Link](https://developer.paddle.com/) |
+| **Payoneer** | Cross-border payouts and receivables for marketplaces. | 🔑 ApiKey | ✅ | [Link](https://developer.payoneer.com/) |
 | **PayOS** | Open payment gateway API supporting Vietnamese banks, VietQR, and real-time webhooks. | 🔑 ApiKey | ✅ | [Link](https://payos.vn/docs/) |
 | **PayPal REST API** | Global payment platform for checkout, payouts, invoicing, and subscription management. | 🔐 OAuth | ✅ | [Link](https://developer.paypal.com/docs/api/overview) |
+| **Paystack** | Online payments for Nigerian and African businesses. | 🔑 ApiKey | ✅ | [Link](https://paystack.com/docs/) |
 | **Razorpay** | Developer-friendly payment gateway API supporting credit cards, netbanking, and UPI. | 🔑 ApiKey | ✅ | [Link](https://razorpay.com/docs/api/) |
 | **Square** | Point-of-sale, payments, catalog, and seller APIs for businesses of all sizes. | 🔑 ApiKey | ✅ | [Link](https://developer.squareup.com/reference/square) |
 | **Stripe** | Comprehensive suite of APIs for global online payments, billing, and financial services. | 🔑 ApiKey | ✅ | [Link](https://stripe.com/docs/api) |
