@@ -6,5 +6,6 @@
 | **Mathpix** | OCR math, formulas and documents to LaTeX/Markdown. | 🔑 ApiKey | ✅ | [Link](https://mathpix.com/docs/) |
 | **Unit Converter** | Convert between various units. | No | ✅ | [Link](https://api-ninjas.com/api/convertcurrency) |
 | **Wolfram Cloud** | Compute with the full Mathematica language in the cloud. | 🔑 ApiKey | ✅ | [Link](https://reference.wolframcloud.com/) |
+| **WolframAlpha** | Computational intelligence and factual knowledge API. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/api/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

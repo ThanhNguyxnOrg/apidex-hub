@@ -33,5 +33,4 @@
 | **Twinword Sentiment Analysis** | Sentiment analysis and emotion recognition API. | 🔑 ApiKey | ✅ | [Link](https://www.twinword.com/api/sentiment-analysis.php) |
 | **Unplugg** | Forecasting API for IoT and energy timeseries data. | 🔑 ApiKey | ✅ | [Link](https://unplu.gg/test_api.html) |
 | **Vapi** | Voice AI platform for ultra-low latency voice agents and assistants. | 🔑 ApiKey | ✅ | [Link](https://docs.vapi.ai/) |
-| **WolframAlpha** | Computational intelligence and factual knowledge API. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/api/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

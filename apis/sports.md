@@ -6,7 +6,6 @@
 | **API-Sports** | Multi-sport live data (free tier). | 🔑 ApiKey | ✅ | [Link](https://api-sports.io/) |
 | **Cloudbet** | Official Cloudbet API provides real-time sports odds and betting API to place... | 🔑 ApiKey | ✅ | [Link](https://www.cloudbet.com/api/) |
 | **CollegeFootballData.com** | Unofficial detailed American college football statistics, records, and result... | 🔑 ApiKey | ✅ | [Link](https://collegefootballdata.com) |
-| **CricketData** | Live cricket scores and statistics. | 🔑 ApiKey | ✅ | [Link](https://cricketdata.org/) |
 | **CricketData** | Live scores and match statistics for cricket. | 🔑 ApiKey | ✅ | [Link](https://www.cricketdata.org/) |
 | **Daily Football Predictions** | Football match predictions and safe betting picks. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/fominykh.mikhail/api/daily-football-predictions/) |
 | **ESPN** | Unofficial ESPN API for NFL, NBA, MLB, NHL scores and schedules (**No Auth**). | No | ✅ | [Link](https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b) |

@@ -4,6 +4,7 @@
 | :--- | :--- | :---: | :---: | :---: |
 | **7digital** | Api of Music store 7digital. | 🔐 OAuth | ✅ | [Link](https://docs.7digital.com/reference) |
 | **AI Mastering** | Automated Music Mastering. | 🔑 ApiKey | ✅ | [Link](https://aimastering.com/api_docs/) |
+| **Apple Music** | Catalog search, playlists and user libraries. | 🔑 ApiKey | ✅ | [Link](https://developer.apple.com/documentation/applemusicapi) |
 | **Audiomack** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://www.audiomack.com/data-api/docs) |
 | **Bandcamp** | API of Music store Bandcamp. | 🔐 OAuth | ✅ | [Link](https://bandcamp.com/developer) |
 | **Bandsintown** | Music Events. | No | ✅ | [Link](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0) |

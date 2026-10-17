@@ -4,7 +4,6 @@
 | :--- | :--- | :---: | :---: | :---: |
 | **Axiom** | Event data platform for logs, traces, and metrics. | 🔑 ApiKey | ✅ | [Link](https://axiom.co/docs/restapi/introduction) |
 | **Better Stack** | Uptime monitoring, incidents and on-call schedules. | 🔑 ApiKey | ✅ | [Link](https://betterstack.com/docs/) |
-| **Better Stack (Logtail)** | Uptime monitoring, logs, and incident management. | 🔑 ApiKey | ✅ | [Link](https://betterstack.com/docs/uptime/api/) |
 | **Checkly** | API and browser synthetic monitoring for developers. | 🔑 ApiKey | ✅ | [Link](https://www.checklyhq.com/docs/cli/) |
 | **Datadog** | Cloud monitoring, logs, metrics, and APM. | 🔑 ApiKey | ✅ | [Link](https://docs.datadoghq.com/api/latest/) |
 | **Grafana Cloud** | Managed metrics, logs, and traces platform. | 🔑 ApiKey | ✅ | [Link](https://grafana.com/docs/grafana-cloud/developer-resources/api-reference/) |

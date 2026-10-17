@@ -19,6 +19,7 @@
 | **Blagues API** | French jokes API with categories (dev, dark, global, etc.). | 🔑 ApiKey | ✅ | [Link](https://www.blagues-api.fr/) |
 | **Blitapp** | Schedule screenshots of web pages and sync them to your cloud. | 🔑 ApiKey | ✅ | [Link](https://blitapp.com/api/) |
 | **Browshot** | Easily make screenshots of web pages in any screen size, as any device. | 🔑 ApiKey | ✅ | [Link](https://browshot.com/api/documentation) |
+| **Can I Use** | Browser support tables for web platform features. | No | ✅ | [Link](https://caniuse.com/api) |
 | **Carbon Intensity** | Real-time carbon intensity forecasting for Great Britain. | No | ✅ | [Link](https://carbonintensity.org.uk/) |
 | **CDNJS** | Library info. | No | ✅ | [Link](https://api.cdnjs.com/libraries/jquery) |
 | **Changelogs.md** | Structured changelog metadata from open source projects. | No | ✅ | [Link](https://changelogs.md) |
@@ -79,7 +80,6 @@
 | **Microlink** | Extract metadata, take screenshots, and generate PDFs from any URL. | No | ✅ | [Link](https://microlink.io/docs/api/getting-started/overview) |
 | **Mintlify** | For programmatically generating documentation for code. | 🔑 ApiKey | ✅ | [Link](https://docs.mintlify.com) |
 | **MY IP** | Get IP address information. | No | ✅ | [Link](https://www.myip.com/api-docs/) |
-| **Neon** | Serverless Postgres database (free tier). | 🔑 ApiKey | ✅ | [Link](https://neon.tech/docs/reference/api-reference) |
 | **Netlify** | Netlify API. | 🔐 OAuth | ✅ | [Link](https://docs.netlify.com/api/get-started/) |
 | **NetworkCalc** | Network calculators, including subnets, DNS, binary, and security tools. | No | ✅ | [Link](https://networkcalc.com/api/docs) |
 | **Notion** | Access to Notion workspace data via API. | 🔐 OAuth | ✅ | [Link](https://developers.notion.com/) |
@@ -109,7 +109,6 @@
 | **RSS feed to JSON** | Returns RSS feed in JSON format using feed URL. | No | ✅ | [Link](https://rss2json.com/docs) |
 | **SavePage.io** | A free, RESTful API used to screenshot any desktop, or mobile website. | 🔑 ApiKey | ✅ | [Link](https://www.savepage.io) |
 | **ScrapeNinja** | Scraping API with Chrome fingerprint and residential proxies. | 🔑 ApiKey | ✅ | [Link](https://scrapeninja.net) |
-| **ScraperApi** | Easily build scalable web scrapers. | 🔑 ApiKey | ✅ | [Link](https://www.scraperapi.com) |
 | **scraperBox** | Undetectable web scraping API. | 🔑 ApiKey | ✅ | [Link](https://scraperbox.com/) |
 | **scrapestack** | Real-time, Scalable Proxy & Web Scraping REST API. | 🔑 ApiKey | ✅ | [Link](https://scrapestack.com/) |
 | **ScrapingAnt** | Headless Chrome scraping with a simple API. | 🔑 ApiKey | ✅ | [Link](https://scrapingant.com) |
