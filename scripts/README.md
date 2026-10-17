@@ -4,6 +4,17 @@ This directory contains utility scripts for maintaining the apidex-hub repositor
 
 ## 📁 Contents
 
+| File | Role |
+|---|---|
+| `check_links.py` | Fast CLI link-status scan of every catalog row (CI stage 1) |
+| `verify_links_playwright.py` | Browser-based verification pass for tricky hosts (CI stage 2) |
+| `check_pr_links.py` | PR-mode checker: only links added since the merge-base |
+| `remove_dead_links.py` | Deletes rows whose URLs verified 404/DNS-dead, then re-parses |
+| `parse_readme.py` | Validates the catalog and generates `site/src/data/apis.json` |
+| `gen_readme_table.py` | Regenerates the README catalog table (run after edits) |
+| `catalog_utils.py` | Shared helpers for maintenance waves: `norm_url`, `ROW_RE`, `APIS`, dedupe index, footer-safe `insert_rows` |
+
+
 ### `check_links.py`
 **Link checker with improved accuracy**
 
