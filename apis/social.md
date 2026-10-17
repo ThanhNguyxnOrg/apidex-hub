@@ -18,6 +18,7 @@
 | **Kakao** | Kakao Login, Share on KakaoTalk, Social Plugins and more. | 🔐 OAuth | ✅ | [Link](https://developers.kakao.com/) |
 | **Lemmy** | Decentralized link aggregation and discussion platform API. | No | ✅ | [Link](https://lemmy.ml/) |
 | **LINE** | Messaging app. | 🔐 OAuth | ✅ | [Link](https://developers.line.biz/en/) |
+| **LINE Messaging** | LINE messenger bots, pushes and webhooks. | 🔑 ApiKey | ✅ | [Link](https://developers.line.biz/en/docs/) |
 | **LinkedIn** | Professional network. | 🔐 OAuth | ✅ | [Link](https://docs.microsoft.com/en-us/linkedin/?context=linkedin/context) |
 | **Mastodon** | Decentralized microblogging platform. | 🔐 OAuth | ✅ | [Link](https://docs.joinmastodon.org/api/) |
 | **Matrix** | Open standard for decentralized, real-time communication. | 🔑 ApiKey | ✅ | [Link](https://spec.matrix.org/latest/) |

@@ -26,6 +26,7 @@
 | **MSRC** | Microsoft vulnerability and CVRF data feeds. | No | ✅ | [Link](https://msrc.microsoft.com/report/developer) |
 | **MXToolbox** | Domain, DNS, and blacklist lookups. | 🔑 ApiKey | ✅ | [Link](https://mxtoolbox.com/restapi.aspx) |
 | **National Vulnerability Database** | U.S. National Vulnerability Database. | No | ✅ | [Link](https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog) |
+| **NVD** | U.S. National Vulnerability Database with CVE feeds and search. | No | ✅ | [Link](https://nvd.nist.gov/developers) |
 | **OSV** | Open source vulnerability database and API (**No Auth**). | No | ✅ | [Link](https://google.github.io/osv.dev/) |
 | **PhishStats** | Phishing database. | No | ✅ | [Link](https://phishstats.info/) |
 | **Privacy.com** | Generate merchant-specific and one-time use credit card numbers that link bac... | 🔑 ApiKey | ✅ | [Link](https://privacy.com/developer/docs) |
@@ -35,5 +36,6 @@
 | **Spyse** | Access data on all Internet assets and build powerful attack surface manageme... | 🔑 ApiKey | ✅ | [Link](https://spyse-dev.readme.io/reference/quick-start) |
 | **UK Police** | UK Police data. | No | ✅ | [Link](https://data.police.uk/docs/) |
 | **VulDB** | VulDB API allows to initiate queries for one or more items along with transac... | 🔑 ApiKey | ✅ | [Link](https://vuldb.com/?doc.api) |
+| **Vulners** | Vulnerability intelligence with exploit and CVE archive search. | 🔑 ApiKey | ✅ | [Link](https://vulners.com/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

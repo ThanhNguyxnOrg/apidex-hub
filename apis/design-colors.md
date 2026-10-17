@@ -3,10 +3,12 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Brandfetch** | Company logos and brand assets. | 🔑 ApiKey | ✅ | [Link](https://docs.brandfetch.com/) |
+| **Canva Connect** | Design automation: assets, brand kits and exports. | 🔐 OAuth | ✅ | [Link](https://www.canva.dev/docs/connect/) |
 | **Colormind** | AI-powered color palette generator (**No Auth**). | No | ✅ | [Link](http://colormind.io/api-access/) |
 | **Dribbble** | Design community and portfolio. | 🔐 OAuth | ✅ | [Link](https://developer.dribbble.com/) |
 | **EmojiHub** | Random emoji data organized by category and group (**No Auth**). | No | ✅ | [Link](https://github.com/cheatsnake/emojihub) |
 | **Font Awesome** | Icon library and toolkit APIs. | 🔑 ApiKey | ✅ | [Link](https://fontawesome.com/docs/apis) |
+| **Fontshare** | Free shared-font catalogue API by Indian Type Foundry. | No | ✅ | [Link](https://api.fontshare.com/) |
 | **Icon Horse** | Favicon grabber API. | No | ✅ | [Link](https://icon.horse/) |
 | **Iconfinder** | Icons. | 🔑 ApiKey | ✅ | [Link](https://developer.iconfinder.com) |
 | **Icons8** | Icons (find "search icon" hyperlink in page) | No | ✅ | [Link](https://img.icons8.com/) |
