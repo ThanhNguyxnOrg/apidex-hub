@@ -6,27 +6,32 @@
 | **Box** | Cloud content management and file storage API. | 🔐 OAuth | ✅ | [Link](https://developer.box.com/reference/) |
 | **Cloudflare R2** | S3-compatible object storage API without egress fees. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/r2/api/s3/api/) |
 | **ddownload** | File Sharing and Storage. | 🔑 ApiKey | ✅ | [Link](https://ddownload.com/api) |
+| **DRACOON** | REST Web Services for DRACOON This page provides an overview of all available and documented DRACOON APIs, which are | No | ✅ | [Link](https://dracoon.team) |
 | **Dropbox** | File storage and sharing APIs. | 🔐 OAuth | ✅ | [Link](https://www.dropbox.com/developers/documentation/http/documentation) |
+| **ExaVault** | ExaVaults API allows you to incorporate ExaVaults suite of file transfer and user management tools into your own appl | 🔑 ApiKey | ✅ | [Link](https://exavault.com) |
 | **File.io** | Super simple file sharing, convenient, anonymous and secure. | No | ✅ | [Link](https://www.file.io) |
 | **Filebase** | S3-compatible object storage backed by decentralized networks. | 🔑 ApiKey | ✅ | [Link](https://docs.filebase.com/api-documentation) |
 | **Filestack** | File uploads, processing, and content delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://www.filestack.com/docs/api/) |
+| **FileUp** | Temporary file hosting with upload API, expiration times, and view limits | No | ✅ | [Link](https://github.com/RealSinaSnp/FileUp) |
 | **GoFile** | File hosting and management APIs. | 🔑 ApiKey | ✅ | [Link](https://gofile.io/api) |
 | **Google Drive** | File storage, sharing, and metadata APIs. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/drive/api) |
 | **Gyazo** | Image upload and screenshot APIs. | 🔑 ApiKey | ✅ | [Link](https://gyazo.com/) |
 | **ImageKit** | Image and media upload, optimization, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://imagekit.io/docs/api-reference/) |
 | **ImgBB** | Simple image upload API with free tier. | 🔑 ApiKey | ✅ | [Link](https://api.imgbb.com/) |
+| **Internxt** | Privacy-focused cloud storage API. | 🔑 ApiKey | ✅ | [Link](https://internxt.com/developers) |
+| **MEGA** | Cloud storage with end-to-end encryption. | 🔑 ApiKey | ✅ | [Link](https://mega.io/developers) |
 | **OneDrive** | File Sharing and Storage. | 🔐 OAuth | ✅ | [Link](https://developer.microsoft.com/onedrive) |
 | **OneDrive (Microsoft Graph)** | OneDrive file and folder APIs via Microsoft Graph. | 🔐 OAuth | ✅ | [Link](https://learn.microsoft.com/en-us/graph/api/resources/onedrive) |
 | **Pantry** | Free JSON storage for small projects. | No | ✅ | [Link](https://getpantry.cloud/) |
 | **Pastebin** | Plain Text Storage. | 🔑 ApiKey | ✅ | [Link](https://pastebin.com/doc_api) |
+| **pCloud** | Cloud storage with file, folder and sharing APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.pcloud.com/) |
 | **Pinata** | IPFS pinning and decentralized file storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.pinata.cloud/) |
 | **Quip** | File Sharing and Storage for groups. | 🔑 ApiKey | ✅ | [Link](https://quip.com/dev/automation/documentation) |
+| **Revdoku** | Cloud file storage, version history, sharing and incoming email attachments | 🔑 ApiKey | ✅ | [Link](https://revdoku.com/api.md) |
 | **Storj** | Decentralized cloud object storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.storj.io/) |
 | **The Null Pointer** | No-bullshit file hosting and URL shortening service. | No | ✅ | [Link](https://0x0.st) |
 | **Uploadcare** | File uploads, media processing, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://uploadcare.com/docs/api_reference/) |
 | **UploadThing** | File upload infrastructure for modern web apps. | 🔑 ApiKey | ✅ | [Link](https://docs.uploadthing.com/) |
-| **Web3 Storage** | File Sharing and Storage for Free with 1TB Space. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/) |
 | **Web3.Storage** | Decentralized storage API built on IPFS/Filecoin. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/docs/) |
-
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

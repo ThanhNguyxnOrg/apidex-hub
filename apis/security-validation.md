@@ -2,36 +2,84 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Agent Verifier** | Self-check for AI agents: verifies Web Bot Auth signatures and shows how a request looks | No | ✅ | [Link](https://packet.guru/agents/reference) |
+| **Antideo** | Antideo maintains large database with spam and scam records, IP locations and infected ranges, proxy records and | No | ✅ | [Link](https://www.antideo.com) |
+| **Application Environment Verification** | Android library and API to verify the safety of user devices, detect rooted devices and other risks | 🔑 ApiKey | ✅ | [Link](https://github.com/fingerprintjs/aev) |
 | **BitWarden** | Best open-source password manager. | 🔐 OAuth | ✅ | [Link](https://bitwarden.com/help/api/) |
+| **Botd** | Botd is a browser library for JavaScript bot detection | 🔑 ApiKey | ✅ | [Link](https://github.com/fingerprintjs/botd) |
+| **BreachDirectory** | Check if email, username, or phone number has been exposed in data breaches. | 🔑 ApiKey | ✅ | [Link](https://breachdirectory.org/) |
 | **Bugcrowd** | Bugcrowd API for interacting and tracking the reported issues programmatically. | 🔑 ApiKey | ✅ | [Link](https://docs.bugcrowd.com/api/getting-started/) |
 | **Censys** | Search engine for Internet connected host and devices. | 🔑 ApiKey | ✅ | [Link](https://search.censys.io/api) |
 | **CertSpotter** | Certificate transparency monitoring. | No | ✅ | [Link](https://sslmate.com/certspotter/api/) |
+| **CIRCL CVE** | Community CVE/MKE vulnerability search with CVSS and CPE data. | No | ✅ | [Link](https://cve.circl.lu/) |
+| **Cisco PSIRT openVuln** | The Cisco Product Security Incident Response Team (PSIRT) openVuln API is a RESTful API that allows customers to obta | 🔒 OAuth | ✅ | [Link](https://cisco.com) |
+| **ClassiFinder** | Detect leaked secrets and prompt-injection in text and return redacted output | 🔑 ApiKey | ✅ | [Link](https://classifinder.ai) |
+| **Cloudflare DoH** | DNS-over-HTTPS JSON resolver on 1.1.1.1. | No | ✅ | [Link](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/dns-json/) |
 | **Cloudflare Turnstile** | Privacy-first CAPTCHA alternative. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/turnstile/) |
 | **Complete Criminal Checks** | Provides data of offenders from all U.S. States and Pureto Rico. | 🔑 ApiKey | ✅ | [Link](https://completecriminalchecks.com/Developers) |
-| **BreachDirectory** | Check if email, username, or phone number has been exposed in data breaches. | 🔑 ApiKey | ✅ | [Link](https://breachdirectory.org/) |
+| **Compli** | Screen crypto addresses, emails, websites, IDs and countries against OFAC, EU, UK sanctions lists | 🔑 ApiKey | ✅ | [Link](https://docs.compliapi.com) |
+| **CSR.plus** | Generate certificate signing requests and private keys without OpenSSL | No | ✅ | [Link](https://csr.plus/docs/api) |
+| **CVE.report** | CVE records with NVD KEV and EPSS enrichment | No | ✅ | [Link](https://cve.report/api) |
+| **CyCAT.org** | CyCAT - The Cybersecurity Resource Catalogue public API services | No | ✅ | [Link](https://cycat.org) |
+| **dead-drop** | Ephemeral zero-knowledge encrypted data sharing | No | ✅ | [Link](https://api.dead-drop.xyz/api/v1/docs) |
+| **Domain Intelligence** | DNS, WHOIS/RDAP, SSL, subdomain enumeration, and email security in one parallel call | 🔑 ApiKey | ✅ | [Link](https://oti-labs.com/domain-intelligence-api) |
+| **Dymo** | Multi-account and fraud detection. Sending emails without ending up in SPAM | 🔑 ApiKey | ✅ | [Link](https://dymo.tpeoficial.com/) |
+| **EmailRep** | Email address threat and risk prediction | No | ✅ | [Link](https://docs.emailrep.io/) |
+| **Escape** | An API for escaping different kind of queries | No | ✅ | [Link](https://github.com/polarspetroll/EscapeAPI) |
 | **FilterLists** | Lists of filters for adblockers and firewalls. | No | ✅ | [Link](https://filterlists.com) |
 | **FingerprintJS Pro** | Fraud detection API offering highly accurate browser fingerprinting. | 🔑 ApiKey | ✅ | [Link](https://dev.fingerprintjs.com/docs) |
+| **FishFish** | A volunteer cybersecurity project focused on providing resources and services that improve safety across Discord | No | ✅ | [Link](https://fishfish.gg/) |
+| **FOFA** | Search engine for Internet connected assets and devices | 🔑 ApiKey | ✅ | [Link](https://en.fofa.info/api) |
 | **FraudLabs Pro** | Screen order information using AI to detect frauds. | 🔑 ApiKey | ✅ | [Link](https://www.fraudlabspro.com/developer/api/screen-order) |
 | **FullHunt** | Attack surface discovery and monitoring. | 🔑 ApiKey | ✅ | [Link](https://fullhunt.io/) |
 | **Google reCAPTCHA** | Bot protection and CAPTCHA service. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/recaptcha) |
 | **GreyNoise** | Query IPs in the GreyNoise dataset and retrieve a subset of the full IP conte... | 🔑 ApiKey | ✅ | [Link](https://docs.greynoise.io/reference) |
 | **HackerOne** | The industry’s first hacker API that helps increase productivity towards crea... | 🔑 ApiKey | ✅ | [Link](https://api.hackerone.com/) |
+| **Hashable** | A REST API to access high level cryptographic functions and methods | No | ✅ | [Link](https://hashable.space/pages/api/) |
 | **HaveIBeenPwned** | Check if email or password has been compromised in a data breach. | 🔑 ApiKey | ✅ | [Link](https://haveibeenpwned.com/API/v3) |
+| **ICANN RDAP** | Registration Data Access Protocol for domains and IPs. | No | ✅ | [Link](https://www.icann.org/rdap) |
+| **Image Moderation** | Our FREE API blocks images with nudity. Build from the ground up, accurate models, best in class support, great price | No | ✅ | [Link](https://moderatecontent.com) |
+| **Intelligence X** | Perform OSINT via Intelligence X | 🔑 ApiKey | ✅ | [Link](https://github.com/IntelligenceX/SDK/blob/master/Intelligence%20X%20API.pdf) |
 | **IP Quality Score** | IP reputation, fraud prevention, and email validation. | 🔑 ApiKey | ✅ | [Link](https://www.ipqualityscore.com/documentation/overview) |
+| **IPASIS** | Real-time bot detection and fraud prevention API combining IP reputation, proxy/VPN detection, and email validation | 🔑 ApiKey | ✅ | [Link](https://ipasis.com/docs) |
+| **IPGuardian** | Check IP addresses against 140+ public threat intelligence blocklists | No | ✅ | [Link](https://ipguardian.net/docs) |
+| **IPLocate.io** | Fast, free, accurate IP geolocation and threat data (proxy/VPN/hosting detection) API | No | ✅ | [Link](https://www.iplocate.io/docs) |
+| **IPLogs** | Free VPN, proxy, Tor and datacenter IP detection. 13 sources, active probing | No | ✅ | [Link](https://iplogs.com/docs) |
+| **IPScanner** | IP network class (residential, mobile, hosting, VPN, residential proxy, Tor) with a confidence score | 🔑 ApiKey | ✅ | [Link](https://ipscanner.io/api-documentation) |
+| **isMalicious** | Reputation of IPs, domains, URLs and file hashes from aggregated threat feeds, plus CVE lookups | 🔑 ApiKey | ✅ | [Link](https://ismalicious.com/api-docs) |
+| **LGTM** | The REST API for LGTM provides data so that you can customize how you integrate LGTM analysis into your workflow. It | 🔑 ApiKey | ✅ | [Link](https://lgtm.com) |
 | **LoginRadius** | Managed User Authentication Service. | 🔑 ApiKey | ✅ | [Link](https://www.loginradius.com/docs/) |
+| **Maskbreak** | Detect VPNs, proxies, Tor, bots and antidetect browsers at signup, login and checkout | 🔑 ApiKey | ✅ | [Link](https://maskbreak.com/api) |
+| **Mozilla http scanner** | Mozilla observatory http scanner | No | ✅ | [Link](https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md) |
 | **Mozilla Observatory** | Website security analysis (**No Auth**). | No | ✅ | [Link](https://observatory.mozilla.org/) |
+| **Mozilla tls scanner** | Mozilla observatory tls scanner | No | ✅ | [Link](https://github.com/mozilla/tls-observatory#api-endpoints) |
 | **MSRC** | Microsoft vulnerability and CVRF data feeds. | No | ✅ | [Link](https://msrc.microsoft.com/report/developer) |
 | **MXToolbox** | Domain, DNS, and blacklist lookups. | 🔑 ApiKey | ✅ | [Link](https://mxtoolbox.com/restapi.aspx) |
-| **National Vulnerability Database** | U.S. National Vulnerability Database. | No | ✅ | [Link](https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog) |
+| **National Vulnerability Database** | U.S. National Vulnerability Database | No | ✅ | [Link](https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog) |
+| **Neetix Liveliness** | Face liveness, presentation-attack detection and 1:1 face match for identity verification | 🔑 ApiKey | ✅ | [Link](https://liveliness.neetix.in/api-reference) |
+| **nextAuth** | API for the nextAuth server | 🔑 ApiKey | ✅ | [Link](https://n-auth.com) |
+| **NVD** | U.S. National Vulnerability Database with CVE feeds and search. | No | ✅ | [Link](https://nvd.nist.gov/developers) |
 | **OSV** | Open source vulnerability database and API (**No Auth**). | No | ✅ | [Link](https://google.github.io/osv.dev/) |
+| **Passwordinator** | Generate random passwords of varying complexities | No | ✅ | [Link](https://github.com/fawazsullia/password-generator/) |
 | **PhishStats** | Phishing database. | No | ✅ | [Link](https://phishstats.info/) |
+| **Portscan** | Scans the requesting client's IP for open TCP ports with fast or deep modes on IPv4/IPv6 | No | ✅ | [Link](https://api.portscan.com) |
+| **Presend** | Security and developer utility API -- malware, vulnerability, and domain checks, no signup | No | ✅ | [Link](https://presend.pages.dev/api) |
 | **Privacy.com** | Generate merchant-specific and one-time use credit card numbers that link bac... | 🔑 ApiKey | ✅ | [Link](https://privacy.com/developer/docs) |
 | **Pulsedive** | Scan, search and collect threat intelligence data in real-time. | 🔑 ApiKey | ✅ | [Link](https://pulsedive.com/api/) |
+| **Sealed Rose** | AI media forensics and synthetic content verification for video, audio, image, and text | 🔑 ApiKey | ✅ | [Link](https://sealedrose.com/verify-video) |
 | **SecurityTrails** | Domain and DNS intelligence. | 🔑 ApiKey | ✅ | [Link](https://securitytrails.com/corp/api) |
 | **Shodan** | Internet-connected devices search engine. | 🔑 ApiKey | ✅ | [Link](https://developer.shodan.io/) |
+| **Snyk** | The Snyk API is available to customers on [Business and Enterprise plans](https://snyk.io/plans) and allows you to pr | No | ✅ | [Link](https://snyk.io) |
 | **Spyse** | Access data on all Internet assets and build powerful attack surface manageme... | 🔑 ApiKey | ✅ | [Link](https://spyse-dev.readme.io/reference/quick-start) |
+| **SSL Labs** | Deep SSL/TLS server analysis with A+ to F grading | No | ✅ | [Link](https://github.com/ssllabs/ssllabs-scan/blob/master/ssllabs-api-docs-v3.md) |
+| **StopForumSpam** | Spam registry of IP/email/username from forum spam. | No | ✅ | [Link](https://www.stopforumspam.com/) |
+| **ThreatCluster** | Threat intelligence: incident clusters, validated IOCs, CVEs, ransomware leak-site victims | 🔑 ApiKey | ✅ | [Link](https://threatcluster.io/api/public/v1/docs) |
+| **TruAnon Private** | Welcome to TruAnon! Thank you for helping make the Internet a safer place to be. Adopting TruAnon is simple. There is | No | ✅ | [Link](https://truanon.com) |
 | **UK Police** | UK Police data. | No | ✅ | [Link](https://data.police.uk/docs/) |
+| **URLScan** | URL sandboxing with page screenshots, scans and results. | 🔑 ApiKey | ✅ | [Link](https://urlscan.io/) |
+| **VPNDetection** | Check whether an IPv4 or IPv6 address belongs to VPN infrastructure, no key needed | No | ✅ | [Link](https://docs.vpndetection.io/api) |
 | **VulDB** | VulDB API allows to initiate queries for one or more items along with transac... | 🔑 ApiKey | ✅ | [Link](https://vuldb.com/?doc.api) |
-
+| **Vulners** | Vulnerability intelligence with exploit and CVE archive search. | 🔑 ApiKey | ✅ | [Link](https://vulners.com/) |
+| **Xposedornot passwords** | XposedOrNot is a collection of ~850 million real time passwords collated from real time data breaches. This large | No | ✅ | [Link](https://xposedornot.com/api_doc) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
