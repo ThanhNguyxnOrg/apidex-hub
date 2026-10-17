@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T10:14:25.900132+00:00",
+    "generated_at": "2026-10-17T10:20:55.864178+00:00",
     "source": "README.md",
-    "total_apis": 3255,
+    "total_apis": 3256,
     "total_categories": 70,
     "no_auth_count": 1436,
-    "api_key_count": 1564,
+    "api_key_count": 1565,
     "oauth_count": 255,
-    "https_count": 3160,
+    "https_count": 3161,
     "https_percentage": 97
   },
   "categories": [
@@ -4386,7 +4386,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 277,
+      "api_count": 278,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -4870,6 +4870,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://crawlreadiness.com"
+        },
+        {
+          "name": "CurlShot",
+          "description": "Website screenshot API: URL, HTML or Markdown to PNG, JPEG, WebP, PDF or scrolling video (free tier: 100/month).",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://curlshot.com/docs"
         },
         {
           "name": "DaniWeb Connect",
