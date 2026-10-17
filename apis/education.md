@@ -5,6 +5,8 @@
 | **BigBlueButton** | Create video classrooms and fetch recordings for e-learning. | No | ✅ | [Link](https://docs.bigbluebutton.org/development/api/) |
 | **Blackboard Learn** | Blackboard Learn REST APIs and developer portal. | 🔐 OAuth | ✅ | [Link](https://developer.blackboard.com) |
 | **Calendarific** | Worldwide holidays for 230+ countries. | 🔑 ApiKey | ✅ | [Link](https://calendarific.com/api-documentation) |
+| **Clever Data** | Serves the Clever Data API | 🔒 OAuth | ✅ | [Link](https://clever.com) |
+| **College ROI** | Lifetime ROI of US colleges and majors - free static JSON, CC BY 4.0 | No | ✅ | [Link](https://le-teen.com/api) |
 | **CollegeScorecard** | US higher-ed institutions: costs, admissions and outcomes. | No | ✅ | [Link](https://collegescorecard.ed.gov/data/) |
 | **CORE API** | Open access research paper metadata. | 🔑 ApiKey | ✅ | [Link](https://api.core.ac.uk/docs/v3) |
 | **Crossref** | Scholarly article metadata (**No Auth**). | No | ✅ | [Link](https://www.crossref.org/documentation/retrieve-metadata/rest-api/) |

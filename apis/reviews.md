@@ -11,6 +11,7 @@
 | **PowerReviews** | Ratings, reviews and questions for products and services. | 🔑 ApiKey | ✅ | [Link](https://developers.powerreviews.com/) |
 | **Reviews.io** | First-party business reviews with photo and Q&A support. | 🔑 ApiKey | ✅ | [Link](https://developer.reviews.io/) |
 | **Sitejabber** | Customer reviews and business reputation data. | 🔑 ApiKey | ✅ | [Link](https://api.sitejabber.com/v1/) |
+| **Stellastra** | Stellastra makes it easy to get reviews for your cybersecurity solution in real-time with its platform-agnostic REST API | 🔑 ApiKey | ✅ | [Link](https://stellastra.com/contact-us) |
 | **Trustpilot** | Business reviews, ratings and consumer trust data. | 🔑 ApiKey | ✅ | [Link](https://developers.trustpilot.com/) |
 | **Yelp Fusion** | Business and restaurant reviews. | 🔑 ApiKey | ✅ | [Link](https://docs.developer.yelp.com/) |
 

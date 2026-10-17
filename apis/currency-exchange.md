@@ -3,16 +3,20 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **1Forge** | Forex currency market data. | 🔑 ApiKey | ✅ | [Link](https://1forge.com/forex-data-api/api-documentation) |
+| **AllRatesToday** | Real-time mid-market exchange rates for 160+ currencies with SDKs | 🔑 ApiKey | ✅ | [Link](https://allratestoday.com) |
 | **Amdoren** | Free currency API with over 150 currencies. | 🔑 ApiKey | ✅ | [Link](https://www.amdoren.com/currency-api/) |
 | **Bank of Canada Valet** | Free central-bank exchange/economic series API. | No | ✅ | [Link](https://www.bankofcanada.ca/valet/docs) |
 | **Bank of Russia** | Exchange rates and currency conversion. | No | ✅ | [Link](https://www.cbr.ru/development/SXML/) |
+| **Cambio Uruguay** | Real-time buy/sell rates from every Uruguayan exchange house with conversion and history | No | ✅ | [Link](https://cambio-uruguay.com) |
 | **CurrencyAPI** | Real-time currency rates and conversion. | 🔑 ApiKey | ✅ | [Link](https://currencyapi.com/) |
 | **CurrencyBeacon** | Real-time and historical exchange rates. | 🔑 ApiKey | ✅ | [Link](https://currencybeacon.com/api-documentation) |
 | **CurrencyConverterAPI** | Free currency converter. | 🔑 ApiKey | ✅ | [Link](https://currencyconverterapi.com/docs) |
 | **CurrencyFreaks** | Exchange rates and currency conversion API. | 🔑 ApiKey | ✅ | [Link](https://currencyfreaks.com/) |
 | **Currencylayer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://currencylayer.com/) |
 | **CurrencyScoop** | Real-time and historical currency rates JSON API. | 🔑 ApiKey | ✅ | [Link](https://currencyscoop.com/api-documentation) |
+| **Currencystack** | Real-time exchange rates for 154 world currencies provided in JSON format and works for any programming environment | 🔑 ApiKey | ✅ | [Link](https://currencystack.io) |
 | **Czech National Bank** | A collection of exchange rates. | No | ✅ | [Link](https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.xml) |
+| **Daleelak** | Egyptian bank and dealer exchange rates, gold and silver prices | No | ✅ | [Link](https://getdaleelak.com/en/api) |
 | **ECB Data API** | Public ECB data API for exchange rates. | No | ✅ | [Link](https://data.ecb.europa.eu/help/api/data) |
 | **Economia.Awesome** | Portuguese free currency prices and conversion with no rate limits. | No | ✅ | [Link](https://docs.awesomeapi.com.br/api-de-moedas) |
 | **ExchangeRate-API** | Currency exchange rate conversion data. | No | ✅ | [Link](https://www.exchangerate-api.com/docs/free) |
@@ -21,8 +25,17 @@
 | **Fixer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://fixer.io/) |
 | **Frankfurter** | Open source exchange rates API. | No | ✅ | [Link](https://www.frankfurter.app/) |
 | **FreeCurrencyAPI** | Free currency conversion API. | 🔑 ApiKey | ✅ | [Link](https://freecurrencyapi.com/docs) |
+| **Fulusly** | Exchange rates for 144 currencies with daily history back to the 1990s, English and Arabic | No | ✅ | [Link](https://fulusly.soft9.us/developers) |
+| **FXMacroData** | Real-time forex macroeconomic data from central bank announcements | 🔑 ApiKey | ✅ | [Link](https://fxmacrodata.com) |
+| **FXpeek** | Source-linked historical reference exchange rates with CSV, JSON and an MCP server | No | ✅ | [Link](https://fxpeek.com/en/api) |
+| **FxRates** | Real-time exchange rates, historical rates and currency conversion | 🔑 ApiKey | ✅ | [Link](https://fxratesapi.com/) |
 | **National Bank of Poland** | Official exchange rates from NBP. | No | ✅ | [Link](https://api.nbp.pl/en.html) |
+| **Nerkhsanj** | Iran free-market USD, EUR, CNY, gold and coin rates in toman, live and daily archive since 2010 | No | ✅ | [Link](https://nerkh.jahankhahan.shop/developers/en) |
 | **Open Exchange Rates** | Currency conversion and exchange rates. | 🔑 ApiKey | ✅ | [Link](https://docs.openexchangerates.org/) |
+| **paralelo.bo** | Bolivia parallel-market USD/BOB exchange rate, aggregated from P2P sources every 60s | No | ✅ | [Link](https://paralelo.bo/api) |
+| **Rate** | Hourly exchange rates for 160+ currencies in JSON, XML or CSV with free plan 2,500 requests/month | 🔑 ApiKey | ✅ | [Link](https://rate-api.com/docs/api) |
+| **Ratesapi.io** | Free foreign currency exchange rates api with currency conversion | No | ✅ | [Link](https://ratesapi.io/) |
+| **TaxID** | EU VAT number validation with company name and address lookup across all 27 member states | 🔑 ApiKey | ✅ | [Link](https://www.taxid.dev/docs) |
 | **VATComply** | VAT rates and FX conversion data. | No | ✅ | [Link](https://www.vatcomply.com) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

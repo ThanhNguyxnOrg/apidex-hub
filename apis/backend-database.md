@@ -2,11 +2,16 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Amazon DynamoDB** | Amazon DynamoDB Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performa | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide) |
 | **Appwrite** | Open-source backend platform providing databases, auth, storage, and functions. | 🔑 ApiKey | ✅ | [Link](https://appwrite.io/docs) |
 | **Baserow** | Open-source no-code database with REST API. | 🔑 ApiKey | ✅ | [Link](https://baserow.io/docs) |
+| **Cloud Firestore** | Accesses the NoSQL document database built for automatic scaling, high performance, and ease of application development | 🔒 OAuth | ✅ | [Link](https://firebase.google.com/docs/firestore) |
+| **Cloud Spanner** | Cloud Spanner is a managed, mission-critical, globally consistent and scalable relational database service | 🔒 OAuth | ✅ | [Link](https://cloud.google.com/spanner/docs) |
 | **Convex** | Reactive backend-as-a-service with real-time automatic sync and serverless functions. | 🔑 ApiKey | ✅ | [Link](https://docs.convex.dev/) |
 | **Directus** | Open-source data platform wrapping any SQL database. | 🔑 ApiKey | ✅ | [Link](https://directus.com/docs/) |
+| **Don't kill my app** | A database of ways mobile vendors inhibit apps background activity | No | ✅ | [Link](https://dontkillmyapp.com/api/v1/output.json) |
 | **Firebase Realtime Database** | Low-latency JSON document GET/PUT/PATCH REST endpoints. | No | ✅ | [Link](https://firebase.google.com/docs/reference/rest/database) |
+| **InfluxDB** | Official API. | No | ✅ | [Link](https://influxdata.com) |
 | **Kintone** | Low-code platform REST APIs for apps and records. | 🔑 ApiKey | ✅ | [Link](https://kintone.dev/en/) |
 | **Meilisearch** | Fast search engine with REST index and document APIs. | 🔑 ApiKey | ✅ | [Link](https://www.meilisearch.com/docs) |
 | **MongoDB Atlas** | Data API for MongoDB Atlas clusters. | 🔑 ApiKey | ✅ | [Link](https://www.mongodb.com/docs/atlas/api/) |
