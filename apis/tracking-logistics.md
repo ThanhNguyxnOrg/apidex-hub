@@ -5,10 +5,12 @@
 | **17TRACK** | Shipment tracking API with free quota. | 🔑 ApiKey | ✅ | [Link](https://asset.17track.net/api/document/v2_en/index.html) |
 | **Aftership** | API to update, manage and track shipment efficiently. | 🔑 ApiKey | ✅ | [Link](https://developers.aftership.com/reference/quick-start) |
 | **Australia Post** | Shipping, tracking and address validation for AU/International. | 🔑 ApiKey | ✅ | [Link](https://developers.auspost.com.au) |
+| **Bring** | Norwegian Post Group parcels and freight: labels and tracking. | 🔑 ApiKey | ✅ | [Link](https://developer.bring.com/) |
 | **Correios** | Integration to provide information and prepare shipments using Correio's serv... | 🔑 ApiKey | ✅ | [Link](https://cws.correios.com.br/ajuda) |
 | **DHL Shipment Tracking** | DHL package tracking API. | 🔑 ApiKey | ✅ | [Link](https://developer.dhl.com/api-reference/shipment-tracking) |
 | **EasyPost** | Shipping rates, labels and tracking across major carriers. | 🔑 ApiKey | ✅ | [Link](https://docs.easypost.com/) |
 | **FedEx Tracking** | FedEx package tracking API. | 🔑 ApiKey | ✅ | [Link](https://developer.fedex.com/api/en-us/catalog/track.html) |
+| **Onfleet** | Last-mile delivery dispatch, routing and live tracking. | 🔑 ApiKey | ✅ | [Link](https://docs.onfleet.com/) |
 | **Pixela** | API for recording and tracking habits or effort, routines. | 🔑 ApiKey | ✅ | [Link](https://pixe.la) |
 | **PostalPinCode** | API for getting Pincode details in India. | No | ✅ | [Link](http://www.postalpincode.in/Api-Details) |
 | **Postmon** | An API to query Brazilian ZIP codes and orders easily, quickly and free. | No | No | [Link](http://postmon.com.br) |
@@ -18,6 +20,7 @@
 | **Ship24** | Universal parcel and shipment tracking across carriers. | 🔑 ApiKey | ✅ | [Link](https://www.ship24.com/tracking-api) |
 | **ShipEngine** | Multi-carrier labels, rates and tracking in one API. | 🔑 ApiKey | ✅ | [Link](https://www.shipengine.com/docs/) |
 | **Shippo** | Shipping API with free test mode. | 🔑 ApiKey | ✅ | [Link](https://docs.goshippo.com/) |
+| **ShipStation** | Order routing, labels and shipment tracking across carriers. | 🔑 ApiKey | ✅ | [Link](https://www.shipstation.com/docs/api/) |
 | **UPS** | Rating, tracking and shipping APIs from the UPS Developer Kit. | 🔑 ApiKey | ✅ | [Link](https://www.ups.com/upsdeveloperkit) |
 | **USPS Track & Confirm** | USPS tracking API. | 🔑 ApiKey | ✅ | [Link](https://www.usps.com/business/web-tools-apis/track-and-confirm-api.htm) |
 | **WeCanTrack** | Automatically place subids in affiliate links to attribute affiliate conversi... | 🔑 ApiKey | ✅ | [Link](https://docs.wecantrack.com) |

@@ -2,11 +2,14 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **BigBlueButton** | Create video classrooms and fetch recordings for e-learning. | No | ✅ | [Link](https://docs.bigbluebutton.org/development/api/) |
 | **Blackboard Learn** | Blackboard Learn REST APIs and developer portal. | 🔐 OAuth | ✅ | [Link](https://developer.blackboard.com) |
 | **Calendarific** | Worldwide holidays for 230+ countries. | 🔑 ApiKey | ✅ | [Link](https://calendarific.com/api-documentation) |
+| **CollegeScorecard** | US higher-ed institutions: costs, admissions and outcomes. | No | ✅ | [Link](https://collegescorecard.ed.gov/data/) |
 | **CORE API** | Open access research paper metadata. | 🔑 ApiKey | ✅ | [Link](https://api.core.ac.uk/docs/v3) |
 | **Crossref** | Scholarly article metadata (**No Auth**). | No | ✅ | [Link](https://www.crossref.org/documentation/retrieve-metadata/rest-api/) |
 | **edX API** | Online course catalog. | 🔐 OAuth | ✅ | [Link](https://courses.edx.org/api-docs/) |
+| **Google Classroom** | Manage courses, rosters and coursework in Google Classroom. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/classroom) |
 | **KanjiAPI** | Open Japanese kanji and kana character reference. | No | ✅ | [Link](https://kanjiapi.dev/) |
 | **Khan Academy** | Khan Academy educational content. | 🔐 OAuth | ✅ | [Link](https://khanacademy.org/api-docs) |
 | **Moodle Web Services** | LMS external functions: courses, users, grades. | 🔑 ApiKey | ✅ | [Link](https://docs.moodle.org/dev/Web_services) |

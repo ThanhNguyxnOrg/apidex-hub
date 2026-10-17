@@ -4,7 +4,10 @@
 | :--- | :--- | :---: | :---: | :---: |
 | **Amazon Cognito** | AWS user pools and federated identity. | 🔐 OAuth | ✅ | [Link](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) |
 | **authentik** | Open-source identity provider with SSO and flows. | 🔑 ApiKey | ✅ | [Link](https://docs.goauthentik.io/) |
+| **Corbado** | Passkey-first authentication APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.corbado.com/) |
 | **Descope** | Customer identity and authentication flows. | 🔑 ApiKey | ✅ | [Link](https://docs.descope.com/api/) |
+| **Duo Security** | Manage MFA devices, policies and logs (Admin API). | 🔑 ApiKey | ✅ | [Link](https://duo.com/docs/adminapi) |
+| **Firebase Auth** | Sign-up, sign-in and token verification REST endpoints. | 🔑 ApiKey | ✅ | [Link](https://firebase.google.com/docs/reference/rest/auth) |
 | **Frontegg** | Authentication, user management, and multi-tenant identity. | 🔑 ApiKey | ✅ | [Link](https://developers.frontegg.com/) |
 | **FusionAuth** | Identity and access management platform. | 🔑 ApiKey | ✅ | [Link](https://fusionauth.io/docs/apis/) |
 | **GetOTP** | OTP verification and passwordless login APIs. | 🔑 ApiKey | ✅ | [Link](https://otp.dev/en/docs/) |
