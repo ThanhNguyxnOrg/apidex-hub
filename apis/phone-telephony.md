@@ -9,6 +9,7 @@
 | **NeutrinoAPI Phone Validate** | Phone validation and carrier lookup. | 🔑 ApiKey | ✅ | [Link](https://www.neutrinoapi.com/api/phone-validate/) |
 | **Phone Validation** | Validate phone numbers globally. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/phone-validation-api) |
 | **Plivo** | Voice and SMS communication APIs. | 🔑 ApiKey | ✅ | [Link](https://www.plivo.com/docs/home) |
+| **SimpleTexting** | SMS campaigns, contacts and two-way messaging. | 🔑 ApiKey | ✅ | [Link](https://simpletexting.com/api/) |
 | **Sinch** | SMS, voice, and verification APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.sinch.com/) |
 | **Telnyx** | Telephony, messaging, and SIP APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.telnyx.com/api-reference/overview) |
 | **Textbelt** | Lightweight SMS sending API. | 🔑 ApiKey | ✅ | [Link](https://www.textbelt.com/) |

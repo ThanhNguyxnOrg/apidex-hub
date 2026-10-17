@@ -5,8 +5,10 @@
 | **Axiom** | Event data platform for logs, traces, and metrics. | 🔑 ApiKey | ✅ | [Link](https://axiom.co/docs/restapi/introduction) |
 | **Better Stack** | Uptime monitoring, incidents and on-call schedules. | 🔑 ApiKey | ✅ | [Link](https://betterstack.com/docs/) |
 | **Checkly** | API and browser synthetic monitoring for developers. | 🔑 ApiKey | ✅ | [Link](https://www.checklyhq.com/docs/cli/) |
+| **Cronitor** | Cron job and data pipeline monitoring with instant alerts. | 🔑 ApiKey | ✅ | [Link](https://cronitor.io/docs) |
 | **Datadog** | Cloud monitoring, logs, metrics, and APM. | 🔑 ApiKey | ✅ | [Link](https://docs.datadoghq.com/api/latest/) |
 | **Grafana Cloud** | Managed metrics, logs, and traces platform. | 🔑 ApiKey | ✅ | [Link](https://grafana.com/docs/grafana-cloud/developer-resources/api-reference/) |
+| **Healthchecks.io** | Health monitoring with pings, cron checks and down-alerting. | 🔑 ApiKey | ✅ | [Link](https://healthchecks.io/docs/api/) |
 | **Honeycomb** | Observability for distributed systems and microservices. | 🔑 ApiKey | ✅ | [Link](https://docs.honeycomb.io/api/) |
 | **New Relic** | Full-stack application performance monitoring. | 🔑 ApiKey | ✅ | [Link](https://docs.newrelic.com/docs/apis/intro-apis/introduction-new-relic-apis/) |
 | **OpenTelemetry** | Open-source observability framework for telemetry data. | No | ✅ | [Link](https://opentelemetry.io/docs/) |
