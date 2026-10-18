@@ -1,15 +1,10 @@
 {
-  "count": 2,
+  "count": 1,
   "removed": [
     {
-      "name": "Podscan",
-      "url": "https://podscan.fm/api-docs",
-      "file": "podcasts.md"
-    },
-    {
-      "name": "PriceCharting",
-      "url": "https://www.pricecharting.com/api-docs",
-      "file": "shopping.md"
+      "name": "Apility.io",
+      "url": "https://apility.io/apidocs/",
+      "file": "anti-malware.md"
     }
   ]
 }
