@@ -19,7 +19,6 @@
 | **NocoDB** | Turn any database into a smart spreadsheet with API. | 🔑 ApiKey | ✅ | [Link](https://docs.nocodb.com/) |
 | **Parse Server** | Open-source BaaS with REST API for data, auth and files. | 🔑 ApiKey | ✅ | [Link](https://docs.parseplatform.org/rest/guide/) |
 | **PlanetScale** | Serverless MySQL database platform with horizontal sharding and non-blocking migrations. | 🔑 ApiKey | ✅ | [Link](https://planetscale.com/docs) |
-| **PostgREST** | Serve any Postgres schema as a REST API. | No | ✅ | [Link](https://postgrest.org/en/stable/references/api/) |
 | **Sanity** | Structured content platform with a fully queryable hosted dataset via GROQ. | 🔑 ApiKey | ✅ | [Link](https://www.sanity.io/docs/) |
 | **SeaTable** | Spreadsheet-database hybrid REST API. | 🔑 ApiKey | ✅ | [Link](https://api.seatable.com/reference/introduction) |
 | **Strapi** | Open-source headless CMS exposing a REST or GraphQL API for your content. | 🔑 ApiKey | ✅ | [Link](https://docs.strapi.io/) |

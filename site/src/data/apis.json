@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-18T02:45:55.065393+00:00",
+    "generated_at": "2026-10-21T03:03:46.380715+00:00",
     "source": "README.md",
-    "total_apis": 3243,
+    "total_apis": 3241,
     "total_categories": 70,
-    "no_auth_count": 1431,
-    "api_key_count": 1557,
+    "no_auth_count": 1430,
+    "api_key_count": 1556,
     "oauth_count": 255,
-    "https_count": 3152,
+    "https_count": 3150,
     "https_percentage": 97
   },
   "categories": [
@@ -662,7 +662,7 @@
       "id": "anti-malware",
       "emoji": "🛡️",
       "name": "Anti-Malware",
-      "api_count": 18,
+      "api_count": 17,
       "apis": [
         {
           "name": "AbuseIPDB",
@@ -705,13 +705,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://maldatabase.com/api-doc.html"
-        },
-        {
-          "name": "MalShare",
-          "description": "Malware analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://malshare.com/doc.php"
         },
         {
           "name": "Malwagon",
@@ -1007,7 +1000,7 @@
       "id": "backend-database",
       "emoji": "🗄️",
       "name": "Backend & Serverless Databases",
-      "api_count": 26,
+      "api_count": 25,
       "apis": [
         {
           "name": "Amazon DynamoDB",
@@ -1127,13 +1120,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://planetscale.com/docs"
-        },
-        {
-          "name": "PostgREST",
-          "description": "Serve any Postgres schema as a REST API.",
-          "auth": "No",
-          "https": true,
-          "link": "https://postgrest.org/en/stable/references/api/"
         },
         {
           "name": "Sanity",

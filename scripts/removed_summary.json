@@ -1,10 +1,15 @@
 {
-  "count": 1,
+  "count": 2,
   "removed": [
     {
-      "name": "Apility.io",
-      "url": "https://apility.io/apidocs/",
+      "name": "MalShare",
+      "url": "https://malshare.com/doc.php",
       "file": "anti-malware.md"
+    },
+    {
+      "name": "PostgREST",
+      "url": "https://postgrest.org/en/stable/references/api/",
+      "file": "backend-database.md"
     }
   ]
 }
