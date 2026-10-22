@@ -6,7 +6,6 @@
 | **FatSecret** | Nutrition database and food lookup with OAuth access. | 🔞 OAuth | ✅ | [Link](https://platform.fatsecret.com/docs) |
 | **Fitbit** | Fitbit Information. | 🔐 OAuth | ✅ | [Link](https://dev.fitbit.com/) |
 | **Free Exercise DB** | Open dataset of 800+ exercises with images. | No | ✅ | [Link](https://github.com/yuhonas/free-exercise-db) |
-| **Garmin Connect** | Health and activity data for Garmin Connect users. | 🔐 OAuth | ✅ | [Link](https://developer.garmin.com/gc-developer-program/health-api/) |
 | **Google Fit** | Fitness session, steps and health-data store REST APIs. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/fit/rest/) |
 | **Hevy** | Workout-tracking REST API: routines, exercises, logs, webhooks. | 🔑 ApiKey | ✅ | [Link](https://api.hevyapp.com/docs) |
 | **MapMyFitness** | Under Armour workout, route and activity tracking. | 🔞 OAuth | ✅ | [Link](https://developer.mapmyfitness.com/) |

@@ -34,7 +34,6 @@
 | **CFTC Public Reporting** | CFTC futures data: commitments of traders, positions, open interest. | No | ✅ | [Link](https://publicreporting.cftc.gov/) |
 | **Citi** | All Citigroup account and statement data APIs. | 🔑 ApiKey | ✅ | [Link](https://sandbox.developerhub.citi.com/api-catalog-list) |
 | **Codat Expense** | The API for Sync for Expenses. Sync for Expenses is an API and a set of supporting tools. It has been built to enable | 🔑 ApiKey | ✅ | [Link](https://www.codat.io) |
-| **CoinDesk** | Bitcoin Price Index (BPI) data (**No Auth**). | No | ✅ | [Link](https://www.coindesk.com/coindesk-api) |
 | **CommodityPrice** | Real-time & historical commodity prices (metals, energy, etc) | 🔑 ApiKey | ✅ | [Link](https://commoditypriceapi.com/) |
 | **CongressInvests** | Real-time U.S. congressional stock trade disclosures from Senate EFD and House Clerk | 🔑 ApiKey | ✅ | [Link](https://congressinvests.com) |
 | **contix** | Spain: IBAN validation with bank and BIC, EU VAT number check (VIES), Modelo 303 VAT sums | No | ✅ | [Link](https://contix.es/api/#herramientas) |

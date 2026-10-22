@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-21T03:03:46.380715+00:00",
+    "generated_at": "2026-10-22T03:02:44.239821+00:00",
     "source": "README.md",
-    "total_apis": 3241,
+    "total_apis": 3238,
     "total_categories": 70,
-    "no_auth_count": 1430,
+    "no_auth_count": 1428,
     "api_key_count": 1556,
-    "oauth_count": 255,
-    "https_count": 3150,
+    "oauth_count": 254,
+    "https_count": 3147,
     "https_percentage": 97
   },
   "categories": [
@@ -4365,7 +4365,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 278,
+      "api_count": 277,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -5206,13 +5206,6 @@
           "auth": "No",
           "https": true,
           "link": "https://hostdealradar.com/ai/"
-        },
-        {
-          "name": "HTTP2.Pro",
-          "description": "Test endpoints for client and server HTTP/2 protocol support.",
-          "auth": "No",
-          "https": true,
-          "link": "https://http2.pro/doc/api"
         },
         {
           "name": "HTTPBin.dev",
@@ -8307,7 +8300,7 @@
       "id": "finance",
       "emoji": "💰",
       "name": "Finance",
-      "api_count": 146,
+      "api_count": 145,
       "apis": [
         {
           "name": "Account and Transaction API",
@@ -8532,13 +8525,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.codat.io"
-        },
-        {
-          "name": "CoinDesk",
-          "description": "Bitcoin Price Index (BPI) data (**No Auth**).",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.coindesk.com/coindesk-api"
         },
         {
           "name": "CommodityPrice",
@@ -9337,7 +9323,7 @@
       "id": "fitness-wellness",
       "emoji": "💪",
       "name": "Fitness & Wellness",
-      "api_count": 18,
+      "api_count": 17,
       "apis": [
         {
           "name": "Exercises",
@@ -9366,13 +9352,6 @@
           "auth": "No",
           "https": true,
           "link": "https://github.com/yuhonas/free-exercise-db"
-        },
-        {
-          "name": "Garmin Connect",
-          "description": "Health and activity data for Garmin Connect users.",
-          "auth": "OAuth",
-          "https": true,
-          "link": "https://developer.garmin.com/gc-developer-program/health-api/"
         },
         {
           "name": "Google Fit",

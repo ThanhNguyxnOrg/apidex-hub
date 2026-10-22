@@ -1,4 +1,5 @@
 | # | API Name | File | Dead URL |
 |---|---|---|---|
-| 1 | MalShare | `anti-malware.md` | https://malshare.com/doc.php |
-| 2 | PostgREST | `backend-database.md` | https://postgrest.org/en/stable/references/api/ |
+| 1 | HTTP2.Pro | `development.md` | https://http2.pro/doc/api |
+| 2 | CoinDesk | `finance.md` | https://www.coindesk.com/coindesk-api |
+| 3 | Garmin Connect | `fitness-wellness.md` | https://developer.garmin.com/gc-developer-program/health-api/ |
