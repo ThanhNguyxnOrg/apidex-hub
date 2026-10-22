@@ -1,15 +1,20 @@
 {
-  "count": 2,
+  "count": 3,
   "removed": [
     {
-      "name": "MalShare",
-      "url": "https://malshare.com/doc.php",
-      "file": "anti-malware.md"
+      "name": "HTTP2.Pro",
+      "url": "https://http2.pro/doc/api",
+      "file": "development.md"
     },
     {
-      "name": "PostgREST",
-      "url": "https://postgrest.org/en/stable/references/api/",
-      "file": "backend-database.md"
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/coindesk-api",
+      "file": "finance.md"
+    },
+    {
+      "name": "Garmin Connect",
+      "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+      "file": "fitness-wellness.md"
     }
   ]
 }

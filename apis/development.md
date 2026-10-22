@@ -122,7 +122,6 @@
 | **host-t.com** | Basic DNS query via HTTP GET request. | No | ✅ | [Link](https://host-t.com) |
 | **Host.io** | Domains Data. | 🔑 ApiKey | ✅ | [Link](https://host.io) |
 | **HostDealRadar** | Source-backed hosting price and provider record lookup | No | ✅ | [Link](https://hostdealradar.com/ai/) |
-| **HTTP2.Pro** | Test endpoints for client and server HTTP/2 protocol support. | No | ✅ | [Link](https://http2.pro/doc/api) |
 | **HTTPBin.dev** | HTTP request and response service for testing endpoints and headers. | No | ✅ | [Link](https://httpbin.dev/) |
 | **IBM Text to Speech** | Convert text to speech. | 🔑 ApiKey | ✅ | [Link](https://cloud.ibm.com/docs/text-to-speech/getting-started.html) |
 | **Icanhazepoch** | Get Epoch time. | No | ✅ | [Link](https://icanhazepoch.com) |
