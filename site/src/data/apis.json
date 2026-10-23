@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-22T03:02:44.239821+00:00",
+    "generated_at": "2026-10-23T03:06:27.417608+00:00",
     "source": "README.md",
-    "total_apis": 3238,
+    "total_apis": 3236,
     "total_categories": 70,
     "no_auth_count": 1428,
-    "api_key_count": 1556,
+    "api_key_count": 1554,
     "oauth_count": 254,
-    "https_count": 3147,
+    "https_count": 3145,
     "https_percentage": 97
   },
   "categories": [
@@ -19112,7 +19112,7 @@
       "id": "social",
       "emoji": "💬",
       "name": "Social",
-      "api_count": 75,
+      "api_count": 74,
       "apis": [
         {
           "name": "API Direct",
@@ -19232,13 +19232,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.getxapi.com/"
-        },
-        {
-          "name": "GramScraper",
-          "description": "Instagram and TikTok data API with 91 endpoints for profiles, posts, stories, reels, and comments",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://gramscraper.com"
         },
         {
           "name": "Gravatar",
@@ -20656,7 +20649,7 @@
       "id": "transportation",
       "emoji": "🚆",
       "name": "Transportation",
-      "api_count": 111,
+      "api_count": 110,
       "apis": [
         {
           "name": "ADS-B Exchange",
@@ -21259,13 +21252,6 @@
           "auth": "apiKey",
           "https": false,
           "link": "http://hea.thebus.org/api_info.asp"
-        },
-        {
-          "name": "Transport for Lisbon, Portugal",
-          "description": "Data about buses routes, parking and traffic.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://emel.city-platform.com/opendata/"
         },
         {
           "name": "Transport for London",

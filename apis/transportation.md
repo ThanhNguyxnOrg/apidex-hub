@@ -88,7 +88,6 @@
 | **Transport for Grenoble, France** | Grenoble public transport. | No | No | [Link](https://www.mobilites-m.fr/pages/opendata/OpenDataApi.html) |
 | **Transport for Hessen, Germany** | RMV API (Public Transport in Hessen) | No | ✅ | [Link](https://opendata.rmv.de/site/start.html) |
 | **Transport for Honolulu, US** | Honolulu Transportation Information. | 🔑 ApiKey | No | [Link](http://hea.thebus.org/api_info.asp) |
-| **Transport for Lisbon, Portugal** | Data about buses routes, parking and traffic. | 🔑 ApiKey | ✅ | [Link](https://emel.city-platform.com/opendata/) |
 | **Transport for London** | Public transport data. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk) |
 | **Transport for Los Angeles, US** | Data about positions of Metro vehicles in real time and travel their routes. | No | ✅ | [Link](https://developer.metro.net/api/) |
 | **Transport for Manchester, England** | TfGM transport network data. | 🔑 ApiKey | ✅ | [Link](https://developer.tfgm.com/) |

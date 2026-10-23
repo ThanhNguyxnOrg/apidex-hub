@@ -1,20 +1,15 @@
 {
-  "count": 3,
+  "count": 2,
   "removed": [
     {
-      "name": "HTTP2.Pro",
-      "url": "https://http2.pro/doc/api",
-      "file": "development.md"
+      "name": "GramScraper",
+      "url": "https://gramscraper.com",
+      "file": "social.md"
     },
     {
-      "name": "CoinDesk",
-      "url": "https://www.coindesk.com/coindesk-api",
-      "file": "finance.md"
-    },
-    {
-      "name": "Garmin Connect",
-      "url": "https://developer.garmin.com/gc-developer-program/health-api/",
-      "file": "fitness-wellness.md"
+      "name": "Transport for Lisbon, Portugal",
+      "url": "https://emel.city-platform.com/opendata/",
+      "file": "transportation.md"
     }
   ]
 }

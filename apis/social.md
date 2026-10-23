@@ -19,7 +19,6 @@
 | **Fuck Off as a Service** | Asks someone to fuck off. | No | ✅ | [Link](https://www.foaas.com) |
 | **Full Contact** | Get Social Media profiles and contact Information. | 🔐 OAuth | ✅ | [Link](https://docs.fullcontact.com/) |
 | **GetX** | Read Twitter / X data and post tweets, likes, retweets, follows, DMs via REST | 🔑 ApiKey | ✅ | [Link](https://www.getxapi.com/) |
-| **GramScraper** | Instagram and TikTok data API with 91 endpoints for profiles, posts, stories, reels, and comments | 🔑 ApiKey | ✅ | [Link](https://gramscraper.com) |
 | **Gravatar** | WordPress avatar service. | No | ✅ | [Link](https://gravatar.com/site/implement/images/) |
 | **Greenwire Public** | Greenpeace Greenwire allows you connect with other volunteers, activists and groups working on environmental campaign | No | No | [Link](http://www.greenpeace.org/international/en/about/contactus) |
 | **Hacker News** | Y Combinator's Hacker News stories, comments, and user data (**No Auth**). | No | ✅ | [Link](https://github.com/HackerNews/API) |
