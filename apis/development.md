@@ -75,6 +75,7 @@
 | **DaniWeb Connect** | User Recommendation Engine and Chat Network | 🔒 OAuth | ✅ | [Link](https://www.daniweb.com/members/1/dani) |
 | **Databricks** | Lakehouse workspace, jobs, and cluster APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.databricks.com/api/workspace/introduction) |
 | **Debian Code Search** | OpenAPI for https://codesearch.debian.net/ | 🔑 ApiKey | ✅ | [Link](https://codesearch.debian.net) |
+| **deed.page** | Static hosting for AI agents: publish HTML or a folder with one HTTP PUT (free: 25 sites, 25 MB each, no signup) | No | ✅ | [Link](https://deed.page/docs) |
 | **Diagrams.so** | Generate editable draw.io architecture diagrams from text or infrastructure code | 🔑 ApiKey | ✅ | [Link](https://diagrams.so/developers) |
 | **DigitalOcean Status** | Status of all DigitalOcean services. | No | ✅ | [Link](https://status.digitalocean.com/api) |
 | **DigMyName** | Domain availability and registrar pricing across 52 TLDs | No | ✅ | [Link](https://digmyname.com/api) |
