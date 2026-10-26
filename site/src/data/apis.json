@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T13:39:28.184699+00:00",
+    "generated_at": "2026-10-26T13:49:49.341227+00:00",
     "source": "README.md",
-    "total_apis": 3236,
+    "total_apis": 3235,
     "total_categories": 70,
-    "no_auth_count": 1429,
+    "no_auth_count": 1428,
     "api_key_count": 1553,
     "oauth_count": 254,
-    "https_count": 3145,
+    "https_count": 3144,
     "https_percentage": 97
   },
   "categories": [
@@ -2222,7 +2222,7 @@
       "id": "calendar-holidays",
       "emoji": "📅",
       "name": "Calendar, Holidays & Time",
-      "api_count": 26,
+      "api_count": 25,
       "apis": [
         {
           "name": "Abstract Time Zone",
@@ -2342,13 +2342,6 @@
           "auth": "No",
           "https": true,
           "link": "https://nameday.abalin.net/"
-        },
-        {
-          "name": "Non-Working Days",
-          "description": "Non-working day and holiday checks.",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.isdayoff.ru/"
         },
         {
           "name": "Public Holidays",
