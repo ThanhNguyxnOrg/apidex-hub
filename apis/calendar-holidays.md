@@ -7,6 +7,7 @@
 | **Byabbe** | Seach histories from wikipedia for a particular day | No | ✅ | [Link](https://byabbe.se/on-this-day/) |
 | **caldays** | Calendar days and date utilities over REST. | No | ✅ | [Link](https://caldays.com/api) |
 | **Calendar index** | Worldwide Holidays and Working Days | No | ✅ | [Link](https://www.calendarindex.com/) |
+| **Calendarific** | Worldwide holidays for 230+ countries. | 🔑 ApiKey | ✅ | [Link](https://calendarific.com/api-documentation) |
 | **Checkiday - National Holiday API** | Industry-leading Holiday API. Over 5,000 holidays and thousands of descriptio... | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/checkiday-api) |
 | **Church Calendar** | Catholic liturgical calendar. | No | No | [Link](http://calapi.inadiutorium.cz/) |
 | **Cronofy** | Cronofy provides a single API for Apple, Exchange, Google, Office 365, and Outlook.com calendars for real-time | 🔒 OAuth | ✅ | [Link](https://www.cronofy.com) |

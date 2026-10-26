@@ -11,7 +11,7 @@
 | **CelesTrak** | Satellite orbital data (TLE) and space situational awareness. | No | ✅ | [Link](https://celestrak.org/) |
 | **ChEMBL** | Drug discovery bioactivity database: compounds, targets, assays. | No | ✅ | [Link](https://www.ebi.ac.uk/chembl/) |
 | **Chempirical** | Chemical compounds with physical data, reactions and substructure search | No | ✅ | [Link](https://chempirical.com/api/) |
-| **CORE** | Access the world's Open Access research papers. | 🔑 ApiKey | ✅ | [Link](https://core.ac.uk/services#api) |
+| **CORE** | Open Access research paper metadata and full-text discovery API. | 🔑 ApiKey | ✅ | [Link](https://api.core.ac.uk/docs/v3) |
 | **DataCite** | DOI metadata API for research datasets and outputs. | 🔑 ApiKey | ✅ | [Link](https://support.datacite.org/docs/api) |
 | **DOAJ** | Directory of open access journals and articles. | No | ✅ | [Link](https://doaj.org/api/docs) |
 | **eNanoMapper database** | AMBIT REST web services [eNanoMapper profile] with free text & faceted search | No | ✅ | [Link](https://phabricator.ideaconsult.net) |
@@ -24,7 +24,6 @@
 | **iDigBio** | Access millions of museum specimens from organizations around the world | No | ✅ | [Link](https://github.com/idigbio/idigbio-search-api/wiki) |
 | **iNaturalist** | Citizen-science wildlife observations with species identification and mapping | No | ✅ | [Link](https://api.inaturalist.org/v1/docs/) |
 | **inspirehep.net** | High Energy Physics info. system | No | ✅ | [Link](https://github.com/inspirehep/rest-api-doc) |
-| **isEven (humor)** | Check if a number is even. | No | ✅ | [Link](https://isevenapi.xyz/) |
 | **ISRO** | ISRO Space Crafts Information. | No | ✅ | [Link](https://isro.vercel.app) |
 | **ISS Location** | Real-time International Space Station location (**No Auth**). | No | ✅ | [Link](http://open-notify.org/Open-Notify-API/ISS-Location-Now/) |
 | **ITIS** | Integrated Taxonomic Information System. | No | ✅ | [Link](https://www.itis.gov/ws_description.html) |
@@ -37,9 +36,7 @@
 | **MyGene.info** | Gene annotation queries and ID lookup | No | ✅ | [Link](https://docs.mygene.info/) |
 | **NASA ADS** | NASA Astrophysics Data System. | 🔐 OAuth | ✅ | [Link](https://ui.adsabs.harvard.edu/help/api/api-docs.html) |
 | **NASA API** | Access NASA data, including Astronomy Picture of the Day (APOD). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
-| **Newton** | Symbolic and arithmetic math calculator API (**No Auth**). | No | ✅ | [Link](https://newton.vercel.app/) |
 | **NOAA Tides & Currents** | US tides, currents, and water level data. | No | ✅ | [Link](https://api.tidesandcurrents.noaa.gov/api/prod/) |
-| **Numbers** | Number of the day, random number, number facts and anything else you want to ... | 🔑 ApiKey | ✅ | [Link](https://math.tools/api/numbers/) |
 | **OBIS** | Global marine species occurrence and distribution data | No | ✅ | [Link](https://manual.obis.org/access) |
 | **Oliver's mTOR Atlas** | Curated mTOR research: studies by evidence type, pathway claims, open questions | No | ✅ | [Link](https://mtor-atlas.org/api/) |
 | **Open Notify** | ISS astronauts, current location, etc. | No | No | [Link](http://open-notify.org/Open-Notify-API/) |
