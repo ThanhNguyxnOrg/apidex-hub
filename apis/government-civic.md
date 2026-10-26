@@ -124,7 +124,6 @@
 | **Spatial India** | District-level data for India: Census, NFHS-5, NCRB, RBI and more, reconciled onto one map | No | ✅ | [Link](https://api.spatialindia.com) |
 | **SukuuData** | Ghana's schools, 2026 SHS placement register and CSSPS choice validation | 🔑 ApiKey | ✅ | [Link](https://sukuudata.com/quickstart) |
 | **Tollmint** | Advertising, subscription, AI-disclosure and accessibility rules across the US, EU and UK | No | ✅ | [Link](https://api.tollmint.com) |
-| **UK Companies House** | UK Companies House Data from the UK government. | 🔐 OAuth | ✅ | [Link](https://developer.company-information.service.gov.uk/) |
 | **UK Legislation Changes** | Point-in-time amendment history for UK law | No | ✅ | [Link](https://uk-legal-changes.pages.dev/docs) |
 | **UK Parliament** | UK parliamentary data and members. | No | ✅ | [Link](https://members-api.parliament.uk/index.html) |
 | **UniCourt Enterprise APIs** | Download UniCourt Enterprise APIs Specification | No | ✅ | [Link](https://unicourt.com) |

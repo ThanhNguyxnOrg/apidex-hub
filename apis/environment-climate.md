@@ -2,6 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Airly** | Air-quality measurements, monitoring-station metadata and pollution indexes (free tier is non-commercial). | 🔑 ApiKey | ✅ | [Link](https://developer.airly.org/en/docs) |
 | **AirNow** | US EPA air quality data and forecasts | 🔑 ApiKey | ✅ | [Link](https://docs.airnowapi.org/) |
 | **Airvisual** | Air quality and weather data | No | ✅ | [Link](https://airvisual.com/api) |
 | **Ambee** | Natural Disasters API | 🔑 ApiKey | ✅ | [Link](https://www.getambee.com/api/natural-disasters) |
@@ -17,6 +18,7 @@
 | **EIA Open Data** | US energy statistics: electricity, petroleum, gas | 🔑 ApiKey | ✅ | [Link](https://www.eia.gov/opendata/) |
 | **Electricity Maps** | Live carbon intensity and electricity source mix. | 🔑 ApiKey | ✅ | [Link](https://static.electricitymaps.com/api/docs/index.html) |
 | **GDACS** | Global Disaster Alert & Coordination System: quake, cyclone, flood, drought, wildfire alerts. | No | ✅ | [Link](https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH) |
+| **Global Fishing Watch API** | Vessel identity, fishing activity, encounters and potential dark-vessel signals (non-commercial access). | 🔑 ApiKey | ✅ | [Link](https://globalfishingwatch.org/our-apis/documentation/) |
 | **Global Forest Watch** | Deforestation and forest monitoring data. | 🔑 ApiKey | ✅ | [Link](https://www.globalforestwatch.org/help/developers/) |
 | **GridHub** | Live wholesale electricity prices and demand across 25 grid zones | 🔑 ApiKey | ✅ | [Link](https://grid-hub.app/developers) |
 | **GridVigil** | Pressure scores, demand, generation mix and alerts for the 10 major U.S. power grids | No | ✅ | [Link](https://gridvigil.com/developers) |
