@@ -1,15 +1,10 @@
 {
-  "count": 2,
+  "count": 1,
   "removed": [
     {
-      "name": "host-t.com",
-      "url": "https://host-t.com",
-      "file": "development.md"
-    },
-    {
-      "name": "TripIt",
-      "url": "https://www.tripit.com/api",
-      "file": "travel-tourism.md"
+      "name": "OpenSSF Scorecard API",
+      "url": "https://github.com/ossf/scorecard-webapp/blob/main/openapi.yaml",
+      "file": "security-validation.md"
     }
   ]
 }

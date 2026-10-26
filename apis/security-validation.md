@@ -60,7 +60,6 @@
 | **Neetix Liveliness** | Face liveness, presentation-attack detection and 1:1 face match for identity verification | 🔑 ApiKey | ✅ | [Link](https://liveliness.neetix.in/api-reference) |
 | **nextAuth** | API for the nextAuth server | 🔑 ApiKey | ✅ | [Link](https://n-auth.com) |
 | **NVD** | U.S. National Vulnerability Database with CVE feeds and search. | No | ✅ | [Link](https://nvd.nist.gov/developers) |
-| **OpenSSF Scorecard API** | Retrieve published security scores and per-check results for open-source repositories. | No | ✅ | [Link](https://github.com/ossf/scorecard-webapp/blob/main/openapi.yaml) |
 | **OSV** | Open source vulnerability database and API (**No Auth**). | No | ✅ | [Link](https://google.github.io/osv.dev/) |
 | **Passwordinator** | Generate random passwords of varying complexities | No | ✅ | [Link](https://github.com/fawazsullia/password-generator/) |
 | **PhishStats** | Phishing database. | No | ✅ | [Link](https://phishstats.info/) |
