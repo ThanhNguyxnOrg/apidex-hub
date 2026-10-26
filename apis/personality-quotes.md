@@ -16,6 +16,7 @@
 | **Notable and Quotable Random Quote** | Gets you a random quote from famous movies in XML,SOAP format | No | No | [Link](http://www.notableandquotable.com/RandomQuote.asmx) |
 | **Perchance as a Service** | Returns a random maybe as JSON or plain text | No | ✅ | [Link](https://perchance.synopsys0.workers.dev) |
 | **Personality.fyi** | Free MBTI personality types and OEJTS test scoring | No | ✅ | [Link](https://personality.fyi/api) |
+| **Poker Odds Equity EV Calculator & Advice** | Poker odds, equity & EV calculator with hand/decision advice. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/vintarok-vintarok-default/api/poker-odds-equity-ev-calculator-advice-api) |
 | **PositiveQuotation** | Source-verified public-domain English proverbs with provenance | No | ✅ | [Link](https://positivequotation.com/developers/public-domain-quotes-api) |
 | **Programming Quotes** | Programming Quotes API for open source projects | No | ✅ | [Link](https://github.com/skolakoda/programming-quotes-api) |
 | **Quotable** | Random quotes with authors, tags, and pagination (**No Auth**). | No | ✅ | [Link](https://github.com/lukePeavey/quotable) |

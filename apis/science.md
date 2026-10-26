@@ -46,9 +46,11 @@
 | **People in Space** | Current number of people in space (**No Auth**). | No | ✅ | [Link](http://open-notify.org/Open-Notify-API/People-In-Space/) |
 | **PubMed E-utilities** | U.S. National Library of Medicine biomedical literature. | No | ✅ | [Link](https://www.ncbi.nlm.nih.gov/books/NBK25501/) |
 | **RCSB PDB** | 3D structures of proteins and nucleic acids | No | ✅ | [Link](https://data.rcsb.org/) |
+| **Satellite Passes** | Find satellite passes. | No | ✅ | [Link](https://sat.terrestre.ar) |
 | **SatNOGS** | Satellite observations from open ground stations | No | ✅ | [Link](https://docs.satnogs.org/projects/satnogs-network/en/stable/api.html) |
 | **SHARE** | A free, open, dataset about research and scholarly activities. | No | ✅ | [Link](https://share.osf.io/api/v2/) |
 | **Skywatch** | SkyWatch EarthCache™ provides developers with the tools they need to cost-effectively add Earth observation data | No | No | [Link](http://www.skywatch.co) |
+| **Sofiaplan** | Access to urban research data for the Bulgarian capital Sofia. | No | ✅ | [Link](https://sofiaplan.bg/api) |
 | **Solar System OpenData** | Solar system planets and moons data (**No Auth**). | No | ✅ | [Link](https://api.le-systeme-solaire.net/en/) |
 | **SpaceX API** | SpaceX launches, rockets, capsules, and Starlink data (**No Auth**). | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |
 | **Sunrise Sunset** | Sunrise and sunset times for any location (**No Auth**). | No | ✅ | [Link](https://sunrisesunset.io/api/) |

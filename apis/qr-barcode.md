@@ -17,6 +17,7 @@
 | **QR Code (API Ninjas)** | Generate QR codes from text or URLs. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/qrcode) |
 | **QR Code by LifeStep** | QR codes as PNG or SVG with size, border and color options. | No | ✅ | [Link](https://qr.lifestep.io) |
 | **QR Code Crafter** | GET-based QR generation with downloadable images. | No | ✅ | [Link](https://qrcodecrafter.com/qr-code-api) |
+| **QR code Generator** | Static and Dynamic QR code generator with custom and unique QR code design. | 🔑 ApiKey | ✅ | [Link](https://docs.openqr.io) |
 | **QR Server** | Generate QR codes as PNG/SVG from any text or URL. | No | ✅ | [Link](https://api.qrserver.com/v1/create-qr-code/) |
 | **QR TIGER** | Dynamic QR codes with custom design templates, bulk generation and scan analytics. | 🔑 ApiKey | ✅ | [Link](https://www.qrcode-tiger.com/api-documentation) |
 | **QRickit** | Simple GET-based QR code generation API returning PNG images. | No | ✅ | [Link](https://qrickit.com/qrickit_apps/qrickit_api.php) |

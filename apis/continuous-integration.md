@@ -9,12 +9,16 @@
 | **Buildbot** | REST/JSON API for builds, builders and changes. | No | ✅ | [Link](https://docs.buildbot.net/latest/developer/rest.html) |
 | **Buildkite** | Pipeline and build automation API. | 🔑 ApiKey | ✅ | [Link](https://buildkite.com/docs/apis/rest-api) |
 | **CircleCI** | CI pipelines, workflows, and artifacts API. | 🔑 ApiKey | ✅ | [Link](https://circleci.com/docs/api/v2/) |
+| **Cloud Deployment Manager V2 API** | The Google Cloud Deployment Manager v2 API provides services for configuring, deploying, and viewing Google Cloud services and APIs via templates which specify deployments of. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/deployment-manager) |
 | **Codecov** | Upload and query code coverage reports. | 🔑 ApiKey | ✅ | [Link](https://docs.codecov.com/docs) |
 | **Codeship** | Codeship is a Continuous Integration Platform in the cloud. | 🔑 ApiKey | ✅ | [Link](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/api-overview/) |
 | **Concourse** | Pipeline-based CI REST API reference for builds and jobs. | No | ✅ | [Link](https://concourse-ci.org/internals.html) |
 | **Coolify** | Self-hosted deployment platform: apps, servers, deployments API. | 🔑 ApiKey | ✅ | [Link](https://coolify.io/docs/api/overview) |
 | **Coveralls** | Pull coverage data from CI builds. | 🔑 ApiKey | ✅ | [Link](https://docs.coveralls.io/) |
+| **DeploymentAdminClient** | Deployment Admin Client. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/azsadmin/resource-manager/deployment/Microsoft.Deployment.Admin/preview/2019-01-01/ActionPlan.json) |
+| **DeploymentScriptsClient** | The APIs listed in this specification can be used to manage Deployment Scripts resource through the Azure Resource Manager. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/resources/resource-manager/Microsoft.Resources/preview/2019-10-01-preview/deploymentScripts.json) |
 | **Drone** | CI pipeline API for Drone server. | 🔑 ApiKey | ✅ | [Link](https://docs.drone.io/api/) |
+| **Google Play EMM API** | Manages the deployment of apps to Android Enterprise devices. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/android/work/play/emm-api) |
 | **Jenkins** | Automation server remote API. | 🔑 ApiKey | ✅ | [Link](https://www.jenkins.io/doc/book/using/remote-access-api/) |
 | **Octopus Deploy** | Deployment automation with REST API for projects and releases. | 🔑 ApiKey | ✅ | [Link](https://octopus.com/docs/api-and-integration/api) |
 | **Semaphore** | CI/CD projects, workflows, and jobs API. | 🔑 ApiKey | ✅ | [Link](https://docs.semaphoreci.com/reference/api) |

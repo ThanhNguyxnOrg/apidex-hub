@@ -5,6 +5,7 @@
 | **Exercises** | Search 1300+ exercises by type, muscle and difficulty. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/exercises) |
 | **FatSecret** | Nutrition database and food lookup with OAuth access. | 🔞 OAuth | ✅ | [Link](https://platform.fatsecret.com/docs) |
 | **Fitbit** | Fitbit Information. | 🔐 OAuth | ✅ | [Link](https://dev.fitbit.com/) |
+| **Fitness API** | The Fitness API for managing users' fitness tracking data. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/fit/rest/v1/get-started) |
 | **Free Exercise DB** | Open dataset of 800+ exercises with images. | No | ✅ | [Link](https://github.com/yuhonas/free-exercise-db) |
 | **Google Fit** | Fitness session, steps and health-data store REST APIs. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/fit/rest/) |
 | **Hevy** | Workout-tracking REST API: routines, exercises, logs, webhooks. | 🔑 ApiKey | ✅ | [Link](https://api.hevyapp.com/docs) |

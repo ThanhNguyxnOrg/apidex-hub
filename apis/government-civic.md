@@ -3,6 +3,7 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **AI Law Tracker** | AI regulation laws by jurisdiction (US, EU, global) as read-only JSON; free tier | 🔑 ApiKey | ✅ | [Link](https://ai-law-tracker.com/developers) |
+| **Api Colombia** | Community driven API for Colombia Public Data. | No | ✅ | [Link](https://api-colombia.com) |
 | **Ayes and Noes** | UK House of Commons MPs, parties and recorded votes | No | ✅ | [Link](https://ayesandnoes.co.uk/developers) |
 | **Bank Negara Malaysia Open Data** | Malaysia Central Bank Open Data. | No | ✅ | [Link](https://apikijangportal.bnm.gov.my/) |
 | **BCLaws** | Access to the laws of British Columbia. | No | No | [Link](https://www.bclaws.gov.bc.ca/civix/template/complete/api/index.html) |
@@ -23,11 +24,14 @@
 | **City, New York Open Data** | New York (US) City Open Data. | No | ✅ | [Link](https://opendata.cityofnewyork.us/) |
 | **City, Prague Open Data** | Prague(CZ) City Open Data | No | No | [Link](http://opendata.praha.eu/en) |
 | **City, Toronto Open Data** | Toronto (CA) City Open Data. | No | ✅ | [Link](https://open.toronto.ca/) |
+| **civicAPI** | Provides live and historic election results for races across the world. | No | ✅ | [Link](https://civicapi.org) |
+| **Code.gov** | The primary platform for Open Source and code sharing for the U.S. Federal Government. | 🔑 ApiKey | ✅ | [Link](https://code.gov) |
 | **Colorado Information Marketplace** | Colorado State Government Open Data. | No | ✅ | [Link](https://data.colorado.gov/) |
 | **Congress.gov** | US legislation and congressional records. | No | ✅ | [Link](https://api.congress.gov/) |
 | **ContaCLT** | Brazilian payroll and labor calculations: net salary, INSS, IRRF, unemployment insurance | No | ✅ | [Link](https://contaclt.com/dados/api/) |
 | **Conversor IAE CNAE** | Spanish IAE/CNAE tax activity codes, 2009→2025 crosswalk and AEAT obligations | 🔑 ApiKey | ✅ | [Link](https://www.conversoriaecnae.es/api/v1/docs) |
 | **CPFHub** | Brazilian CPF lookup — returns full name, birth date, and gender for any CPF | 🔑 ApiKey | ✅ | [Link](https://cpfhub.io) |
+| **Data USA** | US Public Data. | No | ✅ | [Link](https://datausa.io/about/api) |
 | **data.europa.eu** | EU open data portal API. | No | ✅ | [Link](https://data.europa.eu/en) |
 | **Data.parliament.uk** | Contains live datasets including information about petitions, bills, MP votes... | No | No | [Link](https://explore.data.parliament.uk/?learnmore=Members) |
 | **Deutscher Bundestag DIP** | This API provides read access to DIP entities (e.g. activities, persons, prin... | 🔑 ApiKey | ✅ | [Link](https://dip.bundestag.de/documents/informationsblatt_zur_dip_api_v01.pdf) |
@@ -84,8 +88,10 @@
 | **Open Government, Ireland** | Ireland Government Open Data. | No | ✅ | [Link](https://data.gov.ie/pages/developers) |
 | **Open Government, Italy** | Italy Government Open Data | No | ✅ | [Link](https://www.dati.gov.it/) |
 | **Open Government, Japan** | Japanese Government Open Data. | No | ✅ | [Link](https://www.data.go.jp/) |
+| **Open Government, Kazakhstan** | Kazakhstan Government Open Data. | No | ✅ | [Link](https://data.egov.kz) |
 | **Open Government, Korea** | Korea Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://www.data.go.kr/) |
 | **Open Government, Luxembourg** | Luxembourgish Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://data.public.lu) |
+| **Open Government, Malaysia** | Malaysia Government Open Data. | No | ✅ | [Link](https://data.gov.my) |
 | **Open Government, Mexico** | Mexican Government Open Data. | No | ✅ | [Link](https://datos.gob.mx/) |
 | **Open Government, Netherlands** | Netherlands Government Open Data. | No | ✅ | [Link](https://data.overheid.nl/) |
 | **Open Government, New South Wales** | New South Wales Government Open Data. | 🔑 ApiKey | ✅ | [Link](https://api.nsw.gov.au/) |
@@ -95,6 +101,7 @@
 | **Open Government, Poland** | Poland Government Open Data. | No | ✅ | [Link](https://dane.gov.pl/en) |
 | **Open Government, Portugal** | Portugal Government Open Data. | No | ✅ | [Link](https://github.com/amagovpt/docs.dados.gov.pt) |
 | **Open Government, Queensland Government** | Queensland Government Open Data. | No | ✅ | [Link](https://www.data.qld.gov.au/) |
+| **Open Government, Romania** | Romania Government Open Data. | No | ✅ | [Link](https://data.gov.ro) |
 | **Open Government, Singapore** | Singapore Government Open Data | No | ✅ | [Link](https://data.gov.sg/) |
 | **Open Government, Slovakia** | Slovakia Government Open Data. | No | ✅ | [Link](https://data.gov.sk/en/) |
 | **Open Government, Slovenia** | Slovenia Government Open Data. | No | ✅ | [Link](https://podatki.gov.si/) |

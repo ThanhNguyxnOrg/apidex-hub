@@ -14,11 +14,13 @@
 | **Fun Translations** | Translate text to Yoda, Pirate, etc. | 🔑 ApiKey | ✅ | [Link](https://funtranslations.com/api) |
 | **Gifs.com** | The gifs.com API makes it dead simple to convert and transcode a vast array of media into our HTML5 optimized | No | No | [Link](http://docs.gifs.com/) |
 | **Imgflip** | Get popular meme templates to create your own memes (**No Auth**). | No | ✅ | [Link](https://api.imgflip.com/) |
+| **Joke Father** | Ultimate collection of dad jokes. | No | ✅ | [Link](https://jokefather.com/api/jokes/random) |
 | **JokeAPI** | Jokes in various categories (**No Auth**). | No | ✅ | [Link](https://jokeapi.dev/) |
 | **Kanye Rest** | Random Kanye West quotes. | No | ✅ | [Link](https://kanye.rest/) |
 | **Meme** | Summon a random meme scraped from Reddit, no auth needed. | No | ✅ | [Link](https://github.com/D3vd/Meme_Api) |
 | **Memegen** | Open meme generator: PNG/SVG images with custom captions via plain GET URLs. | No | ✅ | [Link](https://memegen.link/) |
 | **Official Joke** | Random and per-category jokes: general, programming, knock-knock. | No | ✅ | [Link](https://github.com/15Dkatz/official_joke_api) |
+| **QuizBase** | Trivia questions API: 1.1M+ items, full EN + PL parity, OpenAPI 3.1, TypeScript SDK, MCP server. | 🔑 ApiKey | ✅ | [Link](https://quizbase.runriva.com) |
 | **Random Dog Facts** | Random dog facts API (**No Auth**). | No | ✅ | [Link](https://kinduff.github.io/dog-api/) |
 | **Random Facts** | Random Facts from hundreds of categories | 🔑 ApiKey | ✅ | [Link](https://fungenerators.com/api/facts/) |
 | **Random Lovecraft** | Random sentences from the complete works of H.P. Lovecraft. CORS-enabled | No | ✅ | [Link](https://randomlovecraft.com) |
