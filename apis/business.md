@@ -87,6 +87,7 @@
 | **Toast** | Restaurant POS platform: menus, orders, guests and payments. | 🔑 ApiKey | ✅ | [Link](https://dev.toasttab.com/) |
 | **TradeDataHub** | U.S. contractor datasets with a free discovery API for coverage, pricing and masked previews | No | ✅ | [Link](https://www.tradedatahub.net) |
 | **UGC VZ** | Directory of DACH user-generated-content creators with topics, cities, rates and contact requests | No | ✅ | [Link](https://ugc-vz.de/developers) |
+| **UK Companies House** | Official UK company register: company profiles, officers, filings, charges and status. | 🔑 ApiKey | ✅ | [Link](https://developer.company-information.service.gov.uk/) |
 | **Vestorly** | Vestorly Developers API | 🔒 OAuth | ✅ | [Link](https://vestorly.com) |
 | **Village** | Person and company enrichment plus warm introduction paths through your network | 🔑 ApiKey | ✅ | [Link](https://docs.village.ai) |
 | **Xero** | Accounting, invoicing and banking data API. | 🔞 OAuth | ✅ | [Link](https://developer.xero.com/documentation/api/accounting/overview) |

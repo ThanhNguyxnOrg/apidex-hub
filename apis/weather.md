@@ -6,7 +6,6 @@
 | **AccuWeather** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://developer.accuweather.com/) |
 | **Aemet** | Weather and forecast data from Spain. | 🔑 ApiKey | ✅ | [Link](https://opendata.aemet.es/centrodedescargas/inicio) |
 | **Air Quality (OpenAQ)** | Global air quality data (**No Auth**). | No | ✅ | [Link](https://docs.openaq.org/) |
-| **Airly** | Air quality measurements, installation metadata and pollution indexes (free tier is non-commercial). | 🔑 ApiKey | ✅ | [Link](https://developer.airly.org/en/docs) |
 | **APIXU** | Weather. | 🔑 ApiKey | ✅ | [Link](https://www.apixu.com/doc/request.aspx) |
 | **AviationWeather** | NOAA aviation weather forecasts and observations. | No | ✅ | [Link](https://www.aviationweather.gov/dataserver) |
 | **ColorfulClouds** | Weather. | 🔑 ApiKey | ✅ | [Link](https://open.caiyunapp.com/ColorfulClouds_Weather_API) |
@@ -24,6 +23,7 @@
 | **Meteomatics** | High-resolution weather API with global coverage. | 🔑 ApiKey | ✅ | [Link](https://www.meteomatics.com/en/api/getting-started/) |
 | **Meteorologisk Institutt** | Weather and climate data. | 🔑 ApiKey | ✅ | [Link](https://api.met.no/weatherapi/documentation) |
 | **Météo-France** | French weather forecasts and alerts | 🔑 ApiKey | ✅ | [Link](https://portail-api.meteofrance.fr/) |
+| **MSC GeoMet** | Free public Canadian weather, climate, water and ice data through interoperable OGC APIs. | No | ✅ | [Link](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/) |
 | **NASA POWER** | Global solar and weather data for energy and agriculture | No | ✅ | [Link](https://power.larc.nasa.gov/docs/) |
 | **National Weather Service** | Weather forecasts, alerts, and observations for the United States. | No | ✅ | [Link](https://www.weather.gov/documentation/services-web-api) |
 | **Oikolab** | 70+ years of global, hourly historical and forecast weather data from NOAA an... | 🔑 ApiKey | ✅ | [Link](https://docs.oikolab.com) |
