@@ -10,6 +10,7 @@
 | **CompressGIF** | Compress GIF files or HTTPS URLs with asynchronous jobs and target-size controls | 🔑 ApiKey | ✅ | [Link](https://compressgif.net/docs) |
 | **Compresso** | Visually lossless image compression for PNG, JPEG and WebP | 🔑 ApiKey | ✅ | [Link](https://compresso.space/developers) |
 | **Dagpi** | Image manipulation and processing. | 🔑 ApiKey | ✅ | [Link](https://dagpi.xyz) |
+| **DiceBear** | Free avatar generation library with multiple styles. | No | ✅ | [Link](https://dicebear.com) |
 | **DynaPictures** | Generate Hundreds of Personalized Images in Minutes. | 🔑 ApiKey | ✅ | [Link](https://dynapictures.com/docs/) |
 | **Flickr** | Photo sharing and management. | 🔑 ApiKey | ✅ | [Link](https://www.flickr.com/services/api/) |
 | **Freepik** | Stock resources(Icons, videos, photos), AI image generation and editing tools | 🔑 ApiKey | ✅ | [Link](https://freepik.com/api) |
@@ -31,6 +32,7 @@
 | **Pexels** | Free stock photos. | 🔑 ApiKey | ✅ | [Link](https://www.pexels.com/api/) |
 | **PhotoRoom** | Remove background from images. | 🔑 ApiKey | ✅ | [Link](https://www.photoroom.com/api/) |
 | **Picsum Photos** | The Lorem Ipsum for photos. | No | ✅ | [Link](https://picsum.photos/) |
+| **Pika** | Image Generation API. | 🔑 ApiKey | ✅ | [Link](https://pika.style/image-generation-api) |
 | **Pixabay** | Free stock photos and videos. | 🔑 ApiKey | ✅ | [Link](https://pixabay.com/api/docs/) |
 | **Placeholder** | Custom placeholder images (**No Auth**). | No | ✅ | [Link](https://placeholder.com/) |
 | **PlaceKeanu** | Resizable Keanu Reeves placeholder images with grayscale and young Keanu options. | No | ✅ | [Link](https://placekeanu.com/) |
@@ -39,6 +41,7 @@
 | **ReSmush.it** | Photo optimization. | No | No | [Link](https://resmush.it/) |
 | **Screenshot Studio** | Capture web pages as images through a public HTTP API | No | ✅ | [Link](https://www.screenshot-studio.com/docs) |
 | **Screenshotscloud** | With our website screenshot service you can automate high quality real browser screenshots and thumbnails in seconds | No | ✅ | [Link](https://screenshots.cloud/) |
+| **ShotOG** | Open-source OG image generation with 8 templates, custom fonts, and batch generation. | 🔑 ApiKey | ✅ | [Link](https://shotog.2214962083.workers.dev/docs) |
 | **shutterstock** | Stock Photos and Videos. | 🔐 OAuth | ✅ | [Link](https://api-reference.shutterstock.com/) |
 | **Sirv** | Image management solutions like optimization, manipulation, hosting. | 🔑 ApiKey | ✅ | [Link](https://apidocs.sirv.com/) |
 | **Tinify.dev** | Image compression, resize and crop API with usage metadata | 🔑 ApiKey | ✅ | [Link](https://tinify.dev/developers) |

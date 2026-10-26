@@ -84,6 +84,7 @@
 | **SCALA Score** | Search 250M+ company records across 50+ countries with revenue, employees, and credit scores | No | ✅ | [Link](https://score.get-scala.com) |
 | **Snov.io** | Lead prospecting: emails, companies and outreach API. | 🔑 ApiKey | ✅ | [Link](https://snov.io/api) |
 | **SwiftKanban** | Kanban software, Visualize Work, Increase Organizations Lead Time, Throughput... | 🔑 ApiKey | ✅ | [Link](https://www.digite.com/knowledge-base/swiftkanban/article/api-for-swift-kanban-web-services/#restapi) |
+| **Thames Water Open Data** | Open Data from the UK's largest water and wastewater services company. | 🔑 ApiKey | ✅ | [Link](https://data.thameswater.co.uk) |
 | **Toast** | Restaurant POS platform: menus, orders, guests and payments. | 🔑 ApiKey | ✅ | [Link](https://dev.toasttab.com/) |
 | **TradeDataHub** | U.S. contractor datasets with a free discovery API for coverage, pricing and masked previews | No | ✅ | [Link](https://www.tradedatahub.net) |
 | **UGC VZ** | Directory of DACH user-generated-content creators with topics, cities, rates and contact requests | No | ✅ | [Link](https://ugc-vz.de/developers) |

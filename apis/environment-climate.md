@@ -2,6 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **1ClickImpact** | Environmental impact API for tree planting, carbon offsetting and ocean cleanup. | 🔑 ApiKey | ✅ | [Link](https://docs.1clickimpact.com) |
 | **Airly** | Air-quality measurements, monitoring-station metadata and pollution indexes (free tier is non-commercial). | 🔑 ApiKey | ✅ | [Link](https://developer.airly.org/en/docs) |
 | **AirNow** | US EPA air quality data and forecasts | 🔑 ApiKey | ✅ | [Link](https://docs.airnowapi.org/) |
 | **Airvisual** | Air quality and weather data | No | ✅ | [Link](https://airvisual.com/api) |
@@ -14,6 +15,7 @@
 | **CO2 Signal** | Real-time carbon intensity of electricity by region. | 🔑 ApiKey | ✅ | [Link](https://co2signal.com/) |
 | **Corrently.io** | *Corrently - from italian corrente, which is energy* # Introduction The Corrently ecosystem gets maintained by [STROM | No | ✅ | [Link](https://stromdao.de/kontakt) |
 | **Danish data service Energi** | Open energy data from Energinet to society. | No | ✅ | [Link](https://www.energidataservice.dk/) |
+| **DataStream** | An open access platform for sharing Canadian water quality data. | 🔑 ApiKey | ✅ | [Link](https://github.com/datastreamapp/api-docs) |
 | **Daymet Single Pixel Extraction Tool** | Welcome to the Daymet Single Pixel Extraction Tool API. You can use this API to download daily surface data within th | No | ✅ | [Link](https://ornl.gov) |
 | **EIA Open Data** | US energy statistics: electricity, petroleum, gas | 🔑 ApiKey | ✅ | [Link](https://www.eia.gov/opendata/) |
 | **Electricity Maps** | Live carbon intensity and electricity source mix. | 🔑 ApiKey | ✅ | [Link](https://static.electricitymaps.com/api/docs/index.html) |
@@ -25,6 +27,7 @@
 | **GridVigil** | Pressure scores, demand, generation mix and alerts for the 10 major U.S. power grids | No | ✅ | [Link](https://gridvigil.com/developers) |
 | **GrünstromIndex** | Green Power Index for Germany (Grünstromindex/GSI) | No | No | [Link](https://gruenstromindex.de/) |
 | **IQAir** | Air quality and weather data | 🔑 ApiKey | ✅ | [Link](https://www.iqair.com/air-pollution-data-api) |
+| **K-Data Gate** | Korean market data: K-beauty/K-food products, Naver trends, stocks, real estate, weather. | 🔑 ApiKey | ✅ | [Link](https://kdata-gate.vercel.app/docs) |
 | **kanari** | Real-time worldwide wildfire detections, water bomber tracking and open fire archive | No | ✅ | [Link](https://kanari.io/en/api) |
 | **Luchtmeetnet** | Predicted and actual air quality components for The Netherlands (RIVM) | No | ✅ | [Link](https://api-docs.luchtmeetnet.nl/) |
 | **Mycelium** | Corporate carbon emissions disclosures (scope 1, 2 and 3), company-reported and estimated | 🔑 ApiKey | ✅ | [Link](https://api.mycelium.global/docs/v1) |
@@ -36,16 +39,19 @@
 | **Open-Meteo Solar Forecast** | Solar radiation and energy forecast for photovoltaic systems. | No | ✅ | [Link](https://open-meteo.com/) |
 | **OpenWeatherMap Air Pollution** | Air quality index and pollutant data. | 🔑 ApiKey | ✅ | [Link](https://openweathermap.org/api/air-pollution) |
 | **PM2.5 Open Data Portal** | Open low-cost PM2.5 sensor data. | No | ✅ | [Link](https://pm25.lass-net.org/#apis) |
+| **Purple Air** | Real Time Air Quality Monitoring. | No | ✅ | [Link](https://www2.purpleair.com) |
 | **PurpleAir** | Real-time air quality sensor data. | 🔑 ApiKey | ✅ | [Link](https://api.purpleair.com/) |
 | **PVGIS** | EU solar radiation and photovoltaic performance estimates | No | ✅ | [Link](https://joint-research-centre.ec.europa.eu/pvgis-photovoltaic-geographical-information-system/getting-started-pvgis/api-non-interactive-service) |
 | **RWLabs** | All types of disaster data | 🔑 ApiKey | ✅ | [Link](https://apidoc.rwlabs.org/) |
 | **sensor.community** | Community air quality sensor network data worldwide | No | ✅ | [Link](https://github.com/opendata-stuttgart/meta/wiki/EN-APIs) |
+| **Smartatest** | Calculators for home energy cost, lighting, air quality limits and GS1 barcode prefixes, in Swedish. | No | ✅ | [Link](https://smartatest.se/api) |
 | **Solematica** | Compare Italian solar (photovoltaic) installer offers, energy prices (PUN/ARERA) and satellite roof data | No | ✅ | [Link](https://www.solematica.it/sviluppatori) |
 | **Srp Energy** | Hourly usage energy report for Srp customers. | 🔑 ApiKey | ✅ | [Link](https://srpenergy-api-client-python.readthedocs.io/en/latest/api.html) |
 | **SustainMetrics** | 18,000+ GHG emission factors from DEFRA, EPA, ADEME, Ember | 🔑 ApiKey | ✅ | [Link](https://www.sustainmetrics.net/api) |
 | **Sähkön hinta nyt** | Finnish and Nordic day-ahead electricity spot prices (15-minute), cheapest hours | No | ✅ | [Link](https://xn--shknhintanyt-gcb8w.org/integraatiot/) |
 | **UK Carbon Intensity** | The Official Carbon Intensity API for Great Britain developed by National Grid. | No | ✅ | [Link](https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v1-0-0) |
 | **WaterQuality (EPA)** | US water quality monitoring data. | No | ✅ | [Link](https://www.waterqualitydata.us/) |
+| **WattBuy** | Electricity usage estimations, carbon footprint estimations, and utility data. | 🔑 ApiKey | ✅ | [Link](https://wattbuy.readme.io/reference/getting-started-with-your-api) |
 | **WattFigure** | US electricity rates by state, with appliance and EV charging running costs | No | ✅ | [Link](https://api.wattfigure.com/) |
 | **WattTime** | Real-time and forecast marginal emissions data. | 🔑 ApiKey | ✅ | [Link](https://www.watttime.org/api-documentation/) |
 | **Website Carbon** | API to estimate the carbon footprint of loading web pages. | No | ✅ | [Link](https://api.websitecarbon.com/) |

@@ -8,17 +8,24 @@
 | **Abstract API** | Suite of useful APIs (IP geolocation, holidays, exchange rates). | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/) |
 | **Abstract Screenshot** | Take a screenshot of any website. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/website-screenshot-api) |
 | **Aether Bridge** | Autonomous agent team management and API workflow orchestration | 🔑 ApiKey | ✅ | [Link](https://a-to-mind.com) |
+| **AGCO API** | REST endpoints for the AGCO API service. | 🔑 ApiKey | ✅ | [Link](https://secure.agco-ats.com/swagger/docs/v1) |
+| **Agent Gateway** | 34+ AI agent infrastructure services including memory, wallets, and scheduling. | 🔑 ApiKey | ✅ | [Link](https://agent-gateway-kappa.vercel.app) |
 | **Agent Nexus** | Continuously probed registry of APIs, MCP servers and CLIs callable by agents | No | ✅ | [Link](https://agentnexus.app/llms.txt) |
 | **AgentDeals** | Search and compare developer free tiers, startup credits, and pricing changes | No | ✅ | [Link](https://agentdeals.dev/api) |
 | **AgentPay Domain Lookup** | DNS records, WHOIS/RDAP, IP ownership and domain reports for AI agents, paid per call via x402 | No | ✅ | [Link](https://agentpay-lookup.agentpay-apis.workers.dev) |
+| **AI Meeting Minutes Suite** | Generate summaries, templates, and redact sensitive data from meeting notes. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/vintarok-vintarok-default/api/ai-meeting-minutes-suite-summaries-templates-redaction) |
 | **Airflow** | Apache Airflow REST API: DAGs, runs, tasks and logs. | 🔐 OAuth | ✅ | [Link](https://airflow.apache.org/docs/) |
 | **Airtable** | API for cloud collaboration database (free tier available). | 🔑 ApiKey | ✅ | [Link](https://airtable.com/developers/web/api/introduction) |
+| **Akeneo PIM REST API** | REST endpoints for the Akeneo PIM REST API service. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/akeneo/pim-api-docs/master/content/swagger/akeneo-web-api.json) |
 | **Allscreenshots** | Website screenshots and PDFs with full-page capture, dark mode and ad blocking | 🔑 ApiKey | ✅ | [Link](https://allscreenshots.com) |
+| **Amazon CloudHSM** | AWS CloudHSM Service This is documentation for AWS CloudHSM Classic. For more information, see. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/cloudhsm) |
 | **Amazonscraper** | Amazon product, search & batch scraping API with residential proxies (1000 free) | 🔑 ApiKey | ✅ | [Link](https://amazonscraperapi.com) |
 | **AmberOne** | Turn any website into a build-ready Android, iOS, PWA or Electron app project | 🔑 ApiKey | ✅ | [Link](https://scubamike124.github.io/amberone-api/) |
 | **AnswerLine** | Answers, citations and sources from AI assistants and Google surfaces through one API | 🔑 ApiKey | ✅ | [Link](https://answerline.dev) |
 | **Apache Superset** | Dashboarding and query platform APIs. | 🔑 ApiKey | ✅ | [Link](https://superset.apache.org/docs/api/) |
+| **API Adresse** | Official French address validation service. | No | ✅ | [Link](https://adresse.data.gouv.fr/api-doc/adresse) |
 | **API Grátis** | Multiples services and public APIs. | No | ✅ | [Link](https://apigratis.com.br/) |
+| **API League** | World-class APIs in a single hub. | 🔑 ApiKey | ✅ | [Link](https://apileague.com) |
 | **API Platform** | API Platform is a PHP framework for API-first projects built on top of Symfony. Just like the other modern | No | ✅ | [Link](https://api-platform.com/) |
 | **API Tool Calls** | API Tool Calls: Home cost planners, page to Markdown, SEO checks and recalls | No | ✅ | [Link](https://apitoolcalls.com/api/) |
 | **ApicAgent** | Extract device details from user-agent string. | No | ✅ | [Link](https://www.apicagent.com) |
@@ -28,19 +35,27 @@
 | **APIs.guru** | Wikipedia for Web APIs. | No | ✅ | [Link](https://apis.guru/api-doc/) |
 | **APIzone** | Independent uptime & status monitoring for 200+ popular APIs | No | ✅ | [Link](https://apizone.io/api-docs) |
 | **App Store Connect** | Apple developer platform: builds, TestFlight, reviews and sales. | 🔑 ApiKey | ✅ | [Link](https://developer.apple.com/app-store-connect/api/) |
+| **ApyHub: A Complete API Catalog** | Build and ship applications that scale using certified APIs for every use case. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/catalog) |
 | **Aquanode** | Live GPU rental prices and availability across nine cloud providers | No | ✅ | [Link](https://docs.aquanode.io/docs/api/marketplace) |
+| **ASORadar** | App Store and Google Play reviews, ratings, rankings and app metadata. | 🔑 ApiKey | ✅ | [Link](https://asoradar.com) |
 | **Auth0** | Authentication and authorization platform (free tier). | 🔐 OAuth | ✅ | [Link](https://auth0.com/docs/api) |
+| **AutoChangelog** | Automatically creates changelog entries from deployments by analyzing pull requests, commits, and code diffs across your GitHub repositories. | 🔑 ApiKey | ✅ | [Link](https://autochangelog.com) |
 | **Aviationstack** | Real-time flight status and global aviation data. | 🔑 ApiKey | ✅ | [Link](https://aviationstack.com/) |
+| **AWS Cloud9** | Cloud9 Cloud9 is a collection of tools that you can use to code, build, run, test, debug, and release software in the cloud. For more information. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/cloud9) |
 | **AWS Lambda** | Lambda Overview Lambda is a compute service that lets you run code without provisioning or managing servers. Lambda r | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) |
 | **Azure DevOps** | DevOps tools. | 🔑 ApiKey | ✅ | [Link](https://docs.microsoft.com/en-us/rest/api/azure/devops) |
+| **Base** | Building quick backends. | 🔑 ApiKey | ✅ | [Link](https://www.base-api.io) |
 | **Bettermeta** | Return a site's meta tags in JSON format | No | No | [Link](http://bettermeta.io) |
 | **Bitbucket** | Git solution. | 🔐 OAuth | ✅ | [Link](https://developer.atlassian.com/bitbucket/api/2/reference/) |
 | **Blague.xyz** | La plus grande API de Blagues FR/The biggest FR jokes API | 🔑 ApiKey | ✅ | [Link](https://blague.xyz/) |
 | **Blagues API** | French jokes API with categories (dev, dark, global, etc.). | 🔑 ApiKey | ✅ | [Link](https://www.blagues-api.fr/) |
 | **BlazeMeter** | Live API Documentation | 🔑 ApiKey | ✅ | [Link](https://blazemeter.com) |
 | **Blitapp** | Schedule screenshots of web pages and sync them to your cloud. | 🔑 ApiKey | ✅ | [Link](https://blitapp.com/api/) |
+| **Bly.to** | URL shortening service with analytics and tracking capabilities. | 🔑 ApiKey | ✅ | [Link](https://blyto.com/docs) |
+| **Blynk-Cloud** | Control IoT Devices from Blynk IoT Cloud. | 🔑 ApiKey | ✅ | [Link](https://blynkapi.docs.apiary.io) |
 | **BountyCheck** | Claimability verdicts for GitHub bounty issues; free stats and sample, checks paid per call via x402 | No | ✅ | [Link](https://bountycheck.vercel.app) |
 | **Brainshop.ai** | Make A Free A.I Brain | 🔑 ApiKey | ✅ | [Link](https://brainshop.ai/) |
+| **Brave Search API** | An index of billions of pages in a single call. | 🔑 ApiKey | ✅ | [Link](https://brave.com/search/api) |
 | **BrewPage** | Free hosting for HTML, JSON, key-value, files, multi-file sites with short URLs and TTL retention | No | ✅ | [Link](https://brewpage.app) |
 | **Browshot** | Easily make screenshots of web pages in any screen size, as any device. | 🔑 ApiKey | ✅ | [Link](https://browshot.com/api/documentation) |
 | **Bulk WHOIS** | Domain API (WHOIS, Check, Batch) | 🔑 ApiKey | ✅ | [Link](https://apispot.io) |
@@ -55,6 +70,7 @@
 | **claudecookie** | Convert cookie formats, check Claude sessions and generate Claude Code credentials | No | ✅ | [Link](https://claudecookie.com/api/) |
 | **Clerk** | User management and authentication (free tier). | 🔑 ApiKey | ✅ | [Link](https://clerk.com/docs/reference/backend-api) |
 | **Clever-Cloud** | Public API for managing Clever-Cloud data and products | No | ✅ | [Link](https://clever-cloud.com) |
+| **Clipform** | Create and manage interactive video-style forms, quizzes, and surveys. | 🔑 ApiKey | ✅ | [Link](https://clipform.io/docs) |
 | **Cloudflare** | DNS, zones, workers, analytics and security APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/api/) |
 | **Cloudflare Radar** | Internet traffic, routing, and outage insights (free tier). | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/radar/) |
 | **Cloudinary** | Image and video management API. | 🔑 ApiKey | ✅ | [Link](https://cloudinary.com/documentation/image_upload_api_reference) |
@@ -63,22 +79,28 @@
 | **Codeforces** | Get access to Codeforces data. | 🔑 ApiKey | ✅ | [Link](https://codeforces.com/apiHelp) |
 | **CodeSandbox** | Online code editor API. | 🔑 ApiKey | ✅ | [Link](https://codesandbox.io/docs) |
 | **CodeScan** | Manage your Hosted CodeScan Service | 🔑 ApiKey | No | [Link](http://www.code-scan.com) |
+| **Codex Reset** | OpenAI Codex usage-limit reset history, verified announcements and 24h/48h reset probability. | No | ✅ | [Link](https://codex-reset.com/llms.txt) |
 | **ConfigCat Public Management** | **Base API URL**: https://api.configcat.com If you prefer the swagger documentation, you can find it here: [Swagger U | 🔑 ApiKey | ✅ | [Link](https://configcat.com) |
 | **Contentful** | Headless content platform APIs. | 🔑 ApiKey | ✅ | [Link](https://www.contentful.com/developers/docs/) |
 | **Contentful Images** | Used to retrieve and apply transformations to images. | 🔑 ApiKey | ✅ | [Link](https://www.contentful.com/developers/docs/references/images-api/) |
+| **Convert RSS to JSON** | Transform raw RSS data into structured JSON. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/converter-rss-json) |
+| **Convert Speech to Text API** | This API converts any speech to text multiple languages and dialects. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/speech-to-text) |
 | **CORS Proxy** | Get around the dreaded CORS error by using this proxy as a middle man | No | ✅ | [Link](https://github.com/burhanuday/cors-proxy) |
 | **Corsfix** | CORS Proxy by Corsfix lets you instantly fetch any resource on the web and bypass CORS errors | No | ✅ | [Link](https://corsfix.com) |
 | **Count.io** | Persistent counting and A/B testing | No | ✅ | [Link](https://count.io) |
 | **Crates.io** | Rust crate metadata, versions and download counts. | No | ✅ | [Link](https://doc.rust-lang.org/cargo/reference/registry-web-api.html) |
 | **Crawl Readiness** | Check if AI crawlers (ChatGPT, Claude, Perplexity, 30+ others) can access any website | 🔑 ApiKey | ✅ | [Link](https://crawlreadiness.com) |
+| **CSV to JSON API** | Convert CSV files to JSON with this API. Ideal for developers who want to automate data workflows and integrate structured data. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/converter-csv-json) |
 | **CurlShot** | Website screenshot API: URL, HTML or Markdown to PNG, JPEG, WebP, PDF or scrolling video (free tier: 100/month). | 🔑 ApiKey | ✅ | [Link](https://curlshot.com/docs) |
 | **DaniWeb Connect** | User Recommendation Engine and Chat Network | 🔒 OAuth | ✅ | [Link](https://www.daniweb.com/members/1/dani) |
 | **Databricks** | Lakehouse workspace, jobs, and cluster APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.databricks.com/api/workspace/introduction) |
+| **DATPAQ** | Developer-first APIs. Enterprise-ready infrastructure. Sampla data, avatars, image processing and a lot more. | 🔑 ApiKey | ✅ | [Link](https://datpaq.com) |
 | **Debian Code Search** | OpenAPI for https://codesearch.debian.net/ | 🔑 ApiKey | ✅ | [Link](https://codesearch.debian.net) |
 | **deed.page** | Static hosting for AI agents: publish HTML or a folder with one HTTP PUT (free: 25 sites, 25 MB each, no signup) | No | ✅ | [Link](https://deed.page/docs) |
 | **Diagrams.so** | Generate editable draw.io architecture diagrams from text or infrastructure code | 🔑 ApiKey | ✅ | [Link](https://diagrams.so/developers) |
 | **DigitalOcean Status** | Status of all DigitalOcean services. | No | ✅ | [Link](https://status.digitalocean.com/api) |
 | **DigMyName** | Domain availability and registrar pricing across 52 TLDs | No | ✅ | [Link](https://digmyname.com/api) |
+| **DocForge** | Convert between Markdown, HTML, CSV, JSON, and YAML formats. | No | ✅ | [Link](https://docforge-api.vercel.app) |
 | **Docker Hub** | Interact with Docker Hub. | 🔑 ApiKey | ✅ | [Link](https://docs.docker.com/docker-hub/api/latest/) |
 | **Doczillla** | SaaS API empowering the generation of screenshots or PDFs directly from HTML/CSS/JS code | 🔑 ApiKey | ✅ | [Link](https://www.doczilla.app/) |
 | **DomainDb Info** | Domain name search to find all domains containing particular words/phrases/etc. | No | ✅ | [Link](https://api.domainsdb.info/) |
@@ -86,19 +108,29 @@
 | **dotsweep** | Domain availability across 1200+ TLDs with registration and renewal prices | No | ✅ | [Link](https://dotsweep.com/docs) |
 | **DownStatus** | Real-time status for GitHub, AWS, Discord and 90+ services | No | ✅ | [Link](https://isitdownstatus.com) |
 | **Dummyapi.io** | Simple API that includes a common data for most of the applications. Like user info, some posts, comments, etc. This | No | ✅ | [Link](https://n161.tech/t/dummyapi) |
+| **EC2.shop API** | Get AWS service price right from your terminal. | No | ✅ | [Link](https://github.com/yeo/ec2.shop) |
 | **EmailJS** | Send emails directly from JavaScript (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.emailjs.com/docs/) |
 | **EndOfLife.date** | Software end-of-life dates and support lifecycles | No | ✅ | [Link](https://endoflife.date/docs/api) |
 | **ExtendsClass JSON Storage** | A simple JSON store API. | No | ✅ | [Link](https://extendsclass.com/json-storage.html) |
 | **Extpose** | Extpose — in‑store performance analytics and optimization tool for Chrome extensions. [https://extpose.com](https://e | 🔑 ApiKey | ✅ | [Link](https://extpose.com) |
 | **Fair Draw** | Verifiable random draws bound to the drand public randomness beacon | No | ✅ | [Link](https://bettip.co.za/fair-draw/api/) |
+| **Faker** | Generate massive amounts of fake (but realistic) data for testing and development. | No | ✅ | [Link](https://fakerjs.dev) |
+| **FastApi Simple Calculator** | Math, Stadistics, Conversions, Currency and more. | No | ✅ | [Link](https://fastapi-calculadora.onrender.com) |
 | **Firebase** | Google's mobile/web app development platform. | 🔑 ApiKey | ✅ | [Link](https://firebase.google.com/docs/reference/rest) |
+| **FluentEDI** | Deterministic tools for AI agents: X12 EDI, check digits, time, cron, JSON repair. | No | ✅ | [Link](https://fluentedi.com) |
 | **Fly.io** | Global app deployment platform. | 🔑 ApiKey | ✅ | [Link](https://fly.io/docs/machines/api/) |
 | **Forgejo API** | REST API for Forgejo-hosted repositories, issues, users, packages and releases. | 🔐 OAuth | ✅ | [Link](https://forgejo.org/docs/latest/user/api-usage/) |
 | **Form & Zip-Code** | Build smart forms. Determine the gender of a first name, or full name with our gender API. auto-fill state and city | No | ✅ | [Link](https://form-api.com) |
+| **Format JSON Online Dummy API** | A free tool to generate dummy JSON data for testing and prototyping. | No | ✅ | [Link](https://formatjsononline.com/dummy-api) |
+| **FormForge** | Generate styled, accessible HTML forms from JSON definitions with validation. | No | ✅ | [Link](https://formforge-api.vercel.app) |
 | **Framejet** | Website screenshot API with cookie banners and chat widgets removed; free tier | 🔑 ApiKey | ✅ | [Link](https://framejet.dev/docs) |
+| **fynk** | Generate, update, and manage contracts from your own systems with a secure and scalable REST API. | 🔑 ApiKey | ✅ | [Link](https://fynk.com) |
 | **GameSparks Game Details** | The API to manage the GameSparks game details | 🔑 ApiKey | ✅ | [Link](https://gamesparks.net) |
+| **Gcore CDN** | Make your app fast and responsive for a global audience with Gcore CDN. | 🔑 ApiKey | ✅ | [Link](https://docs.gcore.com/cdn) |
+| **Gcore Cloud** | Scalable, secure, and reliable hybrid cloud services anywhere in the world. | 🔑 ApiKey | ✅ | [Link](https://docs.gcore.com/cloud) |
 | **GcrawlAI** | Web scraping, SERP API, screenshots, URL to Markdown and prebuilt extractors | 🔑 ApiKey | ✅ | [Link](https://gcrawlai.com) |
 | **GeekFlare** | Provide numerous capabilities for important testing and monitoring methods for websites | 🔑 ApiKey | ✅ | [Link](https://apidocs.geekflare.com/docs/geekflare-api) |
+| **Generate Full Webpage Screenshot** | Dynamically capture full page screenshots of websites. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/generate-webpage-screenshot) |
 | **Ghost** | Get Published content into your Website, App or other embedded media. | 🔑 ApiKey | ✅ | [Link](https://ghost.org/) |
 | **Ghost Content API** | Public content endpoints for Ghost publications. | 🔑 ApiKey | ✅ | [Link](https://ghost.org/docs/content-api/) |
 | **Gitea** | Self-hosted Git service with REST API. | 🔐 OAuth | ✅ | [Link](https://gitea.com/api/swagger) |
@@ -121,9 +153,13 @@
 | **Hetzner Cloud** | This is the official API documentation for the Public Hetzner Cloud. ## Introduction The Hetzner Cloud API operates o | 🔒 OAuth | ✅ | [Link](https://hetzner.cloud) |
 | **Hex** | Elixir and Erlang package versions and docs | No | ✅ | [Link](https://github.com/hexpm/specifications) |
 | **Hipsum** | Hipster-themed lorem ipsum generator for placeholder text | No | ✅ | [Link](https://hipsum.co) |
+| **Hoppscotch** | A lightweight, fast, and customizable app for testing and designing APIs. A free, fast, and beautiful. | No | ✅ | [Link](https://hoppscotch.io) |
 | **Host.io** | Domains Data. | 🔑 ApiKey | ✅ | [Link](https://host.io) |
 | **HostDealRadar** | Source-backed hosting price and provider record lookup | No | ✅ | [Link](https://hostdealradar.com/ai/) |
+| **HTTP2.Pro** | Test endpoints for client and server HTTP/2 protocol support. | No | ✅ | [Link](https://http2.pro/doc/api) |
 | **HTTPBin.dev** | HTTP request and response service for testing endpoints and headers. | No | ✅ | [Link](https://httpbin.dev/) |
+| **HTTPie** | A free command-line HTTP client for the API era. | No | ✅ | [Link](https://httpie.io) |
+| **httpSMS** | Use your Android phone as an SMS gateway to send and receive SMS messages via a simple HTTP API. | 🔑 ApiKey | ✅ | [Link](https://docs.httpsms.com) |
 | **IBM Text to Speech** | Convert text to speech. | 🔑 ApiKey | ✅ | [Link](https://cloud.ibm.com/docs/text-to-speech/getting-started.html) |
 | **Icanhazepoch** | Get Epoch time. | No | ✅ | [Link](https://icanhazepoch.com) |
 | **Icanhazip** | IP Address API. | No | ✅ | [Link](https://major.io/icanhazip-com-faq/) |
@@ -132,9 +168,12 @@
 | **Index Agentica** | Agent-first directory of skills, MCP servers, tools, protocols and APIs as JSON, markdown, llms.txt | No | ✅ | [Link](https://indexagentica.com/agents/) |
 | **Instatus** | Status page and incident management API. | 🔑 ApiKey | ✅ | [Link](https://instatus.com/help/api) |
 | **Interzoid Get Full Name Match Similarity Key** | This API provides a similarity key used to match with other similar full name data, including for purposes of dedupli | No | ✅ | [Link](https://www.interzoid.com) |
+| **Invoice Parsing API** | Extract structured invoice data using AI with this API. Multiple formats supported. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/sharpapi-ai-invoice-parser) |
 | **ip-fast.com** | IP address, country and city. | No | No | [Link](http://ip-fast.com/docs/) |
 | **IP2WHOIS Information Lookup** | WHOIS domain name lookup. | 🔑 ApiKey | ✅ | [Link](https://www.ip2whois.com/) |
 | **ipfind.io** | Geographic location of an IP address or any domain name along with some other... | 🔑 ApiKey | ✅ | [Link](https://ipfind.io) |
+| **IPLocate** | IP geolocation and threat data API. | No | ✅ | [Link](https://www.iplocate.io) |
+| **IPQuery** | A free IP Geolocation and proxy/tor/VPN detection API. | No | ✅ | [Link](https://ipquery.io) |
 | **Ipstack** | Locate and identify website visitors by IP address. | 🔑 ApiKey | ✅ | [Link](https://ipstack.com/) |
 | **Ironfang Render** | Screenshots, PDFs, dynamic images, QR codes and video from URLs or HTML | 🔑 ApiKey | ✅ | [Link](https://ironfang.com/render/docs) |
 | **Is This Site Down?** | Check if any website is down, from two continents; live status, uptime history and TLS expiry | No | ✅ | [Link](https://downforjustmeoreveryone.com/api) |
@@ -142,6 +181,7 @@
 | **jsDelivr** | Package info and download stats on jsDelivr CDN | No | ✅ | [Link](https://github.com/jsdelivr/data.jsdelivr.com) |
 | **JSON 2 JSONP** | Convert JSON to JSONP (on-the-fly) for easy cross-domain data requests using ... | No | ✅ | [Link](https://json2jsonp.com/) |
 | **JSONbin.io** | Free JSON storage. | 🔑 ApiKey | ✅ | [Link](https://jsonbin.io) |
+| **JSONsilo.com** | Hassle-free JSON hosting. Convert your JSON file to an API in minutes at no cost. | 🔑 ApiKey | ✅ | [Link](https://jsonsilo.com) |
 | **jstash** | Save JSON with one request and get a URL; private JSON for each signed-in user of your app | 🔑 ApiKey | ✅ | [Link](https://jstash.app/docs/) |
 | **Judge0 CE** | Online code execution system. | 🔑 ApiKey | ✅ | [Link](https://ce.judge0.com/) |
 | **Keyvalue** | Simple key-value storage REST API for quick prototyping | No | ✅ | [Link](https://keyvalue.immanuel.co/) |
@@ -157,7 +197,11 @@
 | **Logs.to** | Generate logs. | 🔑 ApiKey | ✅ | [Link](https://logs.to/) |
 | **MAC address vendor lookup** | Retrieve vendor details and other information regarding a given MAC address. | No | ✅ | [Link](https://macvendors.com/) |
 | **macadress** | MAC address and OUI vendor lookup synced from IEEE, with randomized-MAC detection | No | ✅ | [Link](https://macadress.com/mac-address-api) |
+| **Magento Watch** | Release dates, end-of-life dates and system requirements for Magento Open Source, Adobe Commerce and Mage-OS versions. | No | ✅ | [Link](https://magento.watch) |
 | **Make** | Automation platform REST API for scenarios and connections. | 🔑 ApiKey | ✅ | [Link](https://www.make.com/en/api-documentation) |
+| **Markdown to HTML API** | This API lets you upload and transform a Markdown file to HTML. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/converter-md-html) |
+| **Markdown to JSON API** | Upload Markdown and get JSON with one API call. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/converter-markdown-json) |
+| **MetaScrape** | Extract metadata, Open Graph tags, and structured data from any URL. | 🔑 ApiKey | ✅ | [Link](https://metascrape.shanecode.org) |
 | **Micro-SaaS AI Suite** | 8 serverless AI APIs for sentiment analysis, copy generation, email verification, & OCR | 🔑 ApiKey | ✅ | [Link](https://microsaas-agent-api.vercel.app/openapi.json) |
 | **MicroENV** | Fake Rest API for developers | No | ✅ | [Link](https://microenv.com/) |
 | **Microlink** | Extract metadata, take screenshots, and generate PDFs from any URL. | No | ✅ | [Link](https://microlink.io/docs/api/getting-started/overview) |
@@ -166,11 +210,13 @@
 | **MY IP** | Get IP address information. | No | ✅ | [Link](https://www.myip.com/api-docs/) |
 | **MyIPRightNow** | Public IP address with network, location, and connection details | No | ✅ | [Link](https://myiprightnow.com) |
 | **MyJSON.online** | A RESTful API for flexible storage of JSON data | 🔑 ApiKey | ✅ | [Link](https://myjson.online) |
+| **MySQL Visual EXPLAIN** | Transform MySQL EXPLAIN output to interactive graphs. | No | ✅ | [Link](https://api.mysqlexplain.com) |
 | **n8n** | Workflow automation REST API: workflows, executions, tags. | 🔑 ApiKey | ✅ | [Link](https://docs.n8n.io/api/) |
 | **NameGender** | Gender from a first name, full name, email or username, with probability | 🔑 ApiKey | ✅ | [Link](https://namegender.com/docs) |
 | **NetBox** | API to access NetBox | No | ✅ | [Link](https://netbox.dev) |
 | **Netlify** | Netlify API. | 🔐 OAuth | ✅ | [Link](https://docs.netlify.com/api/get-started/) |
 | **NetworkCalc** | Network calculators, including subnets, DNS, binary, and security tools. | No | ✅ | [Link](https://networkcalc.com/api/docs) |
+| **Nonprofit Check Plus** | Verify charities via EIN using IRS, PUB78, BMF & OFAC data for compliance and legitimacy. | 🔑 ApiKey | ✅ | [Link](https://pactman.org/nonprofitcheckplus-api/landing) |
 | **Notion** | Access to Notion workspace data via API. | 🔐 OAuth | ✅ | [Link](https://developers.notion.com/) |
 | **Novu** | Open-source notification infrastructure. | 🔑 ApiKey | ✅ | [Link](https://docs.novu.co/api-reference/overview) |
 | **npm** | Package metadata, downloads and maintainers from the npm registry. | No | ✅ | [Link](https://docs.npmjs.com/) |
@@ -185,19 +231,27 @@
 | **OutageDeck** | Live status and incidents for 170+ cloud and SaaS providers from official feeds | No | ✅ | [Link](https://outagedeck.com/developers/api) |
 | **oyyi** | API for Fake Data, image/video conversion, optimization, pdf optimization and thumbnail generation | No | ✅ | [Link](https://oyyi.xyz/docs/1.0) |
 | **PageCDN** | Public API for javascript, css and font libraries on PageCDN. | 🔑 ApiKey | ✅ | [Link](https://pagecdn.com/docs/public-api) |
+| **Paraphrase Text API** | The Paraphrase Text Generator API generates a paraphrased version of the provided text. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/sharpapi-paraphrase-text) |
+| **PayUs-as-a-Service (PUaaS)** | A self-hostable API that returns randomized messages for past-due invoices. | No | ✅ | [Link](https://github.com/sticknologic/payus-as-a-service) |
 | **Pdflayer** | HTML to PDF conversion. | 🔑 ApiKey | ✅ | [Link](https://pdflayer.com/) |
 | **Peak** | Cloudflare Turnstile and 5-second challenge solving, pay per successful solve, 1,000 free solves | 🔑 ApiKey | ✅ | [Link](https://peak.fo/docs) |
+| **Phone Specs** | Real-time smartphone specifications database for 263 devices. | No | ✅ | [Link](https://phone-specs-api-production.up.railway.app/docs) |
 | **PHPhub** | Validate PHP code | No | ✅ | [Link](https://phphub.net/linter/) |
 | **Pipedream** | Integration platform with 2,500+ APIs and event-driven workflows. | 🔑 ApiKey | ✅ | [Link](https://pipedream.com/docs/) |
 | **PixelVault** | Agent-first image hosting with instant CDN URLs | 🔑 ApiKey | ✅ | [Link](https://pixelvault.dev/docs) |
+| **Platform API** | The REST API specification for Ably. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/ably/open-specs/main/definitions/platform-v1.yaml) |
 | **PocketBase** | Open source backend (database, auth, files). | 🔑 ApiKey | ✅ | [Link](https://pocketbase.io/docs/api-records/) |
 | **Positionstack** | Forward & Reverse Geocoding. | 🔑 ApiKey | ✅ | [Link](https://positionstack.com/) |
 | **PostHog** | Open-source product analytics (free tier). | 🔑 ApiKey | ✅ | [Link](https://posthog.com/docs/api) |
+| **Posthook** | Schedule webhooks for future delivery with retries and delivery tracking. | 🔑 ApiKey | ✅ | [Link](https://docs.posthook.io) |
 | **Postman** | Tool for testing APIs. | 🔑 ApiKey | ✅ | [Link](https://www.postman.com/postman/workspace/postman-public-workspace/documentation/12959542-c8142d51-e97c-46b6-bd77-52bb66712c9a) |
+| **Proxed AI** | Secure AI APIs in iOS - No SDK, Just Change Your API URL. | 🔑 ApiKey | ✅ | [Link](https://proxed.ai) |
+| **Proxmox VE API** | API of self-hosted Proxmox VE. Address: https://your.server:8006/api2/json/ (configuring in installation process). | 🔑 ApiKey | ✅ | [Link](https://pve.proxmox.com/pve-docs/api-viewer) |
 | **ProxyCrawl** | Scraping and crawling anticaptcha service. | 🔑 ApiKey | ✅ | [Link](https://proxycrawl.com) |
 | **ProxyForge** | Free auto-updating list of live-tested proxies (HTTP/HTTPS/SOCKS4/SOCKS5), refreshed every 6 h | No | ✅ | [Link](https://proxyforge.dev) |
 | **ProxyKingdom** | Rotating Proxy API that produces a working proxy on every request. | 🔑 ApiKey | ✅ | [Link](https://proxykingdom.com) |
 | **Pusher Beams** | Push notifications for Android & iOS. | 🔑 ApiKey | ✅ | [Link](https://pusher.com/beams) |
+| **Pusher Channels** | Realtime features. | 🔑 ApiKey | ✅ | [Link](https://pusher.com/channels) |
 | **PyPI** | JSON API for Python package metadata and releases. | No | ✅ | [Link](https://warehouse.pypa.io/api-reference/) |
 | **Pythonium** | Validate Python code | No | ✅ | [Link](https://pythonium.net/linter) |
 | **QR code** | Create an easy to read QR code and URL shortener. | No | ✅ | [Link](https://www.qrtag.net/api/) |
@@ -205,16 +259,22 @@
 | **Qrcode Monkey** | Integrate custom and unique looking QR codes into your system or workflow. | No | ✅ | [Link](https://www.qrcode-monkey.com/qr-code-api-with-logo/) |
 | **QuickChart** | Generate charts and QR codes. | No | ✅ | [Link](https://quickchart.io/) |
 | **Railway** | Modern deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://docs.railway.app/reference/public-api) |
+| **Random Identity** | Random Identity Generator with custom response format. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/edualc1018/api/random-identity-generator) |
 | **RealUptime** | Manage uptime monitors, heartbeat checks, incidents and status pages with an API key | 🔑 ApiKey | ✅ | [Link](https://realuptime.io/docs/api) |
 | **Redash** | Query, dashboards, and data source automation API. | 🔑 ApiKey | ✅ | [Link](https://redash.io/help/user-guide/integrations-and-api/api) |
+| **ReefAPI** | One API for 185+ live web data sources including search, social, e-commerce, real estate, jobs and finance, returning clean JSON. | 🔑 ApiKey | ✅ | [Link](https://reefapi.com) |
 | **Render** | Cloud platform API for apps and databases. | 🔑 ApiKey | ✅ | [Link](https://api-docs.render.com/reference/introduction) |
 | **ReplyNodes** | Convert a public web page into clean Markdown | No | ✅ | [Link](https://replynodes.com/markdown-api/) |
+| **ReportForge** | Generate styled HTML reports from CSV or JSON data with built-in templates. | No | ✅ | [Link](https://reportforge-api.vercel.app) |
 | **ReqRes** | A hosted REST-API ready to respond to user registration, login, and data requests. | No | ✅ | [Link](https://reqres.in/) |
 | **Request Baskets** | RESTful API of [Request Baskets](https://rbaskets.in) service. Request Baskets is an open source project of a service | 🔑 ApiKey | ✅ | [Link](https://rbaskets.in) |
+| **Reserp** | Send a Google Search URL and receive visible result blocks as structured JSON. | 🔑 ApiKey | ✅ | [Link](https://reserp.ai) |
 | **Ritc** | Rules in the Cloud | 🔑 ApiKey | ✅ | [Link](https://ritc.io) |
 | **RSS feed to JSON** | Returns RSS feed in JSON format using feed URL. | No | ✅ | [Link](https://rss2json.com/docs) |
+| **RSS to JSON** | Returns RSS feed in JSON format using feed URL. | No | ✅ | [Link](https://github.com/ayusharma/RSS-to-JSON) |
 | **Runscope** | Manage Runscope programmatically | 🔒 OAuth | ✅ | [Link](https://runscope.com) |
 | **SavePage.io** | A free, RESTful API used to screenshot any desktop, or mobile website. | 🔑 ApiKey | ✅ | [Link](https://www.savepage.io) |
+| **SchemaShield** | Read-only preflight for breaking schema changes and downstream query impact. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/kaiasistentedavid/api/schema-change-risk) |
 | **ScrapeNinja** | Scraping API with Chrome fingerprint and residential proxies. | 🔑 ApiKey | ✅ | [Link](https://scrapeninja.net) |
 | **scraperBox** | Undetectable web scraping API. | 🔑 ApiKey | ✅ | [Link](https://scraperbox.com/) |
 | **scrapestack** | Real-time, Scalable Proxy & Web Scraping REST API. | 🔑 ApiKey | ✅ | [Link](https://scrapestack.com/) |
@@ -225,13 +285,21 @@
 | **Screenshot** | Website screenshots, PDFs, HTML rendering, caching, and webhooks | 🔑 ApiKey | ✅ | [Link](https://screenshotapi.to/docs) |
 | **Screenshot Happy** | Website screenshot API (PNG/JPEG/PDF) with full-page capture and visual-diff monitors | 🔑 ApiKey | ✅ | [Link](https://screenshot-api-production-ffd7.up.railway.app/docs) |
 | **Screenshot machine** | Website screenshot generator with API | No | ✅ | [Link](https://www.screenshotmachine.com) |
+| **Screenshot Scout** | Screenshot API for developers that captures any URL in one HTTP request with predictable output. | 🔑 ApiKey | ✅ | [Link](https://screenshotscout.com) |
 | **ScreenshotAPI.net** | Create pixel-perfect website screenshots. | 🔑 ApiKey | ✅ | [Link](https://screenshotapi.net/) |
+| **Screenshotbase** | Screenshot API, 1000 free requests per month. | 🔑 ApiKey | ✅ | [Link](https://screenshotbase.com) |
 | **Screenshotlayer** | Website screenshots. | 🔑 ApiKey | ✅ | [Link](https://screenshotlayer.com/) |
 | **ScreenURL** | Capture screenshots and PDFs of any webpage via REST API | 🔑 ApiKey | ✅ | [Link](https://screenurl.com/docs) |
+| **Scrnify** | Screenshot and video capture API to transform any URL into high-quality images and recordings. | 🔑 ApiKey | ✅ | [Link](https://scrnify.com/docs) |
 | **SegmentLite** | Lightweight event routing and webhook fan-out API alternative to Segment | 🔑 ApiKey | ✅ | [Link](https://segmentlite-api-dfru.fly.dev) |
+| **Sent.dm** | Sent is a unified API for messaging across SMS and apps like WhatsApp. | 🔑 ApiKey | ✅ | [Link](https://sent.dm) |
+| **SEO Score** | Comprehensive SEO audit with 28 checks, scoring, and prioritized recommendations. | 🔑 ApiKey | ✅ | [Link](https://seoscoreapi.com) |
+| **SEO Tags Generator API** | The Generate SEO Tags API generates all the most important META tags based on any content. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/sharpapi-generate-seo-tags) |
 | **Serialif Color** | Color conversion, complementary, grayscale and contrasted text. | No | ✅ | [Link](https://color.serialif.com/) |
 | **Serply** | Google, Bing, News, Scholar and Maps search results and page scraping as JSON | 🔑 ApiKey | ✅ | [Link](https://serply.io/docs) |
 | **Serpstack** | Real-Time Google Search Results. | 🔑 ApiKey | ✅ | [Link](https://serpstack.com/) |
+| **Shadify** | Service for generating data and executing logic to create various games and puzzles. | No | ✅ | [Link](https://github.com/cheatsnake/shadify) |
+| **Sheet2API** | Easy Google Sheets and Excel Online API. | 🔑 ApiKey | ✅ | [Link](https://sheet2api.com) |
 | **Sheet2Site** | Create JSON from Google Sheet Real time updates. Free. | No | ✅ | [Link](https://www.sheet2site.com/dev/) |
 | **Sheetsu** | Easy google sheets integration. | 🔑 ApiKey | ✅ | [Link](https://sheetsu.com/) |
 | **Shorten.REST** | Official API. | 🔑 ApiKey | ✅ | [Link](https://shorten.rest) |
@@ -248,9 +316,11 @@
 | **SonarQube** | SonarQube REST APIs to detect bugs, code smells & security vulnerabilities. | 🔐 OAuth | ✅ | [Link](https://sonarcloud.io/web_api) |
 | **SpryTools Screenshot** | Capture full-page or viewport website screenshots (PNG/JPEG/WebP) | 🔑 ApiKey | ✅ | [Link](https://sprytools.com/apis/screenshot) |
 | **SQLable** | Validate SQL query | No | ✅ | [Link](https://sqlable.com/validator/) |
+| **StackExchange** | Q&A forum for developers. | 🔑 ApiKey | ✅ | [Link](https://api.stackexchange.com) |
 | **Statically** | A free CDN for developers. | No | ✅ | [Link](https://statically.io/) |
 | **Storyblok** | Headless CMS REST and GraphQL APIs. | 🔑 ApiKey | ✅ | [Link](https://www.storyblok.com/docs/api) |
 | **Stream Chat** | Stream's API and SDKs enable developers to build messaging solutions very quickly and reliably. Drive in-app | No | ✅ | [Link](https://getstream.io/chat/) |
+| **Supadata** | Scrape YouTube, web, and files into text. Get AI-ready, clean data for your next project. | 🔑 ApiKey | ✅ | [Link](https://supadata.ai) |
 | **Suprsonic** | Unified agent API: search, scrape, enrich, image gen, TTS, STT, messaging. One key, 20+ capabilities | 🔑 ApiKey | ✅ | [Link](https://suprsonic.ai) |
 | **Svix** | Welcome to the Svix API documentation! Useful links: [Homepage](https://www.svix.com) [Support email](mailto:support+ | 🔒 OAuth | ✅ | [Link](https://svix.com) |
 | **Swagger Generator** | This is an online swagger codegen server. You can find out more at https://github.com/swagger-api/swagger-codegen or | No | ✅ | [Link](https://swagger.io) |
@@ -265,13 +335,20 @@
 | **Trello** | Project boards and workflow automation APIs. | 🔐 OAuth | ✅ | [Link](https://developers.trello.com/) |
 | **Turbine Labs** | The Turbine Labs API provides CRUD operations for core object types, and is mostly RESTy. The easiest way to interact | 🔑 ApiKey | ✅ | [Link](https://turbinelabs.io) |
 | **Tyk** | Api and service management platform | 🔑 ApiKey | ✅ | [Link](https://tyk.io/open-source-api-gateway/) |
+| **URL to Markdown** | Convert web page to MarkDown. | No | ✅ | [Link](https://github.com/macsplit/urltomarkdown) |
+| **Urlmskr** | Easy and fast masked, shortened link creation. | No | ✅ | [Link](https://github.com/Axorax/urlmskr) |
 | **URLpipe** | Turn a URL into Markdown, screenshots, metadata or Lighthouse audits, rendered in real Chrome | 🔑 ApiKey | ✅ | [Link](https://urlpipe.dev/docs) |
+| **UserAgent** | User agent parsing API is designed to help you better understand and interact with your users. By identifying browser, device, and OS data from user agent strings, this API. | 🔑 ApiKey | ✅ | [Link](https://useragent.app) |
 | **Userstack** | User-Agent String Analysis. | 🔑 ApiKey | ✅ | [Link](https://userstack.com/) |
 | **Utilorax** | 203 JSON endpoints: hashing, encoding, unit conversion, text, dates and file conversion | 🔑 ApiKey | ✅ | [Link](https://utilorax.com/api) |
 | **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |
 | **V.recipes Get IP** | A simple API to get information such as IP, ISP name, Location, etc. based on user request | No | ✅ | [Link](https://v.recipes/get-ip) |
+| **Validate UK Postcodes** | This API validates postal codes within UK. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/data-postcodes-uk) |
+| **VatcheckAPI** | VAT Number Validation & Lookup REST API. | 🔑 ApiKey | ✅ | [Link](https://vatcheckapi.com) |
 | **Vercel** | Deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://vercel.com/docs/rest-api/endpoints) |
 | **Vornamencheck** | Gender probability for a first name, optionally per country; documentation in German | No | ✅ | [Link](https://vornamencheck.de/#api) |
+| **WAV to MP3 API** | This API lets you convert wav files to mp3. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/audio-converter-wav-mp3) |
+| **Web Metadata & Contact Extractor** | Extract SEO metadata, contact emails, social links, and tech stack (<200ms). | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/josejuanjocoding/api/web-metadata-and-contact-extractor) |
 | **Webclaw** | Web content extraction for LLMs with scrape, crawl, search, and summarize | 🔑 ApiKey | ✅ | [Link](https://webclaw.io/docs/api) |
 | **WebScraping.AI** | Web Scraping API with built-in proxies and JS rendering. | 🔑 ApiKey | ✅ | [Link](https://webscraping.ai/) |
 | **Wip** | Open API for the maker community. | 🔒 OAuth | ✅ | [Link](https://wip.chat/api) |

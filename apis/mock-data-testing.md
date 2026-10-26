@@ -13,6 +13,7 @@
 | **flaky** | Fake REST API with chaos controls: force any status code, add latency, or a failure rate | No | ✅ | [Link](https://flakyapi.dev) |
 | **GeneradorDNI** | Data generator API. Profiles, vehicles, banks and cards, etc. | 🔑 ApiKey | ✅ | [Link](https://api.generadordni.es) |
 | **Httpbin** | HTTP request and response testing (**No Auth**). | No | ✅ | [Link](https://httpbin.org/) |
+| **Insomnia** | A free API client that allows you to design, debug, test, and mock APIs locally, on Git, or cloud. Authenticated via OAuth; served over HTTPS. | 🔐 OAuth | ✅ | [Link](https://insomnia.rest) |
 | **ItsThisForThat** | Generate Random startup ideas. | No | ✅ | [Link](https://itsthisforthat.com/api.php) |
 | **JokeAPI v2** | Programming, dark, pun, and miscellaneous jokes with filters (**No Auth**). | No | ✅ | [Link](https://v2.jokeapi.dev/) |
 | **JsonFabrica** | Generate realistic relational synthetic JSON test data from reusable templates | 🔑 ApiKey | ✅ | [Link](https://jsonfabrica.com/docs/api-reference) |
@@ -30,6 +31,7 @@
 | **NovaFortix Dev** | Zero-auth REST endpoints for mock user profiles, UUIDs and HTTP status codes | No | ✅ | [Link](https://public-dev-apis.surge.sh) |
 | **Postman Echo** | Test REST clients with echo endpoint (**No Auth**). | No | ✅ | [Link](https://www.postman-echo.com/) |
 | **Random Profiles** | Fake user profiles and companies with 100+ fields each | 🔑 ApiKey | ✅ | [Link](https://random-profiles.com) |
+| **Random User Generator** | Generate realistic random user profiles (names, avatars, addresses) for mockups and seed data. | No | ✅ | [Link](https://randomuser.me/documentation) |
 | **Randommer** | Random data generator. | 🔑 ApiKey | ✅ | [Link](https://randommer.io/randommer-api) |
 | **RandomUser.me** | Generate random user data (like Lorem Ipsum, but for people). | No | ✅ | [Link](https://randomuser.me/) |
 | **restful** | Fake REST API for testing and prototyping with CRUD endpoints | No | ✅ | [Link](https://restful-api.dev) |

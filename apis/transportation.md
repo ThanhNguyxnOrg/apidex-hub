@@ -3,6 +3,7 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **ADS-B Exchange** | Flight tracking data. | No | ✅ | [Link](https://www.adsbexchange.com/data/) |
+| **adsbdb** | Open access to aircraft, airline, and flight route data. | No | ✅ | [Link](https://www.adsbdb.com) |
 | **Aether-X Port Congestion** | Real-time port congestion risk scores, ETA delays and waiting vessels for 15 global ports | 🔑 ApiKey | ✅ | [Link](https://aether-x-oracle-production.up.railway.app/docs) |
 | **Airports API v2** | Returns all airports | 🔑 ApiKey | ✅ | [Link](https://transavia.com) |
 | **airportsapi** | Get name and website-URL for airports by ICAO code. | No | ✅ | [Link](https://airport-web.appspot.com/api/docs/) |
@@ -19,18 +20,25 @@
 | **Boston MBTA Transit** | Stations and predicted arrivals for MBTA. | 🔑 ApiKey | ✅ | [Link](https://www.mbta.com/developers/v3-api) |
 | **Can I enter** | Visa and entry requirements for 199 passports, cited to official sources, verified daily | No | ✅ | [Link](https://canienter.com) |
 | **ChargeAlong** | EV charging sites in AU, NZ, US, UK and Canada, with nearby search and trip planning | No | ✅ | [Link](https://chargealong.io/docs/) |
+| **Cloud AutoML API** | Train high-quality custom machine learning models with minimum effort and machine learning expertise. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/automl) |
 | **Community Transit** | Transitland API | No | ✅ | [Link](https://github.com/transitland/transitland-datastore/blob/master/README.md#api-endpoints) |
 | **Compare Flight Prices** | API for comparing flight prices across platforms. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/obryan-software-obryan-software-default/api/compare-flight-prices/) |
 | **ConnectMeGuru** | Search and purchase prepaid travel eSIM data plans across 190+ countries | No | ✅ | [Link](https://www.connectmeguru.com/api/mcp) |
 | **Cruise Itinerary** | Cruise sailings, day-by-day itineraries, weekly fare history, port traffic and a cruise price index | 🔑 ApiKey | ✅ | [Link](https://cruise-itinerary.com/docs) |
 | **CruiseFeed** | Normalized cruise line inventory: ships, sailings, itineraries, ports and lead-in fares | 🔑 ApiKey | ✅ | [Link](https://cruisefeed.io) |
 | **CTS** | CTS Realtime API. | 🔑 ApiKey | ✅ | [Link](https://api.cts-strasbourg.eu/) |
+| **Custom Vision Training Client** | REST endpoints for the Custom Vision Training Client service. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/cognitiveservices/data-plane/CustomVision/Training/stable/v3.2/Training.json) |
 | **departureboard.io** | The departureboard.io is a high performance API written in Golang. Its goal is to provide to main functions: (1): A J | No | ✅ | [Link](https://departureboard.io) |
 | **eDRV** | edrv.io API Documentation | 🔒 OAuth | ✅ | [Link](https://edrv.io) |
 | **Enode** | Download [OpenAPI 3.0 Specification](/OpenAPI-Enode-v1.4.0.json) Download [Postman Collection](/Postman-Enode-v1.4.0 | 🔒 OAuth | ✅ | [Link](https://enode.io) |
+| **facha** | Aircraft Tracking, AIS Ship Tracking, Temporary Email Detection, IP GeoLocation, Package Tracking. | No | ✅ | [Link](https://docs.api.facha.dev) |
 | **Fahrplan-Free** | A RESTful webservice to request a railway journey - FREE plan with restricted access (max. 10 requests per minute). P | 🔒 OAuth | ✅ | [Link](https://developer.deutschebahn.com/store) |
+| **Faretrotter Travel API** | Multimodal travel API to return modes of transportation between cities and points of interest. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Faretrotter/api/master/docs/oas20.yaml) |
+| **FaSta - Station Facilities Status** | A RESTful webservice to retrieve data about the operational state of public elevators and escalators in german railway stations. | 🔑 ApiKey | ✅ | [Link](https://developer.deutschebahn.com/store/api-docs/DBOpenData/FaSta-Station_Facilities_Status/v2) |
+| **Flight Fare Search** | Search for realtime flight fares across destinations. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/farish978/api/flight-fare-search) |
 | **FlightAware** | Real-time and historical flight tracking data. | 🔑 ApiKey | ✅ | [Link](https://www.flightaware.com/commercial/aeroapi/) |
 | **Flinkster_API_NG** | This REST-API enables you to query for private transport sharing offers provided by companies and cities in Germany, | No | ✅ | [Link](https://deutschebahn.com) |
+| **Fuel Prices at Spanish Gas Stations** | Provides information about fuel prices at gas stations in Spain. | No | ✅ | [Link](https://datos.gob.es/en/apidata) |
 | **Grab** | Track deliveries, ride fares, payments and loyalty points. | 🔐 OAuth | ✅ | [Link](https://developer.grab.com/docs/) |
 | **GraphHopper** | Route planning and optimization. | 🔑 ApiKey | ✅ | [Link](https://docs.graphhopper.com/) |
 | **GSMTasks** | The GSMtasks API is a RESTful web service for developers to programmatically interact with GSMtasks data, real-time d | No | ✅ | [Link](https://gsmtasks.com) |
@@ -41,8 +49,10 @@
 | **Icelandic APIs** | Open APIs that deliver services in or regarding Iceland. | No | ✅ | [Link](http://docs.apis.is/) |
 | **Izi** | Audio guide for travellers. | 🔑 ApiKey | ✅ | [Link](http://api-docs.izi.travel/) |
 | **Kelley Blue Book** | Vehicle info, pricing, configuration, plus much more. | 🔑 ApiKey | ✅ | [Link](http://developer.kbb.com/#!/data/1-Default) |
+| **Konkan Railway Live Train Position** | Realtime data for trains on India's Konkan Railway. | No | ✅ | [Link](https://konkan-railway-api.vercel.app) |
 | **Land Transport Authority DataMall, Singapore** | Singapore transport information. | 🔑 ApiKey | No | [Link](https://datamall.lta.gov.sg/content/dam/datamall/datasets/LTA_DataMall_API_User_Guide.pdf) |
 | **LiveTrafficCam** | Live US state DOT traffic cameras with verified live status and measured uptime | No | ✅ | [Link](https://bzsasson.github.io/traffic-camera-sources/api.html) |
+| **M-Bus HTTPD API** | REST endpoints for the M-Bus HTTPD API service. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/packom/mbus-api/master/api/openapi.yaml) |
 | **MapAtlas** | Geocoding, routing, map tiles, directions, and route optimization APIs. EU-hosted | 🔑 ApiKey | ✅ | [Link](https://mapatlas.eu/) |
 | **MBTA v3** | Boston transit routes and predictions. | No | ✅ | [Link](https://api-v3.mbta.com/) |
 | **Metro Lisboa** | Delays in subway lines. | No | No | [Link](http://app.metrolisboa.pt/status/getLinhas.php) |
@@ -69,9 +79,13 @@
 | **Schiphol Airport** | Schiphol. | 🔑 ApiKey | ✅ | [Link](https://developer.schiphol.nl/) |
 | **SMKlog** | Live parcel shipping rates and labels from a plain-words item description | No | ✅ | [Link](https://smklog.com/openapi.json) |
 | **Stadiq** | Road works, transit disruptions and air quality for Antwerp and Flanders | 🔑 ApiKey | ✅ | [Link](https://stadiq.app/developers) |
+| **Stationsdatenbereitstellung** | An API providing master data for German railway stations by DB Station&Service AG. | 🔑 ApiKey | ✅ | [Link](https://developer.deutschebahn.com/store/api-docs/DBOpenData/StaDa-Station_Data/v2) |
 | **Strait of Hormuz Ship Monitor** | Live AIS vessel traffic, crossings and oil flow through the Strait of Hormuz | No | ✅ | [Link](https://hormuz.data-tracking.net/llms.txt) |
+| **Swedavia Airports** | Airport and flight information of Swedish Airports operated by Swedavia. | 🔑 ApiKey | ✅ | [Link](https://apideveloper.swedavia.se) |
 | **Swiss Public Transport** | Swiss public transport API | No | ✅ | [Link](https://transport.opendata.ch/) |
 | **Tankerkoenig** | German realtime gas/diesel prices. | 🔑 ApiKey | ✅ | [Link](https://creativecommons.tankerkoenig.de/swagger/) |
+| **Text Analytics Client** | The Text Analytics API is a suite of text analytics web services built with best-in-class Microsoft machine learning algorithms. The API can be used to analyze unstructured text. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/cognitiveservices/data-plane/TextAnalytics/preview/v2.1/TextAnalytics.json) |
+| **Trackr TMS** | Trackr API makes it easy to create, assign, and track shipments, with driver support, movement history, and more. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/jccm6/api/trackr-tms) |
 | **TransC** | Live bus and rail departures, vehicles, disruptions and journey planning for Great Britain | 🔑 ApiKey | ✅ | [Link](https://www.transcapi.com/docs) |
 | **TransitFeeds** | API to view feed information and download feeds from TransitFeeds.com | No | ✅ | [Link](https://transitfeeds.com/issues) |
 | **Transitland** | Global transit data aggregator (**No Auth**). | No | ✅ | [Link](https://www.transit.land/documentation) |
@@ -88,7 +102,9 @@
 | **Transport for Grenoble, France** | Grenoble public transport. | No | No | [Link](https://www.mobilites-m.fr/pages/opendata/OpenDataApi.html) |
 | **Transport for Hessen, Germany** | RMV API (Public Transport in Hessen) | No | ✅ | [Link](https://opendata.rmv.de/site/start.html) |
 | **Transport for Honolulu, US** | Honolulu Transportation Information. | 🔑 ApiKey | No | [Link](http://hea.thebus.org/api_info.asp) |
+| **Transport for Lisbon, Portugal** | Data about buses routes, parking and traffic. | 🔑 ApiKey | ✅ | [Link](https://emel.city-platform.com/opendata) |
 | **Transport for London** | Public transport data. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk) |
+| **Transport for London Unified API** | Our unified API brings together data across all modes of transport into a single RESTful API. This API provides access to the most highly requested realtime and status. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk/swagger/docs/v1) |
 | **Transport for Los Angeles, US** | Data about positions of Metro vehicles in real time and travel their routes. | No | ✅ | [Link](https://developer.metro.net/api/) |
 | **Transport for Manchester, England** | TfGM transport network data. | 🔑 ApiKey | ✅ | [Link](https://developer.tfgm.com/) |
 | **Transport for Norway** | Transport APIs and dataset for Norway. | No | ✅ | [Link](https://developer.entur.org/) |

@@ -19,6 +19,7 @@
 | **ONS** | UK Office for National Statistics open data API: datasets, editions and observations. | No | ✅ | [Link](https://api.beta.ons.gov.uk/v1/datasets) |
 | **Our World in Data** | Open indicator datasets on population, ageing and health with CSV and JSON export | No | ✅ | [Link](https://ourworldindata.org/grapher/) |
 | **Population (API Ninjas)** | Population data by country with historical records. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/population) |
+| **Salary Explorer** | Wages and employment for every US occupation by state and metro area, from Bureau of Labor Statistics survey data, with cost-of-living adjustment. | No | ✅ | [Link](https://salarywiki.com/api) |
 | **StatFin** | Statistics Finland PxWeb API: Finnish official statistics. | No | ✅ | [Link](https://statfin.stat.fi/PxWeb/api/v1/en/) |
 | **Statistics Canada** | Canadian census, demographic and economic statistics. | No | ✅ | [Link](https://www.statcan.gc.ca/eng/developers) |
 | **UN Population Data Portal** | UN Population Division: World Population Prospects, fertility and migration data | No | ✅ | [Link](https://population.un.org/dataportal/) |

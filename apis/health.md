@@ -2,6 +2,8 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **ADHybridHealthService** | REST APIs for Azure Active Directory Connect Health. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/adhybridhealthservice/resource-manager/Microsoft.ADHybridHealthService/stable/2014-01-01/ADHybridHealthService.json) |
+| **Amazon Route 53** | Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service. You can use Route 53 to: Register domain names. For. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/route53) |
 | **BMI Calculator** | Calculate BMI and other metrics. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/navii/api/bmi-calculator/) |
 | **CDC WONDER** | US CDC WONDER: mortality, births, population and disease statistics query API. | No | ✅ | [Link](https://wonder.cdc.gov/wonder/help/WONDER-API.html) |
 | **ClinicalTrials.gov** | Clinical trials database (**No Auth**). | No | ✅ | [Link](https://clinicaltrials.gov/data-api/api) |
@@ -25,6 +27,7 @@
 | **Diabetes** | Logging and retrieving diabetes information | No | No | [Link](http://predictbgl.com/api/) |
 | **Disease.sh** | COVID-19 and disease statistics (**No Auth**). | No | ✅ | [Link](https://disease.sh/) |
 | **Edamam Nutrition** | Nutrition analysis. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-nutrition-api) |
+| **Elastic Load Balancing** | Elastic Load Balancing A load balancer can distribute incoming traffic across your EC2 instances. This enables you to increase the availability of your. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/elasticloadbalancing) |
 | **ERstat** | Live Canadian emergency room closures and service disruptions, by province | 🔑 ApiKey | ✅ | [Link](https://erstat.ca/developers) |
 | **ExerciseDB** | Exercise data with images and animations. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb) |
 | **FindSaunaPlunge** | US cold plunge and sauna venues with dated, source-quoted temperatures and prices | No | ✅ | [Link](https://findsaunaplunge.com/api/) |
@@ -33,11 +36,13 @@
 | **HealthData.gov** | Public US health datasets and data portal. | No | ✅ | [Link](https://healthdata.gov/) |
 | **Humanitarian Data Exchange** | Humanitarian Data Exchange (HDX) is open platform for sharing data across cri... | No | ✅ | [Link](https://data.humdata.org/) |
 | **Infermedica** | NLP based symptom checker and patient triage API for health diagnosis from text. | 🔑 ApiKey | ✅ | [Link](https://developer.infermedica.com/docs/) |
+| **Jelly Belly Wiki** | Data about Jelly Belly beans- flavores, facts, history and more endpoints. | No | ✅ | [Link](https://jelly-belly-wiki.netlify.app) |
 | **LAPIS** | SARS-CoV-2 genomic sequences from public sources. | No | ✅ | [Link](https://cov-spectrum.org/public) |
 | **Lexigram** | NLP that extracts mentions of clinical concepts from text, gives access to cl... | 🔑 ApiKey | ✅ | [Link](https://docs.lexigram.io/) |
 | **Longevity World Cup** | Public biological age competition data with biomarkers and rankings | No | ✅ | [Link](https://longevityworldcup.com/api/data/athletes) |
 | **Medcorder Nearby Doctor** | Returns doctors near a client given a lat/lon and autocomplete text | No | ✅ | [Link](https://medcorder.com) |
 | **MedlinePlus Genetics** | Genetic conditions, genes, chromosomes and mtDNA data | No | ✅ | [Link](https://medlineplus.gov/about/developers/geneticsdatafilesapi/) |
+| **Microsoft.ResourceHealth** | The Resource Health Client. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2017-07-01/resourcehealth.json) |
 | **MyVaccination** | Vaccination data for Malaysia. | No | ✅ | [Link](https://documenter.getpostman.com/view/16605343/Tzm8GG7u) |
 | **NHS Health A-Z** | NHS conditions, medicines and guidance | 🔑 ApiKey | ✅ | [Link](https://digital.nhs.uk/developer/api-catalogue/health-a-to-z) |
 | **NPI Registry** | US healthcare provider registry search. | No | ✅ | [Link](https://clinicaltables.nlm.nih.gov/apidoc/npi_org/v3/doc.html) |
@@ -48,10 +53,14 @@
 | **OpenFDA** | Public FDA data about drugs, devices, and foods. | No | ✅ | [Link](https://open.fda.gov/apis/) |
 | **Orion Health** | Medical platform which allows the development of applications for different h... | 🔐 OAuth | ✅ | [Link](https://developer.orionhealth.io/) |
 | **Orthanc** | This is the full documentation of the [REST API](https://book.orthanc-server.com/users/rest.html) of Orthanc. This re | No | ✅ | [Link](https://orthanc-server.com) |
+| **PatientView** | The recommended REST API endpoints to be used when integrating with PatientView. | 🔑 ApiKey | ✅ | [Link](https://www.patientview.org/api/api-docs) |
+| **Psychologie et Sérénité** | French psychology articles metadata and validated psychological tests catalog. | No | ✅ | [Link](https://psychologieetserenite.com/api) |
 | **PubChem** | Chemical compound data. | No | ✅ | [Link](https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest) |
+| **ResourceHealthMetadata API Client** | REST endpoints for the ResourceHealthMetadata API Client service. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/ResourceHealthMetadata.json) |
 | **RxNav** | Drug vocabularies and interaction data. | No | ✅ | [Link](https://lhncbc.nlm.nih.gov/RxNav/APIs/index.html) |
 | **Stanza DSCSA Verifier** | Verify FDA DSCSA and EU FMD pharmaceutical serialization barcodes | 🔑 ApiKey | ✅ | [Link](https://stanzaapi.com/tools/pharma-dscsa) |
 | **Stanza UDI Decoder** | Decode and validate FDA GUDID and EU MDR medical device UDI barcodes | 🔑 ApiKey | ✅ | [Link](https://stanzaapi.com/tools/udi-decoder) |
+| **Status Pizza** | Pizza for every HTTP Status. | No | ✅ | [Link](https://status.pizza) |
 | **THC Open Mindfulness Resources** | Free mindfulness resources and research metadata | No | ✅ | [Link](https://api.theholisticcare.com/docs) |
 | **Urgences Québec** | Hourly emergency room occupancy, stretcher counts and wait times for every hospital in Quebec, Canada | No | ✅ | [Link](https://sante.handled.tools/api) |
 | **VA Facilities** | VA facility registry: medical centers, clinics, cemeteries. | 🔑 ApiKey | ✅ | [Link](https://api.va.gov/services/va_facilities/v1/facilities/all) |

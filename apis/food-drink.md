@@ -9,6 +9,7 @@
 | **Coffee** | Random coffee images (**No Auth**). | No | ✅ | [Link](https://coffee.alexflipnote.dev/) |
 | **CookbookSocial Nutrition** | Nutrition data for 4,631 ingredients with food names in 19 languages | 🔑 ApiKey | ✅ | [Link](https://cookbooksocial.app/api) |
 | **Daily Food Recalls** | U.S. FDA and USDA food recalls, merged and normalized, updated daily | No | ✅ | [Link](https://dailyfoodrecalls.com/api/) |
+| **DietlyAPI** | Food & nutrition API with 4.2M+ foods (Open Food Facts + community, normalized and confidence-ranked): calories, macros, micronutrients, barcode lookup, ~40ms s. | 🔑 ApiKey | ✅ | [Link](https://www.getdietly.com/api) |
 | **DoughMatrix** | Sourdough and pizza dough formula calculators: true hydration, DDT, fermentation windows | No | ✅ | [Link](https://doughmatrix.com) |
 | **Edamam** | Nutrition analysis, recipes and diet classification. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/) |
 | **Edamam Recipe** | Recipe search and nutrition analysis. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-recipe-api) |
@@ -37,9 +38,11 @@
 | **TheMealDB** | Open source database of recipes from around the world. | 🔑 ApiKey | ✅ | [Link](https://www.themealdb.com/api.php) |
 | **Tiny Plates** | Structured recipes, semantic search, serving adjustments and shopping lists | 🔑 ApiKey | ✅ | [Link](https://www.tinyplates.dev/docs) |
 | **Untappd** | Social beer sharing. | 🔐 OAuth | ✅ | [Link](https://untappd.com/api/docs) |
+| **USDA FoodData Central** | Authoritative nutrient data for hundreds of thousands of foods from the US Department of Agriculture. | 🔑 ApiKey | ✅ | [Link](https://fdc.nal.usda.gov/api-guide) |
 | **What's on the menu?** | NYPL human-transcribed historical menu collection. | 🔑 ApiKey | No | [Link](http://nypl.github.io/menus-api/) |
 | **WhiskyHunter** | Past online whisky auctions statistical data. | No | ✅ | [Link](https://whiskyhunter.net/api/) |
 | **XYZ Menus** | XYZ Menus API provides access to a Database of over 350,000 Restaurant Menus with over 30,000,000 individual menu | No | ✅ | [Link](https://menuapi.xyz) |
+| **Your Move - Nutrition API** | A complete nutrition API. Search foods, get nutrition facts and values. Generate meal plans and look up packaged products from 180+ countries worldwide. | 🔑 ApiKey | ✅ | [Link](https://ymove.app/nutrition-api) |
 | **Zestful** | Parse recipe ingredients. | 🔑 ApiKey | ✅ | [Link](https://zestfuldata.com/) |
 | **Zomato** | Restaurant search and reviews. | 🔑 ApiKey | ✅ | [Link](https://developers.zomato.com/api) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

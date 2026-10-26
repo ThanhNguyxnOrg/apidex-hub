@@ -3,6 +3,7 @@
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **ClearlyDefined** | Curated metadata and license scores for open-source components. | No | ✅ | [Link](https://docs.clearlydefined.io/) |
+| **Cloud Source Repositories API** | Accesses source code repositories hosted by Google. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/source-repositories/docs/apis) |
 | **Countly** | Countly web analytics. | No | ✅ | [Link](https://github.com/Countly/countly-server) |
 | **Creative Commons Catalog** | Search among openly licensed and public domain works. | 🔐 OAuth | ✅ | [Link](https://api.creativecommons.engineering/) |
 | **deps.dev** | Open package/dependency intelligence by Google. | No | ✅ | [Link](https://docs.deps.dev/api/) |
