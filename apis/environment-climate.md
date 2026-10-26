@@ -17,6 +17,7 @@
 | **Daymet Single Pixel Extraction Tool** | Welcome to the Daymet Single Pixel Extraction Tool API. You can use this API to download daily surface data within th | No | ✅ | [Link](https://ornl.gov) |
 | **EIA Open Data** | US energy statistics: electricity, petroleum, gas | 🔑 ApiKey | ✅ | [Link](https://www.eia.gov/opendata/) |
 | **Electricity Maps** | Live carbon intensity and electricity source mix. | 🔑 ApiKey | ✅ | [Link](https://static.electricitymaps.com/api/docs/index.html) |
+| **EPA ECHO API** | US EPA facility, compliance, enforcement, and environmental-condition data via public web services. | No | ✅ | [Link](https://echo.epa.gov/tools/web-services) |
 | **GDACS** | Global Disaster Alert & Coordination System: quake, cyclone, flood, drought, wildfire alerts. | No | ✅ | [Link](https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH) |
 | **Global Fishing Watch API** | Vessel identity, fishing activity, encounters and potential dark-vessel signals (non-commercial access). | 🔑 ApiKey | ✅ | [Link](https://globalfishingwatch.org/our-apis/documentation/) |
 | **Global Forest Watch** | Deforestation and forest monitoring data. | 🔑 ApiKey | ✅ | [Link](https://www.globalforestwatch.org/help/developers/) |
@@ -27,8 +28,10 @@
 | **kanari** | Real-time worldwide wildfire detections, water bomber tracking and open fire archive | No | ✅ | [Link](https://kanari.io/en/api) |
 | **Luchtmeetnet** | Predicted and actual air quality components for The Netherlands (RIVM) | No | ✅ | [Link](https://api-docs.luchtmeetnet.nl/) |
 | **Mycelium** | Corporate carbon emissions disclosures (scope 1, 2 and 3), company-reported and estimated | 🔑 ApiKey | ✅ | [Link](https://api.mycelium.global/docs/v1) |
+| **NASA FIRMS** | Near-real-time satellite fire and thermal-anomaly detections; free MAP_KEY required. | 🔑 ApiKey | ✅ | [Link](https://firms.modaps.eosdis.nasa.gov/api/) |
 | **National flood data (us)** | The FEMA Flood Map API offers up-to-date FEMA flood zone maps and data that can be easily embedded into partners' | 🔑 ApiKey | No | [Link](http://nationalflooddata.com/flood/) |
 | **NOAA Climate Data Online** | Historical climate and weather data. | 🔑 ApiKey | ✅ | [Link](https://www.ncdc.noaa.gov/cdo-web/webservices/v2) |
+| **NREL Developer APIs** | Renewable energy, alternative fuels, buildings, and energy-efficiency datasets and tools. | 🔑 ApiKey | ✅ | [Link](https://developer.nrel.gov/docs/) |
 | **NSIDC Web Services** | This API allows programmers to build National Snow and Ice Data Center data and metadata services into their applicat | No | ✅ | [Link](https://nsidc.org) |
 | **Open-Meteo Solar Forecast** | Solar radiation and energy forecast for photovoltaic systems. | No | ✅ | [Link](https://open-meteo.com/) |
 | **OpenWeatherMap Air Pollution** | Air quality index and pollutant data. | 🔑 ApiKey | ✅ | [Link](https://openweathermap.org/api/air-pollution) |
