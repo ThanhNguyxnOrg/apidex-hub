@@ -119,7 +119,6 @@
 | **Hetzner Cloud** | This is the official API documentation for the Public Hetzner Cloud. ## Introduction The Hetzner Cloud API operates o | 🔒 OAuth | ✅ | [Link](https://hetzner.cloud) |
 | **Hex** | Elixir and Erlang package versions and docs | No | ✅ | [Link](https://github.com/hexpm/specifications) |
 | **Hipsum** | Hipster-themed lorem ipsum generator for placeholder text | No | ✅ | [Link](https://hipsum.co) |
-| **host-t.com** | Basic DNS query via HTTP GET request. | No | ✅ | [Link](https://host-t.com) |
 | **Host.io** | Domains Data. | 🔑 ApiKey | ✅ | [Link](https://host.io) |
 | **HostDealRadar** | Source-backed hosting price and provider record lookup | No | ✅ | [Link](https://hostdealradar.com/ai/) |
 | **HTTPBin.dev** | HTTP request and response service for testing endpoints and headers. | No | ✅ | [Link](https://httpbin.dev/) |

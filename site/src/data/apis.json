@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T14:32:11.112594+00:00",
+    "generated_at": "2026-10-26T14:33:56.542475+00:00",
     "source": "README.md",
-    "total_apis": 3235,
+    "total_apis": 3233,
     "total_categories": 70,
-    "no_auth_count": 1429,
+    "no_auth_count": 1428,
     "api_key_count": 1552,
-    "oauth_count": 254,
-    "https_count": 3144,
+    "oauth_count": 253,
+    "https_count": 3142,
     "https_percentage": 97
   },
   "categories": [
@@ -4358,7 +4358,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 277,
+      "api_count": 276,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -5178,13 +5178,6 @@
           "auth": "No",
           "https": true,
           "link": "https://hipsum.co"
-        },
-        {
-          "name": "host-t.com",
-          "description": "Basic DNS query via HTTP GET request.",
-          "auth": "No",
-          "https": true,
-          "link": "https://host-t.com"
         },
         {
           "name": "Host.io",
@@ -21427,7 +21420,7 @@
       "id": "travel-tourism",
       "emoji": "✈️",
       "name": "Travel & Tourism",
-      "api_count": 22,
+      "api_count": 21,
       "apis": [
         {
           "name": "Amadeus",
@@ -21547,13 +21540,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://support.travelpayouts.com/hc/en-us"
-        },
-        {
-          "name": "TripIt",
-          "description": "Read and organize travel itineraries from TripIt accounts.",
-          "auth": "OAuth",
-          "https": true,
-          "link": "https://www.tripit.com/api"
         },
         {
           "name": "US Border Wait Times",

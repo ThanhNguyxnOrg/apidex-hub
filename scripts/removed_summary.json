@@ -1,10 +1,15 @@
 {
-  "count": 1,
+  "count": 2,
   "removed": [
     {
-      "name": "Non-Working Days",
-      "url": "https://www.isdayoff.ru/",
-      "file": "calendar-holidays.md"
+      "name": "host-t.com",
+      "url": "https://host-t.com",
+      "file": "development.md"
+    },
+    {
+      "name": "TripIt",
+      "url": "https://www.tripit.com/api",
+      "file": "travel-tourism.md"
     }
   ]
 }
