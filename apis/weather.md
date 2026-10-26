@@ -6,6 +6,7 @@
 | **AccuWeather** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://developer.accuweather.com/) |
 | **Aemet** | Weather and forecast data from Spain. | 🔑 ApiKey | ✅ | [Link](https://opendata.aemet.es/centrodedescargas/inicio) |
 | **Air Quality (OpenAQ)** | Global air quality data (**No Auth**). | No | ✅ | [Link](https://docs.openaq.org/) |
+| **Airly** | Air quality measurements, installation metadata and pollution indexes (free tier is non-commercial). | 🔑 ApiKey | ✅ | [Link](https://developer.airly.org/en/docs) |
 | **APIXU** | Weather. | 🔑 ApiKey | ✅ | [Link](https://www.apixu.com/doc/request.aspx) |
 | **AviationWeather** | NOAA aviation weather forecasts and observations. | No | ✅ | [Link](https://www.aviationweather.gov/dataserver) |
 | **ColorfulClouds** | Weather. | 🔑 ApiKey | ✅ | [Link](https://open.caiyunapp.com/ColorfulClouds_Weather_API) |

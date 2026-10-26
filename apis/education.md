@@ -7,6 +7,7 @@
 | **Clever Data** | Serves the Clever Data API | 🔒 OAuth | ✅ | [Link](https://clever.com) |
 | **College ROI** | Lifetime ROI of US colleges and majors - free static JSON, CC BY 4.0 | No | ✅ | [Link](https://le-teen.com/api) |
 | **CollegeScorecard** | US higher-ed institutions: costs, admissions and outcomes. | No | ✅ | [Link](https://collegescorecard.ed.gov/data/) |
+| **CORE API** | Open access research paper metadata. | 🔑 ApiKey | ✅ | [Link](https://api.core.ac.uk/docs/v3) |
 | **Crossref** | Scholarly article metadata (**No Auth**). | No | ✅ | [Link](https://www.crossref.org/documentation/retrieve-metadata/rest-api/) |
 | **edX API** | Online course catalog. | 🔐 OAuth | ✅ | [Link](https://courses.edx.org/api-docs/) |
 | **ERIC** | US Dept of Education ERIC research database: 1.4M+ education literature records | No | ✅ | [Link](https://api.ies.ed.gov/eric/?search=education&format=json) |
