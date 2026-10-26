@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T14:50:08.362572+00:00",
+    "generated_at": "2026-10-26T14:51:54.993288+00:00",
     "source": "README.md",
-    "total_apis": 3240,
+    "total_apis": 3239,
     "total_categories": 70,
-    "no_auth_count": 1431,
+    "no_auth_count": 1430,
     "api_key_count": 1555,
     "oauth_count": 254,
-    "https_count": 3149,
+    "https_count": 3148,
     "https_percentage": 97
   },
   "categories": [
@@ -18200,7 +18200,7 @@
       "id": "security-validation",
       "emoji": "🔐",
       "name": "Security & Validation",
-      "api_count": 81,
+      "api_count": 80,
       "apis": [
         {
           "name": "Agent Verifier",
@@ -18607,13 +18607,6 @@
           "auth": "No",
           "https": true,
           "link": "https://nvd.nist.gov/developers"
-        },
-        {
-          "name": "OpenSSF Scorecard API",
-          "description": "Retrieve published security scores and per-check results for open-source repositories.",
-          "auth": "No",
-          "https": true,
-          "link": "https://github.com/ossf/scorecard-webapp/blob/main/openapi.yaml"
         },
         {
           "name": "OSV",
