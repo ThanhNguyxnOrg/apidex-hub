@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T14:51:54.993288+00:00",
+    "generated_at": "2026-10-26T15:12:27.993948+00:00",
     "source": "README.md",
-    "total_apis": 3239,
+    "total_apis": 3242,
     "total_categories": 70,
-    "no_auth_count": 1430,
-    "api_key_count": 1555,
-    "oauth_count": 254,
-    "https_count": 3148,
+    "no_auth_count": 1432,
+    "api_key_count": 1557,
+    "oauth_count": 253,
+    "https_count": 3151,
     "https_percentage": 97
   },
   "categories": [
@@ -1577,7 +1577,7 @@
       "id": "business",
       "emoji": "💼",
       "name": "Business",
-      "api_count": 91,
+      "api_count": 92,
       "apis": [
         {
           "name": "Apacta",
@@ -2173,6 +2173,13 @@
           "auth": "No",
           "https": true,
           "link": "https://ugc-vz.de/developers"
+        },
+        {
+          "name": "UK Companies House",
+          "description": "Official UK company register: company profiles, officers, filings, charges and status.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developer.company-information.service.gov.uk/"
         },
         {
           "name": "Vestorly",
@@ -7794,8 +7801,15 @@
       "id": "environment-climate",
       "emoji": "🌿",
       "name": "Environment & Climate",
-      "api_count": 43,
+      "api_count": 45,
       "apis": [
+        {
+          "name": "Airly",
+          "description": "Air-quality measurements, monitoring-station metadata and pollution indexes (free tier is non-commercial).",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developer.airly.org/en/docs"
+        },
         {
           "name": "AirNow",
           "description": "US EPA air quality data and forecasts",
@@ -7900,6 +7914,13 @@
           "auth": "No",
           "https": true,
           "link": "https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH"
+        },
+        {
+          "name": "Global Fishing Watch API",
+          "description": "Vessel identity, fishing activity, encounters and potential dark-vessel signals (non-commercial access).",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://globalfishingwatch.org/our-apis/documentation/"
         },
         {
           "name": "Global Forest Watch",
@@ -11386,7 +11407,7 @@
       "id": "government-civic",
       "emoji": "🏛️",
       "name": "Government & Civic",
-      "api_count": 131,
+      "api_count": 130,
       "apis": [
         {
           "name": "AI Law Tracker",
@@ -12241,13 +12262,6 @@
           "auth": "No",
           "https": true,
           "link": "https://api.tollmint.com"
-        },
-        {
-          "name": "UK Companies House",
-          "description": "UK Companies House Data from the UK government.",
-          "auth": "OAuth",
-          "https": true,
-          "link": "https://developer.company-information.service.gov.uk/"
         },
         {
           "name": "UK Legislation Changes",
@@ -18200,7 +18214,7 @@
       "id": "security-validation",
       "emoji": "🔐",
       "name": "Security & Validation",
-      "api_count": 80,
+      "api_count": 81,
       "apis": [
         {
           "name": "Agent Verifier",
@@ -18607,6 +18621,13 @@
           "auth": "No",
           "https": true,
           "link": "https://nvd.nist.gov/developers"
+        },
+        {
+          "name": "OpenSSF Scorecard API",
+          "description": "Retrieve published security scores and per-check results for open-source repositories.",
+          "auth": "No",
+          "https": true,
+          "link": "https://github.com/ossf/scorecard#scorecard-rest-api"
         },
         {
           "name": "OSV",
@@ -22731,13 +22752,6 @@
           "link": "https://docs.openaq.org/"
         },
         {
-          "name": "Airly",
-          "description": "Air quality measurements, installation metadata and pollution indexes (free tier is non-commercial).",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://developer.airly.org/en/docs"
-        },
-        {
           "name": "APIXU",
           "description": "Weather.",
           "auth": "apiKey",
@@ -22855,6 +22869,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://portail-api.meteofrance.fr/"
+        },
+        {
+          "name": "MSC GeoMet",
+          "description": "Free public Canadian weather, climate, water and ice data through interoperable OGC APIs.",
+          "auth": "No",
+          "https": true,
+          "link": "https://eccc-msc.github.io/open-data/msc-geomet/readme_en/"
         },
         {
           "name": "NASA POWER",
