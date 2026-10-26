@@ -19,7 +19,6 @@
 | **Travel Impact Model** | Flight carbon estimates under Google's TIM methodology. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/travel/impact-model) |
 | **Travel Risk API** | Country-level travel-safety scores and advisories. | No | ✅ | [Link](https://travelriskapi.com/docs) |
 | **Travelpayouts** | Flight and hotel price data with affiliate commission stats. | 🔑 ApiKey | ✅ | [Link](https://support.travelpayouts.com/hc/en-us) |
-| **TripIt** | Read and organize travel itineraries from TripIt accounts. | 🔐 OAuth | ✅ | [Link](https://www.tripit.com/api) |
 | **US Border Wait Times** | Real-time border crossing wait times for US, Canada, and Mexico borders. | No | ✅ | [Link](https://bwt.cbp.gov/) |
 | **Viator** | Tours & activities search, availability and booking. | 🔑 ApiKey | ✅ | [Link](https://docs.viator.com) |
 | **Webcams.travel** | We aggregate and distribute landscape webcams worldwide. Add webcams to your app or website - Browse through the | No | ✅ | [Link](https://www.webcams.travel/api/) |
