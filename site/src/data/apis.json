@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T13:49:49.341227+00:00",
+    "generated_at": "2026-10-26T14:32:11.112594+00:00",
     "source": "README.md",
     "total_apis": 3235,
     "total_categories": 70,
-    "no_auth_count": 1428,
-    "api_key_count": 1553,
+    "no_auth_count": 1429,
+    "api_key_count": 1552,
     "oauth_count": 254,
     "https_count": 3144,
     "https_percentage": 97
@@ -662,7 +662,7 @@
       "id": "anti-malware",
       "emoji": "🛡️",
       "name": "Anti-Malware",
-      "api_count": 17,
+      "api_count": 16,
       "apis": [
         {
           "name": "AbuseIPDB",
@@ -761,13 +761,6 @@
           "auth": "No",
           "https": true,
           "link": "https://urlhaus-api.abuse.ch/"
-        },
-        {
-          "name": "URLScan.io",
-          "description": "Link/Domain reputation.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://urlscan.io/about-api/"
         },
         {
           "name": "VirusTotal",
@@ -2222,7 +2215,7 @@
       "id": "calendar-holidays",
       "emoji": "📅",
       "name": "Calendar, Holidays & Time",
-      "api_count": 25,
+      "api_count": 26,
       "apis": [
         {
           "name": "Abstract Time Zone",
@@ -2258,6 +2251,13 @@
           "auth": "No",
           "https": true,
           "link": "https://www.calendarindex.com/"
+        },
+        {
+          "name": "Calendarific",
+          "description": "Worldwide holidays for 230+ countries.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://calendarific.com/api-documentation"
         },
         {
           "name": "Checkiday - National Holiday API",
@@ -4358,7 +4358,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 278,
+      "api_count": 277,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -4660,13 +4660,6 @@
           "auth": "No",
           "https": true,
           "link": "https://caniuse.com/api"
-        },
-        {
-          "name": "Carbon Intensity",
-          "description": "Real-time carbon intensity forecasting for Great Britain.",
-          "auth": "No",
-          "https": true,
-          "link": "https://carbonintensity.org.uk/"
         },
         {
           "name": "CDNJS",
@@ -6965,7 +6958,7 @@
       "id": "education",
       "emoji": "🎓",
       "name": "Education",
-      "api_count": 26,
+      "api_count": 24,
       "apis": [
         {
           "name": "BigBlueButton",
@@ -6980,13 +6973,6 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://developer.blackboard.com"
-        },
-        {
-          "name": "Calendarific",
-          "description": "Worldwide holidays for 230+ countries.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://calendarific.com/api-documentation"
         },
         {
           "name": "Clever Data",
@@ -7008,13 +6994,6 @@
           "auth": "No",
           "https": true,
           "link": "https://collegescorecard.ed.gov/data/"
-        },
-        {
-          "name": "CORE API",
-          "description": "Open access research paper metadata.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://api.core.ac.uk/docs/v3"
         },
         {
           "name": "Crossref",
@@ -8300,7 +8279,7 @@
       "id": "finance",
       "emoji": "💰",
       "name": "Finance",
-      "api_count": 145,
+      "api_count": 146,
       "apis": [
         {
           "name": "Account and Transaction API",
@@ -8693,6 +8672,13 @@
           "auth": "No",
           "https": true,
           "link": "https://floorguard-kappa.vercel.app/api/"
+        },
+        {
+          "name": "FRED API",
+          "description": "Retrieve economic time series and releases from the Federal Reserve Bank of St. Louis.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://fred.stlouisfed.org/docs/api/fred/overview.html"
         },
         {
           "name": "Front Accounting APIs",
@@ -10509,7 +10495,7 @@
       "id": "geocoding",
       "emoji": "🌍",
       "name": "Geocoding",
-      "api_count": 104,
+      "api_count": 106,
       "apis": [
         {
           "name": "Actinia Grass GIS",
@@ -11023,11 +11009,25 @@
           "link": "https://dev.opentripmap.org/docs"
         },
         {
+          "name": "Overpass API",
+          "description": "Query OpenStreetMap data for map features and geospatial objects using Overpass QL.",
+          "auth": "No",
+          "https": true,
+          "link": "https://wiki.openstreetmap.org/wiki/Overpass_API"
+        },
+        {
           "name": "ParcelGPS",
           "description": "European cadastral parcels by reference or point: coordinates, area, land use and geometry",
           "auth": "apiKey",
           "https": true,
           "link": "https://www.parcelgps.com/en/developers"
+        },
+        {
+          "name": "Photon",
+          "description": "Open-source geocoding and reverse-geocoding API built on OpenStreetMap data.",
+          "auth": "No",
+          "https": true,
+          "link": "https://github.com/komoot/photon/blob/master/docs/api-v1.md"
         },
         {
           "name": "Pinball Map",
@@ -11245,7 +11245,7 @@
       "id": "geography-countries",
       "emoji": "🌎",
       "name": "Geography & Countries",
-      "api_count": 16,
+      "api_count": 15,
       "apis": [
         {
           "name": "Countries Now",
@@ -11330,13 +11330,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://ipgeolocation.io/timezone-api.html"
-        },
-        {
-          "name": "Open Elevation",
-          "description": "Elevation data for any coordinates.",
-          "auth": "No",
-          "https": true,
-          "link": "https://open-elevation.com/"
         },
         {
           "name": "REST Countries",
@@ -13603,7 +13596,7 @@
       "id": "math-computation",
       "emoji": "🔢",
       "name": "Math & Computation",
-      "api_count": 19,
+      "api_count": 22,
       "apis": [
         {
           "name": "CodeCogs FX Equation",
@@ -13627,6 +13620,13 @@
           "link": "https://www.desmos.com/api"
         },
         {
+          "name": "isEven (humor)",
+          "description": "Check if a number is even.",
+          "auth": "No",
+          "https": true,
+          "link": "https://isevenapi.xyz/"
+        },
+        {
           "name": "math.js",
           "description": "Mathematical expression evaluation API.",
           "auth": "No",
@@ -13648,11 +13648,25 @@
           "link": "https://nerdulator.com/api"
         },
         {
+          "name": "Newton",
+          "description": "Symbolic and arithmetic math calculator API (**No Auth**).",
+          "auth": "No",
+          "https": true,
+          "link": "https://newton.vercel.app/"
+        },
+        {
           "name": "NIST Randomness Beacon",
           "description": "NIST: signed unpredictably random pulses at fixed intervals.",
           "auth": "No",
           "https": true,
           "link": "https://beacon.nist.gov/beacon/2.1/pulse/previous"
+        },
+        {
+          "name": "Numbers",
+          "description": "Number of the day, random number, number facts and anything else you want to ...",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://math.tools/api/numbers/"
         },
         {
           "name": "OEIS",
@@ -17765,7 +17779,7 @@
       "id": "science",
       "emoji": "🔬",
       "name": "Science & Space",
-      "api_count": 58,
+      "api_count": 55,
       "apis": [
         {
           "name": "arcsecond.io",
@@ -17832,10 +17846,10 @@
         },
         {
           "name": "CORE",
-          "description": "Access the world's Open Access research papers.",
+          "description": "Open Access research paper metadata and full-text discovery API.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://core.ac.uk/services#api"
+          "link": "https://api.core.ac.uk/docs/v3"
         },
         {
           "name": "DataCite",
@@ -17922,13 +17936,6 @@
           "link": "https://github.com/inspirehep/rest-api-doc"
         },
         {
-          "name": "isEven (humor)",
-          "description": "Check if a number is even.",
-          "auth": "No",
-          "https": true,
-          "link": "https://isevenapi.xyz/"
-        },
-        {
           "name": "ISRO",
           "description": "ISRO Space Crafts Information.",
           "auth": "No",
@@ -18013,25 +18020,11 @@
           "link": "https://api.nasa.gov/"
         },
         {
-          "name": "Newton",
-          "description": "Symbolic and arithmetic math calculator API (**No Auth**).",
-          "auth": "No",
-          "https": true,
-          "link": "https://newton.vercel.app/"
-        },
-        {
           "name": "NOAA Tides & Currents",
           "description": "US tides, currents, and water level data.",
           "auth": "No",
           "https": true,
           "link": "https://api.tidesandcurrents.noaa.gov/api/prod/"
-        },
-        {
-          "name": "Numbers",
-          "description": "Number of the day, random number, number facts and anything else you want to ...",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://math.tools/api/numbers/"
         },
         {
           "name": "OBIS",
@@ -18179,7 +18172,7 @@
       "id": "security-validation",
       "emoji": "🔐",
       "name": "Security & Validation",
-      "api_count": 79,
+      "api_count": 80,
       "apis": [
         {
           "name": "Agent Verifier",
@@ -18250,6 +18243,13 @@
           "auth": "No",
           "https": true,
           "link": "https://cve.circl.lu/"
+        },
+        {
+          "name": "CISA Known Exploited Vulnerabilities (KEV)",
+          "description": "Official catalog and JSON feed of vulnerabilities known to be exploited in the wild.",
+          "auth": "No",
+          "https": true,
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         },
         {
           "name": "Cisco PSIRT openVuln",
@@ -18700,11 +18700,11 @@
           "link": "https://data.police.uk/docs/"
         },
         {
-          "name": "URLScan",
-          "description": "URL sandboxing with page screenshots, scans and results.",
+          "name": "URLScan.io",
+          "description": "Scan URLs and inspect page resources, redirects, screenshots and verdicts.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://urlscan.io/"
+          "link": "https://urlscan.io/about-api/"
         },
         {
           "name": "VPNDetection",
