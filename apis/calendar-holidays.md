@@ -19,7 +19,6 @@
 | **LectServe** | Protestant liturgical calendar. | No | No | [Link](http://www.lectserve.com) |
 | **Nager.Date** | Public holiday database for over 100 countries. | No | ✅ | [Link](https://date.nager.at/) |
 | **Namedays Calendar** | Nameday lookups by date and locale. | No | ✅ | [Link](https://nameday.abalin.net/) |
-| **Non-Working Days** | Non-working day and holiday checks. | No | ✅ | [Link](https://www.isdayoff.ru/) |
 | **Public Holidays** | Data on national, regional, and religious holidays via API. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/holidays-api) |
 | **Russian Calendar** | Check if a date is a Russian holiday or not | No | ✅ | [Link](https://github.com/egno/work-calendar) |
 | **Sunrise-Sunset.org** | Sunrise and sunset times for any latitude/longitude and date (**No Auth**). | No | ✅ | [Link](https://sunrise-sunset.org/api) |
