@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T15:12:27.993948+00:00",
+    "generated_at": "2026-10-26T15:22:03.707923+00:00",
     "source": "README.md",
-    "total_apis": 3242,
+    "total_apis": 3245,
     "total_categories": 70,
-    "no_auth_count": 1432,
-    "api_key_count": 1557,
+    "no_auth_count": 1433,
+    "api_key_count": 1559,
     "oauth_count": 253,
-    "https_count": 3151,
+    "https_count": 3154,
     "https_percentage": 97
   },
   "categories": [
@@ -7801,7 +7801,7 @@
       "id": "environment-climate",
       "emoji": "🌿",
       "name": "Environment & Climate",
-      "api_count": 45,
+      "api_count": 48,
       "apis": [
         {
           "name": "Airly",
@@ -7909,6 +7909,13 @@
           "link": "https://static.electricitymaps.com/api/docs/index.html"
         },
         {
+          "name": "EPA ECHO API",
+          "description": "US EPA facility, compliance, enforcement, and environmental-condition data via public web services.",
+          "auth": "No",
+          "https": true,
+          "link": "https://echo.epa.gov/tools/web-services"
+        },
+        {
           "name": "GDACS",
           "description": "Global Disaster Alert & Coordination System: quake, cyclone, flood, drought, wildfire alerts.",
           "auth": "No",
@@ -7979,6 +7986,13 @@
           "link": "https://api.mycelium.global/docs/v1"
         },
         {
+          "name": "NASA FIRMS",
+          "description": "Near-real-time satellite fire and thermal-anomaly detections; free MAP_KEY required.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://firms.modaps.eosdis.nasa.gov/api/"
+        },
+        {
           "name": "National flood data (us)",
           "description": "The FEMA Flood Map API offers up-to-date FEMA flood zone maps and data that can be easily embedded into partners'",
           "auth": "apiKey",
@@ -7991,6 +8005,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.ncdc.noaa.gov/cdo-web/webservices/v2"
+        },
+        {
+          "name": "NREL Developer APIs",
+          "description": "Renewable energy, alternative fuels, buildings, and energy-efficiency datasets and tools.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developer.nrel.gov/docs/"
         },
         {
           "name": "NSIDC Web Services",
