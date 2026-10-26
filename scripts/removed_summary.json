@@ -1,15 +1,10 @@
 {
-  "count": 2,
+  "count": 1,
   "removed": [
     {
-      "name": "GramScraper",
-      "url": "https://gramscraper.com",
-      "file": "social.md"
-    },
-    {
-      "name": "Transport for Lisbon, Portugal",
-      "url": "https://emel.city-platform.com/opendata/",
-      "file": "transportation.md"
+      "name": "ScaleReach",
+      "url": "https://docs.scalereach.ai",
+      "file": "video.md"
     }
   ]
 }

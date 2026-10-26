@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-23T03:06:27.417608+00:00",
+    "generated_at": "2026-10-26T02:54:26.854083+00:00",
     "source": "README.md",
-    "total_apis": 3236,
+    "total_apis": 3235,
     "total_categories": 70,
     "no_auth_count": 1428,
-    "api_key_count": 1554,
+    "api_key_count": 1553,
     "oauth_count": 254,
-    "https_count": 3145,
+    "https_count": 3144,
     "https_percentage": 97
   },
   "categories": [
@@ -22314,7 +22314,7 @@
       "id": "video",
       "emoji": "📹",
       "name": "Video",
-      "api_count": 52,
+      "api_count": 51,
       "apis": [
         {
           "name": "An API of Ice And Fire",
@@ -22518,13 +22518,6 @@
           "auth": "No",
           "https": true,
           "link": "https://github.com/jamesseanwright/ron-swanson-quotes#ron-swanson-quotes-api"
-        },
-        {
-          "name": "ScaleReach",
-          "description": "Turn long videos into short vertical clips with AI captions and face-tracking crop",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://docs.scalereach.ai"
         },
         {
           "name": "Shoof Aflam",
