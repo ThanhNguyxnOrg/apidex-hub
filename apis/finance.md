@@ -58,6 +58,7 @@
 | **Finnhub** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://finnhub.io/docs/api) |
 | **Finsheet** | Free stock, ETF, and cryptocurrency data for sheets and developers. | 🔑 ApiKey | ✅ | [Link](https://finsheet.io/) |
 | **FloorGuard** | Sourced prop firm daily-loss and max-drawdown rules, plus a drawdown-room check | No | ✅ | [Link](https://floorguard-kappa.vercel.app/api/) |
+| **FRED API** | Retrieve economic time series and releases from the Federal Reserve Bank of St. Louis. | 🔑 ApiKey | ✅ | [Link](https://fred.stlouisfed.org/docs/api/fred/overview.html) |
 | **Front Accounting APIs** | Front accounting is multilingual and multicurrency software for small businesses. | 🔐 OAuth | ✅ | [Link](https://frontaccounting.com/fawiki/index.php?n=Devel.SimpleAPIModule) |
 | **Futures Clock** | Trading hours and session windows for 65 futures products on 16 global exchanges | No | ✅ | [Link](https://futuresclock.com/en/data-methodology/#open-data) |
 | **FXNewsBias** | AI-scored news sentiment for the 8 major forex currencies, refreshed every 3 hours | 🔑 ApiKey | ✅ | [Link](https://fxnewsbias.com/developers) |

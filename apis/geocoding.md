@@ -75,7 +75,9 @@
 | **OpenPLZ** | A public street and postal code directory for Austria, Germany, Liechtenstein and Switzerland via an open REST API | No | ✅ | [Link](https://www.openplzapi.org/) |
 | **OpenStreetMap** | Map data. | 🔐 OAuth | ✅ | [Link](http://wiki.openstreetmap.org/wiki/API) |
 | **OpenTripMap** | Tourist attractions and points of interest worldwide. | 🔑 ApiKey | ✅ | [Link](https://dev.opentripmap.org/docs) |
+| **Overpass API** | Query OpenStreetMap data for map features and geospatial objects using Overpass QL. | No | ✅ | [Link](https://wiki.openstreetmap.org/wiki/Overpass_API) |
 | **ParcelGPS** | European cadastral parcels by reference or point: coordinates, area, land use and geometry | 🔑 ApiKey | ✅ | [Link](https://www.parcelgps.com/en/developers) |
+| **Photon** | Open-source geocoding and reverse-geocoding API built on OpenStreetMap data. | No | ✅ | [Link](https://github.com/komoot/photon/blob/master/docs/api-v1.md) |
 | **Pinball Map** | A crowdsourced map of public pinball machines. | No | ✅ | [Link](https://pinballmap.com/api/v1/docs) |
 | **PontoFato** | Brazilian postal codes (CEP) with IBGE coordinates, addresses and the companies registered there | No | ✅ | [Link](https://pontofato.com/api/) |
 | **PostalCodes** | Postal code search, country exports, and address validation data | No | ✅ | [Link](https://postalcodes.info/api) |

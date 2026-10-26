@@ -12,6 +12,7 @@
 | **Censys** | Search engine for Internet connected host and devices. | 🔑 ApiKey | ✅ | [Link](https://search.censys.io/api) |
 | **CertSpotter** | Certificate transparency monitoring. | No | ✅ | [Link](https://sslmate.com/certspotter/api/) |
 | **CIRCL CVE** | Community CVE/MKE vulnerability search with CVSS and CPE data. | No | ✅ | [Link](https://cve.circl.lu/) |
+| **CISA Known Exploited Vulnerabilities (KEV)** | Official catalog and JSON feed of vulnerabilities known to be exploited in the wild. | No | ✅ | [Link](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
 | **Cisco PSIRT openVuln** | The Cisco Product Security Incident Response Team (PSIRT) openVuln API is a RESTful API that allows customers to obta | 🔒 OAuth | ✅ | [Link](https://cisco.com) |
 | **ClassiFinder** | Detect leaked secrets and prompt-injection in text and return redacted output | 🔑 ApiKey | ✅ | [Link](https://classifinder.ai) |
 | **Cloudflare DoH** | DNS-over-HTTPS JSON resolver on 1.1.1.1. | No | ✅ | [Link](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/dns-json/) |
