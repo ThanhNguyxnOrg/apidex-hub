@@ -16,10 +16,8 @@
 | **Amazon Fraud Detector** | This is the Amazon Fraud Detector API Reference. This guide is for developers who need detailed information about Amazon Fraud Detector API actions, data types, and errors. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/frauddetector) |
 | **Amazon Simple Queue Service** | Amazon SQS is a reliable, highly-scalable hosted queue for storing messages as they travel between applications or. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/sqs) |
 | **Amazon Simple Workflow Service** | Amazon Simple Workflow Service The Amazon Simple Workflow Service (Amazon SWF) makes it easy to build applications that use Amazon's cloud to coordinate. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/swf) |
-| **Animica** | Post-quantum proof-of-work L1 blockchain explorer REST API and node JSON-RPC, with OpenAPI and OpenRPC documents. | No | ✅ | [Link](https://explorer.animica.org) |
 | **ART19 Content API Documentation** | The ART19 Content API conforms to the JSON:API specification. API requests MUST use the HTTP Accept header: Accept: application/vnd.api+json API. | 🔑 ApiKey | ✅ | [Link](https://art19.com/swagger_json/external/content.json) |
 | **Assess API** | Codat's Assess API enable you to make smarter credit decisions on your small business customers. Assess enriches your customer's accounting, commerce and banking data to surface. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/codatio/oas/main/json/Codat-Assess.json) |
-| **Automata Market Intelligence API** | This document provides the documentation for the Market Intelligence API by Automata. Get your API Key at https://apis.byautomata.io and check out our. | 🔑 ApiKey | ✅ | [Link](https://s3.amazonaws.com/api.specs.byautomata.io/automata_api.json) |
 | **AWS CloudTrail** | CloudTrail This is the CloudTrail API Reference. It provides descriptions of actions, data types, common parameters, and common errors for. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/cloudtrail) |
 | **AWS Key Management Service** | Key Management Service Key Management Service (KMS) is an encryption and key management web service. This guide describes the KMS operations that you can. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/kms) |
 | **AWS Marketplace Entitlement Service** | AWS Marketplace Entitlement Service This reference provides descriptions of the AWS Marketplace Entitlement Service API. AWS Marketplace. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/marketplace) |
@@ -120,7 +118,6 @@
 | **KuCoin** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kucoin.com/) |
 | **Layer4** | Layer4 is a blockchain integration platform that supports no-code and API use. | 🔑 ApiKey | ✅ | [Link](https://www.layer4.app/api-docs) |
 | **Livecoin** | Cryptocurrency Exchange .. | No | ✅ | [Link](https://www.livecoin.net/api) |
-| **Localbitcoins** | P2P platform to buy and sell Bitcoins. | No | ✅ | [Link](https://localbitcoins.com/api-docs) |
 | **MadeOnSol** | Real-time Solana & Robinhood Chain KOL trades, deployer reputation, and DEX activity | 🔑 ApiKey | ✅ | [Link](https://madeonsol.com/developer) |
 | **Manyapis** | Exchange rates and currency conversion with free plan 50 requests/day. | 🔑 ApiKey | ✅ | [Link](https://manyapis.com/products/currency/usd-to-eur-rate) |
 | **Marketplace RP Service** | REST endpoints for the Marketplace RP Service service. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/marketplace/resource-manager/Microsoft.Marketplace/stable/2020-01-01/Marketplace.json) |
@@ -156,7 +153,6 @@
 | **returnsview** | Historical returns, seasonality and daily closes for crypto, stocks and ETFs. | No | ✅ | [Link](https://returnsview.com) |
 | **Salary API** | The REST API returns structured JSON responses containing salary ranges, hourly rates, compensation benchmarks, required skills, market demand, and regional employment insights. | 🔑 ApiKey | ✅ | [Link](https://jobicy.com/salary-api) |
 | **ScriptMasterLabs MCP** | Model Context Protocol server with web search, social search & LLM chat paid via x402 | 🔑 ApiKey | ✅ | [Link](https://mcp-x402.onrender.com) |
-| **ScriptMasterLabs x402** | 100+ SEC, DeFi, crypto, and macro endpoints for AI agents via x402 micropayments. | 🔑 ApiKey | ✅ | [Link](https://acp-x402-scriptmasterlabs.onrender.com) |
 | **Sharpe** | Crypto derivatives, funding, arbitrage, narratives, listings, and news data | No | ✅ | [Link](https://www.sharpe.ai/docs/free-api) |
 | **Shrimpy Universal Crypto Exchange** | Shrimpy's Universal Crypto Exchange APIs are the only unified APIs for crypto exchanges that are specifically | 🔑 ApiKey | ✅ | [Link](https://developers.shrimpy.io/) |
 | **Shumi** | Crypto market data: prices, trends, funding rates, sentiment, narratives and market regime | 🔑 ApiKey | ✅ | [Link](https://docs.shumi.ai/api-reference/introduction) |

@@ -23,7 +23,6 @@
 | **BirkinBagStock** | Independent Hermès resale index: inventory, market prices, auction calendar and results | No | ✅ | [Link](https://birkinbagstock.com/.well-known/openapi.json) |
 | **BuyWhere** | Real-time product catalog API for AI agents across merchants in 7 countries (SG, MY, TH, VN, PH, ID, US) | 🔑 ApiKey | ✅ | [Link](https://buywhere.ai) |
 | **Canopy** | A modern API for Amazon Data. | 🔑 ApiKey | ✅ | [Link](https://www.canopyapi.co) |
-| **Car Configurator** | The Car Configurator API offers access to the Mercedes-Benz car configuration functions. It provides required reference data such as the masterdata of all Mercedes-Benz vehicles. | 🔑 ApiKey | ✅ | [Link](https://developer.mercedes-benz.com/content/sites/default/files/2018-08/swagger_car_configurator_api.json) |
 | **Catalog API - Seller Portal** | With the Catalog API for Seller Portal, you will be able to create, edit and consult products and their variations, brands, and categories. > This API is part of the Seller. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Catalog%20API%20Seller%20Portal.json) |
 | **Catalog Inventory** | Catalog Inventory. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/RedHatInsights/catalog_inventory-api/master/public/doc/openapi-3-v1.0.json) |
 | **Cloud Asset API** | The Cloud Asset API manages the history and inventory of Google Cloud resources. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/asset-inventory/docs/quickstart) |
@@ -93,7 +92,6 @@
 | **Reviews and Ratings API** | Reviews & Ratings is a VTEX IO native solution that allows shoppers to submit reviews and. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Reviews%20and%20Ratings%20API.json) |
 | **ScoutAPI** | Affordable, Swift, and Reliable Amazon Data in Real-Time. | 🔑 ApiKey | ✅ | [Link](https://scoutapi.com) |
 | **Session Manager API** | This documentation goes in detail how to interact with Session Manager's API. For a more top-level approach, check the design. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Session%20Manager%20API.json) |
-| **Shop** | Search for millions of products from the world's greatest brands. | 🔑 ApiKey | ✅ | [Link](https://server.shop.app/openai/v1/api.json) |
 | **Shopee** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://open.shopee.com/documents?version=1) |
 | **Shopify Storefront** | Headless commerce GraphQL API for custom storefronts. | 🔑 ApiKey | ✅ | [Link](https://shopify.dev/docs/api/storefront) |
 | **ShopSavvy** | Product pricing and price history across thousands of retailers | 🔑 ApiKey | ✅ | [Link](https://shopsavvy.com/data) |

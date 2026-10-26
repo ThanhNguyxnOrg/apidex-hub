@@ -59,7 +59,6 @@
 | **Kvartiry-Phuket** | Russian-language Phuket real estate guides, asking prices, condo assessment rates, weather, beaches | No | ✅ | [Link](https://kvartiry-phuket.com/otkrytye-dannye/#english) |
 | **Library Agent API** | A simple Google Example Library API. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/docs/quota) |
 | **Library Management** | Manage users, books, authors, loans and reviews. | No | ✅ | [Link](https://github.com/adam-dev2/library-management-api) |
-| **Lingua Robot** | Word definitions, pronunciations, synonyms, antonyms and others. | 🔑 ApiKey | ✅ | [Link](https://www.linguarobot.io) |
 | **LinkPreview** | Get JSON formatted summary with title, description and preview image for any ... | 🔑 ApiKey | ✅ | [Link](https://www.linkpreview.net) |
 | **LottoLens PH** | Fixed Philippine PCSO historical results and normal draw schedules | No | ✅ | [Link](https://remo65588-boop.github.io/lottolens-ph-public-data/api/) |
 | **Lowy Asia Power Index** | Get measure resources and influence to rank the relative power of states in Asia | No | ✅ | [Link](https://github.com/0x0is1/lowy-index-api-docs) |
@@ -122,7 +121,6 @@
 | **VirtualWANAsAServiceManagementClient** | REST API for Azure VirtualWAN As a Service. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/network/resource-manager/Microsoft.Network/stable/2019-07-01/virtualWan.json) |
 | **Voidly** | Internet censorship measurements, incidents, and ISP-level blocking data across 126 countries | No | ✅ | [Link](https://voidly.ai/api-docs) |
 | **Vuntum** | Sourced, dated facts on consumer robots and physical AI, licensed CC BY 4.0 | No | ✅ | [Link](https://vuntum.com/en/api-mcp) |
-| **Warnely** | Composite travel-safety scores for 180 countries (FCDO + US State + GPI + WGI + live incident wire), OpenAPI 3.1 spec, CC BY 4.0. | No | ✅ | [Link](https://warnely.com/developers) |
 | **Wayback Machine** | Internet Archive snapshots and CDX index API. | No | ✅ | [Link](https://web.archive.org/) |
 | **Website & Web-App Cost Data** | Web-project cost benchmarks by platform across 6 markets (build, hosting, 3-year TCO, hourly rates), CC BY 4.0 | No | ✅ | [Link](https://projectcostestimator.com/api-docs) |
 | **WebSite Management Client** | Use these APIs to manage Azure Websites resources through the Azure Resource Manager. All task operations conform to the HTTP/1.1 protocol specification and each operation. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json) |

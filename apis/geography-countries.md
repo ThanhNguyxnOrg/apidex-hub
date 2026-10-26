@@ -6,7 +6,6 @@
 | **Country State City** | Countries, states, and cities database. | 🔑 ApiKey | ✅ | [Link](https://countrystatecity.in/) |
 | **Country.io** | Country ISO names, currencies, calling codes and capitals as free JSON files | No | ✅ | [Link](https://country.io/) |
 | **CountryLayer** | Country data including flags and borders. | 🔑 ApiKey | ✅ | [Link](https://countrylayer.com/) |
-| **Dimdom** | Polish real estate listings, agency profiles and TERYT geographic data. | No | ✅ | [Link](https://api.dimdom.pl/api/public/docs) |
 | **Flagcdn** | Fast and reliable country flag images in SVG and PNG formats. | No | ✅ | [Link](https://flagcdn.com/) |
 | **Flagpedia** | Country flags in SVG and PNG (**No Auth**). | No | ✅ | [Link](https://flagpedia.net/download/api) |
 | **FlagsAPI** | Easy-to-use API to retrieve country flag images using ISO codes. | No | ✅ | [Link](https://flagsapi.com/) |

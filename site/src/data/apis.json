@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T16:48:11.933665+00:00",
+    "generated_at": "2026-10-26T16:49:50.587098+00:00",
     "source": "README.md",
-    "total_apis": 4245,
+    "total_apis": 4226,
     "total_categories": 70,
-    "no_auth_count": 1579,
-    "api_key_count": 2404,
+    "no_auth_count": 1573,
+    "api_key_count": 2391,
     "oauth_count": 262,
-    "https_count": 4154,
+    "https_count": 4135,
     "https_percentage": 98
   },
   "categories": [
@@ -15,7 +15,7 @@
       "id": "ai-llm-models",
       "emoji": "🤖",
       "name": "AI Models & LLM Providers",
-      "api_count": 96,
+      "api_count": 95,
       "apis": [
         {
           "name": "1ClickImpact (AI Energy)",
@@ -205,13 +205,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://chatwith.tools"
-        },
-        {
-          "name": "Clarifai",
-          "description": "Computer Vision.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://docs.clarifai.com/api-guide/api-overview"
         },
         {
           "name": "Cloud Document AI API",
@@ -1994,7 +1987,7 @@
       "id": "backend-database",
       "emoji": "🗄️",
       "name": "Backend & Serverless Databases",
-      "api_count": 102,
+      "api_count": 99,
       "apis": [
         {
           "name": "Accelerated Mobile Pages (AMP) URL API",
@@ -2277,13 +2270,6 @@
           "link": "https://cloud.google.com/database-migration"
         },
         {
-          "name": "Dealer",
-          "description": "The Dealer API provides Dealer search functions.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://developer.mercedes-benz.com/content/sites/default/files/2018-07/swagger_dealer_api_0.yaml"
-        },
-        {
           "name": "Delta Lake",
           "description": "Open-source storage framework enabling Lakehouse architecture with Spark, PrestoDB, Flink, Trino, Hive, and APIs.",
           "auth": "No",
@@ -2408,13 +2394,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://extendsclass.com/json-storage.openapi.json"
-        },
-        {
-          "name": "Juju",
-          "description": "Job search engine.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.juju.com/publisher/spec"
         },
         {
           "name": "Kintone",
@@ -2555,13 +2534,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://api.seatable.com/reference/introduction"
-        },
-        {
-          "name": "Signaliz",
-          "description": "GTM enrichment, lead generation, email verification, and company signals.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://signaliz.docs.buildwithfern.com/signaliz-api-public-docs/introduction"
         },
         {
           "name": "Smash",
@@ -4346,7 +4318,7 @@
       "id": "cryptocurrency",
       "emoji": "🪙",
       "name": "Cryptocurrency",
-      "api_count": 180,
+      "api_count": 176,
       "apis": [
         {
           "name": "0x",
@@ -4447,13 +4419,6 @@
           "link": "https://docs.aws.amazon.com/swf"
         },
         {
-          "name": "Animica",
-          "description": "Post-quantum proof-of-work L1 blockchain explorer REST API and node JSON-RPC, with OpenAPI and OpenRPC documents.",
-          "auth": "No",
-          "https": true,
-          "link": "https://explorer.animica.org"
-        },
-        {
           "name": "ART19 Content API Documentation",
           "description": "The ART19 Content API conforms to the JSON:API specification. API requests MUST use the HTTP Accept header: Accept: application/vnd.api+json API.",
           "auth": "apiKey",
@@ -4466,13 +4431,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://raw.githubusercontent.com/codatio/oas/main/json/Codat-Assess.json"
-        },
-        {
-          "name": "Automata Market Intelligence API",
-          "description": "This document provides the documentation for the Market Intelligence API by Automata. Get your API Key at https://apis.byautomata.io and check out our.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://s3.amazonaws.com/api.specs.byautomata.io/automata_api.json"
         },
         {
           "name": "AWS CloudTrail",
@@ -5175,13 +5133,6 @@
           "link": "https://www.livecoin.net/api"
         },
         {
-          "name": "Localbitcoins",
-          "description": "P2P platform to buy and sell Bitcoins.",
-          "auth": "No",
-          "https": true,
-          "link": "https://localbitcoins.com/api-docs"
-        },
-        {
           "name": "MadeOnSol",
           "description": "Real-time Solana & Robinhood Chain KOL trades, deployer reputation, and DEX activity",
           "auth": "apiKey",
@@ -5425,13 +5376,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://mcp-x402.onrender.com"
-        },
-        {
-          "name": "ScriptMasterLabs x402",
-          "description": "100+ SEC, DeFi, crypto, and macro endpoints for AI agents via x402 micropayments.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://acp-x402-scriptmasterlabs.onrender.com"
         },
         {
           "name": "Sharpe",
@@ -6486,7 +6430,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 355,
+      "api_count": 353,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -7567,13 +7511,6 @@
           "link": "https://hostdealradar.com/ai/"
         },
         {
-          "name": "HTTP2.Pro",
-          "description": "Test endpoints for client and server HTTP/2 protocol support.",
-          "auth": "No",
-          "https": true,
-          "link": "https://http2.pro/doc/api"
-        },
-        {
           "name": "HTTPBin.dev",
           "description": "HTTP request and response service for testing endpoints and headers.",
           "auth": "No",
@@ -8118,13 +8055,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://peak.fo/docs"
-        },
-        {
-          "name": "Phone Specs",
-          "description": "Real-time smartphone specifications database for 263 devices.",
-          "auth": "No",
-          "https": true,
-          "link": "https://phone-specs-api-production.up.railway.app/docs"
         },
         {
           "name": "PHPhub",
@@ -10817,7 +10747,7 @@
       "id": "entertainment",
       "emoji": "🎮",
       "name": "Entertainment",
-      "api_count": 85,
+      "api_count": 84,
       "apis": [
         {
           "name": "Activities when get bored",
@@ -11345,13 +11275,6 @@
           "link": "https://www.tvmaze.com/api"
         },
         {
-          "name": "Vehicle Image",
-          "description": "The vehicle images API offers access to original Mercedes-Benz vehicle images. It provides access to exterior and interior images with parameters e.g. to modify the perspective.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://developer.mercedes-benz.com/content/sites/default/files/2018-05/swagger_vehicleimage_api.json"
-        },
-        {
           "name": "VirtualMachineImageTemplate",
           "description": "Virtual Machine Image Template.",
           "auth": "apiKey",
@@ -11420,7 +11343,7 @@
       "id": "environment-climate",
       "emoji": "🌿",
       "name": "Environment & Climate",
-      "api_count": 54,
+      "api_count": 53,
       "apis": [
         {
           "name": "1ClickImpact",
@@ -11596,13 +11519,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.iqair.com/air-pollution-data-api"
-        },
-        {
-          "name": "K-Data Gate",
-          "description": "Korean market data: K-beauty/K-food products, Naver trends, stocks, real estate, weather.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://kdata-gate.vercel.app/docs"
         },
         {
           "name": "kanari",
@@ -15578,7 +15494,7 @@
       "id": "geography-countries",
       "emoji": "🌎",
       "name": "Geography & Countries",
-      "api_count": 21,
+      "api_count": 20,
       "apis": [
         {
           "name": "Countries Now",
@@ -15607,13 +15523,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://countrylayer.com/"
-        },
-        {
-          "name": "Dimdom",
-          "description": "Polish real estate listings, agency profiles and TERYT geographic data.",
-          "auth": "No",
-          "https": true,
-          "link": "https://api.dimdom.pl/api/public/docs"
         },
         {
           "name": "Flagcdn",
@@ -15733,7 +15642,7 @@
       "id": "government-civic",
       "emoji": "🏛️",
       "name": "Government & Civic",
-      "api_count": 137,
+      "api_count": 136,
       "apis": [
         {
           "name": "AI Law Tracker",
@@ -15895,13 +15804,6 @@
           "auth": "No",
           "https": true,
           "link": "https://civicapi.org"
-        },
-        {
-          "name": "Code.gov",
-          "description": "The primary platform for Open Source and code sharing for the U.S. Federal Government.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://code.gov"
         },
         {
           "name": "Colorado Information Marketplace",
@@ -22403,7 +22305,7 @@
       "id": "public-data",
       "emoji": "📊",
       "name": "Public Data & Datasets",
-      "api_count": 126,
+      "api_count": 124,
       "apis": [
         {
           "name": "221",
@@ -22803,13 +22705,6 @@
           "auth": "No",
           "https": true,
           "link": "https://github.com/adam-dev2/library-management-api"
-        },
-        {
-          "name": "Lingua Robot",
-          "description": "Word definitions, pronunciations, synonyms, antonyms and others.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.linguarobot.io"
         },
         {
           "name": "LinkPreview",
@@ -23244,13 +23139,6 @@
           "auth": "No",
           "https": true,
           "link": "https://vuntum.com/en/api-mcp"
-        },
-        {
-          "name": "Warnely",
-          "description": "Composite travel-safety scores for 180 countries (FCDO + US State + GPI + WGI + live incident wire), OpenAPI 3.1 spec, CC BY 4.0.",
-          "auth": "No",
-          "https": true,
-          "link": "https://warnely.com/developers"
         },
         {
           "name": "Wayback Machine",
@@ -24760,7 +24648,7 @@
       "id": "shopping",
       "emoji": "🛍️",
       "name": "Shopping",
-      "api_count": 108,
+      "api_count": 106,
       "apis": [
         {
           "name": "AdSense Management API",
@@ -24908,13 +24796,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.canopyapi.co"
-        },
-        {
-          "name": "Car Configurator",
-          "description": "The Car Configurator API offers access to the Mercedes-Benz car configuration functions. It provides required reference data such as the masterdata of all Mercedes-Benz vehicles.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://developer.mercedes-benz.com/content/sites/default/files/2018-08/swagger_car_configurator_api.json"
         },
         {
           "name": "Catalog API - Seller Portal",
@@ -25398,13 +25279,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Session%20Manager%20API.json"
-        },
-        {
-          "name": "Shop",
-          "description": "Search for millions of products from the world's greatest brands.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://server.shop.app/openai/v1/api.json"
         },
         {
           "name": "Shopee",
@@ -28830,7 +28704,7 @@
       "id": "vehicle",
       "emoji": "🚗",
       "name": "Vehicle & Mobility",
-      "api_count": 24,
+      "api_count": 23,
       "apis": [
         {
           "name": "Auto.dev",
@@ -28957,13 +28831,6 @@
           "auth": "No",
           "https": true,
           "link": "https://openalpr.com"
-        },
-        {
-          "name": "Remote Diagnostic Support",
-          "description": "The Remote Diagnostic Support API will provide the possibility for 3rd party applications (e.g. ADAC, ATU, etc.) to access vehicle diagnostics data remotely on behalf of the.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://developer.mercedes-benz.com/content/sites/default/files/2018-10/swagger_remote_diagnostics_api_2.yaml"
         },
         {
           "name": "Smartcar",

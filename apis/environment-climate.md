@@ -27,7 +27,6 @@
 | **GridVigil** | Pressure scores, demand, generation mix and alerts for the 10 major U.S. power grids | No | ✅ | [Link](https://gridvigil.com/developers) |
 | **GrünstromIndex** | Green Power Index for Germany (Grünstromindex/GSI) | No | No | [Link](https://gruenstromindex.de/) |
 | **IQAir** | Air quality and weather data | 🔑 ApiKey | ✅ | [Link](https://www.iqair.com/air-pollution-data-api) |
-| **K-Data Gate** | Korean market data: K-beauty/K-food products, Naver trends, stocks, real estate, weather. | 🔑 ApiKey | ✅ | [Link](https://kdata-gate.vercel.app/docs) |
 | **kanari** | Real-time worldwide wildfire detections, water bomber tracking and open fire archive | No | ✅ | [Link](https://kanari.io/en/api) |
 | **Luchtmeetnet** | Predicted and actual air quality components for The Netherlands (RIVM) | No | ✅ | [Link](https://api-docs.luchtmeetnet.nl/) |
 | **Mycelium** | Corporate carbon emissions disclosures (scope 1, 2 and 3), company-reported and estimated | 🔑 ApiKey | ✅ | [Link](https://api.mycelium.global/docs/v1) |

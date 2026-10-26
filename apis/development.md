@@ -156,7 +156,6 @@
 | **Hoppscotch** | A lightweight, fast, and customizable app for testing and designing APIs. A free, fast, and beautiful. | No | ✅ | [Link](https://hoppscotch.io) |
 | **Host.io** | Domains Data. | 🔑 ApiKey | ✅ | [Link](https://host.io) |
 | **HostDealRadar** | Source-backed hosting price and provider record lookup | No | ✅ | [Link](https://hostdealradar.com/ai/) |
-| **HTTP2.Pro** | Test endpoints for client and server HTTP/2 protocol support. | No | ✅ | [Link](https://http2.pro/doc/api) |
 | **HTTPBin.dev** | HTTP request and response service for testing endpoints and headers. | No | ✅ | [Link](https://httpbin.dev/) |
 | **HTTPie** | A free command-line HTTP client for the API era. | No | ✅ | [Link](https://httpie.io) |
 | **httpSMS** | Use your Android phone as an SMS gateway to send and receive SMS messages via a simple HTTP API. | 🔑 ApiKey | ✅ | [Link](https://docs.httpsms.com) |
@@ -235,7 +234,6 @@
 | **PayUs-as-a-Service (PUaaS)** | A self-hostable API that returns randomized messages for past-due invoices. | No | ✅ | [Link](https://github.com/sticknologic/payus-as-a-service) |
 | **Pdflayer** | HTML to PDF conversion. | 🔑 ApiKey | ✅ | [Link](https://pdflayer.com/) |
 | **Peak** | Cloudflare Turnstile and 5-second challenge solving, pay per successful solve, 1,000 free solves | 🔑 ApiKey | ✅ | [Link](https://peak.fo/docs) |
-| **Phone Specs** | Real-time smartphone specifications database for 263 devices. | No | ✅ | [Link](https://phone-specs-api-production.up.railway.app/docs) |
 | **PHPhub** | Validate PHP code | No | ✅ | [Link](https://phphub.net/linter/) |
 | **Pipedream** | Integration platform with 2,500+ APIs and event-driven workflows. | 🔑 ApiKey | ✅ | [Link](https://pipedream.com/docs/) |
 | **PixelVault** | Agent-first image hosting with instant CDN URLs | 🔑 ApiKey | ✅ | [Link](https://pixelvault.dev/docs) |
