@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T02:54:26.854083+00:00",
+    "generated_at": "2026-10-26T13:39:28.184699+00:00",
     "source": "README.md",
-    "total_apis": 3235,
+    "total_apis": 3236,
     "total_categories": 70,
-    "no_auth_count": 1428,
+    "no_auth_count": 1429,
     "api_key_count": 1553,
     "oauth_count": 254,
-    "https_count": 3144,
+    "https_count": 3145,
     "https_percentage": 97
   },
   "categories": [
@@ -4365,7 +4365,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 277,
+      "api_count": 278,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -4877,6 +4877,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://codesearch.debian.net"
+        },
+        {
+          "name": "deed.page",
+          "description": "Static hosting for AI agents: publish HTML or a folder with one HTTP PUT (free: 25 sites, 25 MB each, no signup)",
+          "auth": "No",
+          "https": true,
+          "link": "https://deed.page/docs"
         },
         {
           "name": "Diagrams.so",
