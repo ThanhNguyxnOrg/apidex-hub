@@ -12,6 +12,7 @@
 | **Censys** | Search engine for Internet connected host and devices. | 🔑 ApiKey | ✅ | [Link](https://search.censys.io/api) |
 | **CertSpotter** | Certificate transparency monitoring. | No | ✅ | [Link](https://sslmate.com/certspotter/api/) |
 | **CIRCL CVE** | Community CVE/MKE vulnerability search with CVSS and CPE data. | No | ✅ | [Link](https://cve.circl.lu/) |
+| **CISA Known Exploited Vulnerabilities (KEV)** | Official catalog and JSON feed of vulnerabilities known to be exploited in the wild. | No | ✅ | [Link](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
 | **Cisco PSIRT openVuln** | The Cisco Product Security Incident Response Team (PSIRT) openVuln API is a RESTful API that allows customers to obta | 🔒 OAuth | ✅ | [Link](https://cisco.com) |
 | **ClassiFinder** | Detect leaked secrets and prompt-injection in text and return redacted output | 🔑 ApiKey | ✅ | [Link](https://classifinder.ai) |
 | **Cloudflare DoH** | DNS-over-HTTPS JSON resolver on 1.1.1.1. | No | ✅ | [Link](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/dns-json/) |
@@ -76,7 +77,7 @@
 | **ThreatCluster** | Threat intelligence: incident clusters, validated IOCs, CVEs, ransomware leak-site victims | 🔑 ApiKey | ✅ | [Link](https://threatcluster.io/api/public/v1/docs) |
 | **TruAnon Private** | Welcome to TruAnon! Thank you for helping make the Internet a safer place to be. Adopting TruAnon is simple. There is | No | ✅ | [Link](https://truanon.com) |
 | **UK Police** | UK Police data. | No | ✅ | [Link](https://data.police.uk/docs/) |
-| **URLScan** | URL sandboxing with page screenshots, scans and results. | 🔑 ApiKey | ✅ | [Link](https://urlscan.io/) |
+| **URLScan.io** | Scan URLs and inspect page resources, redirects, screenshots and verdicts. | 🔑 ApiKey | ✅ | [Link](https://urlscan.io/about-api/) |
 | **VPNDetection** | Check whether an IPv4 or IPv6 address belongs to VPN infrastructure, no key needed | No | ✅ | [Link](https://docs.vpndetection.io/api) |
 | **VulDB** | VulDB API allows to initiate queries for one or more items along with transac... | 🔑 ApiKey | ✅ | [Link](https://vuldb.com/?doc.api) |
 | **Vulners** | Vulnerability intelligence with exploit and CVE archive search. | 🔑 ApiKey | ✅ | [Link](https://vulners.com/) |
