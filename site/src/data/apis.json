@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T14:33:56.542475+00:00",
+    "generated_at": "2026-10-26T14:50:08.362572+00:00",
     "source": "README.md",
-    "total_apis": 3233,
+    "total_apis": 3240,
     "total_categories": 70,
-    "no_auth_count": 1428,
-    "api_key_count": 1552,
-    "oauth_count": 253,
-    "https_count": 3142,
+    "no_auth_count": 1431,
+    "api_key_count": 1555,
+    "oauth_count": 254,
+    "https_count": 3149,
     "https_percentage": 97
   },
   "categories": [
@@ -662,7 +662,7 @@
       "id": "anti-malware",
       "emoji": "🛡️",
       "name": "Anti-Malware",
-      "api_count": 16,
+      "api_count": 17,
       "apis": [
         {
           "name": "AbuseIPDB",
@@ -761,6 +761,13 @@
           "auth": "No",
           "https": true,
           "link": "https://urlhaus-api.abuse.ch/"
+        },
+        {
+          "name": "URLScan.io",
+          "description": "Link/Domain reputation.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://urlscan.io/about-api/"
         },
         {
           "name": "VirusTotal",
@@ -4358,7 +4365,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 276,
+      "api_count": 278,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -4660,6 +4667,13 @@
           "auth": "No",
           "https": true,
           "link": "https://caniuse.com/api"
+        },
+        {
+          "name": "Carbon Intensity",
+          "description": "Real-time carbon intensity forecasting for Great Britain.",
+          "auth": "No",
+          "https": true,
+          "link": "https://carbonintensity.org.uk/"
         },
         {
           "name": "CDNJS",
@@ -4989,6 +5003,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://fly.io/docs/machines/api/"
+        },
+        {
+          "name": "Forgejo API",
+          "description": "REST API for Forgejo-hosted repositories, issues, users, packages and releases.",
+          "auth": "OAuth",
+          "https": true,
+          "link": "https://forgejo.org/docs/latest/user/api-usage/"
         },
         {
           "name": "Form & Zip-Code",
@@ -6951,7 +6972,7 @@
       "id": "education",
       "emoji": "🎓",
       "name": "Education",
-      "api_count": 24,
+      "api_count": 25,
       "apis": [
         {
           "name": "BigBlueButton",
@@ -6987,6 +7008,13 @@
           "auth": "No",
           "https": true,
           "link": "https://collegescorecard.ed.gov/data/"
+        },
+        {
+          "name": "CORE API",
+          "description": "Open access research paper metadata.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://api.core.ac.uk/docs/v3"
         },
         {
           "name": "Crossref",
@@ -11238,7 +11266,7 @@
       "id": "geography-countries",
       "emoji": "🌎",
       "name": "Geography & Countries",
-      "api_count": 15,
+      "api_count": 16,
       "apis": [
         {
           "name": "Countries Now",
@@ -11323,6 +11351,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://ipgeolocation.io/timezone-api.html"
+        },
+        {
+          "name": "Open Elevation",
+          "description": "Elevation data for any coordinates.",
+          "auth": "No",
+          "https": true,
+          "link": "https://open-elevation.com/"
         },
         {
           "name": "REST Countries",
@@ -18165,7 +18200,7 @@
       "id": "security-validation",
       "emoji": "🔐",
       "name": "Security & Validation",
-      "api_count": 80,
+      "api_count": 81,
       "apis": [
         {
           "name": "Agent Verifier",
@@ -18572,6 +18607,13 @@
           "auth": "No",
           "https": true,
           "link": "https://nvd.nist.gov/developers"
+        },
+        {
+          "name": "OpenSSF Scorecard API",
+          "description": "Retrieve published security scores and per-check results for open-source repositories.",
+          "auth": "No",
+          "https": true,
+          "link": "https://github.com/ossf/scorecard-webapp/blob/main/openapi.yaml"
         },
         {
           "name": "OSV",
@@ -22665,7 +22707,7 @@
       "id": "weather",
       "emoji": "🌤️",
       "name": "Weather",
-      "api_count": 44,
+      "api_count": 45,
       "apis": [
         {
           "name": "7Timer! Weather",
@@ -22694,6 +22736,13 @@
           "auth": "No",
           "https": true,
           "link": "https://docs.openaq.org/"
+        },
+        {
+          "name": "Airly",
+          "description": "Air quality measurements, installation metadata and pollution indexes (free tier is non-commercial).",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developer.airly.org/en/docs"
         },
         {
           "name": "APIXU",
