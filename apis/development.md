@@ -45,7 +45,6 @@
 | **Browshot** | Easily make screenshots of web pages in any screen size, as any device. | 🔑 ApiKey | ✅ | [Link](https://browshot.com/api/documentation) |
 | **Bulk WHOIS** | Domain API (WHOIS, Check, Batch) | 🔑 ApiKey | ✅ | [Link](https://apispot.io) |
 | **Can I Use** | Browser support tables for web platform features. | No | ✅ | [Link](https://caniuse.com/api) |
-| **Carbon Intensity** | Real-time carbon intensity forecasting for Great Britain. | No | ✅ | [Link](https://carbonintensity.org.uk/) |
 | **CDNJS** | Library info. | No | ✅ | [Link](https://api.cdnjs.com/libraries/jquery) |
 | **Changelogs.md** | Structured changelog metadata from open source projects. | No | ✅ | [Link](https://changelogs.md) |
 | **Channel Messaging** | Channel Messaging API lets your build real-time application. | 🔑 ApiKey | ✅ | [Link](https://www.getchannel.co/) |

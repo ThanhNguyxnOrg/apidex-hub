@@ -14,7 +14,6 @@
 | **GeoNames** | Worldwide geographical database (free registration). | No | ✅ | [Link](https://www.geonames.org/export/web-services.html) |
 | **IDPhotoSnap Passport Photo Specs** | Passport, visa, and ID photo specifications for 100+ countries with government source citations | No | ✅ | [Link](https://idphotosnap.com/api/specs) |
 | **IPGeolocation Timezone** | Timezone data by coordinates. | 🔑 ApiKey | ✅ | [Link](https://ipgeolocation.io/timezone-api.html) |
-| **Open Elevation** | Elevation data for any coordinates. | No | ✅ | [Link](https://open-elevation.com/) |
 | **REST Countries** | Comprehensive country data (flags, capitals, currencies) (**No Auth**). | No | ✅ | [Link](https://restcountries.com/) |
 | **UN M49** | UN Statistics M49 country codes and regional groupings, downloadable as CSV | No | ✅ | [Link](https://unstats.un.org/unsd/methodology/m49/overview/) |
 | **World Countries Dataset** | ISO 3166 world countries dataset: names, flags, currencies, borders, languages | No | ✅ | [Link](https://github.com/mledoze/countries) |

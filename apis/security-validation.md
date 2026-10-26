@@ -76,7 +76,7 @@
 | **ThreatCluster** | Threat intelligence: incident clusters, validated IOCs, CVEs, ransomware leak-site victims | 🔑 ApiKey | ✅ | [Link](https://threatcluster.io/api/public/v1/docs) |
 | **TruAnon Private** | Welcome to TruAnon! Thank you for helping make the Internet a safer place to be. Adopting TruAnon is simple. There is | No | ✅ | [Link](https://truanon.com) |
 | **UK Police** | UK Police data. | No | ✅ | [Link](https://data.police.uk/docs/) |
-| **URLScan** | URL sandboxing with page screenshots, scans and results. | 🔑 ApiKey | ✅ | [Link](https://urlscan.io/) |
+| **URLScan.io** | Scan URLs and inspect page resources, redirects, screenshots and verdicts. | 🔑 ApiKey | ✅ | [Link](https://urlscan.io/about-api/) |
 | **VPNDetection** | Check whether an IPv4 or IPv6 address belongs to VPN infrastructure, no key needed | No | ✅ | [Link](https://docs.vpndetection.io/api) |
 | **VulDB** | VulDB API allows to initiate queries for one or more items along with transac... | 🔑 ApiKey | ✅ | [Link](https://vuldb.com/?doc.api) |
 | **Vulners** | Vulnerability intelligence with exploit and CVE archive search. | 🔑 ApiKey | ✅ | [Link](https://vulners.com/) |
