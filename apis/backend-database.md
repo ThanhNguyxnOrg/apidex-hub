@@ -42,7 +42,6 @@
 | **Custom Search API** | Searches over a website or collection of websites. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/custom-search/v1/introduction) |
 | **CV - Job match score API** | This API use multiple criteria to evaluate how well a candidate fits a job position. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/sharpapi-resume-job-match-score) |
 | **Database Migration API** | Manage Cloud Database Migration Service resources on Google Cloud Platform. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/database-migration) |
-| **Dealer** | The Dealer API provides Dealer search functions. | 🔑 ApiKey | ✅ | [Link](https://developer.mercedes-benz.com/content/sites/default/files/2018-07/swagger_dealer_api_0.yaml) |
 | **Delta Lake** | Open-source storage framework enabling Lakehouse architecture with Spark, PrestoDB, Flink, Trino, Hive, and APIs. | No | ✅ | [Link](https://docs.delta.io/latest/delta-apidoc.html) |
 | **DigiDates** | Various date and time calculations. | No | ✅ | [Link](https://digidates.de/en) |
 | **Directus** | Open-source data platform wrapping any SQL database. | 🔑 ApiKey | ✅ | [Link](https://directus.com/docs/) |
@@ -61,7 +60,6 @@
 | **jobdata API** | Simple Job Data API. | 🔑 ApiKey | ✅ | [Link](https://jobdataapi.com) |
 | **Jobvetta** | Live, vetted job listings from official employer sources across India. | 🔑 ApiKey | ✅ | [Link](https://www.jobvetta.com/api) |
 | **JSON storage** | JSON storage API. | 🔑 ApiKey | ✅ | [Link](https://extendsclass.com/json-storage.openapi.json) |
-| **Juju** | Job search engine. | 🔑 ApiKey | ✅ | [Link](https://www.juju.com/publisher/spec) |
 | **Kintone** | Low-code platform REST APIs for apps and records. | 🔑 ApiKey | ✅ | [Link](https://kintone.dev/en/) |
 | **Knowledge Graph Search API** | Searches the Google Knowledge Graph for entities. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/knowledge-graph) |
 | **Meilisearch** | Fast search engine with REST index and document APIs. | 🔑 ApiKey | ✅ | [Link](https://www.meilisearch.com/docs) |
@@ -82,7 +80,6 @@
 | **Search Services** | API for Internet Archive's Search-related services. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/ArchiveLabs/api.archive.org/master/swagger/search.yaml) |
 | **SearchManagementClient** | Client that can be used to manage Azure Search services and API keys. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/search/resource-manager/Microsoft.Search/stable/2015-08-19/search.json) |
 | **SeaTable** | Spreadsheet-database hybrid REST API. | 🔑 ApiKey | ✅ | [Link](https://api.seatable.com/reference/introduction) |
-| **Signaliz** | GTM enrichment, lead generation, email verification, and company signals. | 🔑 ApiKey | ✅ | [Link](https://signaliz.docs.buildwithfern.com/signaliz-api-public-docs/introduction) |
 | **Smash** | Upload large files on websites, mobile apps, SaaS solutions and custom workflows. | 🔑 ApiKey | ✅ | [Link](https://api.fromsmash.com) |
 | **SqlManagementClient** | The Azure SQL Database management API provides a RESTful set of web APIs that interact with Azure SQL Database services to manage your databases. The API enables users to. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/sql/resource-manager/Microsoft.Sql/preview/2018-06-01-preview/DatabaseSchema.json) |
 | **SqlVirtualMachineManagementClient** | The SQL virtual machine management API provides a RESTful set of web APIs that interact with Azure Compute, Network & Storage services to manage your SQL Server virtual machine. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/sqlvirtualmachine/resource-manager/Microsoft.SqlVirtualMachine/preview/2017-03-01-preview/sqlvm.json) |

@@ -77,7 +77,6 @@
 | **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://docs.trakt.tv/) |
 | **Trivia API** | Trivia questions in various categories (**No Auth**). | No | ✅ | [Link](https://the-trivia-api.com/) |
 | **TVmaze** | TV shows and episode data (**No Auth**). | No | ✅ | [Link](https://www.tvmaze.com/api) |
-| **Vehicle Image** | The vehicle images API offers access to original Mercedes-Benz vehicle images. It provides access to exterior and interior images with parameters e.g. to modify the perspective. | 🔑 ApiKey | ✅ | [Link](https://developer.mercedes-benz.com/content/sites/default/files/2018-05/swagger_vehicleimage_api.json) |
 | **VirtualMachineImageTemplate** | Virtual Machine Image Template. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/imagebuilder/resource-manager/Microsoft.VirtualMachineImages/preview/2019-05-01-preview/imagebuilder.json) |
 | **Watchmode** | Streaming availability. | 🔑 ApiKey | ✅ | [Link](https://api.watchmode.com/) |
 | **Web Search Client** | The Web Search API lets you send a search query to Bing and get back search results that include links to webpages, images, and more. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/cognitiveservices/data-plane/WebSearch/stable/v1.0/WebSearch.json) |

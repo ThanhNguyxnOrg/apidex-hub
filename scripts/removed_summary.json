@@ -1,10 +1,100 @@
 {
-  "count": 1,
+  "count": 19,
   "removed": [
     {
-      "name": "OpenSSF Scorecard API",
-      "url": "https://github.com/ossf/scorecard-webapp/blob/main/openapi.yaml",
-      "file": "security-validation.md"
+      "name": "Clarifai",
+      "url": "https://docs.clarifai.com/api-guide/api-overview",
+      "file": "ai-llm-models.md"
+    },
+    {
+      "name": "Dealer",
+      "url": "https://developer.mercedes-benz.com/content/sites/default/files/2018-07/swagger_dealer_api_0.yaml",
+      "file": "backend-database.md"
+    },
+    {
+      "name": "Juju",
+      "url": "https://www.juju.com/publisher/spec",
+      "file": "backend-database.md"
+    },
+    {
+      "name": "Signaliz",
+      "url": "https://signaliz.docs.buildwithfern.com/signaliz-api-public-docs/introduction",
+      "file": "backend-database.md"
+    },
+    {
+      "name": "Animica",
+      "url": "https://explorer.animica.org",
+      "file": "cryptocurrency.md"
+    },
+    {
+      "name": "Automata Market Intelligence API",
+      "url": "https://s3.amazonaws.com/api.specs.byautomata.io/automata_api.json",
+      "file": "cryptocurrency.md"
+    },
+    {
+      "name": "Localbitcoins",
+      "url": "https://localbitcoins.com/api-docs",
+      "file": "cryptocurrency.md"
+    },
+    {
+      "name": "ScriptMasterLabs x402",
+      "url": "https://acp-x402-scriptmasterlabs.onrender.com",
+      "file": "cryptocurrency.md"
+    },
+    {
+      "name": "HTTP2.Pro",
+      "url": "https://http2.pro/doc/api",
+      "file": "development.md"
+    },
+    {
+      "name": "Phone Specs",
+      "url": "https://phone-specs-api-production.up.railway.app/docs",
+      "file": "development.md"
+    },
+    {
+      "name": "Vehicle Image",
+      "url": "https://developer.mercedes-benz.com/content/sites/default/files/2018-05/swagger_vehicleimage_api.json",
+      "file": "entertainment.md"
+    },
+    {
+      "name": "K-Data Gate",
+      "url": "https://kdata-gate.vercel.app/docs",
+      "file": "environment-climate.md"
+    },
+    {
+      "name": "Dimdom",
+      "url": "https://api.dimdom.pl/api/public/docs",
+      "file": "geography-countries.md"
+    },
+    {
+      "name": "Code.gov",
+      "url": "https://code.gov",
+      "file": "government-civic.md"
+    },
+    {
+      "name": "Lingua Robot",
+      "url": "https://www.linguarobot.io",
+      "file": "public-data.md"
+    },
+    {
+      "name": "Warnely",
+      "url": "https://warnely.com/developers",
+      "file": "public-data.md"
+    },
+    {
+      "name": "Car Configurator",
+      "url": "https://developer.mercedes-benz.com/content/sites/default/files/2018-08/swagger_car_configurator_api.json",
+      "file": "shopping.md"
+    },
+    {
+      "name": "Shop",
+      "url": "https://server.shop.app/openai/v1/api.json",
+      "file": "shopping.md"
+    },
+    {
+      "name": "Remote Diagnostic Support",
+      "url": "https://developer.mercedes-benz.com/content/sites/default/files/2018-10/swagger_remote_diagnostics_api_2.yaml",
+      "file": "vehicle.md"
     }
   ]
 }

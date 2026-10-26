@@ -29,7 +29,6 @@
 | **Braket** | The Amazon Braket API Reference provides information about the operations and structures supported in Amazon Braket. Additional Resources:. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/braket) |
 | **Cerebras Inference** | World's fastest LLM inference platform powered by the Wafer-Scale Engine. | 🔑 ApiKey | ✅ | [Link](https://inference-docs.cerebras.ai/) |
 | **Chatwith** | Build custom ChatGPT-style AI chatbots trained on your website and files, integrated with 5000+ apps, no coding, live in minutes. | 🔑 ApiKey | ✅ | [Link](https://chatwith.tools) |
-| **Clarifai** | Computer Vision. | 🔑 ApiKey | ✅ | [Link](https://docs.clarifai.com/api-guide/api-overview) |
 | **Cloud Document AI API** | Service to parse structured information from unstructured or semi-structured documents using state-of-the-art Google AI such as natural language, computer vision, translation,. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/document-ai/docs) |
 | **Cloud Natural Language API** | Provides natural language understanding technologies, such as sentiment analysis, entity recognition, entity sentiment analysis, and other text annotations, to developers. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/natural-language) |
 | **Cloud Text-to-Speech API** | Synthesizes natural-sounding speech by applying powerful neural network models. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/text-to-speech) |
