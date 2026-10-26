@@ -31,7 +31,6 @@
 | **Rendobar** | Hosted media processing over REST: transcode, caption, watermark video | 🔑 ApiKey | ✅ | [Link](https://rendobar.com) |
 | **Rocketium Video** | The Rocketium video API opens up parts of the Rocketium platform so third-party developers can create and manipulate | No | ✅ | [Link](https://rocketium.com/api/) |
 | **Ron Swanson Quotes** | Television | No | ✅ | [Link](https://github.com/jamesseanwright/ron-swanson-quotes#ron-swanson-quotes-api) |
-| **ScaleReach** | Turn long videos into short vertical clips with AI captions and face-tracking crop | 🔑 ApiKey | ✅ | [Link](https://docs.scalereach.ai) |
 | **Shoof Aflam** | Arabic streaming guide - search 14,000+ movies/series, get platform availability across 18 services in the Arab world | No | ✅ | [Link](https://shoofaflam.tv/api-docs/) |
 | **Shotstack** | Cloud video editing API to create and render videos programmatically | 🔑 ApiKey | ✅ | [Link](https://shotstack.io/) |
 | **SponsorBlock** | Crowdsourced YouTube sponsor segments and skip timestamps (**No Auth**). | No | ✅ | [Link](https://wiki.sponsor.ajay.app/w/API_Docs) |
