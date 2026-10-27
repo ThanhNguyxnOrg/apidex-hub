@@ -1,3 +1,3 @@
 | # | API Name | File | Dead URL |
 |---|---|---|---|
-| 1 | AllEvents | `events.md` | https://allevents.developer.azure-api.net/ |
+| 1 | Ganjoor | `books.md` | https://api.ganjoor.net |
