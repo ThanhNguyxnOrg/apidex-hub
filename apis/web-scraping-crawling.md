@@ -11,6 +11,7 @@
 | **Browserless** | Headless Chrome as a service for scraping and automation. | 🔑 ApiKey | ✅ | [Link](https://docs.browserless.io/) |
 | **Common Crawl Web Crawl Data** | an open repository of web crawl data that can be accessed and analyzed by anyone | No | No | [Link](http://commoncrawl.org/) |
 | **CoreClaw** | Real-time public data, ready to use. Extract web data from Amazon, TikTok, Google Maps and more with 100+ ready-made tools. | 🔑 ApiKey | ✅ | [Link](https://coreclaw.com) |
+| **Crawl4AI** | Open-source crawler/scraper that returns clean Markdown and structured data; free to self-host, with a hosted Cloud tier offering 1,000 free credits/month and rate limits. | No | ✅ | [Link](https://github.com/unclecode/crawl4ai) |
 | **DataForSEO** | SERP, keyword and backlink data APIs for SEO tooling. | 🔑 ApiKey | ✅ | [Link](https://docs.dataforseo.com/) |
 | **Diffbot** | Automatic extraction of entities and articles from any page. | 🔑 ApiKey | ✅ | [Link](https://docs.diffbot.com/) |
 | **Exa AI** | Embeddings-based search engine API engineered specifically for AI agents and LLMs. | 🔑 ApiKey | ✅ | [Link](https://docs.exa.ai/) |
@@ -20,6 +21,7 @@
 | **Ilmenite** | Rust web data API: scrape, crawl, extract, screenshots, PDFs, and discover hidden site APIs | 🔑 ApiKey | ✅ | [Link](https://ilmenite.dev/docs) |
 | **Jina AI Reader** | Zero-config reader API that converts any URL to clean LLM-friendly markdown. | No | ✅ | [Link](https://jina.ai/reader/) |
 | **Kagi** | Kagi Search API for paid web search results. | 🔑 ApiKey | ✅ | [Link](https://help.kagi.com/kagi/api/search.html) |
+| **LangSearch** | Web-search and page-content API with a $0 plan covering all supported features, subject to a daily token allowance and request limits. | 🔑 ApiKey | ✅ | [Link](https://langsearch.com/pricing) |
 | **Olostep** | AI-native web search, scraping, and crawling API that delivers clean, structured, real-time web data. Used by top AI companies. | 🔑 ApiKey | ✅ | [Link](https://www.olostep.com) |
 | **Owler** | Search for information on companies using a website or company name and get access to Company Data, News, Blog Posts, | 🔑 ApiKey | ✅ | [Link](https://owler.com) |
 | **Piloterr** | Piloterr web scraping API handles headless browsers, rotates proxies for you, and offers json-parsed data extraction. | 🔑 ApiKey | ✅ | [Link](https://www.piloterr.com) |
@@ -43,3 +45,4 @@
 | **Zyte** | Web scraping API with smart routing and anti-blocking. | 🔑 ApiKey | ✅ | [Link](https://docs.zyte.com/) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
+

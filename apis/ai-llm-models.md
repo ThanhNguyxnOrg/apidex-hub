@@ -32,8 +32,9 @@
 | **Cloud Document AI API** | Service to parse structured information from unstructured or semi-structured documents using state-of-the-art Google AI such as natural language, computer vision, translation,. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/document-ai/docs) |
 | **Cloud Natural Language API** | Provides natural language understanding technologies, such as sentiment analysis, entity recognition, entity sentiment analysis, and other text annotations, to developers. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/natural-language) |
 | **Cloud Text-to-Speech API** | Synthesizes natural-sounding speech by applying powerful neural network models. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/text-to-speech) |
+| **Cloudflare Workers AI** | Hosted inference API for open models with 10,000 free Neurons per day; usage above the allocation requires a paid Workers plan, and some models require paid billing. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/workers-ai/platform/pricing/) |
 | **cogDepot** | Marketplace API for AI agents to post service listings, negotiate terms, and finalize deals, with an A2A Agent Card and JSON-RPC endpoint. | 🔑 ApiKey | ✅ | [Link](https://cogdepot.com) |
-| **Cohere** | Enterprise LLM platform providing Command R+, embeddings, and rerank models. | 🔑 ApiKey | ✅ | [Link](https://docs.cohere.com/) |
+| **Cohere** | Chat, embedding, and reranking APIs; free evaluation keys include up to 1,000 API calls/month, with limited non-production usage. | 🔑 ApiKey | ✅ | [Link](https://docs.cohere.com/v2/docs/rate-limits) |
 | **Contact Center AI Platform API** | REST endpoints for the Contact Center AI Platform API service. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/solutions/contact-center-ai-platform) |
 | **Convert Text to Speech API** | This API converts any text to speech automatically. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/text-to-speech) |
 | **Cue** | Execution accountability API for AI agents with scheduling, verification, and outcome confirmation | 🔑 ApiKey | ✅ | [Link](https://docs.cueapi.ai) |
@@ -52,8 +53,8 @@
 | **Fuzzy Text Search API** | The Fuzzy Text Search API finds close matches for user queries, handling typos and partial inputs to deliver relevant results quickly and accurately. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/search-fuzzy-text) |
 | **Gandr** | Text to speech API for voice agents. One voice in 23 languages, every render watermarked. | 🔑 ApiKey | ✅ | [Link](https://gandr.ai) |
 | **Gladia** | Artificial intelligence API's. | 🔑 ApiKey | ✅ | [Link](https://docs.gladia.io) |
-| **Google Gemini** | Google's flagship multimodal model API supporting text, vision, audio, and code. | 🔑 ApiKey | ✅ | [Link](https://ai.google.dev/) |
-| **Groq** | Ultra-fast LPU inference engine providing near-instant responses for open LLMs. | 🔑 ApiKey | ✅ | [Link](https://groq.com/) |
+| **Google Gemini** | Multimodal LLM API with a free tier for selected models; quotas vary by model/account, and free-tier data may be used to improve Google products. | 🔑 ApiKey | ✅ | [Link](https://ai.google.dev/gemini-api/docs/pricing) |
+| **Groq** | Fast inference for open LLMs with a rate-limited developer tier; request and token limits vary by model. | 🔑 ApiKey | ✅ | [Link](https://console.groq.com/docs/rate-limits) |
 | **HarnessRouter** | Run coding agent harnesses (Codex, Claude Code, Hermes) behind your product through one API. | 🔑 ApiKey | ✅ | [Link](https://harnessrouter.ai/docs) |
 | **HOL Registry Broker** | Search and verify AI agents & MCP servers | 🔑 ApiKey | ✅ | [Link](https://hol.org/docs/registry-broker/) |
 | **Hugging Face** | Run inference on hundreds of thousands of open-source models (text, vision, audio) via the Inference API. | 🔑 ApiKey | ✅ | [Link](https://huggingface.co/docs/api-inference) |
@@ -71,7 +72,7 @@
 | **Ollama** | REST API for running, orchestrating, and chatting with open LLMs locally or on servers. | No | ✅ | [Link](https://ollama.com/) |
 | **onomeo** | OpenAI-compatible, about 30 free LLMs, 30 calls per 5 hours, optional pay-as-you-go, public beta | 🔑 ApiKey | ✅ | [Link](https://onomeo.com/docs) |
 | **OpenAI** | State-of-the-art models including GPT-4o, o1 reasoning, DALL-E, Whisper, and Embeddings. | 🔑 ApiKey | ✅ | [Link](https://platform.openai.com/docs) |
-| **OpenRouter** | Unified routing API to access 100+ AI models across all providers with one key. | 🔑 ApiKey | ✅ | [Link](https://openrouter.ai/docs) |
+| **OpenRouter** | Unified routing API for models across providers; selected models ending in `:free` are available at $0 with stricter, changeable rate limits. | 🔑 ApiKey | ✅ | [Link](https://openrouter.ai/docs) |
 | **Perplexity AI** | Online conversational search and citation API powered by web-grounded models. | 🔑 ApiKey | ✅ | [Link](https://docs.perplexity.ai/) |
 | **Prismix Status API** | Real-time uptime and incident status for 75+ AI services (OpenAI, Anthropic, Cursor, Gemini). | No | ✅ | [Link](https://prismix.dev/api-docs) |
 | **Proofread and Grammar Check API** | The Proofreading and Grammar Check API ensures the provided text is grammatically correct and polished by automatically proofreading and checking for errors. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/sharpapi-proofread-grammer-check) |
@@ -98,3 +99,4 @@
 
 | **XiuRouter** | Route requests to leading AI models through one API with native OpenAI, Anthropic, and Gemini protocols. | 🔑 ApiKey | ✅ | [Link](https://router.xiu.ai) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
+

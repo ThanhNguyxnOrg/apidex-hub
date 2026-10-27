@@ -37,7 +37,7 @@
 | **Entity Search Client** | The Entity Search API lets you send a search query to Bing and get back search results that include entities and places. Place results include restaurants, hotel, or other local. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/cognitiveservices/data-plane/EntitySearch/stable/v1.0/EntitySearch.json) |
 | **Geo** | French geographical data | No | ✅ | [Link](https://api.gouv.fr/api/geoapi.html) |
 | **Geo Toolkit** | Plus Codes, geohash and Maidenhead encode/decode plus distance, bearing and bounding box math. | 🔑 ApiKey | ✅ | [Link](https://abundanceapis.com/apis/geo-toolkit) |
-| **Geoapify** | Forward and reverse geocoding, address autocomplete. | 🔑 ApiKey | ✅ | [Link](https://www.geoapify.com/api/geocoding-api/) |
+| **Geoapify** | Geocoding, reverse geocoding, address autocomplete, places and routing; permanent free plan includes 3,000 credits/day with required attribution. | 🔑 ApiKey | ✅ | [Link](https://www.geoapify.com/pricing/) |
 | **Geocod.io** | Address geocoding / reverse geocoding in bulk. | 🔑 ApiKey | ✅ | [Link](https://www.geocod.io) |
 | **Geocode.maps.co** | Free geocoding and reverse geocoding (**No Auth**). | No | ✅ | [Link](https://geocode.maps.co/) |
 | **Geocode.xyz** | Provides worldwide forward/reverse geocoding, batch geocoding and geoparsing. | No | ✅ | [Link](https://geocode.xyz/api) |

@@ -23,6 +23,7 @@
 | **DocCheap** | Read passports, ID cards and driver's licences into JSON, $0.01 per recognised document | 🔑 ApiKey | ✅ | [Link](https://doc.cheap/docs) |
 | **DocSpring (FormAPI)** | DocSpring is a service that helps you fill out and sign PDF templates | 🔑 ApiKey | ✅ | [Link](https://formapi.io) |
 | **DocStruct** | AI extraction of invoices, receipts, bank statements & contracts into structured JSON/CSV | No | ✅ | [Link](https://docstruct.pages.dev) |
+| **DocuSeal** | Open-source e-signature platform with API and webhooks; free when self-hosted, while the hosted production API is paid (sandbox is free for testing). | 🔑 ApiKey | ✅ | [Link](https://github.com/docusealco/docuseal) |
 | **Docusign** | Electronic signature and agreement API. | 🔐 OAuth | ✅ | [Link](https://developers.docusign.com/) |
 | **Doqlo** | Bulk fill and mail merge PDF forms from CSV | 🔑 ApiKey | ✅ | [Link](https://doqlo.com) |
 | **doqs.dev / PDF filling API** | REST endpoints for the doqs.dev / PDF filling API service. | 🔑 ApiKey | ✅ | [Link](https://api.doqs.dev/v1/openapi.json) |
@@ -35,13 +36,14 @@
 | **Flowdash** | Automate business workflows. | 🔑 ApiKey | ✅ | [Link](https://docs.flowdash.com/docs/api-introduction) |
 | **Formfeed** | Render PDFs and images from HTML (Jinja2, Liquid, Handlebars) or Word templates, with a free tier | 🔑 ApiKey | ✅ | [Link](https://docs.formfeed.dev/api/overview) |
 | **Formstack** | Form creator for online forms | 🔑 ApiKey | ✅ | [Link](https://developers.formstack.com) |
+| **Gotenberg** | Free, self-hosted HTTP API for converting HTML, URLs, Markdown, and office documents to PDF and manipulating PDFs; runs via Docker. | No | ✅ | [Link](https://gotenberg.dev/docs/getting-started/introduction) |
 | **Html2PDF** | HTML/URL to PDF. | 🔑 ApiKey | ✅ | [Link](https://html2pdf.app/) |
 | **iLovePDF** | Convert, merge, split, extract text and add page numbers for PDFs. Free for 2... | 🔑 ApiKey | ✅ | [Link](https://developer.ilovepdf.com/) |
 | **JIRA** | JIRA is a proprietary issue tracking product that allows bug tracking and agi... | 🔐 OAuth | ✅ | [Link](https://developer.atlassian.com/server/jira/platform/rest-apis/) |
 | **Kiprio PDF Text** | Extract plain text from PDF documents for LLM and RAG pipelines. | No | ✅ | [Link](https://kiprio.com/v1/pdf-text) |
 | **Mattermost** | An open source platform for developer collaboration. | 🔐 OAuth | ✅ | [Link](https://api.mattermost.com/) |
 | **MConverter** | File converter and PDF compressor. Extract images from video, convert documents, Markdown and more. | 🔑 ApiKey | ✅ | [Link](https://dev.mconverter.eu) |
-| **OCR.Space** | OCR text extraction from images and PDFs with a free tier | 🔑 ApiKey | ✅ | [Link](https://ocr.space/ocrapi) |
+| **OCR.Space** | Hosted OCR API for images and PDFs; free key allows up to 25,000 requests/month (500/day per IP), with 1 MB files and up to 3 PDF pages per request. | 🔑 ApiKey | ✅ | [Link](https://ocr.space/ocrapi) |
 | **PageBolt** | Screenshot, PDF, video recording, OG image, and page inspection via REST API. | 🔑 ApiKey | ✅ | [Link](https://pagebolt.dev) |
 | **PandaDoc** | DocGen and eSignatures API. | 🔑 ApiKey | ✅ | [Link](https://developers.pandadoc.com) |
 | **PaperClean** | Clean document photos for printing, remove shadows, fix lighting | 🔑 ApiKey | ✅ | [Link](https://paperclean.ip1.cc/api/docs) |
