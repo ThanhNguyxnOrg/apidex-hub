@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T16:49:50.587098+00:00",
+    "generated_at": "2026-10-27T03:28:08.391209+00:00",
     "source": "README.md",
-    "total_apis": 4226,
+    "total_apis": 4225,
     "total_categories": 70,
     "no_auth_count": 1573,
-    "api_key_count": 2391,
+    "api_key_count": 2390,
     "oauth_count": 262,
-    "https_count": 4135,
+    "https_count": 4134,
     "https_percentage": 98
   },
   "categories": [
@@ -11722,15 +11722,8 @@
       "id": "events",
       "emoji": "🎪",
       "name": "Events",
-      "api_count": 27,
+      "api_count": 26,
       "apis": [
-        {
-          "name": "AllEvents",
-          "description": "Global event listing API: events by city, category, keyword and date range.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://allevents.developer.azure-api.net/"
-        },
         {
           "name": "Billetto",
           "description": "Ticketing platform API: publicly available events, webhooks and account data.",
