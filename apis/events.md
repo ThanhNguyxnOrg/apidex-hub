@@ -2,7 +2,6 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **AllEvents** | Global event listing API: events by city, category, keyword and date range. | 🔑 ApiKey | ✅ | [Link](https://allevents.developer.azure-api.net/) |
 | **Billetto** | Ticketing platform API: publicly available events, webhooks and account data. | 🔒 OAuth | ✅ | [Link](https://api.billetto.com/reference/welcome) |
 | **Bizzabo** | Event experience OS API: events, registrations, tickets, sessions and analytics. | 🔒 OAuth | ✅ | [Link](https://bizzabo.stoplight.io/docs/bizzabo-partner-apis/784b40317b1fa-introduction-to-bizzabo-s-open-application-programming-interface-api) |
 | **Doorkeeper** | Japanese event platform API: community and featured events, paging and groups. | 🔒 OAuth | ✅ | [Link](https://www.doorkeeper.jp/developer/api) |
