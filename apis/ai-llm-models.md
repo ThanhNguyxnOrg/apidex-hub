@@ -34,7 +34,7 @@
 | **Cloud Text-to-Speech API** | Synthesizes natural-sounding speech by applying powerful neural network models. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/text-to-speech) |
 | **Cloudflare Workers AI** | Hosted inference API for open models with 10,000 free Neurons per day; usage above the allocation requires a paid Workers plan, and some models require paid billing. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/workers-ai/platform/pricing/) |
 | **cogDepot** | Marketplace API for AI agents to post service listings, negotiate terms, and finalize deals, with an A2A Agent Card and JSON-RPC endpoint. | 🔑 ApiKey | ✅ | [Link](https://cogdepot.com) |
-| **Cohere** | Chat, embedding, and reranking APIs; free evaluation keys include up to 1,000 API calls/month, with limited non-production usage. | 🔑 ApiKey | ✅ | [Link](https://docs.cohere.com/v2/docs/rate-limits) |
+| **Cohere** | Chat, embedding, and reranking APIs; free evaluation keys include up to 1,000 API calls/month, with limited non-production usage. | 🔑 ApiKey | ✅ | [Link](https://docs.cohere.com/) |
 | **Contact Center AI Platform API** | REST endpoints for the Contact Center AI Platform API service. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/solutions/contact-center-ai-platform) |
 | **Convert Text to Speech API** | This API converts any text to speech automatically. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/text-to-speech) |
 | **Cue** | Execution accountability API for AI agents with scheduling, verification, and outcome confirmation | 🔑 ApiKey | ✅ | [Link](https://docs.cueapi.ai) |
@@ -53,8 +53,8 @@
 | **Fuzzy Text Search API** | The Fuzzy Text Search API finds close matches for user queries, handling typos and partial inputs to deliver relevant results quickly and accurately. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/search-fuzzy-text) |
 | **Gandr** | Text to speech API for voice agents. One voice in 23 languages, every render watermarked. | 🔑 ApiKey | ✅ | [Link](https://gandr.ai) |
 | **Gladia** | Artificial intelligence API's. | 🔑 ApiKey | ✅ | [Link](https://docs.gladia.io) |
-| **Google Gemini** | Multimodal LLM API with a free tier for selected models; quotas vary by model/account, and free-tier data may be used to improve Google products. | 🔑 ApiKey | ✅ | [Link](https://ai.google.dev/gemini-api/docs/pricing) |
-| **Groq** | Fast inference for open LLMs with a rate-limited developer tier; request and token limits vary by model. | 🔑 ApiKey | ✅ | [Link](https://console.groq.com/docs/rate-limits) |
+| **Google Gemini** | Multimodal LLM API with a free tier for selected models; quotas vary by model/account, and free-tier data may be used to improve Google products. | 🔑 ApiKey | ✅ | [Link](https://ai.google.dev/) |
+| **Groq** | Fast inference for open LLMs with a rate-limited developer tier; request and token limits vary by model. | 🔑 ApiKey | ✅ | [Link](https://groq.com/) |
 | **HarnessRouter** | Run coding agent harnesses (Codex, Claude Code, Hermes) behind your product through one API. | 🔑 ApiKey | ✅ | [Link](https://harnessrouter.ai/docs) |
 | **HOL Registry Broker** | Search and verify AI agents & MCP servers | 🔑 ApiKey | ✅ | [Link](https://hol.org/docs/registry-broker/) |
 | **Hugging Face** | Run inference on hundreds of thousands of open-source models (text, vision, audio) via the Inference API. | 🔑 ApiKey | ✅ | [Link](https://huggingface.co/docs/api-inference) |
