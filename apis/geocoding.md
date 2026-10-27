@@ -150,5 +150,11 @@
 | **Zippopotam.us** | Postal/zip code lookup for 60+ countries (**No Auth**). | No | ✅ | [Link](https://api.zippopotam.us/) |
 | **Ziptastic** | Get the country, state, and city of any US zip-code. | No | ✅ | [Link](https://ziptasticapi.com/) |
 | **Zornade** | Cadastral parcels, geocoding, OMI valuations, risk and demographics for Italy (85M parcels) | 🔑 ApiKey | ✅ | [Link](https://app.zornade.com/api/) |
+| **FreeRoute** | Maps API for routing, geocoding, isochrones and tiles; free tier advertises 5,000 requests/day without a credit card. | 🔑 ApiKey | ✅ | [Link](https://freeroute.org/) |
+| **KUON GEO** | No-key geospatial endpoints for elevation, geoid height, RTK base stations, earthquakes, aurora forecasts and Mars weather. | No | ✅ | [Link](https://kuongeo.com/developers) |
+| **Maptoolkit Vector Tiles** | Hosted OpenStreetMap vector tiles for MapLibre with no API key or sign-up; attribution and community-license terms apply. | No | ✅ | [Link](https://www.maptoolkit.org/) |
+| **PlacesDB** | No-key geographic reference API for millions of places, with fuzzy search, nearby-place lookup, region data, population, elevation and timezone fields. | No | ✅ | [Link](https://placesdb.dev/) |
+| **TrailSplits API** | Outdoor mapping API for trail search, routing and round trips, elevation profiles, GPX analysis, route weather and related outdoor places. | No | ✅ | [Link](https://trailsplits.com/api) |
+| **Waymorphic Map Tiles** | Public OpenStreetMap vector tiles and MapLibre styles served from a global CDN without an API key or account. | No | ✅ | [Link](https://waymorphic.com/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

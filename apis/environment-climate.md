@@ -55,5 +55,7 @@
 | **WattTime** | Real-time and forecast marginal emissions data. | 🔑 ApiKey | ✅ | [Link](https://www.watttime.org/api-documentation/) |
 | **Website Carbon** | API to estimate the carbon footprint of loading web pages. | No | ✅ | [Link](https://api.websitecarbon.com/) |
 | **ZipCheckup** | U.S. drinking water quality data by ZIP code from EPA and 20+ federal sources | No | ✅ | [Link](https://api.zipcheckup.com/v1) |
+| **EPA Air Quality System (AQS) API** | Access row-level U.S. ambient air-monitoring samples, monitor/station metadata and related measurements from the EPA Air Quality System; API credentials are required. | 🔑 ApiKey | ✅ | [Link](https://aqs.epa.gov/aqsweb/documents/data_api.html) |
+| **EPA Envirofacts Data API** | REST API aggregating U.S. EPA environmental datasets covering air, water, waste, toxics, land, facilities and environmental compliance information. | No | ✅ | [Link](https://www.epa.gov/enviro/envirofacts-data-service-api) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

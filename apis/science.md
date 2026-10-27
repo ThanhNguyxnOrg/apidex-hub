@@ -59,5 +59,7 @@
 | **USGS Water Services** | Water quality and level info for rivers and lakes. | No | ✅ | [Link](https://waterservices.usgs.gov/) |
 | **Where the ISS at** | Real-time ISS position, velocity and visibility (**No Auth**). | No | ✅ | [Link](https://wheretheiss.at/w/developer) |
 | **Zenodo** | CERN open repository for research datasets with DOIs. | 🔑 ApiKey | ✅ | [Link](https://developers.zenodo.org/) |
+| **Copernicus Data Space Ecosystem APIs** | Search and access Copernicus Earth-observation products through catalog, OData, STAC, Sentinel Hub, openEO and related data-access interfaces; some services require OAuth. | 🔒 OAuth | ✅ | [Link](https://documentation.dataspace.copernicus.eu/APIs.html) |
+| **UK Environment Agency Hydrology API** | Open time-series data for river flows and levels, groundwater, rainfall and water quality across thousands of monitoring stations in England. | No | ✅ | [Link](https://environment.data.gov.uk/hydrology/doc/reference) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

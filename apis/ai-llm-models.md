@@ -98,5 +98,9 @@
 | **xAI Grok** | Frontier generative AI models with strong math, reasoning, and coding capabilities. | 🔑 ApiKey | ✅ | [Link](https://x.ai/api) |
 
 | **XiuRouter** | Route requests to leading AI models through one API with native OpenAI, Anthropic, and Gemini protocols. | 🔑 ApiKey | ✅ | [Link](https://router.xiu.ai) |
+| **Featherless AI** | Serverless inference API for thousands of open-source language models, compatible with the OpenAI SDK; billing and model availability depend on the selected plan. | 🔑 ApiKey | ✅ | [Link](https://featherless.ai/docs/api-overview-and-common-options) |
+| **Hyperbolic AI** | OpenAI-compatible inference API for open models, with serverless GPU inference and integrations for common AI frameworks. | 🔑 ApiKey | ✅ | [Link](https://www.hyperbolic.ai/docs/inference/integrations) |
+| **Nebius Token Factory** | OpenAI-compatible inference API for open models, with dedicated endpoints, autoscaling, batch inference and production deployment options. | 🔑 ApiKey | ✅ | [Link](https://dev.nebius.com/token-factory) |
+| **Novita AI** | Serverless inference API for open-source LLMs and dedicated model endpoints, with per-model input/output pricing. | 🔑 ApiKey | ✅ | [Link](https://novita.ai/llm-api) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

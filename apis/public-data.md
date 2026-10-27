@@ -127,5 +127,6 @@
 | **WebSite Management Client** | Use these APIs to manage Azure Websites resources through the Azure Resource Manager. All task operations conform to the HTTP/1.1 protocol specification and each operation. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json) |
 | **Words** | Definitions and synonyms for more than 150,000 words. | 🔑 ApiKey | ✅ | [Link](https://www.wordsapi.com/docs) |
 | **WorkbookClient** | Azure client for Workbook. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2018-06-17-preview/workbookOperations_API.json) |
+| **FAOSTAT API** | FAO's food and agriculture statistics API for country/region, commodity, production, trade, prices and other datasets; uses an authenticated token flow. | 🔒 OAuth | ✅ | [Link](https://www.fao.org/faostat/en/docs/redoc-static.html) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
