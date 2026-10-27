@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T14:06:12.408569+00:00",
+    "generated_at": "2026-10-27T14:27:11.787046+00:00",
     "source": "README.md",
-    "total_apis": 4218,
+    "total_apis": 4224,
     "total_categories": 70,
-    "no_auth_count": 1570,
-    "api_key_count": 2387,
+    "no_auth_count": 1573,
+    "api_key_count": 2390,
     "oauth_count": 261,
-    "https_count": 4127,
+    "https_count": 4133,
     "https_percentage": 98
   },
   "categories": [
@@ -15,7 +15,7 @@
       "id": "ai-llm-models",
       "emoji": "🤖",
       "name": "AI Models & LLM Providers",
-      "api_count": 94,
+      "api_count": 95,
       "apis": [
         {
           "name": "1ClickImpact (AI Energy)",
@@ -228,6 +228,13 @@
           "link": "https://cloud.google.com/text-to-speech"
         },
         {
+          "name": "Cloudflare Workers AI",
+          "description": "Hosted inference API for open models with 10,000 free Neurons per day; usage above the allocation requires a paid Workers plan, and some models require paid billing.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+        },
+        {
           "name": "cogDepot",
           "description": "Marketplace API for AI agents to post service listings, negotiate terms, and finalize deals, with an A2A Agent Card and JSON-RPC endpoint.",
           "auth": "apiKey",
@@ -236,10 +243,10 @@
         },
         {
           "name": "Cohere",
-          "description": "Enterprise LLM platform providing Command R+, embeddings, and rerank models.",
+          "description": "Chat, embedding, and reranking APIs; free evaluation keys include up to 1,000 API calls/month, with limited non-production usage.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://docs.cohere.com/"
+          "link": "https://docs.cohere.com/v2/docs/rate-limits"
         },
         {
           "name": "Contact Center AI Platform API",
@@ -369,17 +376,17 @@
         },
         {
           "name": "Google Gemini",
-          "description": "Google's flagship multimodal model API supporting text, vision, audio, and code.",
+          "description": "Multimodal LLM API with a free tier for selected models; quotas vary by model/account, and free-tier data may be used to improve Google products.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://ai.google.dev/"
+          "link": "https://ai.google.dev/gemini-api/docs/pricing"
         },
         {
           "name": "Groq",
-          "description": "Ultra-fast LPU inference engine providing near-instant responses for open LLMs.",
+          "description": "Fast inference for open LLMs with a rate-limited developer tier; request and token limits vary by model.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://groq.com/"
+          "link": "https://console.groq.com/docs/rate-limits"
         },
         {
           "name": "HarnessRouter",
@@ -502,7 +509,7 @@
         },
         {
           "name": "OpenRouter",
-          "description": "Unified routing API to access 100+ AI models across all providers with one key.",
+          "description": "Unified routing API for models across providers; selected models ending in `:free` are available at $0 with stricter, changeable rate limits.",
           "auth": "apiKey",
           "https": true,
           "link": "https://openrouter.ai/docs"
@@ -9064,7 +9071,7 @@
       "id": "documents-productivity",
       "emoji": "📄",
       "name": "Documents & Productivity",
-      "api_count": 81,
+      "api_count": 83,
       "apis": [
         {
           "name": "Api2Convert",
@@ -9214,6 +9221,13 @@
           "link": "https://docstruct.pages.dev"
         },
         {
+          "name": "DocuSeal",
+          "description": "Open-source e-signature platform with API and webhooks; free when self-hosted, while the hosted production API is paid (sandbox is free for testing).",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://github.com/docusealco/docuseal"
+        },
+        {
           "name": "Docusign",
           "description": "Electronic signature and agreement API.",
           "auth": "OAuth",
@@ -9298,6 +9312,13 @@
           "link": "https://developers.formstack.com"
         },
         {
+          "name": "Gotenberg",
+          "description": "Free, self-hosted HTTP API for converting HTML, URLs, Markdown, and office documents to PDF and manipulating PDFs; runs via Docker.",
+          "auth": "No",
+          "https": true,
+          "link": "https://gotenberg.dev/docs/getting-started/introduction"
+        },
+        {
           "name": "Html2PDF",
           "description": "HTML/URL to PDF.",
           "auth": "apiKey",
@@ -9341,7 +9362,7 @@
         },
         {
           "name": "OCR.Space",
-          "description": "OCR text extraction from images and PDFs with a free tier",
+          "description": "Hosted OCR API for images and PDFs; free key allows up to 25,000 requests/month (500/day per IP), with 1 MB files and up to 3 PDF pages per request.",
           "auth": "apiKey",
           "https": true,
           "link": "https://ocr.space/ocrapi"
@@ -9822,7 +9843,7 @@
       "id": "email-sms",
       "emoji": "📧",
       "name": "Email & SMS",
-      "api_count": 129,
+      "api_count": 130,
       "apis": [
         {
           "name": "Academic Email API",
@@ -10427,6 +10448,13 @@
           "link": "https://mailchimp.com/developer/"
         },
         {
+          "name": "MailerSend",
+          "description": "Transactional email API with a free plan (after account approval): up to 500 emails/month, 100/day, and 100 API requests/day.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.mailersend.com/pricing"
+        },
+        {
           "name": "Mailfornet",
           "description": "Disposable inboxes for end-to-end signup tests, with long-polling and HMAC-signed webhooks",
           "auth": "apiKey",
@@ -10442,10 +10470,10 @@
         },
         {
           "name": "Mailjet",
-          "description": "Transactional email and marketing API.",
+          "description": "Transactional email and marketing API with a no-card free plan: up to 6,000 emails/month (200/day) and 1,000 contacts.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://www.mailjet.com/"
+          "link": "https://www.mailjet.com/pricing/"
         },
         {
           "name": "MailRambo",
@@ -11958,10 +11986,10 @@
         },
         {
           "name": "Alpha Vantage",
-          "description": "Realtime and historical stock data.",
+          "description": "Realtime and historical market data; free API keys cover most datasets at up to 25 requests/day, with realtime and 15-minute delayed US stock data premium-only.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://www.alphavantage.co/"
+          "link": "https://www.alphavantage.co/support/api-key/"
         },
         {
           "name": "AlphaAI",
@@ -14678,10 +14706,10 @@
         },
         {
           "name": "Geoapify",
-          "description": "Forward and reverse geocoding, address autocomplete.",
+          "description": "Geocoding, reverse geocoding, address autocomplete, places and routing; permanent free plan includes 3,000 credits/day with required attribution.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://www.geoapify.com/api/geocoding-api/"
+          "link": "https://www.geoapify.com/pricing/"
         },
         {
           "name": "Geocod.io",
@@ -22819,11 +22847,11 @@
           "link": "https://www.opensanctions.org/docs/api/"
         },
         {
-          "name": "OpenSERP Cloud",
-          "description": "Managed SERP API for Google, Bing, Yandex and more. Get live browser-rendered search results through a single API with data extraction.",
-          "auth": "apiKey",
+          "name": "OpenSERP",
+          "description": "Multi-engine SERP/search and page-extraction API; free MIT-licensed self-hosted version has no per-search billing, with an optional managed Cloud service.",
+          "auth": "No",
           "https": true,
-          "link": "https://openserp.org"
+          "link": "https://github.com/karust/openserp"
         },
         {
           "name": "Pan Africa Data",
@@ -29820,7 +29848,7 @@
       "id": "web-scraping-crawling",
       "emoji": "🕷️",
       "name": "Web Scraping & AI Search",
-      "api_count": 39,
+      "api_count": 41,
       "apis": [
         {
           "name": "Autom",
@@ -29886,6 +29914,13 @@
           "link": "https://coreclaw.com"
         },
         {
+          "name": "Crawl4AI",
+          "description": "Open-source crawler/scraper that returns clean Markdown and structured data; free to self-host, with a hosted Cloud tier offering 1,000 free credits/month and rate limits.",
+          "auth": "No",
+          "https": true,
+          "link": "https://github.com/unclecode/crawl4ai"
+        },
+        {
           "name": "DataForSEO",
           "description": "SERP, keyword and backlink data APIs for SEO tooling.",
           "auth": "apiKey",
@@ -29947,6 +29982,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://help.kagi.com/kagi/api/search.html"
+        },
+        {
+          "name": "LangSearch",
+          "description": "Web-search and page-content API with a $0 plan covering all supported features, subject to a daily token allowance and request limits.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://langsearch.com/pricing"
         },
         {
           "name": "Olostep",
