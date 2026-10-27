@@ -1,5 +1,10 @@
 name: Link Checker
 
+# Prevent overlapping scheduled/push runs from racing while committing API removals.
+concurrency:
+  group: link-checker-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   # Run on push to main branch
   push:
@@ -269,50 +274,44 @@ jobs:
         if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true'
         id: auto-remediate
         run: |
-          echo "=== Running remove_dead_links.py ==="
-          python scripts/remove_dead_links.py --max-delete 500
-
           git config --global user.name "ThanhNguyxnAgent[bot]"
           git config --global user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
 
-          echo "=== Verifying Markdown and Catalog Integrity ==="
-          python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
-
-          git add apis/ README.md site/index.html site/src/data/apis.json
-
-          if git diff --staged --quiet; then
-            echo "No changes staged. Nothing pushed."
-            echo "pushed=false" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-
-          ISSUE_NUM="${{ steps.create-incident.outputs.issue_number }}"
-          git commit -m "fix(apis): auto-remove dead links (fixes #${ISSUE_NUM}) [skip ci]"
-
-          # Race-proof push: upstream may move mid-run (stats commits regenerated
-          # README.md / site/index.html / site/src/data/apis.json). Rebase, resolve
-          # conflicts on generated files from upstream, regenerate, amend, retry.
+          # Re-apply the incident against the latest main on every attempt.
+          # This makes retries idempotent and avoids broken rebase/merge conflict recovery.
           pushed=false
           for attempt in 1 2 3; do
-            git fetch origin main || true
-            if ! git rebase origin/main; then
-              echo "=== Rebase conflict: taking upstream for generated files, keeping apis/ fixes ==="
-              for f in README.md site/index.html site/src/data/apis.json; do
-                git checkout --ours "$f" 2>/dev/null || true
-              done
-              git add -A
-              GIT_EDITOR=true git rebase --continue || true
+            echo "=== Remediation attempt $attempt/3 against latest main ==="
+            git fetch origin main
+            git reset --hard origin/main
+
+            python scripts/remove_dead_links.py --report scripts/broken_urls.txt --max-delete 500
+            REMOVED_COUNT=$(python -c "import json; print(json.load(open('scripts/removed_summary.json', encoding='utf-8')).get('count', 0))")
+
+            if [ "$REMOVED_COUNT" -eq 0 ]; then
+              echo "All URLs in this incident were already handled; no matching API entries remain."
+              pushed=true
+              break
             fi
-            # Regenerate stats so they match the rebased row content exactly
+
             python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
-            git add README.md site/index.html site/src/data/apis.json
-            git diff --staged --quiet || git commit --amend --no-edit
+            git add apis/ README.md site/index.html site/src/data/apis.json
+
+            if git diff --staged --quiet; then
+              echo "Rows were reported removed but no catalog diff was staged; leaving issue open for review."
+              break
+            fi
+
+            ISSUE_NUM="${{ steps.create-incident.outputs.issue_number }}"
+            git commit -m "fix(apis): auto-remove confirmed dead links (fixes #${ISSUE_NUM}) [skip ci]"
+
             if git push origin main; then
               pushed=true
               echo "Push succeeded (attempt $attempt)."
               break
             fi
-            echo "Push rejected (race with upstream). Retrying..."
+
+            echo "Push rejected by concurrent main update; retrying from fresh origin/main..."
           done
           echo "pushed=$pushed" >> $GITHUB_OUTPUT
 
