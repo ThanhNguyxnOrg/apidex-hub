@@ -40,6 +40,7 @@ https://cheetaho.com/docs/getting-started/ | HTTP 403 | CheetahO (Photography) -
 https://cisco.com | HTTP 403 | Cisco PSIRT openVuln (Security & Validation) - Forbidden (HTTP 403) - restricted access
 https://clubhouseapi.com | HTTP 418 | Clubhouse (Unofficial & Community APIs) - Bot protection (418 I'm a teapot) - API likely works
 https://codapi.dev | HTTP 403 | Call of Duty (Games & Comics) - Bot protection (Cloudflare/similar) - API likely works
+https://codeberg.org/video-prize-ranch/rimgo | HTTP 403 | Rimgo (Unofficial & Community APIs) - Forbidden (HTTP 403) - restricted access
 https://codesandbox.io/docs | HTTP 403 | CodeSandbox (Development) - Bot protection (Cloudflare/similar) - API likely works
 https://coinremitter.com/docs | HTTP 403 | Coinremitter (Cryptocurrency) - Bot protection (Cloudflare/similar) - API likely works
 https://collection.cooperhewitt.org/api | HTTP 403 | Cooper Hewitt (Museums & Art) - Bot protection (Cloudflare/similar) - API likely works
@@ -81,6 +82,7 @@ https://eeemoji.com/api | HTTP 429 | Eeemoji (Design & Colors) - Bot protection 
 https://euroratesapi.dev | HTTP 403 | EuroRates (Cryptocurrency) - Bot protection (Cloudflare/similar) - API likely works
 https://evilinsult.com/api | HTTP 403 | Evil Insult (Memes & Fun) - Bot protection (Cloudflare/similar) - API likely works
 https://exlibrisgroup.com | HTTP 403 | Ex Libris APIs (Text Analysis & NLP) - Forbidden (HTTP 403) - restricted access
+https://faceapi.hirak.site/ | HTTP 401 | Hirak FaceAPI (Machine Learning) - Unauthorized (HTTP 401) - access restricted
 https://fakestoreapi.com/ | HTTP 403 | Fake Store API (Mock Data & Testing) - Bot protection (Cloudflare/similar) - API likely works
 https://fastapi-calculadora.onrender.com | HTTP 503 | FastApi Simple Calculator (Development) - Bot protection (Cloudflare/similar) - API likely works
 https://filterlists.com | HTTP 403 | FilterLists (Security & Validation) - Bot protection (Cloudflare/similar) - API likely works
@@ -88,6 +90,7 @@ https://food-info.org/developer | HTTP 403 | Food Info (Food & Drink) - Bot prot
 https://fortnitetracker.com/site-api | HTTP 403 | Fortnite (Games & Comics) - Bot protection (Cloudflare/similar) - API likely works
 https://freecustom.email | HTTP 403 | FreeCustom.Email (Email & SMS) - Bot protection (Cloudflare/similar) - API likely works
 https://freepik.com/api | HTTP 403 | Freepik (Photography) - Forbidden (HTTP 403) - restricted access
+https://fuelo.net/fuel?lang=en | HTTP 403 | fuelo (Vehicle & Mobility) - Bot protection (Cloudflare/similar) - API likely works
 https://glassnode.com/ | HTTP 403 | Glassnode (Cryptocurrency) - Bot protection (Cloudflare/similar) - API likely works
 https://gtfs.org/ | HTTP 403 | GTFS Realtime (Transportation) - Bot protection (Cloudflare/similar) - API likely works
 https://gutendex.com/ | HTTP 403 | Gutendex (Books & Literature) - Bot protection (Cloudflare/similar) - API likely works
@@ -96,7 +99,6 @@ https://hri.fi/en_gb/ | HTTP 403 | City, Helsinki (Government & Civic) - Forbidd
 https://hydramovies.com | HTTP 403 | Hydra Movies (Entertainment) - Bot protection (Cloudflare/similar) - API likely works
 https://invisioncommunity.com/developers/api-reference/ | HTTP 403 | Invision Community (Unofficial & Community APIs) - Bot protection (Cloudflare/similar) - API likely works
 https://ipfind.io | HTTP 403 | ipfind.io (Development) - Bot protection (Cloudflare/similar) - API likely works
-https://ipwhois.net/blacklist/docs | HTTP 403 | IPWhois.net Blacklist (Security & Validation) - Bot protection (Cloudflare/similar) - API likely works
 https://isbndb.com/apidocs/v2 | HTTP 403 | ISBNdb (Books & Literature) - Bot protection (Cloudflare/similar) - API likely works
 https://isitdownstatus.com | HTTP 429 | DownStatus (Development) - Bot protection (Cloudflare/similar) - API likely works
 https://jooble.org/api/about | HTTP 403 | Jooble (Jobs & Career) - Bot protection (Cloudflare/similar) - API likely works
@@ -114,28 +116,25 @@ https://messari.io/api/docs | HTTP 429 | Messari (Cryptocurrency) - Bot protecti
 https://moltin.com | HTTP 403 | Moltin (Shopping) - Bot protection (Cloudflare/similar) - API likely works
 https://myproduct.guru/lookup/ | HTTP 403 | ProductGuru (Public Data & Datasets) - Bot protection (Cloudflare/similar) - API likely works
 https://neotimo.com/annuaire-dgfip | HTTP 403 | Neotimo DGFiP Mirror (Government & Civic) - Bot protection (Cloudflare/similar) - API likely works
-https://nerdulator.com/api | HTTP 403 | Nerdulator (Math & Computation) - Forbidden (HTTP 403) - restricted access
 https://noms.sh/docs | HTTP 503 | Noms (Food & Drink) - Bot protection (Cloudflare/similar) - API likely works
 https://noparam.com | HTTP 403 | NoParam (Email & SMS) - Bot protection (Cloudflare/similar) - API likely works
 https://nova.bitcambio.com.br/api/v3/docs#a-public | HTTP 403 | Bitcambio (Cryptocurrency) - Bot protection (Cloudflare/similar) - API likely works
 https://nuvinty.com/api-docs | HTTP 403 | Nuvinty (Shopping) - Bot protection (Cloudflare/similar) - API likely works
 https://ocblacktop.com/api | HTTP 429 | Blacktop Motorsport API (Games & Comics) - Bot protection (Cloudflare/similar) - API likely works
-https://octopart.com/api/v4/reference | HTTP 403 | Octopart (Shopping) - Bot protection (Cloudflare/similar) - API likely works
 https://oeis.org/search?fmt=json&q=A000045 | HTTP 403 | OEIS (Math & Computation) - Bot protection (Cloudflare/similar) - API likely works
 https://opendata.city-adm.lviv.ua/ | HTTP 403 | City, Lviv (Government & Civic) - Bot protection (Cloudflare/similar) - API likely works
-https://ornl.gov | HTTP 403 | Daymet Single Pixel Extraction Tool (Environment & Climate) - Bot protection (Cloudflare/similar) - API likely works
 https://owler.com | HTTP 403 | Owler (Web Scraping & AI Search) - Forbidden (HTTP 403) - restricted access
 https://owo.vc/ | HTTP 403 | owo (URL Shorteners) - Bot protection (Cloudflare/similar) - API likely works
 https://oyyi.xyz/docs/1.0 | HTTP 403 | oyyi (Development) - Bot protection (Cloudflare/similar) - API likely works
 https://panafricadata.com | HTTP 403 | Pan Africa Data (Public Data & Datasets) - Bot protection (Cloudflare/similar) - API likely works
 https://paystack.com/docs/ | HTTP 403 | Paystack (Payments & Billing) - Bot protection (Cloudflare/similar) - API likely works
 https://personio.de | HTTP 429 | Personnel Data (Business) - Bot protection (Cloudflare/similar) - API likely works
-https://playerelo.football/api-access | HTTP 403 | PlayerElo (Sports) - Bot protection (Cloudflare/similar) - API likely works
 https://pro.dp.la/developers/api | HTTP 403 | Digital Public Library of America (Museums & Art) - Stage 1: Not found - likely dead | Stage 2: Playwright: Failed with HTTP 403
 https://pro.europeana.eu/resources/apis/search | HTTP 403 | Europeana (Museums & Art) - Bot protection (Cloudflare/similar) - API likely works
 https://pro.whitepages.com/developer/documentation/reverse-phone-api/ | HTTP 403 | Whitepages pro (Phone & Telephony) - Bot protection (Cloudflare/similar) - API likely works
 https://psychonauts-api.netlify.app/ | HTTP 401 | Psychonauts (Games & Comics) - Unauthorized (HTTP 401) - access restricted
 https://quizlet.com/api/2.2/docs | HTTP 403 | Quizlet (Education) - Bot protection (Cloudflare/similar) - API likely works
+https://quotesondesign.com/api/ | HTTP 403 | Quotes on Design (Personality & Quotes) - Bot protection (Cloudflare/similar) - API likely works
 https://rafont.com/api-docs | HTTP 403 | raFont (Design & Colors) - Bot protection (Cloudflare/similar) - API likely works
 https://rss2json.com/docs | HTTP 403 | RSS feed to JSON (Development) - Bot protection (Cloudflare/similar) - API likely works
 https://search.censys.io/api | HTTP 403 | Censys (Security & Validation) - Bot protection (Cloudflare/similar) - API likely works
@@ -148,6 +147,8 @@ https://sportscore.com/developers/ | HTTP 403 | SportScore (Sports) - Bot protec
 https://static.electricitymaps.com/api/docs/index.html | HTTP 403 | Electricity Maps (Environment & Climate) - Bot protection (Cloudflare/similar) - API likely works
 https://sys.airtel.lv/ip2country/1.1.1.1/?full=true | HTTP 403 | Airtel IP (Geocoding) - Bot protection (Cloudflare/similar) - API likely works
 https://t.ly/api | HTTP 403 | T.LY (URL Shorteners) - Bot protection (Cloudflare/similar) - API likely works
+https://tarkov.dev/api/ | HTTP 403 | Tarkov API (Games & Comics) - Bot protection (Cloudflare/similar) - API likely works
+https://tastedive.com/read/api | HTTP 403 | TasteDive (Music) - Bot protection (Cloudflare/similar) - API likely works
 https://thegamestracker.com/server-info-api | HTTP 403 | TheGamestracker (Games & Comics) - Bot protection (Cloudflare/similar) - API likely works
 https://theysaidso.com/api/ | HTTP 403 | They Said So Quotes (Personality & Quotes) - Bot protection (Cloudflare/similar) - API likely works
 https://thunderbit.com/docs/introduction | HTTP 403 | Thunderbit (Development) - Bot protection (Cloudflare/similar) - API likely works

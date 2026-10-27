@@ -1,10 +1,18 @@
 {
-  "count": 1,
+  "count": 2,
   "removed": [
     {
       "name": "Ganjoor",
       "url": "https://api.ganjoor.net",
       "file": "books.md"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "name": "Apifonica",
+      "url": "https://www.apifonica.com/docs/voice-api/",
+      "file": "phone-telephony.md"
+>>>>>>> 84b197d (fix(apis): auto-remove dead links (fixes #33) [skip ci])
     }
   ]
 }
