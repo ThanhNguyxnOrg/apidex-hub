@@ -138,5 +138,8 @@
 | **Vett** | Screen names & companies against OFAC, PEP, watchlists & recalls | No | ✅ | [Link](https://wimberly.solutions/api/free-sanctions-check/) |
 | **VotePredictor** | US election forecasts, congressional voting records and forecaster accuracy ratings | No | ✅ | [Link](https://votepredictor.com/developers) |
 | **Watercare IGC (NZ)** | Auckland water and wastewater Infrastructure Growth Charge calculations | No | ✅ | [Link](https://devstack.co.nz/calculators/watercare-icg) |
+| **EPA Clean Air Markets API** | U.S. power-plant emissions and compliance data, including emissions, allowance and facility information; access uses EPA's API key system. | 🔑 ApiKey | ✅ | [Link](https://www.epa.gov/data/application-programming-interface-api) |
+| **EPA Facility Registry Service API** | Search U.S. environmental facilities, identifiers, locations and related EPA program records. | 🔑 ApiKey | ✅ | [Link](https://www.epa.gov/data/application-programming-interface-api) |
+| **EPA WATERS API** | U.S. watershed, stream, waterbody and related geospatial data for environmental analysis and mapping. | 🔑 ApiKey | ✅ | [Link](https://www.epa.gov/data/application-programming-interface-api) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
