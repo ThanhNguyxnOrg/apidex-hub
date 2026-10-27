@@ -11,6 +11,7 @@ http://www3.septa.org/hackathon/ | HTTP 403 | Transport for Philadelphia, US (Tr
 https://agarathi.com/api/dictionary | HTTP 403 | Tamil Dictionary (Dictionaries) - Bot protection (Cloudflare/similar) - API likely works
 https://airvisual.com/api | HTTP 429 | Airvisual (Environment & Climate) - Bot protection (Cloudflare/similar) - API likely works
 https://alphasmo.com/developer/docs | HTTP 403 | AlphaSMO (Finance) - Bot protection (Cloudflare/similar) - API likely works
+https://aniapi.com/docs/ | HTTP 401 | AniAPI (Anime) - Unauthorized (HTTP 401) - access restricted
 https://any.ge/api/ | HTTP 403 | Any.ge Utility (Networking, DNS & WHOIS) - Bot protection (Cloudflare/similar) - API likely works
 https://api-sports.io/ | HTTP 403 | API-Sports (Sports) - Bot protection (Cloudflare/similar) - API likely works
 https://api.collinsdictionary.com/api/v1/documentation/html/ | HTTP 403 | Collins (Dictionaries) - Bot protection (Cloudflare/similar) - API likely works
@@ -78,6 +79,7 @@ https://docs.nodebb.org/api/ | HTTP 403 | NodeBB (Unofficial & Community APIs) -
 https://docs.packlink.com/ | HTTP 403 | Packlink (Tracking & Logistics) - Forbidden (HTTP 403) - restricted access
 https://docs.zyntra.app | HTTP 403 | Zyntra (Email & SMS) - Bot protection (Cloudflare/similar) - API likely works
 https://dodo.ac | HTTP 403 | Nookipedia (Games & Comics) - Bot protection (Cloudflare/similar) - API likely works
+https://downforjustmeoreveryone.com/api | HTTP 403 | Is This Site Down? (Development) - Bot protection (Cloudflare/similar) - API likely works
 https://eeemoji.com/api | HTTP 429 | Eeemoji (Design & Colors) - Bot protection (Cloudflare/similar) - API likely works
 https://euroratesapi.dev | HTTP 403 | EuroRates (Cryptocurrency) - Bot protection (Cloudflare/similar) - API likely works
 https://evilinsult.com/api | HTTP 403 | Evil Insult (Memes & Fun) - Bot protection (Cloudflare/similar) - API likely works
@@ -99,8 +101,13 @@ https://hri.fi/en_gb/ | HTTP 403 | City, Helsinki (Government & Civic) - Forbidd
 https://hydramovies.com | HTTP 403 | Hydra Movies (Entertainment) - Bot protection (Cloudflare/similar) - API likely works
 https://invisioncommunity.com/developers/api-reference/ | HTTP 403 | Invision Community (Unofficial & Community APIs) - Bot protection (Cloudflare/similar) - API likely works
 https://ipfind.io | HTTP 403 | ipfind.io (Development) - Bot protection (Cloudflare/similar) - API likely works
+<<<<<<< HEAD
+=======
+https://iplocation.hirak.site/ | HTTP 401 | Hirak IP to Country (Geocoding) - Unauthorized (HTTP 401) - access restricted
+>>>>>>> 7900408 (fix(apis): auto-remove dead links (fixes #35) [skip ci])
 https://isbndb.com/apidocs/v2 | HTTP 403 | ISBNdb (Books & Literature) - Bot protection (Cloudflare/similar) - API likely works
 https://isitdownstatus.com | HTTP 429 | DownStatus (Development) - Bot protection (Cloudflare/similar) - API likely works
+https://jobsbylevel.com/developers | HTTP 403 | Level (Jobs & Career) - Bot protection (Cloudflare/similar) - API likely works
 https://jooble.org/api/about | HTTP 403 | Jooble (Jobs & Career) - Bot protection (Cloudflare/similar) - API likely works
 https://jsonfabrica.com/docs/api-reference | HTTP 403 | JsonFabrica (Mock Data & Testing) - Bot protection (Cloudflare/similar) - API likely works
 https://krakenkeys.com/api-docs | HTTP 403 | KrakenKeys (Games & Comics) - Bot protection (Cloudflare/similar) - API likely works
@@ -115,6 +122,7 @@ https://meraki.io/community | HTTP 403 | Meraki Dashboard (Networking, DNS & WHO
 https://messari.io/api/docs | HTTP 429 | Messari (Cryptocurrency) - Bot protection (Cloudflare/similar) - API likely works
 https://moltin.com | HTTP 403 | Moltin (Shopping) - Bot protection (Cloudflare/similar) - API likely works
 https://myproduct.guru/lookup/ | HTTP 403 | ProductGuru (Public Data & Datasets) - Bot protection (Cloudflare/similar) - API likely works
+https://nekosia.cat | HTTP 403 | Nekosia (Anime) - Bot protection (Cloudflare/similar) - API likely works
 https://neotimo.com/annuaire-dgfip | HTTP 403 | Neotimo DGFiP Mirror (Government & Civic) - Bot protection (Cloudflare/similar) - API likely works
 https://noms.sh/docs | HTTP 503 | Noms (Food & Drink) - Bot protection (Cloudflare/similar) - API likely works
 https://noparam.com | HTTP 403 | NoParam (Email & SMS) - Bot protection (Cloudflare/similar) - API likely works
@@ -160,8 +168,11 @@ https://unsplash.com/developers | HTTP 403 | Unsplash (Photography) - Forbidden 
 https://untappd.com/api/docs | HTTP 403 | Untappd (Food & Drink) - Bot protection (Cloudflare/similar) - API likely works
 https://urlfy.org/api-doc | HTTP 403 | Urlfy (URL Shorteners) - Bot protection (Cloudflare/similar) - API likely works
 https://verifyed.org/docs | HTTP 403 | VerifyEd (Data Validation) - Bot protection (Cloudflare/similar) - API likely works
+<<<<<<< HEAD
 https://vestorly.com | HTTP 403 | Vestorly (Business) - Bot protection (Cloudflare/similar) - API likely works
 https://vidyo.io/ | HTTP 403 | Vidyo.io (Video) - Bot protection (Cloudflare/similar) - API likely works
+=======
+>>>>>>> 90d55b0 (fix(apis): auto-remove dead links (fixes #35) [skip ci])
 https://vocab.getty.edu/ | HTTP 403 | Getty Vocabularies (Museums & Art) - Forbidden (HTTP 403) - restricted access
 https://vpaas.kaltura.com | HTTP 403 | Kaltura VPaaS (Video) - Forbidden (HTTP 403) - restricted access
 https://vuldb.com/?doc.api | HTTP 403 | VulDB (Security & Validation) - Bot protection (Cloudflare/similar) - API likely works
