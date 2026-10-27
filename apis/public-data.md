@@ -80,7 +80,8 @@
 | **OpenCorporates** | Data on corporate entities and directors in many countries. | 🔑 ApiKey | ✅ | [Link](http://api.opencorporates.com/documentation/API-Reference) |
 | **OpenHolidays API** | Public and school holidays worldwide (**No Auth**). | No | ✅ | [Link](https://www.openholidaysapi.org/) |
 | **OpenSanctions** | Data on international sanctions, crime and politically exposed persons. | No | ✅ | [Link](https://www.opensanctions.org/docs/api/) |
-| **OpenSERP** | Multi-engine SERP/search and page-extraction API; free MIT-licensed self-hosted version has no per-search billing, with an optional managed Cloud service. | No | ✅ | [Link](https://github.com/karust/openserp) |
+| **OpenSERP (Self-hosted)** | Free, MIT-licensed self-hosted multi-engine search and page-extraction API; you run the infrastructure and avoid managed per-search fees. | No | ✅ | [Link](https://github.com/karust/openserp) |
+| **OpenSERP Cloud** | Managed SERP API for Google, Bing, Yandex and more. Get live browser-rendered search results through a single API with data extraction. | 🔑 ApiKey | ✅ | [Link](https://openserp.org) |
 | **Pan Africa Data** | Macroeconomic and subnational income distribution data for all 54 African countries | 🔑 ApiKey | ✅ | [Link](https://panafricadata.com) |
 | **Particle** | Podcast intelligence: podcast & episode search, transcripts, speakers, entity mentions, sponsor & advertising data, alerts and embeds. | 🔑 ApiKey | ✅ | [Link](https://particle.pro) |
 | **PayCrunch** | US wages for 1,008 occupations and by state, from BLS OEWS May 2025, static JSON, CC BY 4.0 | No | ✅ | [Link](https://paycrunch.co/api.html) |

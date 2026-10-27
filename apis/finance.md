@@ -10,7 +10,7 @@
 | **Aikstockdata** | KOSPI/KOSDAQ/KONEX daily settled closes, DART filings with receipt times, quarterly earnings | No | ✅ | [Link](https://aikstockdata.com/en/api) |
 | **Aletheia** | Insider trading data, earnings call analysis, financial statements, and more. | 🔑 ApiKey | ✅ | [Link](https://aletheiaapi.com/) |
 | **Alpaca** | Commission-free stock trading. | 🔑 ApiKey | ✅ | [Link](https://alpaca.markets/docs/api-references/) |
-| **Alpha Vantage** | Realtime and historical market data; free API keys cover most datasets at up to 25 requests/day, with realtime and 15-minute delayed US stock data premium-only. | 🔑 ApiKey | ✅ | [Link](https://www.alphavantage.co/support/api-key/) |
+| **Alpha Vantage** | Realtime and historical market data; free API keys cover most datasets at up to 25 requests/day, with realtime and 15-minute delayed US stock data premium-only. | 🔑 ApiKey | ✅ | [Link](https://www.alphavantage.co/) |
 | **AlphaAI** | Financial news scored 1-10 for relevance and tagged with stock tickers, plus SEC Form 4 insider and 8-K event data | 🔑 ApiKey | ✅ | [Link](https://alphai.io/developers) |
 | **AlphaSMO** | SEC 13F institutional holdings, Form 4 insider trading, and smart money convergence signals | No | ✅ | [Link](https://alphasmo.com/developer/docs) |
 | **Arkleon** | Point-in-time SEC EDGAR fundamentals over /v1 | 🔑 ApiKey | ✅ | [Link](https://arkleon.com) |
