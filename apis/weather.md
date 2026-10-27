@@ -35,7 +35,6 @@
 | **Meteomatics** | High-resolution weather API with global coverage. | 🔑 ApiKey | ✅ | [Link](https://www.meteomatics.com/en/api/getting-started/) |
 | **Meteorologisk Institutt** | Weather and climate data. | 🔑 ApiKey | ✅ | [Link](https://api.met.no/weatherapi/documentation) |
 | **Météo-France** | French weather forecasts and alerts | 🔑 ApiKey | ✅ | [Link](https://portail-api.meteofrance.fr/) |
-| **Meteosource** | Global weather forecasts based on machine learning and historical data. | 🔑 ApiKey | ✅ | [Link](https://www.meteosource.com) |
 | **MSC GeoMet** | Free public Canadian weather, climate, water and ice data through interoperable OGC APIs. | No | ✅ | [Link](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/) |
 | **NASA POWER** | Global solar and weather data for energy and agriculture | No | ✅ | [Link](https://power.larc.nasa.gov/docs/) |
 | **National Weather Service** | Weather forecasts, alerts, and observations for the United States. | No | ✅ | [Link](https://www.weather.gov/documentation/services-web-api) |
