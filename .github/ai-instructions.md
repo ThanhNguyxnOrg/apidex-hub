@@ -30,6 +30,17 @@
 
 ---
 
+
+### 4. Catalog quality: free-first and provider-aware deduplication
+
+* Prefer free/open APIs and meaningful freemium tiers. When a well-known API is paid, research quality free/open alternatives before adding more paid options.
+* Keep different providers even when they solve the same problem. Similar topic or capability is **not** a duplicate.
+* Deduplicate by underlying service identity, not exact URL: account for redirects, domain aliases (for example, `fb.com` and `facebook.com`), subdomains, alternate docs pages, and API endpoint variants. Keep one canonical listing for the same service in the best-fit category.
+* A provider may have multiple distinct APIs. Keep them when their capabilities/endpoints are meaningfully distinct, even if the vendor is the same.
+* Never remove a free listing just to replace it with a paid alternative. If a free service is confirmed dead, search for a maintained free replacement and preserve other working providers.
+* A 404 on an API documentation URL alone does not prove the API/service is gone. Check current official docs, redirects, and other canonical endpoints first. Treat 401/403/429, WAF blocks, timeouts, SSL errors, and 5xx as inconclusive rather than auto-deletion evidence.
+* For bulk imports, check exact/normalized URLs, known domain aliases, product/service identity, and existing provider-specific products before committing rows.
+
 ## 🛠️ How to Validate Locally
 
 If you modify scripts or need to test changes locally:
