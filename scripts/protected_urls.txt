@@ -94,6 +94,7 @@ https://freecustom.email | HTTP 403 | FreeCustom.Email (Email & SMS) - Bot prote
 https://freepik.com/api | HTTP 403 | Freepik (Photography) - Forbidden (HTTP 403) - restricted access
 https://fuelo.net/fuel?lang=en | HTTP 403 | fuelo (Vehicle & Mobility) - Bot protection (Cloudflare/similar) - API likely works
 https://glassnode.com/ | HTTP 403 | Glassnode (Cryptocurrency) - Bot protection (Cloudflare/similar) - API likely works
+https://gravatar.com/site/implement/images/ | HTTP 403 | Gravatar (Social) - Bot protection (Cloudflare/similar) - API likely works
 https://gtfs.org/ | HTTP 403 | GTFS Realtime (Transportation) - Bot protection (Cloudflare/similar) - API likely works
 https://gutendex.com/ | HTTP 403 | Gutendex (Books & Literature) - Bot protection (Cloudflare/similar) - API likely works
 https://hackertarget.com/api/ | HTTP 403 | HackerTarget (Networking, DNS & WHOIS) - Bot protection (Cloudflare/similar) - API likely works
@@ -102,9 +103,13 @@ https://hydramovies.com | HTTP 403 | Hydra Movies (Entertainment) - Bot protecti
 https://invisioncommunity.com/developers/api-reference/ | HTTP 403 | Invision Community (Unofficial & Community APIs) - Bot protection (Cloudflare/similar) - API likely works
 https://ipfind.io | HTTP 403 | ipfind.io (Development) - Bot protection (Cloudflare/similar) - API likely works
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 https://iplocation.hirak.site/ | HTTP 401 | Hirak IP to Country (Geocoding) - Unauthorized (HTTP 401) - access restricted
 >>>>>>> 7900408 (fix(apis): auto-remove dead links (fixes #35) [skip ci])
+=======
+https://iplocation.hirak.site/ | HTTP 401 | Hirak IP to Country (Geocoding) - Unauthorized (HTTP 401) - access restricted
+>>>>>>> dcee731 (fix(apis): auto-remove dead links (fixes #36) [skip ci])
 https://isbndb.com/apidocs/v2 | HTTP 403 | ISBNdb (Books & Literature) - Bot protection (Cloudflare/similar) - API likely works
 https://isitdownstatus.com | HTTP 429 | DownStatus (Development) - Bot protection (Cloudflare/similar) - API likely works
 https://jobsbylevel.com/developers | HTTP 403 | Level (Jobs & Career) - Bot protection (Cloudflare/similar) - API likely works
@@ -116,6 +121,7 @@ https://linode.com | HTTP 403 | Linode (Development) - Forbidden (HTTP 403) - re
 https://liquilens-undertow.com/developers/ | HTTP 403 | Undertow (Finance) - Bot protection (Cloudflare/similar) - API likely works
 https://localgov.jp/ | HTTP 503 | LocalGov.jp (Government & Civic) - Bot protection (Cloudflare/similar) - API likely works
 https://logotypes.dev | HTTP 429 | Logotypes (Entertainment) - Bot protection (Cloudflare/similar) - API likely works
+https://loops.so/docs/api-reference | HTTP 403 | Loops (Email & SMS) - Bot protection (Cloudflare/similar) - API likely works
 https://lux.collections.yale.edu/ | HTTP 403 | Yale LUX (Museums & Art) - Forbidden (HTTP 403) - restricted access
 https://mapatlas.eu/ | HTTP 403 | MapAtlas (Transportation) - Forbidden (HTTP 403) - restricted access
 https://meraki.io/community | HTTP 403 | Meraki Dashboard (Networking, DNS & WHOIS) - Bot protection (Cloudflare/similar) - API likely works
@@ -144,13 +150,13 @@ https://psychonauts-api.netlify.app/ | HTTP 401 | Psychonauts (Games & Comics) -
 https://quizlet.com/api/2.2/docs | HTTP 403 | Quizlet (Education) - Bot protection (Cloudflare/similar) - API likely works
 https://quotesondesign.com/api/ | HTTP 403 | Quotes on Design (Personality & Quotes) - Bot protection (Cloudflare/similar) - API likely works
 https://rafont.com/api-docs | HTTP 403 | raFont (Design & Colors) - Bot protection (Cloudflare/similar) - API likely works
+https://rates.hirak.site/ | HTTP 401 | Hirak Exchange Rates (Cryptocurrency) - Unauthorized (HTTP 401) - access restricted
 https://rss2json.com/docs | HTTP 403 | RSS feed to JSON (Development) - Bot protection (Cloudflare/similar) - API likely works
 https://search.censys.io/api | HTTP 403 | Censys (Security & Validation) - Bot protection (Cloudflare/similar) - API likely works
 https://securitytrails.com/corp/api | HTTP 403 | SecurityTrails (Security & Validation) - Bot protection (Cloudflare/similar) - API likely works
 https://shrekofficial.com | HTTP 403 | Shrek Quotes (Personality & Quotes) - Bot protection (Cloudflare/similar) - API likely works
 https://simpleicons.org/ | HTTP 403 | Simple Icons (Design & Colors) - Bot protection (Cloudflare/similar) - API likely works
 https://skipodds.com/docs | HTTP 403 | SkipOdds (Games & Comics) - Bot protection (Cloudflare/similar) - API likely works
-https://sniffcat.com | HTTP 403 | SniffCat (Anti-Malware) - Bot protection (Cloudflare/similar) - API likely works
 https://sportscore.com/developers/ | HTTP 403 | SportScore (Sports) - Bot protection (Cloudflare/similar) - API likely works
 https://static.electricitymaps.com/api/docs/index.html | HTTP 403 | Electricity Maps (Environment & Climate) - Bot protection (Cloudflare/similar) - API likely works
 https://sys.airtel.lv/ip2country/1.1.1.1/?full=true | HTTP 403 | Airtel IP (Geocoding) - Bot protection (Cloudflare/similar) - API likely works
@@ -165,14 +171,17 @@ https://transitfeeds.com/issues | HTTP 403 | TransitFeeds (Transportation) - Bot
 https://ulvis.net/developer.html | HTTP 403 | Free Url Shortener (URL Shorteners) - Bot protection (Cloudflare/similar) - API likely works
 https://universe.roboflow.com | HTTP 403 | Roboflow (Machine Learning) - Bot protection (Cloudflare/similar) - API likely works
 https://unsplash.com/developers | HTTP 403 | Unsplash (Photography) - Forbidden (HTTP 403) - restricted access
-https://untappd.com/api/docs | HTTP 403 | Untappd (Food & Drink) - Bot protection (Cloudflare/similar) - API likely works
 https://urlfy.org/api-doc | HTTP 403 | Urlfy (URL Shorteners) - Bot protection (Cloudflare/similar) - API likely works
 https://verifyed.org/docs | HTTP 403 | VerifyEd (Data Validation) - Bot protection (Cloudflare/similar) - API likely works
+<<<<<<< HEAD
 <<<<<<< HEAD
 https://vestorly.com | HTTP 403 | Vestorly (Business) - Bot protection (Cloudflare/similar) - API likely works
 https://vidyo.io/ | HTTP 403 | Vidyo.io (Video) - Bot protection (Cloudflare/similar) - API likely works
 =======
 >>>>>>> 90d55b0 (fix(apis): auto-remove dead links (fixes #35) [skip ci])
+=======
+https://vidyo.io/ | HTTP 403 | Vidyo.io (Video) - Bot protection (Cloudflare/similar) - API likely works
+>>>>>>> dcee731 (fix(apis): auto-remove dead links (fixes #36) [skip ci])
 https://vocab.getty.edu/ | HTTP 403 | Getty Vocabularies (Museums & Art) - Forbidden (HTTP 403) - restricted access
 https://vpaas.kaltura.com | HTTP 403 | Kaltura VPaaS (Video) - Forbidden (HTTP 403) - restricted access
 https://vuldb.com/?doc.api | HTTP 403 | VulDB (Security & Validation) - Bot protection (Cloudflare/similar) - API likely works
