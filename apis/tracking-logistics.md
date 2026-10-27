@@ -38,5 +38,8 @@
 | **WeCanTrack** | Automatically place subids in affiliate links to attribute affiliate conversi... | 🔑 ApiKey | ✅ | [Link](https://docs.wecantrack.com) |
 | **WhatPulse** | Small application that measures your keyboard/mouse usage. | No | ✅ | [Link](https://developer.whatpulse.org/#web-api) |
 | **WhereParcel** | Unified parcel tracking API across 60+ carriers worldwide (USPS, FedEx, UPS, DHL, etc.) | 🔑 ApiKey | ✅ | [Link](https://whereparcel.com/docs) |
+| **CetaHAV Marine Data API** | Free, key-free marine data in JSON/GeoJSON, including Baltic AIS vessel positions, oceanographic stations, wind farms, fishing effort and protected areas; retain source attribution. | No | ✅ | [Link](https://cetahav.org/api-docs) |
+| **Open Waters AIS API** | Live vessel traffic over WebSocket, plus GeoJSON snapshots of current positions and an AISStream-compatible endpoint; check the docs for access details. | 🔑 ApiKey | ✅ | [Link](https://openwaters.io/api/) |
+| **Open Waters Tides & Currents API** | Marine API for tide predictions across thousands of stations and tidal-current predictions, including slack water and flood/ebb speeds. | No | ✅ | [Link](https://openwaters.io/api/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
