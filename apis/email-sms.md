@@ -88,9 +88,10 @@
 | **MailboxValidator** | Validate email address to improve deliverability. | 🔑 ApiKey | ✅ | [Link](https://www.mailboxvalidator.com/api-email-free) |
 | **MailCheck.ai** | Prevent users to sign up with temporary email addresses. | No | ✅ | [Link](https://www.mailcheck.ai/#documentation) |
 | **Mailchimp** | Email marketing and audience management APIs. | 🔑 ApiKey | ✅ | [Link](https://mailchimp.com/developer/) |
+| **MailerSend** | Transactional email API with a free plan (after account approval): up to 500 emails/month, 100/day, and 100 API requests/day. | 🔑 ApiKey | ✅ | [Link](https://www.mailersend.com/pricing) |
 | **Mailfornet** | Disposable inboxes for end-to-end signup tests, with long-polling and HMAC-signed webhooks | 🔑 ApiKey | ✅ | [Link](https://mailfornet.com/api) |
 | **Mailgun** | Email service for developers (free tier). | 🔑 ApiKey | ✅ | [Link](https://documentation.mailgun.com/) |
-| **Mailjet** | Transactional email and marketing API. | 🔑 ApiKey | ✅ | [Link](https://www.mailjet.com/) |
+| **Mailjet** | Transactional email and marketing API with a no-card free plan: up to 6,000 emails/month (200/day) and 1,000 contacts. | 🔑 ApiKey | ✅ | [Link](https://www.mailjet.com/pricing/) |
 | **MailRambo** | Verify email deliverability with a strict yes/no, disposable and catch-all detection | 🔑 ApiKey | ✅ | [Link](https://www.mailrambo.com/developers) |
 | **MailSenpai DNS Check** | Check a domain's SPF, DKIM, DMARC and MX records and get what to fix, with the values to publish | No | ✅ | [Link](https://en.mailsenpai.com/dns-check-api/) |
 | **Mailsquad** | MailSquad offers an affordable and super easy way to create, send and track delightful emails | 🔑 ApiKey | ✅ | [Link](https://mailsquad.com) |
