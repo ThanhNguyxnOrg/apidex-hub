@@ -80,7 +80,6 @@
 | **Replicate** | Cloud API to run open-source machine learning models in the cloud with GPUs. | 🔑 ApiKey | ✅ | [Link](https://replicate.com/docs) |
 | **Requesty** | OpenAI compatible LLM router for 600+ models, with a free tier for free models | 🔑 ApiKey | ✅ | [Link](https://docs.requesty.ai) |
 | **Safe text** | Clean short and long texts. It is probably world most complete text-cleaner API! Providing very fast and accurate results. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/bacloud14/api/safe-text) |
-| **SelectPdf HTML To PDF API** | SelectPdf HTML To PDF Online REST API is a professional solution that lets you create PDF from web pages and raw HTML code in your applications. The API is easy to use and the. | 🔑 ApiKey | ✅ | [Link](https://selectpdf.com/api/selectpdf-swagger.json) |
 | **Smithery** | Registry and hosting for Model Context Protocol servers. | 🔑 ApiKey | ✅ | [Link](https://smithery.ai/) |
 | **SpryTools AI Text Analysis** | Sentiment, summarization, NER, zero-shot classification and keyword extraction via Gemini. | 🔑 ApiKey | ✅ | [Link](https://sprytools.com/apis/ai) |
 | **Statlyte** | Live pricing, context windows and model ids for major LLM APIs | No | ✅ | [Link](https://statlyte.com/api) |
