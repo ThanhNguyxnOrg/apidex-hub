@@ -67,7 +67,7 @@
 | **Sahifa** | HTML/URL to PDF and screenshots with Arabic and right-to-left support; free tier | 🔑 ApiKey | ✅ | [Link](https://sahifa.dev/en/docs) |
 | **ScreenshotOne.com** | Convert URLs, HTML, or Markdown into PNG, JPEG, WebP, or PDF with a simple screenshot API. | 🔑 ApiKey | ✅ | [Link](https://screenshotone.com) |
 | **Secured Signing Digital Signature** | The Secured Signing REST-based, JSON API allows you to add PKI based digital signing capabilities to your software | 🔒 OAuth | ✅ | [Link](https://securedsigning.com/developer/api-documentation) |
-| **SelectPdf HTML To PDF** | SelectPdf HTML To PDF Online REST API is a professional solution that lets you create PDF from web pages and raw HTML | No | ✅ | [Link](https://selectpdf.com/html-to-pdf-api) |
+| **SelectPdf HTML To PDF** | Convert HTML, URLs, and web pages to PDF through the SelectPdf REST API. | 🔑 ApiKey | ✅ | [Link](https://selectpdf.com/api/selectpdf-swagger.json) |
 | **Shortcut** | Manage stories, epics, iterations and objectives in a Shortcut workspace | 🔑 ApiKey | ✅ | [Link](https://developer.shortcut.com) |
 | **SimpleNotes** | The Official API from SimpleNotes.cc - "SimpleNotes" lets you create, edit and organize all your notes anytime | No | ✅ | [Link](https://api.simplenotes.cc) |
 | **Smart Image Enhancement API** | Performs image upscaling by adding detail to images through multiple super-re... | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/image_enhancement-api) |
