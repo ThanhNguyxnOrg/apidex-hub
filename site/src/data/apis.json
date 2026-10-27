@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T10:01:04.202995+00:00",
+    "generated_at": "2026-10-27T10:02:22.049639+00:00",
     "source": "README.md",
     "total_apis": 4218,
     "total_categories": 70,
-    "no_auth_count": 1571,
-    "api_key_count": 2386,
+    "no_auth_count": 1570,
+    "api_key_count": 2387,
     "oauth_count": 261,
     "https_count": 4127,
     "https_percentage": 98
@@ -9523,10 +9523,10 @@
         },
         {
           "name": "SelectPdf HTML To PDF",
-          "description": "SelectPdf HTML To PDF Online REST API is a professional solution that lets you create PDF from web pages and raw HTML",
-          "auth": "No",
+          "description": "Convert HTML, URLs, and web pages to PDF through the SelectPdf REST API.",
+          "auth": "apiKey",
           "https": true,
-          "link": "https://selectpdf.com/html-to-pdf-api"
+          "link": "https://selectpdf.com/api/selectpdf-swagger.json"
         },
         {
           "name": "Shortcut",
@@ -29371,7 +29371,7 @@
           "description": "Astronomical and meteorological forecasts (**No Auth**).",
           "auth": "No",
           "https": true,
-          "link": "http://www.7timer.info/doc.php"
+          "link": "https://www.7timer.info/doc.php"
         },
         {
           "name": "AccuWeather",
