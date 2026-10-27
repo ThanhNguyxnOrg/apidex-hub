@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T17:18:28.440099+00:00",
+    "generated_at": "2026-10-27T17:19:49.237722+00:00",
     "source": "README.md",
-    "total_apis": 4246,
+    "total_apis": 4250,
     "total_categories": 70,
     "no_auth_count": 1584,
-    "api_key_count": 2399,
+    "api_key_count": 2403,
     "oauth_count": 263,
-    "https_count": 4155,
+    "https_count": 4159,
     "https_percentage": 98
   },
   "categories": [
@@ -11968,7 +11968,7 @@
       "id": "finance",
       "emoji": "💰",
       "name": "Finance",
-      "api_count": 146,
+      "api_count": 147,
       "apis": [
         {
           "name": "Account and Transaction API",
@@ -12991,6 +12991,13 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://zuora.com"
+        },
+        {
+          "name": "U.S. EIA Open Data API",
+          "description": "U.S. energy statistics for electricity, petroleum, natural gas, coal, renewables and prices, with historical time-series endpoints; free API key required.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.eia.gov/opendata/"
         }
       ]
     },
@@ -15733,7 +15740,7 @@
       "id": "government-civic",
       "emoji": "🏛️",
       "name": "Government & Civic",
-      "api_count": 136,
+      "api_count": 139,
       "apis": [
         {
           "name": "AI Law Tracker",
@@ -16686,6 +16693,27 @@
           "auth": "No",
           "https": true,
           "link": "https://devstack.co.nz/calculators/watercare-icg"
+        },
+        {
+          "name": "EPA Clean Air Markets API",
+          "description": "U.S. power-plant emissions and compliance data, including emissions, allowance and facility information; access uses EPA's API key system.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.epa.gov/data/application-programming-interface-api"
+        },
+        {
+          "name": "EPA Facility Registry Service API",
+          "description": "Search U.S. environmental facilities, identifiers, locations and related EPA program records.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.epa.gov/data/application-programming-interface-api"
+        },
+        {
+          "name": "EPA WATERS API",
+          "description": "U.S. watershed, stream, waterbody and related geospatial data for environmental analysis and mapping.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.epa.gov/data/application-programming-interface-api"
         }
       ]
     },
