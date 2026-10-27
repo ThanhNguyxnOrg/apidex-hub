@@ -13,6 +13,8 @@ scripts/output.txt
 scripts/verify_output.txt
 scripts/verify_queue.json
 scripts/results.json
+scripts/removed_summary.md
+scripts/removed_summary.json
 scripts/__pycache__/
 
 # Site build artifacts
