@@ -148,5 +148,6 @@
 | **Zelothorn** | Plain-English explanations of US public companies with SEC filings and earnings data | No | ✅ | [Link](https://zelothorn.com/developers) |
 | **Zoho Books** | Online accounting software, built for your business. | 🔐 OAuth | ✅ | [Link](https://www.zoho.com/books/api/v3/) |
 | **Zuora Billing** | Official API. | 🔒 OAuth | ✅ | [Link](https://zuora.com) |
+| **U.S. EIA Open Data API** | U.S. energy statistics for electricity, petroleum, natural gas, coal, renewables and prices, with historical time-series endpoints; free API key required. | 🔑 ApiKey | ✅ | [Link](https://www.eia.gov/opendata/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 
