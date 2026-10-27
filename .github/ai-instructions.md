@@ -60,32 +60,3 @@ If you modify scripts or need to test changes locally:
     python scripts/check_links.py
     python scripts/verify_links_playwright.py
     ```
-
-## 5. Non-Negotiable Keep-Existing Policy (Read Before Any Catalog Edit)
-
-**Default action: ADD; do not replace or remove a working API.**
-- A healthy API remains in the catalog even if a free, cheaper, faster, newer, or more popular alternative exists.
-- Do not replace a paid API with a free API, a free API with a paid API, or one provider with another just because they share a topic or use case. Add the alternative as another entry so users can choose.
-- Being paid is not a failure state. Pricing, popularity, overlap, or a preference for free tools is never by itself a reason to delete or rename an existing working listing.
-- Preserve existing API names, official URLs, and entries unless the service is confirmed unavailable, the listing is a true duplicate of the same service/API, the official URL has moved, or the user explicitly requests a change. Prefer updating a stale URL/description in place for the same service over deleting it.
-
-### What “duplicate” actually means
-- **True duplicate / alias:** Two rows identify the same underlying service and same API/capability, with only a hostname alias, redirect, mirror, alternate docs URL, or equivalent endpoint difference. Example: `facebook.com` and `fb.com` for the same Facebook service; keep one canonical listing for that same service/API.
-- **NOT a duplicate:** Different providers offering similar functionality. Keep all healthy options, even if they are in the same category and solve the same problem (for example, multiple LLM inference providers, weather providers, geocoders, email services, search APIs, or stock-data providers).
-- **NOT automatically a duplicate:** Different APIs/products from the same provider. Keep both when the API, product, endpoint purpose, data, or deployment model is meaningfully distinct. Sharing a vendor or hostname alone is insufficient to merge rows.
-- Before merging anything, compare provider identity, service/product name, API purpose and capabilities, canonical documentation, redirects, and the actual endpoint. Never deduplicate by category/topic, hostname alone, or superficial name similarity.
-
-### Required decision process
-1. Audit the existing row first. Verify the actual service and current official docs; do not infer that it is dead from a single link-check result.
-2. If it works, **keep it**. If a comparable free or open-source option exists, add that option as a separate row.
-3. If it is paid but still works, keep it and describe verified pricing/free-tier conditions accurately; add free alternatives separately.
-4. If a documentation URL moved, update the link to the canonical official docs for the same API. Do not treat a moved docs page as a reason to replace the API with a different product.
-5. Remove a row only for a confirmed duplicate of the same service/API or a confirmed unavailable service after checking for a moved/canonical URL. A 404 on docs alone is insufficient. 401/403/429, bot protection, timeouts, SSL errors, and 5xx are inconclusive unless independently corroborated.
-6. If a genuinely dead API must be removed, preserve every other working entry and, where useful, add a free replacement as a new row. Do not remove other providers offering similar functionality.
-
-### Required pre-commit diff audit
-- Compare the change against the base revision. The number of API rows must not go down as a side effect of an “add alternatives” task.
-- For any existing row deleted, renamed, or having its URL changed, document the exact reason and evidence. If it was working and the user did not request that change, restore it before committing.
-- Check for hostname aliases and exact same-service duplicates without flagging legitimate competitors as duplicates.
-- Never claim an API was verified working/dead unless the available evidence supports that claim. Distinguish a permanent free tier, a limited free tier, self-hosted open source, and one-time trial credits.
-- Use provider-official pricing/docs pages to verify free-tier limits. Do not describe trial credits or a paid-only product as permanently free.
