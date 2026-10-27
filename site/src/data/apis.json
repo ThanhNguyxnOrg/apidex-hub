@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T14:46:14.373459+00:00",
+    "generated_at": "2026-10-27T16:12:41.728809+00:00",
     "source": "README.md",
-    "total_apis": 4225,
+    "total_apis": 4243,
     "total_categories": 70,
-    "no_auth_count": 1573,
-    "api_key_count": 2391,
-    "oauth_count": 261,
-    "https_count": 4134,
+    "no_auth_count": 1582,
+    "api_key_count": 2398,
+    "oauth_count": 263,
+    "https_count": 4152,
     "https_percentage": 98
   },
   "categories": [
@@ -15,7 +15,7 @@
       "id": "ai-llm-models",
       "emoji": "🤖",
       "name": "AI Models & LLM Providers",
-      "api_count": 95,
+      "api_count": 99,
       "apis": [
         {
           "name": "1ClickImpact (AI Energy)",
@@ -681,6 +681,34 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://router.xiu.ai"
+        },
+        {
+          "name": "Featherless AI",
+          "description": "Serverless inference API for thousands of open-source language models, compatible with the OpenAI SDK; billing and model availability depend on the selected plan.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://featherless.ai/docs/api-overview-and-common-options"
+        },
+        {
+          "name": "Hyperbolic AI",
+          "description": "OpenAI-compatible inference API for open models, with serverless GPU inference and integrations for common AI frameworks.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.hyperbolic.ai/docs/inference/integrations"
+        },
+        {
+          "name": "Nebius Token Factory",
+          "description": "OpenAI-compatible inference API for open models, with dedicated endpoints, autoscaling, batch inference and production deployment options.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://dev.nebius.com/token-factory"
+        },
+        {
+          "name": "Novita AI",
+          "description": "Serverless inference API for open-source LLMs and dedicated model endpoints, with per-model input/output pricing.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://novita.ai/llm-api"
         }
       ]
     },
@@ -11357,7 +11385,7 @@
       "id": "environment-climate",
       "emoji": "🌿",
       "name": "Environment & Climate",
-      "api_count": 53,
+      "api_count": 55,
       "apis": [
         {
           "name": "1ClickImpact",
@@ -11729,6 +11757,20 @@
           "auth": "No",
           "https": true,
           "link": "https://api.zipcheckup.com/v1"
+        },
+        {
+          "name": "EPA Air Quality System (AQS) API",
+          "description": "Access row-level U.S. ambient air-monitoring samples, monitor/station metadata and related measurements from the EPA Air Quality System; API credentials are required.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://aqs.epa.gov/aqsweb/documents/data_api.html"
+        },
+        {
+          "name": "EPA Envirofacts Data API",
+          "description": "REST API aggregating U.S. EPA environmental datasets covering air, water, waste, toxics, land, facilities and environmental compliance information.",
+          "auth": "No",
+          "https": true,
+          "link": "https://www.epa.gov/enviro/envirofacts-data-service-api"
         }
       ]
     },
@@ -14457,7 +14499,7 @@
       "id": "geocoding",
       "emoji": "🌍",
       "name": "Geocoding",
-      "api_count": 148,
+      "api_count": 154,
       "apis": [
         {
           "name": "Actinia Grass GIS",
@@ -15494,6 +15536,48 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://app.zornade.com/api/"
+        },
+        {
+          "name": "FreeRoute",
+          "description": "Maps API for routing, geocoding, isochrones and tiles; free tier advertises 5,000 requests/day without a credit card.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://freeroute.org/"
+        },
+        {
+          "name": "KUON GEO",
+          "description": "No-key geospatial endpoints for elevation, geoid height, RTK base stations, earthquakes, aurora forecasts and Mars weather.",
+          "auth": "No",
+          "https": true,
+          "link": "https://kuongeo.com/developers"
+        },
+        {
+          "name": "Maptoolkit Vector Tiles",
+          "description": "Hosted OpenStreetMap vector tiles for MapLibre with no API key or sign-up; attribution and community-license terms apply.",
+          "auth": "No",
+          "https": true,
+          "link": "https://www.maptoolkit.org/"
+        },
+        {
+          "name": "PlacesDB",
+          "description": "No-key geographic reference API for millions of places, with fuzzy search, nearby-place lookup, region data, population, elevation and timezone fields.",
+          "auth": "No",
+          "https": true,
+          "link": "https://placesdb.dev/"
+        },
+        {
+          "name": "TrailSplits API",
+          "description": "Outdoor mapping API for trail search, routing and round trips, elevation profiles, GPX analysis, route weather and related outdoor places.",
+          "auth": "No",
+          "https": true,
+          "link": "https://trailsplits.com/api"
+        },
+        {
+          "name": "Waymorphic Map Tiles",
+          "description": "Public OpenStreetMap vector tiles and MapLibre styles served from a global CDN without an API key or account.",
+          "auth": "No",
+          "https": true,
+          "link": "https://waymorphic.com/"
         }
       ]
     },
@@ -22298,7 +22382,7 @@
       "id": "public-data",
       "emoji": "📊",
       "name": "Public Data & Datasets",
-      "api_count": 125,
+      "api_count": 126,
       "apis": [
         {
           "name": "221",
@@ -23174,6 +23258,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2018-06-17-preview/workbookOperations_API.json"
+        },
+        {
+          "name": "FAOSTAT API",
+          "description": "FAO's food and agriculture statistics API for country/region, commodity, production, trade, prices and other datasets; uses an authenticated token flow.",
+          "auth": "OAuth",
+          "https": true,
+          "link": "https://www.fao.org/faostat/en/docs/redoc-static.html"
         }
       ]
     },
@@ -23512,7 +23603,7 @@
       "id": "science",
       "emoji": "🔬",
       "name": "Science & Space",
-      "api_count": 57,
+      "api_count": 59,
       "apis": [
         {
           "name": "arcsecond.io",
@@ -23912,6 +24003,20 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://developers.zenodo.org/"
+        },
+        {
+          "name": "Copernicus Data Space Ecosystem APIs",
+          "description": "Search and access Copernicus Earth-observation products through catalog, OData, STAC, Sentinel Hub, openEO and related data-access interfaces; some services require OAuth.",
+          "auth": "OAuth",
+          "https": true,
+          "link": "https://documentation.dataspace.copernicus.eu/APIs.html"
+        },
+        {
+          "name": "UK Environment Agency Hydrology API",
+          "description": "Open time-series data for river flows and levels, groundwater, rainfall and water quality across thousands of monitoring stations in England.",
+          "auth": "No",
+          "https": true,
+          "link": "https://environment.data.gov.uk/hydrology/doc/reference"
         }
       ]
     },
@@ -26836,7 +26941,7 @@
       "id": "tracking-logistics",
       "emoji": "📦",
       "name": "Tracking & Logistics",
-      "api_count": 36,
+      "api_count": 39,
       "apis": [
         {
           "name": "17TRACK",
@@ -27089,6 +27194,27 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://whereparcel.com/docs"
+        },
+        {
+          "name": "CetaHAV Marine Data API",
+          "description": "Free, key-free marine data in JSON/GeoJSON, including Baltic AIS vessel positions, oceanographic stations, wind farms, fishing effort and protected areas; retain source attribution.",
+          "auth": "No",
+          "https": true,
+          "link": "https://cetahav.org/api-docs"
+        },
+        {
+          "name": "Open Waters AIS API",
+          "description": "Live vessel traffic over WebSocket, plus GeoJSON snapshots of current positions and an AISStream-compatible endpoint; check the docs for access details.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://openwaters.io/api/"
+        },
+        {
+          "name": "Open Waters Tides & Currents API",
+          "description": "Marine API for tide predictions across thousands of stations and tidal-current predictions, including slack water and flood/ebb speeds.",
+          "auth": "No",
+          "https": true,
+          "link": "https://openwaters.io/api/"
         }
       ]
     },
