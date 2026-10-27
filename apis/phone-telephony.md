@@ -8,7 +8,6 @@
 | **Aircall** | Cloud call center API: calls, contacts, tags, users and webhooks. | 🔑 ApiKey | ✅ | [Link](https://developer.aircall.io/) |
 | **Amazon CloudDirectory** | Amazon Cloud Directory Amazon Cloud Directory is a component of the AWS Directory Service that simplifies the development and management of cloud-scale. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/clouddirectory) |
 | **Amazon WorkMail** | WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients. You can access your email, contacts, and. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/workmail) |
-| **Apifonica** | Voice call automation API. | 🔑 ApiKey | ✅ | [Link](https://www.apifonica.com/docs/voice-api/) |
 | **Bandwidth** | Voice, messaging, and phone number APIs. | 🔑 ApiKey | ✅ | [Link](https://dev.bandwidth.com/docs/) |
 | **BulkSMS JSON** | Official API. | 🔑 ApiKey | ✅ | [Link](https://bulksms.com) |
 | **Call Control** | API for blocking phone calls with Call Control. Data is from crowdsourced community blacklist from 12+ million users | 🔑 ApiKey | ✅ | [Link](https://www.callcontrol.com/documentation) |

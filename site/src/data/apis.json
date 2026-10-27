@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T10:00:37.918639+00:00",
+    "generated_at": "2026-10-27T10:01:01.897292+00:00",
     "source": "README.md",
-    "total_apis": 4219,
+    "total_apis": 4218,
     "total_categories": 70,
     "no_auth_count": 1571,
-    "api_key_count": 2387,
+    "api_key_count": 2386,
     "oauth_count": 261,
-    "https_count": 4128,
+    "https_count": 4127,
     "https_percentage": 98
   },
   "categories": [
@@ -21441,7 +21441,7 @@
       "id": "phone-telephony",
       "emoji": "📱",
       "name": "Phone & Telephony",
-      "api_count": 53,
+      "api_count": 52,
       "apis": [
         {
           "name": "46elks",
@@ -21484,13 +21484,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.aws.amazon.com/workmail"
-        },
-        {
-          "name": "Apifonica",
-          "description": "Voice call automation API.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.apifonica.com/docs/voice-api/"
         },
         {
           "name": "Bandwidth",
