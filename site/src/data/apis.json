@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T14:27:11.787046+00:00",
+    "generated_at": "2026-10-27T14:32:16.250854+00:00",
     "source": "README.md",
-    "total_apis": 4224,
+    "total_apis": 4225,
     "total_categories": 70,
     "no_auth_count": 1573,
-    "api_key_count": 2390,
+    "api_key_count": 2391,
     "oauth_count": 261,
-    "https_count": 4133,
+    "https_count": 4134,
     "https_percentage": 98
   },
   "categories": [
@@ -246,7 +246,7 @@
           "description": "Chat, embedding, and reranking APIs; free evaluation keys include up to 1,000 API calls/month, with limited non-production usage.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://docs.cohere.com/v2/docs/rate-limits"
+          "link": "https://docs.cohere.com/"
         },
         {
           "name": "Contact Center AI Platform API",
@@ -379,14 +379,14 @@
           "description": "Multimodal LLM API with a free tier for selected models; quotas vary by model/account, and free-tier data may be used to improve Google products.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://ai.google.dev/gemini-api/docs/pricing"
+          "link": "https://ai.google.dev/"
         },
         {
           "name": "Groq",
           "description": "Fast inference for open LLMs with a rate-limited developer tier; request and token limits vary by model.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://console.groq.com/docs/rate-limits"
+          "link": "https://groq.com/"
         },
         {
           "name": "HarnessRouter",
@@ -10473,7 +10473,7 @@
           "description": "Transactional email and marketing API with a no-card free plan: up to 6,000 emails/month (200/day) and 1,000 contacts.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://www.mailjet.com/pricing/"
+          "link": "https://www.mailjet.com/"
         },
         {
           "name": "MailRambo",
@@ -11989,7 +11989,7 @@
           "description": "Realtime and historical market data; free API keys cover most datasets at up to 25 requests/day, with realtime and 15-minute delayed US stock data premium-only.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://www.alphavantage.co/support/api-key/"
+          "link": "https://www.alphavantage.co/"
         },
         {
           "name": "AlphaAI",
@@ -14709,7 +14709,7 @@
           "description": "Geocoding, reverse geocoding, address autocomplete, places and routing; permanent free plan includes 3,000 credits/day with required attribution.",
           "auth": "apiKey",
           "https": true,
-          "link": "https://www.geoapify.com/pricing/"
+          "link": "https://www.geoapify.com/api/geocoding-api/"
         },
         {
           "name": "Geocod.io",
@@ -22298,7 +22298,7 @@
       "id": "public-data",
       "emoji": "📊",
       "name": "Public Data & Datasets",
-      "api_count": 124,
+      "api_count": 125,
       "apis": [
         {
           "name": "221",
@@ -22847,11 +22847,18 @@
           "link": "https://www.opensanctions.org/docs/api/"
         },
         {
-          "name": "OpenSERP",
-          "description": "Multi-engine SERP/search and page-extraction API; free MIT-licensed self-hosted version has no per-search billing, with an optional managed Cloud service.",
+          "name": "OpenSERP (Self-hosted)",
+          "description": "Free, MIT-licensed self-hosted multi-engine search and page-extraction API; you run the infrastructure and avoid managed per-search fees.",
           "auth": "No",
           "https": true,
           "link": "https://github.com/karust/openserp"
+        },
+        {
+          "name": "OpenSERP Cloud",
+          "description": "Managed SERP API for Google, Bing, Yandex and more. Get live browser-rendered search results through a single API with data extraction.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://openserp.org"
         },
         {
           "name": "Pan Africa Data",
