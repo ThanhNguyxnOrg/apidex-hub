@@ -2,9 +2,9 @@
   "count": 1,
   "removed": [
     {
-      "name": "AllEvents",
-      "url": "https://allevents.developer.azure-api.net/",
-      "file": "events.md"
+      "name": "Ganjoor",
+      "url": "https://api.ganjoor.net",
+      "file": "books.md"
     }
   ]
 }

@@ -8,7 +8,6 @@
 | **Bible API** | Free Bible text in multiple versions (**No Auth**). | No | ✅ | [Link](https://bible-api.com/) |
 | **Bookcover** | Book cover images by ISBN (**No Auth**). | No | ✅ | [Link](http://openlibrary.org/dev/docs/api/covers) |
 | **BookRank** | Book rankings from open reader ratings: books, series, reading orders and authors | No | ✅ | [Link](https://openbookrank.com/en/open-data) |
-| **Ganjoor** | Classic Persian poetry works including access to related manuscripts, recitat... | 🔐 OAuth | ✅ | [Link](https://api.ganjoor.net) |
 | **Goodreads** | Book reviews and ratings metadata. | 🔑 ApiKey | ✅ | [Link](https://www.goodreads.com/api) |
 | **Google Books** | Search and preview books. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/books/) |
 | **Greenlit Books** | Catalog of practical AI books with search, series, glossary and a claim ledger | No | ✅ | [Link](https://greenlitbooks.com/developers) |
