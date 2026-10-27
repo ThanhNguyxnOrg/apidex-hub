@@ -155,6 +155,8 @@ def main():
         corner_alpha = [check.getpixel(point)[3] for point in
                         ((0, 0), (check.width - 1, 0),
                          (0, check.height - 1), (check.width - 1, check.height - 1))]
+        if any(alpha > 8 for alpha in corner_alpha):
+            raise RuntimeError(f"Favicon corner matte remains: alpha={corner_alpha}")
         print(
             f"Created transparent PNG {check.size}; corner alpha={corner_alpha}; "
             f"source matte={background}; processed pixels={processed_pixels}"
