@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T10:09:01.167462+00:00",
+    "generated_at": "2026-10-27T14:06:12.408569+00:00",
     "source": "README.md",
     "total_apis": 4218,
     "total_categories": 70,
@@ -19723,13 +19723,6 @@
           "link": "https://hackertarget.com/api/"
         },
         {
-          "name": "host-t.com",
-          "description": "Basic DNS query via HTTP GET request.",
-          "auth": "No",
-          "https": true,
-          "link": "https://host-t.com"
-        },
-        {
           "name": "IP (LabStack)",
           "description": "Lookup country, region, city, time-zone, currency and language of an IP",
           "auth": "apiKey",
@@ -19896,6 +19889,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/privatedns/resource-manager/Microsoft.Network/stable/2018-09-01/privatedns.json"
+        },
+        {
+          "name": "Quad9 DNS over HTTPS",
+          "description": "Free public DNS-over-HTTPS resolver with DNSSEC validation and optional malicious-domain blocking.",
+          "auth": "No",
+          "https": true,
+          "link": "https://docs.quad9.net/services/"
         },
         {
           "name": "RDAP",
