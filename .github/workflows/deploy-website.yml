@@ -7,6 +7,7 @@ on:
       - 'apis/**'
       - 'site/**'
       - 'scripts/parse_readme.py'
+      - 'scripts/fix_favicon.py'
     branches: [main]
   workflow_dispatch:
 
@@ -35,6 +36,12 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install Pillow for favicon processing
+        run: python -m pip install --disable-pip-version-check Pillow
+
+      - name: Normalize favicon transparency and ICO format
+        run: python scripts/fix_favicon.py
+
       - name: Parse APIs → apis.json
         run: python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
 
@@ -47,6 +54,15 @@ jobs:
           git add README.md site/index.html site/src/data/apis.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(stats): auto-update API counts [skip ci]" && git push origin main)
 
+      - name: Commit and Push Favicon Updates
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          git add site/public/favicon.png site/public/favicon.ico
+          if ! git diff --cached --quiet; then
+            git commit -m "fix(ui): normalize favicon transparency and ICO format [skip ci]"
+            git push origin main
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
