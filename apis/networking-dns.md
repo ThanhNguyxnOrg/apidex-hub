@@ -28,7 +28,7 @@
 | **Google Workspace Alert Center API** | Manages alerts on issues affecting your domain. Note: The current version of this API (v1beta1) is available to all Google Workspace customers. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/admin-sdk/alertcenter) |
 | **Graphloc** | Free GraphQL IP Geolocation API | No | ✅ | [Link](https://www.graphloc.com) |
 | **HackerTarget** | Security scans: Nmap, DNS recon, whois and traceroute. | No | ✅ | [Link](https://hackertarget.com/api/) |
-| **host-t.com** | Basic DNS query via HTTP GET request. | No | ✅ | [Link](https://host-t.com) |
+
 | **IP (LabStack)** | Lookup country, region, city, time-zone, currency and language of an IP | 🔑 ApiKey | No | [Link](http://labstack.com/ip) |
 | **IP Details API** | Geographic location of an IP address or any domain name along with some other useful information. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/Bluehatcoders/api/ip-details-api) |
 | **IP Finder** | Locate and identify website visitors by IP address. You can get 4000 free request a day with IP Finder API. | 🔑 ApiKey | ✅ | [Link](https://ipfinder.io) |
@@ -53,6 +53,7 @@
 | **nic.at Domainfinder API Documentation** | REST endpoints for the nic.at Domainfinder API Documentation service. | 🔑 ApiKey | ✅ | [Link](https://domainfinder.nic.at/openapi) |
 | **PeeringDB** | Global network/IXP peering data Exchange API. | No | ✅ | [Link](https://peeringdb.com/apidocs/) |
 | **PrivateDnsManagementClient** | The Private DNS Management Client. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/privatedns/resource-manager/Microsoft.Network/stable/2018-09-01/privatedns.json) |
+| **Quad9 DNS over HTTPS** | Free public DNS-over-HTTPS resolver with DNSSEC validation and optional malicious-domain blocking. | No | ✅ | [Link](https://docs.quad9.net/services/) |
 | **RDAP** | Standardized registration data lookups for domains and IPs. | No | ✅ | [Link](https://rdap.org/) |
 | **redirection.io** | API documentation for redirection.io | 🔑 ApiKey | ✅ | [Link](https://redirection.io) |
 | **RIPEstat Data API** | ASN, prefix, BGP and WHOIS routing data. | No | ✅ | [Link](https://stat.ripe.net/docs/data-api/ripestat-data-api) |
