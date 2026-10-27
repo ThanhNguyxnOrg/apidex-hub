@@ -10,7 +10,6 @@
 | **CompressGIF** | Compress GIF files or HTTPS URLs with asynchronous jobs and target-size controls | 🔑 ApiKey | ✅ | [Link](https://compressgif.net/docs) |
 | **Compresso** | Visually lossless image compression for PNG, JPEG and WebP | 🔑 ApiKey | ✅ | [Link](https://compresso.space/developers) |
 | **Dagpi** | Image manipulation and processing. | 🔑 ApiKey | ✅ | [Link](https://dagpi.xyz) |
-| **DiceBear** | Free avatar generation library with multiple styles. | No | ✅ | [Link](https://dicebear.com) |
 | **DynaPictures** | Generate Hundreds of Personalized Images in Minutes. | 🔑 ApiKey | ✅ | [Link](https://dynapictures.com/docs/) |
 | **Flickr** | Photo sharing and management. | 🔑 ApiKey | ✅ | [Link](https://www.flickr.com/services/api/) |
 | **Freepik** | Stock resources(Icons, videos, photos), AI image generation and editing tools | 🔑 ApiKey | ✅ | [Link](https://freepik.com/api) |
