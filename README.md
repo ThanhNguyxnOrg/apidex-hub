@@ -192,7 +192,7 @@ print(response.json()['fact'])
 
 ## <a name="table-of-contents"></a>📊 API Catalog
 
-We maintain a curated database of **4,218** public endpoints across **70** categories. You can browse the categories directly:
+We maintain a curated database of **4,224** public endpoints across **70** categories. You can browse the categories directly:
 
 | Category | Category | Category |
 | --- | --- | --- |
