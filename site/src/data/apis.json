@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T03:28:08.391209+00:00",
+    "generated_at": "2026-10-27T09:58:52.543524+00:00",
     "source": "README.md",
-    "total_apis": 4225,
+    "total_apis": 4220,
     "total_categories": 70,
-    "no_auth_count": 1573,
-    "api_key_count": 2390,
+    "no_auth_count": 1571,
+    "api_key_count": 2387,
     "oauth_count": 262,
-    "https_count": 4134,
+    "https_count": 4129,
     "https_percentage": 98
   },
   "categories": [
@@ -15,7 +15,7 @@
       "id": "ai-llm-models",
       "emoji": "🤖",
       "name": "AI Models & LLM Providers",
-      "api_count": 95,
+      "api_count": 94,
       "apis": [
         {
           "name": "1ClickImpact (AI Energy)",
@@ -562,13 +562,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://rapidapi.com/bacloud14/api/safe-text"
-        },
-        {
-          "name": "SelectPdf HTML To PDF API",
-          "description": "SelectPdf HTML To PDF Online REST API is a professional solution that lets you create PDF from web pages and raw HTML code in your applications. The API is easy to use and the.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://selectpdf.com/api/selectpdf-swagger.json"
         },
         {
           "name": "Smithery",
@@ -21834,7 +21827,7 @@
       "id": "photography",
       "emoji": "📷",
       "name": "Photography",
-      "api_count": 47,
+      "api_count": 46,
       "apis": [
         {
           "name": "APITemplate.io",
@@ -21891,13 +21884,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://dagpi.xyz"
-        },
-        {
-          "name": "DiceBear",
-          "description": "Free avatar generation library with multiple styles.",
-          "auth": "No",
-          "https": true,
-          "link": "https://dicebear.com"
         },
         {
           "name": "DynaPictures",
@@ -28866,7 +28852,7 @@
       "id": "video",
       "emoji": "📹",
       "name": "Video",
-      "api_count": 75,
+      "api_count": 74,
       "apis": [
         {
           "name": "Amazon Kinesis Firehose",
@@ -29112,13 +29098,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.mux.com/"
-        },
-        {
-          "name": "Open Movie Database",
-          "description": "Movie information.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.omdbapi.com"
         },
         {
           "name": "OpenSubtitles",
@@ -29399,15 +29378,8 @@
       "id": "weather",
       "emoji": "🌤️",
       "name": "Weather",
-      "api_count": 66,
+      "api_count": 64,
       "apis": [
-        {
-          "name": "7Timer!",
-          "description": "Weather, especially for Astroweather.",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.7timer.info/doc.php"
-        },
         {
           "name": "7Timer! Weather",
           "description": "Astronomical and meteorological forecasts (**No Auth**).",
@@ -29638,13 +29610,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://portail-api.meteofrance.fr/"
-        },
-        {
-          "name": "Meteosource",
-          "description": "Global weather forecasts based on machine learning and historical data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.meteosource.com"
         },
         {
           "name": "MSC GeoMet",
