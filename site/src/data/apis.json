@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T16:12:41.728809+00:00",
+    "generated_at": "2026-10-27T17:18:28.440099+00:00",
     "source": "README.md",
-    "total_apis": 4243,
+    "total_apis": 4246,
     "total_categories": 70,
-    "no_auth_count": 1582,
-    "api_key_count": 2398,
+    "no_auth_count": 1584,
+    "api_key_count": 2399,
     "oauth_count": 263,
-    "https_count": 4152,
+    "https_count": 4155,
     "https_percentage": 98
   },
   "categories": [
@@ -22382,7 +22382,7 @@
       "id": "public-data",
       "emoji": "📊",
       "name": "Public Data & Datasets",
-      "api_count": 126,
+      "api_count": 129,
       "apis": [
         {
           "name": "221",
@@ -23265,6 +23265,27 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://www.fao.org/faostat/en/docs/redoc-static.html"
+        },
+        {
+          "name": "Data.gov Catalog API",
+          "description": "Search and retrieve metadata for datasets published by U.S. federal, state, local and tribal government agencies. Requires a free api.data.gov key; a low-limit DEMO_KEY is available for exploration.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://resources.data.gov/catalog-api/"
+        },
+        {
+          "name": "Singapore data.gov.sg API",
+          "description": "Free APIs and datasets from Singapore government agencies, including public services, environment, transport, housing and health; supports real-time and historical data.",
+          "auth": "No",
+          "https": true,
+          "link": "https://developers.data.gov.sg/"
+        },
+        {
+          "name": "NOAA NCEI Access Data Service",
+          "description": "Programmatic access to NOAA environmental and climate datasets with JSON, CSV, PDF or NetCDF output depending on the dataset.",
+          "auth": "No",
+          "https": true,
+          "link": "https://www.ncei.noaa.gov/access/search/documentation/"
         }
       ]
     },
