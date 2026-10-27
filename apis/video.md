@@ -37,7 +37,6 @@
 | **Movie Quote** | Random Movie and Series Quotes | No | ✅ | [Link](https://github.com/F4R4N/movie-quote/) |
 | **Movie Reviews API** | With the Movie Reviews API, you can search New York Times movie reviews by keyword and get lists of NYT Critics' Picks. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/nytimes/public_api_specs/master/movie_reviews/movie_reviews_v2.json) |
 | **Mux** | Video infrastructure and analytics. | 🔑 ApiKey | ✅ | [Link](https://docs.mux.com/) |
-| **Open Movie Database** | Movie information. | 🔑 ApiKey | ✅ | [Link](https://www.omdbapi.com) |
 | **OpenSubtitles** | Search and download subtitles for movies and TV shows | 🔑 ApiKey | ✅ | [Link](https://www.opensubtitles.com/) |
 | **Openverse** | Search openly-licensed media. | No | ✅ | [Link](https://api.openverse.org/v1/) |
 | **PeerTube** | Federated video platform API. | No | ✅ | [Link](https://docs.joinpeertube.org/api-rest-reference.html) |
