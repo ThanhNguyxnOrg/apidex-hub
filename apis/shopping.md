@@ -44,7 +44,6 @@
 | **Descripio Amazon Reviews** | Amazon product reviews for 12 marketplaces | 🔑 ApiKey | ✅ | [Link](https://docs.descripio.com) |
 | **Digi-Key** | Retrieve price and inventory of electronic components as well as place orders. | 🔐 OAuth | ✅ | [Link](https://www.digikey.com/en/resources/api-solutions) |
 | **DropX** | dropX.io API provides programmatic access to the e-commerce intelligence data | 🔑 ApiKey | ✅ | [Link](https://dropx.io) |
-| **E-Commerce APIs** | All around e-commerce APIs. Generate QR codes, product categories and thumbnails, barcodes and many more. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/catalog/commerce-quick-tools) |
 | **eBay** | Marketplace listing, inventory and order management. | 🔞 OAuth | ✅ | [Link](https://developer.ebay.com/) |
 | **Estated** | US property data: deeds, taxes and valuation history. | 🔑 ApiKey | ✅ | [Link](https://estated.com/developers) |
 | **Etsy** | E-commerce. | 🔐 OAuth | ✅ | [Link](https://www.etsy.com/developers/documentation/getting_started/api_basics) |

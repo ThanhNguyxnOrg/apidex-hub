@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T17:19:49.237722+00:00",
+    "generated_at": "2026-10-29T04:04:50.776724+00:00",
     "source": "README.md",
-    "total_apis": 4250,
+    "total_apis": 4249,
     "total_categories": 70,
     "no_auth_count": 1584,
-    "api_key_count": 2403,
+    "api_key_count": 2402,
     "oauth_count": 263,
-    "https_count": 4159,
+    "https_count": 4158,
     "https_percentage": 98
   },
   "categories": [
@@ -24802,7 +24802,7 @@
       "id": "shopping",
       "emoji": "🛍️",
       "name": "Shopping",
-      "api_count": 106,
+      "api_count": 105,
       "apis": [
         {
           "name": "AdSense Management API",
@@ -25097,13 +25097,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://dropx.io"
-        },
-        {
-          "name": "E-Commerce APIs",
-          "description": "All around e-commerce APIs. Generate QR codes, product categories and thumbnails, barcodes and many more.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apyhub.com/catalog/commerce-quick-tools"
         },
         {
           "name": "eBay",
