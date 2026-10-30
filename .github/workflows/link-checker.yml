@@ -194,6 +194,7 @@ jobs:
           name: link-check-report
           path: |
             scripts/link_check_report.txt
+            scripts/pr_link_check_report.txt
             scripts/broken_urls.txt
             scripts/error_urls.txt
             scripts/warning_urls.txt
