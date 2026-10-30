@@ -70,7 +70,6 @@
 | **MostExpensiveWatches** | Documented luxury watch auction records, live listings, valuations and price indices | No | ✅ | [Link](https://mostexpensivewatches.net/api) |
 | **Nasdaq Data Link** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://data.nasdaq.com/tools/api) |
 | **Nobel Prize** | Open data about nobel prizes and events. | No | ✅ | [Link](https://www.nobelprize.org/about/developer-zone-2/) |
-| **Noctua** | REST API used to access NoctuaSky features. | No | ✅ | [Link](https://api.noctuasky.com/api/v1/swaggerdoc) |
 | **Onyx Bazaar** | Free public leaderboard of x402 paid HTTP services indexed from Coinbase CDP discovery API | No | ✅ | [Link](https://onyx-actions.onrender.com/bazaar) |
 | **Open Data API** | Latest Swagger specification for OpenData. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/OpenBankingUK/opendata-api-spec-compiled/master/opendata-swagger.json) |
 | **Open Data Minneapolis** | Spatial (GIS) and non-spatial city data for Minneapolis. | No | ✅ | [Link](https://opendata.minneapolismn.gov/) |

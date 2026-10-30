@@ -26,7 +26,6 @@
 | **Shikimori** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://shikimori.one/api/doc) |
 | **Studio Ghibli** | Resources from Studio Ghibli films, characters, species, and locations. | No | ✅ | [Link](https://ghibliapi.vercel.app/) |
 | **Trace Moe** | Anime Scene Search Engine. | No | ✅ | [Link](https://soruly.github.io/trace.moe-api/#/) |
-| **Waifu.im** | API for serving anime images (versatile query options). | No | ✅ | [Link](https://waifu.im/) |
 | **Waifu.pics** | Image sharing platform for anime images. | No | ✅ | [Link](https://waifu.pics/docs) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
 

@@ -126,7 +126,6 @@
 | **Mempool.space** | Bitcoin mempool, fees, blocks and Lightning network data. | No | ✅ | [Link](https://mempool.space/docs/api) |
 | **MercadoBitcoin** | Brazilian Cryptocurrency Information. | No | ✅ | [Link](https://api.mercadobitcoin.net/api/v4/docs) |
 | **MercadoPago** | Mercado Pago API reference - all the information you need to develop your integrations. | 🔑 ApiKey | ✅ | [Link](https://www.mercadopago.com.br/developers/es/reference) |
-| **Messari** | Crypto asset profiles, metrics and market data. | 🔑 ApiKey | ✅ | [Link](https://messari.io/api/docs) |
 | **Metal Sentinel** | Real-time precious and base metals prices. One API. Zero cost. | 🔑 ApiKey | ✅ | [Link](https://metal-sentinel.com) |
 | **MetalpriceAPI** | Real-time and historical exchange rates and currency conversion API. | 🔑 ApiKey | ✅ | [Link](https://metalpriceapi.com) |
 | **Mexc** | Cryptocurrency info, place order | 🔑 ApiKey | ✅ | [Link](https://www.mexc.com/api-docs) |

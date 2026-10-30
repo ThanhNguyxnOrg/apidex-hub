@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-29T04:04:50.776724+00:00",
+    "generated_at": "2026-10-30T06:48:47.864613+00:00",
     "source": "README.md",
-    "total_apis": 4249,
+    "total_apis": 4246,
     "total_categories": 70,
-    "no_auth_count": 1584,
-    "api_key_count": 2402,
+    "no_auth_count": 1582,
+    "api_key_count": 2401,
     "oauth_count": 263,
-    "https_count": 4158,
+    "https_count": 4155,
     "https_percentage": 98
   },
   "categories": [
@@ -920,7 +920,7 @@
       "id": "anime",
       "emoji": "🌸",
       "name": "Anime",
-      "api_count": 26,
+      "api_count": 25,
       "apis": [
         {
           "name": "AniAPI",
@@ -1089,13 +1089,6 @@
           "auth": "No",
           "https": true,
           "link": "https://soruly.github.io/trace.moe-api/#/"
-        },
-        {
-          "name": "Waifu.im",
-          "description": "API for serving anime images (versatile query options).",
-          "auth": "No",
-          "https": true,
-          "link": "https://waifu.im/"
         },
         {
           "name": "Waifu.pics",
@@ -4339,7 +4332,7 @@
       "id": "cryptocurrency",
       "emoji": "🪙",
       "name": "Cryptocurrency",
-      "api_count": 176,
+      "api_count": 175,
       "apis": [
         {
           "name": "0x",
@@ -5208,13 +5201,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.mercadopago.com.br/developers/es/reference"
-        },
-        {
-          "name": "Messari",
-          "description": "Crypto asset profiles, metrics and market data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://messari.io/api/docs"
         },
         {
           "name": "Metal Sentinel",
@@ -22410,7 +22396,7 @@
       "id": "public-data",
       "emoji": "📊",
       "name": "Public Data & Datasets",
-      "api_count": 129,
+      "api_count": 128,
       "apis": [
         {
           "name": "221",
@@ -22887,13 +22873,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.nobelprize.org/about/developer-zone-2/"
-        },
-        {
-          "name": "Noctua",
-          "description": "REST API used to access NoctuaSky features.",
-          "auth": "No",
-          "https": true,
-          "link": "https://api.noctuasky.com/api/v1/swaggerdoc"
         },
         {
           "name": "Onyx Bazaar",
