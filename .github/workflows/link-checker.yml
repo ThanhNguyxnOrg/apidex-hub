@@ -1,6 +1,6 @@
 name: Link Checker
 
-# Prevent overlapping scheduled/push runs from racing while committing API removals.
+# Prevent overlapping scheduled and push checks from racing while updating the health dashboard.
 concurrency:
   group: link-checker-${{ github.ref }}
   cancel-in-progress: false
@@ -12,7 +12,7 @@ on:
       - main
     paths:
       - "apis/**"
-      - "scripts/check_links.py"
+      - "scripts/**"
       - ".github/workflows/link-checker.yml"
 
   # Run on pull requests
@@ -28,7 +28,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   issues: write
   pull-requests: write
   discussions: write
@@ -65,6 +65,9 @@ jobs:
 
       - name: Check only new links (Pull Request)
         if: github.event_name == 'pull_request'
+        env:
+          APIDEX_DIFF_BASE: ${{ github.event.pull_request.base.sha }}
+          APIDEX_DIFF_HEAD: ${{ github.sha }}
         run: |
           cd scripts
           python check_pr_links.py
@@ -216,7 +219,7 @@ jobs:
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: `## 🔗 Link Check Results\n\n\`\`\`\n${summary}\n\`\`\`\n\n💡 **Note:** 403/429 status codes indicate bot protection and are considered valid.`
+                body: `## 🔗 Link Check Results\n\n\`\`\`\n${summary}\n\`\`\`\n\n💡 **Note:** 401/403/418/429, server errors, timeouts and SSL failures are inconclusive—not proof that an API is dead.`
               });
             } catch (error) {
               console.log('Error commenting on PR:', error);
@@ -254,7 +257,7 @@ jobs:
               '',
               brokenTable,
               '',
-              '🤖 *The automated remediation bot will now safely remove these entries from the repository and close this issue.*'
+              '⚠️ This is a review candidate, not proof that the API provider is retired. Documentation URLs may move, require authentication, or block automated clients. Verify the official provider/service before editing the catalog. No entries are removed automatically.'
             ].join('\n');
 
             const issue = await github.rest.issues.create({
@@ -269,90 +272,7 @@ jobs:
             core.setOutput('issue_number', issue.data.number);
             core.setOutput('issue_url', issue.data.html_url);
 
-      # 2. Safely remove dead links and sync catalog
-      - name: Auto-Remediate Dead Links
-        if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true'
-        id: auto-remediate
-        run: |
-          git config --global user.name "ThanhNguyxnAgent[bot]"
-          git config --global user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
-
-          # Re-apply the incident against the latest main on every attempt.
-          # This makes retries idempotent and avoids broken rebase/merge conflict recovery.
-          pushed=false
-          for attempt in 1 2 3; do
-            echo "=== Remediation attempt $attempt/3 against latest main ==="
-            git fetch origin main
-            git reset --hard origin/main
-
-            python scripts/remove_dead_links.py --report scripts/broken_urls.txt --max-delete 500
-            REMOVED_COUNT=$(python -c "import json; print(json.load(open('scripts/removed_summary.json', encoding='utf-8')).get('count', 0))")
-
-            if [ "$REMOVED_COUNT" -eq 0 ]; then
-              echo "All URLs in this incident were already handled; no matching API entries remain."
-              pushed=true
-              break
-            fi
-
-            python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
-            git add apis/ README.md site/index.html site/src/data/apis.json
-
-            if git diff --staged --quiet; then
-              echo "Rows were reported removed but no catalog diff was staged; leaving issue open for review."
-              break
-            fi
-
-            ISSUE_NUM="${{ steps.create-incident.outputs.issue_number }}"
-            git commit -m "fix(apis): auto-remove confirmed dead links (fixes #${ISSUE_NUM}) [skip ci]"
-
-            if git push origin main; then
-              pushed=true
-              echo "Push succeeded (attempt $attempt)."
-              break
-            fi
-
-            echo "Push rejected by concurrent main update; retrying from fresh origin/main..."
-          done
-          echo "pushed=$pushed" >> $GITHUB_OUTPUT
-
-      # 3. Close the Incident Issue automatically (no user mentions)
-      - name: Close Incident Issue
-        if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true' && steps.auto-remediate.outputs.pushed == 'true'
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ steps.app-token.outputs.token }}
-          script: |
-            const issueNumber = parseInt('${{ steps.create-incident.outputs.issue_number }}');
-            if (!issueNumber) return;
-
-            let summaryText = 'Dead links were successfully removed from the API catalog.';
-            try {
-              const fs = require('fs');
-              if (fs.existsSync('scripts/removed_summary.md')) {
-                summaryText = fs.readFileSync('scripts/removed_summary.md', 'utf8');
-              }
-            } catch (e) {
-              console.log('Could not read removed_summary.md', e);
-            }
-
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issueNumber,
-              body: `### ✅ Auto-Remediation Completed\n\nThe automated link cleaner has safely removed the dead links and refreshed all counts and site data.\n\n${summaryText}\n\n*Incident resolved automatically.*`
-            });
-
-            await github.rest.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issueNumber,
-              state: 'closed',
-              state_reason: 'completed'
-            });
-
-            console.log(`Successfully closed Incident Issue #${issueNumber}`);
-
-      # 4. Update the Live Health Dashboard in GitHub Discussions (Announcements)
+      # 2. Update the Live Health Dashboard in GitHub Discussions (Announcements)
       - name: Update GitHub Discussion Live Dashboard
         if: github.event_name != 'pull_request' && always()
         uses: actions/github-script@v7
@@ -361,8 +281,6 @@ jobs:
           script: |
             const today = new Date().toISOString().split('T')[0];
             const hasBroken = '${{ steps.check.outputs.has_broken }}' === 'true';
-            const wasRemediated = '${{ steps.auto-remediate.outputs.pushed }}' === 'true';
-            const incidentIssueNum = '${{ steps.create-incident.outputs.issue_number }}';
             const brokenCount = parseInt('${{ steps.check.outputs.broken_count }}') || 0;
             const okCount = parseInt('${{ steps.check.outputs.ok_count }}') || 0;
             const protectedCount = parseInt('${{ steps.check.outputs.protected_count }}') || 0;
@@ -378,7 +296,7 @@ jobs:
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
 
             let dynamicTitle = `🟢 Link Health Status: All links healthy! 🎉 (${today})`;
-            if (hasBroken && !wasRemediated) {
+            if (hasBroken) {
               dynamicTitle = `🔴 Link Health Status: ${brokenCount} broken link${brokenCount > 1 ? 's' : ''} detected (${today})`;
             }
 
@@ -392,11 +310,7 @@ jobs:
                 const reason = parts.slice(1).join(' | ') || '404';
                 brokenTable += `| ${i + 1} | ${url} | ${reason} |\n`;
               });
-              if (wasRemediated) {
-                brokenSection = `### ✅ No Broken Links\n\nAll API links are responding correctly. 🎉\n\n<details>\n<summary>🧹 ${brokenCount} dead link(s) were automatically cleaned up in Incident #${incidentIssueNum} (click to expand)</summary>\n\n${brokenTable}\n</details>\n`;
-              } else {
-                brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Review and update/remove these dead links.\n`;
-              }
+              brokenSection = `### 💀 Link Issues Requiring Review (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Verify the provider's current official documentation and whether the service still exists. Do not remove a catalog entry solely because its documentation URL fails.\n`;
             } else {
               brokenSection = `### ✅ No Broken Links\n\nAll API links are responding correctly. Nothing to fix! 🎉\n`;
             }
@@ -432,7 +346,7 @@ jobs:
               unknownLines.forEach((line, i) => {
                 const parts = line.split(' | ');
                 const note = parts.slice(2).join(' | ');
-                warningTable += `| ${i + 1} | ${parts[0] || ''} | ${parts[1] || ''} | ${note || ''} |\n`;
+                unknownTable += `| ${i + 1} | ${parts[0] || ''} | ${parts[1] || ''} | ${note || ''} |\n`;
               });
               unknownSection = `\n<details>\n<summary>❓ Unknown (${unknownCount}) — click to expand</summary>\n\n${unknownTable}\n</details>\n`;
             }
@@ -449,8 +363,8 @@ jobs:
               protectedSection = `\n<details>\n<summary>🛡️ Protected (${protectedCount}) — click to expand</summary>\n\n${protectedTable}\n</details>\n`;
             }
 
-            const statusIcon = (hasBroken && !wasRemediated) ? '🔴' : '🟢';
-            const statusText = (hasBroken && !wasRemediated) ? `${brokenCount} broken link${brokenCount > 1 ? 's' : ''} detected` : 'All links healthy';
+            const statusIcon = hasBroken ? '🔴' : '🟢';
+            const statusText = hasBroken ? `${brokenCount} broken link${brokenCount > 1 ? 's' : ''} detected — review required` : 'All links healthy';
 
             const lines = [
               `## ${statusIcon} Link Health Status: ${statusText}`,
@@ -470,9 +384,9 @@ jobs:
               `| ⚠️ Warning | ${warnCount} | Timeout/DNS/SSL issues (may be temporary) |`,
               `| ❌ Error | ${errCount} | Server errors (5xx) |`,
               `| ❓ Unknown | ${unknownCount} | Unrecognized status codes (needs review) |`,
-              `| 💀 Broken | ${wasRemediated ? 0 : brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
+              `| 💀 Broken | ${brokenCount} | URL returned HTTP 404/410 or DNS failure; API retirement is not confirmed |`,
               '',
-              `**Healthy rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + (wasRemediated ? 0 : brokenCount) + unknownCount} APIs healthy`,
+              `**Healthy rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + brokenCount + unknownCount} APIs healthy`,
               '',
               '---',
               '',
@@ -488,7 +402,7 @@ jobs:
               '',
               '- 🔄 This report is **automatically updated daily** at 00:00 UTC in GitHub Discussions',
               '- 🛡️ APIs with bot protection (403/429) are counted as **healthy**',
-              '- 💀 Confirmed 404/410 and DNS-dead domains are automatically removed via Incident issues',
+              '- 💀 404/410 and DNS failures create review incidents; catalog entries are never auto-deleted',
               '- ❌ Server errors (5xx) may be temporary outages',
               '- ⚠️ Warnings include SSL/timeout issues that are often transient',
               `- 📦 Full report available as [workflow artifact](${runUrl})`,
