@@ -80,31 +80,27 @@ jobs:
         run: |
           cd scripts
           echo "=== STAGE 1: Fast CLI Check ==="
-          python check_links.py > output.txt 2>&1 || true
+          python check_links.py > output.txt 2>&1 || { cat output.txt; echo "::error::Stage 1 link check failed; refusing to publish a healthy report."; exit 1; }
           cat output.txt
           
           echo "=== STAGE 2: Playwright Verification ==="
-          python verify_links_playwright.py > verify_output.txt 2>&1 || true
+          python verify_links_playwright.py > verify_output.txt 2>&1 || { cat verify_output.txt; echo "::error::Stage 2 verification failed; refusing to publish a healthy report."; exit 1; }
           cat verify_output.txt
           
-          # Parse report stats
-          if [ -f link_check_report.txt ]; then
-            BROKEN_COUNT=$(grep -oP "Broken: \K[0-9]+" link_check_report.txt || echo "0")
-            OK_COUNT=$(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo "0")
-            PROTECTED_COUNT=$(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo "0")
-            WARN_COUNT=$(grep -oP "Warnings: \K[0-9]+" link_check_report.txt || echo "0")
-            ERR_COUNT=$(grep -oP "Errors: \K[0-9]+" link_check_report.txt || echo "0")
-            UNKNOWN_COUNT=$(grep -oP "Unknown: \K[0-9]+" link_check_report.txt || echo "0")
-            TOTAL=$(($(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo 0) + $(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo 0)))
-          else
-            BROKEN_COUNT=0
-            OK_COUNT=0
-            PROTECTED_COUNT=0
-            WARN_COUNT=0
-            ERR_COUNT=0
-            UNKNOWN_COUNT=0
-            TOTAL=0
+          # Do not publish an all-zero dashboard when the scan did not finish.
+          if [ ! -s link_check_report.txt ]; then
+            echo "::error::Link checker did not produce link_check_report.txt."
+            exit 1
           fi
+
+          # Parse report stats
+          BROKEN_COUNT=$(grep -oP "Broken: \K[0-9]+" link_check_report.txt || echo "0")
+          OK_COUNT=$(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo "0")
+          PROTECTED_COUNT=$(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo "0")
+          WARN_COUNT=$(grep -oP "Warnings: \K[0-9]+" link_check_report.txt || echo "0")
+          ERR_COUNT=$(grep -oP "Errors: \K[0-9]+" link_check_report.txt || echo "0")
+          UNKNOWN_COUNT=$(grep -oP "Unknown: \K[0-9]+" link_check_report.txt || echo "0")
+          TOTAL=$(($(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo 0) + $(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo 0)))
 
           echo "broken_count=$BROKEN_COUNT" >> $GITHUB_OUTPUT
           echo "ok_count=$OK_COUNT" >> $GITHUB_OUTPUT
@@ -185,8 +181,6 @@ jobs:
             echo "$PROTECTED_LIST"
             echo "PROTECTED_EOF"
           } >> $GITHUB_OUTPUT
-        continue-on-error: true
-
       - name: Upload check report
         if: always()
         uses: actions/upload-artifact@v4
@@ -277,7 +271,7 @@ jobs:
 
       # 2. Update the Live Health Dashboard in GitHub Discussions (Announcements)
       - name: Update GitHub Discussion Live Dashboard
-        if: github.event_name != 'pull_request' && always()
+        if: github.event_name != 'pull_request' && steps.check.outcome == 'success'
         uses: actions/github-script@v7
         with:
           github-token: ${{ steps.app-token.outputs.token }}
