@@ -1,325 +1,216 @@
 #!/usr/bin/env python3
-"""
-scripts/check_pr_links.py — Check only NEWLY added or modified links in a Pull Request.
-Bypasses full checking of the entire API catalog to run quickly and efficiently in PR CI pipelines.
-Uses a hybrid checking mechanism: requests (Stage 1) -> Playwright (Stage 2) for WAF bypass.
-Also checks for duplicate API URLs against the existing repository APIs.
+"""Validate only API documentation links introduced or changed by a pull request.
+
+The checker uses explicit base/head commits and repository-root Git commands. Access
+controls and transient failures are reported as inconclusive, never as proof of death.
 """
 
-import subprocess
+import os
 import re
 import sys
-import requests
 from pathlib import Path
+
+import requests
 from playwright.sync_api import sync_playwright
 
-def get_added_urls():
-    # 1. Fetch main branch from origin to ensure origin/main exists in depth-1 clones
-    subprocess.run(["git", "fetch", "origin", "main", "--depth=1"], capture_output=True)
-    
-    # 2. Run git diff against the apis/ directory
-    res = subprocess.run(
-        ["git", "diff", "origin/main...HEAD", "-U0", "--", "apis/"],
-        capture_output=True,
-        text=True
-    )
-    
-    # Fallback to compare against 'main' if origin/main is not fetched or fails
-    if res.returncode != 0:
-        res = subprocess.run(
-            ["git", "diff", "main...HEAD", "-U0", "--", "apis/"],
-            capture_output=True,
-            text=True
-        )
-    
-    if res.returncode != 0:
-        print("WARNING: Could not run git diff. Check if main branch is available.")
-        return []
+from pr_validation import (
+    classify_link_result,
+    find_duplicate_urls,
+    normalize_url,
+    parse_api_diff,
+    read_existing_api_urls,
+    read_pr_diff,
+)
 
-    added_lines = []
-    for line in res.stdout.splitlines():
-        if line.startswith("+") and not line.startswith("+++"):
-            added_lines.append(line[1:]) # Strip leading '+'
-
-    # Extract all http/https links from added markdown table rows
-    urls = []
-    url_pattern = re.compile(r'https?://[^\s)\]|]+')
-    for line in added_lines:
-        if '|' in line:  # Only parse links within markdown tables
-            matches = url_pattern.findall(line)
-            for m in matches:
-                clean_url = m.strip()
-                if clean_url not in urls:
-                    urls.append(clean_url)
-    return urls
-
-def get_existing_urls_at_base():
-    """
-    Get all unique URLs currently existing in the apis/ directory on the main branch (base of PR).
-    """
-    # Fetch origin/main branch to ensure base exists
-    subprocess.run(["git", "fetch", "origin", "main", "--depth=1"], capture_output=True)
-    
-    # List files in apis/ directory on base branch
-    res = subprocess.run(
-        ["git", "ls-tree", "-r", "--name-only", "origin/main", "apis/"],
-        capture_output=True,
-        text=True
-    )
-    
-    base_branch = "origin/main"
-    # Fallback to local main
-    if res.returncode != 0 or not res.stdout.strip():
-        res = subprocess.run(
-            ["git", "ls-tree", "-r", "--name-only", "main", "apis/"],
-            capture_output=True,
-            text=True
-        )
-        base_branch = "main"
-        
-    if res.returncode != 0 or not res.stdout.strip():
-        print("WARNING: Could not fetch base apis/ directory for duplicate check. Skipping duplicate validation.")
-        return set()
-        
-    existing_urls = set()
-    url_pattern = re.compile(r'https?://[^\s)\]|]+')
-    
-    files = res.stdout.splitlines()
-    for file in files:
-        show_res = subprocess.run(
-            ["git", "show", f"{base_branch}:{file}"],
-            capture_output=True,
-            text=True
-        )
-        if show_res.returncode == 0:
-            for line in show_res.stdout.splitlines():
-                if '|' in line:
-                    matches = url_pattern.findall(line)
-                    for m in matches:
-                        existing_urls.add(m.strip().lower())
-    return existing_urls
+REPO_ROOT = Path(__file__).resolve().parents[1]
+USER_AGENT = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
 
 
-def verify_with_playwright(browser, url):
-    """
-    Returns (is_working, status_code, note) using Playwright Chromium headless browser.
-    """
-    try:
-        from playwright_stealth import stealth_sync
-    except ImportError:
-        stealth_sync = None
+def verify_with_playwright(browser, url: str) -> tuple[int | None, str]:
+    """Retry a candidate URL in Chromium and return its final document status."""
     context = None
     page = None
+    last_response = [None]
     try:
         context = browser.new_context(
-            viewport={'width': 1280, 'height': 720},
-            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            viewport={"width": 1280, "height": 720},
+            user_agent=USER_AGENT,
         )
         page = context.new_page()
-        if stealth_sync:
-            stealth_sync(page)
-        
-        last_response = [None]
-        
-        def handle_response(r):
-            if r.frame == page.main_frame and r.request.resource_type == "document":
-                last_response[0] = r
-                
-        page.on("response", handle_response)
-        
-        # Fast check: wait for response headers first (wait_until='commit')
-        response = page.goto(url, wait_until='commit', timeout=8000)
-        
-        # Wait a bit for initial load
-        page.wait_for_timeout(3000)
-        
-        # Check if there is a Cloudflare Turnstile challenge iframe
-        has_cf_iframe = False
-        try:
-            for frame in page.frames:
-                if "challenges.cloudflare.com" in frame.url:
-                    has_cf_iframe = True
-                    break
-        except Exception:
-            pass
-
-        if has_cf_iframe:
-            print(f"  [Playwright] Detected Cloudflare Challenge iframe for {url}. Attempting to solve...")
-            try:
-                clicked = False
-                for frame in page.frames:
-                    if "challenges.cloudflare.com" in frame.url:
-                        checkbox = frame.locator('input[type="checkbox"], span.mark, .cb-i, #challenge-stage, .ctp-checkbox-label')
-                        if checkbox.count() > 0:
-                            checkbox.first.click(timeout=3000)
-                            print("  [Playwright] Clicked Turnstile checkbox element.")
-                            clicked = True
-                            break
-                
-                # Fallback: click the iframe container directly
-                if not clicked:
-                    iframe_element = page.locator('iframe[src*="challenges.cloudflare.com"]')
-                    if iframe_element.count() > 0:
-                        iframe_element.first.click(timeout=3000)
-                        print("  [Playwright] Clicked Turnstile iframe directly.")
-            except Exception as e:
-                print(f"  [Playwright] Click bypass failed: {e}")
-                
-            # Wait longer for redirect / page verification
-            page.wait_for_timeout(5000)
-        else:
-            # Standard wait for redirect or load
-            page.wait_for_timeout(2000)
-            
-        final_resp = last_response[0] if last_response[0] else response
-        status = final_resp.status if final_resp else None
-        
-        if status and status < 400:
-            page.close()
-            context.close()
-            return True, status, "Playwright: Verified working"
-            
-        # If status is >= 400, check if it is a WAF challenge
+        page.on(
+            "response",
+            lambda response: last_response.__setitem__(0, response)
+            if response.frame == page.main_frame and response.request.resource_type == "document"
+            else None,
+        )
+        response = page.goto(url, wait_until="domcontentloaded", timeout=12000)
+        final_response = last_response[0] or response
+        status = final_response.status if final_response else None
         title = page.title().lower()
-        try:
-            content = page.content().lower()
-        except:
-            content = ""
-            
-        is_waf_code = status in [403, 429, 503]
-        if is_waf_code:
-            cloudflare_indicators = ['just a moment', 'cloudflare', 'attention required', 'security check', 'ddos protection']
-            if any(indicator in title or indicator in content for indicator in cloudflare_indicators):
-                page.close()
-                context.close()
-                return False, status, "Playwright: Blocked by Cloudflare Challenge (unsolved)"
-                
-        page.close()
-        context.close()
-        return False, status, f"Playwright: Failed with HTTP {status if status else 'Unknown'}"
-            
-    except Exception as e:
+        content = page.content().lower()
+        parked_indicators = (
+            "domain parking", "buy this domain", "domain for sale", "hugedomains",
+            "sedo.com", "hosting suspended", "account suspended", "website is suspended",
+        )
+        if any(term in title or term in content for term in parked_indicators):
+            return 404, "Playwright: parked domain or suspended hosting detected"
+        return status, f"Playwright: final document HTTP {status if status is not None else 'unknown'}"
+    except Exception as error:
+        message = re.sub(r"\s+", " ", str(error)).strip()
+        return None, f"Playwright exception: {message}"
+    finally:
         if page:
-            try: page.close()
-            except: pass
+            try:
+                page.close()
+            except Exception:
+                pass
         if context:
-            try: context.close()
-            except: pass
-        clean_err = str(e).replace('\n', ' ; ')
-        return False, None, f"Playwright Exception: {clean_err}"
+            try:
+                context.close()
+            except Exception:
+                pass
 
-def check_url(browser, url):
-    ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    if "sec.gov" in url:
-        ua = "APIDexHub/1.0 (contact@thanhnguyxn.org)"
-    headers = {
-        'User-Agent': ua,
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.5',
-    }
-    
-    # Stage 1: Fast HTTP request
+
+def check_url(browser, url: str) -> tuple[str, int | None, str]:
+    """Return working, broken, or inconclusive; only corroborated death fails CI."""
     try:
-        res = requests.get(url, headers=headers, timeout=10, allow_redirects=True)
-        if res.status_code < 400:
-            print(f"  🟢 [GET] {url} - Status {res.status_code} (Working)")
-            return True, res.status_code, "GET request successful"
-        else:
-            print(f"  ⚠️ [GET] {url} returned HTTP {res.status_code}. Retrying with Playwright...")
-    except Exception as e:
-        print(f"  ⚠️ [GET] {url} failed: {e}. Retrying with Playwright...")
-        
-    # Stage 2: Playwright fallback
-    is_ok, status, note = verify_with_playwright(browser, url)
-    if is_ok:
-        print(f"  🟢 [Playwright] {url} - Status {status} ({note})")
-    else:
-        print(f"  🔴 [FAILED] {url} - Status {status} ({note})")
-    return is_ok, status, note
+        response = requests.get(
+            url,
+            headers={
+                "User-Agent": "APIDexHub-LinkChecker/2.0 (+https://github.com/ThanhNguyxnOrg/apidex-hub)",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            },
+            timeout=12,
+            allow_redirects=True,
+        )
+        state = classify_link_result(response.status_code)
+        if state == "working":
+            return state, response.status_code, "HTTP request succeeded"
+        if state == "inconclusive":
+            return state, response.status_code, "Access restricted, rate limited, or server failure; requires review"
+        stage_one_note = f"Stage 1 returned HTTP {response.status_code}"
+    except requests.RequestException as error:
+        stage_one_note = f"Stage 1 request failed: {type(error).__name__}"
+
+    status, stage_two_note = verify_with_playwright(browser, url)
+    state = classify_link_result(status, stage_two_note)
+    note = f"{stage_one_note}; {stage_two_note}"
+    return state, status, note
 
 
-def save_pr_report(added_urls, failed_links, duplicate_links):
-    script_dir = Path(__file__).resolve().parent
-    report_path = script_dir / 'pr_link_check_report.txt'
-    
-    with open(report_path, 'w', encoding='utf-8') as f:
-        f.write("PR NEW LINK CHECK REPORT\n")
-        f.write("=" * 80 + "\n\n")
-        f.write(f"Total New Links Checked: {len(added_urls)}\n")
-        f.write(f"Working: {len(added_urls) - len(failed_links) - len(duplicate_links)}\n")
-        f.write(f"Duplicate: {len(duplicate_links)}\n")
-        f.write(f"Broken: {len(failed_links)}\n\n")
-        
-        if duplicate_links:
-            f.write("❌ DUPLICATE LINKS FOUND (Already exists in repository):\n")
-            f.write("-" * 80 + "\n")
-            for url in duplicate_links:
-                f.write(f"- {url} | Status: DUPLICATE | Error: API already listed in the repository\n")
-            f.write("\n")
-            
-        if failed_links:
-            f.write("❌ BROKEN LINKS FOUND:\n")
-            f.write("-" * 80 + "\n")
-            for url, status, note in failed_links:
-                f.write(f"- {url} | Status: {status} | Error: {note}\n")
-        
-        if not failed_links and not duplicate_links:
-            f.write("🟢 All new links are working, unique, and verified!\n")
+def write_report(
+    changed_paths: list[str],
+    added_urls: list[str],
+    removed_urls: list[str],
+    working: list[tuple[str, int | None, str]],
+    broken: list[tuple[str, int | None, str]],
+    inconclusive: list[tuple[str, int | None, str]],
+    duplicates: list[str],
+    malformed_rows: list[str],
+) -> str:
+    lines = [
+        "PR API LINK CHECK REPORT",
+        "=" * 80,
+        "",
+        f"API files changed: {len(changed_paths)}",
+        f"New API documentation URLs: {len(added_urls)}",
+        f"Removed API documentation URLs: {len(removed_urls)}",
+        f"Working: {len(working)}",
+        f"Broken (confirmed 404/410 or DNS NXDOMAIN): {len(broken)}",
+        f"Inconclusive (access restriction, timeout, or server failure): {len(inconclusive)}",
+        f"Duplicate URLs: {len(duplicates)}",
+        f"Malformed API rows: {len(malformed_rows)}",
+        "",
+    ]
+    if not added_urls and removed_urls:
+        lines.append("No new documentation URLs were introduced. This PR removes or moves existing API rows; no URL health check is claimed.")
+    elif not added_urls:
+        lines.append("No new API documentation URLs were found in the changed API files.")
+    for title, items in (
+        ("BROKEN URLS", broken),
+        ("INCONCLUSIVE URLS — MAINTAINER REVIEW", inconclusive),
+    ):
+        if items:
+            lines.extend(["", title, "-" * 80])
+            lines.extend(f"- {url} | HTTP {status if status is not None else 'N/A'} | {note}" for url, status, note in items)
+    if duplicates:
+        lines.extend(["", "DUPLICATE OFFICIAL DOCUMENTATION URLS", "-" * 80])
+        lines.extend(f"- {url}" for url in duplicates)
+    if malformed_rows:
+        lines.extend(["", "MALFORMED ADDED API ROWS", "-" * 80])
+        lines.extend(f"- {row}" for row in malformed_rows)
+    if not broken and not duplicates and not malformed_rows:
+        lines.extend(["", "Validation result: no confirmed broken links, duplicate URLs, or malformed added rows."])
+        if inconclusive:
+            lines.append("Note: inconclusive URLs were not counted as working; review them before relying on their availability.")
+    report = "\n".join(lines) + "\n"
+    (Path(__file__).resolve().parent / "pr_link_check_report.txt").write_text(report, encoding="utf-8")
+    return report
 
-def main():
-    print("=== Identifying New APIs Added in PR ===")
-    added_urls = get_added_urls()
-    
-    if not added_urls:
-        print("Done! No new API links were added to the apis/ directory in this Pull Request.")
-        # Write empty pass report
-        save_pr_report([], [], [])
-        return 0
-        
-    print(f"Found {len(added_urls)} new API link(s) to verify:")
+
+def main() -> int:
+    base_ref = os.environ.get("APIDEX_DIFF_BASE", "").strip()
+    head_ref = os.environ.get("APIDEX_DIFF_HEAD", "").strip()
+    if not base_ref or not head_ref:
+        print(
+            "ERROR: APIDEX_DIFF_BASE and APIDEX_DIFF_HEAD are required. "
+            "The PR checker will not infer refs or treat an unresolved diff as empty.",
+            file=sys.stderr,
+        )
+        return 2
+
+    try:
+        changed_paths, diff_text = read_pr_diff(base_ref, head_ref, REPO_ROOT)
+        added_urls, removed_urls, malformed_rows = parse_api_diff(diff_text)
+        existing_urls = read_existing_api_urls(base_ref, REPO_ROOT)
+    except RuntimeError as error:
+        print(f"ERROR: PR API diff validation could not run: {error}", file=sys.stderr)
+        return 2
+
+    duplicates = find_duplicate_urls(added_urls, removed_urls, existing_urls)
+    duplicate_keys = {normalize_url(url) for url in duplicates}
+    urls_to_check = []
+    seen = set()
     for url in added_urls:
-        print(f" - {url}")
-        
-    print("\n=== Checking for Duplicate APIs ===")
-    existing_urls = get_existing_urls_at_base()
-    duplicate_links = []
-    unique_added_urls = []
-    
-    for url in added_urls:
-        if url.lower() in existing_urls:
-            print(f"  ❌ [DUPLICATE] {url} - already exists in the repository")
-            duplicate_links.append(url)
-        else:
-            unique_added_urls.append(url)
-        
-    print("\n=== Verifying New Links ===")
-    failed_links = []
-    
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        for url in unique_added_urls:
-            is_ok, status, note = check_url(browser, url)
-            if not is_ok:
-                failed_links.append((url, status, note))
-        browser.close()
-            
-    print("\n=== Result Summary ===")
-    save_pr_report(added_urls, failed_links, duplicate_links)
-    
-    has_errors = False
-    if duplicate_links:
-        print(f"❌ Duplicate API(s) detected! {len(duplicate_links)} link(s) already exist in the repository.")
-        has_errors = True
-    if failed_links:
-        print(f"❌ Broken API(s) detected! {len(failed_links)} link(s) failed validation.")
-        has_errors = True
-        
-    if has_errors:
-        print("\nPlease fix these issues before merging the Pull Request.")
+        key = normalize_url(url)
+        if key not in seen and key not in duplicate_keys:
+            urls_to_check.append(url)
+            seen.add(key)
+
+    working: list[tuple[str, int | None, str]] = []
+    broken: list[tuple[str, int | None, str]] = []
+    inconclusive: list[tuple[str, int | None, str]] = []
+
+    if urls_to_check:
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch(headless=True)
+            try:
+                for url in urls_to_check:
+                    state, status, note = check_url(browser, url)
+                    item = (url, status, note)
+                    if state == "working":
+                        working.append(item)
+                    elif state == "broken":
+                        broken.append(item)
+                    else:
+                        inconclusive.append(item)
+                    print(f"[{state.upper()}] {url} — {note}")
+            finally:
+                browser.close()
+
+    report = write_report(
+        changed_paths, added_urls, removed_urls, working, broken, inconclusive,
+        duplicates, malformed_rows,
+    )
+    print(report)
+    if broken or duplicates or malformed_rows:
+        print("PR validation failed. Fix confirmed dead URLs, duplicate links, or malformed API rows before merging.", file=sys.stderr)
         return 1
-    else:
-        print("🟢 All new API links are verified, unique, and working correctly!")
-        return 0
+    return 0
+
 
 if __name__ == "__main__":
-    sys.exit(main())
+    raise SystemExit(main())
