@@ -128,7 +128,7 @@ def write_report(
     if not added_urls and removed_urls:
         lines.append("No new documentation URLs were introduced. This PR removes or moves existing API rows; no URL health check is claimed.")
     elif not added_urls:
-        lines.append("No new API documentation URLs were found in the changed API files.")
+        lines.append("No new API documentation URLs were introduced; no URL health check was performed for this PR.")
     for title, items in (
         ("BROKEN URLS", broken),
         ("INCONCLUSIVE URLS — MAINTAINER REVIEW", inconclusive),
