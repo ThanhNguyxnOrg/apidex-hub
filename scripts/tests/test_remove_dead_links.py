@@ -4,7 +4,6 @@ import tempfile
 import unittest
 from pathlib import Path
 
-
 SCRIPTS_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS_DIR))
 import remove_dead_links
@@ -40,6 +39,7 @@ class RemoveDeadLinksSafetyTests(unittest.TestCase):
             (SCRIPTS_DIR / "remove_dead_links.py").read_text(encoding="utf-8"),
             encoding="utf-8",
         )
+        (scripts / "parse_readme.py").write_text("raise SystemExit(0)\n", encoding="utf-8")
         report = scripts / "broken_urls.txt"
         report.write_text(
             "https://dead.example/docs | Example API - HTTP 404\n",
@@ -72,6 +72,24 @@ class RemoveDeadLinksSafetyTests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertEqual(api_file.read_text(encoding="utf-8"), original)
             self.assertIn("dry-run", result.stdout.lower())
+
+    def test_apply_flag_removes_only_after_explicit_confirmation(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            apis = root / "apis"
+            apis.mkdir()
+            api_file = apis / "example.md"
+            api_file.write_text(
+                "| API Name | Description | Auth | HTTPS | Link |\n"
+                "| --- | --- | --- | --- | --- |\n"
+                "| **Example API** | Example | No | ✅ | [Link](https://dead.example/docs) |\n",
+                encoding="utf-8",
+            )
+
+            result = self._run_cli(root, ["--apply"])
+
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertNotIn("https://dead.example/docs", api_file.read_text(encoding="utf-8"))
 
     def test_safety_brake_counts_rows_before_any_file_is_modified(self):
         with tempfile.TemporaryDirectory() as temporary:
