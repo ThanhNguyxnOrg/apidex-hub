@@ -1,0 +1,39 @@
+name: Script Tests
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - ".github/workflows/script-tests.yml"
+  pull_request:
+    paths:
+      - "scripts/**"
+      - ".github/workflows/script-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regression-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run script regression tests
+        run: python -m unittest discover -s scripts/tests -v
+
+      - name: Compile automation scripts
+        run: |
+          python -m py_compile \
+            scripts/check_pr_links.py \
+            scripts/pr_validation.py \
+            scripts/remove_dead_links.py
