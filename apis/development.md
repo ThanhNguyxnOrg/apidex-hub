@@ -165,6 +165,7 @@
 | **Image-Charts** | Generate charts, QR codes and graph images. | No | ✅ | [Link](https://documentation.image-charts.com/) |
 | **import.io** | Retrieve structured data from a website or RSS feed. | 🔑 ApiKey | ✅ | [Link](http://api.docs.import.io/) |
 | **Index Agentica** | Agent-first directory of skills, MCP servers, tools, protocols and APIs as JSON, markdown, llms.txt | No | ✅ | [Link](https://indexagentica.com/agents/) |
+| **Inngest** | Event-driven background jobs, steps, and durable serverless workflows. | 🔑 ApiKey | ✅ | [Link](https://www.inngest.com/docs) |
 | **Instatus** | Status page and incident management API. | 🔑 ApiKey | ✅ | [Link](https://instatus.com/help/api) |
 | **Interzoid Get Full Name Match Similarity Key** | This API provides a similarity key used to match with other similar full name data, including for purposes of dedupli | No | ✅ | [Link](https://www.interzoid.com) |
 | **Invoice Parsing API** | Extract structured invoice data using AI with this API. Multiple formats supported. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/sharpapi-ai-invoice-parser) |
@@ -331,6 +332,7 @@
 | **TinyUID.com** | Paste a Long URL link to shorten it | No | ✅ | [Link](https://tinyuid.com/feedback) |
 | **ToolForte** | Deterministic utilities: IBAN/VAT validation, cron parsing, regex, diffs, Dutch holidays, test data | 🔑 ApiKey | ✅ | [Link](https://toolforte.com/developers) |
 | **Trello** | Project boards and workflow automation APIs. | 🔐 OAuth | ✅ | [Link](https://developers.trello.com/) |
+| **Trigger.dev** | Background jobs and reliable workflow orchestration for TypeScript. | 🔑 ApiKey | ✅ | [Link](https://trigger.dev/docs) |
 | **Turbine Labs** | The Turbine Labs API provides CRUD operations for core object types, and is mostly RESTy. The easiest way to interact | 🔑 ApiKey | ✅ | [Link](https://turbinelabs.io) |
 | **Tyk** | Api and service management platform | 🔑 ApiKey | ✅ | [Link](https://tyk.io/open-source-api-gateway/) |
 | **URL to Markdown** | Convert web page to MarkDown. | No | ✅ | [Link](https://github.com/macsplit/urltomarkdown) |
@@ -341,6 +343,7 @@
 | **Utilorax** | 203 JSON endpoints: hashing, encoding, unit conversion, text, dates and file conversion | 🔑 ApiKey | ✅ | [Link](https://utilorax.com/api) |
 | **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |
 | **V.recipes Get IP** | A simple API to get information such as IP, ISP name, Location, etc. based on user request | No | ✅ | [Link](https://v.recipes/get-ip) |
+| **Val Town** | Social execution environment for running serverless TypeScript and scheduled APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.val.town/) |
 | **Validate UK Postcodes** | This API validates postal codes within UK. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/data-postcodes-uk) |
 | **VatcheckAPI** | VAT Number Validation & Lookup REST API. | 🔑 ApiKey | ✅ | [Link](https://vatcheckapi.com) |
 | **Vercel** | Deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://vercel.com/docs/rest-api/endpoints) |

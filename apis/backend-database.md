@@ -72,6 +72,7 @@
 | **Parse Server** | Open-source BaaS with REST API for data, auth and files. | 🔑 ApiKey | ✅ | [Link](https://docs.parseplatform.org/rest/guide/) |
 | **PlanetScale** | Serverless MySQL database platform with horizontal sharding and non-blocking migrations. | 🔑 ApiKey | ✅ | [Link](https://planetscale.com/docs) |
 | **Qakka** | API for Qakka Queue System. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/apache/usergrid-qakka/master/docs/swagger.json) |
+| **Qdrant** | Open-source vector similarity search engine and database for AI applications. | 🔑 ApiKey | ✅ | [Link](https://qdrant.tech/documentation/) |
 | **RedisManagementClient** | REST API for Azure Redis Cache Service. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/redis/resource-manager/Microsoft.Cache/stable/2018-03-01/redis.json) |
 | **Sanity** | Structured content platform with a fully queryable hosted dataset via GROQ. | 🔑 ApiKey | ✅ | [Link](https://www.sanity.io/docs/) |
 | **Search Ads 360 API** | The Search Ads 360 API allows developers to automate uploading conversions and downloading reports from Search Ads 360. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/search-ads) |
@@ -94,11 +95,13 @@
 | **TheirStack's Job Postings** | Access simultaneously to jobs from Linkedin, Glassdoor, Indeed and 16+ other job sites. | 🔑 ApiKey | ✅ | [Link](https://theirstack.com/en/job-posting-api) |
 | **Translation API** | This API allows 3rd party developers to translate item title, description, search query. | 🔑 ApiKey | ✅ | [Link](https://developer.ebay.com/api-docs/master/commerce/translation/openapi/3/commerce_translation_v1_oas3.json) |
 | **Turso** | Distributed database platform powered by libSQL (open-source SQLite fork). | 🔑 ApiKey | ✅ | [Link](https://docs.turso.tech/) |
+| **Typesense** | Open-source, typo-tolerant search engine optimized for developer productivity. | 🔑 ApiKey | ✅ | [Link](https://typesense.org/docs/) |
 | **Upstash** | Serverless data platform offering low-latency Redis, Kafka, and QStash messaging. | 🔑 ApiKey | ✅ | [Link](https://upstash.com/docs) |
 | **Use a New Version Instead** | Icons8 API Icons8 API allows us to search and obtain our icons. You're welcome to use our icons to extend the functionality of your web and. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/icons8/api-docs/master/apiary.apib) |
 | **USPTO Trademark** | Trademark keyword search, availability, owner, serial search, attorney info, MCP ready. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/pentium10/api/uspto-trademark) |
 | **Visual Studio Projects Resource Provider Client** | Use these APIs to manage Visual Studio Team Services resources through the Azure Resource Manager. All task operations conform to the HTTP/1.1 protocol specification and each. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/visualstudio/resource-manager/Microsoft.VisualStudio/preview/2018-08-01-preview/PipelineTemplates.json) |
 | **Visual Studio Resource Provider Client** | Use these APIs to manage Visual Studio Team Services resources through the Azure Resource Manager. All task operations conform to the HTTP/1.1 protocol specification and each. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/visualstudio/resource-manager/Microsoft.VisualStudio/preview/2017-11-01-preview/Csm.json) |
+| **Weaviate** | Open-source AI-native vector database with hybrid search capabilities. | 🔑 ApiKey | ✅ | [Link](https://docs.weaviate.io/weaviate) |
 | **Xata** | Serverless PostgreSQL-ready database with search built in. | 🔑 ApiKey | ✅ | [Link](https://docs.xata.io/) |
 | **Zillapi** | US property data API, Zestimate, photos, taxes, price history. | 🔑 ApiKey | ✅ | [Link](https://zillapi.com) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

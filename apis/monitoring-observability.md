@@ -36,6 +36,7 @@
 | **OpenTelemetry** | Open-source observability framework for telemetry data. | No | ✅ | [Link](https://opentelemetry.io/docs/) |
 | **PagerDuty** | Incident response and on-call scheduling platform. | 🔑 ApiKey | ✅ | [Link](https://developer.pagerduty.com/api-reference/) |
 | **Pingdom** | Website and infrastructure uptime monitoring. | 🔑 ApiKey | ✅ | [Link](https://docs.pingdom.com/api/) |
+| **Plausible Analytics** | Privacy-friendly and lightweight open-source web analytics Stats API. | 🔑 ApiKey | ✅ | [Link](https://plausible.io/docs/stats-api) |
 | **Prismix** | Real-time uptime for 77 AI APIs (OpenAI, Anthropic, Cursor, Gemini) - free JSON endpoint, no auth required | No | ✅ | [Link](https://prismix.dev/api/v1/statuses) |
 | **Prometheus** | Open-source metrics-based monitoring query API. | No | ✅ | [Link](https://prometheus.io/docs/prometheus/latest/querying/api/) |
 | **Raygun** | Crash reporting and real user monitoring. | 🔑 ApiKey | ✅ | [Link](https://raygun.com/documentation/api/) |
@@ -45,6 +46,7 @@
 | **SIGNL4** | Use our API for systems integration or to build your own use cases. Sample scenarios include but are not limited to: | 🔑 ApiKey | ✅ | [Link](https://www.signl4.com/feedback-we-love-hear-from-you) |
 | **Simple analytics** | Simple, clean, and friendly analytics for developers (privacy focused alternative to Google Analytics) | No | ✅ | [Link](https://docs.simpleanalytics.com/api) |
 | **Twilio - Monitor** | This is the public Twilio REST API. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/json/twilio_monitor_v1.json) |
+| **Umami** | Simple, fast, privacy-focused open-source website analytics API. | 🔑 ApiKey | ✅ | [Link](https://docs.umami.is/docs/) |
 | **UptimeRobot** | Website, port, and keyword uptime monitoring. | 🔑 ApiKey | ✅ | [Link](https://uptimerobot.com/api/) |
 | **VictorOps** | This API allows you to interact with the VictorOps platform in various ways. Your account may be limited to a total n | No | ✅ | [Link](https://victorops.com) |
 | **Workload Monitor** | APIs for workload monitoring. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/workloadmonitor/resource-manager/Microsoft.WorkloadMonitor/preview/2018-08-31-preview/Microsoft.WorkloadMonitor.json) |

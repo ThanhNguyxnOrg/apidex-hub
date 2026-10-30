@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T06:48:47.864613+00:00",
+    "generated_at": "2026-10-30T06:55:38.424549+00:00",
     "source": "README.md",
-    "total_apis": 4246,
+    "total_apis": 4254,
     "total_categories": 70,
     "no_auth_count": 1582,
-    "api_key_count": 2401,
+    "api_key_count": 2409,
     "oauth_count": 263,
-    "https_count": 4155,
+    "https_count": 4163,
     "https_percentage": 98
   },
   "categories": [
@@ -2008,7 +2008,7 @@
       "id": "backend-database",
       "emoji": "🗄️",
       "name": "Backend & Serverless Databases",
-      "api_count": 99,
+      "api_count": 102,
       "apis": [
         {
           "name": "Accelerated Mobile Pages (AMP) URL API",
@@ -2501,6 +2501,13 @@
           "link": "https://raw.githubusercontent.com/apache/usergrid-qakka/master/docs/swagger.json"
         },
         {
+          "name": "Qdrant",
+          "description": "Open-source vector similarity search engine and database for AI applications.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://qdrant.tech/documentation/"
+        },
+        {
           "name": "RedisManagementClient",
           "description": "REST API for Azure Redis Cache Service.",
           "auth": "apiKey",
@@ -2655,6 +2662,13 @@
           "link": "https://docs.turso.tech/"
         },
         {
+          "name": "Typesense",
+          "description": "Open-source, typo-tolerant search engine optimized for developer productivity.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://typesense.org/docs/"
+        },
+        {
           "name": "Upstash",
           "description": "Serverless data platform offering low-latency Redis, Kafka, and QStash messaging.",
           "auth": "apiKey",
@@ -2688,6 +2702,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/visualstudio/resource-manager/Microsoft.VisualStudio/preview/2017-11-01-preview/Csm.json"
+        },
+        {
+          "name": "Weaviate",
+          "description": "Open-source AI-native vector database with hybrid search capabilities.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.weaviate.io/weaviate"
         },
         {
           "name": "Xata",
@@ -6437,7 +6458,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 353,
+      "api_count": 356,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -7579,6 +7600,13 @@
           "auth": "No",
           "https": true,
           "link": "https://indexagentica.com/agents/"
+        },
+        {
+          "name": "Inngest",
+          "description": "Event-driven background jobs, steps, and durable serverless workflows.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.inngest.com/docs"
         },
         {
           "name": "Instatus",
@@ -8743,6 +8771,13 @@
           "link": "https://developers.trello.com/"
         },
         {
+          "name": "Trigger.dev",
+          "description": "Background jobs and reliable workflow orchestration for TypeScript.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://trigger.dev/docs"
+        },
+        {
           "name": "Turbine Labs",
           "description": "The Turbine Labs API provides CRUD operations for core object types, and is mostly RESTy. The easiest way to interact",
           "auth": "apiKey",
@@ -8811,6 +8846,13 @@
           "auth": "No",
           "https": true,
           "link": "https://v.recipes/get-ip"
+        },
+        {
+          "name": "Val Town",
+          "description": "Social execution environment for running serverless TypeScript and scheduled APIs.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.val.town/"
         },
         {
           "name": "Validate UK Postcodes",
@@ -18751,7 +18793,7 @@
       "id": "monitoring-observability",
       "emoji": "📈",
       "name": "Monitoring & Observability",
-      "api_count": 49,
+      "api_count": 51,
       "apis": [
         {
           "name": "Amazon Mobile Analytics",
@@ -18992,6 +19034,13 @@
           "link": "https://docs.pingdom.com/api/"
         },
         {
+          "name": "Plausible Analytics",
+          "description": "Privacy-friendly and lightweight open-source web analytics Stats API.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://plausible.io/docs/stats-api"
+        },
+        {
           "name": "Prismix",
           "description": "Real-time uptime for 77 AI APIs (OpenAI, Anthropic, Cursor, Gemini) - free JSON endpoint, no auth required",
           "auth": "No",
@@ -19053,6 +19102,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/json/twilio_monitor_v1.json"
+        },
+        {
+          "name": "Umami",
+          "description": "Simple, fast, privacy-focused open-source website analytics API.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.umami.is/docs/"
         },
         {
           "name": "UptimeRobot",
