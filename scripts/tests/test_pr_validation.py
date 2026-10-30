@@ -68,6 +68,14 @@ class ApiDiffParsingTests(unittest.TestCase):
         )
         self.assertEqual(duplicates, ["https://docs.example.com/api/"])
 
+    def test_still_detects_duplicate_when_only_one_of_two_existing_rows_is_removed(self):
+        duplicates = find_duplicate_urls(
+            added_urls=["https://docs.example.com/api"],
+            removed_urls=["https://docs.example.com/api"],
+            existing_urls=["https://docs.example.com/api", "https://docs.example.com/api/"],
+        )
+        self.assertEqual(duplicates, ["https://docs.example.com/api"])
+
     def test_detects_duplicate_added_twice_in_same_pr(self):
         duplicates = find_duplicate_urls(
             added_urls=[
@@ -105,6 +113,13 @@ class ApiDiffParsingTests(unittest.TestCase):
 
 
 class RepositoryDiffTests(unittest.TestCase):
+    def test_requires_both_commit_refs(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            with self.assertRaisesRegex(RuntimeError, "Both base and head"):
+                read_pr_diff("", "HEAD", root)
+
     def test_reads_apis_diff_when_called_from_scripts_directory(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
