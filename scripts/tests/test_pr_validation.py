@@ -1,0 +1,161 @@
+import subprocess
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from pr_validation import (
+    classify_link_result,
+    find_duplicate_urls,
+    normalize_url,
+    parse_api_diff,
+    read_pr_diff,
+)
+
+
+class ApiDiffParsingTests(unittest.TestCase):
+    def test_extracts_only_official_link_column(self):
+        diff = """diff --git a/apis/example.md b/apis/example.md
+--- a/apis/example.md
++++ b/apis/example.md
+@@ -1,0 +2 @@
++| **Example API** | Supports links like https://description.example | No | ✅ | [Link](https://docs.example.com/api) |
+"""
+        added, removed, malformed = parse_api_diff(diff)
+        self.assertEqual(added, ["https://docs.example.com/api"])
+        self.assertEqual(removed, [])
+        self.assertEqual(malformed, [])
+
+    def test_rejects_added_data_row_without_official_link(self):
+        diff = """diff --git a/apis/example.md b/apis/example.md
+--- a/apis/example.md
++++ b/apis/example.md
+@@ -1,0 +2 @@
++| **Broken Entry** | Has no official link | No | ✅ | N/A |
+"""
+        added, removed, malformed = parse_api_diff(diff)
+        self.assertEqual(added, [])
+        self.assertEqual(removed, [])
+        self.assertEqual(len(malformed), 1)
+
+    def test_ignores_markdown_header_and_separator(self):
+        diff = """diff --git a/apis/example.md b/apis/example.md
+--- a/apis/example.md
++++ b/apis/example.md
+@@ -1,0 +2,2 @@
++| API Name | Description | Auth | HTTPS | Link |
++| :--- | :--- | :---: | :---: | :---: |
+"""
+        added, removed, malformed = parse_api_diff(diff)
+        self.assertEqual((added, removed, malformed), ([], [], []))
+
+    def test_removed_url_is_not_reported_as_duplicate_when_moved(self):
+        duplicates = find_duplicate_urls(
+            added_urls=["https://docs.example.com/api"],
+            removed_urls=["https://docs.example.com/api/"],
+            existing_urls=["https://docs.example.com/api"],
+        )
+        self.assertEqual(duplicates, [])
+
+    def test_detects_duplicate_against_existing_service_url(self):
+        duplicates = find_duplicate_urls(
+            added_urls=["https://docs.example.com/api/"],
+            removed_urls=[],
+            existing_urls=["https://docs.example.com/api"],
+        )
+        self.assertEqual(duplicates, ["https://docs.example.com/api/"])
+
+    def test_still_detects_duplicate_when_only_one_of_two_existing_rows_is_removed(self):
+        duplicates = find_duplicate_urls(
+            added_urls=["https://docs.example.com/api"],
+            removed_urls=["https://docs.example.com/api"],
+            existing_urls=["https://docs.example.com/api", "https://docs.example.com/api/"],
+        )
+        self.assertEqual(duplicates, ["https://docs.example.com/api"])
+
+    def test_detects_duplicate_added_twice_in_same_pr(self):
+        duplicates = find_duplicate_urls(
+            added_urls=[
+                "https://docs.example.com/api",
+                "https://docs.example.com/api/",
+            ],
+            removed_urls=[],
+            existing_urls=[],
+        )
+        self.assertEqual(len(duplicates), 1)
+
+    def test_normalizes_host_case_and_trailing_slash_but_preserves_query(self):
+        self.assertEqual(
+            normalize_url("HTTPS://Docs.Example.com/API/?version=2#overview"),
+            "https://docs.example.com/API?version=2",
+        )
+        self.assertNotEqual(
+            normalize_url("https://docs.example.com/api?v=1"),
+            normalize_url("https://docs.example.com/api?v=2"),
+        )
+
+    def test_only_confirmed_not_found_and_dns_are_broken(self):
+        self.assertEqual(classify_link_result(404), "broken")
+        self.assertEqual(classify_link_result(410), "broken")
+        self.assertEqual(classify_link_result(None, "net::ERR_NAME_NOT_RESOLVED"), "broken")
+
+    def test_access_controls_and_transient_responses_are_inconclusive(self):
+        for status in (401, 403, 418, 429, 500, 502, 503, 504, None):
+            with self.subTest(status=status):
+                self.assertEqual(classify_link_result(status, "temporary failure"), "inconclusive")
+
+    def test_successful_http_status_is_working(self):
+        self.assertEqual(classify_link_result(200), "working")
+        self.assertEqual(classify_link_result(302), "working")
+
+
+class RepositoryDiffTests(unittest.TestCase):
+    def test_requires_both_commit_refs(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            with self.assertRaisesRegex(RuntimeError, "Both base and head"):
+                read_pr_diff("", "HEAD", root)
+
+    def test_reads_apis_diff_when_called_from_scripts_directory(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            scripts = root / "scripts"
+            apis = root / "apis"
+            scripts.mkdir()
+            apis.mkdir()
+            (apis / "example.md").write_text(
+                "| API Name | Description | Auth | HTTPS | Link |\n"
+                "| --- | --- | --- | --- | --- |\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            subprocess.run(["git", "-C", str(root), "config", "user.name", "Test"], check=True)
+            subprocess.run(["git", "-C", str(root), "config", "user.email", "test@example.com"], check=True)
+            subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
+            subprocess.run(["git", "-C", str(root), "commit", "-qm", "base"], check=True)
+            base = subprocess.check_output(
+                ["git", "-C", str(root), "rev-parse", "HEAD"], text=True
+            ).strip()
+
+            with (apis / "example.md").open("a", encoding="utf-8") as file:
+                file.write(
+                    "| **Example API** | Example | No | ✅ | "
+                    "[Link](https://docs.example.com/api) |\n"
+                )
+            subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
+            subprocess.run(["git", "-C", str(root), "commit", "-qm", "add API"], check=True)
+            head = subprocess.check_output(
+                ["git", "-C", str(root), "rev-parse", "HEAD"], text=True
+            ).strip()
+
+            paths, diff = read_pr_diff(base, head, scripts)
+            self.assertEqual(paths, ["apis/example.md"])
+            self.assertIn("https://docs.example.com/api", diff)
+
+
+if __name__ == "__main__":
+    unittest.main()
