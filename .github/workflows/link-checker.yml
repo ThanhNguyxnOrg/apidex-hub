@@ -19,6 +19,8 @@ on:
   pull_request:
     paths:
       - "apis/**"
+      - "scripts/**"
+      - ".github/workflows/link-checker.yml"
 
   # Run daily at 00:00 UTC to catch broken links
   schedule:
