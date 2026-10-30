@@ -25,6 +25,7 @@
 | **AWS WAF** | This is AWS WAF Classic documentation. For more information, see AWS. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/waf) |
 | **AWS Well-Architected Tool** | Well-Architected Tool This is the Well-Architected Tool API Reference. The WA Tool API provides programmatic access to the. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/wellarchitected) |
 | **Azure Machine Learning Workspaces** | These APIs allow end users to operate on Azure Machine Learning Workspace resources. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2019-06-01/machineLearningServices.json) |
+| **Baseten** | High-performance machine learning infrastructure and model-serving APIs with low latency. | 🔑 ApiKey | ✅ | [Link](https://docs.baseten.co/) |
 | **Botpress** | Conversational AI agent platform with REST APIs and webhooks. | 🔑 ApiKey | ✅ | [Link](https://botpress.com/docs) |
 | **Braket** | The Amazon Braket API Reference provides information about the operations and structures supported in Amazon Braket. Additional Resources:. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/braket) |
 | **Cerebras Inference** | World's fastest LLM inference platform powered by the Wafer-Scale Engine. | 🔑 ApiKey | ✅ | [Link](https://inference-docs.cerebras.ai/) |
@@ -41,6 +42,7 @@
 | **Custom Vision Prediction Client** | REST endpoints for the Custom Vision Prediction Client service. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/cognitiveservices/data-plane/CustomVision/Prediction/stable/v3.0/Prediction.json) |
 | **CustomGPT.ai** | RAG API with RESTful endpoints, comprehensive SDKs, and enterprise-grade reliability. | 🔑 ApiKey | ✅ | [Link](https://docs.customgpt.ai/reference/i-api-homepage) |
 | **Data Labeling API** | Public API for Google Cloud AI Data Labeling Service. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/data-labeling/docs) |
+| **DeepInfra** | Serverless AI inference for open-source LLMs, embeddings, and audio models with OpenAI compatibility. | 🔑 ApiKey | ✅ | [Link](https://docs.deepinfra.com) |
 | **DeepSeek** | Advanced reasoning and coding open-weight LLMs with affordable high-performance API. | 🔑 ApiKey | ✅ | [Link](https://platform.deepseek.com/) |
 | **Document AI Warehouse API** | REST endpoints for the Document AI Warehouse API service. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/document-warehouse) |
 | **DreamThreads** | Parse dreams into structured entities, emotions, agency, threat, and outcomes. | No | ✅ | [Link](https://mydreamthreads.xyz/dream-interpretation-api) |
@@ -72,6 +74,7 @@
 | **Ollama** | REST API for running, orchestrating, and chatting with open LLMs locally or on servers. | No | ✅ | [Link](https://ollama.com/) |
 | **onomeo** | OpenAI-compatible, about 30 free LLMs, 30 calls per 5 hours, optional pay-as-you-go, public beta | 🔑 ApiKey | ✅ | [Link](https://onomeo.com/docs) |
 | **OpenAI** | State-of-the-art models including GPT-4o, o1 reasoning, DALL-E, Whisper, and Embeddings. | 🔑 ApiKey | ✅ | [Link](https://platform.openai.com/docs) |
+| **OpenPipe** | Data collection, evaluation, and fine-tuning platform for specialized small models. | 🔑 ApiKey | ✅ | [Link](https://docs.openpipe.ai/) |
 | **OpenRouter** | Unified routing API for models across providers; selected models ending in `:free` are available at $0 with stricter, changeable rate limits. | 🔑 ApiKey | ✅ | [Link](https://openrouter.ai/docs) |
 | **Perplexity AI** | Online conversational search and citation API powered by web-grounded models. | 🔑 ApiKey | ✅ | [Link](https://docs.perplexity.ai/) |
 | **Prismix Status API** | Real-time uptime and incident status for 75+ AI services (OpenAI, Anthropic, Cursor, Gemini). | No | ✅ | [Link](https://prismix.dev/api-docs) |
@@ -81,6 +84,7 @@
 | **Replicate** | Cloud API to run open-source machine learning models in the cloud with GPUs. | 🔑 ApiKey | ✅ | [Link](https://replicate.com/docs) |
 | **Requesty** | OpenAI compatible LLM router for 600+ models, with a free tier for free models | 🔑 ApiKey | ✅ | [Link](https://docs.requesty.ai) |
 | **Safe text** | Clean short and long texts. It is probably world most complete text-cleaner API! Providing very fast and accurate results. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/bacloud14/api/safe-text) |
+| **SambaNova Cloud** | Ultra-high-speed AI inference platform powered by SN40L Reconfigurable Dataflow Units. | 🔑 ApiKey | ✅ | [Link](https://docs.sambanova.ai/docs/en/get-started/overview) |
 | **Smithery** | Registry and hosting for Model Context Protocol servers. | 🔑 ApiKey | ✅ | [Link](https://smithery.ai/) |
 | **SpryTools AI Text Analysis** | Sentiment, summarization, NER, zero-shot classification and keyword extraction via Gemini. | 🔑 ApiKey | ✅ | [Link](https://sprytools.com/apis/ai) |
 | **Statlyte** | Live pricing, context windows and model ids for major LLM APIs | No | ✅ | [Link](https://statlyte.com/api) |
@@ -93,6 +97,7 @@
 | **Vectara** | Vectara is a neural search platform, built for developers to get the most out of their data. You can sign up for an a | 🔒 OAuth | ✅ | [Link](https://docs.vectara.com) |
 | **Voiceflow** | Conversational AI agents: dialog, webchat and agent APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.voiceflow.com/) |
 | **Voxell Forge** | OpenAI-compatible text embeddings API, free-forever model with no credit card required | 🔑 ApiKey | ✅ | [Link](https://voxell.ai/docs/#forge) |
+| **Voyage AI** | State-of-the-art embedding and reranker models optimized for retrieval-augmented generation. | 🔑 ApiKey | ✅ | [Link](https://docs.voyageai.com/) |
 | **WaveSpeedAI** | Generate images, video and audio from 900+ open and commercial models (FLUX, Seedream, Kling, Wan) through one async REST API. | 🔑 ApiKey | ✅ | [Link](https://wavespeed.ai) |
 | **Wellknown** | A registry of AI Plugins | No | ✅ | [Link](https://wellknown.ai) |
 | **xAI Grok** | Frontier generative AI models with strong math, reasoning, and coding capabilities. | 🔑 ApiKey | ✅ | [Link](https://x.ai/api) |

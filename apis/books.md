@@ -14,12 +14,14 @@
 | **Gutendex** | Project Gutenberg book catalogue as JSON. | No | ✅ | [Link](https://gutendex.com/) |
 | **ISBNdb** | ISBN book database. | 🔑 ApiKey | ✅ | [Link](https://isbndb.com/apidocs/v2) |
 | **KDP Intelligence** | KDP niche demand scores, competition analysis and revenue estimates | No | ✅ | [Link](https://kdp-intelligence-api.vercel.app/docs) |
+| **LibriVox** | Public domain audiobook catalog search API by author, title, genre, and language. | No | ✅ | [Link](https://librivox.org/api/info) |
 | **Open Library** | Fetch data about millions of books and covers. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
 | **Penguin Publishing** | Book data. | No | ✅ | [Link](http://www.penguinrandomhouse.biz/webservices/rest/) |
 | **Poetry DB** | Database of poetry with poems, poets and lines. | No | ✅ | [Link](https://poetrydb.org/index) |
 | **Quran** | RESTful Quran API with multiple languages. | No | ✅ | [Link](https://quran.api-docs.io/) |
 | **Quran Cloud** | Quran text, translations, and recitations. | No | ✅ | [Link](https://alquran.cloud/api) |
 | **Runyankole Bible** | Free REST API for the Runyankore-Rukiga Bible — 66 books, 31106 verses | No | ✅ | [Link](https://runyankole-bible-api.vercel.app) |
+| **Standard Ebooks** | Free public domain ebooks formatted to modern typographic standards via open OPDS feeds. | No | ✅ | [Link](https://standardebooks.org/feeds) |
 | **The Bible API** | Bible metadata and translations for apps. | 🔑 ApiKey | ✅ | [Link](https://docs.api.bible) |
 | **Thirukkural** | 1330 Thirukkural poems and explanation in Tamil and English. | No | ✅ | [Link](https://api-thirukkural.web.app/) |
 | **Urantia Papers** | Full-text + semantic search across the Urantia Papers, with audio narration, entities, translations | No | ✅ | [Link](https://urantia.dev) |

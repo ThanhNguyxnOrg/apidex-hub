@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T06:56:35.744615+00:00",
+    "generated_at": "2026-10-30T07:14:34.392220+00:00",
     "source": "README.md",
-    "total_apis": 4254,
+    "total_apis": 4264,
     "total_categories": 70,
-    "no_auth_count": 1582,
-    "api_key_count": 2409,
+    "no_auth_count": 1584,
+    "api_key_count": 2417,
     "oauth_count": 263,
-    "https_count": 4163,
+    "https_count": 4173,
     "https_percentage": 98
   },
   "categories": [
@@ -15,7 +15,7 @@
       "id": "ai-llm-models",
       "emoji": "🤖",
       "name": "AI Models & LLM Providers",
-      "api_count": 99,
+      "api_count": 104,
       "apis": [
         {
           "name": "1ClickImpact (AI Energy)",
@@ -179,6 +179,13 @@
           "link": "https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2019-06-01/machineLearningServices.json"
         },
         {
+          "name": "Baseten",
+          "description": "High-performance machine learning infrastructure and model-serving APIs with low latency.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.baseten.co/"
+        },
+        {
           "name": "Botpress",
           "description": "Conversational AI agent platform with REST APIs and webhooks.",
           "auth": "apiKey",
@@ -289,6 +296,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://cloud.google.com/data-labeling/docs"
+        },
+        {
+          "name": "DeepInfra",
+          "description": "Serverless AI inference for open-source LLMs, embeddings, and audio models with OpenAI compatibility.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.deepinfra.com"
         },
         {
           "name": "DeepSeek",
@@ -508,6 +522,13 @@
           "link": "https://platform.openai.com/docs"
         },
         {
+          "name": "OpenPipe",
+          "description": "Data collection, evaluation, and fine-tuning platform for specialized small models.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.openpipe.ai/"
+        },
+        {
           "name": "OpenRouter",
           "description": "Unified routing API for models across providers; selected models ending in `:free` are available at $0 with stricter, changeable rate limits.",
           "auth": "apiKey",
@@ -569,6 +590,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://rapidapi.com/bacloud14/api/safe-text"
+        },
+        {
+          "name": "SambaNova Cloud",
+          "description": "Ultra-high-speed AI inference platform powered by SN40L Reconfigurable Dataflow Units.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.sambanova.ai/docs/en/get-started/overview"
         },
         {
           "name": "Smithery",
@@ -653,6 +681,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://voxell.ai/docs/#forge"
+        },
+        {
+          "name": "Voyage AI",
+          "description": "State-of-the-art embedding and reranker models optimized for retrieval-augmented generation.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.voyageai.com/"
         },
         {
           "name": "WaveSpeedAI",
@@ -2948,7 +2983,7 @@
       "id": "books",
       "emoji": "📚",
       "name": "Books & Literature",
-      "api_count": 23,
+      "api_count": 25,
       "apis": [
         {
           "name": "Amanah Sunnah",
@@ -3035,6 +3070,13 @@
           "link": "https://kdp-intelligence-api.vercel.app/docs"
         },
         {
+          "name": "LibriVox",
+          "description": "Public domain audiobook catalog search API by author, title, genre, and language.",
+          "auth": "No",
+          "https": true,
+          "link": "https://librivox.org/api/info"
+        },
+        {
           "name": "Open Library",
           "description": "Fetch data about millions of books and covers.",
           "auth": "No",
@@ -3075,6 +3117,13 @@
           "auth": "No",
           "https": true,
           "link": "https://runyankole-bible-api.vercel.app"
+        },
+        {
+          "name": "Standard Ebooks",
+          "description": "Free public domain ebooks formatted to modern typographic standards via open OPDS feeds.",
+          "auth": "No",
+          "https": true,
+          "link": "https://standardebooks.org/feeds"
         },
         {
           "name": "The Bible API",
@@ -13033,7 +13082,7 @@
       "id": "fitness-wellness",
       "emoji": "💪",
       "name": "Fitness & Wellness",
-      "api_count": 18,
+      "api_count": 19,
       "apis": [
         {
           "name": "Exercises",
@@ -13083,6 +13132,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://api.hevyapp.com/docs"
+        },
+        {
+          "name": "Intervals.icu",
+          "description": "Athletic workout, heart rate, power, and training load analytics REST API for endurance sports.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://intervals.icu/api/v1/docs/"
         },
         {
           "name": "MapMyFitness",
@@ -18793,7 +18849,7 @@
       "id": "monitoring-observability",
       "emoji": "📈",
       "name": "Monitoring & Observability",
-      "api_count": 51,
+      "api_count": 53,
       "apis": [
         {
           "name": "Amazon Mobile Analytics",
@@ -18957,6 +19013,13 @@
           "link": "https://healthchecks.io/docs/api/"
         },
         {
+          "name": "Helicone",
+          "description": "Open-source LLM observability platform for monitoring, request logging, caching, and rate limiting.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://docs.helicone.ai/"
+        },
+        {
           "name": "Honeycomb",
           "description": "Observability for distributed systems and microservices.",
           "auth": "apiKey",
@@ -18976,6 +19039,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.interzoid.com/services/getcountrystandard"
+        },
+        {
+          "name": "Langfuse",
+          "description": "Open-source LLM engineering platform for tracing, evaluations, prompt management, and metrics.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://langfuse.com/docs"
         },
         {
           "name": "Listings API",

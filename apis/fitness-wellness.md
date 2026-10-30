@@ -9,6 +9,7 @@
 | **Free Exercise DB** | Open dataset of 800+ exercises with images. | No | ✅ | [Link](https://github.com/yuhonas/free-exercise-db) |
 | **Google Fit** | Fitness session, steps and health-data store REST APIs. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/fit/rest/) |
 | **Hevy** | Workout-tracking REST API: routines, exercises, logs, webhooks. | 🔑 ApiKey | ✅ | [Link](https://api.hevyapp.com/docs) |
+| **Intervals.icu** | Athletic workout, heart rate, power, and training load analytics REST API for endurance sports. | 🔑 ApiKey | ✅ | [Link](https://intervals.icu/api/v1/docs/) |
 | **MapMyFitness** | Under Armour workout, route and activity tracking. | 🔞 OAuth | ✅ | [Link](https://developer.mapmyfitness.com/) |
 | **Mindbody** | Class schedules, bookings and clients for fitness studios. | 🔑 ApiKey | ✅ | [Link](https://developers.mindbodyonline.com/) |
 | **MyFitnessPal** | Nutrition diary and food database integration. | 🔑 ApiKey | ✅ | [Link](https://www.myfitnesspal.com/developer) |

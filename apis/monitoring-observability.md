@@ -25,9 +25,11 @@
 | **elmah.io** | This is the public REST API for elmah.io. All of the integrations communicates with elmah.io through this API. For ad | 🔑 ApiKey | ✅ | [Link](https://elmah.io) |
 | **Grafana Cloud** | Managed metrics, logs, and traces platform. | 🔑 ApiKey | ✅ | [Link](https://grafana.com/docs/grafana-cloud/developer-resources/api-reference/) |
 | **Healthchecks.io** | Health monitoring with pings, cron checks and down-alerting. | 🔑 ApiKey | ✅ | [Link](https://healthchecks.io/docs/api/) |
+| **Helicone** | Open-source LLM observability platform for monitoring, request logging, caching, and rate limiting. | 🔑 ApiKey | ✅ | [Link](https://docs.helicone.ai/) |
 | **Honeycomb** | Observability for distributed systems and microservices. | 🔑 ApiKey | ✅ | [Link](https://docs.honeycomb.io/api/) |
 | **Interzoid City Data Standardization API** | This API provides a standard for US and international cities for the purposes of standardizing city name data, improving query results, analytics, and data merging. | 🔑 ApiKey | ✅ | [Link](https://www.interzoid.com/services/getcitystandard) |
 | **Interzoid Country Data Standardization API** | This API provides a standard for country name for the purposes of standardizing country name data, improving query results, analytics, and data merging. | 🔑 ApiKey | ✅ | [Link](https://www.interzoid.com/services/getcountrystandard) |
+| **Langfuse** | Open-source LLM engineering platform for tracing, evaluations, prompt management, and metrics. | 🔑 ApiKey | ✅ | [Link](https://langfuse.com/docs) |
 | **Listings API** | Manage business locations, sync listings across publishers, respond to reviews, publish posts, and pull local search analytics. | 🔑 ApiKey | ✅ | [Link](https://docs.listingsapi.com) |
 | **Logdna** | LogDNA is a centralized log management software. It helps you with Real-time log aggregation, monitoring, and | 🔑 ApiKey | ✅ | [Link](https://docs.logdna.com/docs/) |
 | **Microsoft Insights** | Azure Monitor client to create/update/delete Scheduled Query Rules. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/monitor/resource-manager/Microsoft.Insights/stable/2018-04-16/scheduledQueryRule_API.json) |
