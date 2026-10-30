@@ -74,7 +74,6 @@
 | **Ollama** | REST API for running, orchestrating, and chatting with open LLMs locally or on servers. | No | ✅ | [Link](https://ollama.com/) |
 | **onomeo** | OpenAI-compatible, about 30 free LLMs, 30 calls per 5 hours, optional pay-as-you-go, public beta | 🔑 ApiKey | ✅ | [Link](https://onomeo.com/docs) |
 | **OpenAI** | State-of-the-art models including GPT-4o, o1 reasoning, DALL-E, Whisper, and Embeddings. | 🔑 ApiKey | ✅ | [Link](https://platform.openai.com/docs) |
-| **OpenPipe** | Data collection, evaluation, and fine-tuning platform for specialized small models. | 🔑 ApiKey | ✅ | [Link](https://docs.openpipe.ai/) |
 | **OpenRouter** | Unified routing API for models across providers; selected models ending in `:free` are available at $0 with stricter, changeable rate limits. | 🔑 ApiKey | ✅ | [Link](https://openrouter.ai/docs) |
 | **Perplexity AI** | Online conversational search and citation API powered by web-grounded models. | 🔑 ApiKey | ✅ | [Link](https://docs.perplexity.ai/) |
 | **Prismix Status API** | Real-time uptime and incident status for 75+ AI services (OpenAI, Anthropic, Cursor, Gemini). | No | ✅ | [Link](https://prismix.dev/api-docs) |

@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T07:16:30.735347+00:00",
+    "generated_at": "2026-10-30T07:18:51.519092+00:00",
     "source": "README.md",
-    "total_apis": 4264,
+    "total_apis": 4263,
     "total_categories": 70,
     "no_auth_count": 1584,
-    "api_key_count": 2417,
+    "api_key_count": 2416,
     "oauth_count": 263,
-    "https_count": 4173,
+    "https_count": 4172,
     "https_percentage": 98
   },
   "categories": [
@@ -15,7 +15,7 @@
       "id": "ai-llm-models",
       "emoji": "🤖",
       "name": "AI Models & LLM Providers",
-      "api_count": 104,
+      "api_count": 103,
       "apis": [
         {
           "name": "1ClickImpact (AI Energy)",
@@ -520,13 +520,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://platform.openai.com/docs"
-        },
-        {
-          "name": "OpenPipe",
-          "description": "Data collection, evaluation, and fine-tuning platform for specialized small models.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://docs.openpipe.ai/"
         },
         {
           "name": "OpenRouter",
