@@ -1,9 +1,14 @@
 import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
 
+SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_DIR))
+
 from pr_validation import (
+    classify_link_result,
     find_duplicate_urls,
     normalize_url,
     parse_api_diff,
@@ -84,6 +89,20 @@ class ApiDiffParsingTests(unittest.TestCase):
             normalize_url("https://docs.example.com/api?v=2"),
         )
 
+    def test_only_confirmed_not_found_and_dns_are_broken(self):
+        self.assertEqual(classify_link_result(404), "broken")
+        self.assertEqual(classify_link_result(410), "broken")
+        self.assertEqual(classify_link_result(None, "net::ERR_NAME_NOT_RESOLVED"), "broken")
+
+    def test_access_controls_and_transient_responses_are_inconclusive(self):
+        for status in (401, 403, 418, 429, 500, 502, 503, 504, None):
+            with self.subTest(status=status):
+                self.assertEqual(classify_link_result(status, "temporary failure"), "inconclusive")
+
+    def test_successful_http_status_is_working(self):
+        self.assertEqual(classify_link_result(200), "working")
+        self.assertEqual(classify_link_result(302), "working")
+
 
 class RepositoryDiffTests(unittest.TestCase):
     def test_reads_apis_diff_when_called_from_scripts_directory(self):
@@ -94,8 +113,8 @@ class RepositoryDiffTests(unittest.TestCase):
             scripts.mkdir()
             apis.mkdir()
             (apis / "example.md").write_text(
-                "| API Name | Description | Auth | HTTPS | Link |\\n"
-                "| --- | --- | --- | --- | --- |\\n",
+                "| API Name | Description | Auth | HTTPS | Link |\n"
+                "| --- | --- | --- | --- | --- |\n",
                 encoding="utf-8",
             )
             subprocess.run(["git", "init", "-q", str(root)], check=True)
@@ -110,7 +129,7 @@ class RepositoryDiffTests(unittest.TestCase):
             with (apis / "example.md").open("a", encoding="utf-8") as file:
                 file.write(
                     "| **Example API** | Example | No | ✅ | "
-                    "[Link](https://docs.example.com/api) |\\n"
+                    "[Link](https://docs.example.com/api) |\n"
                 )
             subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
             subprocess.run(["git", "-C", str(root), "commit", "-qm", "add API"], check=True)
@@ -118,7 +137,7 @@ class RepositoryDiffTests(unittest.TestCase):
                 ["git", "-C", str(root), "rev-parse", "HEAD"], text=True
             ).strip()
 
-            paths, diff = read_pr_diff(base, head, root / "scripts")
+            paths, diff = read_pr_diff(base, head, scripts)
             self.assertEqual(paths, ["apis/example.md"])
             self.assertIn("https://docs.example.com/api", diff)
 
