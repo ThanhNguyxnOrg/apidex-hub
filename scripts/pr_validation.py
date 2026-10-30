@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import re
 import subprocess
+from collections import Counter
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
@@ -45,7 +46,7 @@ def read_pr_diff(base_ref: str, head_ref: str, repo_root: Path) -> tuple[list[st
         if not re.fullmatch(r"[0-9a-fA-F]{40,64}", resolved):
             raise RuntimeError(f"The PR {ref_name} ref did not resolve to a commit: {ref}")
 
-    paths_text = _git(root, "diff", "--name-only", "--diff-filter=ACMR", base_ref, head_ref, "--", "apis/")
+    paths_text = _git(root, "diff", "--name-only", base_ref, head_ref, "--", "apis/")
     paths = sorted(path for path in paths_text.splitlines() if path.startswith("apis/"))
     diff = _git(root, "diff", "--no-ext-diff", "--unified=0", base_ref, head_ref, "--", "apis/")
     return paths, diff
@@ -141,17 +142,18 @@ def find_duplicate_urls(
     added_urls: list[str], removed_urls: list[str], existing_urls: list[str]
 ) -> list[str]:
     """Detect URL duplicates, accounting for entries removed in the same PR."""
-    removed = {normalize_url(url) for url in removed_urls}
-    existing = {normalize_url(url) for url in existing_urls} - removed
-    seen_added: set[str] = set()
+    existing_counts = Counter(normalize_url(url) for url in existing_urls)
+    removed_counts = Counter(normalize_url(url) for url in removed_urls)
+    remaining_existing = existing_counts - removed_counts
+    seen_added: Counter[str] = Counter()
     duplicates: list[str] = []
     reported: set[str] = set()
     for url in added_urls:
         normalized = normalize_url(url)
-        if (normalized in existing or normalized in seen_added) and normalized not in reported:
+        if (remaining_existing[normalized] > 0 or seen_added[normalized] > 0) and normalized not in reported:
             duplicates.append(url)
             reported.add(normalized)
-        seen_added.add(normalized)
+        seen_added[normalized] += 1
     return duplicates
 
 
