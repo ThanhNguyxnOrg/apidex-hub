@@ -248,7 +248,6 @@
 | **Proxmox VE API** | API of self-hosted Proxmox VE. Address: https://your.server:8006/api2/json/ (configuring in installation process). | 🔑 ApiKey | ✅ | [Link](https://pve.proxmox.com/pve-docs/api-viewer) |
 | **ProxyCrawl** | Scraping and crawling anticaptcha service. | 🔑 ApiKey | ✅ | [Link](https://proxycrawl.com) |
 | **ProxyForge** | Free auto-updating list of live-tested proxies (HTTP/HTTPS/SOCKS4/SOCKS5), refreshed every 6 h | No | ✅ | [Link](https://proxyforge.dev) |
-| **ProxyKingdom** | Rotating Proxy API that produces a working proxy on every request. | 🔑 ApiKey | ✅ | [Link](https://proxykingdom.com) |
 | **Pusher Beams** | Push notifications for Android & iOS. | 🔑 ApiKey | ✅ | [Link](https://pusher.com/beams) |
 | **Pusher Channels** | Realtime features. | 🔑 ApiKey | ✅ | [Link](https://pusher.com/channels) |
 | **PyPI** | JSON API for Python package metadata and releases. | No | ✅ | [Link](https://warehouse.pypa.io/api-reference/) |

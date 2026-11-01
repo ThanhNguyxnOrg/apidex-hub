@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T07:18:51.519092+00:00",
+    "generated_at": "2026-11-01T03:59:03.530212+00:00",
     "source": "README.md",
-    "total_apis": 4263,
+    "total_apis": 4262,
     "total_categories": 70,
     "no_auth_count": 1584,
-    "api_key_count": 2416,
+    "api_key_count": 2415,
     "oauth_count": 263,
-    "https_count": 4172,
+    "https_count": 4171,
     "https_percentage": 98
   },
   "categories": [
@@ -6500,7 +6500,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 356,
+      "api_count": 355,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -8223,13 +8223,6 @@
           "auth": "No",
           "https": true,
           "link": "https://proxyforge.dev"
-        },
-        {
-          "name": "ProxyKingdom",
-          "description": "Rotating Proxy API that produces a working proxy on every request.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://proxykingdom.com"
         },
         {
           "name": "Pusher Beams",
