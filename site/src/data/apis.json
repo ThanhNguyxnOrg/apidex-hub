@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-01T03:59:03.530212+00:00",
+    "generated_at": "2026-11-02T04:02:43.347259+00:00",
     "source": "README.md",
-    "total_apis": 4262,
+    "total_apis": 4261,
     "total_categories": 70,
-    "no_auth_count": 1584,
+    "no_auth_count": 1583,
     "api_key_count": 2415,
     "oauth_count": 263,
-    "https_count": 4171,
+    "https_count": 4170,
     "https_percentage": 98
   },
   "categories": [
@@ -27355,7 +27355,7 @@
       "id": "transportation",
       "emoji": "🚆",
       "name": "Transportation",
-      "api_count": 126,
+      "api_count": 125,
       "apis": [
         {
           "name": "ADS-B Exchange",
@@ -28217,13 +28217,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole"
-        },
-        {
-          "name": "Wheelwise",
-          "description": "UK used-car listings with fair-price grade, 36-month resale forecast and monthly cost per advert",
-          "auth": "No",
-          "https": true,
-          "link": "https://cars.limoja.ai/api/search?q=BMW&limit=1"
         },
         {
           "name": "Where to Credit",

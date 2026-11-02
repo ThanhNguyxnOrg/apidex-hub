@@ -125,7 +125,6 @@
 | **Tripadvisor** | Rating content for a hotel, restaurant, attraction or destination. | 🔑 ApiKey | ✅ | [Link](https://tripadvisor-content-api.readme.io/reference/overview) |
 | **Uber** | Uber ride requests and price estimation. | 🔐 OAuth | ✅ | [Link](https://developer.uber.com/products) |
 | **Velib metropolis, Paris, France** | Velib Open Data API. | No | ✅ | [Link](https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole) |
-| **Wheelwise** | UK used-car listings with fair-price grade, 36-month resale forecast and monthly cost per advert | No | ✅ | [Link](https://cars.limoja.ai/api/search?q=BMW&limit=1) |
 | **Where to Credit** | The Where to Credit API provides mileage earning calculations for frequent flyer programs around the world | 🔑 ApiKey | ✅ | [Link](https://wheretocredit.com) |
 | **Windsock** | Aircraft valuations, FAA registry lookups, cost of ownership and aviation market data | 🔑 ApiKey | ✅ | [Link](https://windsock.ai/app/docs) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
