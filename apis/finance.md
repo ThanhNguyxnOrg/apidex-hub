@@ -137,7 +137,6 @@
 | **ValueRay** | Quantitative and sentiment data for stocks and ETFs | No | ✅ | [Link](https://www.valueray.com/api) |
 | **VAT** | A developer friendly API to help your business achieve VAT compliance | 🔑 ApiKey | ✅ | [Link](https://vatapi.com) |
 | **VAT Validation** | Validate VAT numbers and calculate VAT rates. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/vat-validation-rates-api) |
-| **VoxOdds** | Polymarket and Kalshi odds, all-in executable quotes, EV checks and audited forecast scores | No | ✅ | [Link](https://voxodds.com/api) |
 | **WallstreetBets** | WallstreetBets Stock Comments Sentiment Analysis. | No | ✅ | [Link](https://dashboard.nbshare.io/apps/reddit/api/) |
 | **Wise** | International money transfers and currency exchange. | 🔐 OAuth | ✅ | [Link](https://docs.wise.com/api-docs) |
 | **World trading data** | World Trading Data is a worldwide market data provider, for example provide a stock name and dates and get trading | No | ✅ | [Link](https://www.worldtradingdata.com) |

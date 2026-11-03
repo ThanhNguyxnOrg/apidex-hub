@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-02T04:02:43.347259+00:00",
+    "generated_at": "2026-11-03T05:04:12.410427+00:00",
     "source": "README.md",
-    "total_apis": 4261,
+    "total_apis": 4259,
     "total_categories": 70,
-    "no_auth_count": 1583,
+    "no_auth_count": 1581,
     "api_key_count": 2415,
     "oauth_count": 263,
-    "https_count": 4170,
+    "https_count": 4168,
     "https_percentage": 98
   },
   "categories": [
@@ -12031,7 +12031,7 @@
       "id": "finance",
       "emoji": "💰",
       "name": "Finance",
-      "api_count": 147,
+      "api_count": 146,
       "apis": [
         {
           "name": "Account and Transaction API",
@@ -12977,13 +12977,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.abstractapi.com/vat-validation-rates-api"
-        },
-        {
-          "name": "VoxOdds",
-          "description": "Polymarket and Kalshi odds, all-in executable quotes, EV checks and audited forecast scores",
-          "auth": "No",
-          "https": true,
-          "link": "https://voxodds.com/api"
         },
         {
           "name": "WallstreetBets",
@@ -14576,7 +14569,7 @@
       "id": "geocoding",
       "emoji": "🌍",
       "name": "Geocoding",
-      "api_count": 154,
+      "api_count": 153,
       "apis": [
         {
           "name": "Actinia Grass GIS",
@@ -15634,13 +15627,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.maptoolkit.org/"
-        },
-        {
-          "name": "PlacesDB",
-          "description": "No-key geographic reference API for millions of places, with fuzzy search, nearby-place lookup, region data, population, elevation and timezone fields.",
-          "auth": "No",
-          "https": true,
-          "link": "https://placesdb.dev/"
         },
         {
           "name": "TrailSplits API",
