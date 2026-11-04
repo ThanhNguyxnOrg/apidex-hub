@@ -17,7 +17,6 @@
 | **DiscGolf** | Structured disc golf course data | No | ✅ | [Link](https://discgolfapi.com/docs/) |
 | **Ergast F1** | F1 data from the beginning of the world championships in 1950 | No | No | [Link](http://ergast.com/mrd/) |
 | **ESPN** | Unofficial ESPN API for NFL, NBA, MLB, NHL scores and schedules (**No Auth**). | No | ✅ | [Link](https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b) |
-| **F1** | Free F1 data in real time with his own NPM package | No | ✅ | [Link](https://f1api.dev) |
 | **FanLine Wire** | Real-time FanDuel Sportsbook odds — live & in-play and pre-match, with a keyless public snapshot | No | ✅ | [Link](https://fanlinewire.com/docs) |
 | **Fastball** | MLB since 2015 plus college baseball: pitches, plate appearances, box scores and sportsbook odds | 🔑 ApiKey | ✅ | [Link](https://fastballapi.com/docs) |
 | **Football** | A simple Open Source Football API to get squads’ stats, best scorers and more. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/GiulianoCrescimbeni/api/football98/) |

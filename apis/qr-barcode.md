@@ -22,7 +22,6 @@
 | **QR TIGER** | Dynamic QR codes with custom design templates, bulk generation and scan analytics. | 🔑 ApiKey | ✅ | [Link](https://www.qrcode-tiger.com/api-documentation) |
 | **QRickit** | Simple GET-based QR code generation API returning PNG images. | No | ✅ | [Link](https://qrickit.com/qrickit_apps/qrickit_api.php) |
 | **QRX** | Stylized QR code generator with SVG output. | No | ✅ | [Link](https://qrx.codes/developers) |
-| **TEC-IT** | Generate QR codes and barcodes in many formats. | No | ✅ | [Link](https://www.tec-it.com/en/software/online-components/barcode-generator-api/overview) |
 | **TheQRCode** | Create QR codes for URLs, WiFi, vCards, email and SMS. | No | ✅ | [Link](https://theqrcode.io/qr-code-api) |
 | **UPCitemdb** | UPC/EAN lookup and product search over a 750-million-item database. | 🔑 ApiKey | ✅ | [Link](https://devs.upcitemdb.com/) |
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

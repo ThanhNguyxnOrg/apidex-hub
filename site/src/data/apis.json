@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-03T05:04:12.410427+00:00",
+    "generated_at": "2026-11-04T04:36:44.183268+00:00",
     "source": "README.md",
-    "total_apis": 4259,
+    "total_apis": 4256,
     "total_categories": 70,
-    "no_auth_count": 1581,
-    "api_key_count": 2415,
+    "no_auth_count": 1579,
+    "api_key_count": 2414,
     "oauth_count": 263,
-    "https_count": 4168,
+    "https_count": 4165,
     "https_percentage": 98
   },
   "categories": [
@@ -1286,7 +1286,7 @@
       "id": "authentication-identity",
       "emoji": "🔐",
       "name": "Authentication & Identity",
-      "api_count": 106,
+      "api_count": 105,
       "apis": [
         {
           "name": "1Password Connect",
@@ -1938,13 +1938,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://cloud.google.com/secret-manager"
-        },
-        {
-          "name": "Self Service Developer API",
-          "description": "Self Service Developer API documentation and demo. ##Getting Started You will need an API access profile user and password in order to access search endpoints. Your access.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://pfent1821.docs.apiary.io/api-description-document"
         },
         {
           "name": "Stytch",
@@ -23398,7 +23391,7 @@
       "id": "qr-barcode",
       "emoji": "🔳",
       "name": "QR & Barcode",
-      "api_count": 23,
+      "api_count": 22,
       "apis": [
         {
           "name": "Barcode",
@@ -23539,13 +23532,6 @@
           "auth": "No",
           "https": true,
           "link": "https://qrx.codes/developers"
-        },
-        {
-          "name": "TEC-IT",
-          "description": "Generate QR codes and barcodes in many formats.",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.tec-it.com/en/software/online-components/barcode-generator-api/overview"
         },
         {
           "name": "TheQRCode",
@@ -26288,7 +26274,7 @@
       "id": "sports",
       "emoji": "⚽",
       "name": "Sports",
-      "api_count": 65,
+      "api_count": 64,
       "apis": [
         {
           "name": "5DollarFootball",
@@ -26394,13 +26380,6 @@
           "auth": "No",
           "https": true,
           "link": "https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b"
-        },
-        {
-          "name": "F1",
-          "description": "Free F1 data in real time with his own NPM package",
-          "auth": "No",
-          "https": true,
-          "link": "https://f1api.dev"
         },
         {
           "name": "FanLine Wire",

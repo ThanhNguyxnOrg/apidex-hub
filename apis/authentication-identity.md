@@ -95,7 +95,6 @@
 | **Safe Place** | Before using this API, we recommend you read our Authorization Guide for more information. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/SafePlaceAPI_v1_swagger_specification.json) |
 | **Seatmap Display** | Before using this API, we recommend you read our Authorization Guide for more information. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/SeatMapDisplay_v1_swagger_specification.json) |
 | **Secret Manager API** | Stores sensitive data such as API keys, passwords, and certificates. Provides convenience while improving security. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/secret-manager) |
-| **Self Service Developer API** | Self Service Developer API documentation and demo. ##Getting Started You will need an API access profile user and password in order to access search endpoints. Your access. | 🔑 ApiKey | ✅ | [Link](https://pfent1821.docs.apiary.io/api-description-document) |
 | **Stytch** | Authentication APIs for passwords, OTP, magic links, and OAuth. | 🔑 ApiKey | ✅ | [Link](https://stytch.com/docs/api) |
 | **SuperTokens** | Open-source auth solution for session and user management. | No | ✅ | [Link](https://supertokens.com/docs) |
 | **Top Stories** | The Top Stories API provides lists of articles and associated images by section. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/nytimes/public_api_specs/master/top_stories/top_stories_v2.json) |
