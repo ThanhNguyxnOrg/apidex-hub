@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-04T04:36:44.183268+00:00",
+    "generated_at": "2026-11-05T04:51:34.292806+00:00",
     "source": "README.md",
-    "total_apis": 4256,
+    "total_apis": 4253,
     "total_categories": 70,
-    "no_auth_count": 1579,
-    "api_key_count": 2414,
+    "no_auth_count": 1578,
+    "api_key_count": 2412,
     "oauth_count": 263,
-    "https_count": 4165,
+    "https_count": 4162,
     "https_percentage": 98
   },
   "categories": [
@@ -11441,7 +11441,7 @@
       "id": "environment-climate",
       "emoji": "🌿",
       "name": "Environment & Climate",
-      "api_count": 55,
+      "api_count": 54,
       "apis": [
         {
           "name": "1ClickImpact",
@@ -11715,13 +11715,6 @@
           "auth": "No",
           "https": true,
           "link": "https://joint-research-centre.ec.europa.eu/pvgis-photovoltaic-geographical-information-system/getting-started-pvgis/api-non-interactive-service"
-        },
-        {
-          "name": "RWLabs",
-          "description": "All types of disaster data",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://apidoc.rwlabs.org/"
         },
         {
           "name": "sensor.community",
@@ -15789,15 +15782,8 @@
       "id": "government-civic",
       "emoji": "🏛️",
       "name": "Government & Civic",
-      "api_count": 139,
+      "api_count": 137,
       "apis": [
-        {
-          "name": "AI Law Tracker",
-          "description": "AI regulation laws by jurisdiction (US, EU, global) as read-only JSON; free tier",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://ai-law-tracker.com/developers"
-        },
         {
           "name": "Api Colombia",
           "description": "Community driven API for Colombia Public Data.",
@@ -16644,13 +16630,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://www.regulations.gov/developers"
-        },
-        {
-          "name": "ReliefWeb",
-          "description": "UN OCHA ReliefWeb: humanitarian disaster reports, jobs, training and crisis data.",
-          "auth": "No",
-          "https": true,
-          "link": "https://apidoc.reliefweb.int"
         },
         {
           "name": "Represent by Open North",

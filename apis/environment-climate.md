@@ -41,7 +41,6 @@
 | **Purple Air** | Real Time Air Quality Monitoring. | No | ✅ | [Link](https://www2.purpleair.com) |
 | **PurpleAir** | Real-time air quality sensor data. | 🔑 ApiKey | ✅ | [Link](https://api.purpleair.com/) |
 | **PVGIS** | EU solar radiation and photovoltaic performance estimates | No | ✅ | [Link](https://joint-research-centre.ec.europa.eu/pvgis-photovoltaic-geographical-information-system/getting-started-pvgis/api-non-interactive-service) |
-| **RWLabs** | All types of disaster data | 🔑 ApiKey | ✅ | [Link](https://apidoc.rwlabs.org/) |
 | **sensor.community** | Community air quality sensor network data worldwide | No | ✅ | [Link](https://github.com/opendata-stuttgart/meta/wiki/EN-APIs) |
 | **Smartatest** | Calculators for home energy cost, lighting, air quality limits and GS1 barcode prefixes, in Swedish. | No | ✅ | [Link](https://smartatest.se/api) |
 | **Solematica** | Compare Italian solar (photovoltaic) installer offers, energy prices (PUN/ARERA) and satellite roof data | No | ✅ | [Link](https://www.solematica.it/sviluppatori) |

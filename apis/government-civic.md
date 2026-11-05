@@ -2,7 +2,6 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **AI Law Tracker** | AI regulation laws by jurisdiction (US, EU, global) as read-only JSON; free tier | 🔑 ApiKey | ✅ | [Link](https://ai-law-tracker.com/developers) |
 | **Api Colombia** | Community driven API for Colombia Public Data. | No | ✅ | [Link](https://api-colombia.com) |
 | **Ayes and Noes** | UK House of Commons MPs, parties and recorded votes | No | ✅ | [Link](https://ayesandnoes.co.uk/developers) |
 | **Bank Negara Malaysia Open Data** | Malaysia Central Bank Open Data. | No | ✅ | [Link](https://apikijangportal.bnm.gov.my/) |
@@ -124,7 +123,6 @@
 | **ProcureData** | Canadian federal procurement contracts, tenders and awards | 🔑 ApiKey | ✅ | [Link](https://procuredata.ca) |
 | **Radar CNPJ** | Brazilian companies (CNPJ) lookup and search, with a market check by area and monitoring | No | ✅ | [Link](https://radar-cnpj.com/api/) |
 | **Regulations.gov** | U.S. federal agency rulemaking dockets and comments. | 🔑 ApiKey | ✅ | [Link](https://www.regulations.gov/developers) |
-| **ReliefWeb** | UN OCHA ReliefWeb: humanitarian disaster reports, jobs, training and crisis data. | No | ✅ | [Link](https://apidoc.reliefweb.int) |
 | **Represent by Open North** | Find Canadian Government Representatives. | No | ✅ | [Link](https://represent.opennorth.ca/) |
 | **Right to Disconnect** | Right-to-disconnect employment law by EU country: binding status, statute, and sanctions | No | ✅ | [Link](https://righttodisconnect.jdries.nl/api/) |
 | **Spatial India** | District-level data for India: Census, NFHS-5, NCRB, RBI and more, reconciled onto one map | No | ✅ | [Link](https://api.spatialindia.com) |
