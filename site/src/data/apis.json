@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-05T04:51:34.292806+00:00",
+    "generated_at": "2026-11-06T05:02:35.844953+00:00",
     "source": "README.md",
-    "total_apis": 4253,
+    "total_apis": 4250,
     "total_categories": 70,
-    "no_auth_count": 1578,
-    "api_key_count": 2412,
+    "no_auth_count": 1577,
+    "api_key_count": 2410,
     "oauth_count": 263,
-    "https_count": 4162,
+    "https_count": 4159,
     "https_percentage": 98
   },
   "categories": [
@@ -15,7 +15,7 @@
       "id": "ai-llm-models",
       "emoji": "🤖",
       "name": "AI Models & LLM Providers",
-      "api_count": 103,
+      "api_count": 102,
       "apis": [
         {
           "name": "1ClickImpact (AI Energy)",
@@ -506,13 +506,6 @@
           "auth": "No",
           "https": true,
           "link": "https://ollama.com/"
-        },
-        {
-          "name": "onomeo",
-          "description": "OpenAI-compatible, about 30 free LLMs, 30 calls per 5 hours, optional pay-as-you-go, public beta",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://onomeo.com/docs"
         },
         {
           "name": "OpenAI",
@@ -13497,7 +13490,7 @@
       "id": "games-comics",
       "emoji": "🎮",
       "name": "Games & Comics",
-      "api_count": 150,
+      "api_count": 149,
       "apis": [
         {
           "name": "akshaykumar-rest",
@@ -13743,13 +13736,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.opendota.com/"
-        },
-        {
-          "name": "DotaSense Timings",
-          "description": "Reviewed Dota 2 objective timings in JSON and CSV",
-          "auth": "No",
-          "https": true,
-          "link": "https://dotasense.com/cheat-sheet#timing-api"
         },
         {
           "name": "Dragon Ball",
@@ -17409,7 +17395,7 @@
       "id": "jobs-career",
       "emoji": "💼",
       "name": "Jobs & Career",
-      "api_count": 41,
+      "api_count": 40,
       "apis": [
         {
           "name": "Adzuna",
@@ -17431,13 +17417,6 @@
           "auth": "No",
           "https": true,
           "link": "https://aidevboard.com/openapi.yaml"
-        },
-        {
-          "name": "Allowly Hiring Evidence",
-          "description": "Deterministic hiring policy decisions and signed evidence records",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://allowly.ai/docs/solutions/hiring/api/"
         },
         {
           "name": "Arbeitnow",

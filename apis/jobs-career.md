@@ -5,7 +5,6 @@
 | **Adzuna** | Job board aggregator with salary data. | 🔑 ApiKey | ✅ | [Link](https://developer.adzuna.com/overview) |
 | **Agentic Engineering Jobs** | Job board for engineers building agentic systems (LangChain, LlamaIndex, CrewAI) | No | ✅ | [Link](https://agentic-engineering-jobs.com/api-reference) |
 | **AI Dev Jobs** | AI/ML engineering job aggregator with REST, RSS, and MCP endpoints | No | ✅ | [Link](https://aidevboard.com/openapi.yaml) |
-| **Allowly Hiring Evidence** | Deterministic hiring policy decisions and signed evidence records | 🔑 ApiKey | ✅ | [Link](https://allowly.ai/docs/solutions/hiring/api/) |
 | **Arbeitnow** | Free remote job board API. | No | ✅ | [Link](https://documenter.getpostman.com/view/18545278/UVJbJdKh) |
 | **Arbeitsamt** | API for the "Arbeitsamt", which is a german Job board aggregator. | 🔐 OAuth | ✅ | [Link](https://jobsuche.api.bund.dev/) |
 | **Artificial Intelligence Jobs** | Live AI/ML job listings from 260+ companies' own career pages, with salary, location, remote and seniority filters | No | ✅ | [Link](https://artificialintelligencejobs.co/developers) |

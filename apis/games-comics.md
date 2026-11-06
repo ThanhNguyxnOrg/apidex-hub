@@ -37,7 +37,6 @@
 | **Digimon TCG** | Search for Digimon cards in digimoncard.io. | No | ✅ | [Link](https://documenter.getpostman.com/view/14059948/TzecB4fH) |
 | **Disney** | Information of Disney characters. | No | ✅ | [Link](https://disneyapi.dev) |
 | **Dota 2** | Game data. | 🔑 ApiKey | ✅ | [Link](https://docs.opendota.com/) |
-| **DotaSense Timings** | Reviewed Dota 2 objective timings in JSON and CSV | No | ✅ | [Link](https://dotasense.com/cheat-sheet#timing-api) |
 | **Dragon Ball** | An easy to use Dragon Ball API. | No | ✅ | [Link](https://web.dragonball-api.com) |
 | **Dungeons and Dragons** | 5th Edition SRD. | No | ✅ | [Link](https://www.dnd5eapi.co/docs/) |
 | **Dungeons and Dragons (Alternate)** | Includes all monsters and spells from the SRD (System Reference Document) as ... | No | ✅ | [Link](https://open5e.com/) |
