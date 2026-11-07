@@ -2,6 +2,7 @@
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **AgentSEO** | Google SERP, rank tracking, keyword research, and AI Overview data. New accounts receive 100 one-time live credits with no card; ongoing usage requires a paid plan. | 🔑 ApiKey | ✅ | [Link](https://www.agentseo.dev/docs/api-reference) |
 | **Autom** | Our SERP API delivers lightning-fast Google search results at unbeatable prices. Built for developers who need reliable, scalable access to search data without the complexity of. | 🔑 ApiKey | ✅ | [Link](https://www.autom.dev) |
 | **Bing Webmaster Tools** | Index management, SEO reports and URL submission APIs. | 🔑 ApiKey | ✅ | [Link](https://www.bing.com/webmasters/) |
 | **Botify** | Botify Saas API | 🔑 ApiKey | ✅ | [Link](https://botify.com) |
