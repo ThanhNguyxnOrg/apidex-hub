@@ -18,7 +18,6 @@
 | **SayItVid** | English video pronunciation search with timestamps, IPA phonetics and subtitle context | 🔑 ApiKey | ✅ | [Link](https://sayitvid.com) |
 | **Synonyms** | Synonyms, thesaurus and antonyms information for any given word | 🔑 ApiKey | ✅ | [Link](https://www.synonyms.com/synonyms_api.php) |
 | **Synonyms API** | Find synonyms for any word. | No | ✅ | [Link](https://api-ninjas.com/api/thesaurus) |
-| **Tamil Dictionary** | Lookup Tamil words and build your own Tamil dictionary APP using this API. | No | ✅ | [Link](https://agarathi.com/api/dictionary) |
 | **Urban Dictionary** | Slang dictionary. | No | ✅ | [Link](https://api.urbandictionary.com/v0/define?term=api) |
 | **Weglot** | Translation API and localization platform for websites. | 🔑 ApiKey | ✅ | [Link](https://developers.weglot.com/) |
 | **Wiktionary API** | Open dictionary and thesaurus data. | No | ✅ | [Link](https://en.wiktionary.org/w/api.php) |

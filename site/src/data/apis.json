@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-06T05:02:35.844953+00:00",
+    "generated_at": "2026-11-07T04:20:08.028667+00:00",
     "source": "README.md",
-    "total_apis": 4250,
+    "total_apis": 4249,
     "total_categories": 70,
-    "no_auth_count": 1577,
+    "no_auth_count": 1576,
     "api_key_count": 2410,
     "oauth_count": 263,
-    "https_count": 4159,
+    "https_count": 4158,
     "https_percentage": 98
   },
   "categories": [
@@ -8979,7 +8979,7 @@
       "id": "dictionaries",
       "emoji": "📖",
       "name": "Dictionaries",
-      "api_count": 23,
+      "api_count": 22,
       "apis": [
         {
           "name": "Chinese Character Web",
@@ -9092,13 +9092,6 @@
           "auth": "No",
           "https": true,
           "link": "https://api-ninjas.com/api/thesaurus"
-        },
-        {
-          "name": "Tamil Dictionary",
-          "description": "Lookup Tamil words and build your own Tamil dictionary APP using this API.",
-          "auth": "No",
-          "https": true,
-          "link": "https://agarathi.com/api/dictionary"
         },
         {
           "name": "Urban Dictionary",
