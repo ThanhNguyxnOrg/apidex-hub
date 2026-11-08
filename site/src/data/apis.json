@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-07T04:20:08.028667+00:00",
+    "generated_at": "2026-11-08T06:24:39.738925+00:00",
     "source": "README.md",
-    "total_apis": 4249,
+    "total_apis": 4250,
     "total_categories": 70,
     "no_auth_count": 1576,
-    "api_key_count": 2410,
+    "api_key_count": 2411,
     "oauth_count": 263,
-    "https_count": 4158,
+    "https_count": 4159,
     "https_percentage": 98
   },
   "categories": [
@@ -30023,8 +30023,15 @@
       "id": "web-scraping-crawling",
       "emoji": "🕷️",
       "name": "Web Scraping & AI Search",
-      "api_count": 41,
+      "api_count": 42,
       "apis": [
+        {
+          "name": "AgentSEO",
+          "description": "Google SERP, rank tracking, keyword research, and AI Overview data. New accounts receive 100 one-time live credits with no card; ongoing usage requires a paid plan.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.agentseo.dev/docs/api-reference"
+        },
         {
           "name": "Autom",
           "description": "Our SERP API delivers lightning-fast Google search results at unbeatable prices. Built for developers who need reliable, scalable access to search data without the complexity of.",
