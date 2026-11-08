@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T06:27:41.547125+00:00",
+    "generated_at": "2026-11-08T06:31:23.081693+00:00",
     "source": "README.md",
     "total_apis": 4251,
     "total_categories": 70,
@@ -7134,7 +7134,7 @@
         },
         {
           "name": "Datacircle",
-          "description": "Public directory and benchmark data for go-to-market (GTM) APIs.",
+          "description": "Public GTM API directory with benchmark rankings and a documented REST API for discovering and comparing providers.",
           "auth": "No",
           "https": true,
           "link": "https://datacircle.dev/api"
