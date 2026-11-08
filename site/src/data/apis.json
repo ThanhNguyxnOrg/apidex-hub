@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T06:24:39.738925+00:00",
+    "generated_at": "2026-11-08T06:27:41.547125+00:00",
     "source": "README.md",
-    "total_apis": 4250,
+    "total_apis": 4251,
     "total_categories": 70,
-    "no_auth_count": 1576,
+    "no_auth_count": 1577,
     "api_key_count": 2411,
     "oauth_count": 263,
-    "https_count": 4159,
+    "https_count": 4160,
     "https_percentage": 98
   },
   "categories": [
@@ -6486,7 +6486,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 355,
+      "api_count": 356,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -7131,6 +7131,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.databricks.com/api/workspace/introduction"
+        },
+        {
+          "name": "Datacircle",
+          "description": "Public directory and benchmark data for go-to-market (GTM) APIs.",
+          "auth": "No",
+          "https": true,
+          "link": "https://datacircle.dev/api"
         },
         {
           "name": "DATPAQ",
