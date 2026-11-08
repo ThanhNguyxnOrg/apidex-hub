@@ -94,7 +94,7 @@
 | **CurlShot** | Website screenshot API: URL, HTML or Markdown to PNG, JPEG, WebP, PDF or scrolling video (free tier: 100/month). | 🔑 ApiKey | ✅ | [Link](https://curlshot.com/docs) |
 | **DaniWeb Connect** | User Recommendation Engine and Chat Network | 🔒 OAuth | ✅ | [Link](https://www.daniweb.com/members/1/dani) |
 | **Databricks** | Lakehouse workspace, jobs, and cluster APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.databricks.com/api/workspace/introduction) |
-| **Datacircle** | Public directory and benchmark data for go-to-market (GTM) APIs. | No | ✅ | [Link](https://datacircle.dev/api) |
+| **Datacircle** | Public GTM API directory with benchmark rankings and a documented REST API for discovering and comparing providers. | No | ✅ | [Link](https://datacircle.dev/api) |
 | **DATPAQ** | Developer-first APIs. Enterprise-ready infrastructure. Sampla data, avatars, image processing and a lot more. | 🔑 ApiKey | ✅ | [Link](https://datpaq.com) |
 | **Debian Code Search** | OpenAPI for https://codesearch.debian.net/ | 🔑 ApiKey | ✅ | [Link](https://codesearch.debian.net) |
 | **deed.page** | Static hosting for AI agents: publish HTML or a folder with one HTTP PUT (free: 25 sites, 25 MB each, no signup) | No | ✅ | [Link](https://deed.page/docs) |
