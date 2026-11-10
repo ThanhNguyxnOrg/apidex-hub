@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T06:31:23.081693+00:00",
+    "generated_at": "2026-11-10T10:32:27.648075+00:00",
     "source": "README.md",
-    "total_apis": 4251,
+    "total_apis": 4252,
     "total_categories": 70,
     "no_auth_count": 1577,
-    "api_key_count": 2411,
+    "api_key_count": 2412,
     "oauth_count": 263,
-    "https_count": 4160,
+    "https_count": 4161,
     "https_percentage": 98
   },
   "categories": [
@@ -23673,7 +23673,7 @@
       "id": "science",
       "emoji": "🔬",
       "name": "Science & Space",
-      "api_count": 59,
+      "api_count": 60,
       "apis": [
         {
           "name": "arcsecond.io",
@@ -23912,6 +23912,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://api.nasa.gov/"
+        },
+        {
+          "name": "N2YO",
+          "description": "Real-time satellite positions, TLE data and visual passes for satellites and the ISS.",
+          "auth": "apiKey",
+          "https": true,
+          "link": "https://www.n2yo.com/api/"
         },
         {
           "name": "NOAA Tides & Currents",
