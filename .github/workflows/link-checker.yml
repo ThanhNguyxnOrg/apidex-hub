@@ -304,6 +304,8 @@ jobs:
             fi
 
             ISSUE_NUM="${{ steps.create-incident.outputs.issue_number }}"
+            git config user.name "ThanhNguyxnAgent[bot]"
+            git config user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
             git commit -m "fix(apis): auto-remove confirmed dead links (fixes #${ISSUE_NUM}) [skip ci]"
 
             if git push origin main; then
