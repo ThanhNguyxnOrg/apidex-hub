@@ -11,23 +11,24 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate GitHub App Token
-        id: app-token
-        uses: actions/create-github-app-token@v3
+      - name: Mint repository-scoped ThanhNguyxnAgent token
+        id: agent-token
+        uses: ThanhNguyxnOrg/.github/.github/actions/agent-token@da9d02544f60aeec92f8c851846ee3a587044beb
         with:
+          profile: content
           client-id: ${{ secrets.BOT_APP_ID }}
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
 
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ steps.app-token.outputs.token }}
+          token: ${{ steps.agent-token.outputs.token }}
           fetch-depth: 0
 
       - name: Setup Python
@@ -38,14 +39,18 @@ jobs:
       - name: Parse APIs → apis.json
         run: python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
 
+      - name: Set ThanhNguyxnAgent commit identity
+        uses: ThanhNguyxnOrg/.github/.github/actions/agent-git-identity@da9d02544f60aeec92f8c851846ee3a587044beb
+
       - name: Commit and Push Count Updates
-        env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
-          git config --global user.name "ThanhNguyxnAgent[bot]"
-          git config --global user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
           git add README.md site/index.html site/src/data/apis.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(stats): auto-update API counts [skip ci]" && git push origin main)
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(stats): auto-update API counts [skip ci]"
+            git push origin main
+          else
+            echo "API counts are already current."
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -68,7 +73,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ steps.app-token.outputs.token }}
+          github_token: ${{ steps.agent-token.outputs.token }}
           user_name: "ThanhNguyxnAgent[bot]"
           user_email: "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
           publish_dir: ./docs
