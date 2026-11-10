@@ -41,11 +41,12 @@ jobs:
     timeout-minutes: 35
 
     steps:
-      - name: Generate GitHub App Token
+      - name: Mint repository-scoped remediation token
         id: app-token
         if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
-        uses: actions/create-github-app-token@v3
+        uses: ThanhNguyxnOrg/.github/.github/actions/agent-token@da9d02544f60aeec92f8c851846ee3a587044beb
         with:
+          profile: remediation
           client-id: ${{ secrets.BOT_APP_ID }}
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
 
@@ -271,6 +272,9 @@ jobs:
             core.setOutput('issue_url', issue.data.html_url);
 
       # 2. Safely remove dead links and sync catalog
+      - name: Set ThanhNguyxnAgent commit identity
+        uses: ThanhNguyxnOrg/.github/.github/actions/agent-git-identity@da9d02544f60aeec92f8c851846ee3a587044beb
+
       - name: Auto-Remediate Dead Links
         if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true'
         id: auto-remediate
@@ -304,8 +308,6 @@ jobs:
             fi
 
             ISSUE_NUM="${{ steps.create-incident.outputs.issue_number }}"
-            git config user.name "ThanhNguyxnAgent[bot]"
-            git config user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
             git commit -m "fix(apis): auto-remove confirmed dead links (fixes #${ISSUE_NUM}) [skip ci]"
 
             if git push origin main; then
