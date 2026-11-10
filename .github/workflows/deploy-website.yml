@@ -7,6 +7,7 @@ on:
       - 'apis/**'
       - 'site/**'
       - 'scripts/parse_readme.py'
+      - '.github/workflows/deploy-website.yml'
     branches: [main]
   workflow_dispatch:
 
