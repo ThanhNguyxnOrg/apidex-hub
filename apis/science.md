@@ -36,6 +36,7 @@
 | **MyGene.info** | Gene annotation queries and ID lookup | No | ✅ | [Link](https://docs.mygene.info/) |
 | **NASA ADS** | NASA Astrophysics Data System. | 🔐 OAuth | ✅ | [Link](https://ui.adsabs.harvard.edu/help/api/api-docs.html) |
 | **NASA API** | Access NASA data, including Astronomy Picture of the Day (APOD). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
+| **N2YO** | Real-time satellite positions, TLE data and visual passes for satellites and the ISS. | 🔑 ApiKey | ✅ | [Link](https://www.n2yo.com/api/) |
 | **NOAA Tides & Currents** | US tides, currents, and water level data. | No | ✅ | [Link](https://api.tidesandcurrents.noaa.gov/api/prod/) |
 | **OBIS** | Global marine species occurrence and distribution data | No | ✅ | [Link](https://manual.obis.org/access) |
 | **Oliver's mTOR Atlas** | Curated mTOR research: studies by evidence type, pathway claims, open questions | No | ✅ | [Link](https://mtor-atlas.org/api/) |
