@@ -21,7 +21,6 @@
 | **Travelpayouts** | Flight and hotel price data with affiliate commission stats. | 🔑 ApiKey | ✅ | [Link](https://support.travelpayouts.com/hc/en-us) |
 | **US Border Wait Times** | Real-time border crossing wait times for US, Canada, and Mexico borders. | No | ✅ | [Link](https://bwt.cbp.gov/) |
 | **Viator** | Tours & activities search, availability and booking. | 🔑 ApiKey | ✅ | [Link](https://docs.viator.com) |
-| **Webcams.travel** | We aggregate and distribute landscape webcams worldwide. Add webcams to your app or website - Browse through the | No | ✅ | [Link](https://www.webcams.travel/api/) |
 | **Wikivoyage** | Travel guide metadata and destination content from Wikimedia. | No | ✅ | [Link](https://en.wikivoyage.org/w/api.php) |
 
 [⬆ Back to Table of Contents](../README.md#table-of-contents)

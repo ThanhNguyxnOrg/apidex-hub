@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-10T11:28:55.498626+00:00",
+    "generated_at": "2026-11-11T04:23:45.677830+00:00",
     "source": "README.md",
-    "total_apis": 4252,
+    "total_apis": 4249,
     "total_categories": 70,
-    "no_auth_count": 1577,
-    "api_key_count": 2412,
+    "no_auth_count": 1575,
+    "api_key_count": 2411,
     "oauth_count": 263,
-    "https_count": 4161,
+    "https_count": 4158,
     "https_percentage": 98
   },
   "categories": [
@@ -1124,7 +1124,7 @@
       "id": "anti-malware",
       "emoji": "🛡️",
       "name": "Anti-Malware",
-      "api_count": 21,
+      "api_count": 20,
       "apis": [
         {
           "name": "AbuseIPDB",
@@ -1258,13 +1258,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://attachmentav.com/solution/virus-malware-scan-api"
-        },
-        {
-          "name": "VirusTotal",
-          "description": "File/URL analysis.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.virustotal.com/en/documentation/public-api/"
         },
         {
           "name": "Web of Trust",
@@ -15620,7 +15613,7 @@
       "id": "geography-countries",
       "emoji": "🌎",
       "name": "Geography & Countries",
-      "api_count": 20,
+      "api_count": 19,
       "apis": [
         {
           "name": "Countries Now",
@@ -15691,13 +15684,6 @@
           "auth": "No",
           "https": true,
           "link": "https://www.geonames.org/export/web-services.html"
-        },
-        {
-          "name": "IDPhotoSnap Passport Photo Specs",
-          "description": "Passport, visa, and ID photo specifications for 100+ countries with government source citations",
-          "auth": "No",
-          "https": true,
-          "link": "https://idphotosnap.com/api/specs"
         },
         {
           "name": "Interzoid Get Global Phone Number Information API",
@@ -28168,7 +28154,7 @@
       "id": "travel-tourism",
       "emoji": "✈️",
       "name": "Travel & Tourism",
-      "api_count": 21,
+      "api_count": 20,
       "apis": [
         {
           "name": "Amadeus",
@@ -28302,13 +28288,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.viator.com"
-        },
-        {
-          "name": "Webcams.travel",
-          "description": "We aggregate and distribute landscape webcams worldwide. Add webcams to your app or website - Browse through the",
-          "auth": "No",
-          "https": true,
-          "link": "https://www.webcams.travel/api/"
         },
         {
           "name": "Wikivoyage",

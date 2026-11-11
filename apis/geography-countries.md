@@ -12,7 +12,6 @@
 | **GeoJS** | IP geolocation and geo data (**No Auth**). | No | ✅ | [Link](https://www.geojs.io/) |
 | **GeoJSON.xyz** | Natural Earth countries and features as GeoJSON files served over a global CDN | No | ✅ | [Link](https://geojson.xyz/) |
 | **GeoNames** | Worldwide geographical database (free registration). | No | ✅ | [Link](https://www.geonames.org/export/web-services.html) |
-| **IDPhotoSnap Passport Photo Specs** | Passport, visa, and ID photo specifications for 100+ countries with government source citations | No | ✅ | [Link](https://idphotosnap.com/api/specs) |
 | **Interzoid Get Global Phone Number Information API** | This API provides geographic information for a global telephone number, including city and country information, primary languages spoken, and mobile device identification. | 🔑 ApiKey | ✅ | [Link](https://www.interzoid.com/services/getglobalnumberinfo) |
 | **Interzoid Zip Code Detailed Info API** | This API provides detailed information for a given zip code, including city, state, latitude, longitude, area size, and various population demographics. | 🔑 ApiKey | ✅ | [Link](https://www.interzoid.com/services/getzipcodeinfo) |
 | **IPGeolocation Timezone** | Timezone data by coordinates. | 🔑 ApiKey | ✅ | [Link](https://ipgeolocation.io/timezone-api.html) |
