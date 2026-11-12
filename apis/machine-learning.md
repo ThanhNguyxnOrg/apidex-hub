@@ -9,7 +9,6 @@
 | **Anomaly Detector Client** | The Anomaly Detector API detects anomalies automatically in time series data. It supports two kinds of mode, one is f | 🔑 ApiKey | ✅ | [Link](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector) |
 | **api.clarify.io** | The API to Search and Understand Audio & Video Data | No | ✅ | [Link](https://clarify.io) |
 | **Audexum** | Speech-to-text in 25 languages and text-to-speech with 43 voices in 32 languages | 🔑 ApiKey | ✅ | [Link](https://audexum.com/docs) |
-| **BRAINIALL** | PT-BR and Spanish audio transcription with diarization and SRT/VTT | 🔑 ApiKey | ✅ | [Link](https://github.com/fasuizu-br/brainiall-transcription-skill) |
 | **Cloud Vision** | Integrates Google Vision features, including image labeling, face, logo, and landmark detection, optical character re | 🔒 OAuth | ✅ | [Link](https://cloud.google.com/vision/docs) |
 | **Cloudmersive** | Image Recognition and computer vision APIs. | 🔑 ApiKey | ✅ | [Link](https://www.cloudmersive.com/image-recognition-and-processing-api) |
 | **Computer Vision** | The Computer Vision API provides state-of-the-art algorithms to process images and return information. For example, i | 🔑 ApiKey | ✅ | [Link](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision) |

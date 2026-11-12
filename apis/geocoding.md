@@ -4,7 +4,6 @@
 | :--- | :--- | :---: | :---: | :---: |
 | **Actinia Grass GIS** | Actinia is an open source REST API for geographical data that uses GRASS GIS. | 🔑 ApiKey | ✅ | [Link](https://actinia-org.github.io/actinia-core/) |
 | **administrative-divisons-db** | Get all administrative divisions of a country | No | ✅ | [Link](https://github.com/kamikazechaser/administrative-divisions-db) |
-| **adresse.data.gouv.fr** | Address database of France, geocoding and reverse. | No | ✅ | [Link](https://adresse.data.gouv.fr) |
 | **Airtel IP** | IP Geolocation API. Collecting data from multiple sources. | No | ✅ | [Link](https://sys.airtel.lv/ip2country/1.1.1.1/?full=true) |
 | **Amazon API Gateway** | Amazon API Gateway Amazon API Gateway helps developers deliver robust, secure, and scalable mobile and web application back ends. API Gateway allows. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/apigateway) |
 | **Amazon Lightsail** | Amazon Lightsail is the easiest way to get started with Amazon Web Services (Amazon Web Services) for developers who need to build websites or web applications. It includes. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/lightsail) |

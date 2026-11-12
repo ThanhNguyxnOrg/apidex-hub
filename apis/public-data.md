@@ -44,7 +44,6 @@
 | **EOSL** | Hardware end-of-sale and end-of-service-life dates by part number, source-linked | No | ✅ | [Link](https://eosl.ai/api/) |
 | **Eurostat** | European Union statistics database (**No Auth**). | No | ✅ | [Link](https://ec.europa.eu/eurostat/web/main/data/web-services) |
 | **FinSpace User Environment Management service** | The FinSpace management service provides the APIs for managing FinSpace environments. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/finspace) |
-| **French Address Search** | Address search via the French Government. | No | ✅ | [Link](https://geo.api.gouv.fr/adresse) |
 | **Generate Link Preview (including checking for malicious links)** | Fetches metadata from any URL passed to it, including Open Graph tags. | 🔑 ApiKey | ✅ | [Link](https://apyhub.com/utility/link-preview) |
 | **GENESIS** | Federal Statistical Office Germany. | 🔐 OAuth | ✅ | [Link](https://www.destatis.de/EN/Service/OpenData/api-webservice.html) |
 | **Google Vault API** | Retention and eDiscovery for Google Workspace. To work with Vault resources, the account must have the required Vault. | 🔑 ApiKey | ✅ | [Link](https://developers.google.com/vault) |

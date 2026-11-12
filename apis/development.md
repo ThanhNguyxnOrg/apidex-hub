@@ -23,7 +23,6 @@
 | **AmberOne** | Turn any website into a build-ready Android, iOS, PWA or Electron app project | 🔑 ApiKey | ✅ | [Link](https://scubamike124.github.io/amberone-api/) |
 | **AnswerLine** | Answers, citations and sources from AI assistants and Google surfaces through one API | 🔑 ApiKey | ✅ | [Link](https://answerline.dev) |
 | **Apache Superset** | Dashboarding and query platform APIs. | 🔑 ApiKey | ✅ | [Link](https://superset.apache.org/docs/api/) |
-| **API Adresse** | Official French address validation service. | No | ✅ | [Link](https://adresse.data.gouv.fr/api-doc/adresse) |
 | **API Grátis** | Multiples services and public APIs. | No | ✅ | [Link](https://apigratis.com.br/) |
 | **API League** | World-class APIs in a single hub. | 🔑 ApiKey | ✅ | [Link](https://apileague.com) |
 | **API Platform** | API Platform is a PHP framework for API-first projects built on top of Symfony. Just like the other modern | No | ✅ | [Link](https://api-platform.com/) |

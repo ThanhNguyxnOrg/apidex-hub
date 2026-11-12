@@ -111,7 +111,6 @@
 | **IIN API** | IIN API allows you to accurately identify the issuing bank, card type, country of origin, and other details from a credit or debit card number. This is essential for fraud. | 🔑 ApiKey | ✅ | [Link](https://iinapi.com) |
 | **Indodax** | Trade your Bitcoin and other assets with rupiah | 🔑 ApiKey | ✅ | [Link](https://github.com/btcid/indodax-official-api-docs) |
 | **INFURA Ethereum** | Interaction with the Ethereum mainnet and several testnets. | 🔑 ApiKey | ✅ | [Link](https://infura.io/product/ethereum) |
-| **KeepRule** | Investment principles and quotes from Buffett, Munger, and other masters. | No | ✅ | [Link](https://github.com/henu-wang/keeprule-api) |
 | **KeyVaultClient** | The key vault client performs cryptographic key operations and vault operations against the Key Vault service. | 🔑 ApiKey | ✅ | [Link](https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/specification/keyvault/data-plane/Microsoft.KeyVault/preview/7.0/keyvault.json) |
 | **Kite Connect** | Stock market investment and trading platform. | 🔑 ApiKey | ✅ | [Link](https://kite.trade/docs/connect/v3) |
 | **Kraken** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kraken.com/) |
