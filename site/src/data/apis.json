@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-12T05:31:39.043269+00:00",
+    "generated_at": "2026-11-13T04:47:54.105721+00:00",
     "source": "README.md",
-    "total_apis": 4244,
+    "total_apis": 4243,
     "total_categories": 70,
     "no_auth_count": 1571,
-    "api_key_count": 2410,
+    "api_key_count": 2409,
     "oauth_count": 263,
-    "https_count": 4153,
+    "https_count": 4152,
     "https_percentage": 98
   },
   "categories": [
@@ -22276,7 +22276,7 @@
       "id": "podcasts",
       "emoji": "🎙️",
       "name": "Podcasts",
-      "api_count": 17,
+      "api_count": 16,
       "apis": [
         {
           "name": "Acast",
@@ -22368,13 +22368,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://podcastindex-org.github.io/docs-api/"
-        },
-        {
-          "name": "Podchaser",
-          "description": "Podcast credits, ratings, reviews, and list data.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://podchaser.com/developers"
         },
         {
           "name": "Simplecast",

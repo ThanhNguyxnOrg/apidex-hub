@@ -15,7 +15,6 @@
 | **Listen Notes** | Search engine API for 3 million+ podcasts and 300 million+ episodes. | 🔑 ApiKey | ✅ | [Link](https://www.listennotes.com/api/) |
 | **Podbean** | Podcast hosting and distribution API. | 🔐 OAuth | ✅ | [Link](https://developers.podbean.com/) |
 | **Podcast Index** | Open podcast data and search. | 🔑 ApiKey | ✅ | [Link](https://podcastindex-org.github.io/docs-api/) |
-| **Podchaser** | Podcast credits, ratings, reviews, and list data. | 🔑 ApiKey | ✅ | [Link](https://podchaser.com/developers) |
 | **Simplecast** | Hosting and analytics API for shows and episodes. | 🔑 ApiKey | ✅ | [Link](https://docs.simplecast.com) |
 | **Taddy** | GraphQL podcast search and metadata API. | 🔑 ApiKey | ✅ | [Link](https://taddy.org/developers) |
 | **Transistor** | Podcast hosting API: shows, episodes, analytics, subscribers. | 🔑 ApiKey | ✅ | [Link](https://developers.transistor.fm) |
