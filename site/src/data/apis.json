@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-13T04:47:54.105721+00:00",
+    "generated_at": "2026-11-14T04:42:19.417007+00:00",
     "source": "README.md",
-    "total_apis": 4243,
+    "total_apis": 4242,
     "total_categories": 70,
     "no_auth_count": 1571,
-    "api_key_count": 2409,
+    "api_key_count": 2408,
     "oauth_count": 263,
-    "https_count": 4152,
+    "https_count": 4151,
     "https_percentage": 98
   },
   "categories": [
@@ -3138,7 +3138,7 @@
       "id": "business",
       "emoji": "💼",
       "name": "Business",
-      "api_count": 93,
+      "api_count": 92,
       "apis": [
         {
           "name": "Apacta",
@@ -3195,13 +3195,6 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://github.com/basecamp/bc3-api"
-        },
-        {
-          "name": "Biz collect",
-          "description": "Business contact data from a location and keywords, including emails",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://bizcollect.dev"
         },
         {
           "name": "Braze",
