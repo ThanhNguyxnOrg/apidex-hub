@@ -25,7 +25,6 @@
 | **City of Surrey Open511** | This API provides real time traffic obstruction events occuring within the City of Surrey | No | No | [Link](http://data.surrey.ca) |
 | **City, Analyze Boston** | Boston(US) City Open Data | 🔑 ApiKey | ✅ | [Link](https://data.boston.gov/) |
 | **City, Bologna Opendata** | Bologna(IT) City Open Data | No | ✅ | [Link](https://dati.comune.bologna.it) |
-| **CityAlert** | Live public-safety incidents: crime, fire, disaster, weather and news from 650+ official feeds | No | ✅ | [Link](https://cityalert.live/developers) |
 | **Co-WIN Certificate** | API to get Co-WIN vaccination certificate | 🔒 OAuth | ✅ | [Link](https://www.cowin.gov.in) |
 | **CodeCogs** | Render LaTeX equations in PNG, GIF, SVG, EMF, PDF, JSON, or download formats with styling options. | No | ✅ | [Link](https://editor.codecogs.com/docs/4-LaTeX_rendering.php) |
 | **CollegeCalcAI** | US college admission chance estimates and admissions data for 1,100+ colleges | No | ✅ | [Link](https://collegecalcai.com/developers) |
