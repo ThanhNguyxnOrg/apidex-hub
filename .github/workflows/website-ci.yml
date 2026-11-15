@@ -1,0 +1,24 @@
+name: Website CI
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review, edited]
+    branches: [main]
+    paths:
+      - 'site/**'
+      - '.github/workflows/website-ci.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  website:
+    uses: ThanhNguyxnOrg/.github/.github/workflows/ci-node.yml@93b1b91154ca5f51a800e5543e9c7e11ebf5ab56
+    with:
+      job_name: Website Build
+      node_version: "20"
+      package_manager: pnpm
+      package_manager_version: "10"
+      working_directory: site
+      cache: ""
+      build_command: pnpm build
