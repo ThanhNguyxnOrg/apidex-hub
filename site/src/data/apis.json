@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-15T09:45:08.761233+00:00",
+    "generated_at": "2026-11-15T14:50:40.925965+00:00",
     "source": "README.md",
-    "total_apis": 4240,
+    "total_apis": 4241,
     "total_categories": 70,
     "no_auth_count": 1570,
     "api_key_count": 2408,
-    "oauth_count": 262,
-    "https_count": 4149,
+    "oauth_count": 263,
+    "https_count": 4150,
     "https_percentage": 98
   },
   "categories": [
@@ -11792,7 +11792,7 @@
       "id": "events",
       "emoji": "🎪",
       "name": "Events",
-      "api_count": 25,
+      "api_count": 26,
       "apis": [
         {
           "name": "Billetto",
@@ -11870,6 +11870,13 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.luma.com/"
+        },
+        {
+          "name": "No Stairs Please",
+          "description": "Public venue search is available anonymously (limited to four venue reveals); account features and expanded access use OAuth 2.1.",
+          "auth": "OAuth",
+          "https": true,
+          "link": "https://nostairsplease.com/mcp"
         },
         {
           "name": "OpenAgenda",
