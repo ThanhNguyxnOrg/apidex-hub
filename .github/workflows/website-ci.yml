@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   website:
-    uses: ThanhNguyxnOrg/.github/.github/workflows/ci-node.yml@93b1b91154ca5f51a800e5543e9c7e11ebf5ab56
+    uses: ThanhNguyxnOrg/.github/.github/workflows/ci-node.yml@a032059a58ff65456dcb98a223bd636b96a3d018
     with:
       job_name: Website Build
       node_version: "20"

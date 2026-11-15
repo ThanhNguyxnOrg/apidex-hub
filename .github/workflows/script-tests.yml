@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   regression-tests:
-    uses: ThanhNguyxnOrg/.github/.github/workflows/ci-python.yml@dde345c28f4fc33bb49ac46e46b8adc174c24f7e
+    uses: ThanhNguyxnOrg/.github/.github/workflows/ci-python.yml@a032059a58ff65456dcb98a223bd636b96a3d018
     with:
       job_name: Python Regression Tests
       python_version: "3.11"
