@@ -13,6 +13,7 @@
 | **FRC Events** | Overview FIRST /FMS FRC Events API is a service to return relevant information about the FIRST Robotics Competition ( | No | ✅ | [Link](https://firstinspires.org) |
 | **Future Ticketing** | Sports ticketing API: fixtures, tickets, sales and season card data. | 🔑 ApiKey | ✅ | [Link](https://www.futureticketing.com/developer-api-docs/) |
 | **Luma** | Event creation and attendee APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.luma.com/) |
+| **No Stairs Please** | Live-music venue, booking contact, and tour-routing MCP server across all 50 US states. | No | ✅ | [Link](https://nostairsplease.com/mcp) |
 | **OpenAgenda** | Event agenda and discovery API. | 🔑 ApiKey | ✅ | [Link](https://developers.openagenda.com/) |
 | **Opendate** | Touring and event platform API: events, ticketing, fan engagement and finances. | 🔒 OAuth | ✅ | [Link](https://app.opendate.io/developers) |
 | **Oveit** | Ticketing API: pull events, tickets, sales and attendee check-in data. | 🔑 ApiKey | ✅ | [Link](https://l.oveit.com/api-documentation/events/) |
