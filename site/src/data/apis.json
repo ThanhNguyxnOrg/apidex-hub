@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T04:42:19.417007+00:00",
+    "generated_at": "2026-11-15T04:32:16.399370+00:00",
     "source": "README.md",
-    "total_apis": 4242,
+    "total_apis": 4241,
     "total_categories": 70,
     "no_auth_count": 1571,
     "api_key_count": 2408,
-    "oauth_count": 263,
-    "https_count": 4151,
+    "oauth_count": 262,
+    "https_count": 4150,
     "https_percentage": 98
   },
   "categories": [
@@ -11792,7 +11792,7 @@
       "id": "events",
       "emoji": "🎪",
       "name": "Events",
-      "api_count": 26,
+      "api_count": 25,
       "apis": [
         {
           "name": "Billetto",
@@ -11800,13 +11800,6 @@
           "auth": "OAuth",
           "https": true,
           "link": "https://api.billetto.com/reference/welcome"
-        },
-        {
-          "name": "Bizzabo",
-          "description": "Event experience OS API: events, registrations, tickets, sessions and analytics.",
-          "auth": "OAuth",
-          "https": true,
-          "link": "https://bizzabo.stoplight.io/docs/bizzabo-partner-apis/784b40317b1fa-introduction-to-bizzabo-s-open-application-programming-interface-api"
         },
         {
           "name": "Doorkeeper",
