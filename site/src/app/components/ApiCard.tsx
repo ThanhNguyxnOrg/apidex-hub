@@ -17,13 +17,15 @@ export function ApiCard({
   const [copied, setCopied] = useState(false);
   const [coords, setCoords] = useState({ x: 0, y: 0, hover: false });
   const { showToast } = useToast();
+  const copyUrl = api.endpoint || api.documentationUrl || api.link;
+  const documentationUrl = api.documentationUrl || api.link;
 
   const onCopy = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    navigator.clipboard?.writeText(api.link);
+    navigator.clipboard?.writeText(copyUrl);
     setCopied(true);
-    showToast(`Copied ${api.name} endpoint URL`, "success");
+    showToast(`Copied ${api.name} ${api.endpoint ? "API endpoint" : "documentation URL"}`, "success");
     setTimeout(() => setCopied(false), 1400);
   };
 
@@ -53,7 +55,7 @@ export function ApiCard({
     if (onOpenDetail) {
       onOpenDetail(api);
     } else {
-      window.open(api.link, "_blank", "noopener,noreferrer");
+      window.open(documentationUrl, "_blank", "noopener,noreferrer");
     }
   };
 
@@ -93,8 +95,8 @@ export function ApiCard({
       <div className="flex items-start justify-between gap-3 mb-3 relative z-10">
         <div className="flex items-center gap-2 min-w-0">
           <span
-            className="w-2 h-2 rounded-full bg-emerald-500 shrink-0"
-            title="Verified Active: Link checked by daily pipeline"
+            className={`w-2 h-2 rounded-full shrink-0 ${api.endpoint ? "bg-sky-500" : "bg-amber-500"}`}
+            title={api.endpoint ? "API endpoint recorded and checked separately from documentation" : "Documentation only; API endpoint is not verified yet"}
           />
           <h3 className="text-[17px] font-bold text-foreground leading-snug tracking-tight truncate group-hover:text-primary transition-colors">
             {api.name}
@@ -103,8 +105,8 @@ export function ApiCard({
         <div className="flex shrink-0 items-center gap-1">
           <button
             onClick={onCopy}
-            aria-label={`Copy link for ${api.name}`}
-            title="Copy link"
+            aria-label={`Copy ${api.endpoint ? "API endpoint" : "documentation URL"} for ${api.name}`}
+            title={api.endpoint ? "Copy API endpoint" : "Copy documentation URL"}
             className="flex h-7 w-7 items-center justify-center rounded-lg border border-transparent hover:border-border hover:bg-secondary text-muted-foreground hover:text-foreground transition-all duration-200"
             style={{ color: copied ? "#10b981" : undefined }}
           >
@@ -120,12 +122,12 @@ export function ApiCard({
             <Heart size={13} fill={isFav ? "#ef4444" : "none"} />
           </button>
           <a
-            href={api.link}
+            href={documentationUrl}
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            aria-label={`Open ${api.name} website directly`}
-            title="Open website in new tab"
+            aria-label={`Open official documentation for ${api.name}`}
+            title="Open official documentation in new tab"
             className="flex h-7 w-7 items-center justify-center rounded-lg border border-transparent hover:border-border hover:bg-secondary text-muted-foreground hover:text-foreground transition-all duration-200"
           >
             <ArrowUpRight

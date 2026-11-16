@@ -33,36 +33,36 @@ export function ApiDetailDrawer({
 
   if (!api) return null;
 
-  const snippets = {
-    curl: `# cURL Request
-curl -X GET "${api.link}" \\
-  -H "Accept: application/json"${api.auth === "apiKey" ? ' \\\n  -H "Authorization: Bearer YOUR_API_KEY"' : ""}`,
-    js: `// JavaScript (Fetch API)
+  const snippets = api.endpoint ? {
+    curl: `# Verify authentication and required parameters in the official docs.
+curl -X GET "${api.endpoint}" \\\n  -H "Accept: application/json"${api.auth === "none" ? "" : api.auth === "oauth" ? ' \\\n  -H "Authorization: Bearer YOUR_ACCESS_TOKEN"' : ' \\\n  -H "Authorization: Bearer YOUR_API_KEY"'}`,
+    js: `// Verify authentication and required parameters in the official docs.
 async function fetchApi() {
-  const response = await fetch("${api.link}", {
+  const response = await fetch("${api.endpoint}", {
     headers: {
-      "Accept": "application/json",${api.auth === "apiKey" ? '\n      "Authorization": "Bearer YOUR_API_KEY",' : ""}
+      "Accept": "application/json",${api.auth === "none" ? "" : api.auth === "oauth" ? '\n      "Authorization": "Bearer YOUR_ACCESS_TOKEN",' : '\n      "Authorization": "Bearer YOUR_API_KEY",'}
     }
   });
   const data = await response.json();
   console.log(data);
 }
 fetchApi();`,
-    python: `# Python (requests)
+    python: `# Verify authentication and required parameters in the official docs.
 import requests
 
-url = "${api.link}"
+url = "${api.endpoint}"
 headers = {
-    "Accept": "application/json",${api.auth === "apiKey" ? '\n    "Authorization": "Bearer YOUR_API_KEY",' : ""}
+    "Accept": "application/json",${api.auth === "none" ? "" : api.auth === "oauth" ? '\n    "Authorization": "Bearer YOUR_ACCESS_TOKEN",' : '\n    "Authorization": "Bearer YOUR_API_KEY",'}
 }
 
 response = requests.get(url, headers=headers)
 print(response.json())`,
-  };
+  } : null;
 
   const { showToast } = useToast();
 
   const handleCopy = () => {
+    if (!snippets) return;
     navigator.clipboard.writeText(snippets[activeTab]);
     setCopied(true);
     showToast(`Copied ${activeTab.toUpperCase()} snippet to clipboard!`, "success");
@@ -119,10 +119,15 @@ print(response.json())`,
                 {api.name}
               </h2>
               <div className="flex items-center gap-1.5 shrink-0">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  Verified Active
-                </span>
+                {api.endpoint ? (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-600 border border-sky-500/20">
+                    API endpoint recorded
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 border border-amber-500/20">
+                    Endpoint unverified
+                  </span>
+                )}
               </div>
             </div>
 
@@ -157,19 +162,32 @@ print(response.json())`,
             </div>
           </div>
 
+          {/* API Endpoint */}
+          {api.endpoint ? (
+            <div className="rounded-xl border border-border bg-muted/30 p-4 space-y-2">
+              <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">API Endpoint</div>
+              <a href={api.endpoint} target="_blank" rel="noopener noreferrer" className="block break-all font-mono text-xs text-primary hover:underline">{api.endpoint}</a>
+            </div>
+          ) : (
+            <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-4 text-xs leading-relaxed text-muted-foreground">
+              <span className="font-semibold text-foreground">API endpoint not yet verified.</span> This catalog entry currently has an official documentation URL only. APIDex will not treat that website as an API request URL or claim that the endpoint is monitored.
+            </div>
+          )}
+
           {/* Action CTAs */}
           <div className="flex items-center gap-3 pt-2">
             <a
-              href={api.link}
+              href={api.documentationUrl || api.link}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm hover:opacity-90 active:scale-98 transition-all"
             >
               <ExternalLink size={15} />
-              Open API Website / Documentation
+              Open Official API Documentation
             </a>
           </div>
 
+          {snippets ? (
           {/* Code Snippets Section */}
           <div className="rounded-xl border border-border bg-muted/30 overflow-hidden">
             <div className="flex items-center justify-between border-b border-border bg-muted/60 px-4 py-2">
@@ -223,13 +241,28 @@ print(response.json())`,
             </div>
           </div>
 
-          {/* Link Checker Live Insight */}
-          <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/5 p-4 flex items-start gap-3">
-            <HeartPulse size={18} className="text-emerald-500 mt-0.5 shrink-0" />
-            <div className="text-xs text-muted-foreground leading-relaxed">
-              <span className="font-semibold text-foreground">Automated Daily Verification:</span> This endpoint is monitored daily by APIDex Hub's link health pipeline. Status is verified against live network responses.
+          ) : (
+            <div className="rounded-xl border border-border bg-muted/30 p-4 text-xs leading-relaxed text-muted-foreground">
+              Request examples are hidden until a concrete API endpoint is verified. Use the official documentation to identify the supported resource path, HTTP method, authentication headers, and required parameters.
             </div>
-          </div>
+          )}
+
+          {/* API Endpoint Monitoring Insight */}
+          {api.endpoint ? (
+            <div className="rounded-xl border border-sky-500/20 bg-sky-500/5 p-4 flex items-start gap-3">
+              <HeartPulse size={18} className="text-sky-600 mt-0.5 shrink-0" />
+              <div className="text-xs text-muted-foreground leading-relaxed">
+                <span className="font-semibold text-foreground">API Endpoint Monitoring:</span> This explicit endpoint is included in the daily health scan. Its documentation URL is tracked separately and cannot trigger API deletion.
+              </div>
+            </div>
+          ) : (
+            <div className="rounded-xl border border-border bg-muted/30 p-4 flex items-start gap-3">
+              <Globe2 size={18} className="text-muted-foreground mt-0.5 shrink-0" />
+              <div className="text-xs text-muted-foreground leading-relaxed">
+                <span className="font-semibold text-foreground">Documentation-only entry:</span> The real API endpoint has not been verified, so APIDex makes no endpoint availability claim for this item.
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

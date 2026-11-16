@@ -8,7 +8,9 @@ export interface Api {
   description: string;
   auth: AuthType;
   https: boolean;
-  link: string;
+  endpoint: string;
+  documentationUrl: string;
+  link: string; // backwards-compatible alias for documentationUrl
   category: string; // slug matching category.id
   featured?: boolean;
 }
@@ -75,7 +77,9 @@ export const apis: Api[] = (apiData.categories as any[])
       description: a.description,
       auth: mapAuth(a.auth),
       https: a.https,
-      link: a.link,
+      endpoint: a.endpoint || "",
+      documentationUrl: a.documentation_url || a.link || "",
+      link: a.documentation_url || a.link || "",
       category: c.id,
       featured: FEATURED_NAMES.has(a.name),
     }))

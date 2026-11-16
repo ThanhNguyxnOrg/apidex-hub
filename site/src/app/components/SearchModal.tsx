@@ -155,7 +155,7 @@ export function SearchModal({
                     {list.map((api) => (
                       <a
                         key={api.name}
-                        href={api.link}
+                        href={api.documentationUrl || api.link}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 rounded-xl px-3 py-2.5 hover:bg-secondary/60 border border-transparent hover:border-border/60 transition-all group"

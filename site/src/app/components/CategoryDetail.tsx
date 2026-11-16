@@ -208,7 +208,7 @@ export function CategoryDetail({
                 key={api.name}
                 onClick={() => {
                   if (onOpenDetail) onOpenDetail(api);
-                  else window.open(api.link, "_blank", "noopener,noreferrer");
+                  else window.open(api.documentationUrl || api.link, "_blank", "noopener,noreferrer");
                 }}
                 className={`flex items-center gap-4 px-6 py-4 transition-colors hover:bg-secondary/40 cursor-pointer ${
                   idx === 0 ? "" : "border-t border-border/60"
