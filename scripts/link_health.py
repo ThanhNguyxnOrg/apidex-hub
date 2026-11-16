@@ -16,6 +16,30 @@ def looks_like_waf_challenge(content: str) -> bool:
     ))
 
 
+_PARKED_INDICATORS = (
+    "domain parking",
+    "parked free",
+    "buy this domain",
+    "domain is for sale",
+    "domain for sale",
+    "this domain is registered",
+    "hugedomains",
+    "dan.com",
+    "sedo.com",
+    "hosting suspended",
+    "account suspended",
+    "website is suspended",
+    "domain market",
+    "namecheap landing",
+)
+
+
+def looks_like_parked_domain(content: str) -> bool:
+    """Detect common domain parking or suspended-hosting landing pages."""
+    lowered = (content or "").lower()
+    return any(indicator in lowered for indicator in _PARKED_INDICATORS)
+
+
 def classify_http_status(status: int | None, *, waf_detected: bool = False) -> tuple[str, str]:
     """Classify an HTTP response without treating access restrictions as health."""
     if waf_detected:
