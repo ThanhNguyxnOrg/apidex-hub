@@ -42,6 +42,12 @@ class ApiHealthClassificationTests(unittest.TestCase):
             "unknown",
         )
 
+    def test_stage_two_dns_nxdomain_is_a_dead_candidate(self):
+        self.assertEqual(
+            classify_playwright_result(None, "Playwright Exception: DNSResolutionError: hostname does not exist"),
+            "broken",
+        )
+
     def test_stage_two_transient_errors_are_inconclusive(self):
         self.assertEqual(classify_playwright_result(None, "Timeout 12000ms exceeded"), "warning")
         self.assertEqual(classify_playwright_result(503, "Cloudflare origin error"), "protected")
