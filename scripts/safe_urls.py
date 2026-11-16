@@ -257,6 +257,52 @@ def safe_get(
     raise UnsafeURL(f"Too many redirects while checking {url}")
 
 
+def safe_browser_route(route) -> None:
+    """Fulfil browser requests through the DNS-pinned client instead of Chromium DNS."""
+    request = route.request
+    scheme = request.url.split(":", 1)[0].lower()
+    if scheme in {"data", "blob", "about"}:
+        route.continue_()
+        return
+
+    if request.method.upper() not in {"GET", "HEAD"}:
+        route.abort()
+        return
+
+    response = None
+    try:
+        safe_headers = {
+            key: value
+            for key, value in request.headers.items()
+            if key.lower() in {"accept", "accept-language", "user-agent"}
+        }
+        response = safe_get(
+            request.url,
+            headers=safe_headers,
+            timeout=12,
+            method=request.method.upper(),
+        )
+        headers = {}
+        for key, value in response.headers.items():
+            lowered = key.lower()
+            if lowered in {
+                "connection", "content-encoding", "content-length",
+                "transfer-encoding", "set-cookie", "location",
+            }:
+                continue
+            headers[key] = value
+        route.fulfill(
+            status=response.status_code,
+            headers=headers,
+            body=response.read(),
+        )
+    except (UnsafeURL, OSError, http.client.HTTPException, ssl.SSLError):
+        route.abort()
+    finally:
+        if response is not None:
+            response.close()
+
+
 def safe_urlopen(request: Request, *, timeout: int = 12):
     """Open a urllib Request using the same DNS-pinned, redirect-safe HTTP client."""
     method = request.get_method()
