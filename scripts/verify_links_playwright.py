@@ -9,132 +9,74 @@ import os
 import json
 from datetime import datetime, timezone
 from playwright.sync_api import sync_playwright
-from link_health import classify_playwright_result
+from link_health import classify_playwright_result, looks_like_waf_challenge
 
 def verify_with_playwright(browser, url):
-    """
-    Returns (is_working, status_code, note) using Playwright Chromium headless browser.
-    """
-    try:
-        from playwright_stealth import stealth_sync
-    except ImportError:
-        stealth_sync = None
+    """Check the final browser response without attempting to bypass access controls."""
     context = None
     page = None
+    last_response = [None]
     try:
         context = browser.new_context(
             viewport={'width': 1280, 'height': 720},
             user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         )
         page = context.new_page()
-        if stealth_sync:
-            stealth_sync(page)
-        
-        last_response = [None]
-        
-        def handle_response(r):
-            if r.frame == page.main_frame and r.request.resource_type == "document":
-                last_response[0] = r
-                
-        page.on("response", handle_response)
-        
-        # Fast check: wait until DOM content loaded
-        response = page.goto(url, wait_until='domcontentloaded', timeout=6000)
-        
-        # Check if there is a Cloudflare Turnstile challenge iframe
-        has_cf_iframe = False
-        try:
-            for frame in page.frames:
-                if "challenges.cloudflare.com" in frame.url:
-                    has_cf_iframe = True
-                    break
-        except Exception:
-            pass
 
-        if has_cf_iframe:
-            print(f"  [Playwright] Detected Cloudflare Challenge iframe for {url}. Attempting to solve...")
-            try:
-                clicked = False
-                for frame in page.frames:
-                    if "challenges.cloudflare.com" in frame.url:
-                        checkbox = frame.locator('input[type="checkbox"], span.mark, .cb-i, #challenge-stage, .ctp-checkbox-label')
-                        if checkbox.count() > 0:
-                            checkbox.first.click(timeout=2000)
-                            print("  [Playwright] Clicked Turnstile checkbox element.")
-                            clicked = True
-                            break
-                
-                # Fallback: click the iframe container directly
-                if not clicked:
-                    iframe_element = page.locator('iframe[src*="challenges.cloudflare.com"]')
-                    if iframe_element.count() > 0:
-                        iframe_element.first.click(timeout=2000)
-                        print("  [Playwright] Clicked Turnstile iframe directly.")
-            except Exception as e:
-                print(f"  [Playwright] Click bypass failed: {e}")
-                
-            # Wait a bit for redirect / page verification
-            page.wait_for_timeout(3000)
-            
-        final_resp = last_response[0] if last_response[0] else response
-        status = final_resp.status if final_resp else None
-        
+        def handle_response(response):
+            if response.frame == page.main_frame and response.request.resource_type == "document":
+                last_response[0] = response
+
+        page.on("response", handle_response)
+        response = page.goto(url, wait_until='domcontentloaded', timeout=12000)
+        final_response = last_response[0] if last_response[0] else response
+        status = final_response.status if final_response else None
+
         title = page.title().lower()
         try:
             content = page.content().lower()
-        except:
+        except Exception:
             content = ""
 
-        # Check for parked domain / suspended hosting keywords
-        parked_indicators = [
+        parked_indicators = (
             'domain parking', 'parked free', 'buy this domain', 'domain is for sale',
             'domain for sale', 'this domain is registered', 'hugedomains', 'dan.com',
             'sedo.com', 'hosting suspended', 'account suspended', 'website is suspended',
             'domain market', 'namecheap landing'
-        ]
+        )
         if any(indicator in title or indicator in content for indicator in parked_indicators):
-            page.close()
-            context.close()
-            return False, status or 200, "Playwright: Parked domain or suspended hosting detected"
+            return False, status or 404, "Playwright: Parked domain or suspended hosting detected"
 
-        # Check if it is a Cloudflare down page (temporary outage)
-        cf_down_indicators = [
+        if looks_like_waf_challenge(title + " " + content):
+            return False, status if status and status >= 400 else 403, "Playwright: WAF challenge detected; endpoint availability is not confirmed"
+
+        cf_down_indicators = (
             'web server is down', 'connection timed out', 'origin error', 'host error',
             'error 521', 'error 522', 'error 523', 'error 524', 'error 525', 'error 526'
-        ]
+        )
         if any(indicator in title or indicator in content for indicator in cf_down_indicators):
-            page.close()
-            context.close()
-            return False, status, "Playwright: Temporary Cloudflare Server Outage (origin down)"
+            return False, status, "Playwright: Temporary Cloudflare server outage"
 
-        if status and status < 400:
-            page.close()
-            context.close()
-            return True, status, "Playwright: Verified working"
-            
-        # If status is >= 400, check if it is a WAF challenge
-        is_waf_code = status in [401, 403, 418, 429, 503]
-        if is_waf_code:
-            cloudflare_indicators = ['just a moment', 'cloudflare', 'attention required', 'security check', 'ddos protection']
-            if any(indicator in title or indicator in content for indicator in cloudflare_indicators):
-                page.close()
-                context.close()
-                return False, status, "Playwright: Blocked by Cloudflare Challenge (unsolved)"
-                
-        page.close()
-        context.close()
-        return False, status, f"Playwright: Failed with HTTP {status if status else 'Unknown'}"
+        if status is not None and 200 <= status < 400:
+            return True, status, "Playwright: Verified HTTP response"
 
-    except Exception as e:
+        return False, status, f"Playwright: Final document HTTP {status if status is not None else 'unknown'}"
+
+    except Exception as error:
+        clean_error = str(error).replace('\\n', ' ; ')
+        return False, None, f"Playwright Exception: {clean_error}"
+    finally:
         if page:
-            try: page.close()
-            except: pass
+            try:
+                page.close()
+            except Exception:
+                pass
         if context:
-            try: context.close()
-            except: pass
-        # Replace newlines with semicolon to prevent breaking the one-line-per-URL output format
-        clean_err = str(e).replace('\n', ' ; ')
-        return False, None, f"Playwright Exception: {clean_err}"
+            try:
+                context.close()
+            except Exception:
+                pass
+
 
 def save_reports(results, total_apis_count):
     script_dir = os.path.dirname(os.path.abspath(__file__))
