@@ -83,7 +83,7 @@ class SafeURLTests(unittest.TestCase):
                 validate_public_http_url("https://mixed.example/api")
 
     def test_nxdomain_has_a_distinct_error_type(self):
-        with patch("safe_urls.resolve_public_addresses", side_effect=socket.gaierror(socket.EAI_NONAME, "Name or service not known")):
+        with patch("safe_urls.socket.getaddrinfo", side_effect=socket.gaierror(socket.EAI_NONAME, "Name or service not known")):
             with self.assertRaises(UnsafeURL) as captured:
                 validate_public_http_url("https://missing.example/api")
         self.assertEqual(type(captured.exception).__name__, "DNSResolutionError")
