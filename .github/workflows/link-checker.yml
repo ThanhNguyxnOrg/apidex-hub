@@ -102,7 +102,7 @@ jobs:
           import os
           import uuid
 
-          with open("scripts/results.json", encoding="utf-8") as handle:
+          with open("results.json", encoding="utf-8") as handle:
               results = json.load(handle)
 
           states = ("working", "protected", "warning", "error", "broken", "unknown")
@@ -123,11 +123,11 @@ jobs:
               "has_broken": "true" if counts["broken"] else "false",
           }
           list_files = {
-              "broken_list": "scripts/broken_urls.txt",
-              "error_list": "scripts/error_urls.txt",
-              "warning_list": "scripts/warning_urls.txt",
-              "unknown_list": "scripts/unknown_urls.txt",
-              "protected_list": "scripts/protected_urls.txt",
+              "broken_list": "broken_urls.txt",
+              "error_list": "error_urls.txt",
+              "warning_list": "warning_urls.txt",
+              "unknown_list": "unknown_urls.txt",
+              "protected_list": "protected_urls.txt",
           }
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
@@ -147,71 +147,6 @@ jobs:
                   output.write(f"{delimiter}\n")
           PY
 
-          # Read broken URLs list
-          if [ -f broken_urls.txt ]; then
-            BROKEN_LIST=$(cat broken_urls.txt)
-          else
-            BROKEN_LIST=""
-          fi
-
-          # Read error URLs list
-          if [ -f error_urls.txt ]; then
-            ERROR_LIST=$(cat error_urls.txt)
-          else
-            ERROR_LIST=""
-          fi
-
-          # Read warning URLs list
-          if [ -f warning_urls.txt ]; then
-            WARNING_LIST=$(cat warning_urls.txt)
-          else
-            WARNING_LIST=""
-          fi
-
-          # Read unknown URLs list
-          if [ -f unknown_urls.txt ]; then
-            UNKNOWN_LIST=$(cat unknown_urls.txt)
-          else
-            UNKNOWN_LIST=""
-          fi
-
-          # Read protected URLs list
-          if [ -f protected_urls.txt ]; then
-            PROTECTED_LIST=$(cat protected_urls.txt)
-          else
-            PROTECTED_LIST=""
-          fi
-
-          # Store lists as multiline outputs
-          {
-            echo "broken_list<<BROKEN_EOF"
-            echo "$BROKEN_LIST"
-            echo "BROKEN_EOF"
-          } >> $GITHUB_OUTPUT
-
-          {
-            echo "error_list<<ERROR_EOF"
-            echo "$ERROR_LIST"
-            echo "ERROR_EOF"
-          } >> $GITHUB_OUTPUT
-
-          {
-            echo "warning_list<<WARNING_EOF"
-            echo "$WARNING_LIST"
-            echo "WARNING_EOF"
-          } >> $GITHUB_OUTPUT
-
-          {
-            echo "unknown_list<<UNKNOWN_EOF"
-            echo "$UNKNOWN_LIST"
-            echo "UNKNOWN_EOF"
-          } >> $GITHUB_OUTPUT
-
-          {
-            echo "protected_list<<PROTECTED_EOF"
-            echo "$PROTECTED_LIST"
-            echo "PROTECTED_EOF"
-          } >> $GITHUB_OUTPUT
       - name: Scan documentation for provider shutdown notices
         if: github.event_name != 'pull_request' && steps.check.outcome == 'success'
         id: shutdown-scan
@@ -540,7 +475,7 @@ jobs:
                   repo: context.repo.repo,
                   title,
                   body,
-                  labels: ['automated', 'needs-review']
+                  labels: ['automated']
                 });
 
             core.setOutput('issue_number', String(response.data.number));
