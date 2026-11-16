@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-15T15:25:57.715834+00:00",
+    "generated_at": "2026-11-16T04:28:56.163178+00:00",
     "source": "README.md",
-    "total_apis": 4241,
+    "total_apis": 4240,
     "total_categories": 70,
     "no_auth_count": 1570,
-    "api_key_count": 2408,
+    "api_key_count": 2407,
     "oauth_count": 263,
-    "https_count": 4150,
+    "https_count": 4149,
     "https_percentage": 98
   },
   "categories": [
@@ -6465,7 +6465,7 @@
       "id": "development",
       "emoji": "💻",
       "name": "Development",
-      "api_count": 355,
+      "api_count": 354,
       "apis": [
         {
           "name": "24 Pull Requests",
@@ -6753,13 +6753,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://docs.microsoft.com/en-us/rest/api/azure/devops"
-        },
-        {
-          "name": "Base",
-          "description": "Building quick backends.",
-          "auth": "apiKey",
-          "https": true,
-          "link": "https://www.base-api.io"
         },
         {
           "name": "Bettermeta",

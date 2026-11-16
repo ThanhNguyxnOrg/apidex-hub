@@ -43,7 +43,6 @@
 | **AWS Cloud9** | Cloud9 Cloud9 is a collection of tools that you can use to code, build, run, test, debug, and release software in the cloud. For more information. | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/cloud9) |
 | **AWS Lambda** | Lambda Overview Lambda is a compute service that lets you run code without provisioning or managing servers. Lambda r | 🔑 ApiKey | ✅ | [Link](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) |
 | **Azure DevOps** | DevOps tools. | 🔑 ApiKey | ✅ | [Link](https://docs.microsoft.com/en-us/rest/api/azure/devops) |
-| **Base** | Building quick backends. | 🔑 ApiKey | ✅ | [Link](https://www.base-api.io) |
 | **Bettermeta** | Return a site's meta tags in JSON format | No | No | [Link](http://bettermeta.io) |
 | **Bitbucket** | Git solution. | 🔐 OAuth | ✅ | [Link](https://developer.atlassian.com/bitbucket/api/2/reference/) |
 | **Blague.xyz** | La plus grande API de Blagues FR/The biggest FR jokes API | 🔑 ApiKey | ✅ | [Link](https://blague.xyz/) |
