@@ -267,8 +267,20 @@ def read_existing_api_urls(base_ref: str, repo_root: Path) -> list[str]:
 def classify_link_result(status: int | None, note: str = "") -> str:
     """Classify URL health conservatively: only clear 404/410 or NXDOMAIN are broken."""
     lowered = note.lower()
-    if any(marker in lowered for marker in ("err_name_not_resolved", "dns_probe_finished_nxdomain", "nxdomain", "name resolution failed")):
+    if any(marker in lowered for marker in (
+        "err_name_not_resolved", "dns_probe_finished_nxdomain", "nxdomain",
+        "name resolution failed", "dnsresolutionerror",
+        "name or service not known", "nodename nor servname",
+    )):
         return "broken"
+    if "explicit provider shutdown notice" in lowered or "provider shutdown signal" in lowered:
+        return "shutdown_signal"
+    if any(marker in lowered for marker in (
+        "just a moment", "attention required", "checking your browser",
+        "verify you are human", "challenge-platform", "cf-chl-",
+        "captcha challenge", "waf challenge", "bot-challenge",
+    )):
+        return "inconclusive"
     if status is not None and 200 <= status < 400:
         return "working"
     if status in {404, 410}:

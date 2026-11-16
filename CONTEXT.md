@@ -8,10 +8,12 @@
 | **Category** | A markdown document under `apis/<category-slug>.md` grouping related APIs. Must contain an anchor tag header (`## <a id="slug"></a>EMOJI Title`) and the canonical 6-column table; legacy 5-column tables remain readable as documentation-only entries. |
 | **Catalog** | The complete collection of all categories, aggregated into `site/src/data/apis.json` and summarized in `README.md`. |
 | **Auth Scheme** | The authentication mechanism for an API: `No` (public/free, no key needed), `🔑 ApiKey` (requires an API key/token), or `🔐 OAuth` (requires OAuth 2.0 flow). |
-| **API Endpoint Health** | The operational state of an explicitly recorded API Endpoint URL, verified in a two-stage automated pipeline. Documentation URLs are reference links and are never API health-check targets or API deletion evidence. |
-| **Dead API Endpoint (Broken)** | An explicitly recorded API Endpoint URL repeatedly confirmed dead via HTTP 404/410 or NXDOMAIN. A documentation URL, developer portal, or company website returning 404/410 is never proof that the API is dead. |
-| **Auto-Remediation** | The automated GitHub Actions process (`scripts/remove_dead_links.py`) that safely excises confirmed dead links from markdown tables, recalculates catalog counts, updates website JSON, commits, pushes, and closes Incident Issues. |
+| **API Endpoint Health** | The operational state of an explicitly recorded API Endpoint URL, checked by conservative HTTP classification and a browser recheck for non-success responses. Documentation URLs are checked separately and are never endpoint-health or endpoint-deletion evidence. |
+| **Dead API Endpoint Candidate (Broken)** | An explicitly recorded API Endpoint URL classified as 404/410, parked/suspended, or DNS NXDOMAIN after the checker’s verification stages. Automated removal is not authorized until the cleanup PR independently revalidates the removed endpoint. A documentation URL returning 404/410 is never proof that the API is dead. |
+| **Auto-Remediation** | The automated GitHub Actions process that removes only explicitly recorded API Endpoint rows that remain confirmed dead when the cleanup PR revalidates them, then regenerates website data and closes the linked Incident Issue after merge. |
 | **Safety Brake** | A configurable threshold (`--max-delete`) in `remove_dead_links.py` preventing catastrophic deletion of APIs in case of widespread network or proxy outages. |
+| **Provider Shutdown Signal** | Explicit lifecycle language found on a documentation page. It creates a separate human-review Issue and never counts as endpoint death or automatic deletion evidence. |
+| **Documentation Inconclusive** | A documentation URL could not be conclusively fetched (for example 403/429, 5xx, TLS, timeout, DNS failure or WAF challenge). It is not proof that the provider shut down. |
 
 
 ## 2. Business & Data Integrity Rules
@@ -30,12 +32,15 @@
 
 ## 3. Automation Pipelines
 
-- **`.github/workflows/link-checker.yml`**: Daily API endpoint checker at 00:00 UTC and on PRs. It probes only explicit API Endpoint values, posts endpoint-health results to Discussions (#6 Live Dashboard), creates incidents for confirmed dead endpoints, and auto-remediates only endpoint rows.
+- **`.github/workflows/link-checker.yml`**: Daily endpoint-health scan at 00:00 UTC and on PRs, plus a separate documentation lifecycle scan. It publishes structured endpoint results and documentation shutdown/inconclusive counts to Discussions (#6 Live Dashboard), creates incidents only for confirmed dead API endpoints, and revalidates removed endpoints on cleanup PRs before central Auto-merge.
 - **`.github/workflows/script-tests.yml`**: Runs dependency-light Python regression tests for catalog automation scripts on pushes and pull requests.
 - **PR link validation**: `scripts/check_pr_links.py` uses explicit pull-request base/head commits and repository-root Git commands. Missing refs or failed diffs are errors, not empty-success results.
 
 - **`.github/workflows/deploy-website.yml`**: Builds and deploys the Vite/React catalog website to GitHub Pages upon changes to `main`.
 - **`scripts/parse_readme.py`**: The authoritative single source of truth parser syncing `apis/*.md` into `site/src/data/apis.json`, `README.md`, and `site/index.html`.
+- **Endpoint status rules**: 401/403/418/429 and WAF challenges are protected/inconclusive; 400/405/406 are unknown; 5xx, timeouts and TLS failures are not deletion evidence. Parked-domain/HTTP 200 pages are not healthy endpoints.
+- **Provider shutdown rules**: Documentation pages are scanned for explicit shutdown language even when they return HTTP 200. Signals create a separate review Issue and never become a broken endpoint or automatic deletion candidate.
+- **SSRF protection**: `scripts/safe_urls.py` blocks localhost, private/reserved/link-local destinations and unsafe redirect hops in the HTTP and browser checkers.
 
 
 ## 4. Catalog Curation Priorities

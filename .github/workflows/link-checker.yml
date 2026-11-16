@@ -81,107 +81,44 @@ jobs:
         if: github.event_name != 'pull_request'
         id: check
         run: |
-          cd scripts
+          set -euo pipefail
           echo "=== STAGE 1: Fast CLI Check ==="
-          python check_links.py > output.txt 2>&1 || { cat output.txt; echo "::error::Stage 1 link check failed; refusing to publish a healthy report."; exit 1; }
-          cat output.txt
-          
+          python scripts/check_links.py > scripts/output.txt 2>&1 || {
+            cat scripts/output.txt
+            echo "::error::Stage 1 link check failed; refusing to publish a healthy report."
+            exit 1
+          }
+          cat scripts/output.txt
+
           echo "=== STAGE 2: Playwright Verification ==="
-          python verify_links_playwright.py > verify_output.txt 2>&1 || { cat verify_output.txt; echo "::error::Stage 2 verification failed; refusing to publish a healthy report."; exit 1; }
-          cat verify_output.txt
-          
-          # Do not publish an all-zero dashboard when the scan did not finish.
-          if [ ! -s link_check_report.txt ]; then
-            echo "::error::Link checker did not produce link_check_report.txt."
+          python scripts/verify_links_playwright.py > scripts/verify_output.txt 2>&1 || {
+            cat scripts/verify_output.txt
+            echo "::error::Stage 2 verification failed; refusing to publish a healthy report."
+            exit 1
+          }
+          cat scripts/verify_output.txt
+
+          if [ ! -s scripts/link_check_report.txt ] || [ ! -s scripts/results.json ]; then
+            echo "::error::Link checker did not produce the final report and results.json."
             exit 1
           fi
 
-          # Parse report stats
-          BROKEN_COUNT=$(grep -oP "Broken: \K[0-9]+" link_check_report.txt || echo "0")
-          OK_COUNT=$(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo "0")
-          PROTECTED_COUNT=$(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo "0")
-          WARN_COUNT=$(grep -oP "Warnings: \K[0-9]+" link_check_report.txt || echo "0")
-          ERR_COUNT=$(grep -oP "Errors: \K[0-9]+" link_check_report.txt || echo "0")
-          UNKNOWN_COUNT=$(grep -oP "Unknown: \K[0-9]+" link_check_report.txt || echo "0")
+          python scripts/export_health_outputs.py \
+            --results scripts/results.json \
+            --reports-dir scripts \
+            --output "$GITHUB_OUTPUT"
 
-          echo "broken_count=$BROKEN_COUNT" >> $GITHUB_OUTPUT
-          echo "ok_count=$OK_COUNT" >> $GITHUB_OUTPUT
-          echo "protected_count=$PROTECTED_COUNT" >> $GITHUB_OUTPUT
-          echo "warn_count=$WARN_COUNT" >> $GITHUB_OUTPUT
-          echo "err_count=$ERR_COUNT" >> $GITHUB_OUTPUT
-          echo "unknown_count=$UNKNOWN_COUNT" >> $GITHUB_OUTPUT
+      - name: Scan documentation for provider shutdown notices
+        if: github.event_name != 'pull_request' && steps.check.outcome == 'success'
+        id: shutdown-scan
+        run: |
+          set -euo pipefail
+          python scripts/check_shutdown_signals.py --output scripts/shutdown_signals.json
+          SIGNAL_COUNT=$(python -c "import json; print(json.load(open('scripts/shutdown_signals.json', encoding='utf-8')).get('shutdown_signal_count', 0))")
+          INCONCLUSIVE_COUNT=$(python -c "import json; print(json.load(open('scripts/shutdown_signals.json', encoding='utf-8')).get('inconclusive_documentation_links', 0))")
+          echo "signal_count=$SIGNAL_COUNT" >> "$GITHUB_OUTPUT"
+          echo "inconclusive_count=$INCONCLUSIVE_COUNT" >> "$GITHUB_OUTPUT"
 
-          if [ "$BROKEN_COUNT" -gt 0 ]; then
-            echo "has_broken=true" >> $GITHUB_OUTPUT
-          else
-            echo "has_broken=false" >> $GITHUB_OUTPUT
-          fi
-
-          # Read broken URLs list
-          if [ -f broken_urls.txt ]; then
-            BROKEN_LIST=$(cat broken_urls.txt)
-          else
-            BROKEN_LIST=""
-          fi
-
-          # Read error URLs list
-          if [ -f error_urls.txt ]; then
-            ERROR_LIST=$(cat error_urls.txt)
-          else
-            ERROR_LIST=""
-          fi
-
-          # Read warning URLs list
-          if [ -f warning_urls.txt ]; then
-            WARNING_LIST=$(cat warning_urls.txt)
-          else
-            WARNING_LIST=""
-          fi
-
-          # Read unknown URLs list
-          if [ -f unknown_urls.txt ]; then
-            UNKNOWN_LIST=$(cat unknown_urls.txt)
-          else
-            UNKNOWN_LIST=""
-          fi
-
-          # Read protected URLs list
-          if [ -f protected_urls.txt ]; then
-            PROTECTED_LIST=$(cat protected_urls.txt)
-          else
-            PROTECTED_LIST=""
-          fi
-
-          # Store lists as multiline outputs
-          {
-            echo "broken_list<<BROKEN_EOF"
-            echo "$BROKEN_LIST"
-            echo "BROKEN_EOF"
-          } >> $GITHUB_OUTPUT
-
-          {
-            echo "error_list<<ERROR_EOF"
-            echo "$ERROR_LIST"
-            echo "ERROR_EOF"
-          } >> $GITHUB_OUTPUT
-
-          {
-            echo "warning_list<<WARNING_EOF"
-            echo "$WARNING_LIST"
-            echo "WARNING_EOF"
-          } >> $GITHUB_OUTPUT
-
-          {
-            echo "unknown_list<<UNKNOWN_EOF"
-            echo "$UNKNOWN_LIST"
-            echo "UNKNOWN_EOF"
-          } >> $GITHUB_OUTPUT
-
-          {
-            echo "protected_list<<PROTECTED_EOF"
-            echo "$PROTECTED_LIST"
-            echo "PROTECTED_EOF"
-          } >> $GITHUB_OUTPUT
       - name: Upload check report
         if: always()
         uses: actions/upload-artifact@v4
@@ -195,6 +132,7 @@ jobs:
             scripts/warning_urls.txt
             scripts/unknown_urls.txt
             scripts/protected_urls.txt
+            scripts/shutdown_signals.json
 
       - name: Comment on PR
         if: github.event_name == 'pull_request' && always() && github.event.pull_request.head.repo.full_name == github.repository
@@ -231,6 +169,11 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
             const repository = `${owner}/${repo}`;
+            const reviewCount =
+              Number.parseInt('${{ steps.check.outputs.protected_count }}', 10) +
+              Number.parseInt('${{ steps.check.outputs.warn_count }}', 10) +
+              Number.parseInt('${{ steps.check.outputs.err_count }}', 10) +
+              Number.parseInt('${{ steps.check.outputs.unknown_count }}', 10);
             const openPrs = await github.paginate(github.rest.pulls.list, {
               owner, repo, state: 'open', per_page: 100
             });
@@ -257,6 +200,15 @@ jobs:
               } catch (error) {
                 if (error.status !== 404) throw error;
               }
+              if (reviewCount > 0) {
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: pr.number,
+                  body: `The latest successful scan found no endpoint that remains confirmed dead, but ${reviewCount} other endpoint result(s) are inconclusive or need review. Auto-merge and the \`automerge\` label have been removed. This PR is left open for maintainer review; no deletion will be merged automatically.`
+                });
+                console.log(`Disabled automatic deletion for #${pr.number}; inconclusive scan results require manual review.`);
+                continue;
+              }
+
               await github.rest.pulls.update({
                 owner, repo, pull_number: pr.number, state: 'closed'
               });
@@ -307,9 +259,9 @@ jobs:
               '',
               'A bot pull request will remove these entries. This incident remains open until that PR passes all configured checks and merges.'
             ].join('\n');
-            const { data: issues } = await github.rest.issues.listForRepo({
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
               owner: context.repo.owner, repo: context.repo.repo, state: 'open',
-              labels: 'incident', per_page: 100
+              per_page: 100
             });
             const existing = issues.filter(issue => !issue.pull_request).filter(issue =>
               (issue.body || '').includes(marker) ||
@@ -318,7 +270,7 @@ jobs:
             const title = `🔴 Incident: ${count} confirmed dead API endpoint${count === 1 ? '' : 's'} detected (${today})`;
             const response = existing
               ? await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: existing.number, title, body })
-              : await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, labels: ['automated', 'incident'], body });
+              : await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body });
             core.setOutput('issue_number', response.data.number);
             core.setOutput('issue_url', response.data.html_url);
 
@@ -334,6 +286,10 @@ jobs:
           ISSUE_NUMBER: ${{ steps.create-incident.outputs.issue_number }}
         run: |
           set -euo pipefail
+          if [ -z "${ISSUE_NUMBER:-}" ]; then
+            echo "::error::The incident issue could not be created or found; refusing to create a detached remediation branch."
+            exit 1
+          fi
           BRANCH="agent-remediation/dead-api-incident-${ISSUE_NUMBER}"
           git config --global user.name "ThanhNguyxnAgent[bot]"
           git config --global user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
@@ -422,9 +378,90 @@ jobs:
               state: 'closed', state_reason: 'completed'
             });
 
-      # 4. Update the Live Health Dashboard in GitHub Discussions (Announcements)
+      # 4. Track explicit provider shutdown notices separately from endpoint failures.
+      - name: Create or update provider shutdown review issue
+        if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success' && steps.shutdown-scan.outputs.signal_count != '0'
+        id: shutdown-issue
+        uses: actions/github-script@v7
+        env:
+          SHUTDOWN_REPORT_PATH: scripts/shutdown_signals.json
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync(process.env.SHUTDOWN_REPORT_PATH, 'utf8'));
+            const signals = report.shutdown_signals || [];
+            if (!signals.length) {
+              core.setOutput('issue_number', '');
+              core.setOutput('issue_url', '');
+              return;
+            }
+
+            const marker = '<!-- apidex-provider-shutdown-review -->';
+            const runUrl = context.serverUrl + '/' + context.repo.owner + '/' + context.repo.repo + '/actions/runs/' + context.runId;
+            const lines = [
+              marker,
+              '',
+              '## Provider shutdown notice(s) detected in API documentation',
+              '',
+              'The documentation monitor found explicit provider-shutdown language. This is a **manual-review signal**, not automatic deletion evidence.',
+              '',
+              'A docs page can remain online after an API shuts down, and a docs page can fail while the API remains operational. Confirm the provider announcement and API lifecycle before changing the catalog.',
+              '',
+              '**Workflow run:** [#' + context.runNumber + '](' + runUrl + ')',
+              ''
+            ];
+
+            for (const item of signals) {
+              const names = (item.apis || []).map(api => api.name).join(', ') || 'Unknown API';
+              const signal = item.shutdown_signal || {};
+              const snippet = String(signal.snippet || signal.matched_text || '')
+                .replace(/[`]/g, "'")
+                .replace(/[\r\n]+/g, ' ')
+                .slice(0, 420);
+              lines.push('- **' + names + '**');
+              lines.push('  - Documentation: ' + item.url);
+              lines.push('  - Final URL: ' + (item.final_url || item.url));
+              lines.push('  - HTTP status: ' + (item.status == null ? 'unknown' : item.status));
+              lines.push('  - Signal: ' + String(signal.matched_text || signal.type || 'shutdown language detected'));
+              if (snippet) lines.push('  - Evidence: ' + snippet);
+              lines.push('');
+            }
+
+            lines.push('No catalog rows were deleted by this documentation scan. Once a shutdown is independently confirmed, the normal focused cleanup PR and CI validation process should be used.');
+            const body = lines.join('\n');
+            const title = '🟣 Provider shutdown review: ' + signals.length + ' documentation signal(s)';
+            const openIssues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const existing = openIssues.find(issue =>
+              !issue.pull_request && String(issue.body || '').includes(marker)
+            );
+
+            const response = existing
+              ? await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: existing.number,
+                  title,
+                  body
+                })
+              : await github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title,
+                  body,
+                });
+
+            core.setOutput('issue_number', String(response.data.number));
+            core.setOutput('issue_url', response.data.html_url);
+
+      # 5. Update the Live Health Dashboard in GitHub Discussions (Announcements)
       - name: Update GitHub Discussion Live Dashboard
-        if: github.event_name != 'pull_request' && always()
+        if: always() && !cancelled() && github.event_name != 'pull_request' && steps.check.outcome == 'success' && steps.shutdown-scan.outcome == 'success'
         uses: actions/github-script@v7
         env:
           HAS_BROKEN: ${{ steps.check.outputs.has_broken }}
@@ -442,10 +479,23 @@ jobs:
           WARNING_LIST: ${{ steps.check.outputs.warning_list }}
           UNKNOWN_LIST: ${{ steps.check.outputs.unknown_list }}
           PROTECTED_LIST: ${{ steps.check.outputs.protected_list }}
+          SHUTDOWN_REPORT_PATH: scripts/shutdown_signals.json
+          SHUTDOWN_ISSUE_URL: ${{ steps.shutdown-issue.outputs.issue_url }}
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
+            const fs = require('fs');
             const today = new Date().toISOString().split('T')[0];
+            let shutdownReport = { shutdown_signals: [], inconclusive_documentation_links: 0 };
+            try {
+              shutdownReport = JSON.parse(fs.readFileSync(process.env.SHUTDOWN_REPORT_PATH, 'utf8'));
+            } catch (error) {
+              throw new Error('The documentation shutdown report is missing or invalid: ' + error.message);
+            }
+            const shutdownSignals = shutdownReport.shutdown_signals || [];
+            const shutdownCount = shutdownSignals.length;
+            const shutdownInconclusive = Number(shutdownReport.inconclusive_documentation_links || 0);
+            const shutdownIssueUrl = String(process.env.SHUTDOWN_ISSUE_URL || '');
             const hasBroken = process.env.HAS_BROKEN === 'true';
             const alreadyResolved = process.env.ALREADY_RESOLVED === 'true';
             const remediationPr = String(process.env.REMEDIATION_PR || '');
@@ -462,15 +512,45 @@ jobs:
             const currentUnknownList = String(process.env.UNKNOWN_LIST || '').trim();
             const currentProtectedList = String(process.env.PROTECTED_LIST || '').trim();
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const incidentIssueUrl = incidentIssueNum
+              ? `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/issues/${incidentIssueNum}`
+              : '';
 
             const reviewCount = protectedCount + warnCount + errCount + unknownCount;
-            let dynamicTitle = `🟢 Link Health Status: all recorded API endpoints responded successfully (${today})`;
+            const totalReviewCount = reviewCount + shutdownInconclusive;
+            let dynamicTitle = `🟢 Link Health Status: all recorded API endpoints and documentation links responded successfully (${today})`;
             if (hasBroken && !alreadyResolved && remediationPr) {
               dynamicTitle = `🟠 Link Health Status: API endpoint cleanup PR awaiting checks (${today})`;
             } else if (hasBroken && !alreadyResolved) {
               dynamicTitle = `🔴 Link Health Status: ${brokenCount} confirmed dead API endpoint${brokenCount > 1 ? 's' : ''} detected (${today})`;
-            } else if (reviewCount > 0) {
-              dynamicTitle = `🟡 Link Health Status: no confirmed dead endpoints; ${reviewCount} need review (${today})`;
+            } else if (shutdownCount > 0) {
+              dynamicTitle = '🟣 Link Health Status: ' + shutdownCount + ' provider shutdown notice(s) need review (' + today + ')';
+            } else if (totalReviewCount > 0) {
+              dynamicTitle = `🟡 Link Health Status: no confirmed dead endpoints; ${totalReviewCount} API or documentation results need review (${today})`;
+            }
+
+            let shutdownSection = '';
+            if (shutdownCount > 0) {
+              const signalLines = [];
+              shutdownSignals.forEach((item, index) => {
+                const names = (item.apis || []).map(api => api.name).join(', ') || 'Unknown API';
+                const signal = item.shutdown_signal || {};
+                const evidence = String(signal.matched_text || signal.type || 'shutdown language detected')
+                  .replace(/[`]/g, "'")
+                  .replace(/[\r\n]+/g, ' ')
+                  .slice(0, 220);
+                signalLines.push((index + 1) + '. **' + names + '** — ' + item.url);
+                signalLines.push('   - HTTP ' + (item.status == null ? 'unknown' : item.status) + '; evidence: ' + evidence);
+              });
+              shutdownSection = '### 🟣 Provider shutdown notices (' + shutdownCount + ')\n\n' +
+                'These are explicit lifecycle statements found on documentation pages. They require maintainer review and are not automatically deleted.\n\n' +
+                signalLines.join('\n') + '\n';
+              if (shutdownIssueUrl) shutdownSection += '\n**Review issue:** ' + shutdownIssueUrl + '\n';
+            } else {
+              shutdownSection = '### 🟣 Provider shutdown notices\n\nNo explicit provider shutdown notices were detected in this documentation scan.\n';
+            }
+            if (shutdownInconclusive > 0) {
+              shutdownSection += '\nDocumentation links with inconclusive fetch results: **' + shutdownInconclusive + '**. These are not treated as shutdown evidence.\n';
             }
 
             let brokenSection = '';
@@ -484,11 +564,14 @@ jobs:
                 brokenTable += `| ${i + 1} | ${url} | ${reason} |\n`;
               });
               if (alreadyResolved) {
-                brokenSection = `### ✅ Incident already resolved\n\nThe reported API rows were already absent from main.\n\n<details>\n<summary>🧹 Previously detected ${brokenCount} dead link(s)</summary>\n\n${brokenTable}\n</details>\n`;
+                brokenSection += `### ✅ Incident already resolved\n\nThe reported API rows were already absent from main.\n\n<details>\n<summary>🧹 Previously detected ${brokenCount} dead link(s)</summary>\n\n${brokenTable}\n</details>\n`;
               } else if (remediationPr) {
                 brokenSection = `### 🧹 Automatic cleanup queued\n\n[Remediation PR](${remediationPr}) removes these confirmed-dead entries. It remains pending until the configured CI checks pass and the central Agent merges it.\n\n${brokenTable}\n`;
               } else {
                 brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Check the remediation workflow and incident issue.\n`;
+              }
+              if (incidentIssueUrl) {
+                brokenSection = `**Incident issue:** [#${incidentIssueNum}](${incidentIssueUrl})\n\n` + brokenSection;
               }
             } else {
               brokenSection = `### ✅ No Confirmed Dead API Endpoints\n\nNo endpoint was confirmed dead in this scan. Successful responses: ${okCount}; protected/inconclusive responses: ${protectedCount}; other responses needing review: ${warnCount + errCount + unknownCount}. A protected response does not confirm availability. Documentation URLs are excluded from endpoint health checks.\n`;
@@ -544,14 +627,18 @@ jobs:
 
             const statusIcon = hasBroken && !alreadyResolved
               ? (remediationPr ? '🟠' : '🔴')
-              : reviewCount > 0 ? '🟡' : '🟢';
+              : shutdownCount > 0 ? '🟣' : totalReviewCount > 0 ? '🟡' : '🟢';
             const statusText = hasBroken && !alreadyResolved
               ? (remediationPr ? 'automatic endpoint cleanup PR awaiting checks' : `${brokenCount} confirmed dead API endpoint${brokenCount > 1 ? 's' : ''} detected`)
-              : reviewCount > 0
-                ? 'no confirmed dead endpoints; some responses need review'
-                : 'all recorded API endpoints responded successfully';
+              : shutdownCount > 0
+                ? shutdownCount + ' provider shutdown notice(s) need review'
+                : totalReviewCount > 0
+                  ? 'no confirmed dead endpoints; ' + totalReviewCount + ' API or documentation results need review'
+                  : 'all recorded API endpoints and documentation links responded successfully';
 
             const lines = [
+              '<!-- apidex-link-health-dashboard -->',
+              '',
               `## ${statusIcon} Link Health Status: ${statusText}`,
               '',
               `**Last checked**: ${today}`,
@@ -569,6 +656,8 @@ jobs:
               `| ⚠️ Warning | ${warnCount} | Timeout/DNS/SSL issues (may be temporary) |`,
               `| ❌ Error | ${errCount} | Server errors (5xx) |`,
               `| ❓ Unknown | ${unknownCount} | Unrecognized status codes (needs review) |`,
+              '| 🟣 Shutdown notices | ' + shutdownCount + ' | Explicit provider lifecycle language in documentation; maintainer review required |',
+              '| 📄 Documentation inconclusive | ' + shutdownInconclusive + ' | Documentation links could not be conclusively checked |',
               `| 💀 Broken | ${alreadyResolved ? 0 : brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
               '',
               `**Confirmed successful responses**: ${okCount} / ${okCount + protectedCount + warnCount + errCount + (alreadyResolved ? 0 : brokenCount) + unknownCount} recorded endpoints`,
@@ -576,6 +665,7 @@ jobs:
               '',
               '---',
               '',
+              shutdownSection,
               brokenSection,
               errorSection,
               warningSection,
@@ -589,6 +679,7 @@ jobs:
               '- 🔄 This report is **automatically updated daily** at 00:00 UTC in GitHub Discussions',
               '- 🛡️ API endpoints with access protection (401/403/429) are reported as protected/inconclusive, never as dead.',
               '- 💀 Only confirmed 404/410 and dead-DNS URLs in the explicit API Endpoint column can enter the automated cleanup PR; documentation URLs never trigger API removal.',
+              '- 🟣 Documentation links (including legacy 5-column entries) are monitored separately for explicit provider-shutdown notices; these create a review issue and never auto-delete catalog rows.',
               '- ❌ Server errors (5xx) may be temporary outages',
               '- ⚠️ Warnings include SSL/timeout issues that are often transient',
               `- 📦 Full report available as [workflow artifact](${runUrl})`,
@@ -602,12 +693,13 @@ jobs:
               query($owner: String!, $name: String!, $catId: ID!) {
                 repository(owner: $owner, name: $name) {
                   id
-                  discussions(first: 10, categoryId: $catId) {
+                  discussions(last: 100, categoryId: $catId) {
                     nodes {
                       id
                       number
                       title
                       url
+                      body
                     }
                   }
                 }
@@ -620,9 +712,9 @@ jobs:
             });
 
             const discussions = result.repository.discussions.nodes || [];
-            const targetDiscussion = discussions.find(d => 
+            const targetDiscussion = discussions.find(d => String(d.body || '').includes('<!-- apidex-link-health-dashboard -->')) || discussions.find(d =>
               d.title.includes('Link Health Status') || d.title.includes('Live Dashboard')
-            ) || discussions[0];
+            );
 
             if (targetDiscussion) {
               const updateMutation = `

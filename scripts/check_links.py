@@ -17,6 +17,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import json
 
+from link_health import classify_http_status, looks_like_parked_domain, looks_like_waf_challenge
+from safe_urls import DNSResolutionError, safe_get
+
 
 def extract_links_from_readme(file_path='../README.md'):
     """Extract all API links from README.md"""
@@ -48,41 +51,21 @@ def fake_user_agent():
 
 
 def has_cloudflare_protection(resp):
-    """
-    Detect Cloudflare or similar bot protection
-    """
+    """Detect challenge pages and common WAF signals without bypassing them."""
     code = resp.status_code
     server = resp.headers.get('Server', '').lower()
+    body = (resp.text or '').lower()
 
-    cloudflare_flags = [
-        'cloudflare',
-        'security check',
-        'please wait...',
-        'checking your browser',
-        'ddos protection',
-        'ray id:',
-        '_cf_chl',
-        'cf-spinner',
-        'just a moment'
-    ]
-
-    # Only check if status code is typical for WAF (403, 429, 503)
-    is_waf_code = code in [403, 429, 503]
-    if not is_waf_code:
-        return False
-
-    # Check Server header
-    if 'cloudflare' in server:
+    if looks_like_waf_challenge(body):
         return True
 
-    # Check Cloudflare specific headers
-    if 'cf-ray' in resp.headers or 'cf-cache-status' in resp.headers:
-        return True
-
-    # Check HTML content
-    html = resp.text.lower()
-    if any(flag in html for flag in cloudflare_flags):
-        return True
+    if code in [403, 429, 503]:
+        if 'cloudflare' in server:
+            return True
+        if 'cf-ray' in resp.headers or 'cf-cache-status' in resp.headers:
+            return True
+        if any(flag in body for flag in ('security check', 'ddos protection', 'ray id:', 'cf-spinner')):
+            return True
 
     return False
 
@@ -107,47 +90,25 @@ def check_link(url, timeout=8, max_retries=2):
                 'Upgrade-Insecure-Requests': '1',
             }
 
-            response = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
+            response = safe_get(url, headers=headers, timeout=timeout)
             code = response.status_code
 
-            # Check for bot protection
-            if code >= 400 and has_cloudflare_protection(response):
+            if looks_like_parked_domain(response.text):
                 return {
                     'url': url,
                     'status': code,
-                    'state': 'protected',
-                    'note': 'Bot/WAF protection response; API endpoint availability is not confirmed'
+                    'state': 'broken',
+                    'note': 'Parked domain or suspended hosting detected in response body',
                 }
 
-            # Interpret status codes
-            # Note: 3xx won't appear here because allow_redirects=True
-            # follows redirects automatically. The final status is what we get.
-            if code in [200, 201, 202, 204]:
-                return {'url': url, 'status': code, 'state': 'working', 'note': 'OK'}
-            elif code == 429:
-                return {'url': url, 'status': code, 'state': 'warning', 'note': 'Rate limited (HTTP 429)'}
-            elif code == 401:
-                return {'url': url, 'status': code, 'state': 'protected', 'note': 'Unauthorized (HTTP 401) - access restricted'}
-            elif code == 403:
-                return {'url': url, 'status': code, 'state': 'protected', 'note': 'Forbidden (HTTP 403) - restricted access'}
-            elif code == 418:
-                return {'url': url, 'status': code, 'state': 'protected', 'note': "Access protection response (HTTP 418); API endpoint availability is not confirmed"}
-
-            elif code in [400, 405, 406]:
-                return {'url': url, 'status': code, 'state': 'working', 'note': 'API up (Invalid request/Method)'}
-            elif code == 404:
-                return {'url': url, 'status': code, 'state': 'broken', 'note': 'Not found - likely dead'}
-            elif code == 410:
-                return {'url': url, 'status': code, 'state': 'broken', 'note': 'Gone - confirmed dead'}
-            elif code in [500, 502, 504] or (code and 520 <= code <= 527):
-                return {'url': url, 'status': code, 'state': 'error', 'note': 'Server error (may be temporary)'}
-            elif code == 503:
-                # 503 could be Cloudflare or temporary, treat as warning
-                if has_cloudflare_protection(response):
-                    return {'url': url, 'status': code, 'state': 'protected', 'note': 'Cloudflare protection (503)'}
-                return {'url': url, 'status': code, 'state': 'warning', 'note': 'Service unavailable (503) - may be temporary'}
-            else:
-                return {'url': url, 'status': code, 'state': 'unknown', 'note': f'HTTP {code}'}
+            waf_detected = has_cloudflare_protection(response)
+            state, note = classify_http_status(code, waf_detected=waf_detected)
+            return {
+                'url': url,
+                'status': code,
+                'state': state,
+                'note': note,
+            }
 
         except requests.exceptions.SSLError:
             # SSL errors could be temporary (cert renewal in progress) or permanent
@@ -156,6 +117,11 @@ def check_link(url, timeout=8, max_retries=2):
                 time.sleep(1)
                 continue
             return {'url': url, 'status': None, 'state': 'warning', 'note': 'SSL error (may be temporary cert issue)'}
+        except DNSResolutionError as e:
+            if attempt < max_retries - 1:
+                time.sleep(1)
+                continue
+            return {'url': url, 'status': None, 'state': 'broken', 'note': f'DNS dead - hostname does not resolve after retries: {e}'}
         except requests.exceptions.Timeout:
             # Retry on timeout
             if attempt < max_retries - 1:
@@ -410,8 +376,8 @@ def main():
     # Save queue for Playwright verification
     verify_queue_path = os.path.join(script_dir, 'verify_queue.json')
     verify_queue = []
-    # Add all non-working APIs to the queue to be double-checked by Playwright
-    for state in ['broken', 'error', 'warning', 'protected']:
+    # Browser rechecks transient and potentially dead responses; protected responses stay inconclusive.
+    for state in ['broken', 'error', 'warning', 'unknown']:
         verify_queue.extend(results[state])
     
     with open(verify_queue_path, 'w', encoding='utf-8') as f:
