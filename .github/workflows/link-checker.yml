@@ -263,7 +263,7 @@ jobs:
                 owner, repo, pull_number: pr.number, state: 'closed'
               });
 
-              const issueMatch = String(pr.body || '').match(/Closes\\s+#(\\d+)/i);
+              const issueMatch = String(pr.body || '').match(/Closes\s+#(\d+)/i);
               if (issueMatch) {
                 const issueNumber = Number(issueMatch[1]);
                 const { data: issue } = await github.rest.issues.get({ owner, repo, issue_number: issueNumber });
@@ -287,10 +287,13 @@ jobs:
         uses: actions/github-script@v7
         with:
           github-token: ${{ steps.app-token.outputs.token }}
+          env:
+            BROKEN_COUNT: ${{ steps.check.outputs.broken_count }}
+            BROKEN_LIST: ${{ steps.check.outputs.broken_list }}
           script: |
             const today = new Date().toISOString().split('T')[0];
-            const count = parseInt('${{ steps.check.outputs.broken_count }}') || 0;
-            const list = `${{ steps.check.outputs.broken_list }}`.trim();
+            const count = Number.parseInt(process.env.BROKEN_COUNT || '0', 10) || 0;
+            const list = String(process.env.BROKEN_LIST || '').trim();
             const marker = '<!-- link-checker-incident -->';
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
             let table = '| # | URL | Reason |\n|---|---|---|\n';
@@ -371,7 +374,7 @@ jobs:
 
           - Only confirmed HTTP 404/410 or dead-DNS URLs are candidates.
           - 401/403/429, 5xx, timeouts, TLS failures, warnings and unknown statuses are not deleted.
-          - The existing `--max-delete 500` safety cap remains in force.
+          - The existing \`--max-delete 500\` safety cap remains in force.
           - API Markdown, README and website data are regenerated together.
           - Central Auto-merge requires applicable link-check, Markdown lint and website build checks to succeed.
 
@@ -427,24 +430,41 @@ jobs:
         uses: actions/github-script@v7
         with:
           github-token: ${{ steps.app-token.outputs.token }}
+          env:
+            HAS_BROKEN: ${{ steps.check.outputs.has_broken }}
+            ALREADY_RESOLVED: ${{ steps.auto-remediate.outputs.no_changes }}
+            REMEDIATION_PR: ${{ steps.auto-remediate.outputs.pr_url }}
+            INCIDENT_ISSUE_NUMBER: ${{ steps.create-incident.outputs.issue_number }}
+            BROKEN_COUNT: ${{ steps.check.outputs.broken_count }}
+            OK_COUNT: ${{ steps.check.outputs.ok_count }}
+            PROTECTED_COUNT: ${{ steps.check.outputs.protected_count }}
+            WARN_COUNT: ${{ steps.check.outputs.warn_count }}
+            ERR_COUNT: ${{ steps.check.outputs.err_count }}
+            UNKNOWN_COUNT: ${{ steps.check.outputs.unknown_count }}
+            TOTAL_HEALTHY: ${{ steps.check.outputs.total_healthy }}
+            BROKEN_LIST: ${{ steps.check.outputs.broken_list }}
+            ERROR_LIST: ${{ steps.check.outputs.error_list }}
+            WARNING_LIST: ${{ steps.check.outputs.warning_list }}
+            UNKNOWN_LIST: ${{ steps.check.outputs.unknown_list }}
+            PROTECTED_LIST: ${{ steps.check.outputs.protected_list }}
           script: |
             const today = new Date().toISOString().split('T')[0];
-            const hasBroken = '${{ steps.check.outputs.has_broken }}' === 'true';
-            const alreadyResolved = '${{ steps.auto-remediate.outputs.no_changes }}' === 'true';
-            const remediationPr = '${{ steps.auto-remediate.outputs.pr_url }}';
-            const incidentIssueNum = '${{ steps.create-incident.outputs.issue_number }}';
-            const brokenCount = parseInt('${{ steps.check.outputs.broken_count }}') || 0;
-            const okCount = parseInt('${{ steps.check.outputs.ok_count }}') || 0;
-            const protectedCount = parseInt('${{ steps.check.outputs.protected_count }}') || 0;
-            const warnCount = parseInt('${{ steps.check.outputs.warn_count }}') || 0;
-            const errCount = parseInt('${{ steps.check.outputs.err_count }}') || 0;
-            const unknownCount = parseInt('${{ steps.check.outputs.unknown_count }}') || 0;
-            const totalHealthy = parseInt('${{ steps.check.outputs.total_healthy }}') || 0;
-            const currentBrokenList = `${{ steps.check.outputs.broken_list }}`.trim();
-            const currentErrorList = `${{ steps.check.outputs.error_list }}`.trim();
-            const currentWarningList = `${{ steps.check.outputs.warning_list }}`.trim();
-            const currentUnknownList = `${{ steps.check.outputs.unknown_list }}`.trim();
-            const currentProtectedList = `${{ steps.check.outputs.protected_list }}`.trim();
+            const hasBroken = process.env.HAS_BROKEN === 'true';
+            const alreadyResolved = process.env.ALREADY_RESOLVED === 'true';
+            const remediationPr = String(process.env.REMEDIATION_PR || '');
+            const incidentIssueNum = String(process.env.INCIDENT_ISSUE_NUMBER || '');
+            const brokenCount = Number.parseInt(process.env.BROKEN_COUNT || '0', 10) || 0;
+            const okCount = Number.parseInt(process.env.OK_COUNT || '0', 10) || 0;
+            const protectedCount = Number.parseInt(process.env.PROTECTED_COUNT || '0', 10) || 0;
+            const warnCount = Number.parseInt(process.env.WARN_COUNT || '0', 10) || 0;
+            const errCount = Number.parseInt(process.env.ERR_COUNT || '0', 10) || 0;
+            const unknownCount = Number.parseInt(process.env.UNKNOWN_COUNT || '0', 10) || 0;
+            const totalHealthy = Number.parseInt(process.env.TOTAL_HEALTHY || '0', 10) || 0;
+            const currentBrokenList = String(process.env.BROKEN_LIST || '').trim();
+            const currentErrorList = String(process.env.ERROR_LIST || '').trim();
+            const currentWarningList = String(process.env.WARNING_LIST || '').trim();
+            const currentUnknownList = String(process.env.UNKNOWN_LIST || '').trim();
+            const currentProtectedList = String(process.env.PROTECTED_LIST || '').trim();
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
 
             let dynamicTitle = `🟢 Link Health Status: All links healthy! 🎉 (${today})`;
