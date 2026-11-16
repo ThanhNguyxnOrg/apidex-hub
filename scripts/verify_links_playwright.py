@@ -225,11 +225,10 @@ def main():
         
     total_apis_count = sum(len(cat) for cat in results.values())
     
-    # Stage 2 verifies broken, error, and unknown responses to avoid false positives.
-    # Protected (401/403/418) and rate-limited (429) responses remain inconclusive;
-    # they are not treated as confirmed working or dead. Transient warnings also remain non-fatal.
+    # Stage 2 retries broken, server-error, timeout, and unknown responses in a browser.
+    # Protected (401/403/418/429) responses remain inconclusive and are not bypassed.
     to_verify = []
-    for state in ['broken', 'error', 'unknown']:
+    for state in ['broken', 'error', 'warning', 'unknown']:
         to_verify.extend(results[state])
         
     if not to_verify:
@@ -277,33 +276,33 @@ def main():
                 results[old_state] = [i for i in results[old_state] if not (i['url'] == url and i.get('name') == name)]
                 
                 # Decide target category based on error
-                target_state = 'broken'
+                target_state = 'unknown'
                 note_lower = note.lower()
-                
+
                 if 'playwright exception' in note_lower:
                     if 'err_name_not_resolved' in note_lower or 'dns_probe_finished_nxdomain' in note_lower:
                         target_state = 'broken'
-                    elif 'err_connection_timed_out' in note_lower or 'timeout' in note_lower:
+                    elif any(term in note_lower for term in (
+                        'timeout', 'err_connection_refused', 'err_connection_reset',
+                        'err_ssl', 'err_cert', 'connection closed',
+                    )):
                         target_state = 'warning'
-                    elif 'err_connection_refused' in note_lower or 'err_connection_reset' in note_lower:
-                        target_state = 'warning'
-                    elif 'err_ssl' in note_lower or 'err_cert' in note_lower:
-                        target_state = 'warning'
-                    else:
-                        target_state = old_state
-                else:
-                    if 'parked domain' in note_lower or 'suspended' in note_lower:
-                        target_state = 'broken'
-                    elif 'cloudflare server outage' in note_lower or 'origin down' in note_lower:
-                        target_state = 'error'
-                    elif new_status and new_status >= 500:
-                        target_state = 'error'
-                    elif 'timeout' in note_lower:
-                        target_state = 'warning'
-                    elif new_status in [401, 403, 418, 429]:
-                        target_state = 'protected'
-                    elif 'cloudflare' in note_lower or 'blocked by' in note_lower or 'waf' in note_lower or 'turnstile' in note_lower or 'bot protection' in note_lower:
-                        target_state = 'protected'
+                elif 'parked domain' in note_lower or 'suspended' in note_lower:
+                    target_state = 'broken'
+                elif 'cloudflare server outage' in note_lower or 'origin down' in note_lower:
+                    target_state = 'error'
+                elif new_status in [404, 410]:
+                    target_state = 'broken'
+                elif new_status in [401, 403, 418, 429]:
+                    target_state = 'protected'
+                elif new_status in [400, 405, 406]:
+                    target_state = 'unknown'
+                elif new_status is not None and new_status >= 500:
+                    target_state = 'error'
+                elif 'timeout' in note_lower:
+                    target_state = 'warning'
+                elif 'cloudflare' in note_lower or 'blocked by' in note_lower or 'waf' in note_lower or 'turnstile' in note_lower or 'bot protection' in note_lower:
+                    target_state = 'protected'
                     
                 results[target_state].append({
                     'name': name,
