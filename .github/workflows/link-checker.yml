@@ -81,71 +81,32 @@ jobs:
         if: github.event_name != 'pull_request'
         id: check
         run: |
-          cd scripts
+          set -euo pipefail
           echo "=== STAGE 1: Fast CLI Check ==="
-          python check_links.py > output.txt 2>&1 || { cat output.txt; echo "::error::Stage 1 link check failed; refusing to publish a healthy report."; exit 1; }
-          cat output.txt
-          
+          python scripts/check_links.py > scripts/output.txt 2>&1 || {
+            cat scripts/output.txt
+            echo "::error::Stage 1 link check failed; refusing to publish a healthy report."
+            exit 1
+          }
+          cat scripts/output.txt
+
           echo "=== STAGE 2: Playwright Verification ==="
-          python verify_links_playwright.py > verify_output.txt 2>&1 || { cat verify_output.txt; echo "::error::Stage 2 verification failed; refusing to publish a healthy report."; exit 1; }
-          cat verify_output.txt
-          
-          # Do not publish an all-zero dashboard when the scan did not finish.
-          if [ ! -s link_check_report.txt ]; then
-            echo "::error::Link checker did not produce link_check_report.txt."
+          python scripts/verify_links_playwright.py > scripts/verify_output.txt 2>&1 || {
+            cat scripts/verify_output.txt
+            echo "::error::Stage 2 verification failed; refusing to publish a healthy report."
+            exit 1
+          }
+          cat scripts/verify_output.txt
+
+          if [ ! -s scripts/link_check_report.txt ] || [ ! -s scripts/results.json ]; then
+            echo "::error::Link checker did not produce the final report and results.json."
             exit 1
           fi
 
-          # Consume the final Stage 2 JSON, not human-readable text parsed with grep.
-          python - <<'PY'
-          import json
-          import os
-          import uuid
-
-          with open("results.json", encoding="utf-8") as handle:
-              results = json.load(handle)
-
-          states = ("working", "protected", "warning", "error", "broken", "unknown")
-          if not isinstance(results, dict) or any(not isinstance(results.get(key), list) for key in states):
-              raise SystemExit("ERROR: results.json is missing a required classification list.")
-
-          counts = {key: len(results[key]) for key in states}
-          if sum(counts.values()) == 0:
-              raise SystemExit("ERROR: results.json contains no checked endpoints; refusing to publish an empty dashboard.")
-
-          scalar_outputs = {
-              "broken_count": counts["broken"],
-              "ok_count": counts["working"],
-              "protected_count": counts["protected"],
-              "warn_count": counts["warning"],
-              "err_count": counts["error"],
-              "unknown_count": counts["unknown"],
-              "has_broken": "true" if counts["broken"] else "false",
-          }
-          list_files = {
-              "broken_list": "broken_urls.txt",
-              "error_list": "error_urls.txt",
-              "warning_list": "warning_urls.txt",
-              "unknown_list": "unknown_urls.txt",
-              "protected_list": "protected_urls.txt",
-          }
-
-          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
-              for key, value in scalar_outputs.items():
-                  output.write(f"{key}={value}\n")
-              for key, path in list_files.items():
-                  try:
-                      with open(path, encoding="utf-8") as handle:
-                          value = handle.read()
-                  except FileNotFoundError:
-                      value = ""
-                  delimiter = "APIDEX_" + uuid.uuid4().hex
-                  output.write(f"{key}<<{delimiter}\n")
-                  output.write(value)
-                  if value and not value.endswith("\n"):
-                      output.write("\n")
-                  output.write(f"{delimiter}\n")
-          PY
+          python scripts/export_health_outputs.py \
+            --results scripts/results.json \
+            --reports-dir scripts \
+            --output "$GITHUB_OUTPUT"
 
       - name: Scan documentation for provider shutdown notices
         if: github.event_name != 'pull_request' && steps.check.outcome == 'success'
