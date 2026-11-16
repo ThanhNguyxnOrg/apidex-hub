@@ -213,6 +213,34 @@ class LinkCheckerWorkflowSafetyTests(unittest.TestCase):
         self.assertIn(r"match(/Closes\s+#(\d+)/i)", self.workflow)
         self.assertIn(r"\`--max-delete 500\`", self.workflow)
 
+    def test_github_script_report_variables_are_at_step_scope_not_action_inputs(self):
+        self.assertIn(
+            "        uses: actions/github-script@v7\\n"
+            "        env:\\n"
+            "          BROKEN_COUNT: ${{ steps.check.outputs.broken_count }}\\n"
+            "          BROKEN_LIST: ${{ steps.check.outputs.broken_list }}\\n"
+            "        with:\\n"
+            "          github-token: ${{ steps.app-token.outputs.token }}\\n"
+            "          script: |",
+            self.workflow,
+        )
+        self.assertIn(
+            "        uses: actions/github-script@v7\\n"
+            "        env:\\n"
+            "          HAS_BROKEN: ${{ steps.check.outputs.has_broken }}\\n"
+            "          ALREADY_RESOLVED: ${{ steps.auto-remediate.outputs.no_changes }}\\n"
+            "        with:\\n"
+            "          github-token: ${{ steps.app-token.outputs.token }}\\n"
+            "          script: |",
+            self.workflow,
+        )
+        self.assertNotIn(
+            "        with:\\n"
+            "          github-token: ${{ steps.app-token.outputs.token }}\\n"
+            "          env:\\n",
+            self.workflow,
+        )
+
 class DivergentHistoryTests(unittest.TestCase):
     def test_main_only_api_additions_are_not_misread_as_cleanup_deletions(self):
         with tempfile.TemporaryDirectory() as temporary:
