@@ -269,6 +269,8 @@ def classify_link_result(status: int | None, note: str = "") -> str:
     lowered = note.lower()
     if any(marker in lowered for marker in ("err_name_not_resolved", "dns_probe_finished_nxdomain", "nxdomain", "name resolution failed")):
         return "broken"
+    if "explicit provider shutdown notice" in lowered or "provider shutdown signal" in lowered:
+        return "shutdown_signal"
     if any(marker in lowered for marker in (
         "just a moment", "attention required", "checking your browser",
         "verify you are human", "challenge-platform", "cf-chl-",
