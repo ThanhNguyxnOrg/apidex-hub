@@ -269,6 +269,12 @@ def classify_link_result(status: int | None, note: str = "") -> str:
     lowered = note.lower()
     if any(marker in lowered for marker in ("err_name_not_resolved", "dns_probe_finished_nxdomain", "nxdomain", "name resolution failed")):
         return "broken"
+    if any(marker in lowered for marker in (
+        "just a moment", "attention required", "checking your browser",
+        "verify you are human", "challenge-platform", "cf-chl-",
+        "captcha challenge", "waf challenge", "bot-challenge",
+    )):
+        return "inconclusive"
     if status is not None and 200 <= status < 400:
         return "working"
     if status in {404, 410}:
