@@ -9,7 +9,7 @@ import os
 import json
 from datetime import datetime, timezone
 from playwright.sync_api import sync_playwright
-from link_health import classify_playwright_result, looks_like_waf_challenge
+from link_health import classify_playwright_result, looks_like_parked_domain, looks_like_waf_challenge
 from safe_urls import UnsafeURL, safe_browser_route, validate_public_http_url
 
 def verify_with_playwright(browser, url):
@@ -42,13 +42,7 @@ def verify_with_playwright(browser, url):
         except Exception:
             content = ""
 
-        parked_indicators = (
-            'domain parking', 'parked free', 'buy this domain', 'domain is for sale',
-            'domain for sale', 'this domain is registered', 'hugedomains', 'dan.com',
-            'sedo.com', 'hosting suspended', 'account suspended', 'website is suspended',
-            'domain market', 'namecheap landing'
-        )
-        if any(indicator in title or indicator in content for indicator in parked_indicators):
+        if looks_like_parked_domain(title + " " + content):
             return False, status or 404, "Playwright: Parked domain or suspended hosting detected"
 
         if looks_like_waf_challenge(title + " " + content):
