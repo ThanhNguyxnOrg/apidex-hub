@@ -11,6 +11,7 @@ from pr_validation import (
     classify_link_result,
     find_duplicate_urls,
     normalize_url,
+    removal_validation_key,
     parse_api_diff,
     read_pr_diff,
     select_pr_urls_to_validate,
@@ -185,6 +186,38 @@ class AutomatedRemovalValidationTests(unittest.TestCase):
         self.assertEqual(added, ["https://docs.example.com/api/"])
         self.assertEqual(removed, [])
 
+    def test_removal_validation_key_keeps_non_root_trailing_slashes_distinct(self):
+        self.assertEqual(
+            removal_validation_key("HTTPS://Docs.Example.com:443/api"),
+            "https://docs.example.com/api",
+        )
+        self.assertEqual(
+            removal_validation_key("https://docs.example.com/api/"),
+            "https://docs.example.com/api/",
+        )
+        self.assertNotEqual(
+            removal_validation_key("https://docs.example.com/api"),
+            removal_validation_key("https://docs.example.com/api/"),
+        )
+
+    def test_both_removed_trailing_slash_variants_are_revalidated(self):
+        added, removed = select_pr_urls_to_validate(
+            [],
+            ["https://docs.example.com/api", "https://docs.example.com/api/"],
+            validate_removals=True,
+        )
+        self.assertEqual(added, [])
+        self.assertEqual(removed, ["https://docs.example.com/api", "https://docs.example.com/api/"])
+
+    def test_added_url_only_exempts_the_exact_removed_path_variant(self):
+        _, removed = select_pr_urls_to_validate(
+            ["https://docs.example.com/api"],
+            ["https://docs.example.com/api", "https://docs.example.com/api/"],
+            validate_removals=True,
+        )
+        self.assertEqual(removed, ["https://docs.example.com/api/"])
+
+
 class LinkCheckerWorkflowSafetyTests(unittest.TestCase):
     def setUp(self):
         self.workflow = (
@@ -197,6 +230,14 @@ class LinkCheckerWorkflowSafetyTests(unittest.TestCase):
         self.assertIn("const currentBrokenList = String(process.env.BROKEN_LIST || '').trim();", self.workflow)
         self.assertNotIn("const list = `${{ steps.check.outputs.broken_list }}`.trim();", self.workflow)
         self.assertNotIn("const currentBrokenList = `${{ steps.check.outputs.broken_list }}`.trim();", self.workflow)
+
+
+    def test_removed_url_status_uses_path_sensitive_validation_keys(self):
+        checker = (
+            Path(__file__).resolve().parents[2] / "scripts" / "check_pr_links.py"
+        ).read_text(encoding="utf-8")
+        self.assertIn("removed_keys = {removal_validation_key(url) for url in removed_to_check}", checker)
+        self.assertIn("if removal_validation_key(url) in removed_keys:", checker)
 
     def test_bot_cleanup_prs_revalidate_removals_and_refresh_from_latest_main_scan(self):
         checker = (
