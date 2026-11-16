@@ -108,7 +108,12 @@ def _parse_public_url(url: str) -> tuple[str, str, int, str, str]:
     path = parts.path or "/"
     if parts.query:
         path += "?" + parts.query
-    host_header = parts.netloc
+    try:
+        is_ipv6 = isinstance(ipaddress.ip_address(tls_name), ipaddress.IPv6Address)
+    except ValueError:
+        is_ipv6 = False
+    host_for_header = f"[{tls_name}]" if is_ipv6 else tls_name
+    host_header = f"{host_for_header}:{port}" if port is not None else host_for_header
     return scheme, host, target_port, path, addresses[0] + "|" + tls_name + "|" + host_header
 
 
@@ -188,8 +193,9 @@ def _request_pinned(
     headers: dict | None,
     timeout: int,
     method: str = "GET",
+    parsed_url: tuple[str, str, int, str, str] | None = None,
 ) -> SafeResponse:
-    scheme, host, port, path, packed = _parse_public_url(url)
+    scheme, host, port, path, packed = parsed_url or _parse_public_url(url)
     connect_ip, tls_hostname, host_header = packed.split("|", 2)
 
     request_headers = dict(headers or {})
@@ -229,8 +235,9 @@ def safe_get(
     if max_redirects < 0:
         raise ValueError("max_redirects cannot be negative")
 
-    current_url = validate_public_http_url(url)
+    current_url = url.strip()
     for redirect_number in range(max_redirects + 1):
+        parsed_url = _parse_public_url(current_url)
         response = (
             requester(
                 current_url,
@@ -239,7 +246,13 @@ def safe_get(
                 allow_redirects=False,
             )
             if requester is not None
-            else _request_pinned(current_url, headers=headers, timeout=timeout)
+            else _request_pinned(
+                current_url,
+                headers=headers,
+                timeout=timeout,
+                method=method,
+                parsed_url=parsed_url,
+            )
         )
         if response.status_code not in _REDIRECT_CODES:
             return response
@@ -248,7 +261,7 @@ def safe_get(
         if not location:
             return response
 
-        next_url = validate_public_http_url(urljoin(current_url, location))
+        next_url = urljoin(current_url, location)
         response.close()
         if redirect_number == max_redirects:
             raise UnsafeURL(f"Too many redirects while checking {url}")
@@ -296,7 +309,7 @@ def safe_browser_route(route) -> None:
             headers=headers,
             body=response.read(),
         )
-    except (UnsafeURL, OSError, http.client.HTTPException, ssl.SSLError):
+    except Exception:
         route.abort()
     finally:
         if response is not None:
@@ -307,4 +320,13 @@ def safe_urlopen(request: Request, *, timeout: int = 12):
     """Open a urllib Request using the same DNS-pinned, redirect-safe HTTP client."""
     method = request.get_method()
     headers = dict(request.header_items())
-    return safe_get(request.full_url, headers=headers, timeout=timeout, method=method)
+    try:
+        return safe_get(request.full_url, headers=headers, timeout=timeout, method=method)
+    except Exception as error:
+        try:
+            import requests
+            if isinstance(error, requests.RequestException):
+                raise URLError(error) from error
+        except ImportError:
+            pass
+        raise
