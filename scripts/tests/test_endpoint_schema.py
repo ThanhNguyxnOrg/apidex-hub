@@ -6,6 +6,9 @@ import sys
 SCRIPTS_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS_DIR))
 
+import types
+sys.modules.setdefault("requests", types.ModuleType("requests"))
+
 from check_links import parse_apis_from_dir
 from parse_readme import parse_api_row
 
