@@ -47,14 +47,14 @@ def classify_playwright_result(status: int | None, note: str = "") -> str:
         "dns_probe_finished_nxdomain", "nxdomain",
     )):
         return "broken"
-    if status in {404, 410}:
-        return "broken"
-    if status in {401, 403, 418, 429}:
-        return "protected"
-    if status in {400, 405, 406}:
-        return "unknown"
     if any(term in lowered for term in ("cloudflare", "waf", "challenge", "captcha")):
         return "protected"
+    if status in {401, 403, 418, 429}:
+        return "protected"
+    if status in {404, 410}:
+        return "broken"
+    if status in {400, 405, 406}:
+        return "unknown"
     if status == 503 and any(term in lowered for term in ("cloudflare", "waf", "challenge")):
         return "protected"
     if status is not None and 200 <= status < 400:
