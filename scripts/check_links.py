@@ -18,7 +18,7 @@ import time
 import json
 
 from link_health import classify_http_status, looks_like_waf_challenge
-from safe_urls import safe_get
+from safe_urls import DNSResolutionError, safe_get
 
 
 def extract_links_from_readme(file_path='../README.md'):
@@ -109,6 +109,11 @@ def check_link(url, timeout=8, max_retries=2):
                 time.sleep(1)
                 continue
             return {'url': url, 'status': None, 'state': 'warning', 'note': 'SSL error (may be temporary cert issue)'}
+        except DNSResolutionError as e:
+            if attempt < max_retries - 1:
+                time.sleep(1)
+                continue
+            return {'url': url, 'status': None, 'state': 'broken', 'note': f'DNS dead - hostname does not resolve after retries: {e}'}
         except requests.exceptions.Timeout:
             # Retry on timeout
             if attempt < max_retries - 1:
