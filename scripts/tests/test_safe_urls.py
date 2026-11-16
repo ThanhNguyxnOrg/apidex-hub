@@ -58,8 +58,10 @@ class FakeHTTPConnection:
 class SafeURLTests(unittest.TestCase):
     def setUp(self):
         self.public_resolver = patch(
-            "safe_urls.resolve_public_addresses",
-            return_value=("93.184.216.34",),
+            "safe_urls.socket.getaddrinfo",
+            return_value=[
+                (socket.AF_INET, socket.SOCK_STREAM, 6, "", ("93.184.216.34", 443)),
+            ],
         )
         self.public_resolver.start()
         self.addCleanup(self.public_resolver.stop)
@@ -113,7 +115,13 @@ class SafeURLTests(unittest.TestCase):
                     validate_public_http_url("https://" + hostname + "/")
 
     def test_rejects_hostnames_with_any_non_public_dns_answer(self):
-        with patch("safe_urls.resolve_public_addresses", return_value=("93.184.216.34", "10.0.0.4")):
+        with patch(
+            "safe_urls.socket.getaddrinfo",
+            return_value=[
+                (socket.AF_INET, socket.SOCK_STREAM, 6, "", ("93.184.216.34", 443)),
+                (socket.AF_INET, socket.SOCK_STREAM, 6, "", ("10.0.0.4", 443)),
+            ],
+        ):
             with self.assertRaisesRegex(UnsafeURL, "non-public address"):
                 validate_public_http_url("https://mixed.example/api")
 
@@ -187,8 +195,7 @@ class SafeURLTests(unittest.TestCase):
         def requester(url, **kwargs):
             calls.append(url)
             return responses.pop(0)
-        with patch("safe_urls.resolve_public_addresses", return_value=("93.184.216.34",)):
-            result = safe_get("https://api.example.com/start", requester=requester)
+        result = safe_get("https://api.example.com/start", requester=requester)
         self.assertEqual(result.status_code, 200)
         self.assertEqual(calls, [
             "https://api.example.com/start",
