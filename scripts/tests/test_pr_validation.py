@@ -13,6 +13,7 @@ from pr_validation import (
     normalize_url,
     parse_api_diff,
     read_pr_diff,
+    select_pr_urls_to_validate,
 )
 
 
@@ -159,3 +160,31 @@ class RepositoryDiffTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AutomatedRemovalValidationTests(unittest.TestCase):
+    def test_removed_urls_are_revalidated_only_for_agent_remediation_prs(self):
+        added, removed = select_pr_urls_to_validate(
+            ["https://docs.example.com/new"],
+            ["https://docs.example.com/dead"],
+            validate_removals=False,
+        )
+        self.assertEqual(added, ["https://docs.example.com/new"])
+        self.assertEqual(removed, [])
+
+        added, removed = select_pr_urls_to_validate(
+            ["https://docs.example.com/new"],
+            ["https://docs.example.com/dead"],
+            validate_removals=True,
+        )
+        self.assertEqual(added, ["https://docs.example.com/new"])
+        self.assertEqual(removed, ["https://docs.example.com/dead"])
+
+    def test_a_url_moved_in_the_same_pr_is_validated_as_an_addition(self):
+        added, removed = select_pr_urls_to_validate(
+            ["https://docs.example.com/api/"],
+            ["https://docs.example.com/api"],
+            validate_removals=True,
+        )
+        self.assertEqual(added, ["https://docs.example.com/api/"])
+        self.assertEqual(removed, [])
