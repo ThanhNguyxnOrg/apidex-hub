@@ -20,6 +20,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 from shutdown_detection import detect_shutdown_notice
+from safe_urls import UnsafeURL, safe_urlopen
 
 _LINK_RE = re.compile(r"\[[^\]]+\]\((https?://[^)]+)\)", re.IGNORECASE)
 _CATEGORY_RE = re.compile(
@@ -108,7 +109,7 @@ def fetch_documentation(url: str, timeout: int = 12) -> dict:
         },
     )
     try:
-        with urlopen(request, timeout=timeout) as response:
+        with safe_urlopen(request, timeout=timeout) as response:
             body = response.read(_MAX_BODY_BYTES)
             headers = response.headers
             status = response.getcode()
@@ -118,6 +119,14 @@ def fetch_documentation(url: str, timeout: int = 12) -> dict:
         headers = error.headers
         status = error.code
         final_url = error.geturl()
+    except UnsafeURL as error:
+        return {
+            "url": url,
+            "status": None,
+            "final_url": url,
+            "error": f"UnsafeURL: {str(error)[:240]}",
+            "shutdown_signal": None,
+        }
     except (URLError, TimeoutError, HTTPException, OSError) as error:
         return {
             "url": url,
