@@ -11,8 +11,10 @@ from pr_validation import (
     classify_link_result,
     find_duplicate_urls,
     normalize_url,
+    removal_validation_key,
     parse_api_diff,
     read_pr_diff,
+    select_pr_urls_to_validate,
 )
 
 
@@ -155,6 +157,152 @@ class RepositoryDiffTests(unittest.TestCase):
             paths, diff = read_pr_diff(base, head, scripts)
             self.assertEqual(paths, ["apis/example.md"])
             self.assertIn("https://docs.example.com/api", diff)
+
+
+class AutomatedRemovalValidationTests(unittest.TestCase):
+    def test_removed_urls_are_revalidated_only_for_agent_remediation_prs(self):
+        added, removed = select_pr_urls_to_validate(
+            ["https://docs.example.com/new"],
+            ["https://docs.example.com/dead"],
+            validate_removals=False,
+        )
+        self.assertEqual(added, ["https://docs.example.com/new"])
+        self.assertEqual(removed, [])
+
+        added, removed = select_pr_urls_to_validate(
+            ["https://docs.example.com/new"],
+            ["https://docs.example.com/dead"],
+            validate_removals=True,
+        )
+        self.assertEqual(added, ["https://docs.example.com/new"])
+        self.assertEqual(removed, ["https://docs.example.com/dead"])
+
+    def test_a_url_moved_in_the_same_pr_is_validated_as_an_addition(self):
+        added, removed = select_pr_urls_to_validate(
+            ["https://docs.example.com/api/"],
+            ["https://docs.example.com/api/"],
+            validate_removals=True,
+        )
+        self.assertEqual(added, ["https://docs.example.com/api/"])
+        self.assertEqual(removed, [])
+
+    def test_removal_validation_key_keeps_non_root_trailing_slashes_distinct(self):
+        self.assertEqual(
+            removal_validation_key("HTTPS://Docs.Example.com:443/api"),
+            "https://docs.example.com/api",
+        )
+        self.assertEqual(
+            removal_validation_key("https://docs.example.com/api/"),
+            "https://docs.example.com/api/",
+        )
+        self.assertNotEqual(
+            removal_validation_key("https://docs.example.com/api"),
+            removal_validation_key("https://docs.example.com/api/"),
+        )
+
+    def test_both_removed_trailing_slash_variants_are_revalidated(self):
+        added, removed = select_pr_urls_to_validate(
+            [],
+            ["https://docs.example.com/api", "https://docs.example.com/api/"],
+            validate_removals=True,
+        )
+        self.assertEqual(added, [])
+        self.assertEqual(removed, ["https://docs.example.com/api", "https://docs.example.com/api/"])
+
+    def test_added_url_only_exempts_the_exact_removed_path_variant(self):
+        _, removed = select_pr_urls_to_validate(
+            ["https://docs.example.com/api"],
+            ["https://docs.example.com/api", "https://docs.example.com/api/"],
+            validate_removals=True,
+        )
+        self.assertEqual(removed, ["https://docs.example.com/api/"])
+
+
+class LinkCheckerWorkflowSafetyTests(unittest.TestCase):
+    def setUp(self):
+        self.workflow = (
+            Path(__file__).resolve().parents[2] / ".github" / "workflows" / "link-checker.yml"
+        ).read_text(encoding="utf-8")
+
+    def test_untrusted_report_values_are_passed_through_environment(self):
+        self.assertIn("BROKEN_LIST: ${{ steps.check.outputs.broken_list }}", self.workflow)
+        self.assertIn("const list = String(process.env.BROKEN_LIST || '').trim();", self.workflow)
+        self.assertIn("const currentBrokenList = String(process.env.BROKEN_LIST || '').trim();", self.workflow)
+        self.assertNotIn("const list = `${{ steps.check.outputs.broken_list }}`.trim();", self.workflow)
+        self.assertNotIn("const currentBrokenList = `${{ steps.check.outputs.broken_list }}`.trim();", self.workflow)
+
+
+    def test_removed_url_status_uses_path_sensitive_validation_keys(self):
+        checker = (
+            Path(__file__).resolve().parents[2] / "scripts" / "check_pr_links.py"
+        ).read_text(encoding="utf-8")
+        self.assertIn("removed_keys = {removal_validation_key(url) for url in removed_to_check}", checker)
+        self.assertIn("if removal_validation_key(url) in removed_keys:", checker)
+
+    def test_bot_cleanup_prs_revalidate_removals_and_refresh_from_latest_main_scan(self):
+        checker = (
+            Path(__file__).resolve().parents[2] / "scripts" / "check_pr_links.py"
+        ).read_text(encoding="utf-8")
+        self.assertIn("APIDEX_VALIDATE_REMOVALS: ${{ startsWith(github.head_ref, 'agent-remediation/dead-api-incident-') }}", self.workflow)
+        self.assertIn('validate_removals = os.environ.get("APIDEX_VALIDATE_REMOVALS", "").strip().lower() == "true"', checker)
+        self.assertIn('urls_to_check = added_to_check + removed_to_check', checker)
+        self.assertIn('if state == "broken":', checker)
+        self.assertIn('git reset --hard origin/main', self.workflow)
+        self.assertIn('git push --force-with-lease=', self.workflow)
+        self.assertNotIn('git push origin main', self.workflow)
+    def test_incident_reference_and_safety_cap_survive_pr_body_rendering(self):
+        self.assertIn(r"match(/Closes\s+#(\d+)/i)", self.workflow)
+        self.assertIn(r"\`--max-delete 500\`", self.workflow)
+
+    def test_github_script_report_variables_are_at_step_scope_not_action_inputs(self):
+        lines = self.workflow.splitlines()
+        for key in ("BROKEN_COUNT", "HAS_BROKEN"):
+            index = next(i for i, line in enumerate(lines) if line.startswith("          " + key + ":"))
+            self.assertEqual(lines[index - 1], "        env:", key + " must begin a step-level environment block")
+        for key in ("BROKEN_LIST", "ALREADY_RESOLVED", "REMEDIATION_PR", "INCIDENT_ISSUE_NUMBER", "ERROR_LIST", "WARNING_LIST", "UNKNOWN_LIST", "PROTECTED_LIST"):
+            self.assertTrue(any(line.startswith("          " + key + ":") for line in lines), key + " must be passed to the step environment")
+        self.assertNotIn("          env:", self.workflow)
+
+
+class DivergentHistoryTests(unittest.TestCase):
+    def test_main_only_api_additions_are_not_misread_as_cleanup_deletions(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            apis = root / "apis"
+            apis.mkdir()
+            catalog = apis / "catalog.md"
+            catalog.write_text(
+                "| Dead API | Example | No | ✅ | [Link](https://dead.example.com) |\n"
+                "| Stable API | Example | No | ✅ | [Link](https://stable.example.com) |\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q", "-b", "main", str(root)], check=True)
+            subprocess.run(["git", "-C", str(root), "config", "user.name", "Test"], check=True)
+            subprocess.run(["git", "-C", str(root), "config", "user.email", "test@example.com"], check=True)
+            subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
+            subprocess.run(["git", "-C", str(root), "commit", "-qm", "base"], check=True)
+
+            subprocess.run(["git", "-C", str(root), "checkout", "-qb", "cleanup"], check=True)
+            catalog.write_text(
+                "| Stable API | Example | No | ✅ | [Link](https://stable.example.com) |\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
+            subprocess.run(["git", "-C", str(root), "commit", "-qm", "remove dead API"], check=True)
+
+            subprocess.run(["git", "-C", str(root), "checkout", "main"], check=True)
+            with catalog.open("a", encoding="utf-8") as file:
+                file.write("| Healthy New API | Example | No | ✅ | [Link](https://healthy.example.com) |\n")
+            subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
+            subprocess.run(["git", "-C", str(root), "commit", "-qm", "add healthy API on main"], check=True)
+
+            paths, diff = read_pr_diff("main", "cleanup", root)
+            added, removed, malformed = parse_api_diff(diff)
+            self.assertEqual(paths, ["apis/catalog.md"])
+            self.assertEqual(added, [])
+            self.assertEqual(removed, ["https://dead.example.com"])
+            self.assertNotIn("https://healthy.example.com", removed)
+            self.assertEqual(malformed, [])
 
 
 if __name__ == "__main__":

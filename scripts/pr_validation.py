@@ -46,9 +46,13 @@ def read_pr_diff(base_ref: str, head_ref: str, repo_root: Path) -> tuple[list[st
         if not re.fullmatch(r"[0-9a-fA-F]{40,64}", resolved):
             raise RuntimeError(f"The PR {ref_name} ref did not resolve to a commit: {ref}")
 
-    paths_text = _git(root, "diff", "--name-only", base_ref, head_ref, "--", "apis/")
+    merge_base = _git(root, "merge-base", base_ref, head_ref).strip()
+    if not re.fullmatch(r"[0-9a-fA-F]{40,64}", merge_base):
+        raise RuntimeError('The PR base and head do not have a valid merge base')
+    # Match GitHub's PR diff semantics: ignore base-only commits added after the head forked.
+    paths_text = _git(root, "diff", "--name-only", merge_base, head_ref, "--", "apis/")
     paths = sorted(path for path in paths_text.splitlines() if path.startswith("apis/"))
-    diff = _git(root, "diff", "--no-ext-diff", "--unified=0", base_ref, head_ref, "--", "apis/")
+    diff = _git(root, "diff", "--no-ext-diff", "--unified=0", merge_base, head_ref, "--", "apis/")
     return paths, diff
 
 
@@ -71,6 +75,64 @@ def normalize_url(url: str) -> str:
         return urlunsplit((parts.scheme.lower(), host, normalized_path, parts.query, ""))
     except ValueError:
         return url.strip()
+
+
+def removal_validation_key(url: str) -> str:
+    """Normalize host identity while preserving non-root path trailing slashes.
+
+    Removal candidates are fetched independently. `/api` and `/api/` may
+    have different server behavior, so both variants must be revalidated.
+    """
+    try:
+        parts = urlsplit(url.strip())
+        scheme = parts.scheme.lower()
+        if scheme not in {"http", "https"} or not parts.hostname:
+            return url.strip()
+        if parts.username or parts.password:
+            return url.strip()
+        host = parts.hostname.lower()
+        port = parts.port
+        if port and not ((scheme == "https" and port == 443) or (scheme == "http" and port == 80)):
+            host = f"{host}:{port}"
+        return urlunsplit((scheme, host, parts.path or "/", parts.query, ""))
+    except ValueError:
+        return url.strip()
+
+
+
+def select_pr_urls_to_validate(
+    added_urls: list[str],
+    removed_urls: list[str],
+    *,
+    validate_removals: bool = False,
+) -> tuple[list[str], list[str]]:
+    """Select unique added URLs and, for automated cleanup PRs, unique removed URLs.
+
+    A URL that is also added in the same PR is validated as an addition, not
+    treated as a deletion candidate. This keeps moves/replacements fail-closed.
+    """
+    selected_added: list[str] = []
+    added_keys: set[str] = set()
+    for url in added_urls:
+        key = normalize_url(url)
+        if key and key not in added_keys:
+            selected_added.append(url)
+            added_keys.add(key)
+
+    if not validate_removals:
+        return selected_added, []
+
+    # Exclude only the exact URL path variant added by this PR. A trailing
+    # slash is retained here because each removed variant must be rechecked.
+    added_removal_keys = {removal_validation_key(url) for url in added_urls}
+    selected_removed: list[str] = []
+    seen_removed: set[str] = set()
+    for url in removed_urls:
+        key = removal_validation_key(url)
+        if key and key not in added_removal_keys and key not in seen_removed:
+            selected_removed.append(url)
+            seen_removed.add(key)
+    return selected_added, selected_removed
 
 
 def _split_table_row(line: str) -> list[str] | None:
