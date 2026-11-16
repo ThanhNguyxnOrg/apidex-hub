@@ -169,6 +169,11 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
             const repository = `${owner}/${repo}`;
+            const reviewCount =
+              Number.parseInt('${{ steps.check.outputs.protected_count }}', 10) +
+              Number.parseInt('${{ steps.check.outputs.warn_count }}', 10) +
+              Number.parseInt('${{ steps.check.outputs.err_count }}', 10) +
+              Number.parseInt('${{ steps.check.outputs.unknown_count }}', 10);
             const openPrs = await github.paginate(github.rest.pulls.list, {
               owner, repo, state: 'open', per_page: 100
             });
@@ -195,6 +200,15 @@ jobs:
               } catch (error) {
                 if (error.status !== 404) throw error;
               }
+              if (reviewCount > 0) {
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: pr.number,
+                  body: `The latest successful scan found no endpoint that remains confirmed dead, but ${reviewCount} other endpoint result(s) are inconclusive or need review. Auto-merge and the \`automerge\` label have been removed. This PR is left open for maintainer review; no deletion will be merged automatically.`
+                });
+                console.log(`Disabled automatic deletion for #${pr.number}; inconclusive scan results require manual review.`);
+                continue;
+              }
+
               await github.rest.pulls.update({
                 owner, repo, pull_number: pr.number, state: 'closed'
               });
