@@ -10,6 +10,7 @@ import json
 from datetime import datetime, timezone
 from playwright.sync_api import sync_playwright
 from link_health import classify_playwright_result, looks_like_waf_challenge
+from safe_urls import UnsafeURL, validate_public_http_url
 
 def verify_with_playwright(browser, url):
     """Check the final browser response without attempting to bypass access controls."""
@@ -17,11 +18,27 @@ def verify_with_playwright(browser, url):
     page = None
     last_response = [None]
     try:
+        validate_public_http_url(url)
         context = browser.new_context(
             viewport={'width': 1280, 'height': 720},
             user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         )
         page = context.new_page()
+
+        def guard_public_requests(route):
+            target = route.request.url
+            scheme = target.split(":", 1)[0].lower()
+            if scheme in {"data", "blob", "about"}:
+                route.continue_()
+                return
+            try:
+                validate_public_http_url(target)
+            except UnsafeURL:
+                route.abort()
+                return
+            route.continue_()
+
+        page.route("**/*", guard_public_requests)
 
         def handle_response(response):
             if response.frame == page.main_frame and response.request.resource_type == "document":
