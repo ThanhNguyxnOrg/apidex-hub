@@ -7,7 +7,7 @@ from unittest.mock import patch
 SCRIPTS_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS_DIR))
 
-from safe_urls import UnsafeURL, safe_get, validate_public_http_url
+from safe_urls import DNSResolutionError, UnsafeURL, resolve_public_addresses, safe_get, validate_public_http_url
 
 
 class FakeResponse:
@@ -84,9 +84,8 @@ class SafeURLTests(unittest.TestCase):
 
     def test_nxdomain_has_a_distinct_error_type(self):
         with patch("safe_urls.socket.getaddrinfo", side_effect=socket.gaierror(socket.EAI_NONAME, "Name or service not known")):
-            with self.assertRaises(UnsafeURL) as captured:
-                validate_public_http_url("https://missing.example/api")
-        self.assertEqual(type(captured.exception).__name__, "DNSResolutionError")
+            with self.assertRaises(DNSResolutionError):
+                resolve_public_addresses("missing.example", 443)
 
     def test_rejects_dns_failure(self):
         with patch("safe_urls.resolve_public_addresses", side_effect=socket.gaierror("NXDOMAIN")):
