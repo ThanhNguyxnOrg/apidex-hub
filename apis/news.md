@@ -31,7 +31,7 @@
 | **NewsAPI.ai** | AI-powered news API. | 🔑 ApiKey | ✅ | [Link](https://newsapi.ai/) |
 | **NewsData** | News data API for live-breaking news and headlines from reputed news sources. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/docs) |
 | **NewsData.io** | News search and tracking. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/) |
-| **NewsDataHub** | NewsDataHub provides a production-ready REST API delivering near-real-time global news data at scale. | 🔑 ApiKey | ✅ | [Link](https://newsdatahub.com) |
+| **NewsDataHub** | News data API provides near-real-time global news data at scale. | 🔑 ApiKey | ✅ | [Link](https://newsdatahub.com) |
 | **Newsflash** | Deduplicated news events from 260+ sources with corroboration/confidence scores for AI agents | 🔑 ApiKey | ✅ | [Link](https://newsflash.sh/docs) |
 | **NewsMesh** | Premium news data from thousands of sources | 🔑 ApiKey | ✅ | [Link](https://newsmesh.co/docs) |
 | **Noozra** | Free news headlines from 200+ curated RSS sources | No | ✅ | [Link](https://noozra.com/api) |
@@ -47,6 +47,7 @@
 | **The Old Reader** | RSS reader | 🔑 ApiKey | ✅ | [Link](https://github.com/theoldreader/api) |
 | **TheNewsAPI** | Global news API. | 🔑 ApiKey | ✅ | [Link](https://www.thenewsapi.com/) |
 | **Webz.io** | Datasets of news and web articles with natural language filters. | 🔑 ApiKey | ✅ | [Link](https://webz.io/) |
-
 | **World News** | Search through millions of semantically tagged worldwide news. | 🔑 ApiKey | ✅ | [Link](https://worldnewsapi.com) |
+| **链小知区块链 (Lianxiaozhi)** | Anonymous, read-only REST API for Chinese blockchain news and learning guides; latest/search results cover 7 days. Preserve original-source links and verify AI-assisted summaries against publishers. Public read access does not grant unrestricted redistribution rights; no numeric request quota is published. | No | ✅ | [Link](https://lianxiaozhi.com/agent) |
+
 [⬆ Back to Table of Contents](../README.md#table-of-contents)
