@@ -18,19 +18,18 @@ def looks_like_waf_challenge(content: str) -> bool:
 
 _PARKED_INDICATORS = (
     "domain parking",
+    "website is parked",
+    "this website is parked",
     "parked free",
     "buy this domain",
+    "buy this domain name",
+    "this domain is for sale",
     "domain is for sale",
     "domain for sale",
-    "this domain is registered",
-    "hugedomains",
-    "dan.com",
-    "sedo.com",
+    "make an offer for this domain",
     "hosting suspended",
     "account suspended",
     "website is suspended",
-    "domain market",
-    "namecheap landing",
 )
 
 
