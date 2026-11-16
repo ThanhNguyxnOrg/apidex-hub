@@ -37,6 +37,10 @@ class ShutdownDetectionTests(unittest.TestCase):
         """
         self.assertIsNone(detect_shutdown_notice(content))
 
+    def test_ignores_unrendered_template_content(self):
+        content = "<template><p>Our API service has been discontinued.</p></template>"
+        self.assertIsNone(detect_shutdown_notice(content))
+
     def test_does_not_treat_local_shutdown_instructions_as_provider_shutdown(self):
         content = "<p>To shut down your local development server, press Ctrl+C.</p>"
         self.assertIsNone(detect_shutdown_notice(content))
