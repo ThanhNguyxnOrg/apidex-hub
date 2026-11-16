@@ -14,6 +14,7 @@ import requests
 from playwright.sync_api import sync_playwright
 
 from shutdown_detection import detect_shutdown_notice
+from link_health import looks_like_waf_challenge
 from pr_validation import (
     classify_link_result,
     find_duplicate_urls,
@@ -60,6 +61,8 @@ def verify_with_playwright(browser, url: str) -> tuple[int | None, str]:
         )
         if any(term in title or term in content for term in parked_indicators):
             return 404, "Playwright: parked domain or suspended hosting detected"
+        if looks_like_waf_challenge(title + " " + content):
+            return status if status in {401, 403, 418, 429, 503} else 403, "Playwright: WAF challenge detected; endpoint availability is not confirmed"
         return status, f"Playwright: final document HTTP {status if status is not None else 'unknown'}"
     except Exception as error:
         message = re.sub(r"\s+", " ", str(error)).strip()
@@ -97,7 +100,9 @@ def check_url(browser, url: str) -> tuple[str, int | None, str]:
                 "Explicit provider shutdown notice in documentation: "
                 f"{shutdown_signal['matched_text']}",
             )
-        state = classify_link_result(response.status_code)
+        if looks_like_waf_challenge(response.text):
+            return "inconclusive", response.status_code, "WAF or bot-challenge page; API availability is not confirmed"
+        state = classify_link_result(response.status_code, response.text)
         if state == "working":
             return state, response.status_code, "HTTP request succeeded"
         if state == "inconclusive":
