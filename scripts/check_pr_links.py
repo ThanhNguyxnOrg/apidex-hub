@@ -17,6 +17,7 @@ from pr_validation import (
     classify_link_result,
     find_duplicate_urls,
     normalize_url,
+    removal_validation_key,
     parse_api_diff,
     read_existing_api_urls,
     read_pr_diff,
@@ -187,7 +188,7 @@ def main() -> int:
     )
     added_to_check = [url for url in added_to_check if normalize_url(url) not in duplicate_keys]
     urls_to_check = added_to_check + removed_to_check
-    removed_keys = {normalize_url(url) for url in removed_to_check}
+    removed_keys = {removal_validation_key(url) for url in removed_to_check}
 
     working: list[tuple[str, int | None, str]] = []
     broken: list[tuple[str, int | None, str]] = []
@@ -202,7 +203,7 @@ def main() -> int:
                 for url in urls_to_check:
                     state, status, note = check_url(browser, url)
                     item = (url, status, note)
-                    if normalize_url(url) in removed_keys:
+                    if removal_validation_key(url) in removed_keys:
                         if state == "broken":
                             confirmed_dead_removals.append(item)
                         else:
