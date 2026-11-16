@@ -301,18 +301,7 @@ jobs:
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
-            const fs = require('fs');
             const today = new Date().toISOString().split('T')[0];
-            let shutdownReport = { shutdown_signals: [], inconclusive_documentation_links: 0 };
-            try {
-              shutdownReport = JSON.parse(fs.readFileSync(process.env.SHUTDOWN_REPORT_PATH, 'utf8'));
-            } catch (error) {
-              throw new Error('The documentation shutdown report is missing or invalid: ' + error.message);
-            }
-            const shutdownSignals = shutdownReport.shutdown_signals || [];
-            const shutdownCount = shutdownSignals.length;
-            const shutdownInconclusive = Number(shutdownReport.inconclusive_documentation_links || 0);
-            const shutdownIssueUrl = String(process.env.SHUTDOWN_ISSUE_URL || '');
             const count = Number.parseInt(process.env.BROKEN_COUNT || '0', 10) || 0;
             const list = String(process.env.BROKEN_LIST || '').trim();
             const marker = '<!-- link-checker-incident -->';
@@ -552,7 +541,18 @@ jobs:
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
+            const fs = require('fs');
             const today = new Date().toISOString().split('T')[0];
+            let shutdownReport = { shutdown_signals: [], inconclusive_documentation_links: 0 };
+            try {
+              shutdownReport = JSON.parse(fs.readFileSync(process.env.SHUTDOWN_REPORT_PATH, 'utf8'));
+            } catch (error) {
+              throw new Error('The documentation shutdown report is missing or invalid: ' + error.message);
+            }
+            const shutdownSignals = shutdownReport.shutdown_signals || [];
+            const shutdownCount = shutdownSignals.length;
+            const shutdownInconclusive = Number(shutdownReport.inconclusive_documentation_links || 0);
+            const shutdownIssueUrl = String(process.env.SHUTDOWN_ISSUE_URL || '');
             const hasBroken = process.env.HAS_BROKEN === 'true';
             const alreadyResolved = process.env.ALREADY_RESOLVED === 'true';
             const remediationPr = String(process.env.REMEDIATION_PR || '');
