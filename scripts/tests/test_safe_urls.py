@@ -1,6 +1,11 @@
 import socket
+import sys
+from pathlib import Path
 import unittest
 from unittest.mock import patch
+
+SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_DIR))
 
 from safe_urls import UnsafeURL, safe_get, validate_public_http_url
 
