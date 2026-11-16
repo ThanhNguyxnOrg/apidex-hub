@@ -285,11 +285,11 @@ jobs:
         if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true'
         id: create-incident
         uses: actions/github-script@v7
+        env:
+          BROKEN_COUNT: ${{ steps.check.outputs.broken_count }}
+          BROKEN_LIST: ${{ steps.check.outputs.broken_list }}
         with:
           github-token: ${{ steps.app-token.outputs.token }}
-          env:
-            BROKEN_COUNT: ${{ steps.check.outputs.broken_count }}
-            BROKEN_LIST: ${{ steps.check.outputs.broken_list }}
           script: |
             const today = new Date().toISOString().split('T')[0];
             const count = Number.parseInt(process.env.BROKEN_COUNT || '0', 10) || 0;
@@ -428,25 +428,25 @@ jobs:
       - name: Update GitHub Discussion Live Dashboard
         if: github.event_name != 'pull_request' && always()
         uses: actions/github-script@v7
+        env:
+          HAS_BROKEN: ${{ steps.check.outputs.has_broken }}
+          ALREADY_RESOLVED: ${{ steps.auto-remediate.outputs.no_changes }}
+          REMEDIATION_PR: ${{ steps.auto-remediate.outputs.pr_url }}
+          INCIDENT_ISSUE_NUMBER: ${{ steps.create-incident.outputs.issue_number }}
+          BROKEN_COUNT: ${{ steps.check.outputs.broken_count }}
+          OK_COUNT: ${{ steps.check.outputs.ok_count }}
+          PROTECTED_COUNT: ${{ steps.check.outputs.protected_count }}
+          WARN_COUNT: ${{ steps.check.outputs.warn_count }}
+          ERR_COUNT: ${{ steps.check.outputs.err_count }}
+          UNKNOWN_COUNT: ${{ steps.check.outputs.unknown_count }}
+          TOTAL_HEALTHY: ${{ steps.check.outputs.total_healthy }}
+          BROKEN_LIST: ${{ steps.check.outputs.broken_list }}
+          ERROR_LIST: ${{ steps.check.outputs.error_list }}
+          WARNING_LIST: ${{ steps.check.outputs.warning_list }}
+          UNKNOWN_LIST: ${{ steps.check.outputs.unknown_list }}
+          PROTECTED_LIST: ${{ steps.check.outputs.protected_list }}
         with:
           github-token: ${{ steps.app-token.outputs.token }}
-          env:
-            HAS_BROKEN: ${{ steps.check.outputs.has_broken }}
-            ALREADY_RESOLVED: ${{ steps.auto-remediate.outputs.no_changes }}
-            REMEDIATION_PR: ${{ steps.auto-remediate.outputs.pr_url }}
-            INCIDENT_ISSUE_NUMBER: ${{ steps.create-incident.outputs.issue_number }}
-            BROKEN_COUNT: ${{ steps.check.outputs.broken_count }}
-            OK_COUNT: ${{ steps.check.outputs.ok_count }}
-            PROTECTED_COUNT: ${{ steps.check.outputs.protected_count }}
-            WARN_COUNT: ${{ steps.check.outputs.warn_count }}
-            ERR_COUNT: ${{ steps.check.outputs.err_count }}
-            UNKNOWN_COUNT: ${{ steps.check.outputs.unknown_count }}
-            TOTAL_HEALTHY: ${{ steps.check.outputs.total_healthy }}
-            BROKEN_LIST: ${{ steps.check.outputs.broken_list }}
-            ERROR_LIST: ${{ steps.check.outputs.error_list }}
-            WARNING_LIST: ${{ steps.check.outputs.warning_list }}
-            UNKNOWN_LIST: ${{ steps.check.outputs.unknown_list }}
-            PROTECTED_LIST: ${{ steps.check.outputs.protected_list }}
           script: |
             const today = new Date().toISOString().split('T')[0];
             const hasBroken = process.env.HAS_BROKEN === 'true';
