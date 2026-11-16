@@ -96,26 +96,56 @@ jobs:
             exit 1
           fi
 
-          # Parse report stats
-          BROKEN_COUNT=$(grep -oP "Broken: \K[0-9]+" link_check_report.txt || echo "0")
-          OK_COUNT=$(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo "0")
-          PROTECTED_COUNT=$(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo "0")
-          WARN_COUNT=$(grep -oP "Warnings: \K[0-9]+" link_check_report.txt || echo "0")
-          ERR_COUNT=$(grep -oP "Errors: \K[0-9]+" link_check_report.txt || echo "0")
-          UNKNOWN_COUNT=$(grep -oP "Unknown: \K[0-9]+" link_check_report.txt || echo "0")
+          # Consume the final Stage 2 JSON, not human-readable text parsed with grep.
+          python - <<'PY'
+          import json
+          import os
+          import uuid
 
-          echo "broken_count=$BROKEN_COUNT" >> $GITHUB_OUTPUT
-          echo "ok_count=$OK_COUNT" >> $GITHUB_OUTPUT
-          echo "protected_count=$PROTECTED_COUNT" >> $GITHUB_OUTPUT
-          echo "warn_count=$WARN_COUNT" >> $GITHUB_OUTPUT
-          echo "err_count=$ERR_COUNT" >> $GITHUB_OUTPUT
-          echo "unknown_count=$UNKNOWN_COUNT" >> $GITHUB_OUTPUT
+          with open("scripts/results.json", encoding="utf-8") as handle:
+              results = json.load(handle)
 
-          if [ "$BROKEN_COUNT" -gt 0 ]; then
-            echo "has_broken=true" >> $GITHUB_OUTPUT
-          else
-            echo "has_broken=false" >> $GITHUB_OUTPUT
-          fi
+          states = ("working", "protected", "warning", "error", "broken", "unknown")
+          if not isinstance(results, dict) or any(not isinstance(results.get(key), list) for key in states):
+              raise SystemExit("ERROR: results.json is missing a required classification list.")
+
+          counts = {key: len(results[key]) for key in states}
+          if sum(counts.values()) == 0:
+              raise SystemExit("ERROR: results.json contains no checked endpoints; refusing to publish an empty dashboard.")
+
+          scalar_outputs = {
+              "broken_count": counts["broken"],
+              "ok_count": counts["working"],
+              "protected_count": counts["protected"],
+              "warn_count": counts["warning"],
+              "err_count": counts["error"],
+              "unknown_count": counts["unknown"],
+              "has_broken": "true" if counts["broken"] else "false",
+          }
+          list_files = {
+              "broken_list": "scripts/broken_urls.txt",
+              "error_list": "scripts/error_urls.txt",
+              "warning_list": "scripts/warning_urls.txt",
+              "unknown_list": "scripts/unknown_urls.txt",
+              "protected_list": "scripts/protected_urls.txt",
+          }
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              for key, value in scalar_outputs.items():
+                  output.write(f"{key}={value}\\n")
+              for key, path in list_files.items():
+                  try:
+                      with open(path, encoding="utf-8") as handle:
+                          value = handle.read()
+                  except FileNotFoundError:
+                      value = ""
+                  delimiter = "APIDEX_" + uuid.uuid4().hex
+                  output.write(f"{key}<<{delimiter}\\n")
+                  output.write(value)
+                  if value and not value.endswith("\\n"):
+                      output.write("\\n")
+                  output.write(f"{delimiter}\\n")
+          PY
 
           # Read broken URLs list
           if [ -f broken_urls.txt ]; then
