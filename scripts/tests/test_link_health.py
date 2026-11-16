@@ -5,7 +5,7 @@ from pathlib import Path
 SCRIPTS_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS_DIR))
 
-from link_health import classify_http_status, classify_playwright_result
+from link_health import classify_http_status, classify_playwright_result, looks_like_parked_domain
 
 
 class ApiHealthClassificationTests(unittest.TestCase):
@@ -13,6 +13,11 @@ class ApiHealthClassificationTests(unittest.TestCase):
         for status in (200, 201, 202, 204, 206):
             with self.subTest(status=status):
                 self.assertEqual(classify_http_status(status)[0], "working")
+
+    def test_detects_parked_pages_even_when_the_server_returns_http_200(self):
+        self.assertTrue(looks_like_parked_domain("<title>This domain is for sale</title>"))
+        self.assertTrue(looks_like_parked_domain("Hosting suspended"))
+        self.assertFalse(looks_like_parked_domain("Official API documentation"))
 
     def test_access_controls_and_rate_limits_are_protected(self):
         for status in (401, 403, 418, 429):
