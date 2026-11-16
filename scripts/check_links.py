@@ -18,6 +18,7 @@ import time
 import json
 
 from link_health import classify_http_status, looks_like_waf_challenge
+from safe_urls import safe_get
 
 
 def extract_links_from_readme(file_path='../README.md'):
@@ -89,7 +90,7 @@ def check_link(url, timeout=8, max_retries=2):
                 'Upgrade-Insecure-Requests': '1',
             }
 
-            response = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
+            response = safe_get(url, headers=headers, timeout=timeout)
             code = response.status_code
 
             waf_detected = has_cloudflare_protection(response)
