@@ -7,7 +7,8 @@ from unittest.mock import patch
 SCRIPTS_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS_DIR))
 
-from safe_urls import DNSResolutionError, UnsafeURL, resolve_public_addresses, safe_get, validate_public_http_url
+from safe_urls import DNSResolutionError, UnsafeURL, _SafeRedirectHandler, resolve_public_addresses, safe_get, validate_public_http_url
+from urllib.request import Request
 
 
 class FakeResponse:
@@ -91,6 +92,19 @@ class SafeURLTests(unittest.TestCase):
         with patch("safe_urls.resolve_public_addresses", side_effect=socket.gaierror("NXDOMAIN")):
             with self.assertRaises(UnsafeURL):
                 validate_public_http_url("https://missing.example/api")
+
+    def test_urllib_redirect_handler_rejects_private_redirect_targets(self):
+        handler = _SafeRedirectHandler()
+        request = Request("https://api.example.com/start")
+        with self.assertRaises(UnsafeURL):
+            handler.redirect_request(
+                request,
+                None,
+                302,
+                "Found",
+                {},
+                "http://169.254.169.254/latest/meta-data/",
+            )
 
     def test_safe_get_checks_redirect_destinations(self):
         responses = [
