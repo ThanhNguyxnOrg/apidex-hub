@@ -475,7 +475,6 @@ jobs:
                   repo: context.repo.repo,
                   title,
                   body,
-                  labels: ['automated']
                 });
 
             core.setOutput('issue_number', String(response.data.number));
