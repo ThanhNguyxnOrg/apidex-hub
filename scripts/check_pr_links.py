@@ -14,7 +14,7 @@ import requests
 from playwright.sync_api import sync_playwright
 
 from shutdown_detection import detect_shutdown_notice
-from link_health import looks_like_waf_challenge
+from link_health import looks_like_parked_domain, looks_like_waf_challenge
 from safe_urls import DNSResolutionError, UnsafeURL, safe_get, validate_public_http_url
 from pr_validation import (
     classify_link_result,
@@ -111,6 +111,8 @@ def check_url(browser, url: str) -> tuple[str, int | None, str]:
             },
             timeout=12,
         )
+        if looks_like_parked_domain(response.text):
+            return "broken", response.status_code, "Parked domain or suspended hosting detected in response body"
         shutdown_signal = detect_shutdown_notice(response.text)
         if shutdown_signal:
             return (
