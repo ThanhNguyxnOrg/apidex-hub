@@ -192,7 +192,7 @@ def write_report(
     if malformed_rows:
         lines.extend(["", "MALFORMED ADDED API ROWS", "-" * 80])
         lines.extend(f"- {row}" for row in malformed_rows)
-    if not broken and not duplicates and not malformed_rows:
+    if not broken and not duplicates and not malformed_rows and not shutdown_signals:
         lines.extend(["", "Validation result: no confirmed broken links, duplicate URLs, or malformed added rows."])
         if inconclusive:
             lines.append("Note: inconclusive URLs were not counted as working; review them before relying on their availability.")
