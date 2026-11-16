@@ -16,6 +16,10 @@ class UnsafeURL(ValueError):
     """Raised when a URL is malformed or points at a non-public destination."""
 
 
+class DNSResolutionError(UnsafeURL):
+    """Raised when a public hostname does not exist in DNS."""
+
+
 _BLOCKED_SUFFIXES = (
     ".localhost",
     ".local",
@@ -30,7 +34,16 @@ _BLOCKED_SUFFIXES = (
 
 def resolve_public_addresses(host: str, port: int) -> tuple[str, ...]:
     """Resolve a hostname once and return every address supplied by the resolver."""
-    records = socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)
+    try:
+        records = socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)
+    except socket.gaierror as error:
+        permanent_codes = {
+            getattr(socket, "EAI_NONAME", None),
+            getattr(socket, "EAI_NODATA", None),
+        }
+        if error.errno in permanent_codes:
+            raise DNSResolutionError(f"Hostname does not exist in DNS: {host}") from error
+        raise UnsafeURL(f"DNS lookup was inconclusive for {host}: {error}") from error
     addresses = tuple(sorted({record[4][0].split("%", 1)[0] for record in records}))
     if not addresses:
         raise UnsafeURL(f"Hostname did not resolve: {host}")
@@ -80,6 +93,8 @@ def validate_public_http_url(url: str) -> str:
     target_port = port or (443 if scheme == "https" else 80)
     try:
         addresses = resolve_public_addresses(ascii_host, target_port)
+    except DNSResolutionError:
+        raise
     except (OSError, socket.gaierror, UnsafeURL) as error:
         raise UnsafeURL(f"Could not safely resolve {ascii_host}: {error}") from error
 
