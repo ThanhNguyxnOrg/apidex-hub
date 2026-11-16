@@ -188,7 +188,6 @@ print(response.json())`,
           </div>
 
           {snippets ? (
-          {/* Code Snippets Section */}
           <div className="rounded-xl border border-border bg-muted/30 overflow-hidden">
             <div className="flex items-center justify-between border-b border-border bg-muted/60 px-4 py-2">
               <div className="flex items-center gap-1">
