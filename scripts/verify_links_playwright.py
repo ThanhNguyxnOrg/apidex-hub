@@ -68,7 +68,7 @@ def verify_with_playwright(browser, url):
 
     except Exception as error:
         clean_error = str(error).replace('\\n', ' ; ')
-        return False, None, f"Playwright Exception: {clean_error}"
+        return False, None, f"Playwright Exception: {type(error).__name__}: {clean_error}"
     finally:
         if page:
             try:
