@@ -72,6 +72,7 @@ jobs:
         env:
           APIDEX_DIFF_BASE: ${{ github.event.pull_request.base.sha }}
           APIDEX_DIFF_HEAD: ${{ github.event.pull_request.head.sha }}
+          APIDEX_VALIDATE_REMOVALS: ${{ startsWith(github.head_ref, 'agent-remediation/dead-api-incident-') }}
         run: |
           cd scripts
           python check_pr_links.py
@@ -222,6 +223,61 @@ jobs:
               });
             } catch (error) {
               console.log('Error commenting on PR:', error);
+            }
+
+      - name: Cancel pending cleanup PRs when no deletions remain confirmed
+        if: github.event_name != 'pull_request' && steps.check.outcome == 'success' && steps.check.outputs.has_broken == 'false'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const { owner, repo } = context.repo;
+            const repository = `${owner}/${repo}`;
+            const openPrs = await github.paginate(github.rest.pulls.list, {
+              owner, repo, state: 'open', per_page: 100
+            });
+            const pending = openPrs.filter(pr =>
+              pr.base?.ref === 'main' &&
+              pr.head?.ref?.startsWith('agent-remediation/dead-api-incident-') &&
+              pr.head?.repo?.full_name === repository &&
+              String(pr.user?.login || '').toLowerCase() === 'thanhnguyxnagent[bot]'
+            );
+
+            for (const pr of pending) {
+              try {
+                await github.graphql(
+                  'mutation($pullRequestId: ID!) { disablePullRequestAutoMerge(input: { pullRequestId: $pullRequestId }) { pullRequest { id } } }',
+                  { pullRequestId: pr.node_id }
+                );
+              } catch (error) {
+                console.log(`No active native Auto-merge to cancel for #${pr.number}: ${error.message}`);
+              }
+              try {
+                await github.rest.issues.removeLabel({
+                  owner, repo, issue_number: pr.number, name: 'automerge'
+                });
+              } catch (error) {
+                if (error.status !== 404) throw error;
+              }
+              await github.rest.pulls.update({
+                owner, repo, pull_number: pr.number, state: 'closed'
+              });
+
+              const issueMatch = String(pr.body || '').match(/Closes\\s+#(\\d+)/i);
+              if (issueMatch) {
+                const issueNumber = Number(issueMatch[1]);
+                const { data: issue } = await github.rest.issues.get({ owner, repo, issue_number: issueNumber });
+                if (issue.state === 'open') {
+                  await github.rest.issues.createComment({
+                    owner, repo, issue_number: issueNumber,
+                    body: `The latest successful Link Checker scan found no catalog URLs that remain confirmed dead. The pending deletion PR #${pr.number} has been closed and its \`automerge\` opt-in removed, so a recovered or inconclusive URL is retained.`
+                  });
+                  await github.rest.issues.update({
+                    owner, repo, issue_number: issueNumber, state: 'closed', state_reason: 'completed'
+                  });
+                }
+              }
+              console.log(`Closed stale remediation PR #${pr.number}; no deletion candidates remain confirmed dead.`);
             }
 
       # 1. Reuse one open issue for each active confirmed-dead-link incident
