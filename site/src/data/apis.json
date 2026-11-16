@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-16T13:24:20.251600+00:00",
+    "generated_at": "2026-11-16T16:12:02.652416+00:00",
     "source": "README.md",
-    "total_apis": 4241,
+    "total_apis": 4240,
     "total_categories": 70,
     "no_auth_count": 1571,
-    "api_key_count": 2407,
+    "api_key_count": 2406,
     "oauth_count": 263,
-    "https_count": 4150,
+    "https_count": 4149,
     "https_percentage": 98,
     "api_endpoint_count": 1
   },
@@ -25740,7 +25740,7 @@
       "id": "news",
       "emoji": "📰",
       "name": "News",
-      "api_count": 47,
+      "api_count": 46,
       "apis": [
         {
           "name": "Amazon Comprehend",
@@ -26002,15 +26002,6 @@
           "endpoint": "",
           "documentation_url": "https://newsdata.io/",
           "link": "https://newsdata.io/"
-        },
-        {
-          "name": "NewsDataHub",
-          "description": "NewsDataHub provides a production-ready REST API delivering near-real-time global news data at scale.",
-          "auth": "apiKey",
-          "https": true,
-          "endpoint": "",
-          "documentation_url": "https://newsdatahub.com",
-          "link": "https://newsdatahub.com"
         },
         {
           "name": "Newsflash",
