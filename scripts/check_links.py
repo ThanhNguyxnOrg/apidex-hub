@@ -116,7 +116,7 @@ def check_link(url, timeout=8, max_retries=2):
                     'url': url,
                     'status': code,
                     'state': 'protected',
-                    'note': 'Bot protection (Cloudflare/similar) - API likely works'
+                    'note': 'Bot/WAF protection response; API endpoint availability is not confirmed'
                 }
 
             # Interpret status codes
@@ -131,7 +131,7 @@ def check_link(url, timeout=8, max_retries=2):
             elif code == 403:
                 return {'url': url, 'status': code, 'state': 'protected', 'note': 'Forbidden (HTTP 403) - restricted access'}
             elif code == 418:
-                return {'url': url, 'status': code, 'state': 'protected', 'note': "Bot protection (418 I'm a teapot) - API likely works"}
+                return {'url': url, 'status': code, 'state': 'protected', 'note': "Access protection response (HTTP 418); API endpoint availability is not confirmed"}
 
             elif code in [400, 405, 406]:
                 return {'url': url, 'status': code, 'state': 'working', 'note': 'API up (Invalid request/Method)'}
@@ -312,19 +312,16 @@ def main():
     print("SUMMARY")
     print("=" * 80)
 
-    total_ok = len(results['working']) + len(results['protected'])
+    total_working = len(results['working'])
 
-    print(f"[OK] Working: {len(results['working'])}")
-    print(f"[PROTECTED] Bot protection (403/429): {len(results['protected'])}")
+    print(f"[OK] Working: {total_working}")
+    print(f"[PROTECTED] Access restricted / WAF (availability unconfirmed): {len(results['protected'])}")
     print(f"[WARN] Warnings: {len(results['warning'])}")
     print(f"[ERR] Errors: {len(results['error'])}")
     print(f"[DEAD] Broken: {len(results['broken'])}")
     print(f"[?] Unknown: {len(results['unknown'])}")
-    
-    if len(apis) > 0:
-        print(f"\nHealthy: {total_ok}/{len(apis)} ({total_ok/len(apis)*100:.1f}%)")
-    else:
-        print(f"\nHealthy: {total_ok}/0 (0.0%)")
+    print(f"\nConfirmed successful responses: {total_working}/{len(apis)}")
+    print(f"Protected/inconclusive responses: {len(results['protected'])}")
 
     # Show only truly broken APIs
     if results['broken']:
@@ -427,7 +424,7 @@ def main():
 
     print(f"\nReport saved to: link_check_report.txt")
     print(f"Verify Queue list: verify_queue.json ({len(verify_queue)} endpoint checks for Stage 2)")
-    print("\nNote: 403/429 (Protected) = Bot protection - APIs still work!")
+    print("\nNote: 401/403/418 access restrictions and 429 rate limits are not proof of availability or death.")
 
     return 0
 

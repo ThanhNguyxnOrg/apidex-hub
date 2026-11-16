@@ -225,9 +225,9 @@ def main():
         
     total_apis_count = sum(len(cat) for cat in results.values())
     
-    # We only verify candidate broken, error, or unknown APIs to avoid false positives.
-    # Note: 'protected' (403/429 bot protection) is ALREADY considered healthy by repository design.
-    # 'warning' (transient timeouts/SSL) does not fail CI.
+    # Stage 2 verifies broken, error, and unknown responses to avoid false positives.
+    # Protected (401/403/418) and rate-limited (429) responses remain inconclusive;
+    # they are not treated as confirmed working or dead. Transient warnings also remain non-fatal.
     to_verify = []
     for state in ['broken', 'error', 'unknown']:
         to_verify.extend(results[state])

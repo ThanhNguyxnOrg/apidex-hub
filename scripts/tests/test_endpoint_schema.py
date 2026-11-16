@@ -37,6 +37,21 @@ class ApiEndpointSchemaTests(unittest.TestCase):
         self.assertEqual(parsed["documentation_url"], "https://docs.example.com/api")
         self.assertEqual(parsed["link"], "https://docs.example.com/api")
 
+    def test_protected_responses_are_not_reported_as_confirmed_healthy(self):
+        root = Path(__file__).resolve().parents[2]
+        checker = (root / "scripts" / "check_links.py").read_text(encoding="utf-8")
+        verifier = (root / "scripts" / "verify_links_playwright.py").read_text(encoding="utf-8")
+        workflow = (root / ".github" / "workflows" / "link-checker.yml").read_text(encoding="utf-8")
+
+        self.assertIn("Confirmed successful responses:", checker)
+        self.assertIn("Protected/inconclusive responses:", checker)
+        self.assertNotIn("APIs still work", checker)
+        self.assertIn("availability is not confirmed", checker)
+        self.assertIn("not treated as confirmed working or dead", verifier)
+        self.assertIn("availability not confirmed", workflow)
+        self.assertIn("these do not count as confirmed healthy", workflow)
+        self.assertNotIn("HTTP 403/429 — bot protection (API still works)", workflow)
+
     def test_health_checker_never_probes_legacy_or_documentation_only_rows(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

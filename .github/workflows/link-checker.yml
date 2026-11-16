@@ -103,7 +103,6 @@ jobs:
           WARN_COUNT=$(grep -oP "Warnings: \K[0-9]+" link_check_report.txt || echo "0")
           ERR_COUNT=$(grep -oP "Errors: \K[0-9]+" link_check_report.txt || echo "0")
           UNKNOWN_COUNT=$(grep -oP "Unknown: \K[0-9]+" link_check_report.txt || echo "0")
-          TOTAL=$(($(grep -oP "Working: \K[0-9]+" link_check_report.txt || echo 0) + $(grep -oP "Protected: \K[0-9]+" link_check_report.txt || echo 0)))
 
           echo "broken_count=$BROKEN_COUNT" >> $GITHUB_OUTPUT
           echo "ok_count=$OK_COUNT" >> $GITHUB_OUTPUT
@@ -111,7 +110,6 @@ jobs:
           echo "warn_count=$WARN_COUNT" >> $GITHUB_OUTPUT
           echo "err_count=$ERR_COUNT" >> $GITHUB_OUTPUT
           echo "unknown_count=$UNKNOWN_COUNT" >> $GITHUB_OUTPUT
-          echo "total_healthy=$TOTAL" >> $GITHUB_OUTPUT
 
           if [ "$BROKEN_COUNT" -gt 0 ]; then
             echo "has_broken=true" >> $GITHUB_OUTPUT
@@ -439,7 +437,6 @@ jobs:
           WARN_COUNT: ${{ steps.check.outputs.warn_count }}
           ERR_COUNT: ${{ steps.check.outputs.err_count }}
           UNKNOWN_COUNT: ${{ steps.check.outputs.unknown_count }}
-          TOTAL_HEALTHY: ${{ steps.check.outputs.total_healthy }}
           BROKEN_LIST: ${{ steps.check.outputs.broken_list }}
           ERROR_LIST: ${{ steps.check.outputs.error_list }}
           WARNING_LIST: ${{ steps.check.outputs.warning_list }}
@@ -459,7 +456,6 @@ jobs:
             const warnCount = Number.parseInt(process.env.WARN_COUNT || '0', 10) || 0;
             const errCount = Number.parseInt(process.env.ERR_COUNT || '0', 10) || 0;
             const unknownCount = Number.parseInt(process.env.UNKNOWN_COUNT || '0', 10) || 0;
-            const totalHealthy = Number.parseInt(process.env.TOTAL_HEALTHY || '0', 10) || 0;
             const currentBrokenList = String(process.env.BROKEN_LIST || '').trim();
             const currentErrorList = String(process.env.ERROR_LIST || '').trim();
             const currentWarningList = String(process.env.WARNING_LIST || '').trim();
@@ -467,11 +463,14 @@ jobs:
             const currentProtectedList = String(process.env.PROTECTED_LIST || '').trim();
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
 
-            let dynamicTitle = `🟢 Link Health Status: all recorded API endpoints healthy (${today})`;
+            const reviewCount = protectedCount + warnCount + errCount + unknownCount;
+            let dynamicTitle = `🟢 Link Health Status: all recorded API endpoints responded successfully (${today})`;
             if (hasBroken && !alreadyResolved && remediationPr) {
               dynamicTitle = `🟠 Link Health Status: API endpoint cleanup PR awaiting checks (${today})`;
             } else if (hasBroken && !alreadyResolved) {
               dynamicTitle = `🔴 Link Health Status: ${brokenCount} confirmed dead API endpoint${brokenCount > 1 ? 's' : ''} detected (${today})`;
+            } else if (reviewCount > 0) {
+              dynamicTitle = `🟡 Link Health Status: no confirmed dead endpoints; ${reviewCount} need review (${today})`;
             }
 
             let brokenSection = '';
@@ -492,7 +491,7 @@ jobs:
                 brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Check the remediation workflow and incident issue.\n`;
               }
             } else {
-              brokenSection = `### ✅ No Dead API Endpoints\n\nAll explicitly recorded API endpoints passed or returned a protected/inconclusive response. Documentation URLs are tracked separately and are not part of this health scan.\n`;
+              brokenSection = `### ✅ No Confirmed Dead API Endpoints\n\nNo endpoint was confirmed dead in this scan. Successful responses: ${okCount}; protected/inconclusive responses: ${protectedCount}; other responses needing review: ${warnCount + errCount + unknownCount}. A protected response does not confirm availability. Documentation URLs are excluded from endpoint health checks.\n`;
             }
 
             let errorSection = '';
@@ -543,10 +542,14 @@ jobs:
               protectedSection = `\n<details>\n<summary>🛡️ Protected (${protectedCount}) — click to expand</summary>\n\n${protectedTable}\n</details>\n`;
             }
 
-            const statusIcon = hasBroken && !alreadyResolved ? (remediationPr ? '🟠' : '🔴') : '🟢';
+            const statusIcon = hasBroken && !alreadyResolved
+              ? (remediationPr ? '🟠' : '🔴')
+              : reviewCount > 0 ? '🟡' : '🟢';
             const statusText = hasBroken && !alreadyResolved
-              ? (remediationPr ? 'automatic cleanup PR awaiting checks' : `${brokenCount} confirmed dead link${brokenCount > 1 ? 's' : ''} detected`)
-              : 'All recorded API endpoints healthy';
+              ? (remediationPr ? 'automatic endpoint cleanup PR awaiting checks' : `${brokenCount} confirmed dead API endpoint${brokenCount > 1 ? 's' : ''} detected`)
+              : reviewCount > 0
+                ? 'no confirmed dead endpoints; some responses need review'
+                : 'all recorded API endpoints responded successfully';
 
             const lines = [
               `## ${statusIcon} Link Health Status: ${statusText}`,
@@ -562,13 +565,14 @@ jobs:
               '| Category | Count | Description |',
               '|---|---|---|',
               `| ✅ Working | ${okCount} | HTTP 200 — responding correctly |`,
-              `| 🛡️ Protected | ${protectedCount} | HTTP 403/429 — bot protection (API still works) |`,
+              `| 🛡️ Protected | ${protectedCount} | HTTP 401/403/418 — access restriction or WAF; availability not confirmed |`,
               `| ⚠️ Warning | ${warnCount} | Timeout/DNS/SSL issues (may be temporary) |`,
               `| ❌ Error | ${errCount} | Server errors (5xx) |`,
               `| ❓ Unknown | ${unknownCount} | Unrecognized status codes (needs review) |`,
               `| 💀 Broken | ${alreadyResolved ? 0 : brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
               '',
-              `**Endpoint health rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + (alreadyResolved ? 0 : brokenCount) + unknownCount} recorded API endpoints healthy`,
+              `**Confirmed successful responses**: ${okCount} / ${okCount + protectedCount + warnCount + errCount + (alreadyResolved ? 0 : brokenCount) + unknownCount} recorded endpoints`,
+              `**Protected / inconclusive**: ${protectedCount} endpoint(s); these do not count as confirmed healthy`,
               '',
               '---',
               '',
