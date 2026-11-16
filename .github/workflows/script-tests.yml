@@ -35,4 +35,5 @@ jobs:
         scripts/pr_validation.py
         scripts/remove_dead_links.py
         scripts/shutdown_detection.py
+        scripts/safe_urls.py
         scripts/verify_links_playwright.py
