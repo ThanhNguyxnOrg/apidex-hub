@@ -10,7 +10,7 @@ import remove_dead_links
 
 
 class RemoveDeadLinksSafetyTests(unittest.TestCase):
-    def test_file_removal_defaults_to_dry_run(self):
+    def test_legacy_documentation_url_is_never_a_removal_candidate(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             api_file = root / "example.md"
@@ -27,10 +27,10 @@ class RemoveDeadLinksSafetyTests(unittest.TestCase):
                 {"https://dead.example/docs"},
             )
 
-            self.assertEqual(len(removed), 1)
+            self.assertEqual(removed, [])
             self.assertEqual(api_file.read_text(encoding="utf-8"), original)
 
-    def _run_cli(self, root: Path, args: list[str]):
+    def _run_cli(self, root: Path, args: list[str], report_url: str = 'https://dead.example/docs'):
         scripts = root / "scripts"
         apis = root / "apis"
         scripts.mkdir(exist_ok=True)
@@ -42,7 +42,7 @@ class RemoveDeadLinksSafetyTests(unittest.TestCase):
         (scripts / "parse_readme.py").write_text("raise SystemExit(0)\n", encoding="utf-8")
         report = scripts / "broken_urls.txt"
         report.write_text(
-            "https://dead.example/docs | Example API - HTTP 404\n",
+            "${report_url} | Example API - HTTP 404\n",
             encoding="utf-8",
         )
         return subprocess.run(
@@ -80,16 +80,16 @@ class RemoveDeadLinksSafetyTests(unittest.TestCase):
             apis.mkdir()
             api_file = apis / "example.md"
             api_file.write_text(
-                "| API Name | Description | Auth | HTTPS | Link |\n"
-                "| --- | --- | --- | --- | --- |\n"
-                "| **Example API** | Example | No | ✅ | [Link](https://dead.example/docs) |\n",
+                "| API Name | Description | Auth | HTTPS | API Endpoint | Documentation |\n"
+                "| --- | --- | --- | --- | --- | --- |\n"
+                "| **Example API** | Example | OAuth | ✅ | [Endpoint](https://api.example/v1/items) | [Docs](https://docs.example/api) |\n",
                 encoding="utf-8",
             )
 
-            result = self._run_cli(root, ["--apply"])
+            result = self._run_cli(root, ["--apply"], "https://api.example/v1/items")
 
             self.assertEqual(result.returncode, 0, result.stderr)
-            self.assertNotIn("https://dead.example/docs", api_file.read_text(encoding="utf-8"))
+            self.assertNotIn("https://api.example/v1/items", api_file.read_text(encoding="utf-8"))
 
     def test_safety_brake_counts_rows_before_any_file_is_modified(self):
         with tempfile.TemporaryDirectory() as temporary:
@@ -98,14 +98,14 @@ class RemoveDeadLinksSafetyTests(unittest.TestCase):
             apis.mkdir()
             api_file = apis / "example.md"
             original = (
-                "| API Name | Description | Auth | HTTPS | Link |\n"
-                "| --- | --- | --- | --- | --- |\n"
-                "| **Example API A** | A | No | ✅ | [Link](https://dead.example/docs) |\n"
-                "| **Example API B** | B | No | ✅ | [Link](https://dead.example/docs) |\n"
+                "| API Name | Description | Auth | HTTPS | API Endpoint | Documentation |\n"
+                "| --- | --- | --- | --- | --- | --- |\n"
+                "| **Example API A** | A | OAuth | ✅ | [Endpoint](https://api.example/v1/items) | [Docs](https://docs.example/a) |\n"
+                "| **Example API B** | B | OAuth | ✅ | [Endpoint](https://api.example/v1/items) | [Docs](https://docs.example/b) |\n"
             )
             api_file.write_text(original, encoding="utf-8")
 
-            result = self._run_cli(root, ["--apply", "--max-delete", "1"])
+            result = self._run_cli(root, ["--apply", "--max-delete", "1"], "https://api.example/v1/items")
 
             self.assertEqual(result.returncode, 2)
             self.assertIn("SAFETY BRAKE", result.stderr)

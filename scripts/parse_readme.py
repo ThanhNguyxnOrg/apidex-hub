@@ -39,23 +39,27 @@ def parse_category_header(line: str):
 
 
 def parse_api_row(line: str):
-    """Extract API info from a markdown table row."""
-    # Split by unescaped | and clean up
+    """Parse a 5-column legacy row or canonical 6-column API/documentation row."""
     parts = [p.strip().replace(r'\|', '—') for p in re.split(r'(?<!\\)\|', line)]
-    # Remove empty first/last from leading/trailing |
-    parts = [p for p in parts if p]
+    # Remove only the delimiter cells. Preserve an empty API Endpoint cell.
+    if parts and parts[0] == "":
+        parts.pop(0)
+    if parts and parts[-1] == "":
+        parts.pop()
 
-    if len(parts) < 5:
+    if len(parts) not in (5, 6):
         return None
 
-    name_raw, description, auth_raw, https_raw, link_raw = parts[0], parts[1], parts[2], parts[3], parts[4]
+    name_raw, description, auth_raw, https_raw = parts[0], parts[1], parts[2], parts[3]
+    if len(parts) == 5:
+        endpoint_raw, documentation_raw = "", parts[4]
+    else:
+        endpoint_raw, documentation_raw = parts[4], parts[5]
 
-    # Extract name (remove bold **)
     name = re.sub(r'\*\*(.+?)\*\*', r'\1', name_raw).strip()
     if not name or name.startswith('---') or name.startswith(':---') or name == 'API Name' or name == 'Name':
         return None
 
-    # Extract auth type (case-insensitive check)
     auth_raw_lower = auth_raw.lower()
     if "oauth" in auth_raw_lower or "🔐" in auth_raw:
         auth = "OAuth"
@@ -64,20 +68,22 @@ def parse_api_row(line: str):
     else:
         auth = "No"
 
-    # Extract HTTPS (case-insensitive check)
     https_raw_lower = https_raw.lower()
     https = "✅" in https_raw or "yes" in https_raw_lower or "true" in https_raw_lower
 
-    # Extract link URL
-    link_match = re.search(r'\[.*?\]\((.*?)\)', link_raw)
-    link = link_match.group(1) if link_match else ""
+    endpoint_match = re.search(r'\[[^\]]+\]\((https?://[^)]+)\)', endpoint_raw, re.IGNORECASE)
+    docs_match = re.search(r'\[[^\]]+\]\((https?://[^)]+)\)', documentation_raw, re.IGNORECASE)
+    endpoint = endpoint_match.group(1).strip() if endpoint_match else ""
+    documentation_url = docs_match.group(1).strip() if docs_match else ""
 
     return {
         "name": name,
         "description": description,
         "auth": auth,
         "https": https,
-        "link": link,
+        "endpoint": endpoint,
+        "documentation_url": documentation_url,
+        "link": documentation_url,
     }
 
 
@@ -159,6 +165,7 @@ def parse_readme(readme_path: str):
             "oauth_count": oauth_count,
             "https_count": https_count,
             "https_percentage": https_pct,
+            "api_endpoint_count": sum(1 for cat in categories for api in cat["apis"] if api.get("endpoint")),
         },
         "categories": []
     }

@@ -185,57 +185,72 @@ def check_link(url, timeout=8, max_retries=2):
     return {'url': url, 'status': None, 'state': 'error', 'note': 'Max retries exceeded'}
 
 def parse_apis_from_dir(dir_path='../apis'):
-    """Parse all APIs from the apis/ directory"""
+    """Return only explicitly declared API endpoints; never probe documentation URLs."""
     script_dir = os.path.dirname(os.path.abspath(__file__))
     resolved_path = os.path.join(os.path.dirname(script_dir), 'apis')
     if not os.path.exists(dir_path):
         dir_path = resolved_path
-        
+
     apis = []
-    
-    if os.path.exists(dir_path) and os.path.isdir(dir_path):
-        files = sorted([f for f in os.listdir(dir_path) if f.endswith('.md')])
-        for file in files:
-            file_path = os.path.join(dir_path, file)
-            with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-                
-            # Extract category name and emoji
-            cat_match = re.search(r'^##\s+(?:<a\s+id="[^"]+"\s*>\s*</a>\s*)?(\S+)\s+(.+)$', content, re.MULTILINE)
-            category = cat_match.group(2).strip() if cat_match else file.replace('.md', '').capitalize()
-            
-            lines = content.split('\n')
-            for line in lines:
-                stripped = line.strip()
-                if stripped.startswith('|'):
-                    parts = [p.strip() for p in stripped.split('|')]
-                    if parts[0] == '': parts.pop(0)
-                    if parts and parts[-1] == '': parts.pop()
-                    
-                    if len(parts) >= 5:
-                        name_raw = parts[0]
-                        name = re.sub(r'\*\*(.+?)\*\*', r'\1', name_raw).strip()
-                        if not name or name.startswith('---') or name.startswith(':---') or name == 'API Name' or name == 'Name':
-                            continue
-                        
-                        link_raw = parts[4]
-                        link_match = re.search(r'\[Link\]\((https?://[^\)]+)\)', link_raw)
-                        if link_match:
-                            url = link_match.group(1).strip()
-                            apis.append({
-                                'name': name,
-                                'category': category,
-                                'url': url
-                            })
+    if not os.path.exists(dir_path) or not os.path.isdir(dir_path):
+        return apis
+
+    files = sorted([f for f in os.listdir(dir_path) if f.endswith('.md')])
+    for file in files:
+        file_path = os.path.join(dir_path, file)
+        with open(file_path, 'r', encoding='utf-8') as handle:
+            content = handle.read()
+
+        category_match = re.search(
+            r'^##\s+(?:<a\s+id="[^"]+"\s*>\s*</a>\s*)?(\S+)\s+(.+)$',
+            content,
+            re.MULTILINE,
+        )
+        category = category_match.group(2).strip() if category_match else file.replace('.md', '').capitalize()
+
+        for line in content.splitlines():
+            stripped = line.strip()
+            if not (stripped.startswith('|') and stripped.endswith('|')):
+                continue
+            cells = [part.strip() for part in stripped[1:-1].split('|')]
+            if len(cells) != 6 or not cells[0]:
+                continue
+            if cells[0].strip('* ').lower() in {'api name', 'name'}:
+                continue
+            if all(re.fullmatch(r':?-{3,}:?', cell.replace(' ', '')) for cell in cells):
+                continue
+
+            endpoint_match = re.search(
+                r'\[[^\]]+\]\((https?://[^)]+)\)',
+                cells[4],
+                re.IGNORECASE,
+            )
+            if not endpoint_match:
+                continue
+
+            name = re.sub(r'\*\*(.+?)\*\*', r'\1', cells[0]).strip()
+            docs_match = re.search(
+                r'\[[^\]]+\]\((https?://[^)]+)\)',
+                cells[5],
+                re.IGNORECASE,
+            )
+            apis.append({
+                'name': name,
+                'category': category,
+                'url': endpoint_match.group(1).strip(),
+                'documentation_url': docs_match.group(1).strip() if docs_match else '',
+            })
     return apis
 
 
 def main():
-    print("Link Checker (based on public-apis approach)")
+    print("API Endpoint Health Checker")
     print("=" * 80)
 
     # Extract all APIs
     apis = parse_apis_from_dir()
+    if not apis:
+        raise SystemExit('ERROR: No explicit API Endpoint URLs are recorded. Refusing to publish an all-zero health report or close incidents.')
     
     # Extract unique URLs to optimize checking
     unique_urls = sorted(list(set(api['url'] for api in apis)))
@@ -327,7 +342,7 @@ def main():
     now = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
 
     with open(report_path, 'w', encoding='utf-8') as f:
-        f.write("LINK CHECK REPORT (API-mapped)\n")
+        f.write("API ENDPOINT HEALTH REPORT\n")
         f.write("=" * 80 + "\n\n")
         f.write(f"Date: {now}\n")
         f.write(f"Total: {len(apis)}\n")

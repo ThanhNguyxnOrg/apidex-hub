@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Manually remove reviewed dead API links from the Markdown catalog.
+"""Manually remove reviewed dead API endpoint rows from the Markdown catalog.
 
 This tool is dry-run by default. A maintainer must pass --apply after confirming
 that a failed documentation URL is not merely moved, temporarily unavailable,
@@ -55,14 +55,15 @@ def load_dead_urls(file_path: Path):
 
 
 def extract_url_from_row(line: str):
-    """Extract only the official documentation URL in the fifth table column."""
+    """Extract only the explicit API Endpoint URL from canonical six-column rows."""
     stripped = line.strip()
     if not (stripped.startswith("|") and stripped.endswith("|")):
         return None
     cells = [cell.strip() for cell in stripped[1:-1].split("|")]
-    if len(cells) != 5:
+    # Legacy five-column rows contain documentation URLs only and are never deletion candidates.
+    if len(cells) != 6:
         return None
-    match = re.search(r"\[Link\]\((https?://[^)]+)\)", cells[4], re.IGNORECASE)
+    match = re.search(r"\[[^\]]+\]\((https?://[^)]+)\)", cells[4], re.IGNORECASE)
     return match.group(1).strip() if match else None
 
 
