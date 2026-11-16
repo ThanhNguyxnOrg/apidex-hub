@@ -188,3 +188,20 @@ class AutomatedRemovalValidationTests(unittest.TestCase):
         )
         self.assertEqual(added, ["https://docs.example.com/api/"])
         self.assertEqual(removed, [])
+
+class LinkCheckerWorkflowSafetyTests(unittest.TestCase):
+    def setUp(self):
+        self.workflow = (
+            Path(__file__).resolve().parents[2] / ".github" / "workflows" / "link-checker.yml"
+        ).read_text(encoding="utf-8")
+
+    def test_untrusted_report_values_are_passed_through_environment(self):
+        self.assertIn("BROKEN_LIST: ${{ steps.check.outputs.broken_list }}", self.workflow)
+        self.assertIn("const list = String(process.env.BROKEN_LIST || '').trim();", self.workflow)
+        self.assertIn("const currentBrokenList = String(process.env.BROKEN_LIST || '').trim();", self.workflow)
+        self.assertNotIn("const list = `${{ steps.check.outputs.broken_list }}`.trim();", self.workflow)
+        self.assertNotIn("const currentBrokenList = `${{ steps.check.outputs.broken_list }}`.trim();", self.workflow)
+
+    def test_incident_reference_and_safety_cap_survive_pr_body_rendering(self):
+        self.assertIn(r"match(/Closes\s+#(\d+)/i)", self.workflow)
+        self.assertIn(r"\`--max-delete 500\`", self.workflow)
