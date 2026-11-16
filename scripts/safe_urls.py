@@ -230,6 +230,7 @@ def safe_get(
     timeout: int = 12,
     max_redirects: int = 5,
     requester=None,
+    method: str = "GET",
 ):
     """GET a public URL, pin each connection to a validated IP, and check redirects."""
     if max_redirects < 0:
