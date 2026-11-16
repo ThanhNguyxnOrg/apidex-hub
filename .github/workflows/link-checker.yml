@@ -286,6 +286,10 @@ jobs:
           ISSUE_NUMBER: ${{ steps.create-incident.outputs.issue_number }}
         run: |
           set -euo pipefail
+          if [ -z "${ISSUE_NUMBER:-}" ]; then
+            echo "::error::The incident issue could not be created or found; refusing to create a detached remediation branch."
+            exit 1
+          fi
           BRANCH="agent-remediation/dead-api-incident-${ISSUE_NUMBER}"
           git config --global user.name "ThanhNguyxnAgent[bot]"
           git config --global user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
@@ -559,9 +563,6 @@ jobs:
                 const reason = parts.slice(1).join(' | ') || '404';
                 brokenTable += `| ${i + 1} | ${url} | ${reason} |\n`;
               });
-              if (incidentIssueUrl) {
-                brokenSection += `**Incident issue:** [#${incidentIssueNum}](${incidentIssueUrl})\n\n`;
-              }
               if (alreadyResolved) {
                 brokenSection += `### ✅ Incident already resolved\n\nThe reported API rows were already absent from main.\n\n<details>\n<summary>🧹 Previously detected ${brokenCount} dead link(s)</summary>\n\n${brokenTable}\n</details>\n`;
               } else if (remediationPr) {
