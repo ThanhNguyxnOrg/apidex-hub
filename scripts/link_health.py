@@ -2,6 +2,20 @@
 from __future__ import annotations
 
 
+def looks_like_waf_challenge(content: str) -> bool:
+    """Detect common bot-challenge pages without attempting to bypass them."""
+    lowered = (content or "").lower()
+    return any(marker in lowered for marker in (
+        "just a moment",
+        "attention required",
+        "checking your browser",
+        "verify you are human",
+        "challenge-platform",
+        "cf-chl-",
+        "captcha challenge",
+    ))
+
+
 def classify_http_status(status: int | None, *, waf_detected: bool = False) -> tuple[str, str]:
     """Classify an HTTP response without treating access restrictions as health."""
     if waf_detected:
@@ -39,6 +53,8 @@ def classify_playwright_result(status: int | None, note: str = "") -> str:
         return "protected"
     if status in {400, 405, 406}:
         return "unknown"
+    if any(term in lowered for term in ("cloudflare", "waf", "challenge", "captcha")):
+        return "protected"
     if status == 503 and any(term in lowered for term in ("cloudflare", "waf", "challenge")):
         return "protected"
     if status is not None and 200 <= status < 400:
