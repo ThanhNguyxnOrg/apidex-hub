@@ -31,7 +31,6 @@
 | **NewsAPI.ai** | AI-powered news API. | 🔑 ApiKey | ✅ | [Link](https://newsapi.ai/) |
 | **NewsData** | News data API for live-breaking news and headlines from reputed news sources. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/docs) |
 | **NewsData.io** | News search and tracking. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/) |
-| **NewsDataHub** | NewsDataHub provides a production-ready REST API delivering near-real-time global news data at scale. | 🔑 ApiKey | ✅ | [Link](https://newsdatahub.com) |
 | **Newsflash** | Deduplicated news events from 260+ sources with corroboration/confidence scores for AI agents | 🔑 ApiKey | ✅ | [Link](https://newsflash.sh/docs) |
 | **NewsMesh** | Premium news data from thousands of sources | 🔑 ApiKey | ✅ | [Link](https://newsmesh.co/docs) |
 | **Noozra** | Free news headlines from 200+ curated RSS sources | No | ✅ | [Link](https://noozra.com/api) |
