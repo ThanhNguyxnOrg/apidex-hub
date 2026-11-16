@@ -44,7 +44,8 @@ def classify_playwright_result(status: int | None, note: str = "") -> str:
     lowered = (note or "").lower()
     if any(term in lowered for term in (
         "parked domain", "suspended hosting", "err_name_not_resolved",
-        "dns_probe_finished_nxdomain", "nxdomain",
+        "dns_probe_finished_nxdomain", "nxdomain", "dnsresolutionerror",
+        "name or service not known", "nodename nor servname",
     )):
         return "broken"
     if any(term in lowered for term in ("cloudflare", "waf", "challenge", "captcha")):
