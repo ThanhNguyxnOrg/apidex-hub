@@ -17,7 +17,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import json
 
-from link_health import classify_http_status
+from link_health import classify_http_status, looks_like_waf_challenge
 
 
 def extract_links_from_readme(file_path='../README.md'):
@@ -50,41 +50,21 @@ def fake_user_agent():
 
 
 def has_cloudflare_protection(resp):
-    """
-    Detect Cloudflare or similar bot protection
-    """
+    """Detect challenge pages and common WAF signals without bypassing them."""
     code = resp.status_code
     server = resp.headers.get('Server', '').lower()
+    body = (resp.text or '').lower()
 
-    cloudflare_flags = [
-        'cloudflare',
-        'security check',
-        'please wait...',
-        'checking your browser',
-        'ddos protection',
-        'ray id:',
-        '_cf_chl',
-        'cf-spinner',
-        'just a moment'
-    ]
-
-    # Only check if status code is typical for WAF (403, 429, 503)
-    is_waf_code = code in [403, 429, 503]
-    if not is_waf_code:
-        return False
-
-    # Check Server header
-    if 'cloudflare' in server:
+    if looks_like_waf_challenge(body):
         return True
 
-    # Check Cloudflare specific headers
-    if 'cf-ray' in resp.headers or 'cf-cache-status' in resp.headers:
-        return True
-
-    # Check HTML content
-    html = resp.text.lower()
-    if any(flag in html for flag in cloudflare_flags):
-        return True
+    if code in [403, 429, 503]:
+        if 'cloudflare' in server:
+            return True
+        if 'cf-ray' in resp.headers or 'cf-cache-status' in resp.headers:
+            return True
+        if any(flag in body for flag in ('security check', 'ddos protection', 'ray id:', 'cf-spinner')):
+            return True
 
     return False
 
@@ -112,7 +92,7 @@ def check_link(url, timeout=8, max_retries=2):
             response = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
             code = response.status_code
 
-            waf_detected = code >= 400 and has_cloudflare_protection(response)
+            waf_detected = has_cloudflare_protection(response)
             state, note = classify_http_status(code, waf_detected=waf_detected)
             return {
                 'url': url,
