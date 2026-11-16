@@ -155,6 +155,14 @@ class ApiDiffParsingTests(unittest.TestCase):
         self.assertEqual(classify_link_result(410), "broken")
         self.assertEqual(classify_link_result(None, "net::ERR_NAME_NOT_RESOLVED"), "broken")
 
+    def test_provider_shutdown_notice_is_not_endpoint_death(self):
+        self.assertEqual(
+            classify_link_result(200, "Explicit provider shutdown notice (manual review only): no longer accepting new requests"),
+            "shutdown_signal",
+        )
+        self.assertEqual(classify_link_result(200), "working")
+        self.assertEqual(classify_link_result(404), "broken")
+
     def test_http_200_and_404_waf_challenges_are_inconclusive(self):
         self.assertEqual(
             classify_link_result(200, "Just a moment... verify you are human"),
