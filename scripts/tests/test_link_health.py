@@ -47,6 +47,12 @@ class ApiHealthClassificationTests(unittest.TestCase):
         self.assertEqual(classify_playwright_result(503, "Cloudflare origin error"), "protected")
         self.assertEqual(classify_playwright_result(502, "Bad gateway"), "error")
 
+    def test_http_200_waf_challenge_is_not_counted_as_working(self):
+        self.assertEqual(
+            classify_playwright_result(200, "Playwright: WAF challenge detected; endpoint availability is not confirmed"),
+            "protected",
+        )
+
     def test_stage_two_confirms_only_explicit_dead_indicators(self):
         self.assertEqual(classify_playwright_result(404, "HTTP 404"), "broken")
         self.assertEqual(classify_playwright_result(410, "HTTP 410"), "broken")
