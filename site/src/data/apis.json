@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-16T04:28:56.163178+00:00",
+    "generated_at": "2026-11-16T11:58:17.193601+00:00",
     "source": "README.md",
-    "total_apis": 4240,
+    "total_apis": 4239,
     "total_categories": 70,
     "no_auth_count": 1570,
     "api_key_count": 2407,
-    "oauth_count": 263,
-    "https_count": 4149,
+    "oauth_count": 262,
+    "https_count": 4148,
     "https_percentage": 98
   },
   "categories": [
@@ -11975,7 +11975,7 @@
       "id": "finance",
       "emoji": "💰",
       "name": "Finance",
-      "api_count": 146,
+      "api_count": 145,
       "apis": [
         {
           "name": "Account and Transaction API",
@@ -12060,13 +12060,6 @@
           "auth": "apiKey",
           "https": true,
           "link": "https://arkleon.com"
-        },
-        {
-          "name": "Banco do Brasil",
-          "description": "All Banco do Brasil financial transaction APIs",
-          "auth": "OAuth",
-          "https": true,
-          "link": "https://developers.bb.com.br/home"
         },
         {
           "name": "Bank Data API",

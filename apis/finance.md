@@ -14,7 +14,6 @@
 | **AlphaAI** | Financial news scored 1-10 for relevance and tagged with stock tickers, plus SEC Form 4 insider and 8-K event data | 🔑 ApiKey | ✅ | [Link](https://alphai.io/developers) |
 | **AlphaSMO** | SEC 13F institutional holdings, Form 4 insider trading, and smart money convergence signals | No | ✅ | [Link](https://alphasmo.com/developer/docs) |
 | **Arkleon** | Point-in-time SEC EDGAR fundamentals over /v1 | 🔑 ApiKey | ✅ | [Link](https://arkleon.com) |
-| **Banco do Brasil** | All Banco do Brasil financial transaction APIs | 🔒 OAuth | ✅ | [Link](https://developers.bb.com.br/home) |
 | **Bank Data API** | Instant IBAN and SWIFT number validation across the globe. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/bank_data-api) |
 | **Banking** | Codat's Banking API allows you to access standardised data from over bank accounts via third party providers. Standar | 🔑 ApiKey | ✅ | [Link](https://codat.io) |
 | **Banking Access Index** | Which US business banking providers accept founders by country of residence, with sources | No | ✅ | [Link](https://www.globalsolo.global/data/banking-access-index) |
