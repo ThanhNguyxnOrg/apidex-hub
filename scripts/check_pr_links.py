@@ -15,6 +15,7 @@ from playwright.sync_api import sync_playwright
 
 from shutdown_detection import detect_shutdown_notice
 from link_health import looks_like_waf_challenge
+from safe_urls import UnsafeURL, safe_get, validate_public_http_url
 from pr_validation import (
     classify_link_result,
     find_duplicate_urls,
@@ -39,11 +40,27 @@ def verify_with_playwright(browser, url: str) -> tuple[int | None, str]:
     page = None
     last_response = [None]
     try:
+        validate_public_http_url(url)
         context = browser.new_context(
             viewport={"width": 1280, "height": 720},
             user_agent=USER_AGENT,
         )
         page = context.new_page()
+
+        def guard_public_requests(route):
+            target = route.request.url
+            scheme = target.split(":", 1)[0].lower()
+            if scheme in {"data", "blob", "about"}:
+                route.continue_()
+                return
+            try:
+                validate_public_http_url(target)
+            except UnsafeURL:
+                route.abort()
+                return
+            route.continue_()
+
+        page.route("**/*", guard_public_requests)
         page.on(
             "response",
             lambda response: last_response.__setitem__(0, response)
@@ -86,14 +103,13 @@ def verify_with_playwright(browser, url: str) -> tuple[int | None, str]:
 def check_url(browser, url: str) -> tuple[str, int | None, str]:
     """Return working, broken, or inconclusive; only corroborated death fails CI."""
     try:
-        response = requests.get(
+        response = safe_get(
             url,
             headers={
                 "User-Agent": "APIDexHub-LinkChecker/2.0 (+https://github.com/ThanhNguyxnOrg/apidex-hub)",
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             },
             timeout=12,
-            allow_redirects=True,
         )
         shutdown_signal = detect_shutdown_notice(response.text)
         if shutdown_signal:
@@ -111,6 +127,8 @@ def check_url(browser, url: str) -> tuple[str, int | None, str]:
         if state == "inconclusive":
             return state, response.status_code, "Access restricted, rate limited, or server failure; requires review"
         stage_one_note = f"Stage 1 returned HTTP {response.status_code}"
+    except UnsafeURL as error:
+        return "inconclusive", None, f"Unsafe URL or redirect blocked: {error}"
     except requests.RequestException as error:
         stage_one_note = f"Stage 1 request failed: {type(error).__name__}"
 
