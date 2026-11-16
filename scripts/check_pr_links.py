@@ -61,6 +61,9 @@ def verify_with_playwright(browser, url: str) -> tuple[int | None, str]:
         )
         if any(term in title or term in content for term in parked_indicators):
             return 404, "Playwright: parked domain or suspended hosting detected"
+        shutdown_signal = detect_shutdown_notice(title + " " + content)
+        if shutdown_signal:
+            return status, "Explicit provider shutdown notice (manual review only): " + shutdown_signal["matched_text"]
         if looks_like_waf_challenge(title + " " + content):
             return status if status in {401, 403, 418, 429, 503} else 403, "Playwright: WAF challenge detected; endpoint availability is not confirmed"
         return status, f"Playwright: final document HTTP {status if status is not None else 'unknown'}"
@@ -95,9 +98,9 @@ def check_url(browser, url: str) -> tuple[str, int | None, str]:
         shutdown_signal = detect_shutdown_notice(response.text)
         if shutdown_signal:
             return (
-                "broken",
+                "shutdown_signal",
                 response.status_code,
-                "Explicit provider shutdown notice in documentation: "
+                "Explicit provider shutdown notice (manual review only): "
                 f"{shutdown_signal['matched_text']}",
             )
         if looks_like_waf_challenge(response.text):
@@ -128,6 +131,7 @@ def write_report(
     malformed_rows: list[str],
     confirmed_dead_removals: list[tuple[str, int | None, str]] | None = None,
     unconfirmed_removals: list[tuple[str, int | None, str]] | None = None,
+    shutdown_signals: list[tuple[str, int | None, str]] | None = None,
 ) -> str:
     lines = [
         "PR API LINK CHECK REPORT",
@@ -137,7 +141,8 @@ def write_report(
         f"New catalog URLs checked: {len(added_urls)}",
         f"Removed API endpoint URLs: {len(removed_urls)}",
         f"Working: {len(working)}",
-        f"Broken (404/410, DNS NXDOMAIN, or explicit provider shutdown notice): {len(broken)}",
+        f"Broken (404/410 or DNS NXDOMAIN): {len(broken)}",
+        f"Provider shutdown signals (manual review): {len(shutdown_signals or [])}",
         f"Inconclusive (access restriction, timeout, or server failure): {len(inconclusive)}",
         f"Duplicate URLs: {len(duplicates)}",
         f"Malformed API rows: {len(malformed_rows)}",
@@ -160,6 +165,9 @@ def write_report(
     if unconfirmed_removals:
         lines.extend(["", "REMOVALS NO LONGER CONFIRMED DEAD — BLOCKED", "-" * 80])
         lines.extend(f"- {url} | HTTP {status if status is not None else 'N/A'} | {note}" for url, status, note in unconfirmed_removals)
+    if shutdown_signals:
+        lines.extend(["", "PROVIDER SHUTDOWN SIGNALS — MANUAL REVIEW ONLY", "-" * 80])
+        lines.extend(f"- {url} | HTTP {status if status is not None else 'N/A'} | {note}" for url, status, note in shutdown_signals)
     if duplicates:
         lines.extend(["", "DUPLICATE OFFICIAL DOCUMENTATION URLS", "-" * 80])
         lines.extend(f"- {url}" for url in duplicates)
@@ -211,6 +219,7 @@ def main() -> int:
     inconclusive: list[tuple[str, int | None, str]] = []
     confirmed_dead_removals: list[tuple[str, int | None, str]] = []
     unconfirmed_removals: list[tuple[str, int | None, str]] = []
+    shutdown_signals: list[tuple[str, int | None, str]] = []
 
     if urls_to_check:
         with sync_playwright() as playwright:
@@ -224,6 +233,8 @@ def main() -> int:
                             confirmed_dead_removals.append(item)
                         else:
                             unconfirmed_removals.append(item)
+                    elif state == "shutdown_signal":
+                        shutdown_signals.append(item)
                     elif state == "working":
                         working.append(item)
                     elif state == "broken":
@@ -237,12 +248,13 @@ def main() -> int:
     report = write_report(
         changed_paths, added_urls, removed_urls, working, broken, inconclusive,
         duplicates, malformed_rows, confirmed_dead_removals, unconfirmed_removals,
+        shutdown_signals,
     )
     print(report)
-    if broken or duplicates or malformed_rows or unconfirmed_removals:
+    if broken or duplicates or malformed_rows or unconfirmed_removals or shutdown_signals:
         print(
             "PR validation failed. Fix confirmed dead additions, duplicate links, malformed rows, "
-            "or removals that are no longer confirmed dead before merging.",
+            "or removals that are no longer confirmed dead. Provider shutdown signals are review-only and require a separate maintainer decision before merging.",
             file=sys.stderr,
         )
         return 1
