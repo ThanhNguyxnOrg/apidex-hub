@@ -122,10 +122,10 @@ def check_link(url, timeout=8, max_retries=2):
             # Interpret status codes
             # Note: 3xx won't appear here because allow_redirects=True
             # follows redirects automatically. The final status is what we get.
-            if code in [200, 201, 202, 204]:
-                return {'url': url, 'status': code, 'state': 'working', 'note': 'OK'}
+            if 200 <= code < 300:
+                return {'url': url, 'status': code, 'state': 'working', 'note': 'Successful HTTP response'}
             elif code == 429:
-                return {'url': url, 'status': code, 'state': 'warning', 'note': 'Rate limited (HTTP 429)'}
+                return {'url': url, 'status': code, 'state': 'protected', 'note': 'Rate limited (HTTP 429); endpoint availability is not confirmed'}
             elif code == 401:
                 return {'url': url, 'status': code, 'state': 'protected', 'note': 'Unauthorized (HTTP 401) - access restricted'}
             elif code == 403:
@@ -134,7 +134,7 @@ def check_link(url, timeout=8, max_retries=2):
                 return {'url': url, 'status': code, 'state': 'protected', 'note': "Access protection response (HTTP 418); API endpoint availability is not confirmed"}
 
             elif code in [400, 405, 406]:
-                return {'url': url, 'status': code, 'state': 'working', 'note': 'API up (Invalid request/Method)'}
+                return {'url': url, 'status': code, 'state': 'unknown', 'note': 'HTTP response received, but endpoint health is not confirmed'}
             elif code == 404:
                 return {'url': url, 'status': code, 'state': 'broken', 'note': 'Not found - likely dead'}
             elif code == 410:
@@ -410,8 +410,8 @@ def main():
     # Save queue for Playwright verification
     verify_queue_path = os.path.join(script_dir, 'verify_queue.json')
     verify_queue = []
-    # Add all non-working APIs to the queue to be double-checked by Playwright
-    for state in ['broken', 'error', 'warning', 'protected']:
+    # Browser rechecks transient and potentially dead responses; protected responses stay inconclusive.
+    for state in ['broken', 'error', 'warning', 'unknown']:
         verify_queue.extend(results[state])
     
     with open(verify_queue_path, 'w', encoding='utf-8') as f:
