@@ -73,6 +73,39 @@ def normalize_url(url: str) -> str:
         return url.strip()
 
 
+
+def select_pr_urls_to_validate(
+    added_urls: list[str],
+    removed_urls: list[str],
+    *,
+    validate_removals: bool = False,
+) -> tuple[list[str], list[str]]:
+    """Select unique added URLs and, for automated cleanup PRs, unique removed URLs.
+
+    A URL that is also added in the same PR is validated as an addition, not
+    treated as a deletion candidate. This keeps moves/replacements fail-closed.
+    """
+    selected_added: list[str] = []
+    added_keys: set[str] = set()
+    for url in added_urls:
+        key = normalize_url(url)
+        if key and key not in added_keys:
+            selected_added.append(url)
+            added_keys.add(key)
+
+    if not validate_removals:
+        return selected_added, []
+
+    selected_removed: list[str] = []
+    seen_removed: set[str] = set()
+    for url in removed_urls:
+        key = normalize_url(url)
+        if key and key not in added_keys and key not in seen_removed:
+            selected_removed.append(url)
+            seen_removed.add(key)
+    return selected_added, selected_removed
+
+
 def _split_table_row(line: str) -> list[str] | None:
     stripped = line.strip()
     if not (stripped.startswith("|") and stripped.endswith("|")):
