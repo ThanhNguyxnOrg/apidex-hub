@@ -158,10 +158,6 @@ class RepositoryDiffTests(unittest.TestCase):
             self.assertIn("https://docs.example.com/api", diff)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class AutomatedRemovalValidationTests(unittest.TestCase):
     def test_removed_urls_are_revalidated_only_for_agent_remediation_prs(self):
         added, removed = select_pr_urls_to_validate(
@@ -202,6 +198,17 @@ class LinkCheckerWorkflowSafetyTests(unittest.TestCase):
         self.assertNotIn("const list = `${{ steps.check.outputs.broken_list }}`.trim();", self.workflow)
         self.assertNotIn("const currentBrokenList = `${{ steps.check.outputs.broken_list }}`.trim();", self.workflow)
 
+    def test_bot_cleanup_prs_revalidate_removals_and_refresh_from_latest_main_scan(self):
+        checker = (
+            Path(__file__).resolve().parents[2] / "scripts" / "check_pr_links.py"
+        ).read_text(encoding="utf-8")
+        self.assertIn("APIDEX_VALIDATE_REMOVALS: ${{ startsWith(github.head_ref, 'agent-remediation/dead-api-incident-') }}", self.workflow)
+        self.assertIn('validate_removals = os.environ.get("APIDEX_VALIDATE_REMOVALS", "").strip().lower() == "true"', checker)
+        self.assertIn('urls_to_check = added_to_check + removed_to_check', checker)
+        self.assertIn('if state == "broken":', checker)
+        self.assertIn('git reset --hard origin/main', self.workflow)
+        self.assertIn('git push --force-with-lease=', self.workflow)
+        self.assertNotIn('git push origin main', self.workflow)
     def test_incident_reference_and_safety_cap_survive_pr_body_rendering(self):
         self.assertIn(r"match(/Closes\s+#(\d+)/i)", self.workflow)
         self.assertIn(r"\`--max-delete 500\`", self.workflow)
@@ -245,3 +252,7 @@ class DivergentHistoryTests(unittest.TestCase):
             self.assertEqual(removed, ["https://dead.example.com"])
             self.assertNotIn("https://healthy.example.com", removed)
             self.assertEqual(malformed, [])
+
+
+if __name__ == "__main__":
+    unittest.main()
