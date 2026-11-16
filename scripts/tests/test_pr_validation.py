@@ -323,8 +323,10 @@ class DivergentHistoryTests(unittest.TestCase):
             apis.mkdir()
             catalog = apis / "catalog.md"
             catalog.write_text(
-                "| Dead API | Example | No | ✅ | [Link](https://dead.example.com) |\n"
-                "| Stable API | Example | No | ✅ | [Link](https://stable.example.com) |\n",
+                "| API Name | Description | Auth | HTTPS | API Endpoint | Documentation |\n"
+                "| :--- | :--- | :--- | :--- | :--- | :--- |\n"
+                "| Dead API | Example | No | ✅ | [Endpoint](https://dead.example.com) | [Docs](https://docs.example.com/dead) |\n"
+                "| Stable API | Example | No | ✅ | [Endpoint](https://stable.example.com) | [Docs](https://docs.example.com/stable) |\n",
                 encoding="utf-8",
             )
             subprocess.run(["git", "init", "-q", "-b", "main", str(root)], check=True)
@@ -335,7 +337,9 @@ class DivergentHistoryTests(unittest.TestCase):
 
             subprocess.run(["git", "-C", str(root), "checkout", "-qb", "cleanup"], check=True)
             catalog.write_text(
-                "| Stable API | Example | No | ✅ | [Link](https://stable.example.com) |\n",
+                "| API Name | Description | Auth | HTTPS | API Endpoint | Documentation |\n"
+                "| :--- | :--- | :--- | :--- | :--- | :--- |\n"
+                "| Stable API | Example | No | ✅ | [Endpoint](https://stable.example.com) | [Docs](https://docs.example.com/stable) |\n",
                 encoding="utf-8",
             )
             subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
@@ -343,12 +347,12 @@ class DivergentHistoryTests(unittest.TestCase):
 
             subprocess.run(["git", "-C", str(root), "checkout", "main"], check=True)
             with catalog.open("a", encoding="utf-8") as file:
-                file.write("| Healthy New API | Example | No | ✅ | [Link](https://healthy.example.com) |\n")
+                file.write("| Healthy New API | Example | No | ✅ | [Endpoint](https://healthy.example.com) | [Docs](https://docs.example.com/healthy) |\n")
             subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
             subprocess.run(["git", "-C", str(root), "commit", "-qm", "add healthy API on main"], check=True)
 
             paths, diff = read_pr_diff("main", "cleanup", root)
-            added, removed, malformed = parse_api_diff(diff)
+            added, removed, malformed = parse_api_diff(diff, validate_removals=True)
             self.assertEqual(paths, ["apis/catalog.md"])
             self.assertEqual(added, [])
             self.assertEqual(removed, ["https://dead.example.com"])

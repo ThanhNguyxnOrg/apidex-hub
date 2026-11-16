@@ -302,10 +302,10 @@ jobs:
               table += `| ${index + 1} | ${parts[0] || line} | ${parts.slice(1).join(' | ') || 'Confirmed dead URL'} |\n`;
             });
             const body = [
-              marker, '', `## 🔴 ${count} Confirmed Dead API Link(s)`, '',
+              marker, '', `## 🔴 ${count} Confirmed Dead API Endpoint(s)`, '',
               `**Detected**: ${today}`, `**Run**: [#${context.runNumber}](${runUrl})`, '',
               table, '',
-              'Only confirmed HTTP 404/410 or dead-DNS rows are deleted, with the existing 500-row cap. 401/403/429, 5xx, timeouts, TLS failures, warnings and unknown statuses are never removed.',
+              'Only confirmed HTTP 404/410 or dead-DNS URLs from explicit API Endpoint cells are eligible for deletion, with the existing 500-row cap. Documentation URLs, developer portals and company websites are never probed or deleted as API evidence. 401/403/429, 5xx, timeouts, TLS failures, warnings and unknown statuses are never removed.',
               '',
               'A bot pull request will remove these entries. This incident remains open until that PR passes all configured checks and merges.'
             ].join('\n');
@@ -317,7 +317,7 @@ jobs:
               (issue.body || '').includes(marker) ||
               /^🔴 Incident: \d+ (?:confirmed dead link|broken link)/i.test(issue.title || '')
             ).sort((a, b) => Date.parse(b.updated_at || '') - Date.parse(a.updated_at || ''))[0];
-            const title = `🔴 Incident: ${count} confirmed dead link${count === 1 ? '' : 's'} detected (${today})`;
+            const title = `🔴 Incident: ${count} confirmed dead API endpoint${count === 1 ? '' : 's'} detected (${today})`;
             const response = existing
               ? await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: existing.number, title, body })
               : await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, labels: ['automated', 'incident'], body });
@@ -467,11 +467,11 @@ jobs:
             const currentProtectedList = String(process.env.PROTECTED_LIST || '').trim();
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
 
-            let dynamicTitle = `🟢 Link Health Status: All links healthy! 🎉 (${today})`;
+            let dynamicTitle = `🟢 Link Health Status: all recorded API endpoints healthy (${today})`;
             if (hasBroken && !alreadyResolved && remediationPr) {
-              dynamicTitle = `🟠 Link Health Status: automatic cleanup PR awaiting checks (${today})`;
+              dynamicTitle = `🟠 Link Health Status: API endpoint cleanup PR awaiting checks (${today})`;
             } else if (hasBroken && !alreadyResolved) {
-              dynamicTitle = `🔴 Link Health Status: ${brokenCount} confirmed dead link${brokenCount > 1 ? 's' : ''} detected (${today})`;
+              dynamicTitle = `🔴 Link Health Status: ${brokenCount} confirmed dead API endpoint${brokenCount > 1 ? 's' : ''} detected (${today})`;
             }
 
             let brokenSection = '';
@@ -492,7 +492,7 @@ jobs:
                 brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Check the remediation workflow and incident issue.\n`;
               }
             } else {
-              brokenSection = `### ✅ No Broken Links\n\nAll API links are responding correctly. Nothing to fix! 🎉\n`;
+              brokenSection = `### ✅ No Dead API Endpoints\n\nAll explicitly recorded API endpoints passed or returned a protected/inconclusive response. Documentation URLs are tracked separately and are not part of this health scan.\n`;
             }
 
             let errorSection = '';
@@ -546,7 +546,7 @@ jobs:
             const statusIcon = hasBroken && !alreadyResolved ? (remediationPr ? '🟠' : '🔴') : '🟢';
             const statusText = hasBroken && !alreadyResolved
               ? (remediationPr ? 'automatic cleanup PR awaiting checks' : `${brokenCount} confirmed dead link${brokenCount > 1 ? 's' : ''} detected`)
-              : 'All links healthy';
+              : 'All recorded API endpoints healthy';
 
             const lines = [
               `## ${statusIcon} Link Health Status: ${statusText}`,
@@ -568,7 +568,7 @@ jobs:
               `| ❓ Unknown | ${unknownCount} | Unrecognized status codes (needs review) |`,
               `| 💀 Broken | ${alreadyResolved ? 0 : brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
               '',
-              `**Healthy rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + (alreadyResolved ? 0 : brokenCount) + unknownCount} APIs healthy`,
+              `**Endpoint health rate**: ${okCount + protectedCount} / ${okCount + protectedCount + warnCount + errCount + (alreadyResolved ? 0 : brokenCount) + unknownCount} recorded API endpoints healthy`,
               '',
               '---',
               '',
@@ -583,8 +583,8 @@ jobs:
               '### 📋 How This Works',
               '',
               '- 🔄 This report is **automatically updated daily** at 00:00 UTC in GitHub Discussions',
-              '- 🛡️ APIs with bot protection (403/429) are counted as **healthy**',
-              '- 💀 Confirmed 404/410 and DNS-dead API entries are automatically removed in a bot PR; the PR merges only after configured CI checks pass',
+              '- 🛡️ API endpoints with access protection (401/403/429) are reported as protected/inconclusive, never as dead.',
+              '- 💀 Only confirmed 404/410 and dead-DNS URLs in the explicit API Endpoint column can enter the automated cleanup PR; documentation URLs never trigger API removal.',
               '- ❌ Server errors (5xx) may be temporary outages',
               '- ⚠️ Warnings include SSL/timeout issues that are often transient',
               `- 📦 Full report available as [workflow artifact](${runUrl})`,

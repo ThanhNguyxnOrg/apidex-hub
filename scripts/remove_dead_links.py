@@ -2,8 +2,8 @@
 """Manually remove reviewed dead API endpoint rows from the Markdown catalog.
 
 This tool is dry-run by default. A maintainer must pass --apply after confirming
-that a failed documentation URL is not merely moved, temporarily unavailable,
-or protected by an access-control layer.
+that an explicitly listed API endpoint is dead, not merely moved, temporarily unavailable,
+or protected by an access-control layer. Documentation URLs are never deletion candidates.
 """
 
 import argparse

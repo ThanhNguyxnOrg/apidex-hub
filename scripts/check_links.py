@@ -255,7 +255,7 @@ def main():
     # Extract unique URLs to optimize checking
     unique_urls = sorted(list(set(api['url'] for api in apis)))
 
-    print(f"Found {len(apis)} total APIs ({len(unique_urls)} unique URLs)")
+    print(f"Found {len(apis)} total API endpoints ({len(unique_urls)} unique URLs)")
     print(f"Checking links...\n")
 
     # Check unique links with threading
@@ -329,7 +329,7 @@ def main():
     # Show only truly broken APIs
     if results['broken']:
         print("\n" + "=" * 80)
-        print("TRULY BROKEN APIS (Manual Review Needed)")
+        print("TRULY BROKEN API ENDPOINTS (Manual Review Needed)")
         print("=" * 80)
         for r in sorted(results['broken'], key=lambda x: x['name']):
             print(f"\n[DEAD] {r['name']} ({r['category']})")
@@ -426,7 +426,7 @@ def main():
         json.dump(results, f, indent=2)
 
     print(f"\nReport saved to: link_check_report.txt")
-    print(f"Verify Queue list: verify_queue.json ({len(verify_queue)} APIs for Stage 2)")
+    print(f"Verify Queue list: verify_queue.json ({len(verify_queue)} endpoint checks for Stage 2)")
     print("\nNote: 403/429 (Protected) = Bot protection - APIs still work!")
 
     return 0
