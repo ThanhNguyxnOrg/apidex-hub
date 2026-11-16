@@ -8,7 +8,7 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
-_API_LINK_RE = re.compile(r"\[Link\]\((https?://[^)]+)\)", re.IGNORECASE)
+_API_LINK_RE = re.compile(r"\[[^\]]+\]\((https?://[^)]+)\)", re.IGNORECASE)
 
 
 def find_repository_root(start: Path) -> Path:
@@ -147,7 +147,7 @@ def _is_separator_row(cells: list[str]) -> bool:
 
 
 def _parse_data_row(line: str) -> tuple[str | None, str | None]:
-    """Return (URL, error); both are None for non-data rows."""
+    """Return API Endpoint when present; otherwise return the documentation URL."""
     cells = _split_table_row(line)
     if cells is None:
         return None, None
@@ -157,36 +157,68 @@ def _parse_data_row(line: str) -> tuple[str | None, str | None]:
         return None, None
     if not cells or not cells[0] or cells[0].startswith("---"):
         return None, None
-    if len(cells) != 5:
-        return None, f"Expected 5 table columns, found {len(cells)}: {line.strip()}"
-    match = _API_LINK_RE.search(cells[4])
+    if len(cells) not in (5, 6):
+        return None, f"Expected 5 legacy or 6 canonical table columns, found {len(cells)}: {line.strip()}"
+
+    if len(cells) == 5:
+        link_cell = cells[4]
+    else:
+        link_cell = cells[4] if _API_LINK_RE.search(cells[4]) else cells[5]
+
+    match = _API_LINK_RE.search(link_cell)
     if not match:
-        return None, f"Missing official [Link](https://...) in the fifth column: {line.strip()}"
+        column = "the fifth documentation cell" if len(cells) == 5 else "the endpoint or documentation cell"
+        return None, f"Missing official HTTPS link in {column}: {line.strip()}"
     return match.group(1).strip(), None
 
 
-def parse_api_diff(diff_text: str) -> tuple[list[str], list[str], list[str]]:
-    """Parse added/removed API URLs and malformed added API rows from a unified diff."""
+def parse_api_diff(
+    diff_text: str,
+    *,
+    validate_removals: bool = False,
+) -> tuple[list[str], list[str], list[str]]:
+    """Extract added catalog URLs and validate only explicit API endpoint removals."""
     added: list[str] = []
     removed: list[str] = []
     malformed: list[str] = []
-    in_hunk = False
+
     for line in diff_text.splitlines():
-        if line.startswith("@@"):
-            in_hunk = True
+        if len(line) < 2 or line[0] not in "+-" or line[1] != "|":
             continue
-        if not in_hunk or line.startswith(("+++", "---", "\\")) or not line:
-            continue
-        if line[0] not in "+-":
-            continue
-        url, error = _parse_data_row(line[1:])
+        row = line[1:]
+        row_cells = _split_table_row(row)
+        url, error = _parse_data_row(row)
+
         if line[0] == "+":
             if error:
                 malformed.append(error)
             elif url:
                 added.append(url)
-        elif url:
-            removed.append(url)
+            continue
+
+        if not validate_removals or row_cells is None:
+            continue
+
+        # Automated remediation may delete only canonical rows with a concrete API Endpoint.
+        if len(row_cells) == 6:
+            endpoint_match = _API_LINK_RE.search(row_cells[4])
+            if endpoint_match:
+                removed.append(endpoint_match.group(1).strip())
+            else:
+                malformed.append(
+                    "Refusing automated removal of a row without an explicit API Endpoint; "
+                    "documentation links cannot prove API death: " + row.strip()
+                )
+        elif len(row_cells) == 5:
+            malformed.append(
+                "Refusing automated removal of a legacy documentation-only row; "
+                "migrate and verify its API Endpoint first: " + row.strip()
+            )
+        else:
+            malformed.append(
+                f"Refusing automated removal of a malformed catalog row with {len(row_cells)} columns: {row.strip()}"
+            )
+
     return added, removed, malformed
 
 

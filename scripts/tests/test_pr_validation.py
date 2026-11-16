@@ -31,6 +31,57 @@ class ApiDiffParsingTests(unittest.TestCase):
         self.assertEqual(removed, [])
         self.assertEqual(malformed, [])
 
+
+    def test_canonical_row_validates_api_endpoint_instead_of_documentation_page(self):
+        diff = """diff --git a/apis/example.md b/apis/example.md
+--- a/apis/example.md
++++ b/apis/example.md
+@@ -1,0 +2 @@
++| **Example API** | Example | OAuth | ✅ | [Endpoint](https://api.example.com/v1/items) | [Docs](https://docs.example.com/api) |
+"""
+        added, removed, malformed = parse_api_diff(diff)
+        self.assertEqual(added, ["https://api.example.com/v1/items"])
+        self.assertEqual(removed, [])
+        self.assertEqual(malformed, [])
+
+    def test_legacy_documentation_row_cannot_be_removed_by_automated_remediation(self):
+        diff = """diff --git a/apis/example.md b/apis/example.md
+--- a/apis/example.md
++++ b/apis/example.md
+@@ -1 +0,0 @@
+-| **Example API** | Example | OAuth | ✅ | [Link](https://docs.example.com/api) |
+"""
+        added, removed, malformed = parse_api_diff(diff, validate_removals=True)
+        self.assertEqual(added, [])
+        self.assertEqual(removed, [])
+        self.assertEqual(len(malformed), 1)
+        self.assertIn("documentation-only row", malformed[0])
+
+    def test_canonical_docs_only_row_cannot_be_removed_as_a_dead_api(self):
+        diff = """diff --git a/apis/example.md b/apis/example.md
+--- a/apis/example.md
++++ b/apis/example.md
+@@ -1 +0,0 @@
+-| **Example API** | Example | OAuth | ✅ |  | [Docs](https://docs.example.com/api) |
+"""
+        added, removed, malformed = parse_api_diff(diff, validate_removals=True)
+        self.assertEqual(added, [])
+        self.assertEqual(removed, [])
+        self.assertEqual(len(malformed), 1)
+        self.assertIn("explicit API Endpoint", malformed[0])
+
+    def test_canonical_endpoint_removal_validates_only_the_endpoint(self):
+        diff = """diff --git a/apis/example.md b/apis/example.md
+--- a/apis/example.md
++++ b/apis/example.md
+@@ -1 +0,0 @@
+-| **Example API** | Example | OAuth | ✅ | [Endpoint](https://api.example.com/v1/items) | [Docs](https://docs.example.com/api) |
+"""
+        added, removed, malformed = parse_api_diff(diff, validate_removals=True)
+        self.assertEqual(added, [])
+        self.assertEqual(removed, ["https://api.example.com/v1/items"])
+        self.assertEqual(malformed, [])
+
     def test_rejects_added_data_row_without_official_link(self):
         diff = """diff --git a/apis/example.md b/apis/example.md
 --- a/apis/example.md

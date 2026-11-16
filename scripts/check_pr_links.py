@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate only API documentation links introduced or changed by a pull request.
+"""Validate catalog URLs and enforce endpoint-only automated API row removals.
 
 The checker uses explicit base/head commits and repository-root Git commands. Access
 controls and transient failures are reported as inconclusive, never as proof of death.
@@ -120,8 +120,8 @@ def write_report(
         "=" * 80,
         "",
         f"API files changed: {len(changed_paths)}",
-        f"New API documentation URLs: {len(added_urls)}",
-        f"Removed API documentation URLs: {len(removed_urls)}",
+        f"New catalog URLs checked: {len(added_urls)}",
+        f"Removed API endpoint URLs: {len(removed_urls)}",
         f"Working: {len(working)}",
         f"Broken (confirmed 404/410 or DNS NXDOMAIN): {len(broken)}",
         f"Inconclusive (access restriction, timeout, or server failure): {len(inconclusive)}",
@@ -130,9 +130,9 @@ def write_report(
         "",
     ]
     if not added_urls and removed_urls:
-        lines.append("No new documentation URLs were introduced. This PR removes or moves existing API rows; no URL health check is claimed.")
+        lines.append("No new endpoint URLs were introduced. Legacy documentation-only row removals are not valid automated API-remediation candidates.")
     elif not added_urls:
-        lines.append("No new API documentation URLs were introduced; no URL health check was performed for this PR.")
+        lines.append("No new catalog URLs were introduced; no API endpoint health claim was made for this PR.")
     for title, items in (
         ("BROKEN URLS", broken),
         ("INCONCLUSIVE URLS — MAINTAINER REVIEW", inconclusive),
@@ -174,7 +174,10 @@ def main() -> int:
 
     try:
         changed_paths, diff_text = read_pr_diff(base_ref, head_ref, REPO_ROOT)
-        added_urls, removed_urls, malformed_rows = parse_api_diff(diff_text)
+        validate_removals = os.environ.get("APIDEX_VALIDATE_REMOVALS", "").strip().lower() == "true"
+        added_urls, removed_urls, malformed_rows = parse_api_diff(
+            diff_text, validate_removals=validate_removals
+        )
         existing_urls = read_existing_api_urls(base_ref, REPO_ROOT)
     except RuntimeError as error:
         print(f"ERROR: PR API diff validation could not run: {error}", file=sys.stderr)
@@ -182,7 +185,6 @@ def main() -> int:
 
     duplicates = find_duplicate_urls(added_urls, removed_urls, existing_urls)
     duplicate_keys = {normalize_url(url) for url in duplicates}
-    validate_removals = os.environ.get("APIDEX_VALIDATE_REMOVALS", "").strip().lower() == "true"
     added_to_check, removed_to_check = select_pr_urls_to_validate(
         added_urls, removed_urls, validate_removals=validate_removals
     )
