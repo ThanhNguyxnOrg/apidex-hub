@@ -513,15 +513,16 @@ jobs:
               : '';
 
             const reviewCount = protectedCount + warnCount + errCount + unknownCount;
-            let dynamicTitle = `🟢 Link Health Status: all recorded API endpoints responded successfully (${today})`;
+            const totalReviewCount = reviewCount + shutdownInconclusive;
+            let dynamicTitle = `🟢 Link Health Status: all recorded API endpoints and documentation links responded successfully (${today})`;
             if (hasBroken && !alreadyResolved && remediationPr) {
               dynamicTitle = `🟠 Link Health Status: API endpoint cleanup PR awaiting checks (${today})`;
             } else if (hasBroken && !alreadyResolved) {
               dynamicTitle = `🔴 Link Health Status: ${brokenCount} confirmed dead API endpoint${brokenCount > 1 ? 's' : ''} detected (${today})`;
             } else if (shutdownCount > 0) {
               dynamicTitle = '🟣 Link Health Status: ' + shutdownCount + ' provider shutdown notice(s) need review (' + today + ')';
-            } else if (reviewCount > 0) {
-              dynamicTitle = `🟡 Link Health Status: no confirmed dead endpoints; ${reviewCount} need review (${today})`;
+            } else if (totalReviewCount > 0) {
+              dynamicTitle = `🟡 Link Health Status: no confirmed dead endpoints; ${totalReviewCount} API or documentation results need review (${today})`;
             }
 
             let shutdownSection = '';
@@ -567,6 +568,9 @@ jobs:
                 brokenSection = `### 🧹 Automatic cleanup queued\n\n[Remediation PR](${remediationPr}) removes these confirmed-dead entries. It remains pending until the configured CI checks pass and the central Agent merges it.\n\n${brokenTable}\n`;
               } else {
                 brokenSection = `### 💀 Broken Links (${brokenCount})\n\n${brokenTable}\n\n**Action needed:** Check the remediation workflow and incident issue.\n`;
+              }
+              if (incidentIssueUrl) {
+                brokenSection = `**Incident issue:** [#${incidentIssueNum}](${incidentIssueUrl})\n\n` + brokenSection;
               }
             } else {
               brokenSection = `### ✅ No Confirmed Dead API Endpoints\n\nNo endpoint was confirmed dead in this scan. Successful responses: ${okCount}; protected/inconclusive responses: ${protectedCount}; other responses needing review: ${warnCount + errCount + unknownCount}. A protected response does not confirm availability. Documentation URLs are excluded from endpoint health checks.\n`;
@@ -622,14 +626,14 @@ jobs:
 
             const statusIcon = hasBroken && !alreadyResolved
               ? (remediationPr ? '🟠' : '🔴')
-              : shutdownCount > 0 ? '🟣' : reviewCount > 0 ? '🟡' : '🟢';
+              : shutdownCount > 0 ? '🟣' : totalReviewCount > 0 ? '🟡' : '🟢';
             const statusText = hasBroken && !alreadyResolved
               ? (remediationPr ? 'automatic endpoint cleanup PR awaiting checks' : `${brokenCount} confirmed dead API endpoint${brokenCount > 1 ? 's' : ''} detected`)
               : shutdownCount > 0
                 ? shutdownCount + ' provider shutdown notice(s) need review'
-                : reviewCount > 0
-                  ? 'no confirmed dead endpoints; some responses need review'
-                  : 'all recorded API endpoints responded successfully';
+                : totalReviewCount > 0
+                  ? 'no confirmed dead endpoints; ' + totalReviewCount + ' API or documentation results need review'
+                  : 'all recorded API endpoints and documentation links responded successfully';
 
             const lines = [
               '<!-- apidex-link-health-dashboard -->',
@@ -652,6 +656,7 @@ jobs:
               `| ❌ Error | ${errCount} | Server errors (5xx) |`,
               `| ❓ Unknown | ${unknownCount} | Unrecognized status codes (needs review) |`,
               '| 🟣 Shutdown notices | ' + shutdownCount + ' | Explicit provider lifecycle language in documentation; maintainer review required |',
+              '| 📄 Documentation inconclusive | ' + shutdownInconclusive + ' | Documentation links could not be conclusively checked |',
               `| 💀 Broken | ${alreadyResolved ? 0 : brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
               '',
               `**Confirmed successful responses**: ${okCount} / ${okCount + protectedCount + warnCount + errCount + (alreadyResolved ? 0 : brokenCount) + unknownCount} recorded endpoints`,
