@@ -18,6 +18,7 @@ class ApiHealthClassificationTests(unittest.TestCase):
         self.assertTrue(looks_like_parked_domain("<title>This domain is for sale</title>"))
         self.assertTrue(looks_like_parked_domain("Hosting suspended"))
         self.assertFalse(looks_like_parked_domain("Official API documentation"))
+        self.assertFalse(looks_like_parked_domain('{"website":"https://jordan.com"}'))
 
     def test_access_controls_and_rate_limits_are_protected(self):
         for status in (401, 403, 418, 429):
