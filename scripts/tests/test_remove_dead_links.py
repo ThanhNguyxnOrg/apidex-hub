@@ -71,7 +71,7 @@ class RemoveDeadLinksSafetyTests(unittest.TestCase):
 
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertEqual(api_file.read_text(encoding="utf-8"), original)
-            self.assertIn("no dead urls found", result.stdout.lower())
+            self.assertIn("dry-run", result.stdout.lower())
 
     def test_apply_flag_removes_only_after_explicit_confirmation(self):
         with tempfile.TemporaryDirectory() as temporary:

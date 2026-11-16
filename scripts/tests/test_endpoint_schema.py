@@ -38,7 +38,7 @@ class ApiEndpointSchemaTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             (root / "finance.md").write_text(
-                "## <a id="finance"></a>💰 Finance\n\n"
+                '## <a id="finance"></a>💰 Finance\n\n'
                 "| API Name | Description | Auth | HTTPS | Link |\n"
                 "| --- | --- | --- | --- | --- |\n"
                 "| **Legacy API** | Example | No | ✅ | [Link](https://docs.example.com/legacy) |\n"
