@@ -132,7 +132,7 @@ jobs:
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
               for key, value in scalar_outputs.items():
-                  output.write(f"{key}={value}\\n")
+                  output.write(f"{key}={value}\n")
               for key, path in list_files.items():
                   try:
                       with open(path, encoding="utf-8") as handle:
@@ -140,11 +140,11 @@ jobs:
                   except FileNotFoundError:
                       value = ""
                   delimiter = "APIDEX_" + uuid.uuid4().hex
-                  output.write(f"{key}<<{delimiter}\\n")
+                  output.write(f"{key}<<{delimiter}\n")
                   output.write(value)
-                  if value and not value.endswith("\\n"):
-                      output.write("\\n")
-                  output.write(f"{delimiter}\\n")
+                  if value and not value.endswith("\n"):
+                      output.write("\n")
+                  output.write(f"{delimiter}\n")
           PY
 
           # Read broken URLs list
