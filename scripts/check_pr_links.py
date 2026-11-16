@@ -20,6 +20,7 @@ from pr_validation import (
     parse_api_diff,
     read_existing_api_urls,
     read_pr_diff,
+    select_pr_urls_to_validate,
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -110,6 +111,8 @@ def write_report(
     inconclusive: list[tuple[str, int | None, str]],
     duplicates: list[str],
     malformed_rows: list[str],
+    confirmed_dead_removals: list[tuple[str, int | None, str]] | None = None,
+    unconfirmed_removals: list[tuple[str, int | None, str]] | None = None,
 ) -> str:
     lines = [
         "PR API LINK CHECK REPORT",
@@ -136,6 +139,12 @@ def write_report(
         if items:
             lines.extend(["", title, "-" * 80])
             lines.extend(f"- {url} | HTTP {status if status is not None else 'N/A'} | {note}" for url, status, note in items)
+    if confirmed_dead_removals:
+        lines.extend(["", "REMOVED URLS REVALIDATED AS CONFIRMED DEAD", "-" * 80])
+        lines.extend(f"- {url} | HTTP {status if status is not None else 'N/A'} | {note}" for url, status, note in confirmed_dead_removals)
+    if unconfirmed_removals:
+        lines.extend(["", "REMOVALS NO LONGER CONFIRMED DEAD — BLOCKED", "-" * 80])
+        lines.extend(f"- {url} | HTTP {status if status is not None else 'N/A'} | {note}" for url, status, note in unconfirmed_removals)
     if duplicates:
         lines.extend(["", "DUPLICATE OFFICIAL DOCUMENTATION URLS", "-" * 80])
         lines.extend(f"- {url}" for url in duplicates)
@@ -172,17 +181,19 @@ def main() -> int:
 
     duplicates = find_duplicate_urls(added_urls, removed_urls, existing_urls)
     duplicate_keys = {normalize_url(url) for url in duplicates}
-    urls_to_check = []
-    seen = set()
-    for url in added_urls:
-        key = normalize_url(url)
-        if key not in seen and key not in duplicate_keys:
-            urls_to_check.append(url)
-            seen.add(key)
+    validate_removals = os.environ.get("APIDEX_VALIDATE_REMOVALS", "").strip().lower() == "true"
+    added_to_check, removed_to_check = select_pr_urls_to_validate(
+        added_urls, removed_urls, validate_removals=validate_removals
+    )
+    added_to_check = [url for url in added_to_check if normalize_url(url) not in duplicate_keys]
+    urls_to_check = added_to_check + removed_to_check
+    removed_keys = {normalize_url(url) for url in removed_to_check}
 
     working: list[tuple[str, int | None, str]] = []
     broken: list[tuple[str, int | None, str]] = []
     inconclusive: list[tuple[str, int | None, str]] = []
+    confirmed_dead_removals: list[tuple[str, int | None, str]] = []
+    unconfirmed_removals: list[tuple[str, int | None, str]] = []
 
     if urls_to_check:
         with sync_playwright() as playwright:
@@ -191,7 +202,12 @@ def main() -> int:
                 for url in urls_to_check:
                     state, status, note = check_url(browser, url)
                     item = (url, status, note)
-                    if state == "working":
+                    if normalize_url(url) in removed_keys:
+                        if state == "broken":
+                            confirmed_dead_removals.append(item)
+                        else:
+                            unconfirmed_removals.append(item)
+                    elif state == "working":
                         working.append(item)
                     elif state == "broken":
                         broken.append(item)
@@ -203,11 +219,15 @@ def main() -> int:
 
     report = write_report(
         changed_paths, added_urls, removed_urls, working, broken, inconclusive,
-        duplicates, malformed_rows,
+        duplicates, malformed_rows, confirmed_dead_removals, unconfirmed_removals,
     )
     print(report)
-    if broken or duplicates or malformed_rows:
-        print("PR validation failed. Fix confirmed dead URLs, duplicate links, or malformed API rows before merging.", file=sys.stderr)
+    if broken or duplicates or malformed_rows or unconfirmed_removals:
+        print(
+            "PR validation failed. Fix confirmed dead additions, duplicate links, malformed rows, "
+            "or removals that are no longer confirmed dead before merging.",
+            file=sys.stderr,
+        )
         return 1
     return 0
 
