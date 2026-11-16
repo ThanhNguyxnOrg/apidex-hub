@@ -15,7 +15,7 @@ from playwright.sync_api import sync_playwright
 
 from shutdown_detection import detect_shutdown_notice
 from link_health import looks_like_parked_domain, looks_like_waf_challenge
-from safe_urls import DNSResolutionError, UnsafeURL, safe_get, validate_public_http_url
+from safe_urls import DNSResolutionError, UnsafeURL, safe_browser_route, safe_get, validate_public_http_url
 from pr_validation import (
     classify_link_result,
     find_duplicate_urls,
@@ -47,20 +47,7 @@ def verify_with_playwright(browser, url: str) -> tuple[int | None, str]:
         )
         page = context.new_page()
 
-        def guard_public_requests(route):
-            target = route.request.url
-            scheme = target.split(":", 1)[0].lower()
-            if scheme in {"data", "blob", "about"}:
-                route.continue_()
-                return
-            try:
-                validate_public_http_url(target)
-            except UnsafeURL:
-                route.abort()
-                return
-            route.continue_()
-
-        page.route("**/*", guard_public_requests)
+        page.route("**/*", safe_browser_route)
         page.on(
             "response",
             lambda response: last_response.__setitem__(0, response)
