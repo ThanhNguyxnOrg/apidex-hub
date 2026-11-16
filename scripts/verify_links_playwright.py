@@ -285,7 +285,7 @@ def main():
                 
                 # Decide target category based on error
                 target_state = classify_playwright_result(new_status, note)
-                    
+
                 results[target_state].append({
                     'name': name,
                     'category': category,
