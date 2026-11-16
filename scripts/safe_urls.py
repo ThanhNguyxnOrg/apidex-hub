@@ -5,7 +5,6 @@ They are defense in depth; callers should still run inside restricted CI egress.
 """
 from __future__ import annotations
 
-from functools import lru_cache
 import ipaddress
 import socket
 from urllib.error import URLError
@@ -29,7 +28,6 @@ _BLOCKED_SUFFIXES = (
 )
 
 
-@lru_cache(maxsize=4096)
 def resolve_public_addresses(host: str, port: int) -> tuple[str, ...]:
     """Resolve a hostname once and return every address supplied by the resolver."""
     records = socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)
