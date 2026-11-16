@@ -213,6 +213,13 @@ def save_reports(results, total_apis_count):
             f.write(f"{r['url']} | {status_str} | {r['name']} ({r['category']}) - {r['note']}\n")
 
 
+    # Persist the final Stage 2 classifications so CI consumes structured data,
+    # not counts scraped from the human-readable report.
+    results_json_path = os.path.join(script_dir, 'results.json')
+    with open(results_json_path, 'w', encoding='utf-8') as handle:
+        json.dump(results, handle, indent=2)
+
+
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     results_path = os.path.join(script_dir, 'results.json')
