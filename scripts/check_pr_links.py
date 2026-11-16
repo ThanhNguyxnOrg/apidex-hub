@@ -15,7 +15,7 @@ from playwright.sync_api import sync_playwright
 
 from shutdown_detection import detect_shutdown_notice
 from link_health import looks_like_waf_challenge
-from safe_urls import UnsafeURL, safe_get, validate_public_http_url
+from safe_urls import DNSResolutionError, UnsafeURL, safe_get, validate_public_http_url
 from pr_validation import (
     classify_link_result,
     find_duplicate_urls,
@@ -127,6 +127,8 @@ def check_url(browser, url: str) -> tuple[str, int | None, str]:
         if state == "inconclusive":
             return state, response.status_code, "Access restricted, rate limited, or server failure; requires review"
         stage_one_note = f"Stage 1 returned HTTP {response.status_code}"
+    except DNSResolutionError as error:
+        stage_one_note = f"Stage 1 DNS NXDOMAIN: {error}"
     except UnsafeURL as error:
         return "inconclusive", None, f"Unsafe URL or redirect blocked: {error}"
     except requests.RequestException as error:
