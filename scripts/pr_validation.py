@@ -46,9 +46,13 @@ def read_pr_diff(base_ref: str, head_ref: str, repo_root: Path) -> tuple[list[st
         if not re.fullmatch(r"[0-9a-fA-F]{40,64}", resolved):
             raise RuntimeError(f"The PR {ref_name} ref did not resolve to a commit: {ref}")
 
-    paths_text = _git(root, "diff", "--name-only", base_ref, head_ref, "--", "apis/")
+    merge_base = _git(root, "merge-base", base_ref, head_ref).strip()
+    if not re.fullmatch(r"[0-9a-fA-F]{40,64}", merge_base):
+        raise RuntimeError('The PR base and head do not have a valid merge base')
+    # Match GitHub's PR diff semantics: ignore base-only commits added after the head forked.
+    paths_text = _git(root, "diff", "--name-only", merge_base, head_ref, "--", "apis/")
     paths = sorted(path for path in paths_text.splitlines() if path.startswith("apis/"))
-    diff = _git(root, "diff", "--no-ext-diff", "--unified=0", base_ref, head_ref, "--", "apis/")
+    diff = _git(root, "diff", "--no-ext-diff", "--unified=0", merge_base, head_ref, "--", "apis/")
     return paths, diff
 
 
