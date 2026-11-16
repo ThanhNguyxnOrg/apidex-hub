@@ -17,8 +17,43 @@ class FakeResponse:
         self.headers = headers or {}
         self.closed = False
 
+    def read(self, size=-1):
+        return b"response body"
+
     def close(self):
         self.closed = True
+
+
+class FakeHTTPResponse:
+    status = 200
+
+    def __init__(self):
+        from email.message import Message
+        self.headers = Message()
+        self.headers["Content-Type"] = "text/plain; charset=utf-8"
+
+    def read(self, size=-1):
+        return b"pinned response"
+
+
+class FakeHTTPConnection:
+    last_instance = None
+
+    def __init__(self, host, port, timeout=None):
+        self.host = host
+        self.port = port
+        self.timeout = timeout
+        self.request_args = None
+        FakeHTTPConnection.last_instance = self
+
+    def request(self, method, path, headers=None):
+        self.request_args = (method, path, headers or {})
+
+    def getresponse(self):
+        return FakeHTTPResponse()
+
+    def close(self):
+        pass
 
 
 class SafeURLTests(unittest.TestCase):
@@ -105,6 +140,47 @@ class SafeURLTests(unittest.TestCase):
                 {},
                 "http://169.254.169.254/latest/meta-data/",
             )
+
+    def test_default_client_connects_to_the_validated_ip_not_the_hostname(self):
+        with patch("safe_urls.http.client.HTTPConnection", FakeHTTPConnection):
+            response = safe_get("http://api.example.com/health")
+
+        connection = FakeHTTPConnection.last_instance
+        self.assertEqual(connection.host, "93.184.216.34")
+        self.assertEqual(connection.port, 80)
+        self.assertEqual(connection.request_args[0], "GET")
+        self.assertEqual(connection.request_args[1], "/health")
+        self.assertEqual(connection.request_args[2]["Host"], "api.example.com")
+        self.assertEqual(response.text, "pinned response")
+
+    def test_safe_browser_route_fulfills_from_the_pinned_client(self):
+        class FakeRequest:
+            url = "https://api.example.com/health"
+            method = "GET"
+            headers = {"user-agent": "test-agent", "accept": "text/html"}
+
+        class FakeRoute:
+            request = FakeRequest()
+            fulfilled = None
+            aborted = False
+
+            def fulfill(self, **kwargs):
+                self.fulfilled = kwargs
+
+            def abort(self):
+                self.aborted = True
+
+            def continue_(self):
+                raise AssertionError("remote browser request must not bypass the pinned client")
+
+        route = FakeRoute()
+        with patch("safe_urls.safe_get", return_value=FakeResponse(200, {"Content-Type": "text/plain"})):
+            from safe_urls import safe_browser_route
+            safe_browser_route(route)
+
+        self.assertFalse(route.aborted)
+        self.assertEqual(route.fulfilled["status"], 200)
+        self.assertEqual(route.fulfilled["body"], b"response body")
 
     def test_safe_get_checks_redirect_destinations(self):
         responses = [
