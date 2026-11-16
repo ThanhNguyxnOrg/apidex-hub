@@ -205,3 +205,43 @@ class LinkCheckerWorkflowSafetyTests(unittest.TestCase):
     def test_incident_reference_and_safety_cap_survive_pr_body_rendering(self):
         self.assertIn(r"match(/Closes\s+#(\d+)/i)", self.workflow)
         self.assertIn(r"\`--max-delete 500\`", self.workflow)
+
+class DivergentHistoryTests(unittest.TestCase):
+    def test_main_only_api_additions_are_not_misread_as_cleanup_deletions(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            apis = root / "apis"
+            apis.mkdir()
+            catalog = apis / "catalog.md"
+            catalog.write_text(
+                "| Dead API | Example | No | ✅ | [Link](https://dead.example.com) |\n"
+                "| Stable API | Example | No | ✅ | [Link](https://stable.example.com) |\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q", "-b", "main", str(root)], check=True)
+            subprocess.run(["git", "-C", str(root), "config", "user.name", "Test"], check=True)
+            subprocess.run(["git", "-C", str(root), "config", "user.email", "test@example.com"], check=True)
+            subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
+            subprocess.run(["git", "-C", str(root), "commit", "-qm", "base"], check=True)
+
+            subprocess.run(["git", "-C", str(root), "checkout", "-qb", "cleanup"], check=True)
+            catalog.write_text(
+                "| Stable API | Example | No | ✅ | [Link](https://stable.example.com) |\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
+            subprocess.run(["git", "-C", str(root), "commit", "-qm", "remove dead API"], check=True)
+
+            subprocess.run(["git", "-C", str(root), "checkout", "main"], check=True)
+            with catalog.open("a", encoding="utf-8") as file:
+                file.write("| Healthy New API | Example | No | ✅ | [Link](https://healthy.example.com) |\n")
+            subprocess.run(["git", "-C", str(root), "add", "apis"], check=True)
+            subprocess.run(["git", "-C", str(root), "commit", "-qm", "add healthy API on main"], check=True)
+
+            paths, diff = read_pr_diff("main", "cleanup", root)
+            added, removed, malformed = parse_api_diff(diff)
+            self.assertEqual(paths, ["apis/catalog.md"])
+            self.assertEqual(added, [])
+            self.assertEqual(removed, ["https://dead.example.com"])
+            self.assertNotIn("https://healthy.example.com", removed)
+            self.assertEqual(malformed, [])
