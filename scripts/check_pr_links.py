@@ -13,6 +13,7 @@ from pathlib import Path
 import requests
 from playwright.sync_api import sync_playwright
 
+from shutdown_detection import detect_shutdown_notice
 from pr_validation import (
     classify_link_result,
     find_duplicate_urls,
@@ -88,6 +89,14 @@ def check_url(browser, url: str) -> tuple[str, int | None, str]:
             timeout=12,
             allow_redirects=True,
         )
+        shutdown_signal = detect_shutdown_notice(response.text)
+        if shutdown_signal:
+            return (
+                "broken",
+                response.status_code,
+                "Explicit provider shutdown notice in documentation: "
+                f"{shutdown_signal['matched_text']}",
+            )
         state = classify_link_result(response.status_code)
         if state == "working":
             return state, response.status_code, "HTTP request succeeded"
@@ -123,7 +132,7 @@ def write_report(
         f"New catalog URLs checked: {len(added_urls)}",
         f"Removed API endpoint URLs: {len(removed_urls)}",
         f"Working: {len(working)}",
-        f"Broken (confirmed 404/410 or DNS NXDOMAIN): {len(broken)}",
+        f"Broken (404/410, DNS NXDOMAIN, or explicit provider shutdown notice): {len(broken)}",
         f"Inconclusive (access restriction, timeout, or server failure): {len(inconclusive)}",
         f"Duplicate URLs: {len(duplicates)}",
         f"Malformed API rows: {len(malformed_rows)}",
