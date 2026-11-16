@@ -17,7 +17,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import json
 
-from link_health import classify_http_status, looks_like_waf_challenge
+from link_health import classify_http_status, looks_like_parked_domain, looks_like_waf_challenge
 from safe_urls import DNSResolutionError, safe_get
 
 
@@ -92,6 +92,14 @@ def check_link(url, timeout=8, max_retries=2):
 
             response = safe_get(url, headers=headers, timeout=timeout)
             code = response.status_code
+
+            if looks_like_parked_domain(response.text):
+                return {
+                    'url': url,
+                    'status': code,
+                    'state': 'broken',
+                    'note': 'Parked domain or suspended hosting detected in response body',
+                }
 
             waf_detected = has_cloudflare_protection(response)
             state, note = classify_http_status(code, waf_detected=waf_detected)
