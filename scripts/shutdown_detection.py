@@ -13,7 +13,7 @@ import re
 class _VisibleTextParser(HTMLParser):
     """Extract visible page text while ignoring scripts, styles and hidden metadata."""
 
-    _IGNORED = {"script", "style", "noscript", "svg"}
+    _IGNORED = frozenset({"script", "style", "noscript", "svg", "template"})
 
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
