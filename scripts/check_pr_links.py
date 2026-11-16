@@ -59,11 +59,7 @@ def verify_with_playwright(browser, url: str) -> tuple[int | None, str]:
         status = final_response.status if final_response else None
         title = page.title().lower()
         content = page.content().lower()
-        parked_indicators = (
-            "domain parking", "buy this domain", "domain for sale", "hugedomains",
-            "sedo.com", "hosting suspended", "account suspended", "website is suspended",
-        )
-        if any(term in title or term in content for term in parked_indicators):
+        if looks_like_parked_domain(title + " " + content):
             return 404, "Playwright: parked domain or suspended hosting detected"
         shutdown_signal = detect_shutdown_notice(title + " " + content)
         if shutdown_signal:
@@ -73,7 +69,7 @@ def verify_with_playwright(browser, url: str) -> tuple[int | None, str]:
         return status, f"Playwright: final document HTTP {status if status is not None else 'unknown'}"
     except Exception as error:
         message = re.sub(r"\s+", " ", str(error)).strip()
-        return None, f"Playwright exception: {message}"
+        return None, f"Playwright exception: {type(error).__name__}: {message}"
     finally:
         if page:
             try:
