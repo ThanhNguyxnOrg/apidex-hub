@@ -215,9 +215,11 @@ class LinkCheckerWorkflowSafetyTests(unittest.TestCase):
 
     def test_github_script_report_variables_are_at_step_scope_not_action_inputs(self):
         lines = self.workflow.splitlines()
-        for key in ("BROKEN_COUNT", "BROKEN_LIST", "HAS_BROKEN", "ALREADY_RESOLVED"):
+        for key in ("BROKEN_COUNT", "HAS_BROKEN"):
             index = next(i for i, line in enumerate(lines) if line.startswith("          " + key + ":"))
-            self.assertEqual(lines[index - 1], "        env:", key + " must be a step-level environment variable")
+            self.assertEqual(lines[index - 1], "        env:", key + " must begin a step-level environment block")
+        for key in ("BROKEN_LIST", "ALREADY_RESOLVED", "REMEDIATION_PR", "INCIDENT_ISSUE_NUMBER", "ERROR_LIST", "WARNING_LIST", "UNKNOWN_LIST", "PROTECTED_LIST"):
+            self.assertTrue(any(line.startswith("          " + key + ":") for line in lines), key + " must be passed to the step environment")
         self.assertNotIn("          env:", self.workflow)
 
 
