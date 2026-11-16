@@ -7,7 +7,8 @@ SCRIPTS_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 from shutdown_detection import detect_shutdown_notice
-from check_shutdown_signals import parse_documentation_targets
+from check_shutdown_signals import fetch_documentation, parse_documentation_targets
+from unittest.mock import patch
 
 
 class ShutdownDetectionTests(unittest.TestCase):
@@ -23,6 +24,31 @@ class ShutdownDetectionTests(unittest.TestCase):
         self.assertIsNotNone(signal)
         self.assertEqual(signal["type"], "request_intake_closed")
         self.assertIn("no longer accepting new requests", signal["matched_text"].lower())
+
+    def test_documentation_monitor_detects_shutdown_notice_on_http_200(self):
+        class FakeResponse:
+            headers = {}
+            def __enter__(self):
+                return self
+            def __exit__(self, exc_type, exc, traceback):
+                return False
+            def read(self, limit):
+                return (
+                    b"<html><body><h1>Service shutdown</h1>"
+                    b"<p>As of June 5, 2026, we are no longer accepting new requests or subscriptions.</p>"
+                    b"</body></html>"
+                )
+            def getcode(self):
+                return 200
+            def geturl(self):
+                return "https://status.example.com/shutdown"
+
+        with patch("check_shutdown_signals.safe_urlopen", return_value=FakeResponse()):
+            result = fetch_documentation("https://status.example.com/shutdown")
+
+        self.assertEqual(result["status"], 200)
+        self.assertIsNone(result["error"])
+        self.assertEqual(result["shutdown_signal"]["type"], "request_intake_closed")
 
     def test_detects_provider_shutdown_language(self):
         signal = detect_shutdown_notice("<p>Our API service has been discontinued.</p>")
