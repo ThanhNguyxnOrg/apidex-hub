@@ -378,6 +378,32 @@ jobs:
               state: 'closed', state_reason: 'completed'
             });
 
+      # Retire the original broad-match issue; the v2 report separates current API notices from legacy/external references.
+      - name: Close superseded provider shutdown review issue
+        if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const marker = '<!-- apidex-provider-lifecycle-review-v2 -->';
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner, repo: context.repo.repo, state: 'open', per_page: 100
+            });
+            const obsolete = issues.filter(issue =>
+              !issue.pull_request && String(issue.body || '').includes(marker)
+            );
+            for (const issue of obsolete) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number,
+                body: 'This broad-match provider-shutdown report has been superseded by the scoped lifecycle classifier. Legacy API/version notices and unrelated third-party shutdown references are now tracked separately and no longer create provider-shutdown incidents. Current-provider/current-API notices, when present, are reported in a new lifecycle review issue. No catalog rows were deleted.'
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number,
+                state: 'closed', state_reason: 'completed'
+              });
+              console.log('Closed superseded provider shutdown issue #' + issue.number);
+            }
+
       # 4. Track explicit provider shutdown notices separately from endpoint failures.
       - name: Create or update provider shutdown review issue
         if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success' && steps.shutdown-scan.outputs.signal_count != '0'
@@ -402,13 +428,16 @@ jobs:
             const lines = [
               marker,
               '',
-              '## Provider shutdown notice(s) detected in API documentation',
+              '## Current-provider / current-API lifecycle notice(s)',
               '',
-              'The documentation monitor found explicit provider-shutdown language. This is a **manual-review signal**, not automatic deletion evidence.',
+              'The scoped documentation monitor found explicit retirement or shutdown language that appears to apply to the catalog provider or its current API. This is a **manual-review signal**, not automatic deletion evidence.',
               '',
-              'A docs page can remain online after an API shuts down, and a docs page can fail while the API remains operational. Confirm the provider announcement and API lifecycle before changing the catalog.',
+              'Legacy API/version notices and unrelated third-party service references are classified separately. A docs page can remain online after an API shuts down, and a docs page can fail while an API remains operational. Confirm the provider announcement and exact API lifecycle before changing the catalog.',
               '',
               '**Workflow run:** [#' + context.runNumber + '](' + runUrl + ')',
+              '',
+              '**Informational legacy notices:** ' + Number(report.legacy_notice_count || 0),
+              '**Unrelated third-party references:** ' + Number(report.out_of_scope_reference_count || 0),
               ''
             ];
 
@@ -428,9 +457,27 @@ jobs:
               lines.push('');
             }
 
-            lines.push('No catalog rows were deleted by this documentation scan. Once a shutdown is independently confirmed, the normal focused cleanup PR and CI validation process should be used.');
+            lines.push('### Informational legacy API/version notices');
+            lines.push('');
+            for (const item of (report.legacy_notices || [])) {
+              const names = (item.apis || []).map(api => api.name).join(', ') || 'Unknown API';
+              const signal = item.shutdown_signal || {};
+              lines.push('- **' + names + '** — ' + item.url + ' — ' + String(signal.matched_text || signal.type || 'legacy notice'));
+            }
+            if (!(report.legacy_notices || []).length) lines.push('- None detected.');
+            lines.push('');
+            lines.push('### Unrelated third-party references excluded from provider incident count');
+            lines.push('');
+            for (const item of (report.out_of_scope_references || [])) {
+              const names = (item.apis || []).map(api => api.name).join(', ') || 'Unknown API';
+              const signal = item.shutdown_signal || {};
+              lines.push('- **' + names + '** — ' + item.url + ' — ' + String(signal.subject || signal.matched_text || signal.type || 'external reference'));
+            }
+            if (!(report.out_of_scope_references || []).length) lines.push('- None detected.');
+            lines.push('');
+            lines.push('No catalog rows were deleted by this documentation scan. Confirm the provider announcement and exact API lifecycle before changing the catalog; any deletion must use the normal focused cleanup PR and CI validation process.');
             const body = lines.join('\n');
-            const title = '🟣 Provider shutdown review: ' + signals.length + ' documentation signal(s)';
+            const title = '🟣 Provider lifecycle review: ' + signals.length + ' current API/provider signal(s)';
             const openIssues = await github.paginate(github.rest.issues.listForRepo, {
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -495,6 +542,8 @@ jobs:
             const shutdownSignals = shutdownReport.shutdown_signals || [];
             const shutdownCount = shutdownSignals.length;
             const shutdownInconclusive = Number(shutdownReport.inconclusive_documentation_links || 0);
+            const legacyNoticeCount = Number(shutdownReport.legacy_notice_count || 0);
+            const externalReferenceCount = Number(shutdownReport.out_of_scope_reference_count || 0);
             const shutdownIssueUrl = String(process.env.SHUTDOWN_ISSUE_URL || '');
             const hasBroken = process.env.HAS_BROKEN === 'true';
             const alreadyResolved = process.env.ALREADY_RESOLVED === 'true';
@@ -656,7 +705,9 @@ jobs:
               `| ⚠️ Warning | ${warnCount} | Timeout/DNS/SSL issues (may be temporary) |`,
               `| ❌ Error | ${errCount} | Server errors (5xx) |`,
               `| ❓ Unknown | ${unknownCount} | Unrecognized status codes (needs review) |`,
-              '| 🟣 Shutdown notices | ' + shutdownCount + ' | Explicit provider lifecycle language in documentation; maintainer review required |',
+              '| 🟣 Current API/provider notices | ' + shutdownCount + ' | Scoped lifecycle signals that require maintainer review |',
+              '| 📚 Legacy API notices | ' + legacyNoticeCount + ' | Historical or version-specific retirements; informational only |',
+              '| ↗️ Unrelated service references | ' + externalReferenceCount + ' | Third-party services mentioned in docs; excluded from provider incidents |
               '| 📄 Documentation inconclusive | ' + shutdownInconclusive + ' | Documentation links could not be conclusively checked |',
               `| 💀 Broken | ${alreadyResolved ? 0 : brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
               '',
@@ -679,7 +730,7 @@ jobs:
               '- 🔄 This report is **automatically updated daily** at 00:00 UTC in GitHub Discussions',
               '- 🛡️ API endpoints with access protection (401/403/429) are reported as protected/inconclusive, never as dead.',
               '- 💀 Only confirmed 404/410 and dead-DNS URLs in the explicit API Endpoint column can enter the automated cleanup PR; documentation URLs never trigger API removal.',
-              '- 🟣 Documentation links (including legacy 5-column entries) are monitored separately for explicit provider-shutdown notices; these create a review issue and never auto-delete catalog rows.',
+              '- 🟣 Documentation links are classified into current-provider/current-API notices, legacy API/version notices, and unrelated third-party references. Only current-provider/current-API notices create review issues; none auto-delete catalog rows.',
               '- ❌ Server errors (5xx) may be temporary outages',
               '- ⚠️ Warnings include SSL/timeout issues that are often transient',
               `- 📦 Full report available as [workflow artifact](${runUrl})`,
