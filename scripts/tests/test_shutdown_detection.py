@@ -55,6 +55,50 @@ class ShutdownDetectionTests(unittest.TestCase):
         self.assertIsNotNone(signal)
         self.assertEqual(signal["type"], "service_shutdown")
 
+
+    def test_legacy_api_retirement_is_informational_not_provider_shutdown(self):
+        signal = detect_shutdown_notice(
+            "The old file.io API has been retired; use the current upload API instead.",
+            documentation_url="https://www.file.io",
+            provider_names=["File.io"],
+        )
+        self.assertIsNotNone(signal)
+        self.assertEqual(signal["scope"], "legacy-api")
+        self.assertFalse(signal["review_required"])
+
+    def test_named_third_party_service_shutdown_is_not_attributed_to_provider(self):
+        signal = detect_shutdown_notice(
+            "Since the Mozilla Location Service was decommissioned in 2024, "
+            "Linux users can use this endpoint as an alternative.",
+            documentation_url="https://ip.app",
+            provider_names=["Ip.app"],
+        )
+        self.assertIsNotNone(signal)
+        self.assertEqual(signal["scope"], "external-service-reference")
+        self.assertFalse(signal["review_required"])
+
+    def test_worldtimeapi_reference_is_not_attributed_to_timezone_worldtime(self):
+        signal = detect_shutdown_notice(
+            "Is worldtimeapi.org coming back? Its notice says the service has shut down "
+            "and gives no return date.",
+            documentation_url="https://www.timezone.io/docs/worldtimeapi",
+            provider_names=["Timezone WorldTime"],
+        )
+        self.assertIsNotNone(signal)
+        self.assertEqual(signal["scope"], "external-service-reference")
+        self.assertFalse(signal["review_required"])
+
+    def test_current_api_decommission_still_requires_review_near_replacement_link(self):
+        signal = detect_shutdown_notice(
+            "WARNING - This API will be permanently decommissioned the 12th of April. "
+            "For an alternative we recommend using https://geosureglobal.com/.",
+            documentation_url="https://raw.githubusercontent.com/amadeus4dev/spec.json",
+            provider_names=["Safe Place"],
+        )
+        self.assertIsNotNone(signal)
+        self.assertEqual(signal["scope"], "provider-or-current-api")
+        self.assertTrue(signal["review_required"])
+
     def test_ignores_shutdown_words_in_script_and_style(self):
         content = """
         <style>.banner:after { content: "API has shut down"; }</style>
