@@ -7,7 +7,7 @@ SCRIPTS_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 from shutdown_detection import detect_shutdown_notice
-from check_shutdown_signals import fetch_documentation, parse_documentation_targets
+from check_shutdown_signals import fetch_documentation, parse_documentation_targets, scan_documentation
 from unittest.mock import patch
 
 
@@ -98,6 +98,44 @@ class ShutdownDetectionTests(unittest.TestCase):
         self.assertIsNotNone(signal)
         self.assertEqual(signal["scope"], "provider-or-current-api")
         self.assertTrue(signal["review_required"])
+
+
+    def test_scan_separates_current_legacy_and_unrelated_lifecycle_signals(self):
+        targets = [
+            {"url": "https://safe.example/docs", "apis": [{"name": "Safe API"}]},
+            {"url": "https://old.example/docs", "apis": [{"name": "Old API"}]},
+            {"url": "https://ip.app", "apis": [{"name": "Ip.app"}]},
+        ]
+
+        def fake_fetch(url, provider_names=None):
+            content_by_url = {
+                "https://safe.example/docs": "This API will be permanently decommissioned on 12 April.",
+                "https://old.example/docs": "The previous API has been decommissioned.",
+                "https://ip.app": "Since the Mozilla Location Service was decommissioned in 2024.",
+            }
+            signal = detect_shutdown_notice(
+                content_by_url[url],
+                documentation_url=url,
+                provider_names=provider_names or [],
+            )
+            return {
+                "url": url,
+                "status": 200,
+                "final_url": url,
+                "error": None,
+                "shutdown_signal": signal,
+            }
+
+        with patch("check_shutdown_signals.parse_documentation_targets", return_value=targets), \
+             patch("check_shutdown_signals.fetch_documentation", side_effect=fake_fetch):
+            report = scan_documentation()
+
+        self.assertEqual(report["shutdown_signal_count"], 1)
+        self.assertEqual(report["legacy_notice_count"], 1)
+        self.assertEqual(report["out_of_scope_reference_count"], 1)
+        self.assertEqual(report["shutdown_signals"][0]["apis"][0]["name"], "Safe API")
+        self.assertEqual(report["legacy_notices"][0]["apis"][0]["name"], "Old API")
+        self.assertEqual(report["out_of_scope_references"][0]["apis"][0]["name"], "Ip.app")
 
     def test_ignores_shutdown_words_in_script_and_style(self):
         content = """
