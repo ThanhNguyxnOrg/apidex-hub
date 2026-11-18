@@ -506,6 +506,41 @@ jobs:
             core.setOutput('issue_number', String(response.data.number));
             core.setOutput('issue_url', response.data.html_url);
 
+      # Close the v2 lifecycle review when a successful scan finds no current-provider/current-API signals.
+      - name: Close resolved provider lifecycle review issue
+        if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success' && steps.shutdown-scan.outputs.signal_count == '0'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const marker = '<!-- apidex-provider-lifecycle-review-v2 -->';
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const resolved = issues.filter(issue =>
+              !issue.pull_request && String(issue.body || '').includes(marker)
+            );
+
+            for (const issue of resolved) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: '### ✅ Provider lifecycle review resolved\\n\\nA successful documentation scan found no remaining current-provider/current-API lifecycle signals. Historical API notices and unrelated third-party references remain informational and do not create provider incidents. No automatic catalog deletion was performed.'
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed',
+                state_reason: 'completed'
+              });
+              console.log('Closed resolved provider lifecycle review issue #' + issue.number);
+            }
+
       # 5. Update the Live Health Dashboard in GitHub Discussions (Announcements)
       - name: Update GitHub Discussion Live Dashboard
         if: always() && !cancelled() && github.event_name != 'pull_request' && steps.check.outcome == 'success' && steps.shutdown-scan.outcome == 'success'
@@ -709,7 +744,7 @@ jobs:
               `| ❓ Unknown | ${unknownCount} | Unrecognized status codes (needs review) |`,
               '| 🟣 Current API/provider notices | ' + shutdownCount + ' | Scoped lifecycle signals that require maintainer review |',
               '| 📚 Legacy API notices | ' + legacyNoticeCount + ' | Historical or version-specific retirements; informational only |',
-              '| ↗️ Unrelated service references | ' + externalReferenceCount + ' | Third-party services mentioned in docs; excluded from provider incidents |
+              '| ↗️ Unrelated service references | ' + externalReferenceCount + ' | Third-party services mentioned in docs; excluded from provider incidents |',
               '| 📄 Documentation inconclusive | ' + shutdownInconclusive + ' | Documentation links could not be conclusively checked |',
               `| 💀 Broken | ${alreadyResolved ? 0 : brokenCount} | HTTP 404/410/DNS dead — confirmed dead |`,
               '',
