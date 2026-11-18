@@ -70,9 +70,8 @@ _SHUTDOWN_PATTERNS = (
 )
 
 _NAMED_SUBJECT_RE = re.compile(
-    r"(?P<subject>(?:[A-Z][A-Za-z0-9&.+-]*\s+){1,4}(?:API|service|platform))"
-    r"\s+(?:has|have|is|was|will be)\b",
-    re.IGNORECASE,
+    r"(?P<subject>(?:(?-i:[A-Z][A-Za-z0-9&.+-]*\s+){1,4})(?i:API|service|platform))"
+    r"\s+(?i:has|have|is|was|will be)\b",
 )
 _EXTERNAL_DOMAIN_RE = re.compile(r"\b(?:[a-z0-9-]+\.)+[a-z]{2,}\b", re.IGNORECASE)
 _LEGACY_SCOPE_RE = re.compile(
@@ -151,7 +150,8 @@ def _classify_scope(
     # A docs page may quote a separate service's outage/retirement FAQ. Do not
     # attribute that notice to the catalog provider when the named domain is
     # unrelated to both the documentation host and the API/provider name.
-    domains = _EXTERNAL_DOMAIN_RE.findall(context)
+    prefix_context = text[max(0, match.start() - 360):match.start()]
+    domains = _EXTERNAL_DOMAIN_RE.findall(prefix_context)
     doc_host = ""
     if documentation_url:
         try:
