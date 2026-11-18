@@ -430,9 +430,9 @@ jobs:
               '',
               '## Current-provider / current-API lifecycle notice(s)',
               '',
-              'The scoped documentation monitor found explicit retirement or shutdown language that appears to apply to the catalog provider or its current API. This is a **manual-review signal**, not automatic deletion evidence.',
+              'The scoped documentation monitor found explicit retirement or shutdown language for a current catalog API. Eligible one-to-one matches enter automated remediation through a focused bot PR; ambiguous matches remain open for maintainer review.',
               '',
-              'Legacy API/version notices and unrelated third-party service references are classified separately. A docs page can remain online after an API shuts down, and a docs page can fail while an API remains operational. Confirm the provider announcement and exact API lifecycle before changing the catalog.',
+              'Legacy API/version notices and unrelated third-party service references are classified separately. Automatic remediation requires a successful documentation fetch, an explicit current-API signal, and exactly one matching catalog row. Shared documentation pages and inconclusive fetches are never auto-deleted.',
               '',
               '**Workflow run:** [#' + context.runNumber + '](' + runUrl + ')',
               '',
@@ -444,16 +444,14 @@ jobs:
             for (const item of signals) {
               const names = (item.apis || []).map(api => api.name).join(', ') || 'Unknown API';
               const signal = item.shutdown_signal || {};
-              const snippet = String(signal.snippet || signal.matched_text || '')
+              const evidence = String(signal.matched_text || signal.type || 'shutdown language detected')
                 .replace(/[`]/g, "'")
                 .replace(/[\r\n]+/g, ' ')
-                .slice(0, 420);
+                .slice(0, 220);
               lines.push('- **' + names + '**');
               lines.push('  - Documentation: ' + item.url);
-              lines.push('  - Final URL: ' + (item.final_url || item.url));
               lines.push('  - HTTP status: ' + (item.status == null ? 'unknown' : item.status));
-              lines.push('  - Signal: ' + String(signal.matched_text || signal.type || 'shutdown language detected'));
-              if (snippet) lines.push('  - Evidence: ' + snippet);
+              lines.push('  - Detected notice: "' + evidence + '"');
               lines.push('');
             }
 
@@ -506,6 +504,150 @@ jobs:
             core.setOutput('issue_number', String(response.data.number));
             core.setOutput('issue_url', response.data.html_url);
 
+      # Create a focused bot PR for a confirmed, unambiguous API retirement.
+      - name: Auto-remediate retired API entries
+        if: github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success' && steps.shutdown-scan.outputs.signal_count != '0'
+        id: lifecycle-remediate
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          ISSUE_NUMBER: ${{ steps.shutdown-issue.outputs.issue_number }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ISSUE_NUMBER:-}" ]; then
+            echo "::error::The lifecycle issue could not be created; refusing a detached remediation PR."
+            exit 1
+          fi
+
+          BRANCH="agent-remediation/provider-lifecycle-incident-${ISSUE_NUMBER}"
+          git config --global user.name "ThanhNguyxnAgent[bot]"
+          git config --global user.email "296222857+thanhnguyxnagent[bot]@users.noreply.github.com"
+          git fetch --no-tags origin main
+          git reset --hard origin/main
+
+          if ! python scripts/remove_retired_apis.py --report scripts/shutdown_signals.json --apply --max-delete 25; then
+            echo "no_changes=true" >> "$GITHUB_OUTPUT"
+            echo "pr_url=" >> "$GITHUB_OUTPUT"
+            echo "Automatic lifecycle remediation was withheld; the issue remains open for review."
+            exit 0
+          fi
+
+          REMOVED_COUNT=$(python -c "import json; print(json.load(open('scripts/retired_api_summary.json', encoding='utf-8')).get('count', 0))")
+          echo "removed_count=$REMOVED_COUNT" >> "$GITHUB_OUTPUT"
+          if [ "$REMOVED_COUNT" -eq 0 ]; then
+            echo "no_changes=true" >> "$GITHUB_OUTPUT"
+            echo "pr_url=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
+          git add apis/ README.md site/index.html site/src/data/apis.json
+          if git diff --cached --quiet; then
+            echo "::error::Retired API rows were selected but no catalog diff was staged."
+            exit 1
+          fi
+
+          git switch -c "$BRANCH"
+          git commit -m "fix(apis): remove $REMOVED_COUNT explicitly retired API entries"
+
+          EXISTING_SHA=$(git ls-remote --heads origin "refs/heads/$BRANCH" | awk '{print $1}')
+          if [ -n "$EXISTING_SHA" ]; then
+            git push --force-with-lease="refs/heads/$BRANCH:$EXISTING_SHA" origin "HEAD:refs/heads/$BRANCH"
+          else
+            git push --set-upstream origin "$BRANCH"
+          fi
+
+          PR_TITLE="fix(apidex): remove $REMOVED_COUNT explicitly retired API entries"
+          PR_BODY=$(cat <<EOF
+          ## Automated provider-lifecycle remediation
+
+          ThanhNguyxnAgent removed **$REMOVED_COUNT** catalog row(s) selected by the successful documentation lifecycle scan.
+
+          - Each source returned HTTP 2xx/3xx and contained an explicit current-provider/current-API retirement signal.
+          - Each documentation URL mapped to exactly one catalog row by API name and canonical documentation URL.
+          - Shared documentation links, ambiguous rows, legacy notices, external references and inconclusive fetches are not auto-removed.
+          - The 25-row safety cap applies; API Markdown and generated catalog counts are synchronized.
+
+          Workflow run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+
+          Closes #$ISSUE_NUMBER
+          EOF
+          )
+
+          ALL_PRS=$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$BRANCH" --state all --json number,state,mergedAt --limit 50)
+          PR_NUMBER=$(printf '%s' "$ALL_PRS" | jq -r '[.[] | select(.mergedAt == null)][0].number // empty')
+          if [ -n "$PR_NUMBER" ]; then
+            PR_STATE=$(printf '%s' "$ALL_PRS" | jq -r --argjson number "$PR_NUMBER" '.[] | select(.number == $number) | .state')
+            if [ "$PR_STATE" = "CLOSED" ]; then gh pr reopen "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"; fi
+            gh pr edit "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --title "$PR_TITLE" --body "$PR_BODY"
+          else
+            gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$BRANCH" --title "$PR_TITLE" --body "$PR_BODY"
+            PR_NUMBER=$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$BRANCH" --state open --json number --jq '.[0].number')
+          fi
+
+          gh label create automated --repo "$GITHUB_REPOSITORY" --color EDEDED --description "Created by automation; assessed by the central Agent" --force
+          gh label create automerge --repo "$GITHUB_REPOSITORY" --color 0E8A16 --description "Explicitly authorized for Auto-merge after all configured checks pass" --force
+          gh pr edit "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --add-label automated --add-label automerge
+          PR_URL=$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json url --jq .url)
+          echo "pr_number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+          echo "no_changes=false" >> "$GITHUB_OUTPUT"
+
+      - name: Report lifecycle remediation status
+        if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success' && steps.shutdown-scan.outputs.signal_count != '0' && steps.shutdown-issue.outputs.issue_number != '' && steps.lifecycle-remediate.outcome == 'success'
+        uses: actions/github-script@v7
+        env:
+          ISSUE_NUMBER: ${{ steps.shutdown-issue.outputs.issue_number }}
+          PR_URL: ${{ steps.lifecycle-remediate.outputs.pr_url }}
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const issueNumber = Number.parseInt(process.env.ISSUE_NUMBER || '0', 10);
+            if (!issueNumber) return;
+            const marker = '<!-- apidex-lifecycle-remediation-status -->';
+            const prUrl = String(process.env.PR_URL || '').trim();
+            const body = prUrl
+              ? [
+                  marker,
+                  '',
+                  '### 🤖 Automated remediation PR created',
+                  '',
+                  'A focused bot PR is ready: ' + prUrl,
+                  '',
+                  'The PR includes a Closes reference. The central Agent will merge it only after all required checks pass; GitHub then closes this issue.'
+                ].join('\n')
+              : [
+                  marker,
+                  '',
+                  '### ⚠️ Automatic remediation withheld',
+                  '',
+                  'No catalog rows were changed. The documentation signal could not be mapped safely to exactly one API row, or its evidence was inconclusive. This issue remains open for maintainer review.'
+                ].join('\n');
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              per_page: 100
+            });
+            const existing = comments.find(comment =>
+              String(comment.body || '').includes(marker) &&
+              String(comment.user?.login || '').toLowerCase() === 'thanhnguyxnagent[bot]'
+            );
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body
+              });
+            }
+
       # Close the v2 lifecycle review when a successful scan finds no current-provider/current-API signals.
       - name: Close resolved provider lifecycle review issue
         if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success' && steps.shutdown-scan.outputs.signal_count == '0'
@@ -529,7 +671,11 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                body: '### ✅ Provider lifecycle review resolved\\n\\nA successful documentation scan found no remaining current-provider/current-API lifecycle signals. Historical API notices and unrelated third-party references remain informational and do not create provider incidents. No automatic catalog deletion was performed.'
+                body: [
+                  '### ✅ Provider lifecycle review resolved',
+                  '',
+                  'A successful documentation scan found no remaining current-provider/current-API lifecycle signals. Historical API notices and unrelated third-party references remain informational. No automatic catalog deletion was performed by the scan.'
+                ].join('\n')
               });
               await github.rest.issues.update({
                 owner: context.repo.owner,
@@ -563,6 +709,7 @@ jobs:
           PROTECTED_LIST: ${{ steps.check.outputs.protected_list }}
           SHUTDOWN_REPORT_PATH: scripts/shutdown_signals.json
           SHUTDOWN_ISSUE_URL: ${{ steps.shutdown-issue.outputs.issue_url }}
+          LIFECYCLE_REMEDIATION_PR: ${{ steps.lifecycle-remediate.outputs.pr_url }}
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
@@ -580,6 +727,7 @@ jobs:
             const legacyNoticeCount = Number(shutdownReport.legacy_notice_count || 0);
             const externalReferenceCount = Number(shutdownReport.out_of_scope_reference_count || 0);
             const shutdownIssueUrl = String(process.env.SHUTDOWN_ISSUE_URL || '');
+            const lifecycleRemediationPr = String(process.env.LIFECYCLE_REMEDIATION_PR || '');
             const hasBroken = process.env.HAS_BROKEN === 'true';
             const alreadyResolved = process.env.ALREADY_RESOLVED === 'true';
             const remediationPr = String(process.env.REMEDIATION_PR || '');
@@ -607,8 +755,10 @@ jobs:
               dynamicTitle = `🟠 Link Health Status: API endpoint cleanup PR awaiting checks (${today})`;
             } else if (hasBroken && !alreadyResolved) {
               dynamicTitle = `🔴 Link Health Status: ${brokenCount} confirmed dead API endpoint${brokenCount > 1 ? 's' : ''} detected (${today})`;
+            } else if (shutdownCount > 0 && lifecycleRemediationPr) {
+              dynamicTitle = '🟠 Link Health Status: provider lifecycle cleanup PR awaiting checks (' + today + ')';
             } else if (shutdownCount > 0) {
-              dynamicTitle = '🟣 Link Health Status: ' + shutdownCount + ' provider shutdown notice(s) need review (' + today + ')';
+              dynamicTitle = '🟣 Link Health Status: ' + shutdownCount + ' provider lifecycle notice(s) need review (' + today + ')';
             } else if (totalReviewCount > 0) {
               dynamicTitle = `🟡 Link Health Status: no confirmed dead endpoints; ${totalReviewCount} API or documentation results need review (${today})`;
             }
@@ -630,11 +780,12 @@ jobs:
                 'These signals appear to apply to the catalog provider or its current API. They require maintainer review and are never automatic deletion evidence.\n\n' +
                 signalLines.join('\n') + '\n';
               if (shutdownIssueUrl) shutdownSection += '\n**Review issue:** ' + shutdownIssueUrl + '\n';
+              if (lifecycleRemediationPr) shutdownSection += '\n**Automated cleanup PR:** ' + lifecycleRemediationPr + ' — waiting for required checks and central Auto-merge.\n';
             } else {
               shutdownSection = '### 🟣 Current-provider/current-API lifecycle notices\n\nNo current-provider/current-API shutdown or retirement notices were detected.\n';
             }
-            shutdownSection += '\\nInformational legacy API/version notices: **' + legacyNoticeCount + '**. These do not create provider-shutdown incidents.\\n';
-            shutdownSection += 'Unrelated third-party shutdown references: **' + externalReferenceCount + '**. These are excluded from provider incident counts.\\n';
+            shutdownSection += '\nInformational legacy API/version notices: **' + legacyNoticeCount + '**. These do not create provider-shutdown incidents.\n';
+            shutdownSection += 'Unrelated third-party shutdown references: **' + externalReferenceCount + '**. These are excluded from provider incident counts.\n';
             if (shutdownInconclusive > 0) {
               shutdownSection += '\nDocumentation links with inconclusive fetch results: **' + shutdownInconclusive + '**. These are not treated as shutdown evidence.\n';
             }
@@ -713,11 +864,11 @@ jobs:
 
             const statusIcon = hasBroken && !alreadyResolved
               ? (remediationPr ? '🟠' : '🔴')
-              : shutdownCount > 0 ? '🟣' : totalReviewCount > 0 ? '🟡' : '🟢';
+              : shutdownCount > 0 ? (lifecycleRemediationPr ? '🟠' : '🟣') : totalReviewCount > 0 ? '🟡' : '🟢';
             const statusText = hasBroken && !alreadyResolved
               ? (remediationPr ? 'automatic endpoint cleanup PR awaiting checks' : `${brokenCount} confirmed dead API endpoint${brokenCount > 1 ? 's' : ''} detected`)
               : shutdownCount > 0
-                ? shutdownCount + ' provider shutdown notice(s) need review'
+                ? (lifecycleRemediationPr ? 'provider lifecycle cleanup PR awaiting checks' : shutdownCount + ' provider lifecycle notice(s) need review')
                 : totalReviewCount > 0
                   ? 'no confirmed dead endpoints; ' + totalReviewCount + ' API or documentation results need review'
                   : 'all recorded API endpoints and documentation links responded successfully';
@@ -767,7 +918,7 @@ jobs:
               '- 🔄 This report is **automatically updated daily** at 00:00 UTC in GitHub Discussions',
               '- 🛡️ API endpoints with access protection (401/403/429) are reported as protected/inconclusive, never as dead.',
               '- 💀 Only confirmed 404/410 and dead-DNS URLs in the explicit API Endpoint column can enter the automated cleanup PR; documentation URLs never trigger API removal.',
-              '- 🟣 Documentation links are classified into current-provider/current-API notices, legacy API/version notices, and unrelated third-party references. Only current-provider/current-API notices create review issues; none auto-delete catalog rows.',
+              '- 🟣 Current-provider/current-API retirement signals create a focused bot PR only when a successful documentation fetch maps unambiguously to one catalog row. The central Agent merges after required checks; the linked issue closes on merge. Ambiguous/shared docs remain open for review.',
               '- ❌ Server errors (5xx) may be temporary outages',
               '- ⚠️ Warnings include SSL/timeout issues that are often transient',
               `- 📦 Full report available as [workflow artifact](${runUrl})`,

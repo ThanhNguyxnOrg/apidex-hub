@@ -34,6 +34,7 @@ jobs:
         scripts/link_health.py
         scripts/pr_validation.py
         scripts/remove_dead_links.py
+        scripts/remove_retired_apis.py
         scripts/shutdown_detection.py
         scripts/safe_urls.py
         scripts/verify_links_playwright.py

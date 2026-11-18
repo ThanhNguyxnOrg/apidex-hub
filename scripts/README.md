@@ -24,6 +24,7 @@ A documentation URL is never silently treated as an API endpoint. Legacy 5-colum
 | `shutdown_detection.py` | Extracts visible page text and detects conservative provider-lifecycle phrases |
 | `export_health_outputs.py` | Validates final Stage 2 JSON and writes collision-safe GitHub Actions outputs |
 | `remove_dead_links.py` | Dry-run-by-default cleanup of explicitly confirmed dead API Endpoint rows |
+| `remove_retired_apis.py` | Creates exact removal plans for explicit lifecycle signals; requires a successful docs fetch and one API row per docs URL |
 | `parse_readme.py` | Generates `site/src/data/apis.json` and updates catalog counts in `README.md` and `site/index.html` |
 | `gen_readme_table.py` | Regenerates the category index table in `README.md` |
 
@@ -45,12 +46,12 @@ The checker does not solve or bypass Cloudflare/Turnstile challenges. A challeng
 A documentation page may continue returning HTTP 200 after its provider has shut down. The documentation monitor therefore inspects visible page content for explicit lifecycle language such as “no longer accepting new requests” or “API has been discontinued”.
 
 A shutdown signal:
-- creates or updates a separate maintainer-review Issue;
+- creates or updates a separate lifecycle Issue;
 - appears separately in the Live Health Discussion;
 - does **not** become a broken endpoint result;
-- does **not** authorize automatic catalog deletion.
+- never edits the catalog during the scan itself.
 
-A maintainer confirms the provider statement and then makes a focused catalog change. Documentation 404/403/429, network failures and WAF pages are inconclusive—not shutdown evidence.
+A separate remediation step may open a bot PR only when the documentation fetch is successful, the detector marks the signal as current-provider/current-API, and that documentation URL maps to exactly one catalog row by API name and documentation URL. The PR uses a 25-row safety cap, the `automated` and `automerge` labels, and a `Closes #N` reference. The central Agent merges only after all required checks pass; the linked issue then closes. Shared documentation URLs, ambiguous rows, legacy notices, unrelated services, and inconclusive fetches remain open for maintainer review.
 
 ## Incident and remediation lifecycle
 

@@ -12,7 +12,7 @@
 | **Dead API Endpoint Candidate (Broken)** | An explicitly recorded API Endpoint URL classified as 404/410, parked/suspended, or DNS NXDOMAIN after the checker’s verification stages. Automated removal is not authorized until the cleanup PR independently revalidates the removed endpoint. A documentation URL returning 404/410 is never proof that the API is dead. |
 | **Auto-Remediation** | The automated GitHub Actions process that removes only explicitly recorded API Endpoint rows that remain confirmed dead when the cleanup PR revalidates them, then regenerates website data and closes the linked Incident Issue after merge. |
 | **Safety Brake** | A configurable threshold (`--max-delete`) in `remove_dead_links.py` preventing catastrophic deletion of APIs in case of widespread network or proxy outages. |
-| **Provider Shutdown Signal** | Explicit lifecycle language found on a documentation page. It creates a separate human-review Issue and never counts as endpoint death or automatic deletion evidence. |
+| **Provider Shutdown Signal** | Explicit current-provider/current-API lifecycle language found on a documentation page. It creates a lifecycle Issue; a focused bot PR is eligible only when the fetch succeeds and the signal maps to exactly one API row. Ambiguous/shared docs stay open for review. |
 | **Documentation Inconclusive** | A documentation URL could not be conclusively fetched (for example 403/429, 5xx, TLS, timeout, DNS failure or WAF challenge). It is not proof that the provider shut down. |
 
 
@@ -32,14 +32,14 @@
 
 ## 3. Automation Pipelines
 
-- **`.github/workflows/link-checker.yml`**: Daily endpoint-health scan at 00:00 UTC and on PRs, plus a separate documentation lifecycle scan. It publishes structured endpoint results and documentation shutdown/inconclusive counts to Discussions (#6 Live Dashboard), creates incidents only for confirmed dead API endpoints, and revalidates removed endpoints on cleanup PRs before central Auto-merge.
+- **`.github/workflows/link-checker.yml`**: Daily endpoint-health scan at 00:00 UTC and on PRs, plus a separate documentation lifecycle scan. It creates endpoint incidents and lifecycle issues, opens bot PRs for unambiguous API retirements, and applies the existing central Auto-merge label so required checks run before merge and issue closure.
 - **`.github/workflows/script-tests.yml`**: Runs dependency-light Python regression tests for catalog automation scripts on pushes and pull requests.
 - **PR link validation**: `scripts/check_pr_links.py` uses explicit pull-request base/head commits and repository-root Git commands. Missing refs or failed diffs are errors, not empty-success results.
 
 - **`.github/workflows/deploy-website.yml`**: Builds and deploys the Vite/React catalog website to GitHub Pages upon changes to `main`.
 - **`scripts/parse_readme.py`**: The authoritative single source of truth parser syncing `apis/*.md` into `site/src/data/apis.json`, `README.md`, and `site/index.html`.
 - **Endpoint status rules**: 401/403/418/429 and WAF challenges are protected/inconclusive; 400/405/406 are unknown; 5xx, timeouts and TLS failures are not deletion evidence. Parked-domain/HTTP 200 pages are not healthy endpoints.
-- **Provider shutdown rules**: Documentation pages are scanned for explicit shutdown language even when they return HTTP 200. Signals create a separate review Issue and never become a broken endpoint or automatic deletion candidate.
+- **Provider shutdown rules**: Documentation pages are scanned for explicit shutdown language even when they return HTTP 200. These signals never count as endpoint death. A retirement becomes a PR candidate only after a successful fetch, explicit current-API classification, and a unique one-API-to-one-row mapping; the change is proposed on a bot branch and merged only through the central required-check/Auto-merge path.
 - **SSRF protection**: `scripts/safe_urls.py` blocks localhost, private/reserved/link-local destinations and unsafe redirect hops in the HTTP and browser checkers.
 
 
