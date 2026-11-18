@@ -99,7 +99,7 @@ def _decode_body(body: bytes, headers) -> str:
         return body.decode("utf-8", errors="replace")
 
 
-def fetch_documentation(url: str, timeout: int = 12) -> dict:
+def fetch_documentation(url: str, timeout: int = 12, provider_names: list[str] | None = None) -> dict:
     """Fetch a docs page and inspect its body even when the HTTP status is an error."""
     request = Request(
         url,
@@ -137,7 +137,7 @@ def fetch_documentation(url: str, timeout: int = 12) -> dict:
         }
 
     text = _decode_body(body, headers)
-    signal = detect_shutdown_notice(text)
+    signal = detect_shutdown_notice(text, documentation_url=url, provider_names=provider_names or [])
     return {
         "url": url,
         "status": status,
@@ -153,7 +153,7 @@ def scan_documentation(apis_dir: str | Path = "apis", workers: int = 12) -> dict
 
     with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         futures = {
-            executor.submit(fetch_documentation, target["url"]): target
+            executor.submit(fetch_documentation, target["url"], provider_names=[api["name"] for api in target["apis"]]): target
             for target in targets
         }
         for future in as_completed(futures):
@@ -173,12 +173,21 @@ def scan_documentation(apis_dir: str | Path = "apis", workers: int = 12) -> dict
 
     results.sort(key=lambda item: item["url"])
     signals = []
+    legacy_notices = []
+    out_of_scope_references = []
     inconclusive = []
     reachable = 0
     for result in results:
         status = result["status"]
-        if result["shutdown_signal"]:
-            signals.append(result)
+        signal = result.get("shutdown_signal")
+        if signal:
+            scope = signal.get("scope", "provider-or-current-api")
+            if scope == "provider-or-current-api" and signal.get("review_required", True):
+                signals.append(result)
+            elif scope == "legacy-api":
+                legacy_notices.append(result)
+            else:
+                out_of_scope_references.append(result)
         if result["error"] or status is None or status >= 400:
             inconclusive.append(result)
         elif 200 <= status < 400:
@@ -191,6 +200,10 @@ def scan_documentation(apis_dir: str | Path = "apis", workers: int = 12) -> dict
         "inconclusive_documentation_links": len(inconclusive),
         "shutdown_signal_count": len(signals),
         "shutdown_signals": signals,
+        "legacy_notice_count": len(legacy_notices),
+        "legacy_notices": legacy_notices,
+        "out_of_scope_reference_count": len(out_of_scope_references),
+        "out_of_scope_references": out_of_scope_references,
         "inconclusive": inconclusive,
     }
 
@@ -219,13 +232,23 @@ def main() -> int:
         "Documentation scan complete: "
         f"{report['total_documentation_links']} unique docs URLs, "
         f"{report['reachable_documentation_links']} reachable, "
-        f"{report['shutdown_signal_count']} shutdown signals, "
+        f"{report['shutdown_signal_count']} current-provider/API signals, "
+        f"{report['legacy_notice_count']} legacy notices, "
+        f"{report['out_of_scope_reference_count']} unrelated references, "
         f"{report['inconclusive_documentation_links']} inconclusive."
     )
     for item in report["shutdown_signals"]:
         names = ", ".join(api["name"] for api in item["apis"])
         signal = item["shutdown_signal"]
-        print(f"[SHUTDOWN SIGNAL] {names} | {item['url']} | {signal['matched_text']}")
+        print(f"[REVIEW REQUIRED] {names} | {item['url']} | {signal['matched_text']}")
+    for item in report["legacy_notices"]:
+        names = ", ".join(api["name"] for api in item["apis"])
+        signal = item["shutdown_signal"]
+        print(f"[LEGACY NOTICE] {names} | {item['url']} | {signal['matched_text']}")
+    for item in report["out_of_scope_references"]:
+        names = ", ".join(api["name"] for api in item["apis"])
+        signal = item["shutdown_signal"]
+        print(f"[UNRELATED REFERENCE] {names} | {item['url']} | {signal['matched_text']}")
     return 0
 
 
