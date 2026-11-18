@@ -1,13 +1,15 @@
-"""Detect explicit provider shutdown notices in API documentation content.
+"""Conservative provider/API lifecycle signal detection.
 
-Signals are review evidence, not automatic deletion evidence. HTTP reachability and
-API endpoint health remain separate checks.
+A retirement notice for one legacy endpoint or a third-party service mentioned in
+documentation is not evidence that the catalog provider itself has shut down.
+Signals are classified for review; this module never authorizes catalog deletion.
 """
 from __future__ import annotations
 
 from html import unescape
 from html.parser import HTMLParser
 import re
+from urllib.parse import urlsplit
 
 
 class _VisibleTextParser(HTMLParser):
@@ -67,6 +69,27 @@ _SHUTDOWN_PATTERNS = (
     ),
 )
 
+_NAMED_SUBJECT_RE = re.compile(
+    r"(?P<subject>(?:[A-Z][A-Za-z0-9&.+-]*\s+){1,4}(?:API|service|platform))"
+    r"\s+(?:has|have|is|was|will be)\b",
+    re.IGNORECASE,
+)
+_EXTERNAL_DOMAIN_RE = re.compile(r"\b(?:[a-z0-9-]+\.)+[a-z]{2,}\b", re.IGNORECASE)
+_LEGACY_SCOPE_RE = re.compile(
+    r"\b(?:legacy|old|previous|former|deprecated|obsolete)\b"
+    r".{0,120}\b(?:api|apis|endpoint|endpoints|version|reporting)\b"
+    r"|\b(?:api|apis|endpoint|endpoints)\b"
+    r".{0,80}\b(?:legacy|old|previous|former|deprecated|obsolete)\b"
+    r"|\b(?:v|version\s*)\d+(?:\.\d+)+\s+(?:api|endpoint)\b",
+    re.IGNORECASE,
+)
+_GENERIC_TOKENS = frozenset({
+    "a", "an", "and", "api", "apis", "app", "com", "company", "developer",
+    "developers", "docs", "documentation", "endpoint", "endpoints", "io",
+    "net", "org", "our", "platform", "provider", "service", "services",
+    "the", "this", "www",
+})
+
 
 def visible_text(content: str) -> str:
     """Return normalized visible text from HTML or plain-text documentation."""
@@ -80,24 +103,111 @@ def visible_text(content: str) -> str:
     return re.sub(r"\s+", " ", unescape(extracted)).strip()
 
 
-def detect_shutdown_notice(content: str) -> dict | None:
-    """Return a matched provider-shutdown signal, or None when no strong phrase exists.
+def _identifier_tokens(value: str) -> set[str]:
+    return {
+        token
+        for token in re.findall(r"[a-z0-9]+", str(value or "").lower())
+        if token not in _GENERIC_TOKENS and len(token) > 1
+    }
 
-    Matches are intentionally conservative and must be reviewed by a maintainer.
-    A signal never authorizes automatic catalog deletion by itself.
+
+def _provider_tokens(documentation_url: str | None, provider_names) -> set[str]:
+    tokens: set[str] = set()
+    for name in provider_names or ():
+        tokens.update(_identifier_tokens(name))
+    if documentation_url:
+        try:
+            host = urlsplit(documentation_url).hostname or ""
+        except ValueError:
+            host = ""
+        tokens.update(_identifier_tokens(host))
+    return tokens
+
+
+def _context_window(text: str, start: int, end: int) -> str:
+    # Include adjacent sentence context because docs often introduce a legacy API
+    # immediately before the sentence that says it was retired.
+    return text[max(0, start - 360):min(len(text), end + 180)]
+
+
+def _classify_scope(
+    text: str,
+    match: re.Match,
+    documentation_url: str | None,
+    provider_names,
+) -> tuple[str, str | None]:
+    context = _context_window(text, match.start(), match.end())
+    if _LEGACY_SCOPE_RE.search(context):
+        return "legacy-api", None
+
+    provider_tokens = _provider_tokens(documentation_url, provider_names)
+    prefix = text[max(0, match.start() - 110):match.start()]
+    subject_match = _NAMED_SUBJECT_RE.search(prefix + match.group(0))
+    if subject_match:
+        subject_tokens = _identifier_tokens(subject_match.group("subject"))
+        if subject_tokens and provider_tokens and not subject_tokens.intersection(provider_tokens):
+            return "external-service-reference", subject_match.group("subject")
+
+    # A docs page may quote a separate service's outage/retirement FAQ. Do not
+    # attribute that notice to the catalog provider when the named domain is
+    # unrelated to both the documentation host and the API/provider name.
+    domains = _EXTERNAL_DOMAIN_RE.findall(context)
+    doc_host = ""
+    if documentation_url:
+        try:
+            doc_host = (urlsplit(documentation_url).hostname or "").lower()
+        except ValueError:
+            pass
+    for domain in domains:
+        domain = domain.lower().strip(".")
+        if doc_host and (domain == doc_host or domain.endswith("." + doc_host) or doc_host.endswith("." + domain)):
+            continue
+        domain_tokens = _identifier_tokens(domain)
+        if domain_tokens and provider_tokens and not domain_tokens.intersection(provider_tokens):
+            return "external-service-reference", domain
+
+    return "provider-or-current-api", None
+
+
+def detect_shutdown_notice(
+    content: str,
+    *,
+    documentation_url: str | None = None,
+    provider_names=(),
+) -> dict | None:
+    """Return the strongest lifecycle signal found in visible documentation.
+
+    Signals scoped to the provider/current API require review. Legacy API/version
+    notices and unrelated third-party references remain informational.
     """
     text = visible_text(content)
     if not text:
         return None
 
+    candidates: list[tuple[int, str, re.Match]] = []
     for signal_type, pattern in _SHUTDOWN_PATTERNS:
-        match = pattern.search(text)
-        if match:
-            start = max(0, match.start() - 140)
-            end = min(len(text), match.end() + 180)
-            return {
-                "type": signal_type,
-                "matched_text": match.group(0),
-                "snippet": text[start:end],
-            }
-    return None
+        candidates.extend((match.start(), signal_type, match) for match in pattern.finditer(text))
+    candidates.sort(key=lambda item: item[0])
+    if not candidates:
+        return None
+
+    classified = []
+    for _, signal_type, match in candidates:
+        scope, subject = _classify_scope(text, match, documentation_url, provider_names)
+        classified.append((scope == "provider-or-current-api", signal_type, match, scope, subject))
+
+    # Prefer a real current-provider/current-API signal if a page also contains
+    # a historical or unrelated reference.
+    actionable = next((item for item in classified if item[0]), None)
+    selected = actionable or classified[0]
+    _, signal_type, match, scope, subject = selected
+    start = max(0, match.start() - 140)
+    end = min(len(text), match.end() + 180)
+    return {
+        "type": signal_type,
+        "scope": scope,
+        "review_required": scope == "provider-or-current-api",
+        "matched_text": match.group(0),
+        "subject": subject,
+        "snippet": text[start:end],
+    }
