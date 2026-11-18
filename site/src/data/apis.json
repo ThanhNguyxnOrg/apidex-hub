@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-16T16:12:02.652416+00:00",
+    "generated_at": "2026-11-18T10:35:34.149418+00:00",
     "source": "README.md",
-    "total_apis": 4240,
+    "total_apis": 4239,
     "total_categories": 70,
     "no_auth_count": 1571,
-    "api_key_count": 2406,
+    "api_key_count": 2405,
     "oauth_count": 263,
-    "https_count": 4149,
+    "https_count": 4148,
     "https_percentage": 98,
     "api_endpoint_count": 1
   },
@@ -1623,7 +1623,7 @@
       "id": "authentication-identity",
       "emoji": "🔐",
       "name": "Authentication & Identity",
-      "api_count": 105,
+      "api_count": 104,
       "apis": [
         {
           "name": "1Password Connect",
@@ -2434,15 +2434,6 @@
           "endpoint": "",
           "documentation_url": "https://cloud.google.com/public-certificate-authority/docs",
           "link": "https://cloud.google.com/public-certificate-authority/docs"
-        },
-        {
-          "name": "Safe Place",
-          "description": "Before using this API, we recommend you read our Authorization Guide for more information.",
-          "auth": "apiKey",
-          "https": true,
-          "endpoint": "",
-          "documentation_url": "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/SafePlaceAPI_v1_swagger_specification.json",
-          "link": "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/SafePlaceAPI_v1_swagger_specification.json"
         },
         {
           "name": "Seatmap Display",
