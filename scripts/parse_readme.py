@@ -209,6 +209,24 @@ def main():
     # Ensure output directory exists
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Keep the previous generated_at when the parsed data is unchanged.
+    # parse_readme() stamps the current time on every run, so without
+    # this the output file differs on every run and the deploy workflow
+    # commits a timestamp-only change. Real data changes still get a
+    # fresh timestamp (and a commit).
+    try:
+        previous = json.loads(output_path.read_text(encoding='utf-8'))
+    except (FileNotFoundError, ValueError, OSError):
+        previous = None
+    if isinstance(previous, dict):
+        previous_meta = previous.get('meta', {})
+        if isinstance(previous_meta, dict):
+            old_meta = {k: v for k, v in previous_meta.items() if k != 'generated_at'}
+            new_meta = {k: v for k, v in data['meta'].items() if k != 'generated_at'}
+            if old_meta == new_meta and previous.get('categories') == data.get('categories'):
+                data['meta']['generated_at'] = previous_meta.get(
+                    'generated_at', data['meta']['generated_at']
+                )
     # Write JSON
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
