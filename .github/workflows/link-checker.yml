@@ -30,10 +30,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  issues: write
-  pull-requests: write
-  discussions: write
+  contents: read
 
 jobs:
   check-links:
@@ -43,7 +40,7 @@ jobs:
     steps:
       - name: Mint repository-scoped remediation token
         id: app-token
-        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+        if: github.event_name != 'pull_request'
         uses: ThanhNguyxnOrg/.github/.github/actions/agent-token@agent-v1
         with:
           profile: remediation
@@ -54,6 +51,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ steps.app-token.outputs.token || github.token }}
+          persist-credentials: ${{ github.event_name != 'pull_request' }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -134,32 +132,17 @@ jobs:
             scripts/protected_urls.txt
             scripts/shutdown_signals.json
 
-      - name: Comment on PR
-        if: github.event_name == 'pull_request' && always() && github.event.pull_request.head.repo.full_name == github.repository
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ steps.app-token.outputs.token }}
-          script: |
-            const fs = require('fs');
-            try {
-              let summary = '';
-              if (fs.existsSync('scripts/pr_link_check_report.txt')) {
-                summary = fs.readFileSync('scripts/pr_link_check_report.txt', 'utf8');
-              } else if (fs.existsSync('scripts/link_check_report.txt')) {
-                summary = fs.readFileSync('scripts/link_check_report.txt', 'utf8');
-              } else {
-                console.log('No report files found.');
-                return;
-              }
-              await github.rest.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: `## 🔗 Link Check Results\n\n\`\`\`\n${summary}\n\`\`\`\n\n💡 **Note:** 401/403/418/429, server errors, timeouts and SSL failures are inconclusive—not proof that an API is dead.`
-              });
-            } catch (error) {
-              console.log('Error commenting on PR:', error);
-            }
+      - name: Summarize pull request link checks
+        if: github.event_name == 'pull_request' && !cancelled()
+        run: |
+          report=scripts/pr_link_check_report.txt
+          if [[ -s "$report" ]]; then
+            {
+              printf '## Link Check Results\n\n~~~text\n'
+              cat "$report"
+              printf '\n~~~\n'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Cancel pending cleanup PRs when no deletions remain confirmed
         if: github.event_name != 'pull_request' && steps.check.outcome == 'success' && steps.check.outputs.has_broken == 'false'
@@ -276,6 +259,7 @@ jobs:
 
       # 2. Remove confirmed-dead API rows on a bot branch and submit a pull request
       - name: Set ThanhNguyxnAgent commit identity
+        if: github.event_name != 'pull_request'
         uses: ThanhNguyxnOrg/.github/.github/actions/agent-git-identity@agent-v1
 
       - name: Auto-Remediate Dead Links
