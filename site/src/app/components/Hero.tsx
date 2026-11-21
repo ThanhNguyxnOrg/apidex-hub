@@ -262,62 +262,57 @@ const SANDBOX_DATA = {
   cats: {
     endpoint: "https://catfact.ninja/fact",
     code: `const url = "https://catfact.ninja/fact";\nconst res = await fetch(url);\nconst data = await res.json();\nconsole.log(data);`,
-    response: `{
+    example: `{
   "fact": "A cat's hearing is much more sensitive than humans and dogs.",
-  "length": 60,
-  "status": "200 OK (Live CatFact Endpoint)"
+  "length": 60
 }`,
   },
   weather: {
     endpoint: "https://api.open-meteo.com/v1/forecast?latitude=35.6895&longitude=139.6917&current=temperature_2m",
     code: `const url = "https://api.open-meteo.com/v1/forecast?latitude=35.68&longitude=139.69&current=temperature_2m";\nconst res = await fetch(url);\nconst data = await res.json();\nconsole.log(data);`,
-    response: `{
+    example: `{
   "latitude": 35.68,
   "longitude": 139.69,
   "timezone": "UTC",
   "current": {
     "temperature_2m": 22.4,
     "unit": "°C"
-  },
-  "status": "200 OK (Live Open-Meteo Endpoint)"
+  }
 }`,
   },
   ip: {
     endpoint: "https://api.ipify.org?format=json",
     code: `const url = "https://api.ipify.org?format=json";\nconst res = await fetch(url);\nconst data = await res.json();\nconsole.log(data);`,
-    response: `{
-  "ip": "103.82.126.90",
-  "status": "200 OK (Live ipify Endpoint)",
-  "service": "Public IP lookup"
+    example: `{
+  "ip": "192.0.2.1"
 }`,
   },
 };
 
 type SandboxTab = "cats" | "weather" | "ip";
+type RunResult =
+  | { status: "loading" }
+  | { status: "success"; body: string }
+  | { status: "error"; message: string };
 
 function ApiPlayground({ theme }: { theme: "light" | "dark" }) {
   const [activeTab, setActiveTab] = useState<SandboxTab>("cats");
   const [viewState, setViewState] = useState<"request" | "response">("request");
-  const [loading, setLoading] = useState(false);
-  const [liveData, setLiveData] = useState<Record<string, string>>({});
+  const [results, setResults] = useState<Partial<Record<SandboxTab, RunResult>>>({});
+  const result = results[activeTab];
+  const loading = result?.status === "loading";
+  const showSuccess = viewState === "response" && result?.status === "success";
 
   const triggerRun = async () => {
-    setLoading(true);
-    const target = SANDBOX_DATA[activeTab];
+    const setResult = (next: RunResult) => setResults(prev => ({ ...prev, [activeTab]: next }));
+    setResult({ status: "loading" });
+    setViewState("response");
     try {
-      const res = await fetch(target.endpoint);
-      if (res.ok) {
-        const json = await res.json();
-        setLiveData((prev) => ({
-          ...prev,
-          [activeTab]: JSON.stringify(json, null, 2),
-        }));
-      }
-    } catch {
-      // Fallback cleanly to preformatted response if network blocked/offline
-    } finally {
-      setLoading(false);
-      setViewState("response");
+      const res = await fetch(SANDBOX_DATA[activeTab].endpoint);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      setResult({ status: "success", body: JSON.stringify(await res.json(), null, 2) });
+    } catch (error) {
+      setResult({ status: "error", message: error instanceof Error ? error.message : "Unknown error" });
     }
   };
 
@@ -366,10 +361,17 @@ function ApiPlayground({ theme }: { theme: "light" | "dark" }) {
               <span className="text-purple-500 dark:text-purple-400">const</span> data = <span className="text-purple-500 dark:text-purple-400">await</span> res.<span className="text-blue-600 dark:text-blue-400">json</span>();<br />
               <span className="text-blue-600 dark:text-blue-400">console</span>.<span className="text-blue-600 dark:text-blue-400">log</span>(data);
             </div>
+          ) : result?.status === "error" ? (
+            <p role="alert" className="text-destructive">Request failed: {result.message}</p>
+          ) : result?.status === "loading" ? (
+            <p role="status" className="text-muted-foreground">Waiting for response…</p>
           ) : (
-            <pre className="text-muted-foreground text-[11px] leading-normal whitespace-pre font-mono max-h-[170px] overflow-y-auto">
-              {liveData[activeTab] || current.response}
-            </pre>
+            <>
+              {!result && <p className="text-xs text-muted-foreground mb-2">Example response</p>}
+              <pre className="text-muted-foreground text-[11px] leading-normal whitespace-pre font-mono max-h-[170px] overflow-y-auto">
+                {result?.body ?? current.example}
+              </pre>
+            </>
           )}
         </div>
 
@@ -405,12 +407,12 @@ function ApiPlayground({ theme }: { theme: "light" | "dark" }) {
           >
             {loading ? (
               <span className="w-2.5 h-2.5 border-2 border-primary-foreground border-t-transparent rounded-full animate-spin" />
-            ) : viewState === "response" ? (
+            ) : showSuccess ? (
               <Check size={11} />
             ) : (
               <Play size={11} fill="currentColor" />
             )}
-            {loading ? "Calling..." : viewState === "response" ? "Success" : "Test Query"}
+            {loading ? "Calling..." : showSuccess ? "Success" : result?.status === "error" ? "Retry" : "Test Query"}
           </button>
         </div>
       </div>
