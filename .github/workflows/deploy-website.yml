@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Mint repository-scoped ThanhNguyxnAgent token
         id: agent-token
-        uses: ThanhNguyxnOrg/.github/.github/actions/agent-token@2b5c5cad571ee93fd091e16e1734ebd819191e68
+        uses: ThanhNguyxnOrg/.github/.github/actions/agent-token@agent-v1
         with:
           profile: content
           app-id: ${{ vars.BOT_APP_ID }}
@@ -41,7 +41,7 @@ jobs:
         run: python scripts/parse_readme.py --readme apis --output site/src/data/apis.json
 
       - name: Set ThanhNguyxnAgent commit identity
-        uses: ThanhNguyxnOrg/.github/.github/actions/agent-git-identity@da9d02544f60aeec92f8c851846ee3a587044beb
+        uses: ThanhNguyxnOrg/.github/.github/actions/agent-git-identity@agent-v1
 
       - name: Commit and Push Count Updates
         run: |
