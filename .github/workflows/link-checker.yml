@@ -44,7 +44,7 @@ jobs:
       - name: Mint repository-scoped remediation token
         id: app-token
         if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
-        uses: ThanhNguyxnOrg/.github/.github/actions/agent-token@2b5c5cad571ee93fd091e16e1734ebd819191e68
+        uses: ThanhNguyxnOrg/.github/.github/actions/agent-token@agent-v1
         with:
           profile: remediation
           app-id: ${{ vars.BOT_APP_ID }}
@@ -276,7 +276,7 @@ jobs:
 
       # 2. Remove confirmed-dead API rows on a bot branch and submit a pull request
       - name: Set ThanhNguyxnAgent commit identity
-        uses: ThanhNguyxnOrg/.github/.github/actions/agent-git-identity@da9d02544f60aeec92f8c851846ee3a587044beb
+        uses: ThanhNguyxnOrg/.github/.github/actions/agent-git-identity@agent-v1
 
       - name: Auto-Remediate Dead Links
         if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true'
