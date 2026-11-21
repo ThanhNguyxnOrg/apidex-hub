@@ -51,13 +51,13 @@ jobs:
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
 
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           token: ${{ steps.app-token.outputs.token || github.token }}
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
@@ -121,7 +121,7 @@ jobs:
 
       - name: Upload check report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: link-check-report
           path: |
@@ -136,7 +136,7 @@ jobs:
 
       - name: Comment on PR
         if: github.event_name == 'pull_request' && always() && github.event.pull_request.head.repo.full_name == github.repository
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
@@ -163,7 +163,7 @@ jobs:
 
       - name: Cancel pending cleanup PRs when no deletions remain confirmed
         if: github.event_name != 'pull_request' && steps.check.outcome == 'success' && steps.check.outputs.has_broken == 'false'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
@@ -234,7 +234,7 @@ jobs:
       - name: Create Incident Issue
         if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true'
         id: create-incident
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           BROKEN_COUNT: ${{ steps.check.outputs.broken_count }}
           BROKEN_LIST: ${{ steps.check.outputs.broken_list }}
@@ -358,7 +358,7 @@ jobs:
       # 3. Close the incident only if the reported rows are already absent from main
       - name: Close Incident Issue
         if: github.event_name != 'pull_request' && steps.check.outputs.has_broken == 'true' && steps.auto-remediate.outputs.no_changes == 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
@@ -381,7 +381,7 @@ jobs:
       # Retire the original broad-match issue; the v2 report separates current API notices from legacy/external references.
       - name: Close superseded provider shutdown review issue
         if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
@@ -408,7 +408,7 @@ jobs:
       - name: Create or update provider shutdown review issue
         if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success' && steps.shutdown-scan.outputs.signal_count != '0'
         id: shutdown-issue
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           SHUTDOWN_REPORT_PATH: scripts/shutdown_signals.json
         with:
@@ -594,7 +594,7 @@ jobs:
 
       - name: Report lifecycle remediation status
         if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success' && steps.shutdown-scan.outputs.signal_count != '0' && steps.shutdown-issue.outputs.issue_number != '' && steps.lifecycle-remediate.outcome == 'success'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           ISSUE_NUMBER: ${{ steps.shutdown-issue.outputs.issue_number }}
           PR_URL: ${{ steps.lifecycle-remediate.outputs.pr_url }}
@@ -651,7 +651,7 @@ jobs:
       # Close the v2 lifecycle review when a successful scan finds no current-provider/current-API signals.
       - name: Close resolved provider lifecycle review issue
         if: always() && !cancelled() && github.event_name != 'pull_request' && steps.shutdown-scan.outcome == 'success' && steps.shutdown-scan.outputs.signal_count == '0'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
@@ -690,7 +690,7 @@ jobs:
       # 5. Update the Live Health Dashboard in GitHub Discussions (Announcements)
       - name: Update GitHub Discussion Live Dashboard
         if: always() && !cancelled() && github.event_name != 'pull_request' && steps.check.outcome == 'success' && steps.shutdown-scan.outcome == 'success'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           HAS_BROKEN: ${{ steps.check.outputs.has_broken }}
           ALREADY_RESOLVED: ${{ steps.auto-remediate.outputs.no_changes }}
