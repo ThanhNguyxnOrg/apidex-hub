@@ -182,6 +182,30 @@ def parse_readme(readme_path: str):
     return output
 
 
+def update_readme_counts(content, total_apis, total_categories, endpoint_count):
+    """Rewrite the README catalog sentence with counts taken from the parsed data."""
+    content = re.sub(
+        r'(\bcatalog of \*\*)[\d,]+(?:\+)?(?=\*\* public APIs across \*\*)',
+        f"\\g<1>{total_apis:,}",
+        content,
+    )
+    content = re.sub(
+        r'(public APIs across \*\*)[\d,]+(?=\*\* categories)',
+        f"\\g<1>{total_categories}",
+        content,
+    )
+    content = re.sub(
+        r'(\bcategories; \*\*)[\d,]+(?=\*\* of them (?:has|have) a recorded API endpoint)',
+        f"\\g<1>{endpoint_count:,}",
+        content,
+    )
+    return re.sub(
+        r'(\*\* of them )(?:has|have)(?= a recorded API endpoint)',
+        f"\\g<1>{'has' if endpoint_count == 1 else 'have'}",
+        content,
+    )
+
+
 def main():
     parser = argparse.ArgumentParser(description='Parse README.md or apis directory → apis.json')
     parser.add_argument('--readme', default='apis', help='Path to README.md or apis directory')
@@ -259,18 +283,12 @@ def main():
         try:
             content = readme_file_path.read_text(encoding='utf-8')
             total_categories = data['meta']['total_categories']
-            updated_content = re.sub(
-                r'(\bdatabase of \*\*)[\d,]+(?:\+)?(?=\*\* public endpoints across \*\*)',
-                f"\\g<1>{total_apis:,}",
-                content
-            )
-            updated_content = re.sub(
-                r'(public endpoints across \*\*)[\d,]+(?=\*\* categories)',
-                f"\\g<1>{total_categories}",
-                updated_content
+            endpoint_count = data['meta']['api_endpoint_count']
+            updated_content = update_readme_counts(
+                content, total_apis, total_categories, endpoint_count
             )
             readme_file_path.write_text(updated_content, encoding='utf-8')
-            print(f"  Successfully updated README.md with {total_apis:,} APIs and {total_categories} categories")
+            print(f"  Successfully updated README.md with {total_apis:,} APIs, {total_categories} categories and {endpoint_count:,} recorded endpoints")
         except Exception as e:
             print(f"  WARNING: Failed to update README.md: {e}")
     else:
