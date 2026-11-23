@@ -17,7 +17,7 @@ Before making ANY changes to this repository, you MUST read and follow the instr
   </p>
 
   <p><em>A curated collection of awesome public APIs and web scrapers for developers. Open source and community-driven.<br />
-  This repository aims to provide a comprehensive collection of public endpoints, APIs, and scraping solutions to help you build your next project.</em></p>
+  This repository aims to provide a comprehensive collection of public APIs and scraping solutions to help you build your next project.</em></p>
 
   <p>
     <a href="https://github.com/ThanhNguyxnOrg/apidex-hub/stargazers"><img src="https://img.shields.io/github/stars/ThanhNguyxnOrg/apidex-hub?style=social" alt="GitHub Stars" /></a>
@@ -192,7 +192,7 @@ print(response.json()['fact'])
 
 ## <a name="table-of-contents"></a>📊 API Catalog
 
-We maintain a curated database of **4,239** public endpoints across **70** categories. You can browse the categories directly:
+We maintain a curated catalog of **4,239** public APIs across **70** categories; **1** of them has a recorded API endpoint, and the rest link to official documentation. You can browse the categories directly:
 
 | Category | Category | Category |
 | --- | --- | --- |
